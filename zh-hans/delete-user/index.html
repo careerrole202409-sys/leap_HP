@@ -1,0 +1,188 @@
+---
+layout: base.njk
+title: 如何删除账户 | Leap
+description: 详细说明如何删除您的Leap账户。
+---
+
+<style>
+    /* 页面专属样式 */
+    .page-title {
+        font-size: var(--font-size-4xl);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-primary);
+        text-align: center;
+        margin-bottom: var(--space-sm);
+    }
+
+    .page-date {
+        font-size: var(--font-size-sm);
+        color: var(--color-text-light);
+        text-align: center;
+        margin-bottom: var(--space-3xl);
+    }
+
+    .steps-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .step-card {
+        background-color: var(--color-white);
+        border-radius: var(--radius-lg);
+        padding: var(--space-xl);
+        margin-bottom: var(--space-xl);
+        box-shadow: var(--shadow-md);
+        border-left: 4px solid var(--color-primary-start);
+        transition: transform var(--transition-base), box-shadow var(--transition-base);
+    }
+
+    .step-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .step-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: var(--color-primary-gradient);
+        color: var(--color-white);
+        border-radius: var(--radius-full);
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-lg);
+        margin-bottom: var(--space-md);
+    }
+
+    .step-title {
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-primary);
+        margin-bottom: var(--space-md);
+    }
+
+    .step-description {
+        color: var(--color-text-secondary);
+        line-height: var(--line-height-relaxed);
+        margin-bottom: 0;
+    }
+
+    .link-box {
+        display: inline-block;
+        background-color: var(--color-background);
+        padding: var(--space-sm) var(--space-md);
+        border-radius: var(--radius-md);
+        margin-top: var(--space-sm);
+        word-break: break-all;
+    }
+
+    .link-box a {
+        color: var(--color-accent-blue);
+        font-weight: var(--font-weight-medium);
+    }
+
+    .warning-box {
+        background-color: #fff3cd;
+        border-left: 4px solid #ff7a59;
+        padding: var(--space-lg);
+        border-radius: var(--radius-md);
+        margin-top: var(--space-2xl);
+    }
+
+    .warning-box p {
+        color: var(--color-text-primary);
+        margin-bottom: 0;
+    }
+
+    .warning-title {
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-primary);
+        margin-bottom: var(--space-sm);
+        font-size: var(--font-size-base);
+    }
+
+    @media (max-width: 768px) {
+        .page-title {
+            font-size: var(--font-size-2xl);
+        }
+
+        .step-card {
+            padding: var(--space-lg);
+        }
+
+        .step-number {
+            width: 36px;
+            height: 36px;
+            font-size: var(--font-size-base);
+        }
+
+        .step-title {
+            font-size: var(--font-size-lg);
+        }
+    }
+</style>
+
+<!-- 主要内容 -->
+<main class="section py-3xl">
+    <div class="container steps-container">
+        
+        <h1 class="page-title">如何删除账户</h1>
+        <p class="page-date">制定于2025年10月28日</p>
+        
+        <!-- 步骤1 -->
+        <article class="step-card">
+            <div class="step-number">1</div>
+            <h2 class="step-title">登录Leap</h2>
+            <p class="step-description">
+                请通过以下网址登录Leap。
+            </p>
+            <div class="link-box">
+                <a href="https://app.leap.site/top" target="_blank" rel="noopener noreferrer">https://app.leap.site/top</a>
+            </div>
+        </article>
+
+        <!-- 步骤2 -->
+        <article class="step-card">
+            <div class="step-number">2</div>
+            <h2 class="step-title">进入个人中心</h2>
+            <p class="step-description">
+                在页面顶部导航栏选择"我的页面"进入个人中心。
+            </p>
+        </article>
+
+        <!-- 步骤3 -->
+        <article class="step-card">
+            <div class="step-number">3</div>
+            <h2 class="step-title">打开设置</h2>
+            <p class="step-description">
+                点击右上角的"账户设置"按钮。
+            </p>
+        </article>
+
+        <!-- 步骤4 -->
+        <article class="step-card">
+            <div class="step-number">4</div>
+            <h2 class="step-title">点击删除账户按钮</h2>
+            <p class="step-description">
+                点击"删除账户"按钮。
+            </p>
+        </article>
+
+        <!-- 步骤5 -->
+        <article class="step-card">
+            <div class="step-number">5</div>
+            <h2 class="step-title">确认删除</h2>
+            <p class="step-description">
+                系统将弹出提示"您的所有信息将从Leap中永久删除，确定继续吗？"。请在输入框中输入"删除"二字，然后点击确定按钮。您的账户信息将在一周后从Leap中完全删除。
+            </p>
+        </article>
+
+        <!-- 重要提示 -->
+        <aside class="warning-box">
+            <div class="warning-title">⚠️ 重要提示</div>
+            <p>账户删除一周后，所有数据将被永久删除且无法恢复。请在删除前备份您需要保留的数据。</p>
+        </aside>
+
+    </div>
+</main>

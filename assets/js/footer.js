@@ -56,9 +56,11 @@ const footerTranslations = {
     }
 };
 
-// 現在の言語を取得
+// 現在の言語をURLから取得
 function getCurrentLanguage() {
-    return localStorage.getItem('leap_language') || 'ja';
+    const path = window.location.pathname;
+    const match = path.match(/^\/(ja|en|zh-hans)(\/|$)/);
+    return match ? match[1] : 'ja'; // デフォルトは日本語
 }
 
 // フッターのコンテンツを更新
@@ -132,27 +134,4 @@ function toggleFooterAccordion(button) {
 // 初期化
 document.addEventListener('DOMContentLoaded', () => {
     updateFooterContent();
-
-    // 言語変更を監視（ヘッダーから言語変更があった場合に対応）
-    window.addEventListener('storage', (e) => {
-        if (e.key === 'leap_language') {
-            updateFooterContent();
-        }
-    });
-
-    // カスタムイベントで言語変更を監視
-    window.addEventListener('languageChanged', () => {
-        updateFooterContent();
-    });
 });
-
-// 既存のchangeLanguage関数をラップして、フッターも更新
-if (typeof window !== 'undefined') {
-    const originalChangeLanguage = window.changeLanguage;
-    if (typeof originalChangeLanguage === 'function') {
-        window.changeLanguage = function(lang) {
-            originalChangeLanguage(lang);
-            updateFooterContent();
-        };
-    }
-}

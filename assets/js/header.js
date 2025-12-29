@@ -68,19 +68,37 @@ const translations = {
     }
 };
 
-// 現在の言語を取得（デモ用にローカルストレージから取得）
+// 現在の言語をURLから取得
 function getCurrentLanguage() {
-    return localStorage.getItem('leap_language') || 'ja';
+    const path = window.location.pathname;
+    // jp も ja のエイリアスとして認識
+    const match = path.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+    if (!match) return 'ja'; // デフォルトは日本語
+    
+    // jp は ja として扱う
+    return match[1] === 'jp' ? 'ja' : match[1];
 }
 
-// 言語を変更
-function changeLanguage(lang) {
-    localStorage.setItem('leap_language', lang);
-    updateContent();
-    const languageDropdown = document.getElementById('languageDropdown');
-    if (languageDropdown) {
-        languageDropdown.classList.remove('active');
+// 言語を変更（URLを変更して遷移）
+function changeLanguage(newLang) {
+    const currentPath = window.location.pathname;
+    
+    // 現在のパスから言語プレフィックスを検出
+    const langMatch = currentPath.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+    
+    let newPath;
+    
+    if (langMatch) {
+        // 既に言語プレフィックスがある場合
+        const detectedLang = langMatch[1];
+        newPath = currentPath.replace(`/${detectedLang}`, `/${newLang}`);
+    } else {
+        // 言語プレフィックスがない場合
+        newPath = `/${newLang}${currentPath}`;
     }
+    
+    // 新しいURLに遷移
+    window.location.href = newPath;
 }
 
 // ページを更新
@@ -170,6 +188,17 @@ document.addEventListener('DOMContentLoaded', () => {
         // ドロップダウン内のクリックは伝播させない
         languageDropdown.addEventListener('click', (e) => {
             e.stopPropagation();
+        });
+
+        // 言語オプションのクリックイベントを追加
+        document.querySelectorAll('.language-option').forEach(option => {
+            option.addEventListener('click', (e) => {
+                e.preventDefault();
+                const newLang = option.dataset.lang;
+                if (newLang) {
+                    changeLanguage(newLang);
+                }
+            });
         });
     }
 

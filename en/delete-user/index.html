@@ -1,0 +1,188 @@
+---
+layout: base.njk
+title: How to Delete Your Account | Leap
+description: Learn how to delete your Leap account.
+---
+
+<style>
+    /* Page-specific styles */
+    .page-title {
+        font-size: var(--font-size-4xl);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-primary);
+        text-align: center;
+        margin-bottom: var(--space-sm);
+    }
+
+    .page-date {
+        font-size: var(--font-size-sm);
+        color: var(--color-text-light);
+        text-align: center;
+        margin-bottom: var(--space-3xl);
+    }
+
+    .steps-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .step-card {
+        background-color: var(--color-white);
+        border-radius: var(--radius-lg);
+        padding: var(--space-xl);
+        margin-bottom: var(--space-xl);
+        box-shadow: var(--shadow-md);
+        border-left: 4px solid var(--color-primary-start);
+        transition: transform var(--transition-base), box-shadow var(--transition-base);
+    }
+
+    .step-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .step-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: var(--color-primary-gradient);
+        color: var(--color-white);
+        border-radius: var(--radius-full);
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-lg);
+        margin-bottom: var(--space-md);
+    }
+
+    .step-title {
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-primary);
+        margin-bottom: var(--space-md);
+    }
+
+    .step-description {
+        color: var(--color-text-secondary);
+        line-height: var(--line-height-relaxed);
+        margin-bottom: 0;
+    }
+
+    .link-box {
+        display: inline-block;
+        background-color: var(--color-background);
+        padding: var(--space-sm) var(--space-md);
+        border-radius: var(--radius-md);
+        margin-top: var(--space-sm);
+        word-break: break-all;
+    }
+
+    .link-box a {
+        color: var(--color-accent-blue);
+        font-weight: var(--font-weight-medium);
+    }
+
+    .warning-box {
+        background-color: #fff3cd;
+        border-left: 4px solid #ff7a59;
+        padding: var(--space-lg);
+        border-radius: var(--radius-md);
+        margin-top: var(--space-2xl);
+    }
+
+    .warning-box p {
+        color: var(--color-text-primary);
+        margin-bottom: 0;
+    }
+
+    .warning-title {
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-primary);
+        margin-bottom: var(--space-sm);
+        font-size: var(--font-size-base);
+    }
+
+    @media (max-width: 768px) {
+        .page-title {
+            font-size: var(--font-size-2xl);
+        }
+
+        .step-card {
+            padding: var(--space-lg);
+        }
+
+        .step-number {
+            width: 36px;
+            height: 36px;
+            font-size: var(--font-size-base);
+        }
+
+        .step-title {
+            font-size: var(--font-size-lg);
+        }
+    }
+</style>
+
+<!-- Main Content -->
+<main class="section py-3xl">
+    <div class="container steps-container">
+        
+        <h1 class="page-title">How to Delete Your Account</h1>
+        <p class="page-date">Established October 28, 2025</p>
+        
+        <!-- Step 1 -->
+        <article class="step-card">
+            <div class="step-number">1</div>
+            <h2 class="step-title">Log in to Leap</h2>
+            <p class="step-description">
+                Please log in to Leap using the URL below.
+            </p>
+            <div class="link-box">
+                <a href="https://app.leap.site/top" target="_blank" rel="noopener noreferrer">https://app.leap.site/top</a>
+            </div>
+        </article>
+
+        <!-- Step 2 -->
+        <article class="step-card">
+            <div class="step-number">2</div>
+            <h2 class="step-title">Go to My Page</h2>
+            <p class="step-description">
+                Select "My Page" from the header to navigate to your profile.
+            </p>
+        </article>
+
+        <!-- Step 3 -->
+        <article class="step-card">
+            <div class="step-number">3</div>
+            <h2 class="step-title">Open Settings</h2>
+            <p class="step-description">
+                Click the "Account Settings" button in the top right corner.
+            </p>
+        </article>
+
+        <!-- Step 4 -->
+        <article class="step-card">
+            <div class="step-number">4</div>
+            <h2 class="step-title">Click Delete Account Button</h2>
+            <p class="step-description">
+                Click the "Delete Account" button.
+            </p>
+        </article>
+
+        <!-- Step 5 -->
+        <article class="step-card">
+            <div class="step-number">5</div>
+            <h2 class="step-title">Confirm Deletion</h2>
+            <p class="step-description">
+                A message will appear asking "Your information will be completely deleted from Leap. Are you sure?" Type "delete" and click the OK button. Your account information will be permanently deleted from Leap after one week.
+            </p>
+        </article>
+
+        <!-- Warning -->
+        <aside class="warning-box">
+            <div class="warning-title">⚠️ Important Notice</div>
+            <p>Once one week has passed after account deletion, all data will be permanently deleted and cannot be recovered. Please back up any necessary data before deletion.</p>
+        </aside>
+
+    </div>
+</main>

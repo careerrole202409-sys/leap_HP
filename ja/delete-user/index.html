@@ -1,0 +1,188 @@
+---
+layout: base.njk
+title: アカウント削除方法 | Leap
+description: Leapアカウントの削除方法についてご説明します。
+---
+
+<style>
+    /* ページ固有のスタイル */
+    .page-title {
+        font-size: var(--font-size-4xl);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-primary);
+        text-align: center;
+        margin-bottom: var(--space-sm);
+    }
+
+    .page-date {
+        font-size: var(--font-size-sm);
+        color: var(--color-text-light);
+        text-align: center;
+        margin-bottom: var(--space-3xl);
+    }
+
+    .steps-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .step-card {
+        background-color: var(--color-white);
+        border-radius: var(--radius-lg);
+        padding: var(--space-xl);
+        margin-bottom: var(--space-xl);
+        box-shadow: var(--shadow-md);
+        border-left: 4px solid var(--color-primary-start);
+        transition: transform var(--transition-base), box-shadow var(--transition-base);
+    }
+
+    .step-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .step-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: var(--color-primary-gradient);
+        color: var(--color-white);
+        border-radius: var(--radius-full);
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-lg);
+        margin-bottom: var(--space-md);
+    }
+
+    .step-title {
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-primary);
+        margin-bottom: var(--space-md);
+    }
+
+    .step-description {
+        color: var(--color-text-secondary);
+        line-height: var(--line-height-relaxed);
+        margin-bottom: 0;
+    }
+
+    .link-box {
+        display: inline-block;
+        background-color: var(--color-background);
+        padding: var(--space-sm) var(--space-md);
+        border-radius: var(--radius-md);
+        margin-top: var(--space-sm);
+        word-break: break-all;
+    }
+
+    .link-box a {
+        color: var(--color-accent-blue);
+        font-weight: var(--font-weight-medium);
+    }
+
+    .warning-box {
+        background-color: #fff3cd;
+        border-left: 4px solid #ff7a59;
+        padding: var(--space-lg);
+        border-radius: var(--radius-md);
+        margin-top: var(--space-2xl);
+    }
+
+    .warning-box p {
+        color: var(--color-text-primary);
+        margin-bottom: 0;
+    }
+
+    .warning-title {
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-primary);
+        margin-bottom: var(--space-sm);
+        font-size: var(--font-size-base);
+    }
+
+    @media (max-width: 768px) {
+        .page-title {
+            font-size: var(--font-size-2xl);
+        }
+
+        .step-card {
+            padding: var(--space-lg);
+        }
+
+        .step-number {
+            width: 36px;
+            height: 36px;
+            font-size: var(--font-size-base);
+        }
+
+        .step-title {
+            font-size: var(--font-size-lg);
+        }
+    }
+</style>
+
+<!-- メインコンテンツ -->
+<main class="section py-3xl">
+    <div class="container steps-container">
+        
+        <h1 class="page-title">アカウント削除方法</h1>
+        <p class="page-date">2025年10月28日制定</p>
+        
+        <!-- ステップ1 -->
+        <article class="step-card">
+            <div class="step-number">1</div>
+            <h2 class="step-title">Leapにログイン</h2>
+            <p class="step-description">
+                下記のURLよりLeapにログインいただきます。
+            </p>
+            <div class="link-box">
+                <a href="https://app.leap.site/top" target="_blank" rel="noopener noreferrer">https://app.leap.site/top</a>
+            </div>
+        </article>
+
+        <!-- ステップ2 -->
+        <article class="step-card">
+            <div class="step-number">2</div>
+            <h2 class="step-title">マイページに移動</h2>
+            <p class="step-description">
+                ヘッダーよりマイページを選んで移動します。
+            </p>
+        </article>
+
+        <!-- ステップ3 -->
+        <article class="step-card">
+            <div class="step-number">3</div>
+            <h2 class="step-title">設定を開く</h2>
+            <p class="step-description">
+                右上の「アカウント設定」のボタンを開きます。
+            </p>
+        </article>
+
+        <!-- ステップ4 -->
+        <article class="step-card">
+            <div class="step-number">4</div>
+            <h2 class="step-title">アカウント削除ボタンを押す</h2>
+            <p class="step-description">
+                「アカウント削除」のボタンを押します。
+            </p>
+        </article>
+
+        <!-- ステップ5 -->
+        <article class="step-card">
+            <div class="step-number">5</div>
+            <h2 class="step-title">削除の確認</h2>
+            <p class="step-description">
+                あなたの情報が完全にLeapから削除されますが、よろしいでしょうか？という文章が出て参ります。「削除」と記入いただきOKボタンを押していただくと、アカウント情報が完全に1週間後にLeapから削除されます。
+            </p>
+        </article>
+
+        <!-- 注意事項 -->
+        <aside class="warning-box">
+            <div class="warning-title">⚠️ ご注意ください</div>
+            <p>アカウント削除後、1週間が経過するとすべてのデータが完全に削除され、復元することはできません。削除前に必要なデータのバックアップをお取りください。</p>
+        </aside>
+
+    </div>
+</main>
