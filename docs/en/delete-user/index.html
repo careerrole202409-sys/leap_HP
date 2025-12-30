@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to delete your Leap account.">
+    <title>How to Delete Your Account | Leap</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    
+    
+    <!-- Fonts (Optional: Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Header -->
+    <!-- ヘッダー -->
+<header class="header-container" id="header">
+    <!-- 1行目：小さい行 -->
+    <div class="header-top" id="headerTop">
+        <div class="header-top-content">
+            <div class="header-top-left">
+                <div class="language-selector">
+                    <div class="language-current" id="languageCurrent">
+                        <span>🌐</span>
+                        <span id="currentLang">日本語</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <a href="#" class="language-option" data-lang="ja" onclick="changeLanguage('ja'); return false;">日本語</a>
+                        <a href="#" class="language-option" data-lang="en" onclick="changeLanguage('en'); return false;">English</a>
+                        <a href="#" class="language-option" data-lang="zh-hans" onclick="changeLanguage('zh-hans'); return false;">简体中文</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-top-right">
+                <a href="https://app.leap.site" class="header-top-link" id="loginLink">ログイン</a>
+                <a href="https://www.leap.site/about" class="header-top-link" id="aboutLink">会社概要</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2行目：メインナビゲーション -->
+    <div class="header-main">
+        <div class="header-main-content">
+            <div class="nav-left">
+                <a href="https://www.leap.site" class="logo">Leap</a>
+                <nav class="nav-links">
+                    <div class="nav-item">
+                        <span class="nav-link" id="servicesLabel">サービス ▼</span>
+                        <div class="dropdown-menu">
+                            <a href="https://www.leap.site/services/multilingual-website" class="dropdown-item" id="serviceWebsite">多言語HP作成</a>
+                            <a href="https://www.leap.site/services/cross-border-ec" class="dropdown-item" id="serviceEc">越境EC開設運用</a>
+                            <a href="https://www.leap.site/services/multilingual-content" class="dropdown-item" id="serviceContent">多言語コンテンツ制作</a>
+                            <a href="https://www.leap.site/services/global-sns" class="dropdown-item" id="serviceSns">海外向けSNS運用</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link" id="pricingLink">価格</a>
+                    <div class="nav-item">
+                        <span class="nav-link" id="resourcesLabel">資料 ▼</span>
+                        <div class="dropdown-menu">
+                            <a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
+                            <a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">ブログ</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <a href="https://www.leap.site/contact" class="btn btn-demo" id="demoBtn">デモ</a>
+                <a href="#" class="btn btn-start" id="startBtn">無料スタート</a>
+            </div>
+
+            <!-- ハンバーガーメニュー -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- モバイルメニュー -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+        <div class="mobile-nav-item">
+            <a href="https://www.leap.site" class="mobile-nav-link" id="mobileHome">ホーム</a>
+        </div>
+        
+        <div class="mobile-nav-item">
+            <div class="mobile-dropdown-toggle" id="mobileServicesLabel" onclick="toggleMobileDropdown(this)">
+                <span>サービス</span>
+                <span>▼</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <a href="https://www.leap.site/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">多言語HP作成</a>
+                <a href="https://www.leap.site/services/cross-border-ec" class="mobile-dropdown-item" id="mobileServiceEc">越境EC開設運用</a>
+                <a href="https://www.leap.site/services/multilingual-content" class="mobile-dropdown-item" id="mobileServiceContent">多言語コンテンツ制作</a>
+                <a href="https://www.leap.site/services/global-sns" class="mobile-dropdown-item" id="mobileServiceSns">海外向けSNS運用</a>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link" id="mobilePricing">価格</a>
+        </div>
+
+        <div class="mobile-nav-item">
+            <div class="mobile-dropdown-toggle" id="mobileResourcesLabel" onclick="toggleMobileDropdown(this)">
+                <span>資料</span>
+                <span>▼</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
+                <a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">ブログ</a>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a href="https://www.leap.site/about" class="mobile-nav-link" id="mobileAbout">About</a>
+        </div>
+
+        <div class="mobile-cta-buttons">
+            <a href="https://www.leap.site/contact" class="btn btn-demo-mobile" id="mobileDemoBtn">デモ</a>
+            <a href="#" class="btn btn-start-mobile" id="mobileStartBtn">無料で始める</a>
+        </div>
+    </div>
+</div>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        
+<style>
+    /* Page-specific styles */
+    .page-title {
+        font-size: var(--font-size-4xl);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-primary);
+        text-align: center;
+        margin-bottom: var(--space-sm);
+    }
+
+    .page-date {
+        font-size: var(--font-size-sm);
+        color: var(--color-text-light);
+        text-align: center;
+        margin-bottom: var(--space-3xl);
+    }
+
+    .steps-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .step-card {
+        background-color: var(--color-white);
+        border-radius: var(--radius-lg);
+        padding: var(--space-xl);
+        margin-bottom: var(--space-xl);
+        box-shadow: var(--shadow-md);
+        border-left: 4px solid var(--color-primary-start);
+        transition: transform var(--transition-base), box-shadow var(--transition-base);
+    }
+
+    .step-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .step-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: var(--color-primary-gradient);
+        color: var(--color-white);
+        border-radius: var(--radius-full);
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-lg);
+        margin-bottom: var(--space-md);
+    }
+
+    .step-title {
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-primary);
+        margin-bottom: var(--space-md);
+    }
+
+    .step-description {
+        color: var(--color-text-secondary);
+        line-height: var(--line-height-relaxed);
+        margin-bottom: 0;
+    }
+
+    .link-box {
+        display: inline-block;
+        background-color: var(--color-background);
+        padding: var(--space-sm) var(--space-md);
+        border-radius: var(--radius-md);
+        margin-top: var(--space-sm);
+        word-break: break-all;
+    }
+
+    .link-box a {
+        color: var(--color-accent-blue);
+        font-weight: var(--font-weight-medium);
+    }
+
+    .warning-box {
+        background-color: #fff3cd;
+        border-left: 4px solid #ff7a59;
+        padding: var(--space-lg);
+        border-radius: var(--radius-md);
+        margin-top: var(--space-2xl);
+    }
+
+    .warning-box p {
+        color: var(--color-text-primary);
+        margin-bottom: 0;
+    }
+
+    .warning-title {
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-primary);
+        margin-bottom: var(--space-sm);
+        font-size: var(--font-size-base);
+    }
+
+    @media (max-width: 768px) {
+        .page-title {
+            font-size: var(--font-size-2xl);
+        }
+
+        .step-card {
+            padding: var(--space-lg);
+        }
+
+        .step-number {
+            width: 36px;
+            height: 36px;
+            font-size: var(--font-size-base);
+        }
+
+        .step-title {
+            font-size: var(--font-size-lg);
+        }
+    }
+</style>
+
+<!-- Main Content -->
+<main class="section py-3xl">
+    <div class="container steps-container">
+        
+        <h1 class="page-title">How to Delete Your Account</h1>
+        <p class="page-date">Established October 28, 2025</p>
+        
+        <!-- Step 1 -->
+        <article class="step-card">
+            <div class="step-number">1</div>
+            <h2 class="step-title">Log in to Leap</h2>
+            <p class="step-description">
+                Please log in to Leap using the URL below.
+            </p>
+            <div class="link-box">
+                <a href="https://app.leap.site/top" target="_blank" rel="noopener noreferrer">https://app.leap.site/top</a>
+            </div>
+        </article>
+
+        <!-- Step 2 -->
+        <article class="step-card">
+            <div class="step-number">2</div>
+            <h2 class="step-title">Go to My Page</h2>
+            <p class="step-description">
+                Select "My Page" from the header to navigate to your profile.
+            </p>
+        </article>
+
+        <!-- Step 3 -->
+        <article class="step-card">
+            <div class="step-number">3</div>
+            <h2 class="step-title">Open Settings</h2>
+            <p class="step-description">
+                Click the "Account Settings" button in the top right corner.
+            </p>
+        </article>
+
+        <!-- Step 4 -->
+        <article class="step-card">
+            <div class="step-number">4</div>
+            <h2 class="step-title">Click Delete Account Button</h2>
+            <p class="step-description">
+                Click the "Delete Account" button.
+            </p>
+        </article>
+
+        <!-- Step 5 -->
+        <article class="step-card">
+            <div class="step-number">5</div>
+            <h2 class="step-title">Confirm Deletion</h2>
+            <p class="step-description">
+                A message will appear asking "Your information will be completely deleted from Leap. Are you sure?" Type "delete" and click the OK button. Your account information will be permanently deleted from Leap after one week.
+            </p>
+        </article>
+
+        <!-- Warning -->
+        <aside class="warning-box">
+            <div class="warning-title">⚠️ Important Notice</div>
+            <p>Once one week has passed after account deletion, all data will be permanently deleted and cannot be recovered. Please back up any necessary data before deletion.</p>
+        </aside>
+
+    </div>
+</main>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+    <div class="footer-container">
+        <!-- Desktop View -->
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3 id="footerFeaturesTitle">人気の機能</h3>
+                <ul>
+                    <li><a href="https://www.leap.site/services/multilingual-website" id="footerWebsite">多言語HP作成</a></li>
+                    <li><a href="https://www.leap.site/services/cross-border-ec" id="footerEc">越境EC開設・運用</a></li>
+                    <li><a href="https://www.leap.site/services/multilingual-content" id="footerContent">多言語コンテンツ制作</a></li>
+                    <li><a href="https://www.leap.site/services/global-sns" id="footerSns">海外向けSNS運用</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerToolsTitle">無料ツール</h3>
+                <ul>
+                    <li><a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" id="footerBlog">ブログ</a></li>
+                    <li><a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerCompanyTitle">会社</h3>
+                <ul>
+                    <li><a href="https://www.leap.site/about" id="footerAbout">会社概要</a></li>
+                    <li><a href="https://www.leap.site/contact" id="footerContact">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mobile View -->
+        <div class="footer-mobile-section">
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileFeaturesTitle">人気の機能</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://www.leap.site/services/multilingual-website" id="footerMobileWebsite">多言語HP作成</a></li>
+                        <li><a href="https://www.leap.site/services/cross-border-ec" id="footerMobileEc">越境EC開設・運用</a></li>
+                        <li><a href="https://www.leap.site/services/multilingual-content" id="footerMobileContent">多言語コンテンツ制作</a></li>
+                        <li><a href="https://www.leap.site/services/global-sns" id="footerMobileSns">海外向けSNS運用</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileToolsTitle">無料ツール</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">ブログ</a></li>
+                        <li><a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileCompanyTitle">会社</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://www.leap.site/about" id="footerMobileAbout">会社概要</a></li>
+                        <li><a href="https://www.leap.site/contact" id="footerMobileContact">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/company/leap-site-inc" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/leap20240729/" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                </svg>
+            </a>
+            <a href="https://x.com/leap_0729" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="footer-brand">
+            <a href="https://www.leap.site" style="text-decoration: none; color: inherit;">
+                <div class="footer-logo">Leap</div>
+            </a>
+            <div class="footer-copyright" id="footerCopyright">Copyright © 2025 Leap, Inc.</div>
+        </div>
+
+        <div class="footer-legal">
+            <a href="https://www.leap.site/privacypolicy" id="footerPrivacy">プライバシーポリシー</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/terms" id="footerTerms">利用規約</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/tokushoho" id="footerCommerce">特定商取引法に基づく表示</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/delete-user" id="footerWithdrawal">退会規定</a>
+        </div>
+    </div>
+</footer>
+    
+    <!-- JavaScript -->
+    <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/footer.js"></script>
+    
+</body>
+</html>

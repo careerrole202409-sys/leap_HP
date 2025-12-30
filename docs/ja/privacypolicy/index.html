@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="株式会社Leapのプライバシーポリシー（個人情報保護方針）です。当社が取得する個人情報の利用目的、管理、第三者提供などについて定めています。">
+    <title>プライバシーポリシー | Leap</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    
+    
+    <!-- Fonts (Optional: Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Header -->
+    <!-- ヘッダー -->
+<header class="header-container" id="header">
+    <!-- 1行目：小さい行 -->
+    <div class="header-top" id="headerTop">
+        <div class="header-top-content">
+            <div class="header-top-left">
+                <div class="language-selector">
+                    <div class="language-current" id="languageCurrent">
+                        <span>🌐</span>
+                        <span id="currentLang">日本語</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <a href="#" class="language-option" data-lang="ja" onclick="changeLanguage('ja'); return false;">日本語</a>
+                        <a href="#" class="language-option" data-lang="en" onclick="changeLanguage('en'); return false;">English</a>
+                        <a href="#" class="language-option" data-lang="zh-hans" onclick="changeLanguage('zh-hans'); return false;">简体中文</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-top-right">
+                <a href="https://app.leap.site" class="header-top-link" id="loginLink">ログイン</a>
+                <a href="https://www.leap.site/about" class="header-top-link" id="aboutLink">会社概要</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2行目：メインナビゲーション -->
+    <div class="header-main">
+        <div class="header-main-content">
+            <div class="nav-left">
+                <a href="https://www.leap.site" class="logo">Leap</a>
+                <nav class="nav-links">
+                    <div class="nav-item">
+                        <span class="nav-link" id="servicesLabel">サービス ▼</span>
+                        <div class="dropdown-menu">
+                            <a href="https://www.leap.site/services/multilingual-website" class="dropdown-item" id="serviceWebsite">多言語HP作成</a>
+                            <a href="https://www.leap.site/services/cross-border-ec" class="dropdown-item" id="serviceEc">越境EC開設運用</a>
+                            <a href="https://www.leap.site/services/multilingual-content" class="dropdown-item" id="serviceContent">多言語コンテンツ制作</a>
+                            <a href="https://www.leap.site/services/global-sns" class="dropdown-item" id="serviceSns">海外向けSNS運用</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link" id="pricingLink">価格</a>
+                    <div class="nav-item">
+                        <span class="nav-link" id="resourcesLabel">資料 ▼</span>
+                        <div class="dropdown-menu">
+                            <a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
+                            <a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">ブログ</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <a href="https://www.leap.site/contact" class="btn btn-demo" id="demoBtn">デモ</a>
+                <a href="#" class="btn btn-start" id="startBtn">無料スタート</a>
+            </div>
+
+            <!-- ハンバーガーメニュー -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- モバイルメニュー -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+        <div class="mobile-nav-item">
+            <a href="https://www.leap.site" class="mobile-nav-link" id="mobileHome">ホーム</a>
+        </div>
+        
+        <div class="mobile-nav-item">
+            <div class="mobile-dropdown-toggle" id="mobileServicesLabel" onclick="toggleMobileDropdown(this)">
+                <span>サービス</span>
+                <span>▼</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <a href="https://www.leap.site/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">多言語HP作成</a>
+                <a href="https://www.leap.site/services/cross-border-ec" class="mobile-dropdown-item" id="mobileServiceEc">越境EC開設運用</a>
+                <a href="https://www.leap.site/services/multilingual-content" class="mobile-dropdown-item" id="mobileServiceContent">多言語コンテンツ制作</a>
+                <a href="https://www.leap.site/services/global-sns" class="mobile-dropdown-item" id="mobileServiceSns">海外向けSNS運用</a>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link" id="mobilePricing">価格</a>
+        </div>
+
+        <div class="mobile-nav-item">
+            <div class="mobile-dropdown-toggle" id="mobileResourcesLabel" onclick="toggleMobileDropdown(this)">
+                <span>資料</span>
+                <span>▼</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
+                <a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">ブログ</a>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a href="https://www.leap.site/about" class="mobile-nav-link" id="mobileAbout">About</a>
+        </div>
+
+        <div class="mobile-cta-buttons">
+            <a href="https://www.leap.site/contact" class="btn btn-demo-mobile" id="mobileDemoBtn">デモ</a>
+            <a href="#" class="btn btn-start-mobile" id="mobileStartBtn">無料で始める</a>
+        </div>
+    </div>
+</div>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        
+<main class="section py-3xl">
+    <div class="container content-medium">
+        
+        <!-- ヘッダーエリア -->
+        <h1 class="page-title">プライバシーポリシー</h1>
+        <p class="page-date">2025年3月25日制定</p>
+        
+        <!-- 導入文 -->
+        <div class="mb-3xl">
+            <p>
+                株式会社Leap（以下「当社」といいます。）は、ユーザーの個人情報（個人情報保護法第２条第１項により定義された「個人情報」をいい、以下同様とします。）について以下のとおりプライバシーポリシー（以下「本ポリシー」といいます。）を定めます。
+            </p>
+            <p>
+                本ポリシーは、当社がどのような個人情報を取得し、それをどのように利用・共有するか、ユーザーがどのようにご自身の個人情報を管理できるかといったことをご説明するものです。
+            </p>
+        </div>
+
+        <!-- 目次 -->
+        <nav class="toc-card card mb-3xl" aria-label="目次">
+            <h2 class="toc-title h4">目次</h2>
+            <ul class="toc-list">
+                <li><a href="#section-1">１．事業者情報</a></li>
+                <li><a href="#section-2">２．取得する個人情報</a></li>
+                <li><a href="#section-3">３．個人情報の利用目的</a></li>
+                <li><a href="#section-4">４．個人情報を安全に管理するための措置</a></li>
+                <li><a href="#section-5">５．個人情報の第三者提供について</a></li>
+                <li><a href="#section-6">６．匿名加工情報に関する取扱い</a></li>
+                <li><a href="#section-7">７．個人情報の開示、訂正</a></li>
+                <li><a href="#section-8">８．個人情報取扱いに関する相談や苦情の連絡先</a></li>
+                <li><a href="#section-9">９．cookieについて</a></li>
+                <li><a href="#section-10">１０．プライバシーポリシーの制定日及び改定日</a></li>
+            </ul>
+        </nav>
+
+        <!-- １．事業者情報 -->
+        <section id="section-1" class="article-section">
+            <h2 class="section-heading">１．事業者情報</h2>
+            <dl class="definition-list">
+                <dt class="definition-term">法人名</dt>
+                <dd class="definition-description">株式会社Leap</dd>
+                
+                <dt class="definition-term">住所</dt>
+                <dd class="definition-description">神奈川県横浜市神奈川区金港町5-14 クアドリフォリオ8階</dd>
+                
+                <dt class="definition-term">代表者</dt>
+                <dd class="definition-description">原広大</dd>
+            </dl>
+        </section>
+
+        <!-- ２．取得する個人情報 -->
+        <section id="section-2" class="article-section">
+            <h2 class="section-heading">２．取得する個人情報</h2>
+            <p>
+                当社では、ユーザーが利用登録をする際に、氏名・生年月日・住所・電話番号・メールアドレス・クレジットカード番号など個人を特定できる情報を取得させていただきます。お問い合わせフォーム・コメントの送信時には、氏名・電話番号・メールアドレス・会社名などを取得させていただきます。
+            </p>
+        </section>
+
+        <!-- ３．個人情報の利用目的 -->
+        <section id="section-3" class="article-section">
+            <h2 class="section-heading">３．個人情報の利用目的</h2>
+            <p>当社ではユーザーから取得した個人情報を次に掲げる利用目的の範囲内で利用いたします。</p>
+            <ul class="content-list">
+                <li>ユーザーが利用しているサービスの新機能や更新情報、キャンペーン情報などをメール送付によりご案内するため</li>
+                <li>ユーザーが利用しているサービスのメンテナンスなど、必要に応じたご連絡をするため</li>
+                <li>ユーザーからのコメントやお問い合わせに回答するため</li>
+                <li>利用規約に違反したユーザーの特定、その他不正不当な目的でサービスを利用したユーザーの特定をし、ご利用をお断りするため</li>
+                <li>有料プランを利用しているユーザーに対して利用料金をご請求するため</li>
+                <li>海外支援事業においてユーザーに適した支援サービスをお知らせするために、取得した閲覧・購買履歴等の情報を分析して利用します。また、取得したこれらの情報は、結果をスコア化した上で当該スコアを第三者へ提供することがあります。</li>
+                <li>サービス内でのユーザーに適した海外代理点販売の分析を行うため</li>
+            </ul>
+            <p>
+                個人情報の利用目的は、変更前後の関連性について合理性が認められる場合に限って変更するものとします。個人情報の利用目的について変更を行った際は、変更後の目的について当社所定の方法によってユーザーに通知又は公表するものとします。
+            </p>
+        </section>
+
+        <!-- ４．個人情報を安全に管理するための措置 -->
+        <section id="section-4" class="article-section">
+            <h2 class="section-heading">４．個人情報を安全に管理するための措置</h2>
+            <p>
+                当社は、個人情報を正確かつ最新の内容に保つよう努め、不正なアクセス・改ざん・漏えい・滅失及び毀損から保護するため全従業員及び役員に対して教育研修を実施しています。また、個人情報保護規定を設け、現場での管理についても定期的な点検を行っています。
+            </p>
+        </section>
+
+        <!-- ５．個人情報の第三者提供について -->
+        <section id="section-5" class="article-section">
+            <h2 class="section-heading">５．個人情報の第三者提供について</h2>
+            <p>当社は以下の場合を除き、ユーザーの同意を得ないまま第三者に個人情報を提供することは致しません。</p>
+            <ul class="content-list">
+                <li>法令に基づく場合</li>
+                <li>人の生命、身体又は財産の保護のために必要がある場合であって、本人の同意を得ることが困難であるとき</li>
+                <li>公衆衛生の向上又は児童の健全な育成の推進のために特に必要がある場合であって、本人の同意を得ることが困難であるとき</li>
+                <li>国の機関若しくは地方公共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、本人の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがあるとき</li>
+                <li>
+                    次に掲げる事項をあらかじめ本人に通知または公表し、かつ当社が個人情報保護委員会に届出をしたとき
+                    <ul class="mt-sm">
+                        <li>①第三者への提供を利用目的とすること</li>
+                        <li>②第三者に提供される個人情報の項目</li>
+                        <li>③第三者への提供の方法</li>
+                        <li>④本人の求めに応じて当該個人情報の第三者への提供を停止すること</li>
+                        <li>⑤本人の求めを受け付ける方法</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ６．匿名加工情報に関する取扱い -->
+        <section id="section-6" class="article-section">
+            <h2 class="section-heading">６．匿名加工情報に関する取扱い</h2>
+            <p>当社は、匿名加工情報（特定の個人を識別できないよう加工した個人情報であって、復元ができないようにしたもの）を作成する場合、以下の対応を行います。</p>
+            <ul class="content-list">
+                <li>法令で定める基準に従い適正な加工を施す</li>
+                <li>法令で定める基準に従い安全管理措置を講じる</li>
+                <li>匿名加工情報に含まれる個人に関する情報の項目を公表する</li>
+                <li>作成元となった個人情報の本人を識別するため、他の情報と照合すること</li>
+            </ul>
+        </section>
+
+        <!-- ７．個人情報の開示、訂正 -->
+        <section id="section-7" class="article-section">
+            <h2 class="section-heading">７．個人情報の開示、訂正</h2>
+            <p>
+                当社は、本人から個人情報の開示を求められたときには、遅滞なく本人に対しこれを開示します。個人情報の利用目的の通知や訂正、追加、削除、利用の停止、第三者への提供の停止を希望される方は、以下の手続に従ってご請求ください。
+            </p>
+            
+            <h3 class="section-subheading">提出書類等</h3>
+            <p>以下の書類等をお問い合わせ窓口宛てにご郵送願います。</p>
+            <ul class="content-list">
+                <li>保有個人条情報開示等請求書　１通</li>
+                <li>本人確認書類の写し（運転免許証、個人番号カード、在留カード、特別永住者証明書、パスポートなどの顔写真付き証明書）１点</li>
+                <li>手数料（事務手数料として請求１件につき５００円）</li>
+            </ul>
+
+            <div class="contact-box mt-lg">
+                <h3>送付先住所</h3>
+                <p>〒221-0056</p>
+                <p>神奈川県横浜市神奈川区金港町5-14 クアドリフォリオ8階</p>
+                <p>株式会社Leap</p>
+            </div>
+        </section>
+
+        <!-- ８．個人情報取扱いに関する相談や苦情の連絡先 -->
+        <section id="section-8" class="article-section">
+            <h2 class="section-heading">８．個人情報取扱いに関する相談や苦情の連絡先</h2>
+            <p>
+                当社の個人情報の取扱いに関するご質問やご不明点、苦情、その他のお問い合わせはお問い合わせフォームよりご連絡ください。
+            </p>
+        </section>
+
+        <!-- ９．cookieについて -->
+        <section id="section-9" class="article-section">
+            <h2 class="section-heading">９．cookieについて</h2>
+            <p>
+                cookieとは、WebサーバーからWebブラウザに送信されるデータのことです。Webサーバーがcookieを参照することでユーザーのパソコンを識別でき、効率的に当社Webサイトを利用することができます。当社Webサイトがcookieとして送るファイルは、個人を特定するような情報を含んでおりません。お使いのWebブラウザの設定により、cookieを無効にすることも可能です。
+            </p>
+        </section>
+
+        <!-- １０．プライバシーポリシーの制定日及び改定日 -->
+        <section id="section-10" class="article-section">
+            <h2 class="section-heading">１０．プライバシーポリシーの制定日及び改定日</h2>
+            <dl class="definition-list">
+                <dt class="definition-term">制定</dt>
+                <dd class="definition-description">2025年3月25日</dd>
+            </dl>
+        </section>
+
+    </div>
+</main>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+    <div class="footer-container">
+        <!-- Desktop View -->
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3 id="footerFeaturesTitle">人気の機能</h3>
+                <ul>
+                    <li><a href="https://www.leap.site/services/multilingual-website" id="footerWebsite">多言語HP作成</a></li>
+                    <li><a href="https://www.leap.site/services/cross-border-ec" id="footerEc">越境EC開設・運用</a></li>
+                    <li><a href="https://www.leap.site/services/multilingual-content" id="footerContent">多言語コンテンツ制作</a></li>
+                    <li><a href="https://www.leap.site/services/global-sns" id="footerSns">海外向けSNS運用</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerToolsTitle">無料ツール</h3>
+                <ul>
+                    <li><a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" id="footerBlog">ブログ</a></li>
+                    <li><a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerCompanyTitle">会社</h3>
+                <ul>
+                    <li><a href="https://www.leap.site/about" id="footerAbout">会社概要</a></li>
+                    <li><a href="https://www.leap.site/contact" id="footerContact">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mobile View -->
+        <div class="footer-mobile-section">
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileFeaturesTitle">人気の機能</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://www.leap.site/services/multilingual-website" id="footerMobileWebsite">多言語HP作成</a></li>
+                        <li><a href="https://www.leap.site/services/cross-border-ec" id="footerMobileEc">越境EC開設・運用</a></li>
+                        <li><a href="https://www.leap.site/services/multilingual-content" id="footerMobileContent">多言語コンテンツ制作</a></li>
+                        <li><a href="https://www.leap.site/services/global-sns" id="footerMobileSns">海外向けSNS運用</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileToolsTitle">無料ツール</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">ブログ</a></li>
+                        <li><a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileCompanyTitle">会社</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://www.leap.site/about" id="footerMobileAbout">会社概要</a></li>
+                        <li><a href="https://www.leap.site/contact" id="footerMobileContact">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/company/leap-site-inc" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/leap20240729/" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                </svg>
+            </a>
+            <a href="https://x.com/leap_0729" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="footer-brand">
+            <a href="https://www.leap.site" style="text-decoration: none; color: inherit;">
+                <div class="footer-logo">Leap</div>
+            </a>
+            <div class="footer-copyright" id="footerCopyright">Copyright © 2025 Leap, Inc.</div>
+        </div>
+
+        <div class="footer-legal">
+            <a href="https://www.leap.site/privacypolicy" id="footerPrivacy">プライバシーポリシー</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/terms" id="footerTerms">利用規約</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/tokushoho" id="footerCommerce">特定商取引法に基づく表示</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/delete-user" id="footerWithdrawal">退会規定</a>
+        </div>
+    </div>
+</footer>
+    
+    <!-- JavaScript -->
+    <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/footer.js"></script>
+    
+</body>
+</html>

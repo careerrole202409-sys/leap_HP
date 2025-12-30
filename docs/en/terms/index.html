@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="You can review the Terms of Service for the Leap service.">
+    <title>Terms of Service | Leap</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    
+    
+    <!-- Fonts (Optional: Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Header -->
+    <!-- ヘッダー -->
+<header class="header-container" id="header">
+    <!-- 1行目：小さい行 -->
+    <div class="header-top" id="headerTop">
+        <div class="header-top-content">
+            <div class="header-top-left">
+                <div class="language-selector">
+                    <div class="language-current" id="languageCurrent">
+                        <span>🌐</span>
+                        <span id="currentLang">日本語</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <a href="#" class="language-option" data-lang="ja" onclick="changeLanguage('ja'); return false;">日本語</a>
+                        <a href="#" class="language-option" data-lang="en" onclick="changeLanguage('en'); return false;">English</a>
+                        <a href="#" class="language-option" data-lang="zh-hans" onclick="changeLanguage('zh-hans'); return false;">简体中文</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-top-right">
+                <a href="https://app.leap.site" class="header-top-link" id="loginLink">ログイン</a>
+                <a href="https://www.leap.site/about" class="header-top-link" id="aboutLink">会社概要</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2行目：メインナビゲーション -->
+    <div class="header-main">
+        <div class="header-main-content">
+            <div class="nav-left">
+                <a href="https://www.leap.site" class="logo">Leap</a>
+                <nav class="nav-links">
+                    <div class="nav-item">
+                        <span class="nav-link" id="servicesLabel">サービス ▼</span>
+                        <div class="dropdown-menu">
+                            <a href="https://www.leap.site/services/multilingual-website" class="dropdown-item" id="serviceWebsite">多言語HP作成</a>
+                            <a href="https://www.leap.site/services/cross-border-ec" class="dropdown-item" id="serviceEc">越境EC開設運用</a>
+                            <a href="https://www.leap.site/services/multilingual-content" class="dropdown-item" id="serviceContent">多言語コンテンツ制作</a>
+                            <a href="https://www.leap.site/services/global-sns" class="dropdown-item" id="serviceSns">海外向けSNS運用</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link" id="pricingLink">価格</a>
+                    <div class="nav-item">
+                        <span class="nav-link" id="resourcesLabel">資料 ▼</span>
+                        <div class="dropdown-menu">
+                            <a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
+                            <a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">ブログ</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <a href="https://www.leap.site/contact" class="btn btn-demo" id="demoBtn">デモ</a>
+                <a href="#" class="btn btn-start" id="startBtn">無料スタート</a>
+            </div>
+
+            <!-- ハンバーガーメニュー -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- モバイルメニュー -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+        <div class="mobile-nav-item">
+            <a href="https://www.leap.site" class="mobile-nav-link" id="mobileHome">ホーム</a>
+        </div>
+        
+        <div class="mobile-nav-item">
+            <div class="mobile-dropdown-toggle" id="mobileServicesLabel" onclick="toggleMobileDropdown(this)">
+                <span>サービス</span>
+                <span>▼</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <a href="https://www.leap.site/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">多言語HP作成</a>
+                <a href="https://www.leap.site/services/cross-border-ec" class="mobile-dropdown-item" id="mobileServiceEc">越境EC開設運用</a>
+                <a href="https://www.leap.site/services/multilingual-content" class="mobile-dropdown-item" id="mobileServiceContent">多言語コンテンツ制作</a>
+                <a href="https://www.leap.site/services/global-sns" class="mobile-dropdown-item" id="mobileServiceSns">海外向けSNS運用</a>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link" id="mobilePricing">価格</a>
+        </div>
+
+        <div class="mobile-nav-item">
+            <div class="mobile-dropdown-toggle" id="mobileResourcesLabel" onclick="toggleMobileDropdown(this)">
+                <span>資料</span>
+                <span>▼</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
+                <a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">ブログ</a>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a href="https://www.leap.site/about" class="mobile-nav-link" id="mobileAbout">About</a>
+        </div>
+
+        <div class="mobile-cta-buttons">
+            <a href="https://www.leap.site/contact" class="btn btn-demo-mobile" id="mobileDemoBtn">デモ</a>
+            <a href="#" class="btn btn-start-mobile" id="mobileStartBtn">無料で始める</a>
+        </div>
+    </div>
+</div>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        
+<main class="section py-3xl">
+    <div class="container content-medium">
+        
+        <h1 class="page-title">Terms of Service</h1>
+        <div class="page-date">
+            <p>Enacted: March 25, 2025</p>
+            <p>Revised: November 19, 2025</p>
+        </div>
+
+        <!-- Table of Contents -->
+        <nav class="toc-card card mb-3xl">
+            <h2 class="toc-title">Table of Contents</h2>
+            <div class="toc-grid">
+                <ul class="toc-list">
+                    <li><a href="#purpose">Purpose</a></li>
+                    <li><a href="#definitions">Definitions</a></li>
+                    <li><a href="#service-content">Service Content</a></li>
+                    <li><a href="#service-suspension">Service Suspension</a></li>
+                    <li><a href="#user-registration">User Registration</a></li>
+                    <li><a href="#fees">Fees and Payment</a></li>
+                    <li><a href="#intellectual-property">Intellectual Property</a></li>
+                    <li><a href="#prohibited-acts">Prohibited Acts</a></li>
+                    <li><a href="#termination">Termination</a></li>
+                    <li><a href="#disclaimer">Disclaimer</a></li>
+                </ul>
+                <ul class="toc-list">
+                    <li><a href="#advertisers">Transactions with Advertisers</a></li>
+                    <li><a href="#damages">Damages</a></li>
+                    <li><a href="#equipment">Equipment and Costs</a></li>
+                    <li><a href="#service-changes">Changes/Abolition of Service</a></li>
+                    <li><a href="#confidentiality">Confidentiality</a></li>
+                    <li><a href="#antisocial">Exclusion of Anti-Social Forces</a></li>
+                    <li><a href="#communication">Communication and Notices</a></li>
+                    <li><a href="#assignment">Assignment of Status</a></li>
+                    <li><a href="#privacy">Handling of Personal Information</a></li>
+                    <li><a href="#pricing">Price List</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Purpose -->
+        <section id="purpose" class="article-section">
+            <h2 class="section-heading">Purpose</h2>
+            <p>These Terms of Service (hereinafter referred to as the "Terms") apply to Leap Inc. (hereinafter referred to as the "Company") and the users of the "Leap" service (hereinafter referred to as the "Service") operated by the Company.</p>
+            <p>The usage contract for the Service (hereinafter referred to as the "Contract") between the Company and the User shall be established upon the User's agreement to these Terms.</p>
+            <p>These Terms define the conditions for using the Service. All users registered for the Service shall use the Service in accordance with the conditions set forth in these Terms.</p>
+        </section>
+
+        <!-- Definitions -->
+        <section id="definitions" class="article-section">
+            <h2 class="section-heading">Definitions</h2>
+            <p>The following terms used in these Terms shall have the meanings set forth below:</p>
+            <dl class="definition-list">
+                <dt class="definition-term">"User"</dt>
+                <dd class="definition-description">Refers to all individuals or entities registered to use the Service.</dd>
+                
+                <dt class="definition-term">"User Information"</dt>
+                <dd class="definition-description">Refers to information such as IDs and passwords of users registered for the Service.</dd>
+            </dl>
+        </section>
+
+        <!-- Service Content -->
+        <section id="service-content" class="article-section">
+            <h2 class="section-heading">Service Content</h2>
+            <p>The Service is a platform providing support for overseas agency sales and international marketing efforts.</p>
+        </section>
+
+        <!-- Service Suspension -->
+        <section id="service-suspension" class="article-section">
+            <h2 class="section-heading">Service Suspension</h2>
+            <p>The Company may suspend all or part of the Service in any of the following events:</p>
+            <ul class="content-list">
+                <li>When maintenance, construction, or troubleshooting of equipment necessary for providing the Service is required.</li>
+                <li>When the operation of the Service becomes impossible due to failure of computers or communication lines, erroneous operations, excessive concentration of access, unauthorized access, or hacking.</li>
+                <li>When the operation of the Service becomes impossible due to force majeure, such as earthquakes, lightning, fire, wind or flood damage, power outages, or natural disasters.</li>
+                <li>In the event of a business suspension order, guidance, or order from an administrative or judicial authority.</li>
+                <li>Any other cases where the Company deems suspension necessary.</li>
+            </ul>
+            <p>In the cases mentioned above, the Company shall not be held liable unless there is willful misconduct or gross negligence on the part of the Company.</p>
+        </section>
+
+        <!-- User Registration -->
+        <section id="user-registration" class="article-section">
+            <h2 class="section-heading">User Registration</h2>
+            <p>To use the Service, you must agree to these Terms and complete the user registration process prescribed by the Company. However, minors, persons under adult guardianship, persons under curatorship, or persons under assistance may not register unless the registration is performed by their legal representative or they have obtained prior consent from their legal representative. Users are obligated to immediately update their registration information using the Company’s prescribed method if any changes occur.</p>
+            <p>The Company reserves the right to refuse registration at its sole discretion if it determines that an applicant is unsuitable for the Service.</p>
+        </section>
+
+        <!-- Fees and Payment -->
+        <section id="fees" class="article-section">
+            <h2 class="section-heading">Fees and Payment</h2>
+            <p>The usage fees for the Service, including consumption tax and local consumption tax (hereinafter referred to as "Service Fees"), shall be in accordance with the price list established by the Company.</p>
+            <p>Payments for Service Fees shall be made only through the methods specified by the Company.</p>
+            <p>If the start date or cancellation date of the Service falls in the middle of a month, Service Fees shall be handled as follows:</p>
+            <ul class="content-list">
+                <li>If the Service starts in the middle of a month, the fee will be charged from the first day of that month.</li>
+                <li>If the Service is cancelled in the middle of a month, the fee will be charged until the last day of that month.</li>
+            </ul>
+            <p>If the User fails to pay the Service Fees by the due date, the Company may claim late payment charges at a rate of 14.6% per annum.</p>
+            <p>The Company may change the Service Fees if it deems them inappropriate due to changes in economic conditions, taxes, or other public charges.</p>
+        </section>
+
+        <!-- Intellectual Property -->
+        <section id="intellectual-property" class="article-section">
+            <h2 class="section-heading">Intellectual Property</h2>
+            <p>All works, software, and content provided in the Service are protected by intellectual property rights, including copyrights (including the rights specified in Articles 27 and 28 of the Copyright Act of Japan), or other usage rights owned by the Company or the licensors who have granted licenses to the Company. Users may not reproduce, reprint, modify, or otherwise use these materials beyond the scope of personal use.</p>
+            <p>If a User posts content on the Service, the User grants the Company a free and unlimited license to use all copyrights (including the rights specified in Articles 27 and 28 of the Copyright Act) that may arise from such posts, regardless of whether they are copyrightable.</p>
+            <p>In the event of a dispute arising from a violation of this Article, the User shall resolve the issue at their own responsibility and expense and take appropriate measures to ensure that the Company suffers no disadvantage or damage.</p>
+            <p>Regarding any posted content that may constitute a work, the User shall not exercise moral rights (including the right to make a work public, the right to determine the indication of the author's name, and the right to maintain integrity) against the Company or any third party that has legitimately acquired rights from the Company.</p>
+        </section>
+
+        <!-- Prohibited Acts -->
+        <section id="prohibited-acts" class="article-section">
+            <h2 class="section-heading">Prohibited Acts</h2>
+            <p>In using the Service, the User shall not engage in any of the following acts:</p>
+            <ul class="content-list">
+                <li>Acts that violate these Terms.</li>
+                <li>Acts that infringe or may infringe upon the intellectual property rights, privacy, portrait rights, or other proprietary or personal rights of the Company or a third party.</li>
+                <li>Acts that cause or may cause disadvantage or damage to the Company or a third party.</li>
+                <li>Acts that discriminate against, slander, or defame the Company or a third party, or damage the reputation or credibility of others.</li>
+                <li>Acts that violate laws, regulations, ordinances, notifications, or other provisions.</li>
+                <li>Acts that go against public order and morals or the principle of good faith.</li>
+                <li>Criminal acts or acts that encourage criminal activity.</li>
+                <li>Acts that may have a harmful effect on children.</li>
+                <li>Establishing or soliciting for a pyramid scheme (Ponzi scheme).</li>
+                <li>Campaigning for elections, pre-election activities, similar activities, or acts that conflict with the Public Offices Election Act.</li>
+                <li>Submitting or registering false information during user registration.</li>
+                <li>Unauthorized access to the Company's systems, falsification or deletion of information, or acts that interfere with the normal operation of the Service, such as transmitting harmful computer programs like viruses.</li>
+                <li>Placing an excessive load on the network or systems of the Service.</li>
+                <li>Impersonating another user or third party to use the Service, infringing on rights, or causing nuisance or disadvantage.</li>
+                <li>Any other acts the Company deems inappropriate.</li>
+            </ul>
+            <p>If the Company determines that a User's actions fall under any of the above items, it may take any or all of the following measures without prior notice. The Company shall not be liable for any damage or disadvantage caused to the User or third parties in connection with these measures:</p>
+            <ul class="content-list">
+                <li>Restricting the use of the Service.</li>
+                <li>Terminating the Contract and removing the User from the Service.</li>
+                <li>Any other measures the Company deems reasonably necessary.</li>
+            </ul>
+        </section>
+
+        <!-- Termination -->
+        <section id="termination" class="article-section">
+            <h2 class="section-heading">Termination</h2>
+            <p>The Company may terminate this Contract and revoke membership without any notice if the User falls under any of the following:</p>
+            <ul class="content-list">
+                <li>If a minor, person under adult guardianship, person under curatorship, or person under assistance uses the Service without the consent of their legal representative.</li>
+                <li>If the Company confirms the death of the User through communication from heirs or other means.</li>
+                <li>If the User has previously been subject to membership termination.</li>
+                <li>If the User violates any of the prohibited acts.</li>
+                <li>Any other cases where the Company deems the User unsuitable.</li>
+            </ul>
+            <p>If a User wishes to withdraw, they may terminate the Contract and withdraw from the Service by following the procedures prescribed by the Company.</p>
+            <p>Upon withdrawal, the User loses the benefit of time and must immediately fulfill all obligations owed to the Company.</p>
+        </section>
+
+        <!-- Disclaimer -->
+        <section id="disclaimer" class="article-section">
+            <h2 class="section-heading">Disclaimer</h2>
+            <ul class="content-list">
+                <li>The Company makes no guarantees regarding the accuracy, quality, integrity, legality, reliability, or appropriateness of the Service's content.</li>
+                <li>The Company does not guarantee that the Service will be free from interruptions, cancellations, or other failures.</li>
+                <li>In the event that User Information is stolen due to unforeseeable unauthorized access and causes damage to the User, the Company shall not be liable unless there is intentional misconduct or gross negligence on the part of the Company.</li>
+                <li>The Company shall not be liable for any failure to perform all or part of the Contract due to force majeure, such as natural disasters, changes in laws, traffic accidents, labor disputes, or other natural or man-made events beyond its control.</li>
+                <li>The Company shall not be held responsible for any troubles between users inside or outside the Service. Such disputes shall be resolved by the User at their own responsibility and expense, unless there is intentional misconduct or gross negligence by the Company.</li>
+            </ul>
+        </section>
+
+        <!-- Transactions with Advertisers -->
+        <section id="advertisers" class="article-section">
+            <h2 class="section-heading">Transactions with Advertisers</h2>
+            <p>Any communication or transaction between a User and advertisers or linked sites found on the Service shall be conducted at the User's own responsibility. The Company shall not be held liable for any such transactions.</p>
+        </section>
+
+        <!-- Damages -->
+        <section id="damages" class="article-section">
+            <h2 class="section-heading">Damages</h2>
+            <p>If a User violates these Terms and causes damage to the Company, the User shall compensate for such damage (including lost profits and attorney's fees).</p>
+            <p>In the event the Company causes damage to a User due to reasons attributable to the Company, the Company shall be liable to compensate for such damage only within the scope defined below:</p>
+            <ul class="content-list">
+                <li>In cases of intentional misconduct or gross negligence by the Company: The full amount of the damage.</li>
+                <li>In cases of light negligence by the Company: Limited to ordinary damages actually and directly incurred (excluding special damages, lost profits, indirect damages, and attorney's fees), capped at the total Service Fees paid by the User to the Company in the six months preceding the final month of service.</li>
+            </ul>
+            <p>Notwithstanding the preceding paragraph, if the User uses the Service for business purposes or as a corporation, the Company shall not be liable for any damages incurred by the User unless there is intentional misconduct or gross negligence on the part of the Company.</p>
+        </section>
+
+        <!-- Equipment and Costs -->
+        <section id="equipment" class="article-section">
+            <h2 class="section-heading">Equipment and Costs</h2>
+            <p>The User must, at their own expense and responsibility, prepare and operate the environment, including equipment, software, and communication means, and bear all necessary communication costs and connection fees to receive the Service.</p>
+        </section>
+
+        <!-- Changes/Abolition of Service -->
+        <section id="service-changes" class="article-section">
+            <h2 class="section-heading">Changes/Abolition of Service</h2>
+            <p>If the Company determines, for reasonable reasons, that the Service's content should be changed or its provision abolished, the Company may do so after notifying the User in advance.</p>
+            <p>In such cases, the Company shall not be held liable unless there is intentional misconduct or gross negligence on the part of the Company.</p>
+        </section>
+
+        <!-- Confidentiality -->
+        <section id="confidentiality" class="article-section">
+            <h2 class="section-heading">Confidentiality</h2>
+            <p>The User shall not disclose or leak any confidential information obtained in connection with the provision of the Service to any third party without the prior written consent of the Company. "Confidential Information" refers to technical or business information of the Company or a third party disclosed in relation to the introduction of the Service, regardless of the format (documents, electronic data, verbal, etc.).</p>
+            <p>The following information shall not fall under confidential information:</p>
+            <ul class="content-list">
+                <li>Information already in possession at the time of disclosure.</li>
+                <li>Information already public at the time of disclosure, or which becomes public thereafter through no fault of the User.</li>
+                <li>Information legally obtained from a third party after disclosure.</li>
+                <li>Information independently developed or created without relying on the disclosed confidential information.</li>
+            </ul>
+            <p>Upon termination of this Contract or instructions from the Company, the User shall promptly return or destroy the confidential information in accordance with the Company's instructions and shall not use it thereafter.</p>
+        </section>
+
+        <!-- Exclusion of Anti-Social Forces -->
+        <section id="antisocial" class="article-section">
+            <h2 class="section-heading">Exclusion of Anti-Social Forces</h2>
+            <p>The User represents and warrants that they do not currently fall under any of the following items and will not in the future:</p>
+            <ul class="content-list">
+                <li>Being an organized crime group (Boryokudan), a member thereof, a person for whom five years have not elapsed since ceasing to be a member, a quasi-member, a related company, a corporate racketeer (Sokaiya), groups engaged in social movements under the guise of being a political activist, or special organized crime syndicates (hereinafter collectively referred to as "Anti-Social Forces").</li>
+                <li>Having a relationship where Anti-Social Forces are deemed to control the management.</li>
+                <li>Having a relationship where Anti-Social Forces are deemed to be substantially involved in the management.</li>
+                <li>Having a relationship where Anti-Social Forces are deemed to be utilized for the purpose of seeking illicit gain for oneself or a third party, or for the purpose of causing damage to a third party.</li>
+                <li>Having a relationship where one is deemed to be involved in providing funds or convenience to Anti-Social Forces.</li>
+                <li>Where its officers or persons substantially involved in management have a socially reprehensible relationship with Anti-Social Forces.</li>
+            </ul>
+            <p>The User warrants that they will not, by themselves or through a third party, engage in any of the following:</p>
+            <ul class="content-list">
+                <li>Violent demands.</li>
+                <li>Unreasonable demands exceeding legal responsibility.</li>
+                <li>Using threatening words or actions, or violence in connection with transactions.</li>
+                <li>Spreading rumors, using fraudulent means, or using force to damage the credibility of the other party or obstruct the other party's business.</li>
+                <li>Any other acts equivalent to the above.</li>
+            </ul>
+            <p>If the User violates the preceding two paragraphs, the Company may immediately terminate the Contract without any notice or demand, regardless of whether there is any fault on the part of the Company.</p>
+            <p>In the event of termination under the preceding paragraph, the Company shall not be liable for any damages incurred by the User.</p>
+        </section>
+
+        <!-- Communication and Notices -->
+        <section id="communication" class="article-section">
+            <h2 class="section-heading">Communication and Notices</h2>
+            <p>When a User makes an inquiry, communication, or notice regarding the Service, the Company will endeavor to respond but is not obligated to do so unless such an obligation is required by law or these Terms.</p>
+            <p>Notices from the Company regarding changes to these Terms or other communications to Users shall be made via email or other methods prescribed by the Company.</p>
+        </section>
+
+        <!-- Assignment of Status -->
+        <section id="assignment" class="article-section">
+            <h2 class="section-heading">Assignment of Status</h2>
+            <p>The User may not use, lend, assign, transfer, set collateral, or otherwise dispose of their status under the Contract or any rights or obligations under these Terms to any third party.</p>
+            <p>If the Company transfers the business related to the Service to another company, it may also transfer its status under the Contract, rights and obligations under these Terms, registration information, and other customer information to the transferee. The User shall be deemed to have consented to such transfer in advance. This includes business transfers, company splits, and any other cases where business is transferred.</p>
+        </section>
+
+        <!-- Handling of Personal Information -->
+        <section id="privacy" class="article-section">
+            <h2 class="section-heading">Handling of Personal Information</h2>
+            <p>The handling of personal information in the Service shall be in accordance with the "Privacy Policy" established by the Company.</p>
+        </section>
+
+        <!-- Response to Illegal Acts -->
+        <section id="illegal-acts" class="article-section">
+            <h2 class="section-heading">Response to Illegal Acts</h2>
+            <p>If a User discovers any act that violates these Terms, they must endeavor to promptly notify the Company.</p>
+            <p>Users may not object to the Company's handling of acts that violate these Terms.</p>
+        </section>
+
+        <!-- Term of the Contract -->
+        <section id="term" class="article-section">
+            <h2 class="section-heading">Term of the Contract</h2>
+            <p>The effective period of this Contract shall be from the time the Contract is established until the User withdraws.</p>
+            <p>A User may withdraw immediately by notifying the Company.</p>
+        </section>
+
+        <!-- Survival Clause -->
+        <section id="survival" class="article-section">
+            <h2 class="section-heading">Survival Clause</h2>
+            <p>Notwithstanding the preceding article, the provisions of Article 7 (Intellectual Property), Article 9 (Termination) Paragraph 3, Article 10 (Disclaimer), Article 11 (Transactions with Advertisers), Article 12 (Damages), Article 14 (Abolition of Service), Article 16 (Exclusion of Anti-Social Forces) Paragraph 4, Article 18 (Assignment of Status), and this Article through Article 27 (Miscellaneous) shall remain in effect after the termination of the Contract.</p>
+        </section>
+
+        <!-- Amendment of the Terms -->
+        <section id="amendment" class="article-section">
+            <h2 class="section-heading">Amendment of the Terms</h2>
+            <p>The Company may amend these Terms at any time based on Article 548-4 of the Civil Code of Japan if any of the following items apply. After the Terms are amended, the Contract shall be governed by the amended Terms.</p>
+            <ul class="content-list">
+                <li>When the amendment of the Terms conforms to the general interest of the Users.</li>
+                <li>When the amendment is not contrary to the purpose of the Contract and is reasonable in light of the necessity of the change, the appropriateness of the content after the change, and other circumstances related to the change.</li>
+            </ul>
+            <p>When amending these Terms, the Company will determine the effective date of the amended Terms and notify the Users of the content at least two weeks before the effective date via the Service or other methods specified by the Company.</p>
+            <p>Notwithstanding the preceding two paragraphs, if a User uses the Service after the notice of amendment or fails to take cancellation procedures within the prescribed period, the User shall be deemed to have agreed to the amendments.</p>
+        </section>
+
+        <!-- Exclusive Jurisdiction -->
+        <section id="jurisdiction" class="article-section">
+            <h2 class="section-heading">Exclusive Jurisdiction</h2>
+            <p>Any disputes between the User and the Company regarding this Contract or these Terms shall be subject to the exclusive jurisdiction of the Tokyo District Court as the court of first instance.</p>
+        </section>
+
+        <!-- Severability -->
+        <section id="severability" class="article-section">
+            <h2 class="section-heading">Severability</h2>
+            <p>Even if any provision or part of these Terms is determined to be invalid or unenforceable under the Consumer Contract Act or other laws, the remaining provisions of these Terms and the remaining parts of the provision determined to be invalid or unenforceable shall continue to be in full force and effect.</p>
+        </section>
+
+        <!-- Governing Law -->
+        <section id="governing-law" class="article-section">
+            <h2 class="section-heading">Governing Law</h2>
+            <p>The formation, validity, interpretation, and performance of this Contract and these Terms shall be governed by the laws of Japan.</p>
+        </section>
+
+        <!-- Miscellaneous -->
+        <section id="miscellaneous" class="article-section">
+            <h2 class="section-heading">Miscellaneous</h2>
+            <p>For matters not stipulated in these Terms or if the Company separately stipulates detailed rules, the User shall follow them. Such detailed rules shall form an integral part of these Terms.</p>
+            <p>Detailed rules take effect from the time they are posted, and if there is any conflict with these Terms, these Terms shall prevail.</p>
+        </section>
+
+        <!-- Price List -->
+        <section id="pricing" class="article-section">
+            <h2 class="section-heading">Price List</h2>
+            
+            <div class="info-box mb-xl">
+                <p class="info-box-title">About Monitor Companies</p>
+                <p>Users from monitor companies (beta testers) will be charged half the price listed below.</p>
+            </div>
+
+            <h3 class="section-subheading">Overseas Agency Matching Service</h3>
+            <div class="table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Plan Name</th>
+                            <th>Details</th>
+                            <th>Monthly Fee (Excl. Tax)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-label">Free Plan</td>
+                            <td>
+                                Publication of company page.<br>
+                                Search and display of top 20 agency records.<br>
+                                Up to 10 new sales contacts to agencies per week.
+                            </td>
+                            <td class="table-emphasis">0 JPY</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Starter Plan</td>
+                            <td>
+                                Full access to all agency records.<br>
+                                Up to 30 new sales contacts to agencies per week.
+                            </td>
+                            <td class="table-emphasis">50,000 JPY</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="section-subheading">Overseas Marketing Support Service</h3>
+            <p class="note-text">*Minimum contract of 2 or more countries required.</p>
+            <div class="table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Plan</th>
+                            <th>Details</th>
+                            <th>Monthly Fee (Excl. Tax)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-label">Tool Only</td>
+                            <td>
+                                Provision of multilingual website creation tools.<br>
+                                Provision of multilingual content creation tools.<br>
+                                Provision of international SNS account integration tools.
+                            </td>
+                            <td class="table-emphasis">20,000 JPY / country</td>
+                        </tr>
+                        <tr>
+                            <td class="table-label">Managed Service</td>
+                            <td>
+                                Multilingual website creation, publishing, and operation.<br>
+                                Multilingual content creation and operation.<br>
+                                International SNS account integration and management (2 posts per week).
+                            </td>
+                            <td class="table-emphasis">50,000 JPY / country</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Addendum -->
+        <section class="revision-section">
+            <h3 class="revision-title">Addendum</h3>
+            <p>Enacted: March 25, 2025</p>
+            <p>Revised: November 19, 2025</p>
+        </section>
+
+    </div>
+</main>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+    <div class="footer-container">
+        <!-- Desktop View -->
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3 id="footerFeaturesTitle">人気の機能</h3>
+                <ul>
+                    <li><a href="https://www.leap.site/services/multilingual-website" id="footerWebsite">多言語HP作成</a></li>
+                    <li><a href="https://www.leap.site/services/cross-border-ec" id="footerEc">越境EC開設・運用</a></li>
+                    <li><a href="https://www.leap.site/services/multilingual-content" id="footerContent">多言語コンテンツ制作</a></li>
+                    <li><a href="https://www.leap.site/services/global-sns" id="footerSns">海外向けSNS運用</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerToolsTitle">無料ツール</h3>
+                <ul>
+                    <li><a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" id="footerBlog">ブログ</a></li>
+                    <li><a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerCompanyTitle">会社</h3>
+                <ul>
+                    <li><a href="https://www.leap.site/about" id="footerAbout">会社概要</a></li>
+                    <li><a href="https://www.leap.site/contact" id="footerContact">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mobile View -->
+        <div class="footer-mobile-section">
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileFeaturesTitle">人気の機能</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://www.leap.site/services/multilingual-website" id="footerMobileWebsite">多言語HP作成</a></li>
+                        <li><a href="https://www.leap.site/services/cross-border-ec" id="footerMobileEc">越境EC開設・運用</a></li>
+                        <li><a href="https://www.leap.site/services/multilingual-content" id="footerMobileContent">多言語コンテンツ制作</a></li>
+                        <li><a href="https://www.leap.site/services/global-sns" id="footerMobileSns">海外向けSNS運用</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileToolsTitle">無料ツール</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">ブログ</a></li>
+                        <li><a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileCompanyTitle">会社</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://www.leap.site/about" id="footerMobileAbout">会社概要</a></li>
+                        <li><a href="https://www.leap.site/contact" id="footerMobileContact">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/company/leap-site-inc" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/leap20240729/" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                </svg>
+            </a>
+            <a href="https://x.com/leap_0729" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="footer-brand">
+            <a href="https://www.leap.site" style="text-decoration: none; color: inherit;">
+                <div class="footer-logo">Leap</div>
+            </a>
+            <div class="footer-copyright" id="footerCopyright">Copyright © 2025 Leap, Inc.</div>
+        </div>
+
+        <div class="footer-legal">
+            <a href="https://www.leap.site/privacypolicy" id="footerPrivacy">プライバシーポリシー</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/terms" id="footerTerms">利用規約</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/tokushoho" id="footerCommerce">特定商取引法に基づく表示</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/delete-user" id="footerWithdrawal">退会規定</a>
+        </div>
+    </div>
+</footer>
+    
+    <!-- JavaScript -->
+    <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/footer.js"></script>
+    
+</body>
+</html>
