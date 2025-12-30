@@ -133,29 +133,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: var(--space-md);
 }
 
-h1 {
-    font-size: var(--font-size-5xl);
-}
-
-h2 {
-    font-size: var(--font-size-4xl);
-}
-
-h3 {
-    font-size: var(--font-size-3xl);
-}
-
-h4 {
-    font-size: var(--font-size-2xl);
-}
-
-h5 {
-    font-size: var(--font-size-xl);
-}
-
-h6 {
-    font-size: var(--font-size-lg);
-}
+h1 { font-size: var(--font-size-5xl); }
+h2 { font-size: var(--font-size-4xl); }
+h3 { font-size: var(--font-size-3xl); }
+h4 { font-size: var(--font-size-2xl); }
+h5 { font-size: var(--font-size-xl); }
+h6 { font-size: var(--font-size-lg); }
 
 /* Paragraphs */
 p {
@@ -217,68 +200,43 @@ button {
     padding: 0 var(--space-lg);
 }
 
-.container-sm {
-    max-width: var(--container-sm);
+.container-sm { max-width: var(--container-sm); }
+.container-md { max-width: var(--container-md); }
+.container-lg { max-width: var(--container-lg); }
+.container-2xl { max-width: var(--container-2xl); }
+
+/* Content Width Containers (汎用的なコンテンツ幅) */
+.content-narrow {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.container-md {
-    max-width: var(--container-md);
+.content-medium {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.container-lg {
-    max-width: var(--container-lg);
-}
-
-.container-2xl {
-    max-width: var(--container-2xl);
+.content-wide {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 /* Text Alignment */
-.text-left {
-    text-align: left;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-right {
-    text-align: right;
-}
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
 
 /* Text Colors */
-.text-primary {
-    color: var(--color-text-primary);
-}
-
-.text-secondary {
-    color: var(--color-text-secondary);
-}
-
-.text-light {
-    color: var(--color-text-light);
-}
-
-.text-white {
-    color: var(--color-white);
-}
+.text-primary { color: var(--color-text-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.text-light { color: var(--color-text-light); }
+.text-white { color: var(--color-white); }
 
 /* Background Colors */
-.bg-white {
-    background-color: var(--color-white);
-}
-
-.bg-gray {
-    background-color: var(--color-background);
-}
-
-.bg-dark {
-    background-color: var(--color-dark-gray);
-}
-
-.bg-gradient {
-    background: var(--color-primary-gradient);
-}
+.bg-white { background-color: var(--color-white); }
+.bg-gray { background-color: var(--color-background); }
+.bg-dark { background-color: var(--color-dark-gray); }
+.bg-gradient { background: var(--color-primary-gradient); }
 
 /* Spacing Utilities */
 .mt-sm { margin-top: var(--space-sm); }
@@ -354,15 +312,8 @@ button {
     color: var(--color-primary-start);
 }
 
-.btn-lg {
-    padding: 16px 32px;
-    font-size: var(--font-size-lg);
-}
-
-.btn-sm {
-    padding: 8px 16px;
-    font-size: var(--font-size-sm);
-}
+.btn-lg { padding: 16px 32px; font-size: var(--font-size-lg); }
+.btn-sm { padding: 8px 16px; font-size: var(--font-size-sm); }
 
 /* Card */
 .card {
@@ -378,26 +329,13 @@ button {
 }
 
 /* Section */
-.section {
-    padding: var(--space-4xl) 0;
-}
-
-.section-sm {
-    padding: var(--space-3xl) 0;
-}
-
-.section-lg {
-    padding: 6rem 0;
-}
+.section { padding: var(--space-4xl) 0; }
+.section-sm { padding: var(--space-3xl) 0; }
+.section-lg { padding: 6rem 0; }
 
 /* Hide/Show utilities */
-.hidden {
-    display: none !important;
-}
-
-.visible {
-    display: block !important;
-}
+.hidden { display: none !important; }
+.visible { display: block !important; }
 
 /* Screen reader only */
 .sr-only {
@@ -413,6 +351,384 @@ button {
 }
 
 /* ===================================
+   Typography Components
+   =================================== */
+
+/* Page Title (ページタイトル - 全ページ共通) */
+.page-title {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    text-align: center;
+    margin-bottom: var(--space-sm);
+}
+
+/* Page Subtitle (ページサブタイトル) */
+.page-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-light);
+    text-align: center;
+    margin-bottom: var(--space-3xl);
+}
+
+/* Page Date (制定日、更新日など) */
+.page-date {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    text-align: center;
+    margin-bottom: var(--space-3xl);
+}
+
+.page-date-right {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    text-align: right;
+    margin-bottom: var(--space-2xl);
+}
+
+/* Section Heading (セクション見出し) */
+.section-heading {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-md);
+    border-bottom: 2px solid var(--color-border);
+    color: var(--color-text-primary);
+}
+
+.section-subheading {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-md);
+    margin-top: var(--space-xl);
+    color: var(--color-text-primary);
+}
+
+/* ===================================
+   Layout Components
+   =================================== */
+
+/* Grid Layouts */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-xl);
+}
+
+/* Article/Content Section */
+.article-section {
+    margin-bottom: var(--space-3xl);
+    scroll-margin-top: 120px; /* ヘッダーの高さ分 */
+}
+
+/* Content List (コンテンツ内のリスト) */
+.content-list {
+    margin-left: var(--space-xl);
+    margin-bottom: var(--space-lg);
+    padding-left: var(--space-md);
+}
+
+.content-list li {
+    margin-bottom: var(--space-sm);
+    line-height: var(--line-height-relaxed);
+}
+
+/* ===================================
+   Information Boxes (情報ボックス - 汎用)
+   =================================== */
+
+/* Standard Info Box */
+.info-box {
+    background-color: var(--color-background);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-xl);
+}
+
+.info-box p {
+    margin-bottom: 0;
+    color: var(--color-text-primary);
+}
+
+.info-box-title {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-sm);
+    font-size: var(--font-size-base);
+}
+
+/* Emphasis Box (重要な情報の強調) */
+.emphasis-box {
+    border-left: 4px solid var(--color-primary-start);
+    background-color: rgba(193, 0, 51, 0.05);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    margin: var(--space-xl) 0;
+}
+
+.emphasis-box p {
+    margin-bottom: 0;
+    color: var(--color-text-primary);
+}
+
+/* Warning Box (注意喚起) */
+.warning-box {
+    background-color: #fff3cd;
+    border-left: 4px solid var(--color-accent-orange);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    margin: var(--space-xl) 0;
+}
+
+.warning-box p {
+    color: var(--color-text-primary);
+    margin-bottom: 0;
+}
+
+.warning-title {
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-sm);
+    font-size: var(--font-size-base);
+}
+
+/* Note Text (小さい注記) */
+.note-text {
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-md);
+}
+
+/* Contact Box (連絡先情報) */
+.contact-box {
+    background-color: var(--color-background);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    margin-top: var(--space-2xl);
+}
+
+.contact-box h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-md);
+    color: var(--color-text-primary);
+}
+
+.contact-box p {
+    margin-bottom: var(--space-sm);
+    line-height: var(--line-height-relaxed);
+}
+
+.contact-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Link Box (リンク表示ボックス) */
+.link-box {
+    display: inline-block;
+    background-color: var(--color-background);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    margin-top: var(--space-sm);
+    word-break: break-all;
+}
+
+.link-box a {
+    color: var(--color-accent-blue);
+    font-weight: var(--font-weight-medium);
+}
+
+/* ===================================
+   Step/Process Components (ステップ表示 - 手順説明用)
+   =================================== */
+
+.step-card {
+    background-color: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    margin-bottom: var(--space-xl);
+    box-shadow: var(--shadow-md);
+    border-left: 4px solid var(--color-primary-start);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.step-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary-gradient);
+    color: var(--color-white);
+    border-radius: var(--radius-full);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-md);
+}
+
+.step-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-md);
+}
+
+.step-description {
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: 0;
+}
+
+/* ===================================
+   Table Components (テーブル - 汎用)
+   =================================== */
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-bottom: var(--space-2xl);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--color-border);
+}
+
+.data-table thead {
+    background-color: var(--color-background);
+}
+
+.data-table th,
+.data-table td {
+    padding: var(--space-md);
+    border: 1px solid var(--color-border);
+    text-align: left;
+    vertical-align: top;
+}
+
+.data-table th {
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: rgba(243, 244, 246, 0.5);
+}
+
+/* Table Cell Variants */
+.table-label {
+    font-weight: var(--font-weight-medium);
+    white-space: nowrap;
+    min-width: 120px;
+}
+
+.table-emphasis {
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary-start);
+}
+
+.table-note {
+    color: var(--color-text-light);
+    font-size: var(--font-size-sm);
+}
+
+/* ===================================
+   Table of Contents (目次)
+   =================================== */
+
+.toc-card {
+    background-color: var(--color-background);
+}
+
+.toc-title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-lg);
+    color: var(--color-text-primary);
+}
+
+.toc-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc-list li {
+    margin-bottom: var(--space-sm);
+}
+
+.toc-list a {
+    color: var(--color-text-primary);
+    transition: color var(--transition-base);
+}
+
+.toc-list a:hover {
+    color: var(--color-primary-start);
+}
+
+/* ===================================
+   Definition List (用語定義)
+   =================================== */
+
+.definition-list {
+    margin-bottom: var(--space-lg);
+}
+
+.definition-term {
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.definition-description {
+    margin-left: var(--space-lg);
+    margin-bottom: var(--space-md);
+    color: var(--color-text-secondary);
+}
+
+/* ===================================
+   Revision/History (改訂履歴)
+   =================================== */
+
+.revision-section {
+    margin-top: var(--space-4xl);
+    padding-top: var(--space-2xl);
+    border-top: 1px solid var(--color-border);
+    color: var(--color-text-light);
+}
+
+.revision-title {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-md);
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-semibold);
+}
+
+.revision-section p {
+    margin-bottom: var(--space-sm);
+    font-size: var(--font-size-sm);
+}
+
+/* ===================================
    Responsive Design
    =================================== */
 
@@ -422,17 +738,9 @@ button {
         padding-top: 60px; /* モバイルヘッダーの高さ */
     }
 
-    h1 {
-        font-size: var(--font-size-3xl);
-    }
-
-    h2 {
-        font-size: var(--font-size-2xl);
-    }
-
-    h3 {
-        font-size: var(--font-size-xl);
-    }
+    h1 { font-size: var(--font-size-3xl); }
+    h2 { font-size: var(--font-size-2xl); }
+    h3 { font-size: var(--font-size-xl); }
 
     .section {
         padding: var(--space-3xl) 0;
@@ -441,15 +749,87 @@ button {
     .container {
         padding: 0 var(--space-md);
     }
-}
 
-@media (max-width: 480px) {
-    h1 {
+    /* Page specific responsive styles */
+    .page-title {
         font-size: var(--font-size-2xl);
     }
 
-    h2 {
+    .section-heading {
         font-size: var(--font-size-xl);
+    }
+
+    .section-subheading {
+        font-size: var(--font-size-lg);
+    }
+
+    /* Grid responsive */
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .toc-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Step card responsive */
+    .step-card {
+        padding: var(--space-lg);
+    }
+
+    .step-number {
+        width: 36px;
+        height: 36px;
+        font-size: var(--font-size-base);
+    }
+
+    .step-title {
+        font-size: var(--font-size-lg);
+    }
+
+    /* Table responsive */
+    .data-table th,
+    .data-table td {
+        padding: var(--space-sm);
+        font-size: var(--font-size-sm);
+    }
+
+    .table-label {
+        min-width: auto;
+        white-space: normal;
+    }
+
+    /* Content list responsive */
+    .content-list {
+        margin-left: var(--space-md);
+    }
+
+    .definition-description {
+        margin-left: var(--space-md);
+    }
+
+    /* Box responsive */
+    .contact-box,
+    .info-box,
+    .emphasis-box,
+    .warning-box {
+        padding: var(--space-lg);
+    }
+
+    .article-section {
+        scroll-margin-top: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: var(--font-size-2xl); }
+    h2 { font-size: var(--font-size-xl); }
+
+    .data-table {
+        font-size: var(--font-size-xs);
     }
 }
 
@@ -482,5 +862,27 @@ button {
         --color-primary-end: #8B0024;
         --color-text-primary: #000000;
         --color-text-secondary: #000000;
+    }
+}
+
+/* ===================================
+   Print Styles
+   =================================== */
+
+@media print {
+    .article-section {
+        page-break-inside: avoid;
+    }
+
+    .section-heading {
+        page-break-after: avoid;
+    }
+
+    .toc-card {
+        page-break-after: always;
+    }
+
+    .step-card {
+        page-break-inside: avoid;
     }
 }
