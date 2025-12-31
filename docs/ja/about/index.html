@@ -383,37 +383,100 @@
     </section>
 
     <!-- お問い合わせ -->
-    <section id="contact" class="section bg-white">
-        <div class="container content-narrow">
-            <h2 class="section-heading text-center mb-xl" style="border:none;">お問い合わせ</h2>
-            <div class="card" style="background-color: var(--color-background);">
-                <p class="mb-lg text-center">
-                    Leapのソリューションに関するご質問や、海外展開のご相談は、以下のフォームよりお気軽にお問い合わせください。
-                </p>
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name" class="form-label">お名前（必須）</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="company" class="form-label">貴社名（必須）</label>
-                        <input type="text" id="company" name="company" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="form-label">メールアドレス（必須）</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message" class="form-label">お問い合わせ内容（必須）</label>
-                        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary w-full" style="max-width: 300px;">送信する</button>
-                    </div>
-                </form>
-            </div>
+<section id="contact" class="section bg-white">
+    <div class="container content-narrow">
+        <h2 class="section-heading text-center mb-xl" style="border:none;">お問い合わせ</h2>
+        <div class="card" style="background-color: var(--color-background);">
+            <p class="mb-lg text-center">
+                Leapのソリューションに関するご質問や、海外展開のご相談は、以下のフォームよりお気軽にお問い合わせください。
+            </p>
+            
+            <!-- id="my-form" を追加しました -->
+            <form id="my-form" action="https://formspree.io/f/meeqyeev" method="POST">
+                
+                <input type="hidden" name="_subject" value="Leap Webサイトからのお問い合わせ">
+
+                <div class="form-group">
+                    <label for="name" class="form-label">お名前（必須）</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="company" class="form-label">貴社名（必須）</label>
+                    <input type="text" id="company" name="company" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">メールアドレス（必須）</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">お問い合わせ内容（必須）</label>
+                    <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                </div>
+                <div class="text-center">
+                    <!-- id="my-form-button" を追加しました -->
+                    <button id="my-form-button" type="submit" class="btn btn-primary w-full" style="max-width: 300px;">送信する</button>
+                    
+                    <!-- 送信後の状態を表示するメッセージエリア -->
+                    <p id="my-form-status" class="mt-md" style="display:none;"></p>
+                </div>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- 2,3を解決するためのスクリプト -->
+<script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault(); // ページ遷移をストップ
+      var status = document.getElementById("my-form-status");
+      var button = document.getElementById("my-form-button");
+      var data = new FormData(event.target);
+
+      button.innerText = "送信中..."; // ボタンのテキストを変更
+      button.disabled = true; // 二重送信防止
+
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          // 【成功時】
+          status.innerText = "お問い合わせありがとうございました。送信が完了しました。";
+          status.style.display = "block";
+          status.style.color = "#28a745"; // 成功の色（緑）
+          form.reset(); // ★ここでフォームの中身を空にします
+          button.innerText = "送信完了";
+        } else {
+          // 【エラー時】
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerText = data["errors"].map(error => error["message"]).join(", ");
+            } else {
+              status.innerText = "送信に失敗しました。もう一度お試しください。";
+            }
+          });
+          status.style.display = "block";
+          status.style.color = "#dc3545"; // エラーの色（赤）
+          button.disabled = false;
+          button.innerText = "送信する";
+        }
+      }).catch(error => {
+        // 【通信エラー時】
+        status.innerText = "エラーが発生しました。インターネット接続を確認してください。";
+        status.style.display = "block";
+        status.style.color = "#dc3545";
+        button.disabled = false;
+        button.innerText = "送信する";
+      });
+    }
+    
+    form.addEventListener("submit", handleSubmit)
+</script>
 </main>
     </main>
     
