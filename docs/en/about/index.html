@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Leap&#39;s mission, culture, history, and company profile.">
+    <title>Company Profile | Leap</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    
+    
+    <!-- Fonts (Optional: Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Header -->
+    <!-- ヘッダー -->
+<header class="header-container" id="header">
+    <!-- 1行目：小さい行 -->
+    <div class="header-top" id="headerTop">
+        <div class="header-top-content">
+            <div class="header-top-left">
+                <div class="language-selector">
+                    <div class="language-current" id="languageCurrent">
+                        <span>🌐</span>
+                        <span id="currentLang">日本語</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <a href="#" class="language-option" data-lang="ja" onclick="changeLanguage('ja'); return false;">日本語</a>
+                        <a href="#" class="language-option" data-lang="en" onclick="changeLanguage('en'); return false;">English</a>
+                        <a href="#" class="language-option" data-lang="zh-hans" onclick="changeLanguage('zh-hans'); return false;">简体中文</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-top-right">
+                <a href="https://app.leap.site" class="header-top-link" id="loginLink">ログイン</a>
+                <a href="https://www.leap.site/about" class="header-top-link" id="aboutLink">会社概要</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2行目：メインナビゲーション -->
+    <div class="header-main">
+        <div class="header-main-content">
+            <div class="nav-left">
+                <a href="https://www.leap.site" class="logo">Leap</a>
+                <nav class="nav-links">
+                    <div class="nav-item">
+                        <span class="nav-link" id="servicesLabel">サービス ▼</span>
+                        <div class="dropdown-menu">
+                            <a href="https://www.leap.site/services/multilingual-website" class="dropdown-item" id="serviceWebsite">多言語HP作成</a>
+                            <a href="https://www.leap.site/services/cross-border-ec" class="dropdown-item" id="serviceEc">越境EC開設運用</a>
+                            <a href="https://www.leap.site/services/multilingual-content" class="dropdown-item" id="serviceContent">多言語コンテンツ制作</a>
+                            <a href="https://www.leap.site/services/global-sns" class="dropdown-item" id="serviceSns">海外向けSNS運用</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link" id="pricingLink">価格</a>
+                    <div class="nav-item">
+                        <span class="nav-link" id="resourcesLabel">資料 ▼</span>
+                        <div class="dropdown-menu">
+                            <a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
+                            <a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">ブログ</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <a href="https://www.leap.site/contact" class="btn btn-demo" id="demoBtn">デモ</a>
+                <a href="#" class="btn btn-start" id="startBtn">無料スタート</a>
+            </div>
+
+            <!-- ハンバーガーメニュー -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- モバイルメニュー -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+        <div class="mobile-nav-item">
+            <a href="https://www.leap.site" class="mobile-nav-link" id="mobileHome">ホーム</a>
+        </div>
+        
+        <div class="mobile-nav-item">
+            <div class="mobile-dropdown-toggle" id="mobileServicesLabel" onclick="toggleMobileDropdown(this)">
+                <span>サービス</span>
+                <span>▼</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <a href="https://www.leap.site/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">多言語HP作成</a>
+                <a href="https://www.leap.site/services/cross-border-ec" class="mobile-dropdown-item" id="mobileServiceEc">越境EC開設運用</a>
+                <a href="https://www.leap.site/services/multilingual-content" class="mobile-dropdown-item" id="mobileServiceContent">多言語コンテンツ制作</a>
+                <a href="https://www.leap.site/services/global-sns" class="mobile-dropdown-item" id="mobileServiceSns">海外向けSNS運用</a>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link" id="mobilePricing">価格</a>
+        </div>
+
+        <div class="mobile-nav-item">
+            <div class="mobile-dropdown-toggle" id="mobileResourcesLabel" onclick="toggleMobileDropdown(this)">
+                <span>資料</span>
+                <span>▼</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
+                <a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">ブログ</a>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a href="https://www.leap.site/about" class="mobile-nav-link" id="mobileAbout">About</a>
+        </div>
+
+        <div class="mobile-cta-buttons">
+            <a href="https://www.leap.site/contact" class="btn btn-demo-mobile" id="mobileDemoBtn">デモ</a>
+            <a href="#" class="btn btn-start-mobile" id="mobileStartBtn">無料で始める</a>
+        </div>
+    </div>
+</div>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        
+<main>
+    <!-- Hero Section -->
+    <section class="section bg-beige">
+        <div class="container">
+            <div class="grid-2 items-center">
+                <div class="order-2-mobile">
+                    <h1 class="page-title text-left mb-md">Company Profile</h1>
+                    <p class="mt-md text-lg">
+                        At Leap, we develop our organizational culture and the company itself from scratch, just like our products. We strive to create a society where every business can leap onto the global stage.
+                    </p>
+                </div>
+                <div class="order-1-mobile">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Team members discussing in a modern office" class="img-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="grid-2 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Graphic symbolizing growth and leaping forward" class="img-cover">
+                </div>
+                <div>
+                    <h2 class="section-heading" style="border:none; padding:0;">Mission</h2>
+                    <h3 class="section-subheading mt-md">Empowering every business to leap globally</h3>
+                    <p>
+                        Leap is driven by the mission to "empower every business to leap globally." Our purpose is not to pursue superficial growth (Growth) through numbers alone, but to support a true "Leap"—delivering essential value across borders and into new markets.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Culture -->
+    <section class="section bg-gray">
+        <div class="container">
+            <div class="text-center content-medium mb-3xl">
+                <h2 class="section-heading" style="border:none; display:inline-block;">Our Culture</h2>
+                <p class="mt-lg">
+                    We uphold three core values to deliver the highest results to our clients at the fastest speed.
+                </p>
+            </div>
+            
+            <div class="grid-2 mb-3xl items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Members working with focus and teamwork" class="img-cover">
+                </div>
+                <div>
+                    <div class="mb-xl">
+                        <h3 class="text-primary font-bold text-xl mb-sm">Responsibility</h3>
+                        <p>Every individual takes full ownership of the quality of output provided to our clients, seeing every professional task through to completion.</p>
+                    </div>
+                    <div class="mb-xl">
+                        <h3 class="text-primary font-bold text-xl mb-sm">Focus</h3>
+                        <p>To elevate our output, we sharpen our resources and concentrate only on what matters most.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-primary font-bold text-xl mb-sm">Speed</h3>
+                        <p>Through intense focus, we act faster than anyone else, delivering results at a pace that exceeds market changes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History -->
+    <section class="section bg-white">
+        <div class="container">
+            <h2 class="section-heading text-center mb-3xl" style="border:none;">Our History</h2>
+            <div class="grid-2 items-center">
+                <div>
+                    <p>
+                        Leap was founded in July 2024 by cousins Hara and Tsuruoka, who both sought to contribute to society through Digital Transformation (DX) since their time at the University of Tokyo.
+                    </p>
+                    <p>
+                        Drawing from his experience in macroeconomic policy at the Cabinet Office, Hara became convinced that the global expansion of Japanese companies is the key to revitalizing the national economy. Meanwhile, at Hitachi, Tsuruoka was engaged in Generative AI research and development, witnessing how AI dramatically lowers international barriers like language and business customs.
+                    </p>
+                    <div class="emphasis-box">
+                        <p class="font-bold mb-sm">"Within the next decade, global operations will become the standard for companies worldwide."</p>
+                        <p>With this conviction, the two established Leap in Yokohama to support business challenges through technology and strategy.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" alt="Founders Hara and Tsuruoka" class="img-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leap by the Numbers -->
+    <section class="section bg-gray">
+        <div class="container">
+            <h2 class="section-heading text-center mb-3xl" style="border:none;">Leap by the Numbers</h2>
+            <div class="grid-3 text-center">
+                <div class="card">
+                    <div class="solution-icon mx-auto">🏢</div>
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">500+ Client Companies</span>
+                    <p class="mt-sm text-sm">We support the global expansion of diverse companies across all industries.</p>
+                </div>
+                <div class="card">
+                    <div class="solution-icon mx-auto">🌏</div>
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">15+ Countries Reached</span>
+                    <p class="mt-sm text-sm">Proven track record of expansion into regions from Asia to Europe and the Americas.</p>
+                </div>
+                <div class="card">
+                    <div class="solution-icon mx-auto">🧩</div>
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">5 Core Solutions</span>
+                    <p class="mt-sm text-sm">Comprehensive support from strategic preparation to full-scale operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Voices -->
+    <section class="section bg-beige">
+        <div class="container">
+            <h2 class="section-heading text-center mb-3xl" style="border:none;">Client Testimonials</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <p class="quote-text">
+                        "Leap's commitment to 'Responsibility, Focus, and Speed' made them an incredibly reliable partner in our global expansion, where timing is everything. The complex process of going international became surprisingly smooth."
+                    </p>
+                    <div class="flex items-center mt-md">
+                        <div>
+                            <p class="font-bold mb-0">(Head of Overseas Business, Company A, Manufacturing)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="quote-text">
+                        "Thanks to their multilingual content creation using Generative AI, we were able to reach local markets several times faster than before. We have truly experienced a 'Leap' in our business."
+                    </p>
+                    <div class="flex items-center mt-md">
+                        <div>
+                            <p class="font-bold mb-0">(CEO, Company B, Retail)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image -->
+            <div class="mt-xl">
+                 <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1200&q=80" alt="Clients who succeeded in global expansion" class="img-cover" style="height: 300px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Expansion Guidebook -->
+    <section class="section bg-white">
+        <div class="container content-medium">
+            <div class="card grid-2 items-center" style="background-color: var(--color-background);">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80" alt="Global expansion guidebook resources" class="img-cover">
+                </div>
+                <div>
+                    <h3 class="section-subheading mt-0">Global Expansion Guidebook</h3>
+                    <p>We provide white papers covering strategy planning and the latest market trends to ensure your global success.</p>
+                    <a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-md">Download Resources (Free)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Location -->
+    <section class="section bg-gray">
+        <div class="container">
+            <h2 class="section-heading text-center mb-3xl" style="border:none;">Our Office</h2>
+            <div class="grid-2 items-center">
+                <div>
+                     <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Office building in Yokohama Minato Mirai area" class="img-cover" style="height: 300px;">
+                </div>
+                <div class="card">
+                    <h3 class="font-bold text-xl mb-md">Yokohama HQ (Japan)</h3>
+                    <p class="text-sm text-light mb-md">Established 2024</p>
+                    <p class="mb-lg">
+                        Quadrifoglio 8F, 5-14 Kinkōchō,<br>
+                        Kanagawa-ku, Yokohama, Kanagawa 221-0056, Japan
+                    </p>
+                    <hr class="mb-md" style="border-top: 1px solid var(--color-border);">
+                    <p class="font-bold mb-xs">Contact:</p>
+                    <p class="mb-xs">Email: <a href="mailto:corporate@leap.site">corporate@leap.site</a></p>
+                    <p>Phone: +81-70-4032-3935</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Solutions -->
+    <section class="section bg-white">
+        <div class="container">
+            <h2 class="section-heading text-center mb-3xl" style="border:none;">Leap's Global Solutions</h2>
+            <div class="grid-3">
+                <div class="info-box">
+                    <h3 class="info-box-title">Multilingual Web Design</h3>
+                    <p>We build high-quality websites optimized for local culture and SEO.</p>
+                    <a href="https://www.leap.site/services/multilingual-website" target="_blank" rel="noopener noreferrer" class="link-arrow">Learn More ></a>
+                </div>
+                <div class="info-box">
+                    <h3 class="info-box-title">Cross-Border E-commerce</h3>
+                    <p>Support from launching on major marketplaces to maximizing sales operations.</p>
+                    <a href="https://www.leap.site/services/cross-border-ec" target="_blank" rel="noopener noreferrer" class="link-arrow">Learn More ></a>
+                </div>
+                <div class="info-box">
+                    <h3 class="info-box-title">Multilingual Content</h3>
+                    <p>Accurately and attractively conveying your brand's appeal across languages.</p>
+                    <a href="https://www.leap.site/services/multilingual-content" target="_blank" rel="noopener noreferrer" class="link-arrow">Learn More ></a>
+                </div>
+                <div class="info-box">
+                    <h3 class="info-box-title">Global SNS Management</h3>
+                    <p>Capturing local trends and algorithms to drive brand awareness.</p>
+                    <a href="https://www.leap.site/services/global-sns" target="_blank" rel="noopener noreferrer" class="link-arrow">Learn More ></a>
+                </div>
+                <div class="info-box">
+                    <h3 class="info-box-title">Distributor Matching</h3>
+                    <p>Selecting optimal partners through our unique network to expand local sales channels.</p>
+                    <a href="https://www.leap.site/services/btob-matching" target="_blank" rel="noopener noreferrer" class="link-arrow">Learn More ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Info -->
+    <section class="section bg-gray">
+        <div class="container">
+            <h2 class="section-heading text-center mb-xl" style="border:none;">Related Information</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="font-bold text-xl mb-sm">Blog</h3>
+                    <p>Stay updated with the latest market trends and interviews with successful global companies.</p>
+                    <a href="https://blog.leap.site/" target="_blank" rel="noopener noreferrer" class="btn btn-outline mt-sm">Read Blog</a>
+                </div>
+                <div class="card">
+                    <h3 class="font-bold text-xl mb-sm">Resources</h3>
+                    <p>Checklists and industry reports ready for immediate use in your global business operations.</p>
+                    <a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" class="btn btn-outline mt-sm">View Resources</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section bg-white">
+        <div class="container content-narrow">
+            <h2 class="section-heading text-center mb-xl" style="border:none;">Contact Us</h2>
+            <div class="card" style="background-color: var(--color-background);">
+                <p class="mb-lg text-center">
+                    If you have any questions regarding Leap's solutions or wish to consult about global expansion, please feel free to reach out via the form below.
+                </p>
+                
+                <form id="my-form" action="https://formspree.io/f/meeqyeev" method="POST">
+                    
+                    <input type="hidden" name="_subject" value="Inquiry from Leap Website (English)">
+
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name (Required)</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company" class="form-label">Company Name (Required)</label>
+                        <input type="text" id="company" name="company" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address (Required)</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message (Required)</label>
+                        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button id="my-form-button" type="submit" class="btn btn-primary w-full" style="max-width: 300px;">Submit</button>
+                        <p id="my-form-status" class="mt-md" style="display:none;"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Handling Script -->
+    <script>
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var button = document.getElementById("my-form-button");
+          var data = new FormData(event.target);
+
+          button.innerText = "Sending...";
+          button.disabled = true;
+
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              status.innerText = "Thank you! Your message has been sent successfully.";
+              status.style.display = "block";
+              status.style.color = "#28a745";
+              form.reset();
+              button.innerText = "Sent";
+            } else {
+              response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerText = data["errors"].map(error => error["message"]).join(", ");
+                } else {
+                  status.innerText = "Oops! There was a problem submitting your form.";
+                }
+              });
+              status.style.display = "block";
+              status.style.color = "#dc3545";
+              button.disabled = false;
+              button.innerText = "Submit";
+            }
+          }).catch(error => {
+            status.innerText = "Oops! There was a problem connecting to the server.";
+            status.style.display = "block";
+            status.style.color = "#dc3545";
+            button.disabled = false;
+            button.innerText = "Submit";
+          });
+        }
+        
+        form.addEventListener("submit", handleSubmit)
+    </script>
+</main>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+    <div class="footer-container">
+        <!-- Desktop View -->
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3 id="footerFeaturesTitle">人気の機能</h3>
+                <ul>
+                    <li><a href="https://www.leap.site/services/multilingual-website" id="footerWebsite">多言語HP作成</a></li>
+                    <li><a href="https://www.leap.site/services/cross-border-ec" id="footerEc">越境EC開設・運用</a></li>
+                    <li><a href="https://www.leap.site/services/multilingual-content" id="footerContent">多言語コンテンツ制作</a></li>
+                    <li><a href="https://www.leap.site/services/global-sns" id="footerSns">海外向けSNS運用</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerToolsTitle">無料ツール</h3>
+                <ul>
+                    <li><a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" id="footerBlog">ブログ</a></li>
+                    <li><a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerCompanyTitle">会社</h3>
+                <ul>
+                    <li><a href="https://www.leap.site/about" id="footerAbout">会社概要</a></li>
+                    <li><a href="https://www.leap.site/about/#contact" id="footerContact">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mobile View -->
+        <div class="footer-mobile-section">
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileFeaturesTitle">人気の機能</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://www.leap.site/services/multilingual-website" id="footerMobileWebsite">多言語HP作成</a></li>
+                        <li><a href="https://www.leap.site/services/cross-border-ec" id="footerMobileEc">越境EC開設・運用</a></li>
+                        <li><a href="https://www.leap.site/services/multilingual-content" id="footerMobileContent">多言語コンテンツ制作</a></li>
+                        <li><a href="https://www.leap.site/services/global-sns" id="footerMobileSns">海外向けSNS運用</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileToolsTitle">無料ツール</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">ブログ</a></li>
+                        <li><a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileCompanyTitle">会社</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://www.leap.site/about" id="footerMobileAbout">会社概要</a></li>
+                        <li><a href="https://www.leap.site/about/#contact" id="footerMobileContact">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/company/leap-site-inc" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/leap20240729/" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                </svg>
+            </a>
+            <a href="https://x.com/leap_0729" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="footer-brand">
+            <a href="https://www.leap.site" style="text-decoration: none; color: inherit;">
+                <div class="footer-logo">Leap</div>
+            </a>
+            <div class="footer-copyright" id="footerCopyright">Copyright © 2025 Leap, Inc.</div>
+        </div>
+
+        <div class="footer-legal">
+            <a href="https://www.leap.site/privacypolicy" id="footerPrivacy">プライバシーポリシー</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/terms" id="footerTerms">利用規約</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/tokushoho" id="footerCommerce">特定商取引法に基づく表示</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/delete-user" id="footerWithdrawal">退会規定</a>
+        </div>
+    </div>
+</footer>
+    
+    <!-- JavaScript -->
+    <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/footer.js"></script>
+    
+</body>
+</html>
