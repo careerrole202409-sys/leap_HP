@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="海外展開に役立つ情報を無料でダウンロード。越境EC、海外マーケティング、海外営業のノウハウが詰まったLeapの資料集です。">
+    <title>ノウハウ無料ダウンロード資料 | Leap</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    
+    
+    <!-- Fonts (Optional: Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Header -->
+    <!-- ヘッダー -->
+<header class="header-container" id="header">
+    <!-- 1行目：小さい行 -->
+    <div class="header-top" id="headerTop">
+        <div class="header-top-content">
+            <div class="header-top-left">
+                <div class="language-selector">
+                    <div class="language-current" id="languageCurrent">
+                        <span>🌐</span>
+                        <span id="currentLang">日本語</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <a href="#" class="language-option" data-lang="ja" onclick="changeLanguage('ja'); return false;">日本語</a>
+                        <a href="#" class="language-option" data-lang="en" onclick="changeLanguage('en'); return false;">English</a>
+                        <a href="#" class="language-option" data-lang="zh-hans" onclick="changeLanguage('zh-hans'); return false;">简体中文</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-top-right">
+                <a href="https://app.leap.site" class="header-top-link" id="loginLink">ログイン</a>
+                <a href="https://www.leap.site/about" class="header-top-link" id="aboutLink">会社概要</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2行目：メインナビゲーション -->
+    <div class="header-main">
+        <div class="header-main-content">
+            <div class="nav-left">
+                <a href="https://www.leap.site" class="logo">Leap</a>
+                <nav class="nav-links">
+                    <div class="nav-item">
+                        <span class="nav-link" id="servicesLabel">サービス ▼</span>
+                        <div class="dropdown-menu">
+                            <a href="https://www.leap.site/services/multilingual-website" class="dropdown-item" id="serviceWebsite">多言語HP作成</a>
+                            <a href="https://www.leap.site/services/cross-border-ec" class="dropdown-item" id="serviceEc">越境EC開設運用</a>
+                            <a href="https://www.leap.site/services/multilingual-content" class="dropdown-item" id="serviceContent">多言語コンテンツ制作</a>
+                            <a href="https://www.leap.site/services/global-sns" class="dropdown-item" id="serviceSns">海外向けSNS運用</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link" id="pricingLink">価格</a>
+                    <div class="nav-item">
+                        <span class="nav-link" id="resourcesLabel">資料 ▼</span>
+                        <div class="dropdown-menu">
+                            <a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
+                            <a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">ブログ</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <a href="https://www.leap.site/contact" class="btn btn-demo" id="demoBtn">デモ</a>
+                <a href="#" class="btn btn-start" id="startBtn">無料スタート</a>
+            </div>
+
+            <!-- ハンバーガーメニュー -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- モバイルメニュー -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+        <div class="mobile-nav-item">
+            <a href="https://www.leap.site" class="mobile-nav-link" id="mobileHome">ホーム</a>
+        </div>
+        
+        <div class="mobile-nav-item">
+            <div class="mobile-dropdown-toggle" id="mobileServicesLabel" onclick="toggleMobileDropdown(this)">
+                <span>サービス</span>
+                <span>▼</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <a href="https://www.leap.site/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">多言語HP作成</a>
+                <a href="https://www.leap.site/services/cross-border-ec" class="mobile-dropdown-item" id="mobileServiceEc">越境EC開設運用</a>
+                <a href="https://www.leap.site/services/multilingual-content" class="mobile-dropdown-item" id="mobileServiceContent">多言語コンテンツ制作</a>
+                <a href="https://www.leap.site/services/global-sns" class="mobile-dropdown-item" id="mobileServiceSns">海外向けSNS運用</a>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link" id="mobilePricing">価格</a>
+        </div>
+
+        <div class="mobile-nav-item">
+            <div class="mobile-dropdown-toggle" id="mobileResourcesLabel" onclick="toggleMobileDropdown(this)">
+                <span>資料</span>
+                <span>▼</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
+                <a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">ブログ</a>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a href="https://www.leap.site/about" class="mobile-nav-link" id="mobileAbout">About</a>
+        </div>
+
+        <div class="mobile-cta-buttons">
+            <a href="https://www.leap.site/contact" class="btn btn-demo-mobile" id="mobileDemoBtn">デモ</a>
+            <a href="#" class="btn btn-start-mobile" id="mobileStartBtn">無料で始める</a>
+        </div>
+    </div>
+</div>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        
+<!-- 
+  SECTION 1: HERO AREA 
+-->
+<section class="section py-3xl" style="background: var(--color-primary-gradient); color: var(--color-white);">
+    <div class="container text-center">
+        <h1 class="text-white mb-md">Leapノウハウ無料ダウンロード資料</h1>
+        <p class="text-white mb-xl" style="font-size: var(--font-size-lg); max-width: 800px; margin-left: auto; margin-right: auto;">
+            Leapの無料のお役立ち資料や製品を活用して、<br>
+            海外展開、越境EC、海外マーケティングの成果最大化にお役立てください。
+        </p>
+        
+        <div class="flex justify-center items-center" style="gap: var(--space-lg); flex-wrap: wrap;">
+            <a href="#all-resources" class="btn btn-xl btn-white">
+                すべての資料を見る ↓
+            </a>
+            <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="btn btn-xl btn-outline-white">
+                ツールの無料お試しはこちら
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 
+  SECTION 2: POPULAR RESOURCES (TABS)
+-->
+<section class="section py-xl bg-beige">
+    <div class="container">
+        <h2 class="text-center mb-lg" style="font-size: var(--font-size-3xl);">人気の資料集</h2>
+        
+        <!-- タブナビゲーション -->
+        <div class="flex justify-center" style="border-bottom: 1px solid var(--color-border); margin-bottom: var(--space-xl);">
+            <nav style="display: flex; gap: var(--space-xl); overflow-x: auto; padding-bottom: 0;">
+                
+                <div onclick="switchTab('region')" class="tab-btn active" id="btn-region" 
+                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid var(--color-primary-start); color: var(--color-primary-start); font-weight: bold; cursor: pointer; font-size: 1rem; white-space: nowrap;">
+                    国・地域別
+                </div>
+                
+                <div onclick="switchTab('ec')" class="tab-btn" id="btn-ec" 
+                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
+                    越境EC
+                </div>
+                
+                <div onclick="switchTab('marketing')" class="tab-btn" id="btn-marketing" 
+                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
+                    海外マーケティング
+                </div>
+                
+                <div onclick="switchTab('sales')" class="tab-btn" id="btn-sales" 
+                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
+                    海外営業
+                </div>
+
+            </nav>
+        </div>
+
+        <!-- 
+          タブコンテンツエリア 
+          【修正】インラインスタイルの min-height: 500px を削除しました。
+          代わりに下部の <style> タグで全タブ共通の高さ設定を行っています。
+        -->
+
+        <!-- 1. 国・地域別 (region) -->
+        <div id="tab-content-region" class="tab-content grid-3">
+            
+            
+
+            
+
+            
+                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
+                    <p class="text-secondary">現在準備中です。</p>
+                </div>
+            
+        </div>
+
+        <!-- 2. 越境EC (ec) -->
+        <div id="tab-content-ec" class="tab-content grid-3 hidden">
+            
+            
+
+            
+
+            
+                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
+                    <p class="text-secondary">現在準備中です。</p>
+                </div>
+            
+        </div>
+
+        <!-- 3. 海外マーケティング (marketing) -->
+        <div id="tab-content-marketing" class="tab-content grid-3 hidden">
+            
+            
+
+            
+
+            
+                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
+                    <p class="text-secondary">現在準備中です。</p>
+                </div>
+            
+        </div>
+
+        <!-- 4. 海外営業 (sales) -->
+        <div id="tab-content-sales" class="tab-content grid-3 hidden">
+            
+            
+
+            
+
+            
+                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
+                    <p class="text-secondary">現在準備中です。</p>
+                </div>
+            
+        </div>
+
+    </div>
+</section>
+
+<!-- 
+  SECTION 3: ALL RESOURCES (FILTER & GRID)
+-->
+<section id="all-resources" class="section py-3xl bg-white">
+    <div class="container">
+        <h2 class="text-center mb-sm">すべての資料を見る</h2>
+        <p class="page-subtitle mb-2xl">海外売上を拡大させる無料資料集</p>
+
+        <!-- Filters -->
+        <div class="grid-3 mb-2xl">
+            <div class="form-group mb-0">
+                <label class="form-label" for="topic-select">トピック</label>
+                <select id="topic-select" class="form-control" onchange="applyFilters()">
+                    <option value="all">すべてのトピック</option>
+                    <option value="region">国・地域別</option>
+                    <option value="ec">越境EC</option>
+                    <option value="marketing">海外マーケティング</option>
+                    <option value="sales">海外営業</option>
+                </select>
+            </div>
+            <div class="form-group mb-0">
+                <label class="form-label" for="content-type-select">コンテンツ形式</label>
+                <select id="content-type-select" class="form-control" onchange="applyFilters()">
+                    <option value="all">すべての種類</option>
+                    <option value="guide">ガイドブック</option>
+                    <option value="template">テンプレート</option>
+                    <option value="report">調査レポート</option>
+                    <option value="checklist">チェックリスト</option>
+                    <option value="tool">Excelツール</option>
+                </select>
+            </div>
+            <div class="form-group mb-0">
+                <label class="form-label" for="file-format-select">ファイル形式</label>
+                <select id="file-format-select" class="form-control" onchange="applyFilters()">
+                    <option value="all">すべてのファイル形式</option>
+                    <option value="pdf">PDF</option>
+                    <option value="excel">Excel</option>
+                    <option value="ppt">PowerPoint</option>
+                </select>
+            </div>
+        </div>
+
+        <p id="result-count" class="text-right text-light mb-lg" style="font-size: var(--font-size-sm);">読み込み中...</p>
+
+        <!-- Resources Grid -->
+        <div class="grid-3" id="resources-grid">
+            
+                
+                    <div class="card p-0 resource-item" 
+                         data-topic="sales" 
+                         data-type="template" 
+                         data-format="pdf" 
+                         style="padding: 0; border: 1px solid var(--color-border); box-shadow: none;">
+                        
+                        <div style="background-color: var(--color-background); height: 160px; display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 3rem;">📧</span>
+                        </div>
+                        
+                        <div class="px-lg py-lg">
+                            <span class="mb-sm d-block" style="display:inline-block; background:var(--color-background); padding: 4px 8px; border-radius: 4px; font-size: 12px; text-transform: uppercase;">
+                                template
+                            </span>
+                            <h3 style="font-size: var(--font-size-lg);">効果的な営業メールテンプレート集</h3>
+                            <p class="text-secondary" style="font-size: var(--font-size-sm);">
+                                開封率を劇的に改善する、場面別・営業メールの件名と本文のテンプレート集です。
+                            </p>
+                            <a href="/ja/resources/mail-template/" class="btn btn-primary w-full mt-md">無料ダウンロード</a>
+                        </div>
+                    </div>
+                
+            
+        </div>
+
+    </div>
+</section>
+
+<!-- 
+  SECTION 4: CTA
+-->
+<section class="section py-3xl text-white" style="background-color: #26000a;">
+    <div class="container">
+        <div class="grid-2 items-center" style="gap: var(--space-3xl);">
+            <div style="position: relative; display: flex; align-items: center; justify-content: center;">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 120%; height: 120%; background: var(--color-primary-gradient); border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; z-index: 0; opacity: 0.8; max-width: 550px;"></div>
+                <div style="position: relative; z-index: 1; width: 100%; max-width: 500px; aspect-ratio: 4 / 3; margin: 0 auto;">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Leap business scene" class="img-cover" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-2xl);">
+                </div>
+            </div>
+            <div class="text-left">
+                <h2 class="text-white mb-lg" style="font-size: var(--font-size-3xl);">海外売上を伸ばすための<br>オールインワンツール</h2>
+                <p class="mb-lg text-white" style="font-size: var(--font-size-lg); line-height: 1.6; font-weight: var(--font-weight-medium);">お探しのリソースは見つかりましたか？次は実践です。<br>Leapは、海外ビジネスの成功に必要な機能をひとつに統合したプラットフォームです。</p>
+                <p class="mb-xl text-white" style="font-size: var(--font-size-base); line-height: 1.8; opacity: 0.9;">多言語HP作成、越境ECの開設・運用、多言語コンテンツ制作、海外向けSNS運用、そして現地の代理店マッチングまで。<br>Leapなら、複雑な海外展開のプロセスを一元管理し、効率的に海外売上を拡大させることができます。</p>
+                <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="btn btn-lg" style="background: var(--color-primary-gradient); color: white; border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 4px 14px 0 rgba(193, 0, 51, 0.4);">無料で始める</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SCRIPTS -->
+<script>
+    // 1. タブ切り替え
+    function switchTab(topic) {
+        document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+        const targetContent = document.getElementById('tab-content-' + topic);
+        if(targetContent) targetContent.classList.remove('hidden');
+
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.style.borderBottom = '3px solid transparent';
+            btn.style.color = 'var(--color-text-secondary)';
+            btn.classList.remove('active');
+        });
+        
+        const activeBtn = document.getElementById('btn-' + topic);
+        if(activeBtn) {
+            activeBtn.style.borderBottom = '3px solid var(--color-primary-start)';
+            activeBtn.style.color = 'var(--color-primary-start)';
+            activeBtn.classList.add('active');
+        }
+    }
+
+    // 2. 絞り込み
+    document.addEventListener('DOMContentLoaded', function() {
+        applyFilters();
+    });
+
+    function applyFilters() {
+        const topic = document.getElementById('topic-select').value;
+        const type = document.getElementById('content-type-select').value;
+        const format = document.getElementById('file-format-select').value;
+        
+        const items = document.querySelectorAll('#resources-grid .resource-item');
+        let visibleCount = 0;
+        let totalCount = 0;
+
+        items.forEach(item => {
+            totalCount++;
+            const itemTopic = item.getAttribute('data-topic');
+            const itemType = item.getAttribute('data-type');
+            const itemFormat = item.getAttribute('data-format');
+
+            const matchesTopic = (topic === 'all' || itemTopic === topic);
+            const matchesType = (type === 'all' || itemType === type);
+            const matchesFormat = (format === 'all' || itemFormat === format);
+
+            if (matchesTopic && matchesType && matchesFormat) {
+                item.style.display = 'block';
+                visibleCount++;
+            } else {
+                item.style.display = 'none';
+            }
+        });
+
+        const countElement = document.getElementById('result-count');
+        if (countElement) {
+            countElement.textContent = `全 ${totalCount} 資料中の ${visibleCount} 件を表示中`;
+        }
+    }
+</script>
+
+<style>
+    .hidden { display: none !important; }
+    
+    /* 
+       【修正点】
+       すべてのタブコンテンツエリアの高さを統一してジャンプを防止。
+       500pxだと大きすぎたので、300px程度に調整。
+    */
+    .tab-content {
+        min-height: 300px;
+    }
+</style>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+    <div class="footer-container">
+        <!-- Desktop View -->
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3 id="footerFeaturesTitle">人気の機能</h3>
+                <ul>
+                    <li><a href="https://www.leap.site/services/multilingual-website" id="footerWebsite">多言語HP作成</a></li>
+                    <li><a href="https://www.leap.site/services/cross-border-ec" id="footerEc">越境EC開設・運用</a></li>
+                    <li><a href="https://www.leap.site/services/multilingual-content" id="footerContent">多言語コンテンツ制作</a></li>
+                    <li><a href="https://www.leap.site/services/global-sns" id="footerSns">海外向けSNS運用</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerToolsTitle">無料ツール</h3>
+                <ul>
+                    <li><a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" id="footerBlog">ブログ</a></li>
+                    <li><a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerCompanyTitle">会社</h3>
+                <ul>
+                    <li><a href="https://www.leap.site/about" id="footerAbout">会社概要</a></li>
+                    <li><a href="https://www.leap.site/about/#contact" id="footerContact">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mobile View -->
+        <div class="footer-mobile-section">
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileFeaturesTitle">人気の機能</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://www.leap.site/services/multilingual-website" id="footerMobileWebsite">多言語HP作成</a></li>
+                        <li><a href="https://www.leap.site/services/cross-border-ec" id="footerMobileEc">越境EC開設・運用</a></li>
+                        <li><a href="https://www.leap.site/services/multilingual-content" id="footerMobileContent">多言語コンテンツ制作</a></li>
+                        <li><a href="https://www.leap.site/services/global-sns" id="footerMobileSns">海外向けSNS運用</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileToolsTitle">無料ツール</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">ブログ</a></li>
+                        <li><a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileCompanyTitle">会社</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://www.leap.site/about" id="footerMobileAbout">会社概要</a></li>
+                        <li><a href="https://www.leap.site/about/#contact" id="footerMobileContact">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/company/leap-site-inc" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/leap20240729/" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                </svg>
+            </a>
+            <a href="https://x.com/leap_0729" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="footer-brand">
+            <a href="https://www.leap.site" style="text-decoration: none; color: inherit;">
+                <div class="footer-logo">Leap</div>
+            </a>
+            <div class="footer-copyright" id="footerCopyright">Copyright © 2025 Leap, Inc.</div>
+        </div>
+
+        <div class="footer-legal">
+            <a href="https://www.leap.site/privacypolicy" id="footerPrivacy">プライバシーポリシー</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/terms" id="footerTerms">利用規約</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/tokushoho" id="footerCommerce">特定商取引法に基づく表示</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/delete-user" id="footerWithdrawal">退会規定</a>
+        </div>
+    </div>
+</footer>
+    
+    <!-- JavaScript -->
+    <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/footer.js"></script>
+    
+</body>
+</html>
