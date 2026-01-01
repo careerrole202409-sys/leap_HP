@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leap 是一个可以轻松实现多语言网站建设、本地代理商匹配以及跨境电商开设的跨境业务平台。">
+    <title>Leap - 一站式助力海外拓展</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    
+    
+    <!-- Fonts (Optional: Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Header -->
+    <!-- ヘッダー -->
+<header class="header-container" id="header">
+    <!-- 1行目：小さい行 -->
+    <div class="header-top" id="headerTop">
+        <div class="header-top-content">
+            <div class="header-top-left">
+                <div class="language-selector">
+                    <div class="language-current" id="languageCurrent">
+                        <span>🌐</span>
+                        <span id="currentLang">日本語</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <a href="#" class="language-option" data-lang="ja" onclick="changeLanguage('ja'); return false;">日本語</a>
+                        <a href="#" class="language-option" data-lang="en" onclick="changeLanguage('en'); return false;">English</a>
+                        <a href="#" class="language-option" data-lang="zh-hans" onclick="changeLanguage('zh-hans'); return false;">简体中文</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-top-right">
+                <a href="https://app.leap.site" class="header-top-link" id="loginLink">ログイン</a>
+                <a href="https://www.leap.site/about" class="header-top-link" id="aboutLink">会社概要</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2行目：メインナビゲーション -->
+    <div class="header-main">
+        <div class="header-main-content">
+            <div class="nav-left">
+                <a href="https://www.leap.site" class="logo">Leap</a>
+                <nav class="nav-links">
+                    <div class="nav-item">
+                        <span class="nav-link" id="servicesLabel">サービス ▼</span>
+                        <div class="dropdown-menu">
+                            <a href="https://www.leap.site/services/multilingual-website" class="dropdown-item" id="serviceWebsite">多言語HP作成</a>
+                            <a href="https://www.leap.site/services/cross-border-ec" class="dropdown-item" id="serviceEc">越境EC開設運用</a>
+                            <a href="https://www.leap.site/services/multilingual-content" class="dropdown-item" id="serviceContent">多言語コンテンツ制作</a>
+                            <a href="https://www.leap.site/services/global-sns" class="dropdown-item" id="serviceSns">海外向けSNS運用</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link" id="pricingLink">価格</a>
+                    <div class="nav-item">
+                        <span class="nav-link" id="resourcesLabel">資料 ▼</span>
+                        <div class="dropdown-menu">
+                            <a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
+                            <a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">ブログ</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <a href="https://www.leap.site/contact" class="btn btn-demo" id="demoBtn">デモ</a>
+                <a href="#" class="btn btn-start" id="startBtn">無料スタート</a>
+            </div>
+
+            <!-- ハンバーガーメニュー -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- モバイルメニュー -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+        <div class="mobile-nav-item">
+            <a href="https://www.leap.site" class="mobile-nav-link" id="mobileHome">ホーム</a>
+        </div>
+        
+        <div class="mobile-nav-item">
+            <div class="mobile-dropdown-toggle" id="mobileServicesLabel" onclick="toggleMobileDropdown(this)">
+                <span>サービス</span>
+                <span>▼</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <a href="https://www.leap.site/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">多言語HP作成</a>
+                <a href="https://www.leap.site/services/cross-border-ec" class="mobile-dropdown-item" id="mobileServiceEc">越境EC開設運用</a>
+                <a href="https://www.leap.site/services/multilingual-content" class="mobile-dropdown-item" id="mobileServiceContent">多言語コンテンツ制作</a>
+                <a href="https://www.leap.site/services/global-sns" class="mobile-dropdown-item" id="mobileServiceSns">海外向けSNS運用</a>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a href="#" class="mobile-nav-link" id="mobilePricing">価格</a>
+        </div>
+
+        <div class="mobile-nav-item">
+            <div class="mobile-dropdown-toggle" id="mobileResourcesLabel" onclick="toggleMobileDropdown(this)">
+                <span>資料</span>
+                <span>▼</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
+                <a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">ブログ</a>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a href="https://www.leap.site/about" class="mobile-nav-link" id="mobileAbout">About</a>
+        </div>
+
+        <div class="mobile-cta-buttons">
+            <a href="https://www.leap.site/contact" class="btn btn-demo-mobile" id="mobileDemoBtn">デモ</a>
+            <a href="#" class="btn btn-start-mobile" id="mobileStartBtn">無料で始める</a>
+        </div>
+    </div>
+</div>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        
+<!-- Section 1: Hero Area (Key Visual) -->
+<!-- 
+  修正: 実際の写真（Unsplash）を使用し、文字の重なりを解消。
+  背景色指定とオーバーレイを調整し、読みやすさを向上。
+-->
+<section class="section pt-0 pb-0" style="position: relative; overflow: hidden; background-color: var(--color-dark-gray);">
+    <div style="
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        min-height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    ">
+        <div class="container text-center text-white">
+            <p class="text-white font-bold mb-md" style="letter-spacing: 0.1em; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Leap 跨境业务平台</p>
+            <h1 class="text-white mb-lg" style="font-size: clamp(2rem, 5vw, 4rem); text-shadow: 0 2px 4px rgba(0,0,0,0.5);">一站式助力海外拓展</h1>
+            <p class="text-xl text-white mb-2xl mx-auto" style="max-width: 800px; opacity: 0.95; text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
+                从多语言网站建设到本地代理商匹配、跨境电商开设，皆可轻松实现。
+            </p>
+            
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+                <a href="https://www.leap.site/about/#contact" class="btn btn-primary btn-xl">申请演示 &rarr;</a>
+                <a href="https://app.leap.site" class="btn btn-white btn-xl">免费试用 &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 2: Client Logos -->
+<section class="section bg-gray">
+    <div class="container text-center">
+        <h2 class="h5 mb-xl text-secondary">
+            全球15个以上国家、超过500家企业用户，<br class="hidden-sm">
+            正在利用 Leap 开展全球业务。
+        </h2>
+        
+        <!-- ロゴ一覧（ダミー） -->
+        <div class="flex flex-wrap justify-center items-center" style="gap: 40px; opacity: 0.7; filter: grayscale(100%);">
+            <img src="https://placehold.co/160x60/transparent/333333?text=LOGO+1" alt="Client Logo 1">
+            <img src="https://placehold.co/160x60/transparent/333333?text=LOGO+2" alt="Client Logo 2">
+            <img src="https://placehold.co/160x60/transparent/333333?text=LOGO+3" alt="Client Logo 3">
+            <img src="https://placehold.co/160x60/transparent/333333?text=LOGO+4" alt="Client Logo 4">
+            <img src="https://placehold.co/160x60/transparent/333333?text=LOGO+5" alt="Client Logo 5">
+        </div>
+    </div>
+</section>
+
+<!-- Section 3: Services -->
+<!-- 
+  修正: 
+  1. 左側のテキストエリアの幅を狭くし、右側のスペースを拡大。
+  2. 右側のカードをPC表示時に「3列」にし、合計5枚を「3枚・2枚」の2行で表示。
+  3. 5枚目の全幅指定を解除し、自然な配置に変更。
+  4. ボタンと各サービス詳細リンクにURLを設定。
+-->
+<section class="section section-lg bg-white">
+    <div class="container">
+        <!-- このセクション専用のスタイル定義 -->
+        <style>
+            .service-layout {
+                display: grid;
+                gap: 40px;
+            }
+            
+            .service-cards-grid {
+                display: grid;
+                gap: 24px;
+                grid-template-columns: 1fr; /* スマホ: 1列 */
+            }
+
+            /* タブレット以上の設定 */
+            @media (min-width: 768px) {
+                .service-cards-grid {
+                    grid-template-columns: repeat(2, 1fr); /* タブレット: 2列 */
+                }
+            }
+
+            /* PC以上の設定（ここが今回の修正のメイン） */
+            @media (min-width: 1024px) {
+                .service-layout {
+                    /* 左側を280px固定、残りを右側に割り当て */
+                    grid-template-columns: 280px 1fr;
+                    align-items: start;
+                }
+                .service-cards-grid {
+                    /* カードを3列に配置 -> 5枚あるので「3枚、2枚」の2行になる */
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+        </style>
+
+        <div class="service-layout">
+            <!-- 左側：メッセージ -->
+            <div class="mb-xl">
+                <h2 class="mb-lg" style="font-size: var(--font-size-3xl);">复杂的海外拓展，<br>用 Leap 变简单。</h2>
+                <p class="text-lg mb-xl text-secondary">
+                    海外拓展往往伴随着高昂的初期投资。<br>
+                    使用 Leap，您可以降低初期成本，轻松启动海外业务。
+                </p>
+                <div class="flex flex-col gap-md">
+                    <a href="https://www.leap.site/about/#contact" class="btn btn-primary btn-lg w-full text-center">申请演示 &rarr;</a>
+                    <a href="https://app.leap.site" class="btn btn-secondary btn-lg w-full text-center">免费试用 &rarr;</a>
+                </div>
+            </div>
+
+            <!-- 右側：サービス一覧カード -->
+            <div class="service-cards-grid">
+                
+                <!-- サービス1: 多言語HP作成 -->
+                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; transition: all 0.2s;">
+                    <div class="mb-md text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    </div>
+                    <h3 class="h5 mb-sm">多语言网站建设</h3>
+                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> 利用自动翻译即时构建</li>
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> 已包含SEO优化</li>
+                    </ul>
+                    <a href="https://www.leap.site/services/multilingual-website" class="text-primary font-bold text-sm mt-md hover:underline">查看产品详情 &rarr;</a>
+                </div>
+
+                <!-- サービス2: 越境EC開設・運用 -->
+                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; transition: all 0.2s;">
+                    <div class="mb-md text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    </div>
+                    <h3 class="h5 mb-sm">跨境电商开设与运营</h3>
+                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> 支付与物流一元化管理</li>
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> 支持当地货币</li>
+                    </ul>
+                    <a href="https://www.leap.site/services/cross-border-ec" class="text-primary font-bold text-sm mt-md hover:underline">查看产品详情 &rarr;</a>
+                </div>
+
+                <!-- サービス3: 多言語コンテンツ制作 -->
+                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; transition: all 0.2s;">
+                    <div class="mb-md text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </div>
+                    <h3 class="h5 mb-sm">多语言内容制作</h3>
+                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> 贴合当地文化进行创作</li>
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> 母语人士校对</li>
+                    </ul>
+                    <a href="https://www.leap.site/services/multilingual-content" class="text-primary font-bold text-sm mt-md hover:underline">查看产品详情 &rarr;</a>
+                </div>
+
+                <!-- サービス4: 海外向けSNS運用 -->
+                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; transition: all 0.2s;">
+                    <div class="mb-md text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                    </div>
+                    <h3 class="h5 mb-sm">面向海外的社媒运营</h3>
+                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> 扩大全球知名度</li>
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> 网红（KOL）营销</li>
+                    </ul>
+                    <a href="https://www.leap.site/services/global-sns" class="text-primary font-bold text-sm mt-md hover:underline">查看产品详情 &rarr;</a>
+                </div>
+
+                <!-- サービス5: 代理店マッチング -->
+                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; transition: all 0.2s;">
+                    <div class="mb-md text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3 class="h5 mb-sm">代理商匹配</h3>
+                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> 寻找当地合作伙伴</li>
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> 商务洽谈安排支持</li>
+                    </ul>
+                    <a href="https://www.leap.site/services/btob-matching" class="text-primary font-bold text-sm mt-md hover:underline">查看产品详情 &rarr;</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- セクション4：導入事例（タブ風レイアウト） -->
+<section class="section section-lg bg-beige">
+    <div class="container">
+        <div class="text-center mb-2xl">
+            <h2 class="mb-sm">无论企业规模大小，都能收获惊人成果。</h2>
+            <p class="text-secondary mb-xl">介绍引入 Leap 企业的成功案例。</p>
+            
+            <div class="flex justify-center gap-md">
+                <button class="btn btn-primary btn-sm" style="border-radius: 20px; pointer-events: none;">案例①</button>
+                <button class="btn btn-outline btn-sm bg-white" style="border-radius: 20px; opacity: 0.6;">案例②</button>
+            </div>
+        </div>
+
+        <!-- 事例コンテンツ -->
+        <div class="card p-0 overflow-hidden" style="border: none;">
+            <div class="grid-2" style="gap: 0; align-items: stretch;">
+                <!-- 左側：画像 -->
+                <div style="min-height: 400px;">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="成功案例图片" class="img-cover" style="height: 100%; width: 100%; border-radius: var(--radius-lg) 0 0 var(--radius-lg); object-fit: cover;">
+                </div>
+                <!-- 右側：テキスト -->
+                <div class="flex flex-col justify-center bg-white" style="padding: 4rem;">
+                    <div class="mb-lg">
+                         <span style="font-weight:bold; font-size: 1.5rem; letter-spacing: 2px;">COMPANY</span>
+                    </div>
+                    <h3 class="h4 mb-md">“多亏了 Leap，我们在3个月内就实现了进军欧洲。”</h3>
+                    <p class="mb-lg text-secondary">
+                        仅靠传统手段无法适应瞬息万变的市场速度。
+                        引入 Leap 后，我们实现了利用数字化手段的高效海外拓展。
+                        与当地代理商的匹配也非常顺利，成果超出了预期。
+                    </p>
+                    <div class="mb-lg">
+                        <p class="font-bold mb-xs">Global Tech 有限公司</p>
+                        <p class="text-sm text-light">代表董事 山田 太郎 先生</p>
+                    </div>
+                    <a href="#" class="link-arrow">阅读案例全文 &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- セクション5：CTA（Call To Action） -->
+<!-- 
+  修正: ご提示いただいたデザインスタイルを採用。
+  背景色を落ち着いたダークカラー(#26000a)に変更し、
+  画像を配置したリッチなレイアウトにアップデートしました。
+  ボタンに適切なリンクを設定。
+-->
+<section class="section py-3xl text-white" style="background-color: #26000a;">
+    <div class="container">
+        <div class="grid-2 items-center" style="gap: var(--space-3xl);">
+            <!-- 左側：画像と装飾 -->
+            <div style="position: relative; display: flex; align-items: center; justify-content: center;">
+                <!-- 背景のグラデーションシェイプ -->
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 120%; height: 120%; background: var(--color-primary-gradient); border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; z-index: 0; opacity: 0.8; max-width: 550px;"></div>
+                
+                <!-- メイン画像 -->
+                <div style="position: relative; z-index: 1; width: 100%; max-width: 500px; aspect-ratio: 4 / 3; margin: 0 auto;">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Leap global business" class="img-cover" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-2xl);">
+                </div>
+            </div>
+
+            <!-- 右側：テキストとボタン -->
+            <div class="text-left">
+                <h2 class="text-white mb-lg" style="font-size: var(--font-size-3xl);">携手 Leap，<br>实现全球飞跃。</h2>
+                
+                <p class="mb-lg text-white" style="font-size: var(--font-size-lg); line-height: 1.6; font-weight: var(--font-weight-medium);">
+                    提升海外销售额的一站式工具
+                </p>
+                
+                <p class="mb-xl text-white" style="font-size: var(--font-size-base); line-height: 1.8; opacity: 0.9;">
+                    从多语言网站建设、跨境电商开设与运营、多语言内容制作，到面向海外的社媒运营以及当地代理商匹配。<br>
+                    使用 Leap，您可以一元化管理复杂的海外拓展流程，高效扩大海外销售额。
+                </p>
+                
+                <!-- ボタンエリア：デモと無料体験の2つを配置 -->
+                <div class="flex gap-md" style="flex-wrap: wrap;">
+                    <a href="https://www.leap.site/about/#contact" class="btn btn-lg" style="background: var(--color-primary-gradient); color: white; border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 4px 14px 0 rgba(193, 0, 51, 0.4);">申请演示 &rarr;</a>
+                    <a href="https://app.leap.site" class="btn btn-lg" style="background: transparent; color: white; border: 1px solid white;">免费试用 &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+    <div class="footer-container">
+        <!-- Desktop View -->
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3 id="footerFeaturesTitle">人気の機能</h3>
+                <ul>
+                    <li><a href="https://www.leap.site/services/multilingual-website" id="footerWebsite">多言語HP作成</a></li>
+                    <li><a href="https://www.leap.site/services/cross-border-ec" id="footerEc">越境EC開設・運用</a></li>
+                    <li><a href="https://www.leap.site/services/multilingual-content" id="footerContent">多言語コンテンツ制作</a></li>
+                    <li><a href="https://www.leap.site/services/global-sns" id="footerSns">海外向けSNS運用</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerToolsTitle">無料ツール</h3>
+                <ul>
+                    <li><a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" id="footerBlog">ブログ</a></li>
+                    <li><a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerCompanyTitle">会社</h3>
+                <ul>
+                    <li><a href="https://www.leap.site/about" id="footerAbout">会社概要</a></li>
+                    <li><a href="https://www.leap.site/about/#contact" id="footerContact">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mobile View -->
+        <div class="footer-mobile-section">
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileFeaturesTitle">人気の機能</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://www.leap.site/services/multilingual-website" id="footerMobileWebsite">多言語HP作成</a></li>
+                        <li><a href="https://www.leap.site/services/cross-border-ec" id="footerMobileEc">越境EC開設・運用</a></li>
+                        <li><a href="https://www.leap.site/services/multilingual-content" id="footerMobileContent">多言語コンテンツ制作</a></li>
+                        <li><a href="https://www.leap.site/services/global-sns" id="footerMobileSns">海外向けSNS運用</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileToolsTitle">無料ツール</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">ブログ</a></li>
+                        <li><a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileCompanyTitle">会社</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="https://www.leap.site/about" id="footerMobileAbout">会社概要</a></li>
+                        <li><a href="https://www.leap.site/about/#contact" id="footerMobileContact">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/company/leap-site-inc" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/leap20240729/" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                </svg>
+            </a>
+            <a href="https://x.com/leap_0729" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="footer-brand">
+            <a href="https://www.leap.site" style="text-decoration: none; color: inherit;">
+                <div class="footer-logo">Leap</div>
+            </a>
+            <div class="footer-copyright" id="footerCopyright">Copyright © 2025 Leap, Inc.</div>
+        </div>
+
+        <div class="footer-legal">
+            <a href="https://www.leap.site/privacypolicy" id="footerPrivacy">プライバシーポリシー</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/terms" id="footerTerms">利用規約</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/tokushoho" id="footerCommerce">特定商取引法に基づく表示</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="https://www.leap.site/delete-user" id="footerWithdrawal">退会規定</a>
+        </div>
+    </div>
+</footer>
+    
+    <!-- JavaScript -->
+    <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/footer.js"></script>
+    
+</body>
+</html>
