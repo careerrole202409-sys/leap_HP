@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leap - 海外進出をサポート</title>
+    <meta name="description" content="Leapは多言語HPから現地代理店マッチング、越境EC開設まで簡単にご利用いただける越境プラットフォームです。">
+    <title>Leap - 海外進出を一気通貫サポート</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
+    
+    
+    <!-- Fonts (Optional: Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
+    <!-- Header -->
     <!-- ヘッダー -->
 <header class="header-container" id="header">
     <!-- 1行目：小さい行 -->
@@ -121,185 +133,275 @@
     </div>
 </div>
     
+    <!-- Main Content -->
     <main id="main-content">
-        <!-- Hero Section -->
-        <section class="section bg-gradient text-white">
-            <div class="container text-center">
-                <h1 class="mb-lg">Leapへようこそ</h1>
-                <p class="text-xl mb-xl">海外進出をサポートする総合プラットフォーム</p>
-                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                    <a href="#" class="btn btn-secondary btn-lg">無料で始める</a>
-                    <a href="#" class="btn btn-outline btn-lg" style="color: white; border-color: white;">デモを見る</a>
+        
+<!-- セクション1：ヒーローエリア（キービジュアル） -->
+<!-- 
+  修正: 実際の写真（Unsplash）を使用し、文字の重なりを解消。
+  背景色指定とオーバーレイを調整し、読みやすさを向上。
+-->
+<section class="section pt-0 pb-0" style="position: relative; overflow: hidden; background-color: var(--color-dark-gray);">
+    <div style="
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        min-height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    ">
+        <div class="container text-center text-white">
+            <p class="text-white font-bold mb-md" style="letter-spacing: 0.1em; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Leapの越境プラットフォーム</p>
+            <h1 class="text-white mb-lg" style="font-size: clamp(2rem, 5vw, 4rem); text-shadow: 0 2px 4px rgba(0,0,0,0.5);">海外進出を一気通貫サポート</h1>
+            <p class="text-xl text-white mb-2xl mx-auto" style="max-width: 800px; opacity: 0.95; text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
+                多言語HPから現地代理店マッチング、越境EC開設まで簡単にご利用いただけます。
+            </p>
+            
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+                <a href="https://www.leap.site/about/#contact" class="btn btn-primary btn-xl">デモを申し込む &rarr;</a>
+                <a href="https://app.leap.site" class="btn btn-white btn-xl">無料で試してみる &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- セクション2：導入企業ロゴ -->
+<section class="section bg-gray">
+    <div class="container text-center">
+        <h2 class="h5 mb-xl text-secondary">
+            世界15カ国以上、500以上のユーザー企業様が、<br class="hidden-sm">
+            Leapを活用してグローバルビジネスを実践しています。
+        </h2>
+        
+        <!-- ロゴ一覧（ダミー） -->
+        <div class="flex flex-wrap justify-center items-center" style="gap: 40px; opacity: 0.7; filter: grayscale(100%);">
+            <img src="https://placehold.co/160x60/transparent/333333?text=LOGO+1" alt="Client Logo 1">
+            <img src="https://placehold.co/160x60/transparent/333333?text=LOGO+2" alt="Client Logo 2">
+            <img src="https://placehold.co/160x60/transparent/333333?text=LOGO+3" alt="Client Logo 3">
+            <img src="https://placehold.co/160x60/transparent/333333?text=LOGO+4" alt="Client Logo 4">
+            <img src="https://placehold.co/160x60/transparent/333333?text=LOGO+5" alt="Client Logo 5">
+        </div>
+    </div>
+</section>
+
+<!-- セクション3：サービス紹介 -->
+<!-- 
+  修正: 
+  1. 左側のテキストエリアの幅を狭くし、右側のスペースを拡大。
+  2. 右側のカードをPC表示時に「3列」にし、合計5枚を「3枚・2枚」の2行で表示。
+  3. 5枚目の全幅指定を解除し、自然な配置に変更。
+  4. ボタンと各サービス詳細リンクにURLを設定。
+-->
+<section class="section section-lg bg-white">
+    <div class="container">
+        <!-- このセクション専用のスタイル定義 -->
+        <style>
+            .service-layout {
+                display: grid;
+                gap: 40px;
+            }
+            
+            .service-cards-grid {
+                display: grid;
+                gap: 24px;
+                grid-template-columns: 1fr; /* スマホ: 1列 */
+            }
+
+            /* タブレット以上の設定 */
+            @media (min-width: 768px) {
+                .service-cards-grid {
+                    grid-template-columns: repeat(2, 1fr); /* タブレット: 2列 */
+                }
+            }
+
+            /* PC以上の設定（ここが今回の修正のメイン） */
+            @media (min-width: 1024px) {
+                .service-layout {
+                    /* 左側を280px固定、残りを右側に割り当て */
+                    grid-template-columns: 280px 1fr;
+                    align-items: start;
+                }
+                .service-cards-grid {
+                    /* カードを3列に配置 -> 5枚あるので「3枚、2枚」の2行になる */
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+        </style>
+
+        <div class="service-layout">
+            <!-- 左側：メッセージ -->
+            <div class="mb-xl">
+                <h2 class="mb-lg" style="font-size: var(--font-size-3xl);">難しい海外展開も、<br>Leapで簡単に。</h2>
+                <p class="text-lg mb-xl text-secondary">
+                    海外展開は初期投資が非常に高くついてしまいます。<br>
+                    Leapを使うことで、初期投資を抑えて海外展開をスタートさせることができます。
+                </p>
+                <div class="flex flex-col gap-md">
+                    <a href="https://www.leap.site/about/#contact" class="btn btn-primary btn-lg w-full text-center">デモを申し込む &rarr;</a>
+                    <a href="https://app.leap.site" class="btn btn-secondary btn-lg w-full text-center">無料で試してみる &rarr;</a>
                 </div>
             </div>
-        </section>
 
-        <!-- Test Section -->
-        <section class="section">
-            <div class="container">
-                <h2 class="text-center mb-2xl">Base.css テスト用ページ</h2>
-                <p class="text-center text-lg mb-3xl">このページはbase.cssの各機能をテストするためのページです。</p>
-
-                <!-- Test Cards -->
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-                    <div class="card">
-                        <h3>✅ タイポグラフィ</h3>
-                        <p>見出し（h1-h6）、段落、リストなどのテキストスタイルを確認できます。</p>
-                        <a href="#typography" class="btn btn-primary">確認する</a>
+            <!-- 右側：サービス一覧カード -->
+            <div class="service-cards-grid">
+                
+                <!-- サービス1: 多言語HP作成 -->
+                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; transition: all 0.2s;">
+                    <div class="mb-md text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                     </div>
-
-                    <div class="card">
-                        <h3>🎨 カラーシステム</h3>
-                        <p>Leapのブランドカラーとグラデーションが正しく表示されることを確認します。</p>
-                        <a href="#colors" class="btn btn-primary">確認する</a>
-                    </div>
-
-                    <div class="card">
-                        <h3>📱 レスポンシブ</h3>
-                        <p>画面サイズを変更して、モバイル・タブレット・デスクトップでの表示を確認します。</p>
-                        <a href="#responsive" class="btn btn-primary">確認する</a>
-                    </div>
+                    <h3 class="h5 mb-sm">多言語HP作成</h3>
+                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> 自動翻訳で即座に構築</li>
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> SEO最適化済み</li>
+                    </ul>
+                    <a href="https://www.leap.site/services/multilingual-website" class="text-primary font-bold text-sm mt-md hover:underline">製品詳細はこちら &rarr;</a>
                 </div>
 
-                <!-- Typography Test -->
-                <div id="typography" class="mb-3xl">
-                    <h2 class="mb-lg">タイポグラフィテスト</h2>
-                    <div class="card">
-                        <h1>見出し H1 - The quick brown fox</h1>
-                        <h2>見出し H2 - The quick brown fox</h2>
-                        <h3>見出し H3 - The quick brown fox</h3>
-                        <h4>見出し H4 - The quick brown fox</h4>
-                        <h5>見出し H5 - The quick brown fox</h5>
-                        <h6>見出し H6 - The quick brown fox</h6>
-                        <p>これは通常の段落テキストです。日本語と英語が混在した文章でも読みやすいフォントとサイズが設定されています。Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <ul>
-                            <li>リストアイテム 1</li>
-                            <li>リストアイテム 2</li>
-                            <li>リストアイテム 3</li>
-                        </ul>
+                <!-- サービス2: 越境EC開設・運用 -->
+                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; transition: all 0.2s;">
+                    <div class="mb-md text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
                     </div>
+                    <h3 class="h5 mb-sm">越境EC開設・運用</h3>
+                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> 決済・配送を一元管理</li>
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> 現地通貨対応</li>
+                    </ul>
+                    <a href="https://www.leap.site/services/cross-border-ec" class="text-primary font-bold text-sm mt-md hover:underline">製品詳細はこちら &rarr;</a>
                 </div>
 
-                <!-- Color Test -->
-                <div id="colors" class="mb-3xl">
-                    <h2 class="mb-lg">カラーシステムテスト</h2>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
-                        <div style="background: linear-gradient(135deg, #C10033 0%, #8B0024 100%); padding: 2rem; border-radius: 12px; color: white; text-align: center;">
-                            <strong>Primary Gradient</strong>
-                            <br>#C10033 → #8B0024
-                        </div>
-                        <div style="background: #C10033; padding: 2rem; border-radius: 12px; color: white; text-align: center;">
-                            <strong>Primary Start</strong>
-                            <br>#C10033
-                        </div>
-                        <div style="background: #8B0024; padding: 2rem; border-radius: 12px; color: white; text-align: center;">
-                            <strong>Primary End</strong>
-                            <br>#8B0024
-                        </div>
-                        <div style="background: #2d2d2d; padding: 2rem; border-radius: 12px; color: white; text-align: center;">
-                            <strong>Dark Gray</strong>
-                            <br>#2d2d2d
-                        </div>
+                <!-- サービス3: 多言語コンテンツ制作 -->
+                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; transition: all 0.2s;">
+                    <div class="mb-md text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
                     </div>
+                    <h3 class="h5 mb-sm">多言語コンテンツ制作</h3>
+                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> 現地文化に合わせた作成</li>
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> ネイティブチェック</li>
+                    </ul>
+                    <a href="https://www.leap.site/services/multilingual-content" class="text-primary font-bold text-sm mt-md hover:underline">製品詳細はこちら &rarr;</a>
                 </div>
 
-                <!-- Button Test -->
-                <div id="buttons" class="mb-3xl">
-                    <h2 class="mb-lg">ボタンスタイルテスト</h2>
-                    <div class="card">
-                        <h3 class="mb-md">サイズバリエーション</h3>
-                        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
-                            <button class="btn btn-primary btn-sm">Small</button>
-                            <button class="btn btn-primary">Medium (Default)</button>
-                            <button class="btn btn-primary btn-lg">Large</button>
-                        </div>
-
-                        <h3 class="mb-md">カラーバリエーション</h3>
-                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                            <button class="btn btn-primary">Primary</button>
-                            <button class="btn btn-secondary">Secondary</button>
-                            <button class="btn btn-outline">Outline</button>
-                        </div>
+                <!-- サービス4: 海外向けSNS運用 -->
+                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; transition: all 0.2s;">
+                    <div class="mb-md text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
                     </div>
+                    <h3 class="h5 mb-sm">海外向けSNS運用</h3>
+                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> グローバル認知拡大</li>
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> インフルエンサー活用</li>
+                    </ul>
+                    <a href="https://www.leap.site/services/global-sns" class="text-primary font-bold text-sm mt-md hover:underline">製品詳細はこちら &rarr;</a>
                 </div>
 
-                <!-- Utility Classes Test -->
-                <div id="utilities" class="mb-3xl">
-                    <h2 class="mb-lg">ユーティリティクラステスト</h2>
-                    <div class="card">
-                        <h3>Spacing (Margin & Padding)</h3>
-                        <div class="mt-md mb-md py-md px-md" style="background: var(--color-background);">
-                            mt-md mb-md py-md px-md が適用されています
-                        </div>
-
-                        <h3 class="mt-xl">Text Alignment</h3>
-                        <p class="text-left">左揃えテキスト (text-left)</p>
-                        <p class="text-center">中央揃えテキスト (text-center)</p>
-                        <p class="text-right">右揃えテキスト (text-right)</p>
-
-                        <h3 class="mt-xl">Text Colors</h3>
-                        <p class="text-primary">Primary color text</p>
-                        <p class="text-secondary">Secondary color text</p>
-                        <p class="text-light">Light color text</p>
+                <!-- サービス5: 代理店マッチング -->
+                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; transition: all 0.2s;">
+                    <div class="mb-md text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                     </div>
+                    <h3 class="h5 mb-sm">代理店マッチング</h3>
+                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> 現地パートナー探索</li>
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> 商談設定サポート</li>
+                    </ul>
+                    <a href="https://www.leap.site/services/btob-matching" class="text-primary font-bold text-sm mt-md hover:underline">製品詳細はこちら &rarr;</a>
                 </div>
 
-                <!-- Header & Footer Test -->
-                <div id="header-footer" class="mb-3xl">
-                    <h2 class="mb-lg">ヘッダー＆フッターテスト</h2>
-                    <div class="card bg-gray">
-                        <h3>✅ 確認ポイント</h3>
-                        <ul>
-                            <li>🌐 言語切り替えが動作するか（日本語/English/简体中文）</li>
-                            <li>📱 スマホ表示でハンバーガーメニューが表示されるか</li>
-                            <li>📜 スクロールすると1行目が隠れて2行目だけ固定されるか</li>
-                            <li>🔽 サービスと資料のドロップダウンメニューが表示されるか</li>
-                            <li>🎨 ボタンのホバーエフェクトが動作するか</li>
-                            <li>🦶 フッターの多言語切り替えがヘッダーと連動するか</li>
-                            <li>📱 フッターのモバイルアコーディオンが動作するか</li>
-                        </ul>
-                    </div>
-                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-                <!-- Scroll Test -->
-                <div class="text-center mb-3xl">
-                    <p class="text-lg mb-md">下にスクロールして、ヘッダーの固定動作を確認してください ⬇️</p>
+<!-- セクション4：導入事例（タブ風レイアウト） -->
+<section class="section section-lg bg-beige">
+    <div class="container">
+        <div class="text-center mb-2xl">
+            <h2 class="mb-sm">あらゆる規模のビジネスに、驚きの成果を。</h2>
+            <p class="text-secondary mb-xl">Leap導入企業様の成功事例をご紹介します。</p>
+            
+            <div class="flex justify-center gap-md">
+                <button class="btn btn-primary btn-sm" style="border-radius: 20px; pointer-events: none;">事例①</button>
+                <button class="btn btn-outline btn-sm bg-white" style="border-radius: 20px; opacity: 0.6;">事例②</button>
+            </div>
+        </div>
+
+        <!-- 事例コンテンツ -->
+        <div class="card p-0 overflow-hidden" style="border: none;">
+            <div class="grid-2" style="gap: 0; align-items: stretch;">
+                <!-- 左側：画像 -->
+                <div style="min-height: 400px;">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="導入事例イメージ" class="img-cover" style="height: 100%; width: 100%; border-radius: var(--radius-lg) 0 0 var(--radius-lg); object-fit: cover;">
+                </div>
+                <!-- 右側：テキスト -->
+                <div class="flex flex-col justify-center bg-white" style="padding: 4rem;">
+                    <div class="mb-lg">
+                         <span style="font-weight:bold; font-size: 1.5rem; letter-spacing: 2px;">COMPANY</span>
+                    </div>
+                    <h3 class="h4 mb-md">「Leapのおかげで、欧州への進出が3ヶ月で実現しました」</h3>
+                    <p class="mb-lg text-secondary">
+                        アナログな手法だけでは変化の速いスピードに合わせることができません。
+                        Leap導入により、デジタルを活用した効率的な海外展開が可能になりました。
+                        現地のエージェントとのマッチングもスムーズで、予想以上の成果が出ています。
+                    </p>
+                    <div class="mb-lg">
+                        <p class="font-bold mb-xs">株式会社グローバル・テック</p>
+                        <p class="text-sm text-light">代表取締役 山田 太郎 様</p>
+                    </div>
+                    <a href="#" class="link-arrow">導入事例の全文を読む &rarr;</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-        <!-- Spacer Sections -->
-        <section class="section bg-gray" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
-            <div class="text-center">
-                <h2 class="text-light">⬇️ スクロールテスト用のスペース 1</h2>
-            </div>
-        </section>
-
-        <section class="section" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
-            <div class="text-center">
-                <h2 class="text-light">⬇️ スクロールテスト用のスペース 2</h2>
-            </div>
-        </section>
-
-        <section class="section bg-gray" style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
-            <div class="text-center">
-                <h2 class="text-light">⬇️ スクロールテスト用のスペース 3</h2>
-            </div>
-        </section>
-
-        <!-- Final Section -->
-        <section class="section">
-            <div class="container text-center">
-                <h2 class="mb-lg">🎉 ここまでスクロールできました！</h2>
-                <p class="text-lg mb-xl">ヘッダーが正しく固定されていれば成功です。</p>
-                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                    <a href="#main-content" class="btn btn-primary btn-lg">ページトップに戻る</a>
-                    <button class="btn btn-secondary btn-lg" onclick="window.location.reload()">ページを再読み込み</button>
+<!-- セクション5：CTA（Call To Action） -->
+<!-- 
+  修正: ご提示いただいたデザインスタイルを採用。
+  背景色を落ち着いたダークカラー(#26000a)に変更し、
+  画像を配置したリッチなレイアウトにアップデートしました。
+  ボタンに適切なリンクを設定。
+-->
+<section class="section py-3xl text-white" style="background-color: #26000a;">
+    <div class="container">
+        <div class="grid-2 items-center" style="gap: var(--space-3xl);">
+            <!-- 左側：画像と装飾 -->
+            <div style="position: relative; display: flex; align-items: center; justify-content: center;">
+                <!-- 背景のグラデーションシェイプ -->
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 120%; height: 120%; background: var(--color-primary-gradient); border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; z-index: 0; opacity: 0.8; max-width: 550px;"></div>
+                
+                <!-- メイン画像 -->
+                <div style="position: relative; z-index: 1; width: 100%; max-width: 500px; aspect-ratio: 4 / 3; margin: 0 auto;">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Leap global business" class="img-cover" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-2xl);">
                 </div>
             </div>
-        </section>
+
+            <!-- 右側：テキストとボタン -->
+            <div class="text-left">
+                <h2 class="text-white mb-lg" style="font-size: var(--font-size-3xl);">Leapでグローバルに<br>飛躍しましょう。</h2>
+                
+                <p class="mb-lg text-white" style="font-size: var(--font-size-lg); line-height: 1.6; font-weight: var(--font-weight-medium);">
+                    海外売上を伸ばすためのオールインワンツール
+                </p>
+                
+                <p class="mb-xl text-white" style="font-size: var(--font-size-base); line-height: 1.8; opacity: 0.9;">
+                    多言語HP作成、越境ECの開設・運用、多言語コンテンツ制作、海外向けSNS運用、そして現地の代理店マッチングまで。<br>
+                    Leapなら、複雑な海外展開のプロセスを一元管理し、効率的に海外売上を拡大させることができます。
+                </p>
+                
+                <!-- ボタンエリア：デモと無料体験の2つを配置 -->
+                <div class="flex gap-md" style="flex-wrap: wrap;">
+                    <a href="https://www.leap.site/about/#contact" class="btn btn-lg" style="background: var(--color-primary-gradient); color: white; border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 4px 14px 0 rgba(193, 0, 51, 0.4);">デモを申し込む &rarr;</a>
+                    <a href="https://app.leap.site" class="btn btn-lg" style="background: transparent; color: white; border: 1px solid white;">無料で試してみる &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
     
+    <!-- Footer -->
     <footer>
     <div class="footer-container">
         <!-- Desktop View -->
@@ -414,7 +516,9 @@
     </div>
 </footer>
     
+    <!-- JavaScript -->
     <script src="/assets/js/header.js"></script>
     <script src="/assets/js/footer.js"></script>
+    
 </body>
 </html>
