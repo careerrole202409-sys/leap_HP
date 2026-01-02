@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="免费下载有助于海外拓展的资料。这里汇集了关于跨境电商、海外营销、海外销售的Leap干货资料集。">
-    <title>免费干货资料下载 | Leap</title>
+    <meta name="description" content="AIが現地で「売れる」動画や写真を自動生成。テキスト指示だけでネイティブ品質のローカライズコンテンツを作成し、世界中へ配信します。">
+    <title>多言語コンテンツ制作サービス | Leap</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
@@ -136,176 +136,376 @@
     <!-- Main Content -->
     <main id="main-content">
         
-<!-- 
-  SECTION 1: HERO AREA 
--->
-<section class="section py-3xl" style="background: var(--color-primary-gradient); color: var(--color-white);">
-    <div class="container text-center">
-        <h1 class="text-white mb-md">Leap免费干货资料下载</h1>
-        <p class="text-white mb-xl" style="font-size: var(--font-size-lg); max-width: 800px; margin-left: auto; margin-right: auto;">
-            利用Leap的免费实用资料与产品，<br>
-            最大化您的海外拓展、跨境电商及海外营销成果。
-        </p>
-        
-        <div class="flex justify-center items-center" style="gap: var(--space-lg); flex-wrap: wrap;">
-            <a href="#all-resources" class="btn btn-xl btn-white">
-                查看所有资料 ↓
-            </a>
-            <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="btn btn-xl btn-outline-white">
-                免费试用工具
-            </a>
+<!-- ============================================
+     Hero Section
+     修正: クリエイティブ生成による「エンゲージメント向上」を訴求
+============================================= -->
+<section class="section bg-beige">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <!-- Left Content -->
+            <div class="order-2-mobile">
+                <div class="mb-md">
+                    <span style="color: var(--color-accent-orange); font-weight: bold; letter-spacing: 0.05em;">Leap Multilingual Creative Studio</span>
+                </div>
+                <h1 class="mb-lg" style="line-height: 1.2;">
+                    AIが自動生成。<br>
+                    現地で「売れる」<br>
+                    動画と写真を瞬時に。
+                </h1>
+                <p class="text-secondary mb-xl" style="font-size: var(--font-size-lg);">
+                    撮影も、翻訳も不要。指示を書き込むだけで、<br>
+                    AIが現地マーケットに最適化したクリエイティブを生成します。
+                </p>
+                <div class="flex" style="gap: 16px; flex-wrap: wrap;">
+                    <!-- アプリへ遷移（別タブ） -->
+                    <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">無料で作成してみる</a>
+                    <!-- お問い合わせフォームへ遷移 -->
+                    <a href="https://www.leap.site/about/#contact" class="btn btn-secondary btn-lg">デモを申し込む</a>
+                </div>
+            </div>
+            
+            <!-- Right Image -->
+            <div class="text-center order-1-mobile mb-xl">
+                <!-- 画像指定: 動画編集UI画面。AIが生成した人物が喋っている様子や、複数のサムネイルが並んでいるイメージ -->
+                <img src="https://placehold.jp/600x400.png?text=AI+Creative+Studio" alt="AIコンテンツ制作ダッシュボード" class="img-cover">
+            </div>
         </div>
     </div>
 </section>
 
-<!-- 
-  SECTION 2: POPULAR RESOURCES (TABS)
--->
-<section class="section py-xl bg-beige">
+<!-- ============================================
+     Feature 1: AI Generation
+     修正: テキスト指示からの自動生成を訴求
+============================================= -->
+<section class="section bg-white">
     <div class="container">
-        <h2 class="text-center mb-lg" style="font-size: var(--font-size-3xl);">热门资料集</h2>
-        
-        <!-- 标签导航 -->
-        <div class="flex justify-center" style="border-bottom: 1px solid var(--color-border); margin-bottom: var(--space-xl);">
-            <nav style="display: flex; gap: var(--space-xl); overflow-x: auto; padding-bottom: 0;">
+        <div class="grid-2 items-center">
+            <!-- Text -->
+            <div>
+                <h2 class="mb-md">指示を書き込むだけで、<br>動画・写真を即座に生成</h2>
+                <p class="mb-lg">
+                    「現地の20代女性に向けた、化粧品のプロモーション動画を作って」と指示するだけ。<br>
+                    AIがシナリオ作成から映像生成までを自動で行います。高価な機材や撮影クルーの手配は一切不要。アイデアを即座に形にできます。
+                </p>
                 
-                <div onclick="switchTab('region')" class="tab-btn active" id="btn-region" 
-                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid var(--color-primary-start); color: var(--color-primary-start); font-weight: bold; cursor: pointer; font-size: 1rem; white-space: nowrap;">
-                    按国家/地区
-                </div>
-                
-                <div onclick="switchTab('ec')" class="tab-btn" id="btn-ec" 
-                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
-                    跨境电商
-                </div>
-                
-                <div onclick="switchTab('marketing')" class="tab-btn" id="btn-marketing" 
-                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
-                    海外营销
-                </div>
-                
-                <div onclick="switchTab('sales')" class="tab-btn" id="btn-sales" 
-                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
-                    海外销售
+                <div class="content-list">
+                    <ul>
+                        <li><strong>テキストto動画：</strong> 抽象的な指示からでも高品質な動画を生成。</li>
+                        <li><strong>コスト削減：</strong> 従来の制作費の1/10以下でクリエイティブを量産。</li>
+                    </ul>
                 </div>
 
-            </nav>
+                <a href="https://www.leap.site/about/#contact" class="link-arrow">生成フローの詳細のデモを申し込む →</a>
+            </div>
+
+            <!-- Image -->
+            <div>
+                <!-- 画像指定: プロンプト入力画面と、そこから生成された鮮やかな画像/動画の対比 -->
+                <img src="https://placehold.jp/600x400.png?text=Text+to+Creative+UI" alt="AIによるクリエイティブ生成プロセス" class="img-cover">
+            </div>
         </div>
-
-        <!-- 
-          标签内容区域 
-        -->
-
-        <!-- 1. 按国家/地区 (region) -->
-        <div id="tab-content-region" class="tab-content grid-3">
-            
-            
-
-            
-
-            
-                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
-                    <p class="text-secondary">目前正在准备中。</p>
-                </div>
-            
-        </div>
-
-        <!-- 2. 跨境电商 (ec) -->
-        <div id="tab-content-ec" class="tab-content grid-3 hidden">
-            
-            
-
-            
-
-            
-                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
-                    <p class="text-secondary">目前正在准备中。</p>
-                </div>
-            
-        </div>
-
-        <!-- 3. 海外营销 (marketing) -->
-        <div id="tab-content-marketing" class="tab-content grid-3 hidden">
-            
-            
-
-            
-
-            
-                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
-                    <p class="text-secondary">目前正在准备中。</p>
-                </div>
-            
-        </div>
-
-        <!-- 4. 海外销售 (sales) -->
-        <div id="tab-content-sales" class="tab-content grid-3 hidden">
-            
-            
-
-            
-
-            
-                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
-                    <p class="text-secondary">目前正在准备中。</p>
-                </div>
-            
-        </div>
-
     </div>
 </section>
 
-<!-- 
-  SECTION 3: ALL RESOURCES (FILTER & GRID)
--->
-<section id="all-resources" class="section py-3xl bg-white">
+<!-- ============================================
+     Feature 2: Localization & Learning
+     修正: 現地事例の学習とネイティブ音声について
+============================================= -->
+<section class="section bg-beige">
     <div class="container">
-        <h2 class="text-center mb-sm">查看所有资料</h2>
-        <p class="page-subtitle mb-2xl">助力海外销售增长的免费资料集</p>
+        <div class="grid-2 items-center">
+            <!-- Image (Left on Desktop) -->
+            <div class="order-1-mobile mb-xl">
+                <!-- 画像指定: 世界地図と、それぞれの国にマッチした異なるテイストのバナーや動画がポップアップしているイメージ -->
+                <img src="https://placehold.jp/600x400.png?text=Localized+Learning" alt="現地トレンドを学習したローカライズ" class="img-cover">
+            </div>
 
-        <!-- Filters -->
-        <div class="grid-3 mb-2xl">
-            <div class="form-group mb-0">
-                <label class="form-label" for="topic-select">主题</label>
-                <select id="topic-select" class="form-control" onchange="applyFilters()">
-                    <option value="all">所有主题</option>
-                    <option value="region">按国家/地区</option>
-                    <option value="ec">跨境电商</option>
-                    <option value="marketing">海外营销</option>
-                    <option value="sales">海外销售</option>
-                </select>
-            </div>
-            <div class="form-group mb-0">
-                <label class="form-label" for="content-type-select">内容形式</label>
-                <select id="content-type-select" class="form-control" onchange="applyFilters()">
-                    <option value="all">所有类型</option>
-                    <option value="guide">指南手册</option>
-                    <option value="template">模板</option>
-                    <option value="report">调查报告</option>
-                    <option value="checklist">检查清单</option>
-                    <option value="tool">Excel工具</option>
-                </select>
-            </div>
-            <div class="form-group mb-0">
-                <label class="form-label" for="file-format-select">文件格式</label>
-                <select id="file-format-select" class="form-control" onchange="applyFilters()">
-                    <option value="all">所有格式</option>
-                    <option value="pdf">PDF</option>
-                    <option value="excel">Excel</option>
-                    <option value="ppt">PowerPoint</option>
-                </select>
+            <!-- Text -->
+            <div class="order-2-mobile">
+                <h2 class="mb-md">現地の「売れる」を学習した<br>完璧なローカライズ</h2>
+                <p class="mb-lg">
+                    Leapは単に翻訳するだけでなく、現地で成功しているマーケティング事例を学習しています。<br>
+                    その国で好まれる色彩、テンポ、構成を反映。さらに動画では、不自然さを排除した「現地ネイティブの音声」を選択できるため、違和感のない訴求が可能です。
+                </p>
+                <a href="https://www.leap.site/about/#contact" class="link-arrow">ローカライズ品質のデモを申し込む →</a>
             </div>
         </div>
+    </div>
+</section>
 
-        <p id="result-count" class="text-right text-light mb-lg" style="font-size: var(--font-size-sm);">加载中...</p>
+<!-- ============================================
+     Feature 3: One-Stop Operation
+     修正: 一気通貫（HP埋め込み・SNS投稿）について
+============================================= -->
+<section class="section bg-white">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <!-- Text -->
+            <div>
+                <h2 class="mb-md">作成から投稿まで、<br>Leapひとつで完結</h2>
+                <p class="mb-lg">
+                    作ったコンテンツをダウンロードして、別のツールでアップロードし直す必要はありません。<br>
+                    Leapで作成したHPへの埋め込みや、Instagram、TikTokなどの海外向けSNSへの投稿も、管理画面からワンクリックで完了。運用フローを劇的に効率化します。
+                </p>
+                <a href="https://www.leap.site/about/#contact" class="link-arrow">投稿管理機能のデモを申し込む →</a>
+            </div>
 
-        <!-- Resources Grid -->
-        <div class="grid-3" id="resources-grid">
-            
+            <!-- Image -->
+            <div>
+                <!-- 画像指定: Leapの画面からSNSアイコン（Instagram, TikTok等）へ矢印が伸びている連携イメージ -->
+                <img src="https://placehold.jp/600x400.png?text=One-stop+Publishing" alt="SNS投稿・HP埋め込み連携" class="img-cover">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     Features Grid
+     修正: 対応言語一覧と機能アイコンをSVGに変更
+============================================= -->
+<section class="section bg-white">
+    <div class="container">
+        <h2 class="text-center mb-2xl">グローバル発信に必要な<br>機能をフル装備</h2>
+        
+        <div class="grid-4">
+            <!-- Item 1: 11言語対応 -->
+            <div>
+                <div class="solution-icon" style="color: var(--color-primary-start);">
+                    <!-- Globe / Language Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </div>
+                <h3 class="h5 mb-sm">主要11言語に対応</h3>
+                <p class="text-sm text-secondary">英語・中(簡/繁)・独・仏・西・韓・ベトナム・タイ・マレー・インドネシア語に対応。</p>
+            </div>
+
+            <!-- Item 2: ネイティブ音声 -->
+            <div>
+                <div class="solution-icon" style="color: var(--color-primary-start);">
+                    <!-- Mic / Voice Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                        <line x1="12" y1="19" x2="12" y2="23"></line>
+                        <line x1="8" y1="23" x2="16" y2="23"></line>
+                    </svg>
+                </div>
+                <h3 class="h5 mb-sm">ネイティブAI音声</h3>
+                <p class="text-sm text-secondary">現地人が聞いても違和感のない、自然なイントネーションの音声を動画に適用できます。</p>
+            </div>
+
+            <!-- Item 3: マーケティング学習 -->
+            <div>
+                <div class="solution-icon" style="color: var(--color-primary-start);">
+                    <!-- Brain / AI Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                </div>
+                <h3 class="h5 mb-sm">現地トレンド学習</h3>
+                <p class="text-sm text-secondary">その国で「ウケる」色彩や構成をAIが学習済み。クリック率の高い素材を生成します。</p>
+            </div>
+
+            <!-- Item 4: 一気通貫連携 -->
+            <div>
+                <div class="solution-icon" style="color: var(--color-primary-start);">
+                    <!-- Share / Link Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="18" cy="5" r="3"></circle>
+                        <circle cx="6" cy="12" r="3"></circle>
+                        <circle cx="18" cy="19" r="3"></circle>
+                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                    </svg>
+                </div>
+                <h3 class="h5 mb-sm">SNS・HP連携</h3>
+                <p class="text-sm text-secondary">作成した素材は、Leap管理画面から直接WebサイトやSNSへ公開可能です。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     Case Study
+     修正: コンテンツ制作での成功事例に変更
+============================================= -->
+<section class="section bg-background">
+    <div class="container">
+        <h2 class="mb-xl">導入企業の声</h2>
+        
+        <div class="card p-0 overflow-hidden">
+            <div class="grid-2" style="gap: 0;">
+                <!-- Image -->
+                <div style="min-height: 400px;">
+                    <img src="https://placehold.jp/800x600.png?text=Creative+Success+User" alt="Leap導入企業の担当者" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
                 
+                <!-- Content -->
+                <div class="py-xl px-lg flex flex-col justify-center bg-white">
+                    <div class="mb-lg">
+                        <div style="font-weight: bold; font-size: 24px; color: var(--color-dark-gray);">Beauty Global Co.</div>
+                    </div>
+                    
+                    <p class="quote-text mb-lg" style="font-size: var(--font-size-lg);">
+                        「以前は現地の制作会社に依頼して1本数十万円かかっていた動画が、Leapなら数分で、しかも1/10以下のコストで作れるようになりました。現地のトレンドを捉えているので、SNSのエンゲージメント率が5倍に跳ね上がりました。」
+                    </p>
+                    
+                    <div>
+                        <p class="font-bold mb-0">高橋 エミリ 氏</p>
+                        <p class="text-sm text-secondary">広報・PR担当</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     Stats
+     修正: コンテンツ制作関連の実績数値に変更
+============================================= -->
+<section class="section bg-white">
+    <div class="container">
+        <h2 class="text-center mb-2xl">Leapが選ばれる理由</h2>
+        
+        <div class="grid-3 text-center">
+            <div>
+                <span class="stat-number">1/10</span>
+                <p class="stat-label">制作コストの削減</p>
+                <p class="text-sm text-secondary mt-sm">外注費や撮影コストを<br>劇的に圧縮します</p>
+            </div>
+            
+            <div>
+                <span class="stat-number">5倍</span>
+                <p class="stat-label">エンゲージメント率</p>
+                <p class="text-sm text-secondary mt-sm">ローカライズされた動画で<br>反応率が大幅アップ</p>
+            </div>
+            
+            <div>
+                <span class="stat-number">11言語</span>
+                <p class="stat-label">対応言語数</p>
+                <p class="text-sm text-secondary mt-sm">アジアから欧米まで<br>幅広いエリアをカバー</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     Pricing
+     修正: 動画不可/可、言語ごとの課金を明記
+============================================= -->
+<section class="section bg-beige" id="pricing">
+    <div class="container">
+        <h2 class="text-center mb-sm">料金プラン</h2>
+        <p class="text-center text-secondary mb-2xl">必要な言語数に合わせて拡張できる柔軟なプランです。</p>
+        
+        <div class="flex justify-center" style="gap: var(--space-xl); flex-wrap: wrap;">
+            
+            <!-- Free Plan (Photo Only) -->
+            <div class="card" style="width: 100%; max-width: 400px; border-top: 6px solid var(--color-gray);">
+                <div class="mb-lg">
+                    <h3 class="h2 mb-xs">Free</h3>
+                    <p class="text-secondary">画像作成のみ試したい方へ</p>
+                </div>
+                
+                <div class="mb-lg">
+                    <span class="stat-number" style="color: var(--color-text-primary);">¥0</span>
+                    <span class="text-secondary">/月</span>
+                </div>
+                
+                <ul class="mb-xl" style="list-style: none; padding: 0;">
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> <strong>画像作成のみ可能</strong>
+                    </li>
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> 作成回数制限あり
+                    </li>
+                    <li class="flex items-center mb-sm" style="color: var(--color-text-light);">
+                        <span class="mr-sm">✖</span> <strong>動画作成不可</strong>
+                    </li>
+                    <li class="flex items-center mb-sm" style="color: var(--color-text-light);">
+                        <span class="mr-sm">✖</span> ネイティブ音声機能
+                    </li>
+                </ul>
+                
+                <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-full text-center">無料で始める</a>
+            </div>
+
+            <!-- Standard Plan (Video & Photo) -->
+            <div class="card" style="width: 100%; max-width: 400px; border-top: 6px solid var(--color-primary-start);">
+                <div class="mb-lg">
+                    <h3 class="h2 mb-xs">Standard</h3>
+                    <p class="text-secondary">動画を含む本格運用へ</p>
+                </div>
+                
+                <div class="mb-lg">
+                    <span class="stat-number">¥20,000</span>
+                    <span class="text-secondary">/月（1言語追加ごと）</span>
+                </div>
+                
+                <ul class="mb-xl" style="list-style: none; padding: 0;">
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> <strong>画像・動画作成が可能</strong>
+                    </li>
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> 作成回数制限あり
+                    </li>
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> ネイティブ音声機能
+                    </li>
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> 優先サポート
+                    </li>
+                </ul>
+                
+                <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full text-center">有料プランを選択</a>
+            </div>
             
         </div>
+    </div>
+</section>
 
+<!-- ============================================
+     FAQ
+     修正: コンテンツ制作関連の質問内容に変更
+============================================= -->
+<section class="section bg-white">
+    <div class="container content-medium">
+        <h2 class="mb-xl">よくあるご質問 (FAQ)</h2>
+        
+        <div class="mb-md">
+            <details class="card p-md mb-sm" style="cursor: pointer;">
+                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">対応している言語を教えてください。</summary>
+                <div class="mt-md text-secondary">
+                    英語・中国語（簡体字/繁体字）・ドイツ語・フランス語・スペイン語・韓国語・ベトナム語・タイ語・マレー語・インドネシア語の計11種類の言語に対応しています。
+                </div>
+            </details>
+
+            <details class="card p-md mb-sm" style="cursor: pointer;">
+                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">作成した動画の著作権はどうなりますか？</summary>
+                <div class="mt-md text-secondary">
+                    Leapで生成されたコンテンツの商用利用権はお客様に帰属します。自社HPやSNS広告などで自由にご利用いただけます。
+                </div>
+            </details>
+
+            <details class="card p-md mb-sm" style="cursor: pointer;">
+                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">動画の音声は自然ですか？</summary>
+                <div class="mt-md text-secondary">
+                    はい。最新の音声合成技術を使用しており、単なる読み上げではなく、感情のこもったネイティブスピーカーに近い自然な発話を生成します。
+                </div>
+            </details>
+
+            <details class="card p-md mb-sm" style="cursor: pointer;">
+                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">料金はどのように計算されますか？</summary>
+                <div class="mt-md text-secondary">
+                    利用したい言語の数に応じて課金されます。例えば、英語と中国語の動画を作りたい場合は、2言語分の料金（月額4万円）となります。無料プランでは画像生成のみお試しいただけます。
+                </div>
+            </details>
+        </div>
     </div>
 </section>
 
@@ -480,80 +680,6 @@
     document.addEventListener('DOMContentLoaded', updateCtaContent);
 })();
 </script>
-
-<!-- SCRIPTS -->
-<script>
-    // 1. 标签切换 (switchTab)
-    function switchTab(topic) {
-        document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-        const targetContent = document.getElementById('tab-content-' + topic);
-        if(targetContent) targetContent.classList.remove('hidden');
-
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.style.borderBottom = '3px solid transparent';
-            btn.style.color = 'var(--color-text-secondary)';
-            btn.classList.remove('active');
-        });
-        
-        const activeBtn = document.getElementById('btn-' + topic);
-        if(activeBtn) {
-            activeBtn.style.borderBottom = '3px solid var(--color-primary-start)';
-            activeBtn.style.color = 'var(--color-primary-start)';
-            activeBtn.classList.add('active');
-        }
-    }
-
-    // 2. 筛选 (Filtering)
-    document.addEventListener('DOMContentLoaded', function() {
-        applyFilters();
-    });
-
-    function applyFilters() {
-        const topic = document.getElementById('topic-select').value;
-        const type = document.getElementById('content-type-select').value;
-        const format = document.getElementById('file-format-select').value;
-        
-        const items = document.querySelectorAll('#resources-grid .resource-item');
-        let visibleCount = 0;
-        let totalCount = 0;
-
-        items.forEach(item => {
-            totalCount++;
-            const itemTopic = item.getAttribute('data-topic');
-            const itemType = item.getAttribute('data-type');
-            const itemFormat = item.getAttribute('data-format');
-
-            const matchesTopic = (topic === 'all' || itemTopic === topic);
-            const matchesType = (type === 'all' || itemType === type);
-            const matchesFormat = (format === 'all' || itemFormat === format);
-
-            if (matchesTopic && matchesType && matchesFormat) {
-                item.style.display = 'block';
-                visibleCount++;
-            } else {
-                item.style.display = 'none';
-            }
-        });
-
-        const countElement = document.getElementById('result-count');
-        if (countElement) {
-            countElement.textContent = `共 ${totalCount} 份资料，当前显示 ${visibleCount} 份`;
-        }
-    }
-</script>
-
-<style>
-    .hidden { display: none !important; }
-    
-    /* 
-       【修正】
-       所有标签内容区域的高度统一，防止页面跳动。
-       调整为约 300px。
-    */
-    .tab-content {
-        min-height: 300px;
-    }
-</style>
     </main>
     
     <!-- Footer -->

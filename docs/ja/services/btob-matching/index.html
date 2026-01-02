@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="免费下载有助于海外拓展的资料。这里汇集了关于跨境电商、海外营销、海外销售的Leap干货资料集。">
-    <title>免费干货资料下载 | Leap</title>
+    <meta name="description" content="URLを入力するだけで多言語の自社ページが完成。世界15カ国以上、300社を超える現地代理店と直接つながるBtoBマッチングプラットフォーム。">
+    <title>代理店マッチングサービス | Leap</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
@@ -136,176 +136,364 @@
     <!-- Main Content -->
     <main id="main-content">
         
-<!-- 
-  SECTION 1: HERO AREA 
--->
-<section class="section py-3xl" style="background: var(--color-primary-gradient); color: var(--color-white);">
-    <div class="container text-center">
-        <h1 class="text-white mb-md">Leap免费干货资料下载</h1>
-        <p class="text-white mb-xl" style="font-size: var(--font-size-lg); max-width: 800px; margin-left: auto; margin-right: auto;">
-            利用Leap的免费实用资料与产品，<br>
-            最大化您的海外拓展、跨境电商及海外营销成果。
-        </p>
-        
-        <div class="flex justify-center items-center" style="gap: var(--space-lg); flex-wrap: wrap;">
-            <a href="#all-resources" class="btn btn-xl btn-white">
-                查看所有资料 ↓
-            </a>
-            <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="btn btn-xl btn-outline-white">
-                免费试用工具
-            </a>
+<!-- ============================================
+     Hero Section
+     修正: 輸出企業と代理店をつなぐマッチングを訴求
+============================================= -->
+<section class="section bg-beige">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <!-- Left Content -->
+            <div class="order-2-mobile">
+                <div class="mb-md">
+                    <span style="color: var(--color-accent-orange); font-weight: bold; letter-spacing: 0.05em;">Leap Global Partner Matching</span>
+                </div>
+                <h1 class="mb-lg" style="line-height: 1.2;">
+                    URLを入れるだけ。<br>
+                    世界中の有力代理店と<br>
+                    直接つながる。
+                </h1>
+                <p class="text-secondary mb-xl" style="font-size: var(--font-size-lg);">
+                    輸出したい企業と、商材を探す現地代理店のためのBtoBプラットフォーム。<br>
+                    AIがあなたの会社ページを自動作成・多言語化し、世界のバイヤーへアピールします。
+                </p>
+                <div class="flex" style="gap: 16px; flex-wrap: wrap;">
+                    <!-- アプリへ遷移（別タブ） -->
+                    <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">無料で掲載してみる</a>
+                    <!-- お問い合わせフォームへ遷移 -->
+                    <a href="https://www.leap.site/about/#contact" class="btn btn-secondary btn-lg">デモを申し込む</a>
+                </div>
+            </div>
+            
+            <!-- Right Image -->
+            <div class="text-center order-1-mobile mb-xl">
+                <!-- 画像指定: 世界地図を背景に、ビジネスパーソン同士が握手しているイラストや、マッチング成立を示すUI画面 -->
+                <img src="https://placehold.jp/600x400.png?text=Global+Matching+Platform" alt="代理店マッチングプラットフォームのイメージ" class="img-cover">
+            </div>
         </div>
     </div>
 </section>
 
-<!-- 
-  SECTION 2: POPULAR RESOURCES (TABS)
--->
-<section class="section py-xl bg-beige">
+<!-- ============================================
+     Feature 1: AI Page Creation
+     修正: URL入力による自動ページ作成・翻訳を訴求
+============================================= -->
+<section class="section bg-white">
     <div class="container">
-        <h2 class="text-center mb-lg" style="font-size: var(--font-size-3xl);">热门资料集</h2>
-        
-        <!-- 标签导航 -->
-        <div class="flex justify-center" style="border-bottom: 1px solid var(--color-border); margin-bottom: var(--space-xl);">
-            <nav style="display: flex; gap: var(--space-xl); overflow-x: auto; padding-bottom: 0;">
+        <div class="grid-2 items-center">
+            <!-- Text -->
+            <div>
+                <h2 class="mb-md">掲載準備はURLを入れるだけ。<br>AIが多言語ページを自動生成</h2>
+                <p class="mb-lg">
+                    面倒なプロフィール入力や翻訳作業は一切不要です。<br>
+                    自社サイトのURLを入力するだけで、AIが情報を自動取得し、魅力的な企業紹介ページを作成。さらに、閲覧する代理店の言語に合わせて自動翻訳されるため、言葉の壁を超えて商材の魅力を伝えられます。
+                </p>
                 
-                <div onclick="switchTab('region')" class="tab-btn active" id="btn-region" 
-                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid var(--color-primary-start); color: var(--color-primary-start); font-weight: bold; cursor: pointer; font-size: 1rem; white-space: nowrap;">
-                    按国家/地区
-                </div>
-                
-                <div onclick="switchTab('ec')" class="tab-btn" id="btn-ec" 
-                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
-                    跨境电商
-                </div>
-                
-                <div onclick="switchTab('marketing')" class="tab-btn" id="btn-marketing" 
-                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
-                    海外营销
-                </div>
-                
-                <div onclick="switchTab('sales')" class="tab-btn" id="btn-sales" 
-                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
-                    海外销售
+                <div class="content-list">
+                    <ul>
+                        <li><strong>最短1分で掲載：</strong> 既存のWEBサイトがあれば、すぐに世界へ公開できます。</li>
+                        <li><strong>自動多言語化：</strong> 英語、中国語など、相手に合わせて表示言語が最適化されます。</li>
+                    </ul>
                 </div>
 
-            </nav>
+                <a href="https://www.leap.site/about/#contact" class="link-arrow">掲載フローの詳細のデモを申し込む →</a>
+            </div>
+
+            <!-- Image -->
+            <div>
+                <!-- 画像指定: URLを入力すると、綺麗な多言語プロフィールページが生成されるプロセスの図 -->
+                <img src="https://placehold.jp/600x400.png?text=URL+to+Global+Profile" alt="AIによる自動ページ生成" class="img-cover">
+            </div>
         </div>
-
-        <!-- 
-          标签内容区域 
-        -->
-
-        <!-- 1. 按国家/地区 (region) -->
-        <div id="tab-content-region" class="tab-content grid-3">
-            
-            
-
-            
-
-            
-                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
-                    <p class="text-secondary">目前正在准备中。</p>
-                </div>
-            
-        </div>
-
-        <!-- 2. 跨境电商 (ec) -->
-        <div id="tab-content-ec" class="tab-content grid-3 hidden">
-            
-            
-
-            
-
-            
-                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
-                    <p class="text-secondary">目前正在准备中。</p>
-                </div>
-            
-        </div>
-
-        <!-- 3. 海外营销 (marketing) -->
-        <div id="tab-content-marketing" class="tab-content grid-3 hidden">
-            
-            
-
-            
-
-            
-                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
-                    <p class="text-secondary">目前正在准备中。</p>
-                </div>
-            
-        </div>
-
-        <!-- 4. 海外销售 (sales) -->
-        <div id="tab-content-sales" class="tab-content grid-3 hidden">
-            
-            
-
-            
-
-            
-                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
-                    <p class="text-secondary">目前正在准备中。</p>
-                </div>
-            
-        </div>
-
     </div>
 </section>
 
-<!-- 
-  SECTION 3: ALL RESOURCES (FILTER & GRID)
--->
-<section id="all-resources" class="section py-3xl bg-white">
+<!-- ============================================
+     Feature 2: Global Network
+     修正: 登録代理店数と展開国の実績を訴求
+============================================= -->
+<section class="section bg-beige">
     <div class="container">
-        <h2 class="text-center mb-sm">查看所有资料</h2>
-        <p class="page-subtitle mb-2xl">助力海外销售增长的免费资料集</p>
+        <div class="grid-2 items-center">
+            <!-- Image (Left on Desktop) -->
+            <div class="order-1-mobile mb-xl">
+                <!-- 画像指定: 世界地図上にピンが立っており、シンガポール・香港・米国・中国などが強調されている図 -->
+                <img src="https://placehold.jp/600x400.png?text=Global+Distributor+Network" alt="世界中の代理店ネットワーク" class="img-cover">
+            </div>
 
-        <!-- Filters -->
-        <div class="grid-3 mb-2xl">
-            <div class="form-group mb-0">
-                <label class="form-label" for="topic-select">主题</label>
-                <select id="topic-select" class="form-control" onchange="applyFilters()">
-                    <option value="all">所有主题</option>
-                    <option value="region">按国家/地区</option>
-                    <option value="ec">跨境电商</option>
-                    <option value="marketing">海外营销</option>
-                    <option value="sales">海外销售</option>
-                </select>
-            </div>
-            <div class="form-group mb-0">
-                <label class="form-label" for="content-type-select">内容形式</label>
-                <select id="content-type-select" class="form-control" onchange="applyFilters()">
-                    <option value="all">所有类型</option>
-                    <option value="guide">指南手册</option>
-                    <option value="template">模板</option>
-                    <option value="report">调查报告</option>
-                    <option value="checklist">检查清单</option>
-                    <option value="tool">Excel工具</option>
-                </select>
-            </div>
-            <div class="form-group mb-0">
-                <label class="form-label" for="file-format-select">文件格式</label>
-                <select id="file-format-select" class="form-control" onchange="applyFilters()">
-                    <option value="all">所有格式</option>
-                    <option value="pdf">PDF</option>
-                    <option value="excel">Excel</option>
-                    <option value="ppt">PowerPoint</option>
-                </select>
+            <!-- Text -->
+            <div class="order-2-mobile">
+                <h2 class="mb-md">15カ国以上、300社超。<br>有力な現地代理店が登録</h2>
+                <p class="mb-lg">
+                    シンガポール、香港、アメリカ、中国を中心に、世界15カ国以上の現地代理店・バイヤーがLeapに登録しています。<br>
+                    日本製品を取り扱いたい意欲の高いパートナーが、あなたの商材を待っています。輸出企業もすでに200社以上が利用している、信頼のプラットフォームです。
+                </p>
+                <a href="https://www.leap.site/about/#contact" class="link-arrow">登録代理店リストのデモを申し込む →</a>
             </div>
         </div>
+    </div>
+</section>
 
-        <p id="result-count" class="text-right text-light mb-lg" style="font-size: var(--font-size-sm);">加载中...</p>
+<!-- ============================================
+     Feature 3: Direct Message
+     修正: プラットフォーム上での直接交渉機能について
+============================================= -->
+<section class="section bg-white">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <!-- Text -->
+            <div>
+                <h2 class="mb-md">気になった代理店へ、<br>直接メッセージでアプローチ</h2>
+                <p class="mb-lg">
+                    条件に合う代理店を見つけたら、プラットフォーム上のチャット機能を使って直接コンタクトを取ることができます。<br>
+                    商談の打診から条件交渉まで、Leapの画面内でスムーズに完結。メールアドレスを探したり、連絡先交換の手間をかけることなく、スピーディーにビジネスを進められます。
+                </p>
+                <a href="https://www.leap.site/about/#contact" class="link-arrow">メッセージ機能のデモを申し込む →</a>
+            </div>
 
-        <!-- Resources Grid -->
-        <div class="grid-3" id="resources-grid">
-            
+            <!-- Image -->
+            <div>
+                <!-- 画像指定: チャット形式で代理店と商談しているUI画面 -->
+                <img src="https://placehold.jp/600x400.png?text=Direct+Message+UI" alt="代理店とのメッセージ機能" class="img-cover">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     Features Grid
+     修正: マッチング関連の機能アイコンとテキストに変更
+============================================= -->
+<section class="section bg-white">
+    <div class="container">
+        <h2 class="text-center mb-2xl">海外販路開拓を<br>加速させる機能</h2>
+        
+        <div class="grid-4">
+            <!-- Item 1: 自動ページ作成 -->
+            <div>
+                <div class="solution-icon" style="color: var(--color-primary-start);">
+                    <!-- Layout / Web Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="3" y1="9" x2="21" y2="9"></line>
+                        <line x1="9" y1="21" x2="9" y2="9"></line>
+                    </svg>
+                </div>
+                <h3 class="h5 mb-sm">AIページ自動作成</h3>
+                <p class="text-sm text-secondary">URL入力のみで、多言語対応の企業・製品紹介ページを自動生成します。</p>
+            </div>
+
+            <!-- Item 2: 代理店検索 -->
+            <div>
+                <div class="solution-icon" style="color: var(--color-primary-start);">
+                    <!-- Search / Users Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </div>
+                <h3 class="h5 mb-sm">代理店検索</h3>
+                <p class="text-sm text-secondary">国、取り扱いジャンル、規模などの条件で、最適なパートナーを検索できます。</p>
+            </div>
+
+            <!-- Item 3: 直接メッセージ -->
+            <div>
+                <div class="solution-icon" style="color: var(--color-primary-start);">
+                    <!-- Message / Chat Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                </div>
+                <h3 class="h5 mb-sm">ダイレクトメッセージ</h3>
+                <p class="text-sm text-secondary">プラットフォーム上で、翻訳支援付きのメッセージやりとりが可能です。</p>
+            </div>
+
+            <!-- Item 4: 足跡機能 -->
+            <div>
+                <div class="solution-icon" style="color: var(--color-primary-start);">
+                    <!-- Footprints / Eye Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                </div>
+                <h3 class="h5 mb-sm">閲覧履歴（足跡）</h3>
+                <p class="text-sm text-secondary">あなたのページを見た代理店がわかるため、関心度の高い相手へアプローチできます。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     Case Study
+     修正: マッチング成功事例に変更
+============================================= -->
+<section class="section bg-background">
+    <div class="container">
+        <h2 class="mb-xl">導入企業の声</h2>
+        
+        <div class="card p-0 overflow-hidden">
+            <div class="grid-2" style="gap: 0;">
+                <!-- Image -->
+                <div style="min-height: 400px;">
+                    <img src="https://placehold.jp/800x600.png?text=Matching+Success+User" alt="Leap導入企業の担当者" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
                 
+                <!-- Content -->
+                <div class="py-xl px-lg flex flex-col justify-center bg-white">
+                    <div class="mb-lg">
+                        <div style="font-weight: bold; font-size: 24px; color: var(--color-dark-gray);">Organic Foods Japan</div>
+                    </div>
+                    
+                    <p class="quote-text mb-lg" style="font-size: var(--font-size-lg);">
+                        「展示会に出展するコストをかけずに、シンガポールの食品商社と繋がることができました。Leapでページを作っておくだけで先方から連絡があり、トントン拍子で輸出が決まりました。」
+                    </p>
+                    
+                    <div>
+                        <p class="font-bold mb-0">伊藤 健一 氏</p>
+                        <p class="text-sm text-secondary">代表取締役</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     Stats
+     修正: 登録数などの実績数値に変更
+============================================= -->
+<section class="section bg-white">
+    <div class="container">
+        <h2 class="text-center mb-2xl">Leapが選ばれる理由</h2>
+        
+        <div class="grid-3 text-center">
+            <div>
+                <span class="stat-number">300+</span>
+                <p class="stat-label">登録代理店数</p>
+                <p class="text-sm text-secondary mt-sm">有力な現地パートナーが<br>多数登録中</p>
+            </div>
+            
+            <div>
+                <span class="stat-number">15+</span>
+                <p class="stat-label">展開国・地域</p>
+                <p class="text-sm text-secondary mt-sm">シンガポール・香港・米国・中国<br>など主要国を網羅</p>
+            </div>
+            
+            <div>
+                <span class="stat-number">200+</span>
+                <p class="stat-label">登録輸出企業</p>
+                <p class="text-sm text-secondary mt-sm">多くの日本企業が<br>海外販路を開拓中</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     Pricing
+     修正: 掲載無料、メッセージ送信有料（国ごとの課金）を明記
+============================================= -->
+<section class="section bg-beige" id="pricing">
+    <div class="container">
+        <h2 class="text-center mb-sm">料金プラン</h2>
+        <p class="text-center text-secondary mb-2xl">掲載は完全無料。アプローチしたい国が決まってから課金できる安心設計です。</p>
+        
+        <div class="flex justify-center" style="gap: var(--space-xl); flex-wrap: wrap;">
+            
+            <!-- Free Plan (Listing Only) -->
+            <div class="card" style="width: 100%; max-width: 400px; border-top: 6px solid var(--color-gray);">
+                <div class="mb-lg">
+                    <h3 class="h2 mb-xs">Free</h3>
+                    <p class="text-secondary">まずは掲載して待ちたい方へ</p>
+                </div>
+                
+                <div class="mb-lg">
+                    <span class="stat-number" style="color: var(--color-text-primary);">¥0</span>
+                    <span class="text-secondary">/月</span>
+                </div>
+                
+                <ul class="mb-xl" style="list-style: none; padding: 0;">
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> <strong>自社ページ掲載（無制限）</strong>
+                    </li>
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> AI自動ページ作成・翻訳
+                    </li>
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> 代理店からの連絡受信
+                    </li>
+                    <li class="flex items-center mb-sm" style="color: var(--color-text-light);">
+                        <span class="mr-sm">✖</span> <strong>自分からのメッセージ送信</strong>
+                    </li>
+                </ul>
+                
+                <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-full text-center">無料で掲載する</a>
+            </div>
+
+            <!-- Standard Plan (Messaging) -->
+            <div class="card" style="width: 100%; max-width: 400px; border-top: 6px solid var(--color-primary-start);">
+                <div class="mb-lg">
+                    <h3 class="h2 mb-xs">Standard</h3>
+                    <p class="text-secondary">積極的に営業したい企業へ</p>
+                </div>
+                
+                <div class="mb-lg">
+                    <span class="stat-number">¥20,000</span>
+                    <span class="text-secondary">/月（1カ国追加ごと）</span>
+                </div>
+                
+                <ul class="mb-xl" style="list-style: none; padding: 0;">
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> 自社ページ掲載（無制限）
+                    </li>
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> AI自動ページ作成・翻訳
+                    </li>
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> <strong>海外代理店へメッセージ送信</strong>
+                    </li>
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> 優先サポート
+                    </li>
+                </ul>
+                
+                <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full text-center">有料プランを選択</a>
+            </div>
             
         </div>
+    </div>
+</section>
 
+<!-- ============================================
+     FAQ
+     修正: マッチング関連の質問内容に変更
+============================================= -->
+<section class="section bg-white">
+    <div class="container content-medium">
+        <h2 class="mb-xl">よくあるご質問 (FAQ)</h2>
+        
+        <div class="mb-md">
+            <details class="card p-md mb-sm" style="cursor: pointer;">
+                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">どの国の代理店が多いですか？</summary>
+                <div class="mt-md text-secondary">
+                    現在はシンガポール、香港、アメリカ、中国、台湾の代理店が多く登録しています。東南アジアや欧米を中心に順次エリアを拡大しています。
+                </div>
+            </details>
+
+            <details class="card p-md mb-sm" style="cursor: pointer;">
+                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">成約した場合、手数料はかかりますか？</summary>
+                <div class="mt-md text-secondary">
+                    いいえ、Leapはマッチングプラットフォームであり、取引成立時の手数料（マージン）は一切いただいておりません。月額利用料のみでご利用いただけます。
+                </div>
+            </details>
+
+            <details class="card p-md mb-sm" style="cursor: pointer;">
+                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">英語ができなくてもメッセージできますか？</summary>
+                <div class="mt-md text-secondary">
+                    はい。プラットフォーム上のメッセージ機能には翻訳機能が内蔵されています。日本語で入力すれば、相手の言語に自動翻訳されて送信されます。
+                </div>
+            </details>
+        </div>
     </div>
 </section>
 
@@ -480,80 +668,6 @@
     document.addEventListener('DOMContentLoaded', updateCtaContent);
 })();
 </script>
-
-<!-- SCRIPTS -->
-<script>
-    // 1. 标签切换 (switchTab)
-    function switchTab(topic) {
-        document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-        const targetContent = document.getElementById('tab-content-' + topic);
-        if(targetContent) targetContent.classList.remove('hidden');
-
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.style.borderBottom = '3px solid transparent';
-            btn.style.color = 'var(--color-text-secondary)';
-            btn.classList.remove('active');
-        });
-        
-        const activeBtn = document.getElementById('btn-' + topic);
-        if(activeBtn) {
-            activeBtn.style.borderBottom = '3px solid var(--color-primary-start)';
-            activeBtn.style.color = 'var(--color-primary-start)';
-            activeBtn.classList.add('active');
-        }
-    }
-
-    // 2. 筛选 (Filtering)
-    document.addEventListener('DOMContentLoaded', function() {
-        applyFilters();
-    });
-
-    function applyFilters() {
-        const topic = document.getElementById('topic-select').value;
-        const type = document.getElementById('content-type-select').value;
-        const format = document.getElementById('file-format-select').value;
-        
-        const items = document.querySelectorAll('#resources-grid .resource-item');
-        let visibleCount = 0;
-        let totalCount = 0;
-
-        items.forEach(item => {
-            totalCount++;
-            const itemTopic = item.getAttribute('data-topic');
-            const itemType = item.getAttribute('data-type');
-            const itemFormat = item.getAttribute('data-format');
-
-            const matchesTopic = (topic === 'all' || itemTopic === topic);
-            const matchesType = (type === 'all' || itemType === type);
-            const matchesFormat = (format === 'all' || itemFormat === format);
-
-            if (matchesTopic && matchesType && matchesFormat) {
-                item.style.display = 'block';
-                visibleCount++;
-            } else {
-                item.style.display = 'none';
-            }
-        });
-
-        const countElement = document.getElementById('result-count');
-        if (countElement) {
-            countElement.textContent = `共 ${totalCount} 份资料，当前显示 ${visibleCount} 份`;
-        }
-    }
-</script>
-
-<style>
-    .hidden { display: none !important; }
-    
-    /* 
-       【修正】
-       所有标签内容区域的高度统一，防止页面跳动。
-       调整为约 300px。
-    */
-    .tab-content {
-        min-height: 300px;
-    }
-</style>
     </main>
     
     <!-- Footer -->
