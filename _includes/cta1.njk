@@ -1,0 +1,171 @@
+<!-- CTA Section Component -->
+<style>
+    /* ===================================
+       CTA Section Styles (Self-contained)
+       =================================== */
+    .section-cta {
+        background-color: #26000a; /* Deep dark red/black */
+        color: #ffffff;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cta-image-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cta-blob-background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 120%;
+        height: 120%;
+        background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        z-index: 0;
+        opacity: 0.8;
+        max-width: 550px;
+    }
+
+    .cta-image {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 500px;
+        aspect-ratio: 4 / 3;
+        margin: 0 auto;
+        object-fit: cover;
+        border-radius: 8px; /* var(--radius-lg) fallback */
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* var(--shadow-2xl) fallback */
+    }
+
+    .btn-cta-primary {
+        background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+        color: #ffffff;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 14px 0 rgba(193, 0, 51, 0.4);
+    }
+    
+    .btn-cta-primary:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
+        color: #ffffff;
+    }
+
+    .btn-cta-outline {
+        background: transparent;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+    }
+
+    .btn-cta-outline:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+    }
+</style>
+
+<section class="section section-cta py-3xl">
+    <div class="container">
+        <div class="grid-2 items-center" style="gap: 3rem;">
+            
+            <!-- Left: Image & Decoration -->
+            <div class="cta-image-wrapper">
+                <div class="cta-blob-background"></div>
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Leap global business" class="cta-image">
+            </div>
+
+            <!-- Right: Text & Buttons -->
+            <div class="text-left">
+                <h2 id="cta-title" class="mb-lg text-white" style="font-size: 2.25rem;">
+                    <!-- JSで書き換え -->
+                    Leapでグローバルに<br>飛躍しましょう。
+                </h2>
+                
+                <p id="cta-subtitle" class="mb-lg text-white font-bold" style="font-size: 1.125rem; line-height: 1.6;">
+                    <!-- JSで書き換え -->
+                    海外売上を伸ばすためのオールインワンツール
+                </p>
+                
+                <p id="cta-desc" class="mb-xl text-white" style="line-height: 1.8; opacity: 0.9;">
+                    <!-- JSで書き換え -->
+                    多言語HP作成、越境ECの開設・運用、多言語コンテンツ制作、海外向けSNS運用、そして現地の代理店マッチングまで。<br>
+                    Leapなら、複雑な海外展開のプロセスを一元管理し、効率的に海外売上を拡大させることができます。
+                </p>
+                
+                <div class="flex flex-wrap" style="gap: 1rem;">
+                    <a id="cta-demo-btn" href="https://www.leap.site/about/#contact" class="btn btn-lg btn-cta-primary">
+                        <!-- JSで書き換え -->
+                        デモを申し込む &rarr;
+                    </a>
+                    <a id="cta-free-btn" href="https://app.leap.site" class="btn btn-lg btn-cta-outline">
+                        <!-- JSで書き換え -->
+                        無料で試してみる &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+(function() {
+    // 翻訳データ定義
+    const ctaTranslations = {
+        ja: {
+            title: 'Leapでグローバルに<br>飛躍しましょう。',
+            subtitle: '海外売上を伸ばすためのオールインワンツール',
+            desc: '多言語HP作成、越境ECの開設・運用、多言語コンテンツ制作、海外向けSNS運用、そして現地の代理店マッチングまで。<br>Leapなら、複雑な海外展開のプロセスを一元管理し、効率的に海外売上を拡大させることができます。',
+            demo: 'デモを申し込む &rarr;',
+            free: '無料で試してみる &rarr;'
+        },
+        en: {
+            title: 'Leap into the Global Market.',
+            subtitle: 'The All-in-One Tool to Boost International Sales',
+            desc: 'From multilingual website creation and cross-border EC management to global content production, SNS marketing, and local partner matching.<br>Leap centralizes the complex process of global expansion, enabling you to efficiently scale your overseas revenue.',
+            demo: 'Request a Demo &rarr;',
+            free: 'Try for Free &rarr;'
+        },
+        'zh-hans': {
+            title: '使用 Leap 实现<br>全球业务飞跃。',
+            subtitle: '提升海外销售额的一站式工具',
+            desc: '多语言网站制作、跨境电商开设运营、多语言内容制作、面向海外的社交媒体运营，以及当地代理商匹配。<br>Leap 能够一元化管理复杂的海外拓展流程，高效助力您的海外销售额增长。',
+            demo: '申请演示 &rarr;',
+            free: '免费试用 &rarr;'
+        }
+    };
+
+    // 現在の言語を取得 (header.jsと同じロジック)
+    function getCtaLanguage() {
+        const path = window.location.pathname;
+        const match = path.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+        if (!match) return 'ja';
+        return match[1] === 'jp' ? 'ja' : match[1];
+    }
+
+    // コンテンツ更新処理
+    function updateCtaContent() {
+        const lang = getCtaLanguage();
+        const t = ctaTranslations[lang] || ctaTranslations['ja']; // フォールバック
+
+        const titleEl = document.getElementById('cta-title');
+        const subtitleEl = document.getElementById('cta-subtitle');
+        const descEl = document.getElementById('cta-desc');
+        const demoBtnEl = document.getElementById('cta-demo-btn');
+        const freeBtnEl = document.getElementById('cta-free-btn');
+
+        if (titleEl) titleEl.innerHTML = t.title;
+        if (subtitleEl) subtitleEl.textContent = t.subtitle;
+        if (descEl) descEl.innerHTML = t.desc;
+        if (demoBtnEl) demoBtnEl.innerHTML = t.demo;
+        if (freeBtnEl) freeBtnEl.innerHTML = t.free;
+    }
+
+    // 実行
+    document.addEventListener('DOMContentLoaded', updateCtaContent);
+})();
+</script>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="免费下载有助于海外拓展的资料。这里汇集了关于跨境电商、海外营销、海外销售的Leap干货资料集。">
-    <title>免费干货资料下载 | Leap</title>
+    <meta name="description" content="日本語で投稿するだけで、AIが自動翻訳して世界中のSNSへ同時発信。Instagram、X、Facebook、LinkedIn対応。">
+    <title>海外向けSNS運用サービス | Leap</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
@@ -136,176 +136,382 @@
     <!-- Main Content -->
     <main id="main-content">
         
-<!-- 
-  SECTION 1: HERO AREA 
--->
-<section class="section py-3xl" style="background: var(--color-primary-gradient); color: var(--color-white);">
-    <div class="container text-center">
-        <h1 class="text-white mb-md">Leap免费干货资料下载</h1>
-        <p class="text-white mb-xl" style="font-size: var(--font-size-lg); max-width: 800px; margin-left: auto; margin-right: auto;">
-            利用Leap的免费实用资料与产品，<br>
-            最大化您的海外拓展、跨境电商及海外营销成果。
-        </p>
-        
-        <div class="flex justify-center items-center" style="gap: var(--space-lg); flex-wrap: wrap;">
-            <a href="#all-resources" class="btn btn-xl btn-white">
-                查看所有资料 ↓
-            </a>
-            <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="btn btn-xl btn-outline-white">
-                免费试用工具
-            </a>
+<!-- ============================================
+     Hero Section
+     修正: 「日本語投稿だけで世界へ拡散」というメリットを訴求
+============================================= -->
+<section class="section bg-beige">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <!-- Left Content -->
+            <div class="order-2-mobile">
+                <div class="mb-md">
+                    <span style="color: var(--color-accent-orange); font-weight: bold; letter-spacing: 0.05em;">Leap Global SNS Manager</span>
+                </div>
+                <h1 class="mb-lg" style="line-height: 1.2;">
+                    日本語で投稿するだけ。<br>
+                    世界中のSNSへ<br>
+                    自動で拡散。
+                </h1>
+                <p class="text-secondary mb-xl" style="font-size: var(--font-size-lg);">
+                    Instagram、Facebook、LinkedIn、Xに対応。<br>
+                    AIが瞬時に現地の言葉へ翻訳し、あなたのブランドを世界に届けます。
+                </p>
+                <div class="flex" style="gap: 16px; flex-wrap: wrap;">
+                    <!-- アプリへ遷移（別タブ） -->
+                    <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">無料で試してみる</a>
+                    <!-- お問い合わせフォームへ遷移 -->
+                    <a href="https://www.leap.site/about/#contact" class="btn btn-secondary btn-lg">デモを申し込む</a>
+                </div>
+            </div>
+            
+            <!-- Right Image -->
+            <div class="text-center order-1-mobile mb-xl">
+                <!-- 画像指定: スマホから日本語の投稿が飛び出し、地球を回って英語・タイ語・ベトナム語などのSNS投稿に変化して拡散するイメージ -->
+                <img src="https://placehold.jp/600x400.png?text=Global+SNS+Diffusion" alt="SNS自動翻訳投稿のイメージ" class="img-cover">
+            </div>
         </div>
     </div>
 </section>
 
-<!-- 
-  SECTION 2: POPULAR RESOURCES (TABS)
--->
-<section class="section py-xl bg-beige">
+<!-- ============================================
+     Feature 1: Easy Linkage
+     修正: 4大SNSとの簡単連携を訴求
+============================================= -->
+<section class="section bg-white">
     <div class="container">
-        <h2 class="text-center mb-lg" style="font-size: var(--font-size-3xl);">热门资料集</h2>
-        
-        <!-- 标签导航 -->
-        <div class="flex justify-center" style="border-bottom: 1px solid var(--color-border); margin-bottom: var(--space-xl);">
-            <nav style="display: flex; gap: var(--space-xl); overflow-x: auto; padding-bottom: 0;">
+        <div class="grid-2 items-center">
+            <!-- Text -->
+            <div>
+                <h2 class="mb-md">ボタンひとつで、<br>主要4大SNSと即座に連携</h2>
+                <p class="mb-lg">
+                    Instagram、Facebook、LinkedIn、X（旧Twitter）。<br>
+                    世界中で利用されている主要プラットフォームのアカウントを、連携ボタンを押すだけで簡単にLeapと接続できます。<br>
+                    国内向けアカウントも海外向けアカウントも、すべて一つの画面で管理可能です。
+                </p>
                 
-                <div onclick="switchTab('region')" class="tab-btn active" id="btn-region" 
-                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid var(--color-primary-start); color: var(--color-primary-start); font-weight: bold; cursor: pointer; font-size: 1rem; white-space: nowrap;">
-                    按国家/地区
-                </div>
-                
-                <div onclick="switchTab('ec')" class="tab-btn" id="btn-ec" 
-                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
-                    跨境电商
-                </div>
-                
-                <div onclick="switchTab('marketing')" class="tab-btn" id="btn-marketing" 
-                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
-                    海外营销
-                </div>
-                
-                <div onclick="switchTab('sales')" class="tab-btn" id="btn-sales" 
-                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
-                    海外销售
+                <div class="content-list">
+                    <ul>
+                        <li><strong>対応SNS：</strong> Instagram, Facebook, LinkedIn, X</li>
+                        <li><strong>簡単設定：</strong> 複雑なAPI設定は不要。ログインするだけで完了。</li>
+                    </ul>
                 </div>
 
-            </nav>
+                <a href="https://www.leap.site/about/#contact" class="link-arrow">連携フローの詳細のデモを申し込む →</a>
+            </div>
+
+            <!-- Image -->
+            <div>
+                <!-- 画像指定: Leapの管理画面で、各SNSのアイコンが並び「連携済み（Connected）」となっているUI -->
+                <img src="https://placehold.jp/600x400.png?text=Social+Media+Linkage+UI" alt="SNSアカウント連携画面" class="img-cover">
+            </div>
         </div>
-
-        <!-- 
-          标签内容区域 
-        -->
-
-        <!-- 1. 按国家/地区 (region) -->
-        <div id="tab-content-region" class="tab-content grid-3">
-            
-            
-
-            
-
-            
-                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
-                    <p class="text-secondary">目前正在准备中。</p>
-                </div>
-            
-        </div>
-
-        <!-- 2. 跨境电商 (ec) -->
-        <div id="tab-content-ec" class="tab-content grid-3 hidden">
-            
-            
-
-            
-
-            
-                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
-                    <p class="text-secondary">目前正在准备中。</p>
-                </div>
-            
-        </div>
-
-        <!-- 3. 海外营销 (marketing) -->
-        <div id="tab-content-marketing" class="tab-content grid-3 hidden">
-            
-            
-
-            
-
-            
-                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
-                    <p class="text-secondary">目前正在准备中。</p>
-                </div>
-            
-        </div>
-
-        <!-- 4. 海外销售 (sales) -->
-        <div id="tab-content-sales" class="tab-content grid-3 hidden">
-            
-            
-
-            
-
-            
-                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
-                    <p class="text-secondary">目前正在准备中。</p>
-                </div>
-            
-        </div>
-
     </div>
 </section>
 
-<!-- 
-  SECTION 3: ALL RESOURCES (FILTER & GRID)
--->
-<section id="all-resources" class="section py-3xl bg-white">
+<!-- ============================================
+     Feature 2: Auto Translation Posting
+     修正: 言語設定に基づく自動翻訳投稿について
+============================================= -->
+<section class="section bg-beige">
     <div class="container">
-        <h2 class="text-center mb-sm">查看所有资料</h2>
-        <p class="page-subtitle mb-2xl">助力海外销售增长的免费资料集</p>
+        <div class="grid-2 items-center">
+            <!-- Image (Left on Desktop) -->
+            <div class="order-1-mobile mb-xl">
+                <!-- 画像指定: 左側に日本語の入力画面、右側に英語・ベトナム語・タイ語に変換された投稿プレビューが表示されている図 -->
+                <img src="https://placehold.jp/600x400.png?text=Auto+Translation+Post" alt="自動翻訳投稿のプロセス" class="img-cover">
+            </div>
 
-        <!-- Filters -->
-        <div class="grid-3 mb-2xl">
-            <div class="form-group mb-0">
-                <label class="form-label" for="topic-select">主题</label>
-                <select id="topic-select" class="form-control" onchange="applyFilters()">
-                    <option value="all">所有主题</option>
-                    <option value="region">按国家/地区</option>
-                    <option value="ec">跨境电商</option>
-                    <option value="marketing">海外营销</option>
-                    <option value="sales">海外销售</option>
-                </select>
-            </div>
-            <div class="form-group mb-0">
-                <label class="form-label" for="content-type-select">内容形式</label>
-                <select id="content-type-select" class="form-control" onchange="applyFilters()">
-                    <option value="all">所有类型</option>
-                    <option value="guide">指南手册</option>
-                    <option value="template">模板</option>
-                    <option value="report">调查报告</option>
-                    <option value="checklist">检查清单</option>
-                    <option value="tool">Excel工具</option>
-                </select>
-            </div>
-            <div class="form-group mb-0">
-                <label class="form-label" for="file-format-select">文件格式</label>
-                <select id="file-format-select" class="form-control" onchange="applyFilters()">
-                    <option value="all">所有格式</option>
-                    <option value="pdf">PDF</option>
-                    <option value="excel">Excel</option>
-                    <option value="ppt">PowerPoint</option>
-                </select>
+            <!-- Text -->
+            <div class="order-2-mobile">
+                <h2 class="mb-md">日本語で書けば、<br>各国の言葉で自動投稿</h2>
+                <p class="mb-lg">
+                    連携したアカウントごとに「発信言語」を設定するだけ。<br>
+                    あなたが日本語でキャンペーン情報を入力すれば、米国向けアカウントには英語で、ベトナム向けにはベトナム語で、AIが自動的に翻訳して同時投稿します。<br>
+                    翻訳の手間をゼロにし、リアルタイムな情報発信を実現します。
+                </p>
+                <a href="https://www.leap.site/about/#contact" class="link-arrow">自動翻訳機能のデモを申し込む →</a>
             </div>
         </div>
+    </div>
+</section>
 
-        <p id="result-count" class="text-right text-light mb-lg" style="font-size: var(--font-size-sm);">加载中...</p>
+<!-- ============================================
+     Feature 3: Localized Operation
+     修正: 現地ローカライズ運用について
+============================================= -->
+<section class="section bg-white">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <!-- Text -->
+            <div>
+                <h2 class="mb-md">国ごとに最適化された<br>ローカライズ運用</h2>
+                <p class="mb-lg">
+                    単に言葉を翻訳するだけではありません。<br>
+                    Leapなら、タイ向けにはタイ語、ベトナム向けにはベトナム語といったように、ターゲット国に合わせた言語でアカウントを運用できます。<br>
+                    現地のフォロワーに「自分たちに向けたメッセージだ」と感じさせ、エンゲージメントを高めます。
+                </p>
+                <a href="https://www.leap.site/about/#contact" class="link-arrow">ローカライズ運用のデモを申し込む →</a>
+            </div>
 
-        <!-- Resources Grid -->
-        <div class="grid-3" id="resources-grid">
-            
+            <!-- Image -->
+            <div>
+                <!-- 画像指定: 各国のスマホ画面に、それぞれの現地語で表示されたSNSフィードが並んでいるイメージ -->
+                <img src="https://placehold.jp/600x400.png?text=Localized+Feeds" alt="現地語でのSNS運用イメージ" class="img-cover">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     Features Grid
+     修正: SNSアイコンや翻訳機能のアイコンに変更
+============================================= -->
+<section class="section bg-white">
+    <div class="container">
+        <h2 class="text-center mb-2xl">グローバルSNS運用を<br>加速させる機能</h2>
+        
+        <div class="grid-4">
+            <!-- Item 1: 4大SNS対応 -->
+            <div>
+                <div class="solution-icon" style="color: var(--color-primary-start);">
+                    <!-- Share-2 / Network Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="18" cy="5" r="3"></circle>
+                        <circle cx="6" cy="12" r="3"></circle>
+                        <circle cx="18" cy="19" r="3"></circle>
+                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                    </svg>
+                </div>
+                <h3 class="h5 mb-sm">主要4大SNS対応</h3>
+                <p class="text-sm text-secondary">Insta、FB、LinkedIn、Xに対応。BtoBもBtoCも幅広くカバーします。</p>
+            </div>
+
+            <!-- Item 2: 自動翻訳投稿 -->
+            <div>
+                <div class="solution-icon" style="color: var(--color-primary-start);">
+                    <!-- Languages / Translate Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m5 8 6 6"></path>
+                        <path d="m4 14 6-6 2-3"></path>
+                        <path d="M2 5h12"></path>
+                        <path d="M7 2h1"></path>
+                        <path d="m22 22-5-10-5 10"></path>
+                        <path d="M14 18h6"></path>
+                    </svg>
+                </div>
+                <h3 class="h5 mb-sm">自動翻訳投稿</h3>
+                <p class="text-sm text-secondary">投稿ごとの翻訳作業は不要。言語設定に基づき、AIが自動で翻訳・投稿します。</p>
+            </div>
+
+            <!-- Item 3: マルチアカウント -->
+            <div>
+                <div class="solution-icon" style="color: var(--color-primary-start);">
+                    <!-- Layers / Multi Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                </div>
+                <h3 class="h5 mb-sm">複数アカウント管理</h3>
+                <p class="text-sm text-secondary">国内・海外、複数のブランドアカウントを一つの画面で一元管理できます。</p>
+            </div>
+
+            <!-- Item 4: 分析レポート -->
+            <div>
+                <div class="solution-icon" style="color: var(--color-primary-start);">
+                    <!-- Trending Up / Analytics Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                        <polyline points="17 6 23 6 23 12"></polyline>
+                    </svg>
+                </div>
+                <h3 class="h5 mb-sm">エンゲージメント分析</h3>
+                <p class="text-sm text-secondary">国ごとの反応率やフォロワー推移を可視化し、グローバル戦略を支援します。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     Case Study
+     修正: SNS運用での成功事例に変更
+============================================= -->
+<section class="section bg-background">
+    <div class="container">
+        <h2 class="mb-xl">導入企業の声</h2>
+        
+        <div class="card p-0 overflow-hidden">
+            <div class="grid-2" style="gap: 0;">
+                <!-- Image -->
+                <div style="min-height: 400px;">
+                    <img src="https://placehold.jp/800x600.png?text=SNS+Success+User" alt="Leap導入企業の担当者" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
                 
+                <!-- Content -->
+                <div class="py-xl px-lg flex flex-col justify-center bg-white">
+                    <div class="mb-lg">
+                        <div style="font-weight: bold; font-size: 24px; color: var(--color-dark-gray);">Travel Japan Ltd.</div>
+                    </div>
+                    
+                    <p class="quote-text mb-lg" style="font-size: var(--font-size-lg);">
+                        「以前は英語のみで発信していましたが、Leapでタイ語とベトナム語のアカウントを開設したところ、アジア圏からの問い合わせが急増しました。日本語で投稿するだけで済むので、運用の手間は全く増えていません。」
+                    </p>
+                    
+                    <div>
+                        <p class="font-bold mb-0">山本 さくら 氏</p>
+                        <p class="text-sm text-secondary">SNSマーケティング担当</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     Stats
+     修正: SNS関連の実績数値に変更
+============================================= -->
+<section class="section bg-white">
+    <div class="container">
+        <h2 class="text-center mb-2xl">Leapが選ばれる理由</h2>
+        
+        <div class="grid-3 text-center">
+            <div>
+                <span class="stat-number">0</span>
+                <p class="stat-label">翻訳の手間</p>
+                <p class="text-sm text-secondary mt-sm">AI自動翻訳により<br>翻訳作業時間はゼロに</p>
+            </div>
+            
+            <div>
+                <span class="stat-number">4大</span>
+                <p class="stat-label">主要SNS完全対応</p>
+                <p class="text-sm text-secondary mt-sm">Insta, FB, X, LinkedIn<br>全てをカバー</p>
+            </div>
+            
+            <div>
+                <span class="stat-number">200%</span>
+                <p class="stat-label">海外フォロワー増</p>
+                <p class="text-sm text-secondary mt-sm">現地語での発信により<br>ファン獲得数が倍増</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     Pricing
+     修正: 自動翻訳の有無と言語ごとの課金を明記
+============================================= -->
+<section class="section bg-beige" id="pricing">
+    <div class="container">
+        <h2 class="text-center mb-sm">料金プラン</h2>
+        <p class="text-center text-secondary mb-2xl">手動運用から始めるか、自動化で加速させるか。ニーズに合わせて選べます。</p>
+        
+        <div class="flex justify-center" style="gap: var(--space-xl); flex-wrap: wrap;">
+            
+            <!-- Free Plan (Manual Post Only) -->
+            <div class="card" style="width: 100%; max-width: 400px; border-top: 6px solid var(--color-gray);">
+                <div class="mb-lg">
+                    <h3 class="h2 mb-xs">Free</h3>
+                    <p class="text-secondary">まずは連携・投稿管理から</p>
+                </div>
+                
+                <div class="mb-lg">
+                    <span class="stat-number" style="color: var(--color-text-primary);">¥0</span>
+                    <span class="text-secondary">/月</span>
+                </div>
+                
+                <ul class="mb-xl" style="list-style: none; padding: 0;">
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> SNSアカウント連携
+                    </li>
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> 投稿機能（手動）
+                    </li>
+                    <li class="flex items-center mb-sm" style="color: var(--color-text-light);">
+                        <span class="mr-sm">✖</span> <strong>自動翻訳投稿</strong>
+                    </li>
+                    <li class="flex items-center mb-sm" style="color: var(--color-text-light);">
+                        <span class="mr-sm">✖</span> ローカライズ機能
+                    </li>
+                </ul>
+                
+                <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-full text-center">無料で始める</a>
+            </div>
+
+            <!-- Standard Plan (Auto Translation) -->
+            <div class="card" style="width: 100%; max-width: 400px; border-top: 6px solid var(--color-primary-start);">
+                <div class="mb-lg">
+                    <h3 class="h2 mb-xs">Standard</h3>
+                    <p class="text-secondary">自動翻訳で本格運用へ</p>
+                </div>
+                
+                <div class="mb-lg">
+                    <span class="stat-number">¥20,000</span>
+                    <span class="text-secondary">/月（1言語追加ごと）</span>
+                </div>
+                
+                <ul class="mb-xl" style="list-style: none; padding: 0;">
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> SNSアカウント連携
+                    </li>
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> 投稿機能
+                    </li>
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> <strong>自動翻訳投稿</strong>
+                    </li>
+                    <li class="flex items-center mb-sm">
+                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> 優先サポート
+                    </li>
+                </ul>
+                
+                <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full text-center">有料プランを選択</a>
+            </div>
             
         </div>
+    </div>
+</section>
 
+<!-- ============================================
+     FAQ
+     修正: SNS運用関連の質問内容に変更
+============================================= -->
+<section class="section bg-white">
+    <div class="container content-medium">
+        <h2 class="mb-xl">よくあるご質問 (FAQ)</h2>
+        
+        <div class="mb-md">
+            <details class="card p-md mb-sm" style="cursor: pointer;">
+                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">対応しているSNSは何ですか？</summary>
+                <div class="mt-md text-secondary">
+                    現在は、Instagram、Facebook、LinkedIn、X（旧Twitter）の4大プラットフォームに対応しています。
+                </div>
+            </details>
+
+            <details class="card p-md mb-sm" style="cursor: pointer;">
+                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">自動翻訳の精度はどのくらいですか？</summary>
+                <div class="mt-md text-secondary">
+                    LeapのAIは、単なる直訳ではなく、SNS特有のカジュアルな表現やハッシュタグのローカライズにも対応しており、現地ユーザーに自然に受け入れられる投稿を作成します。
+                </div>
+            </details>
+
+            <details class="card p-md mb-sm" style="cursor: pointer;">
+                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">すでに持っている海外アカウントも連携できますか？</summary>
+                <div class="mt-md text-secondary">
+                    はい、可能です。既存のアカウントを連携し、言語設定を行うだけで、すぐに自動翻訳投稿を開始できます。
+                </div>
+            </details>
+
+            <details class="card p-md mb-sm" style="cursor: pointer;">
+                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">料金体系について詳しく教えてください。</summary>
+                <div class="mt-md text-secondary">
+                    手動投稿や連携機能は無料プランでご利用いただけます。自動翻訳投稿を利用される場合は、展開したい言語数に応じて1言語あたり月額2万円（税抜）が発生します。
+                </div>
+            </details>
+        </div>
     </div>
 </section>
 
@@ -480,80 +686,6 @@
     document.addEventListener('DOMContentLoaded', updateCtaContent);
 })();
 </script>
-
-<!-- SCRIPTS -->
-<script>
-    // 1. 标签切换 (switchTab)
-    function switchTab(topic) {
-        document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-        const targetContent = document.getElementById('tab-content-' + topic);
-        if(targetContent) targetContent.classList.remove('hidden');
-
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.style.borderBottom = '3px solid transparent';
-            btn.style.color = 'var(--color-text-secondary)';
-            btn.classList.remove('active');
-        });
-        
-        const activeBtn = document.getElementById('btn-' + topic);
-        if(activeBtn) {
-            activeBtn.style.borderBottom = '3px solid var(--color-primary-start)';
-            activeBtn.style.color = 'var(--color-primary-start)';
-            activeBtn.classList.add('active');
-        }
-    }
-
-    // 2. 筛选 (Filtering)
-    document.addEventListener('DOMContentLoaded', function() {
-        applyFilters();
-    });
-
-    function applyFilters() {
-        const topic = document.getElementById('topic-select').value;
-        const type = document.getElementById('content-type-select').value;
-        const format = document.getElementById('file-format-select').value;
-        
-        const items = document.querySelectorAll('#resources-grid .resource-item');
-        let visibleCount = 0;
-        let totalCount = 0;
-
-        items.forEach(item => {
-            totalCount++;
-            const itemTopic = item.getAttribute('data-topic');
-            const itemType = item.getAttribute('data-type');
-            const itemFormat = item.getAttribute('data-format');
-
-            const matchesTopic = (topic === 'all' || itemTopic === topic);
-            const matchesType = (type === 'all' || itemType === type);
-            const matchesFormat = (format === 'all' || itemFormat === format);
-
-            if (matchesTopic && matchesType && matchesFormat) {
-                item.style.display = 'block';
-                visibleCount++;
-            } else {
-                item.style.display = 'none';
-            }
-        });
-
-        const countElement = document.getElementById('result-count');
-        if (countElement) {
-            countElement.textContent = `共 ${totalCount} 份资料，当前显示 ${visibleCount} 份`;
-        }
-    }
-</script>
-
-<style>
-    .hidden { display: none !important; }
-    
-    /* 
-       【修正】
-       所有标签内容区域的高度统一，防止页面跳动。
-       调整为约 300px。
-    */
-    .tab-content {
-        min-height: 300px;
-    }
-</style>
     </main>
     
     <!-- Footer -->
