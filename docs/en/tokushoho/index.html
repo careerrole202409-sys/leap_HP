@@ -34,15 +34,17 @@
                         <span>▼</span>
                     </div>
                     <div class="language-dropdown" id="languageDropdown">
-                        <a href="#" class="language-option" data-lang="ja" onclick="changeLanguage('ja'); return false;">日本語</a>
-                        <a href="#" class="language-option" data-lang="en" onclick="changeLanguage('en'); return false;">English</a>
-                        <a href="#" class="language-option" data-lang="zh-hans" onclick="changeLanguage('zh-hans'); return false;">简体中文</a>
+                        <!-- ここはJSで制御（または後で各言語ごとのリンクにする）ため、一旦そのままでOKですが、後述の補足を参照 -->
+                        <a href="#" class="language-option" data-lang="ja">日本語</a>
+                        <a href="#" class="language-option" data-lang="en">English</a>
+                        <a href="#" class="language-option" data-lang="zh-hans">简体中文</a>
                     </div>
                 </div>
             </div>
             <div class="header-top-right">
                 <a href="https://app.leap.site" class="header-top-link" id="loginLink">ログイン</a>
-                <a href="https://www.leap.site/about" class="header-top-link" id="aboutLink">会社概要</a>
+                <!-- ▼ ここを修正 -->
+                <a href="//about" class="header-top-link" id="aboutLink">会社概要</a>
             </div>
         </div>
     </div>
@@ -51,30 +53,35 @@
     <div class="header-main">
         <div class="header-main-content">
             <div class="nav-left">
-                <a href="https://www.leap.site" class="logo">Leap</a>
+                <!-- ▼ ここを修正 -->
+                <a href="//" class="logo">Leap</a>
                 <nav class="nav-links">
                     <div class="nav-item">
                         <span class="nav-link" id="servicesLabel">サービス ▼</span>
                         <div class="dropdown-menu">
-                            <a href="https://www.leap.site/services/multilingual-website" class="dropdown-item" id="serviceWebsite">多言語HP作成</a>
-                            <a href="https://www.leap.site/services/cross-border-ec" class="dropdown-item" id="serviceEc">越境EC開設運用</a>
-                            <a href="https://www.leap.site/services/multilingual-content" class="dropdown-item" id="serviceContent">多言語コンテンツ制作</a>
-                            <a href="https://www.leap.site/services/global-sns" class="dropdown-item" id="serviceSns">海外向けSNS運用</a>
+                            <!-- ▼ ここを修正 -->
+                            <a href="//services/multilingual-website" class="dropdown-item" id="serviceWebsite">多言語HP作成</a>
+                            <a href="//services/cross-border-ec" class="dropdown-item" id="serviceEc">越境EC開設運用</a>
+                            <a href="//services/multilingual-content" class="dropdown-item" id="serviceContent">多言語コンテンツ制作</a>
+                            <a href="//services/global-sns" class="dropdown-item" id="serviceSns">海外向けSNS運用</a>
                         </div>
                     </div>
-                    <a href="#" class="nav-link" id="pricingLink">価格</a>
+                    <!-- ▼ ここを修正 -->
+                    <a href="//pricing" class="nav-link" id="pricingLink">価格</a>
                     <div class="nav-item">
                         <span class="nav-link" id="resourcesLabel">資料 ▼</span>
                         <div class="dropdown-menu">
-                            <a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
+                            <!-- ▼ ここを修正 -->
+                            <a href="//resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
                             <a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">ブログ</a>
                         </div>
                     </div>
                 </nav>
             </div>
             <div class="nav-right">
-                <a href="https://www.leap.site/contact" class="btn btn-demo" id="demoBtn">デモ</a>
-                <a href="#" class="btn btn-start" id="startBtn">無料スタート</a>
+                <!-- ▼ ここを修正 -->
+                <a href="//contact" class="btn btn-demo" id="demoBtn">デモ</a>
+                <a href="//contact" class="btn btn-start" id="startBtn">無料スタート</a>
             </div>
 
             <!-- ハンバーガーメニュー -->
@@ -91,7 +98,8 @@
 <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-content">
         <div class="mobile-nav-item">
-            <a href="https://www.leap.site" class="mobile-nav-link" id="mobileHome">ホーム</a>
+            <!-- ▼ ここを修正 -->
+            <a href="//" class="mobile-nav-link" id="mobileHome">ホーム</a>
         </div>
         
         <div class="mobile-nav-item">
@@ -100,15 +108,17 @@
                 <span>▼</span>
             </div>
             <div class="mobile-dropdown-content">
-                <a href="https://www.leap.site/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">多言語HP作成</a>
-                <a href="https://www.leap.site/services/cross-border-ec" class="mobile-dropdown-item" id="mobileServiceEc">越境EC開設運用</a>
-                <a href="https://www.leap.site/services/multilingual-content" class="mobile-dropdown-item" id="mobileServiceContent">多言語コンテンツ制作</a>
-                <a href="https://www.leap.site/services/global-sns" class="mobile-dropdown-item" id="mobileServiceSns">海外向けSNS運用</a>
+                <!-- ▼ ここを修正 -->
+                <a href="//services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">多言語HP作成</a>
+                <a href="//services/cross-border-ec" class="mobile-dropdown-item" id="mobileServiceEc">越境EC開設運用</a>
+                <a href="//services/multilingual-content" class="mobile-dropdown-item" id="mobileServiceContent">多言語コンテンツ制作</a>
+                <a href="//services/global-sns" class="mobile-dropdown-item" id="mobileServiceSns">海外向けSNS運用</a>
             </div>
         </div>
 
         <div class="mobile-nav-item">
-            <a href="#" class="mobile-nav-link" id="mobilePricing">価格</a>
+            <!-- ▼ ここを修正 -->
+            <a href="//pricing" class="mobile-nav-link" id="mobilePricing">価格</a>
         </div>
 
         <div class="mobile-nav-item">
@@ -117,18 +127,21 @@
                 <span>▼</span>
             </div>
             <div class="mobile-dropdown-content">
-                <a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
+                <!-- ▼ ここを修正 -->
+                <a href="//resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
                 <a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">ブログ</a>
             </div>
         </div>
 
         <div class="mobile-nav-item">
-            <a href="https://www.leap.site/about" class="mobile-nav-link" id="mobileAbout">About</a>
+            <!-- ▼ ここを修正 -->
+            <a href="//about" class="mobile-nav-link" id="mobileAbout">About</a>
         </div>
 
         <div class="mobile-cta-buttons">
-            <a href="https://www.leap.site/contact" class="btn btn-demo-mobile" id="mobileDemoBtn">デモ</a>
-            <a href="#" class="btn btn-start-mobile" id="mobileStartBtn">無料で始める</a>
+            <!-- ▼ ここを修正 -->
+            <a href="//contact" class="btn btn-demo-mobile" id="mobileDemoBtn">デモ</a>
+            <a href="//contact" class="btn btn-start-mobile" id="mobileStartBtn">無料で始める</a>
         </div>
     </div>
 </div>
@@ -241,10 +254,10 @@
             <div class="footer-column">
                 <h3 id="footerFeaturesTitle">人気の機能</h3>
                 <ul>
-                    <li><a href="https://www.leap.site/services/multilingual-website" id="footerWebsite">多言語HP作成</a></li>
-                    <li><a href="https://www.leap.site/services/cross-border-ec" id="footerEc">越境EC開設・運用</a></li>
-                    <li><a href="https://www.leap.site/services/multilingual-content" id="footerContent">多言語コンテンツ制作</a></li>
-                    <li><a href="https://www.leap.site/services/global-sns" id="footerSns">海外向けSNS運用</a></li>
+                    <li><a href="//services/multilingual-website" id="footerWebsite">多言語HP作成</a></li>
+                    <li><a href="//services/cross-border-ec" id="footerEc">越境EC開設・運用</a></li>
+                    <li><a href="//services/multilingual-content" id="footerContent">多言語コンテンツ制作</a></li>
+                    <li><a href="//services/global-sns" id="footerSns">海外向けSNS運用</a></li>
                 </ul>
             </div>
 
@@ -252,15 +265,15 @@
                 <h3 id="footerToolsTitle">無料ツール</h3>
                 <ul>
                     <li><a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" id="footerBlog">ブログ</a></li>
-                    <li><a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
+                    <li><a href="//resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
                 </ul>
             </div>
 
             <div class="footer-column">
                 <h3 id="footerCompanyTitle">会社</h3>
                 <ul>
-                    <li><a href="https://www.leap.site/about" id="footerAbout">会社概要</a></li>
-                    <li><a href="https://www.leap.site/about/#contact" id="footerContact">お問い合わせ</a></li>
+                    <li><a href="//about" id="footerAbout">会社概要</a></li>
+                    <li><a href="//about/#contact" id="footerContact">お問い合わせ</a></li>
                 </ul>
             </div>
         </div>
@@ -274,10 +287,10 @@
                 </button>
                 <div class="mobile-accordion-content">
                     <ul>
-                        <li><a href="https://www.leap.site/services/multilingual-website" id="footerMobileWebsite">多言語HP作成</a></li>
-                        <li><a href="https://www.leap.site/services/cross-border-ec" id="footerMobileEc">越境EC開設・運用</a></li>
-                        <li><a href="https://www.leap.site/services/multilingual-content" id="footerMobileContent">多言語コンテンツ制作</a></li>
-                        <li><a href="https://www.leap.site/services/global-sns" id="footerMobileSns">海外向けSNS運用</a></li>
+                        <li><a href="//services/multilingual-website" id="footerMobileWebsite">多言語HP作成</a></li>
+                        <li><a href="//services/cross-border-ec" id="footerMobileEc">越境EC開設・運用</a></li>
+                        <li><a href="//services/multilingual-content" id="footerMobileContent">多言語コンテンツ制作</a></li>
+                        <li><a href="//services/global-sns" id="footerMobileSns">海外向けSNS運用</a></li>
                     </ul>
                 </div>
             </div>
@@ -290,7 +303,7 @@
                 <div class="mobile-accordion-content">
                     <ul>
                         <li><a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">ブログ</a></li>
-                        <li><a href="https://www.leap.site/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
+                        <li><a href="//resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
                     </ul>
                 </div>
             </div>
@@ -302,8 +315,8 @@
                 </button>
                 <div class="mobile-accordion-content">
                     <ul>
-                        <li><a href="https://www.leap.site/about" id="footerMobileAbout">会社概要</a></li>
-                        <li><a href="https://www.leap.site/about/#contact" id="footerMobileContact">お問い合わせ</a></li>
+                        <li><a href="//about" id="footerMobileAbout">会社概要</a></li>
+                        <li><a href="//about/#contact" id="footerMobileContact">お問い合わせ</a></li>
                     </ul>
                 </div>
             </div>
@@ -330,20 +343,20 @@
         </div>
 
         <div class="footer-brand">
-            <a href="https://www.leap.site" style="text-decoration: none; color: inherit;">
+            <a href="//" style="text-decoration: none; color: inherit;">
                 <div class="footer-logo">Leap</div>
             </a>
             <div class="footer-copyright" id="footerCopyright">Copyright © 2025 Leap, Inc.</div>
         </div>
 
         <div class="footer-legal">
-            <a href="https://www.leap.site/privacypolicy" id="footerPrivacy">プライバシーポリシー</a>
+            <a href="//privacypolicy" id="footerPrivacy">プライバシーポリシー</a>
             <span class="footer-legal-divider">|</span>
-            <a href="https://www.leap.site/terms" id="footerTerms">利用規約</a>
+            <a href="//terms" id="footerTerms">利用規約</a>
             <span class="footer-legal-divider">|</span>
-            <a href="https://www.leap.site/tokushoho" id="footerCommerce">特定商取引法に基づく表示</a>
+            <a href="//tokushoho" id="footerCommerce">特定商取引法に基づく表示</a>
             <span class="footer-legal-divider">|</span>
-            <a href="https://www.leap.site/delete-user" id="footerWithdrawal">退会規定</a>
+            <a href="//delete-user" id="footerWithdrawal">退会規定</a>
         </div>
     </div>
 </footer>

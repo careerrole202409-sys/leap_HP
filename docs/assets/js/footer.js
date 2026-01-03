@@ -56,11 +56,12 @@ const footerTranslations = {
     }
 };
 
-// 現在の言語をURLから取得
+// 現在の言語をURLから取得 (Headerとロジックを統一)
 function getCurrentLanguage() {
     const path = window.location.pathname;
-    const match = path.match(/^\/(ja|en|zh-hans)(\/|$)/);
-    return match ? match[1] : 'ja'; // デフォルトは日本語
+    const match = path.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+    if (!match) return 'ja';
+    return match[1] === 'jp' ? 'ja' : match[1];
 }
 
 // フッターのコンテンツを更新
