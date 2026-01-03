@@ -9,7 +9,8 @@ const translations = {
             website: '多言語HP作成',
             ec: '越境EC開設運用',
             content: '多言語コンテンツ制作',
-            sns: '海外向けSNS運用'
+            sns: '海外向けSNS運用',
+            matching: '代理店マッチング' // 追加
         },
         pricing: '価格',
         resources: '資料',
@@ -31,7 +32,8 @@ const translations = {
             website: 'Multilingual Website',
             ec: 'Cross-border EC',
             content: 'Multilingual Content',
-            sns: 'Global SNS'
+            sns: 'Global SNS',
+            matching: 'Distributor Matching' // 追加
         },
         pricing: 'Pricing',
         resources: 'Resources',
@@ -53,7 +55,8 @@ const translations = {
             website: '多语言网站制作',
             ec: '跨境电商运营',
             content: '多语言内容制作',
-            sns: '海外SNS运营'
+            sns: '海外SNS运营',
+            matching: '代理商匹配' // 追加
         },
         pricing: '价格',
         resources: '资料',
@@ -131,6 +134,7 @@ function updateContent() {
     safeUpdate('serviceEc', t.serviceItems.ec);
     safeUpdate('serviceContent', t.serviceItems.content);
     safeUpdate('serviceSns', t.serviceItems.sns);
+    safeUpdate('serviceMatching', t.serviceItems.matching); // 追加
     safeUpdate('pricingLink', t.pricing);
     safeUpdate('resourcesLabel', t.resources + ' ▼', true);
     safeUpdate('resourceDownload', t.resourceItems.download);
@@ -145,6 +149,7 @@ function updateContent() {
     safeUpdate('mobileServiceEc', t.serviceItems.ec);
     safeUpdate('mobileServiceContent', t.serviceItems.content);
     safeUpdate('mobileServiceSns', t.serviceItems.sns);
+    safeUpdate('mobileServiceMatching', t.serviceItems.matching); // 追加
     safeUpdate('mobilePricing', t.pricing);
     safeUpdate('mobileResourcesLabel', `<span>${t.resources}</span><span>▼</span>`, true);
     safeUpdate('mobileResourceDownload', t.resourceItems.download);

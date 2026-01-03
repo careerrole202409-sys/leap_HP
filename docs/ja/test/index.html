@@ -22,7 +22,6 @@
                         <span>▼</span>
                     </div>
                     <div class="language-dropdown" id="languageDropdown">
-                        <!-- ここはJSで制御（または後で各言語ごとのリンクにする）ため、一旦そのままでOKですが、後述の補足を参照 -->
                         <a href="#" class="language-option" data-lang="ja">日本語</a>
                         <a href="#" class="language-option" data-lang="en">English</a>
                         <a href="#" class="language-option" data-lang="zh-hans">简体中文</a>
@@ -31,7 +30,6 @@
             </div>
             <div class="header-top-right">
                 <a href="https://app.leap.site" class="header-top-link" id="loginLink">ログイン</a>
-                <!-- ▼ ここを修正 -->
                 <a href="/ja/about" class="header-top-link" id="aboutLink">会社概要</a>
             </div>
         </div>
@@ -41,25 +39,23 @@
     <div class="header-main">
         <div class="header-main-content">
             <div class="nav-left">
-                <!-- ▼ ここを修正 -->
                 <a href="/ja/" class="logo">Leap</a>
                 <nav class="nav-links">
                     <div class="nav-item">
                         <span class="nav-link" id="servicesLabel">サービス ▼</span>
                         <div class="dropdown-menu">
-                            <!-- ▼ ここを修正 -->
                             <a href="/ja/services/multilingual-website" class="dropdown-item" id="serviceWebsite">多言語HP作成</a>
                             <a href="/ja/services/cross-border-ec" class="dropdown-item" id="serviceEc">越境EC開設運用</a>
                             <a href="/ja/services/multilingual-content" class="dropdown-item" id="serviceContent">多言語コンテンツ制作</a>
                             <a href="/ja/services/global-sns" class="dropdown-item" id="serviceSns">海外向けSNS運用</a>
+                            <!-- ▼ 追加: 代理店マッチング -->
+                            <a href="/ja/services/btob-matching" class="dropdown-item" id="serviceMatching">代理店マッチング</a>
                         </div>
                     </div>
-                    <!-- ▼ ここを修正 -->
                     <a href="/ja/pricing" class="nav-link" id="pricingLink">価格</a>
                     <div class="nav-item">
                         <span class="nav-link" id="resourcesLabel">資料 ▼</span>
                         <div class="dropdown-menu">
-                            <!-- ▼ ここを修正 -->
                             <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
                             <a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">ブログ</a>
                         </div>
@@ -67,7 +63,6 @@
                 </nav>
             </div>
             <div class="nav-right">
-                <!-- ▼ ここを修正 -->
                 <a href="/ja/contact" class="btn btn-demo" id="demoBtn">デモ</a>
                 <a href="/ja/contact" class="btn btn-start" id="startBtn">無料スタート</a>
             </div>
@@ -86,7 +81,6 @@
 <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-content">
         <div class="mobile-nav-item">
-            <!-- ▼ ここを修正 -->
             <a href="/ja/" class="mobile-nav-link" id="mobileHome">ホーム</a>
         </div>
         
@@ -96,16 +90,16 @@
                 <span>▼</span>
             </div>
             <div class="mobile-dropdown-content">
-                <!-- ▼ ここを修正 -->
                 <a href="/ja/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">多言語HP作成</a>
                 <a href="/ja/services/cross-border-ec" class="mobile-dropdown-item" id="mobileServiceEc">越境EC開設運用</a>
                 <a href="/ja/services/multilingual-content" class="mobile-dropdown-item" id="mobileServiceContent">多言語コンテンツ制作</a>
                 <a href="/ja/services/global-sns" class="mobile-dropdown-item" id="mobileServiceSns">海外向けSNS運用</a>
+                <!-- ▼ 追加: 代理店マッチング (モバイル) -->
+                <a href="/ja/services/btob-matching" class="mobile-dropdown-item" id="mobileServiceMatching">代理店マッチング</a>
             </div>
         </div>
 
         <div class="mobile-nav-item">
-            <!-- ▼ ここを修正 -->
             <a href="/ja/pricing" class="mobile-nav-link" id="mobilePricing">価格</a>
         </div>
 
@@ -115,19 +109,16 @@
                 <span>▼</span>
             </div>
             <div class="mobile-dropdown-content">
-                <!-- ▼ ここを修正 -->
                 <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
                 <a href="https://blog.leap.site" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">ブログ</a>
             </div>
         </div>
 
         <div class="mobile-nav-item">
-            <!-- ▼ ここを修正 -->
             <a href="/ja/about" class="mobile-nav-link" id="mobileAbout">About</a>
         </div>
 
         <div class="mobile-cta-buttons">
-            <!-- ▼ ここを修正 -->
             <a href="/ja/contact" class="btn btn-demo-mobile" id="mobileDemoBtn">デモ</a>
             <a href="/ja/contact" class="btn btn-start-mobile" id="mobileStartBtn">無料で始める</a>
         </div>
@@ -324,6 +315,8 @@
                     <li><a href="/ja/services/cross-border-ec" id="footerEc">越境EC開設・運用</a></li>
                     <li><a href="/ja/services/multilingual-content" id="footerContent">多言語コンテンツ制作</a></li>
                     <li><a href="/ja/services/global-sns" id="footerSns">海外向けSNS運用</a></li>
+                    <!-- ▼ 追加: 代理店マッチング -->
+                    <li><a href="/ja/services/btob-matching" id="footerMatching">代理店マッチング</a></li>
                 </ul>
             </div>
 
@@ -357,6 +350,8 @@
                         <li><a href="/ja/services/cross-border-ec" id="footerMobileEc">越境EC開設・運用</a></li>
                         <li><a href="/ja/services/multilingual-content" id="footerMobileContent">多言語コンテンツ制作</a></li>
                         <li><a href="/ja/services/global-sns" id="footerMobileSns">海外向けSNS運用</a></li>
+                        <!-- ▼ 追加: 代理店マッチング (モバイル) -->
+                        <li><a href="/ja/services/btob-matching" id="footerMobileMatching">代理店マッチング</a></li>
                     </ul>
                 </div>
             </div>
