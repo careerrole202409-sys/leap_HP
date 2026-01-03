@@ -10,7 +10,7 @@ const translations = {
             ec: '越境EC開設運用',
             content: '多言語コンテンツ制作',
             sns: '海外向けSNS運用',
-            matching: '代理店マッチング' // 追加
+            matching: '代理店マッチング'
         },
         pricing: '価格',
         resources: '資料',
@@ -18,7 +18,8 @@ const translations = {
             download: '資料ダウンロード',
             blog: 'ブログ'
         },
-        demo: 'デモ',
+        // ▼ 修正: 文言変更
+        demo: 'デモを申し込む',
         start: '無料スタート',
         startMobile: '無料で始める',
         language: '日本語'
@@ -33,7 +34,7 @@ const translations = {
             ec: 'Cross-border EC',
             content: 'Multilingual Content',
             sns: 'Global SNS',
-            matching: 'Distributor Matching' // 追加
+            matching: 'Distributor Matching'
         },
         pricing: 'Pricing',
         resources: 'Resources',
@@ -41,7 +42,8 @@ const translations = {
             download: 'Download',
             blog: 'Blog'
         },
-        demo: 'Demo',
+        // ▼ 修正: 文言変更
+        demo: 'Get a demo',
         start: 'Get Started Free',
         startMobile: 'Get Started Free',
         language: 'English'
@@ -56,7 +58,7 @@ const translations = {
             ec: '跨境电商运营',
             content: '多语言内容制作',
             sns: '海外SNS运营',
-            matching: '代理商匹配' // 追加
+            matching: '代理商匹配'
         },
         pricing: '价格',
         resources: '资料',
@@ -64,7 +66,8 @@ const translations = {
             download: '资料下载',
             blog: '博客'
         },
-        demo: '演示',
+        // ▼ 修正: 文言変更
+        demo: '申请演示',
         start: '免费开始',
         startMobile: '免费开始',
         language: '简体中文'
@@ -134,7 +137,7 @@ function updateContent() {
     safeUpdate('serviceEc', t.serviceItems.ec);
     safeUpdate('serviceContent', t.serviceItems.content);
     safeUpdate('serviceSns', t.serviceItems.sns);
-    safeUpdate('serviceMatching', t.serviceItems.matching); // 追加
+    safeUpdate('serviceMatching', t.serviceItems.matching);
     safeUpdate('pricingLink', t.pricing);
     safeUpdate('resourcesLabel', t.resources + ' ▼', true);
     safeUpdate('resourceDownload', t.resourceItems.download);
@@ -149,7 +152,7 @@ function updateContent() {
     safeUpdate('mobileServiceEc', t.serviceItems.ec);
     safeUpdate('mobileServiceContent', t.serviceItems.content);
     safeUpdate('mobileServiceSns', t.serviceItems.sns);
-    safeUpdate('mobileServiceMatching', t.serviceItems.matching); // 追加
+    safeUpdate('mobileServiceMatching', t.serviceItems.matching);
     safeUpdate('mobilePricing', t.pricing);
     safeUpdate('mobileResourcesLabel', `<span>${t.resources}</span><span>▼</span>`, true);
     safeUpdate('mobileResourceDownload', t.resourceItems.download);
