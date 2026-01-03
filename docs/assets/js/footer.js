@@ -6,6 +6,7 @@ const footerTranslations = {
         ec: '越境EC開設・運用',
         content: '多言語コンテンツ制作',
         sns: '海外向けSNS運用',
+        matching: '代理店マッチング', // 追加
         toolsTitle: '無料ツール',
         blog: 'ブログ',
         resources: '資料ダウンロード',
@@ -24,6 +25,7 @@ const footerTranslations = {
         ec: 'Cross-border EC',
         content: 'Multilingual Content',
         sns: 'Global SNS',
+        matching: 'Distributor Matching', // 追加
         toolsTitle: 'Free Tools',
         blog: 'Blog',
         resources: 'Resources',
@@ -42,6 +44,7 @@ const footerTranslations = {
         ec: '跨境电商运营',
         content: '多语言内容制作',
         sns: '海外SNS运营',
+        matching: '代理商匹配', // 追加
         toolsTitle: '免费工具',
         blog: '博客',
         resources: '资料下载',
@@ -83,6 +86,7 @@ function updateFooterContent() {
     safeUpdate('footerEc', t.ec);
     safeUpdate('footerContent', t.content);
     safeUpdate('footerSns', t.sns);
+    safeUpdate('footerMatching', t.matching); // 追加
     safeUpdate('footerToolsTitle', t.toolsTitle);
     safeUpdate('footerBlog', t.blog);
     safeUpdate('footerResources', t.resources);
@@ -96,6 +100,7 @@ function updateFooterContent() {
     safeUpdate('footerMobileEc', t.ec);
     safeUpdate('footerMobileContent', t.content);
     safeUpdate('footerMobileSns', t.sns);
+    safeUpdate('footerMobileMatching', t.matching); // 追加
     safeUpdate('footerMobileToolsTitle', t.toolsTitle);
     safeUpdate('footerMobileBlog', t.blog);
     safeUpdate('footerMobileResources', t.resources);
