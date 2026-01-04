@@ -171,20 +171,102 @@
 </section>
 
 <!-- Section 2: Client Logos -->
-<section class="section bg-gray">
+<!-- Section: Client Logos -->
+<section class="section bg-gray client-logos-wrapper">
+    <!-- スタイル定義 -->
+    <style>
+        /* ロゴエリアのレイアウト */
+        .client-logos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            /* ▼ 修正: 間隔を40pxから60pxに広げました */
+            gap: 60px;
+            padding: 0 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* ロゴ画像の基本設定 */
+        .client-logo-img {
+            /* ▼ 修正: 基本の高さを50pxから70pxに大きくしました */
+            height: 70px; 
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+            
+            /* ▼ 追加: 「乗算」モードにすることで、JPGの白い背景を透明に見せます */
+            mix-blend-mode: multiply;
+        }
+
+        /* --- モバイル対応 (768px以下) --- */
+        @media (max-width: 768px) {
+            .client-logos-wrapper {
+                overflow: hidden;
+            }
+
+            .client-logos-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px 20px; /* モバイル時の間隔調整 */
+                justify-items: center;
+            }
+
+            .client-logos-container > img:last-child:nth-child(odd) {
+                grid-column: span 2;
+                max-width: 60%;
+            }
+
+            .client-logo-img {
+                /* モバイル時は少し小さく戻す */
+                height: 50px; 
+            }
+            
+            .client-logos-title {
+                font-size: 18px;
+                padding: 0 10px;
+                word-wrap: break-word;
+            }
+        }
+    </style>
+
     <div class="container text-center">
-        <h2 class="h5 mb-xl text-secondary">
-            Over 500 companies across 15+ countries use Leap<br class="hidden-sm">
-            to drive their global business.
+        <!-- タイトル -->
+        <h2 class="h5 mb-xl text-secondary client-logos-title">
+            
+                Over 500 companies across 15+ countries use Leap<br class="hidden-sm">
+                to drive their global business.
+            
         </h2>
         
-        <!-- Logos (Dummy) -->
-        <div class="flex flex-wrap justify-center items-center" style="gap: 40px; opacity: 0.7; filter: grayscale(100%);">
-            <img src="https://placehold.co/160x60/transparent/333333?text=LOGO+1" alt="Client Logo 1">
-            <img src="https://placehold.co/160x60/transparent/333333?text=LOGO+2" alt="Client Logo 2">
-            <img src="https://placehold.co/160x60/transparent/333333?text=LOGO+3" alt="Client Logo 3">
-            <img src="https://placehold.co/160x60/transparent/333333?text=LOGO+4" alt="Client Logo 4">
-            <img src="https://placehold.co/160x60/transparent/333333?text=LOGO+5" alt="Client Logo 5">
+        <!-- ロゴ一覧 -->
+        <div class="client-logos-container">
+            <!-- 1. JIRCAS -->
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767491868/logo_ja_qjjpkp.png" 
+                 alt="Client Logo 1" class="client-logo-img">
+            
+            <!-- 2. 丸安洋傘 (縦長なので少し小さく見えるのを防ぐためそのまま) -->
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767492098/logo_hd_sw2wdr.jpg" 
+                 alt="Client Logo 2" class="client-logo-img">
+            
+            <!-- 3. 小松ばね (横長なので少し大きめに調整) -->
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767492043/2026-01-04_11.00%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_wpugxv.jpg" 
+                 alt="Client Logo 3" class="client-logo-img" 
+                 style="transform: scale(1.1);">
+            
+            <!-- 4. Leaders (茶色の四角) -->
+            <!-- ▼ 修正: 小さいので scale(1.3) で1.3倍に拡大 -->
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767492263/IMG_3707_auio0r.jpg" 
+                 alt="Client Logo 4" class="client-logo-img" 
+                 style="transform: scale(1.3);">
+            
+            <!-- 5. LICOX (余白が大きすぎるロゴ) -->
+            <!-- ▼ 修正: 極端に小さいので scale(2.0) で2倍に拡大 -->
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767492525/logo_tzmzot.png" 
+                 alt="Client Logo 5" class="client-logo-img" 
+                 style="transform: scale(2.0);">
         </div>
     </div>
 </section>
