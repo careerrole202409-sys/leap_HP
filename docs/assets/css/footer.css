@@ -84,11 +84,27 @@ footer {
     margin-bottom: 30px;
 }
 
-.footer-logo {
-    font-size: 32px;
-    font-weight: 700;
-    color: #ffffff;
+/* ▼ 変更: ロゴ画像用の設定（トリミングと拡大） */
+.footer-logo-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+    /* ヘッダーと同じように枠を定義して余白をカット */
+    width: 150px; 
+    height: 55px; 
+    overflow: hidden;
     margin-bottom: 12px;
+}
+
+.footer-logo-img {
+    height: 100%;
+    width: auto;
+    display: block;
+    /* ヘッダー同様に拡大 */
+    transform: scale(2.5);
+    transform-origin: center;
 }
 
 .footer-copyright {

@@ -1,3 +1,9 @@
+/* ▼ 追加: ページの初期余白を削除（白い余白対策） */
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /* ヘッダーコンテナ */
 .header-container {
     position: fixed;
@@ -124,11 +130,29 @@
     align-items: center;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
+/* ▼ 修正: ロゴの余白をカットして拡大表示する設定 */
+.logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
+    flex-shrink: 0;
+    
+    /* ロゴの表示枠を設定（ここからはみ出た余白をカット） */
+    width: 140px;  /* 実際のロゴ文字が見える幅に合わせて調整してください */
+    height: 50px;  /* ヘッダー内での表示高さ */
+    overflow: hidden; /* 拡大した画像の余分な部分を隠す */
+}
+
+.logo-img {
+    height: 100%;
+    width: auto;
+    display: block;
+    
+    /* ▼ 画像を強制的に拡大して余白を飛ばす設定 */
+    /* scale(2.5) の数値を変更して大きさを微調整してください */
+    transform: scale(2.5); 
+    transform-origin: center; /* 中心から拡大 */
 }
 
 .nav-left {
@@ -389,9 +413,13 @@
         padding: 0 15px;
     }
 
-    .logo {
-        font-size: 20px;
+    .logo-link {
+        height: 35px; /* モバイルでの高さ調整 */
+        width: 100px; /* モバイルでの幅調整 */
     }
+
+    /* scaleはPCと同じ比率で良ければそのままでOK、調整が必要なら再定義 */
+    /* .logo-img { transform: scale(2.5); } */
 
     .nav-links {
         display: none;
