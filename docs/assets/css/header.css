@@ -6,10 +6,16 @@ body {
 
 /* ヘッダーコンテナ */
 .header-container {
-    position: fixed;
+    /* ▼ 変更: fixedからstickyに変更 */
+    position: -webkit-sticky; /* Safari用 */
+    position: sticky;
     top: 0;
+    
+    /* 横幅と位置の確保 */
+    width: 100%;
     left: 0;
     right: 0;
+    
     z-index: 1000;
     background: white;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -150,7 +156,6 @@ body {
     display: block;
     
     /* ▼ 画像を強制的に拡大して余白を飛ばす設定 */
-    /* scale(2.5) の数値を変更して大きさを微調整してください */
     transform: scale(2.5); 
     transform-origin: center; /* 中心から拡大 */
 }
