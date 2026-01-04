@@ -51,7 +51,11 @@
     <div class="header-main">
         <div class="header-main-content">
             <div class="nav-left">
-                <a href="/en/" class="logo">Leap</a>
+                <!-- ▼ 変更箇所: ロゴ画像を挿入 -->
+                <a href="/en/" class="logo-link">
+                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="logo-img">
+                </a>
+                
                 <nav class="nav-links">
                     <div class="nav-item">
                         <span class="nav-link" id="servicesLabel">サービス ▼</span>
@@ -60,7 +64,6 @@
                             <a href="/en/services/cross-border-ec" class="dropdown-item" id="serviceEc">越境EC開設運用</a>
                             <a href="/en/services/multilingual-content" class="dropdown-item" id="serviceContent">多言語コンテンツ制作</a>
                             <a href="/en/services/global-sns" class="dropdown-item" id="serviceSns">海外向けSNS運用</a>
-                            <!-- ▼ 追加: 代理店マッチング -->
                             <a href="/en/services/btob-matching" class="dropdown-item" id="serviceMatching">代理店マッチング</a>
                         </div>
                     </div>
@@ -75,9 +78,7 @@
                 </nav>
             </div>
             <div class="nav-right">
-                <!-- ▼ 修正: デモボタン (リンク変更) -->
                 <a href="/en/about/#contact" class="btn btn-demo" id="demoBtn">デモを申し込む</a>
-                <!-- ▼ 修正: 無料スタートボタン (リンク変更 & 別タブ) -->
                 <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="btn btn-start" id="startBtn">無料スタート</a>
             </div>
 
@@ -108,7 +109,6 @@
                 <a href="/en/services/cross-border-ec" class="mobile-dropdown-item" id="mobileServiceEc">越境EC開設運用</a>
                 <a href="/en/services/multilingual-content" class="mobile-dropdown-item" id="mobileServiceContent">多言語コンテンツ制作</a>
                 <a href="/en/services/global-sns" class="mobile-dropdown-item" id="mobileServiceSns">海外向けSNS運用</a>
-                <!-- ▼ 追加: 代理店マッチング (モバイル) -->
                 <a href="/en/services/btob-matching" class="mobile-dropdown-item" id="mobileServiceMatching">代理店マッチング</a>
             </div>
         </div>
@@ -133,9 +133,7 @@
         </div>
 
         <div class="mobile-cta-buttons">
-            <!-- ▼ 修正: デモボタン (リンク変更) -->
             <a href="/en/about/#contact" class="btn btn-demo-mobile" id="mobileDemoBtn">デモを申し込む</a>
-            <!-- ▼ 修正: 無料スタートボタン (リンク変更 & 別タブ) -->
             <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="btn btn-start-mobile" id="mobileStartBtn">無料で始める</a>
         </div>
     </div>
@@ -549,7 +547,6 @@
                     <li><a href="/en/services/cross-border-ec" id="footerEc">越境EC開設・運用</a></li>
                     <li><a href="/en/services/multilingual-content" id="footerContent">多言語コンテンツ制作</a></li>
                     <li><a href="/en/services/global-sns" id="footerSns">海外向けSNS運用</a></li>
-                    <!-- ▼ 追加: 代理店マッチング -->
                     <li><a href="/en/services/btob-matching" id="footerMatching">代理店マッチング</a></li>
                 </ul>
             </div>
@@ -584,7 +581,6 @@
                         <li><a href="/en/services/cross-border-ec" id="footerMobileEc">越境EC開設・運用</a></li>
                         <li><a href="/en/services/multilingual-content" id="footerMobileContent">多言語コンテンツ制作</a></li>
                         <li><a href="/en/services/global-sns" id="footerMobileSns">海外向けSNS運用</a></li>
-                        <!-- ▼ 追加: 代理店マッチング (モバイル) -->
                         <li><a href="/en/services/btob-matching" id="footerMobileMatching">代理店マッチング</a></li>
                     </ul>
                 </div>
@@ -638,8 +634,9 @@
         </div>
 
         <div class="footer-brand">
-            <a href="/en/" style="text-decoration: none; color: inherit;">
-                <div class="footer-logo">Leap</div>
+            <!-- ▼ 変更: ロゴ画像へ差し替え（クラス変更） -->
+            <a href="/en/" class="footer-logo-link">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="footer-logo-img">
             </a>
             <div class="footer-copyright" id="footerCopyright">Copyright © 2025 Leap, Inc.</div>
         </div>
