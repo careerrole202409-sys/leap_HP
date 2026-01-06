@@ -1,0 +1,32 @@
+{
+  "expansion": {
+    "ja": "海外進出マニュアル",
+    "en": "Global Expansion",
+    "zh-hans": "海外扩张"
+  },
+  "sales": {
+    "ja": "海外営業マニュアル",
+    "en": "Global Sales",
+    "zh-hans": "海外销售"
+  },
+  "agents": {
+    "ja": "海外代理店マニュアル",
+    "en": "Distributor Strategy",
+    "zh-hans": "海外代理商"
+  },
+  "marketing": {
+    "ja": "海外マーケティング",
+    "en": "Global Marketing",
+    "zh-hans": "海外营销"
+  },
+  "ec": {
+    "ja": "越境ECマニュアル",
+    "en": "Cross-border E-commerce",
+    "zh-hans": "跨境电商"
+  },
+  "countries": {
+    "ja": "国・地域別情報",
+    "en": "Country & Region Info",
+    "zh-hans": "国家与地区信息"
+  }
+}
