@@ -9,9 +9,9 @@
     "en": "Global Sales",
     "zh-hans": "海外销售"
   },
-  "agents": {
+  "partner": {
     "ja": "海外代理店マニュアル",
-    "en": "Distributor Strategy",
+    "en": "Distributor/agent",
     "zh-hans": "海外代理商"
   },
   "marketing": {
