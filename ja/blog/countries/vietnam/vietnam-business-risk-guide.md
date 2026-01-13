@@ -4,7 +4,7 @@ title: 【ベトナム進出】失敗しないためのビジネスリスク完�
 description: 高い経済成長率を誇る「アジア最後のフロンティア」ベトナム。2024年以降も成長が見込まれる一方、特有のビジネスリスクも潜んでいます。法務・労務・税務など、ベトナム進出で失敗しないための主要なリスクと回避策を徹底解説します。
 thumbnail: https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
 date: 2026-01-08
-topic: partner
+topic: countries
 locale: ja
 tags: ['blog', 'ベトナム進出', 'リスク管理', '法務・労務', '税務', '海外展開']
 author: Leap 編集部

@@ -4,7 +4,7 @@ title: 【ベトナム展示会 攻略ガイド】中小企業の成果を最大
 description: 成長著しいベトナム市場への挑戦をお考えの中小企業経営者様へ。現地展示会で成果を出すための効果的な選定方法、ブース戦略、商談術、フォローアップまで、成功に導く全ノウハウを徹底解説します。
 thumbnail: https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
 date: 2026-01-08
-topic: partner
+topic: countries
 locale: ja
 tags: ['blog', '海外進出', '展示会', 'ベトナム', '営業戦略', 'マーケティング']
 author: Leap 編集部
