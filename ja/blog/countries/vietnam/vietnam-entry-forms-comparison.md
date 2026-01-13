@@ -4,7 +4,7 @@ title: 【ベトナム会社設立】進出形態3つを徹底比較！費用・
 description: チャイナプラスワンとして注目されるベトナム市場。中小企業の海外進出における「現地法人」「駐在員事務所」「支店」の3つの形態について、メリット・デメリット、設立費用、手続きの流れを徹底比較します。
 thumbnail: https://images.unsplash.com/photo-1583417319070-4a69db38a482?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
 date: 2026-01-08
-topic: partner
+topic: countries
 locale: ja
 tags: ['blog', 'ベトナム進出', '会社設立', '海外展開', '法務・税務', '市場調査']
 author: Leap 編集部

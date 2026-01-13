@@ -4,7 +4,7 @@ title: 【成功の秘訣】ベトナム進出の成功事例3選！中小企業
 description: 「海外展開したいけど、何から始めれば…」そんなお悩みをお持ちの中小企業の経営者様、必見です！この記事では、成長著しいベトナム市場の魅力と、実際に進出を成功させた日本の中小企業の事例を徹底分析します。
 thumbnail: https://images.unsplash.com/photo-1583417319070-4a69db38a482?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
 date: 2026-01-08
-topic: partner
+topic: countries
 locale: ja
 tags: ['ベトナム進出', '中小企業', '成功事例', '海外展開', '製造業', 'IT', 'サービス業']
 author: Leap 編集部

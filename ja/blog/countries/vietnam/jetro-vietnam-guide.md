@@ -4,7 +4,7 @@ title: 【JETRO徹底活用】ベトナム進出の相談窓口はここ！ハ�
 description: 海外進出、特にベトナム市場に興味はあるけど、何から手をつければいいか分からない。そんな悩みを抱える中小企業の経営者様向けに、日本貿易振興機構（JETRO）のベトナム現地事務所（ハノイ・ホーチミン）の活用法を解説します。
 thumbnail: https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
 date: 2026-01-08
-topic: partner
+topic: countries
 locale: ja
 tags: ['blog', 'ベトナム進出', 'JETRO', '海外展開', '市場調査', 'ビジネスマッチング']
 author: Leap 編集部

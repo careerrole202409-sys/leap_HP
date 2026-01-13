@@ -4,7 +4,7 @@ title: 【秘訣】ベトナム人従業員のモチベーションを爆上げ�
 description: 海外展開を目指す日本の中小企業にとって、ベトナムは貴重な人材の宝庫です。しかし、文化の違いからくるマネジメントの課題に悩む企業も少なくありません。本記事では、ベトナム人の文化的背景を理解し、モチベーションを最大限に引き出すための具体的なマネジメント術や成功事例を解説します。
 thumbnail: https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
 date: 2026-01-08
-topic: partner
+topic: countries
 locale: ja
 tags: ['blog', '海外進出', 'マネジメント', 'ベトナム', '異文化理解', '組織開発']
 author: Leap 編集部

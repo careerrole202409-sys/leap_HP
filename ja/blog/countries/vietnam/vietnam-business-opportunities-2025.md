@@ -4,7 +4,7 @@ title: 【2025年最新版】ベトナムのビジネスチャンスを徹底解
 description: 「海外展開といえば、まずは東南アジア」とお考えの経営者様も多いのではないでしょうか？本記事では、2025年のベトナム経済の最新動向から、中小企業が具体的に勝機を見いだせる「4つの成長産業」、そして進出前に必ず押さえておきたい法務・労務のポイントまで、専門家の視点でわかりやすく解説します。
 thumbnail: https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
 date: 2026-01-08
-topic: partner
+topic: countries
 locale: ja
 tags: ['blog', 'ベトナム進出', '海外展開', '市場調査', '成長産業', '中小企業']
 author: Leap 編集部

@@ -4,7 +4,7 @@ title: 【ベトナムニッチ市場】成功事例に学ぶ！中小企業が�
 description: ベトナムのニッチ市場は中小企業にとって大きなチャンスです。KAMEREOやPizza 4P'sなどの成功事例を交え、市場開拓のステップやリスク管理、具体的戦略を解説します。
 thumbnail: https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
 date: 2026-01-08
-topic: partner
+topic: countries
 locale: ja
 tags: ['blog', 'ベトナム', '海外進出', 'ニッチ市場', '中小企業', '成功事例']
 author: Leap 編集部

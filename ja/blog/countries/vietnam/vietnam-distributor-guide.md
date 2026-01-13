@@ -4,7 +4,7 @@ title: 【保存版】ベトナムで最適な販売代理店を見つける5つ
 description: 「成長著しいベトナム市場に進出したいけど、何から手をつければ…？」そんなお悩みをお持ちの中小企業の経営者様、必見です！ベトナムで成功の鍵を握る「最適な販売代理店」を見つけ、強固なパートナーシップを築くための全手順を、5つの具体的なステップに凝縮して解説します。
 thumbnail: https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
 date: 2026-01-08
-topic: partner
+topic: countries
 locale: ja
 tags: ['blog', 'ベトナム進出', '販売代理店', '市場開拓', 'パートナーシップ', '契約実務']
 author: Leap 編集部
