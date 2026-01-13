@@ -4,7 +4,7 @@ title: 【ブランド防衛】ベトナム商標登録ガイド｜申請から�
 description: ベトナム市場進出における商標登録の重要性と具体的な手続き、模倣品対策を解説。先願主義や日本語商標の注意点、成功・失敗事例など、中小企業がブランドを守るための完全ガイドです。
 thumbnail: https://images.unsplash.com/photo-1583417319070-4a69db38a482?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
 date: 2026-01-08
-topic: partner
+topic: countries
 locale: ja
 tags: ['blog', 'ベトナム進出', '知財戦略', '商標登録', 'ブランド保護', 'リスク管理']
 author: Leap 編集部
