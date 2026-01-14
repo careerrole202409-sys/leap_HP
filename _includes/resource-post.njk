@@ -3,7 +3,8 @@ layout: base.njk
 ---
 
 <!-- 
-  HubSpot風 資料ダウンロードページテンプレート (Leapカラー版 + レスポンシブ修正済み)
+  HubSpot風 資料ダウンロードページテンプレート 
+  (Leapカラー版 + レスポンシブ修正 + Download URL対応 + 画像1枚対応修正)
   (_includes/resource-post.njk)
 -->
 
@@ -149,14 +150,12 @@ layout: base.njk
        スマホ対応 (Max Width 768px)
        ========================================= */
     @media (max-width: 768px) {
-        /* ヒーローエリア：1カラムに変更 */
         .hero-layout {
             grid-template-columns: 1fr;
             gap: var(--space-lg);
-            text-align: left; /* 必要であれば center に */
+            text-align: left; 
         }
 
-        /* シェイプの位置調整 */
         .hero-blob {
             width: 300px;
             height: 300px;
@@ -165,22 +164,20 @@ layout: base.njk
             opacity: 0.4;
         }
 
-        /* カルーセル：矢印の位置とパディング調整 */
         .preview-wrapper { padding: 0; }
+        
+        /* 画像が1枚のときは矢印を表示しない制御がJSで入りますが、念のためスタイルも調整 */
         .carousel-arrow { 
             width: 36px; height: 36px; font-size: 1rem;
             left: -10px; right: auto;
         }
         .carousel-arrow.right { left: auto; right: -10px; }
         
-        /* チェックリスト：文字サイズ調整 */
         .check-list li { padding-left: 2.5rem; font-size: 1rem; }
         .check-list li::before { width: 24px; height: 24px; background-size: 14px; }
 
-        /* スティッキーバー：テキストを非表示にしてボタンのみにする */
         .sticky-text { display: none; }
         
-        /* タイトルサイズ調整 */
         h1 { font-size: 2rem !important; }
     }
 </style>
@@ -192,7 +189,6 @@ layout: base.njk
     <div class="hero-blob"></div>
 
     <div class="container relative z-10">
-        <!-- 修正: インラインstyleをやめ、クラスベースでレスポンシブ対応 -->
         <div class="hero-layout">
             
             <!-- Left: Text Content -->
@@ -212,12 +208,12 @@ layout: base.njk
                     <span class="text-sm font-bold text-primary">すでに数千人のプロフェッショナルがこのリソースを活用しています。</span>
                 </div>
 
-                <a href="#download-area" class="btn btn-primary" style="padding: 16px 48px; font-size: 1.25rem; font-weight: 800; border-radius: 4px; box-shadow: 0 4px 12px rgba(193, 0, 51, 0.3);">
+                <a href="{{ download_url | default('#') }}" target="_blank" class="btn btn-primary" style="padding: 16px 48px; font-size: 1.25rem; font-weight: 800; border-radius: 4px; box-shadow: 0 4px 12px rgba(193, 0, 51, 0.3);">
                     ダウンロードする
                 </a>
             </div>
 
-            <!-- Right: Space (Empty div for grid layout balance on PC) -->
+            <!-- Right: Space -->
             <div class="hidden-on-mobile"></div>
         </div>
     </div>
@@ -230,7 +226,6 @@ layout: base.njk
     <div class="container">
         <h2 class="text-center mb-2xl" style="font-size: 2.5rem;">テンプレートのポイント</h2>
 
-        <!-- base.css の .grid-2 はスマホで1カラムになるように設計されているはずですが、念のため確認してください -->
         <div class="grid-2 items-start gap-3xl">
             <!-- Left: Carousel -->
             <div class="preview-wrapper">
@@ -264,13 +259,15 @@ layout: base.njk
 -->
 <div class="sticky-cta-bar">
     <div class="container flex items-center justify-center">
-        <!-- 修正: HTML style属性内のメディアクエリを削除し、クラスで制御 -->
+        <!-- 文言変更: メールアドレス不要 -->
         <span class="sticky-text">
-            今すぐテンプレートを活用しましょう
+            メールアドレス不要
         </span>
-        <button class="btn" style="background: white; color: var(--color-primary-start); font-weight: bold; border: none; padding: 12px 32px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
-            テンプレートをダウンロードする
-        </button>
+        
+        <!-- 文言変更: 今すぐ無料ダウンロード -->
+        <a href="{{ download_url | default('#') }}" target="_blank" class="btn" style="background: white; color: var(--color-primary-start); font-weight: bold; border: none; padding: 12px 32px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); text-decoration: none; display: inline-block;">
+            今すぐ無料ダウンロード
+        </a>
     </div>
 </div>
 
@@ -278,16 +275,14 @@ layout: base.njk
   CAROUSEL SCRIPT
 -->
 <script>
-    // 画像リストの準備
+    // 画像リストの準備：Markdownの images があればそれを使う。なければ preview_image のみ（1枚）にする。
     const slides = [
         {% if images %}
             {% for img in images %}
                 "{{ img }}",
             {% endfor %}
         {% else %}
-            "{{ preview_image | default('https://placehold.co/800x500/e2e8f0/64748b?text=Preview+1') }}",
-            "https://placehold.co/800x500/cbd5e1/475569?text=Preview+2",
-            "https://placehold.co/800x500/94a3b8/1e293b?text=Preview+3"
+            "{{ preview_image | default('https://placehold.co/800x500/e2e8f0/64748b?text=Document+Preview') }}"
         {% endif %}
     ];
 
@@ -296,8 +291,10 @@ layout: base.njk
     const dotsContainer = document.getElementById('dots-container');
 
     function initCarousel() {
+        // 画像が1枚以下の場合は矢印とドットを出さない
         if(slides.length <= 1) {
             document.querySelectorAll('.carousel-arrow').forEach(el => el.style.display = 'none');
+            dotsContainer.style.display = 'none';
             return;
         }
 
