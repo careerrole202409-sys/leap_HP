@@ -17,8 +17,17 @@ description: 海外進出、営業、代理店開拓、マーケティング、�
 </section>
 
 <!-- ▼ マニュアルカテゴリ一覧 -->
-<section class="section py-xl bg-white" style="position: relative; margin-top: -60px; padding-bottom: var(--space-3xl);">
+<!-- 修正点：padding-topを var(--space-lg) に設定し、mb-md でカードとの距離を確保 -->
+<section class="section bg-white" style="position: relative; margin-top: -60px; padding-top: var(--space-lg); padding-bottom: var(--space-3xl);">
     <div class="container">
+        
+        <!-- 余白を mb-md (中くらい) にして、上下のバランスを整えました -->
+        <div class="flex justify-end mb-md" style="position: relative; z-index: 10;">
+            <a href="/{{ locale }}/blog/list/" class="view-all-link">
+                すべての記事一覧を見る &rarr;
+            </a>
+        </div>
+
         <!-- 6つの大カテゴリへのリンクカード -->
         <div class="grid-3" style="gap: 20px;">
             
@@ -169,6 +178,21 @@ description: 海外進出、営業、代理店開拓、マーケティング、�
 {% include "cta1.njk" %}
 
 <style>
+/* 全記事一覧リンクのスタイル */
+    .view-all-link {
+        color: var(--color-primary-start);
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: transform 0.2s, opacity 0.2s;
+        display: inline-block;
+    }
+
+    .view-all-link:hover {
+        transform: translateX(5px); /* 右に少し動く */
+        opacity: 0.8;
+        text-decoration: underline;
+    }
     /* マニュアルカードのスタイル */
     .manual-card {
         display: block;

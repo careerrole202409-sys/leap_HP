@@ -1,0 +1,457 @@
+---
+layout: base.njk
+title: 国・地域別情報 | 海外ビジネス攻略マニュアル
+description: Leapの海外ビジネス攻略マニュアルの国・地域別情報一覧です。各国の市場動向やビジネス環境、法規制など、現地ビジネスに役立つ情報をまとめています。
+---
+<!-- ▼ メインコンテンツエリア -->
+
+<section class="section pt-3xl pb-3xl bg-beige" style="min-height: 80vh;">
+    <div class="container">
+
+<!-- ヘッダーエリア：タイトル、戻るリンク、ソート -->
+    <div class="flex justify-between items-end mb-lg flex-wrap" style="gap: 1rem;">
+        
+        <!-- タイトルと戻るリンクをグループ化 -->
+        <div class="flex items-center flex-wrap" style="gap: 1.5rem;">
+            <h1 class="font-bold text-primary" style="font-size: 2rem; margin: 0; line-height: 1.2;">国・地域別情報</h1>
+            <a href="/{{ locale }}/blog/" class="back-to-top">
+                &larr; ブログトップへ
+            </a>
+        </div>
+        
+        <!-- ソート機能 -->
+        <div class="flex items-center" style="font-size: 0.9rem;">
+            <span class="text-secondary mr-sm">並び替え：</span>
+            <button onclick="setSortType('date')" class="sort-btn active" id="sort-date">新着順</button>
+            <span class="text-border mx-xs" style="color: var(--color-border);">|</span>
+            <button onclick="setSortType('views')" class="sort-btn" id="sort-views">人気順</button>
+        </div>
+    </div>
+
+    <!-- カテゴリフィルタ（タブ）は削除 -->
+
+    <!-- 絞り込み状態表示（タグ検索時のみ表示） -->
+    <div id="filter-status" class="mb-lg hidden" style="display: none;">
+        <span class="text-lg font-bold">
+            <span class="text-primary">#<span id="current-tag-name"></span></span> の記事一覧
+        </span>
+        <button onclick="resetFilter()" class="ml-sm text-sm text-secondary underline hover:text-primary" style="background:none; border:none; cursor:pointer;">
+            すべて表示に戻す
+        </button>
+    </div>
+
+    <!-- 記事グリッド -->
+    <div class="grid-3" id="articles-grid">
+        {% set all_posts = collections.blog | reverse %}
+        {% set has_posts = false %}
+
+        {% for post in all_posts %}
+            {# topicがcountriesのものだけを表示するように条件を追加 #}
+            {% if post.data.locale == 'ja' and post.data.topic == 'countries' %}
+                {% set has_posts = true %}
+                
+                {% set topic_label = topic_translation[post.data.topic]['ja'] %}
+                {% if not topic_label %}
+                    {% set topic_label = post.data.topic %}
+                {% endif %}
+                
+                <!-- 
+                   data-date: ソート用の日付データ（ミリ秒）
+                -->
+                <article class="card p-0 blog-item article-card" 
+                         data-topic="{{ post.data.topic }}"
+                         data-tags="{{ post.data.tags | join(',') }}"
+                         data-date="{{ post.date.getTime() }}" 
+                         style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                    
+                    <a href="{{ post.url }}" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
+                        <img src="{{ post.data.thumbnail | default('https://placehold.co/600x400/f1f5f9/94a3b8?text=No+Image') }}" 
+                             alt="{{ post.data.title }}" 
+                             style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                    </a>
+
+                    <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                        <div class="flex justify-between items-center mb-sm">
+                            <span class="text-primary font-bold" style="font-size: 12px; background: rgba(193, 0, 51, 0.1); padding: 4px 8px; border-radius: 4px;">
+                                {{ topic_label }}
+                            </span>
+                            <time style="font-size: 12px; color: var(--color-text-secondary);">
+                                {{ post.date | date("yyyy.MM.dd") }}
+                            </time>
+                        </div>
+
+                        <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
+                            <a href="{{ post.url }}" style="color: inherit; text-decoration: none;">
+                                {{ post.data.title }}
+                            </a>
+                        </h3>
+
+                        <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
+                            {{ post.data.description }}
+                        </p>
+
+                        <div class="flex items-center pt-sm" style="border-top: 1px solid #eee;">
+                            <div style="width: 24px; height: 24px; border-radius: 50%; background: #ccc; margin-right: 8px; overflow: hidden;">
+                                <img src="{{ post.data.author_image | default('https://placehold.co/100x100/ddd/fff?text=User') }}" alt="author" style="width:100%; height:100%; object-fit:cover;">
+                            </div>
+                            <span style="font-size: 12px; font-weight: bold; color: var(--color-text-primary);">
+                                {{ post.data.author | default('Leap 編集部') }}
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            {% endif %}
+        {% endfor %}
+        
+        <!-- 該当なしメッセージ -->
+        <div id="no-results-message" class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; padding: var(--space-3xl) 0; display: none;">
+            <p class="text-secondary">該当する記事は見つかりませんでした。</p>
+        </div>
+    </div>
+    
+    <!-- ページネーション -->
+    <div id="pagination-container" class="flex justify-center mt-xl" style="gap: 8px;">
+        <!-- JSでボタンが生成されます -->
+    </div>
+
+    {% if not has_posts %}
+        <div class="text-center w-full flex items-center justify-center" style="padding: var(--space-2xl) 0;">
+            <p class="text-secondary">現在、公開されている記事はありません。</p>
+        </div>
+    {% endif %}
+
+</div>
+</section>
+
+
+{% include "cta1.njk" %}
+
+<style>
+/* ブログトップへ戻るリンク */
+    .back-to-top {
+        color: var(--color-text-secondary);
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: color 0.2s, transform 0.2s;
+        display: flex;
+        align-items: center;
+    }
+
+    .back-to-top:hover {
+        color: var(--color-primary-start);
+        transform: translateX(-3px); /* 左に少し動く */
+        text-decoration: underline;
+    }
+    /* フィルタリングタブ（スタイルは残すがHTMLは削除済み） */
+    .filter-nav {
+        display: flex;
+        gap: var(--space-lg);
+        overflow-x: auto;
+        padding-bottom: 0;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .filter-nav::-webkit-scrollbar { display: none; }
+
+    .filter-tab {
+        background: none;
+        border: none;
+        padding-bottom: var(--space-sm);
+        border-bottom: 3px solid transparent;
+        color: var(--color-text-secondary);
+        font-size: 1rem;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-family: inherit;
+    }
+    .filter-tab:hover { color: var(--color-primary-start); }
+    .filter-tab.active {
+        border-bottom: 3px solid var(--color-primary-start);
+        color: var(--color-primary-start);
+        font-weight: bold;
+    }
+
+    /* ソートボタン */
+    .sort-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        font-family: inherit;
+        font-size: inherit;
+        color: var(--color-text-secondary);
+        font-weight: normal;
+        transition: color 0.3s;
+    }
+    .sort-btn:hover { color: var(--color-primary-start); }
+    .sort-btn.active {
+        color: var(--color-primary-start);
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    /* ページネーションボタン */
+    .page-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid var(--color-border);
+        background: white;
+        color: var(--color-text-primary);
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page-btn:hover {
+        border-color: var(--color-primary-start);
+        color: var(--color-primary-start);
+    }
+    .page-btn.active {
+        background: var(--color-primary-start);
+        color: white;
+        border-color: var(--color-primary-start);
+    }
+    .page-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    /* カード */
+    .blog-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+    }
+    .blog-item:hover h3 a { color: var(--color-primary-start) !important; }
+</style>
+
+<script>
+    // --- 状態管理 ---
+    const ITEMS_PER_PAGE = 15; // 3列 * 5行
+    let currentState = {
+        filterType: 'category', // 'category' or 'tag'
+        filterValue: 'all',     // ここでの'all'はHTMLに出力されている「国・地域別」記事すべてを指します
+        sortType: 'date',       // 'date' (新着順) or 'views' (人気順 ※実態は古い順)
+        currentPage: 1
+    };
+
+    let allArticleElements = [];
+
+    document.addEventListener("DOMContentLoaded", function() {
+        allArticleElements = Array.from(document.querySelectorAll('.article-card'));
+
+        // URLパラメータのチェック
+        const urlParams = new URLSearchParams(window.location.search);
+        const tag = urlParams.get('tag');
+
+        if (tag) {
+            setFilter('tag', tag);
+        } else {
+            render(); 
+        }
+    });
+
+    /**
+     * フィルタ条件をセットして再描画
+     */
+    function setFilter(type, value) {
+        currentState.filterType = type;
+        currentState.filterValue = value;
+        currentState.currentPage = 1;
+        render();
+    }
+
+    /**
+     * ソート順をセットして再描画
+     */
+    function setSortType(type) {
+        currentState.sortType = type;
+        render();
+    }
+
+    /**
+     * ページ移動
+     */
+    function goToPage(page) {
+        currentState.currentPage = page;
+        render();
+        const grid = document.getElementById('articles-grid');
+        grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    /**
+     * 「すべて表示に戻す」ボタン用
+     */
+    function resetFilter() {
+        const url = new URL(window.location);
+        url.searchParams.delete('tag');
+        window.history.pushState({}, '', url);
+        setFilter('category', 'all');
+    }
+
+    /**
+     * メイン描画処理
+     */
+    function render() {
+        updateUIControls();
+
+        // 1. フィルタリング
+        let filteredArticles = allArticleElements.filter(article => {
+            if (currentState.filterType === 'category') {
+                const topic = article.getAttribute('data-topic');
+                // Nunjucks側ですでにcountriesのみ出力しているため、filterValueがallであればそのまま通します
+                return currentState.filterValue === 'all' || topic === currentState.filterValue;
+            } else if (currentState.filterType === 'tag') {
+                const tags = article.getAttribute('data-tags') || "";
+                return tags.split(',').includes(currentState.filterValue);
+            }
+            return true;
+        });
+
+        // 2. ソート
+        filteredArticles.sort((a, b) => {
+            // data-date属性を取得して数値化
+            const dateA = Number(a.getAttribute('data-date') || 0);
+            const dateB = Number(b.getAttribute('data-date') || 0);
+
+            if (currentState.sortType === 'views') {
+                // 【人気順】として振る舞うが、実態は【古い順（昇順）】
+                // 古い記事ほど累積PVが多いという仮説に基づく簡易実装
+                return dateA - dateB; 
+            } else {
+                // 【新着順】（降順）
+                return dateB - dateA;
+            }
+        });
+
+        // 3. ページネーション計算
+        const totalItems = filteredArticles.length;
+        const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE);
+        
+        if (currentState.currentPage > totalPages && totalPages > 0) {
+            currentState.currentPage = totalPages;
+        }
+
+        const startIndex = (currentState.currentPage - 1) * ITEMS_PER_PAGE;
+        const endIndex = startIndex + ITEMS_PER_PAGE;
+        const visibleArticles = filteredArticles.slice(startIndex, endIndex);
+
+        // 4. DOM表示更新
+        const grid = document.getElementById('articles-grid');
+        
+        // 全要素を一旦非表示に
+        allArticleElements.forEach(el => el.style.display = 'none');
+
+        // 該当ページ分の要素を表示し、並び替えてGridに追加
+        visibleArticles.forEach(el => {
+            el.style.display = 'flex';
+            grid.appendChild(el); 
+        });
+
+        // 該当なしメッセージ制御
+        const noResultsMsg = document.getElementById('no-results-message');
+        if (totalItems === 0) {
+            noResultsMsg.style.display = 'flex';
+        } else {
+            noResultsMsg.style.display = 'none';
+        }
+
+        renderPaginationControls(totalPages);
+    }
+
+    /**
+     * UI（ボタンやタブ）の見た目更新
+     */
+    function updateUIControls() {
+        // ソートボタン
+        document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
+        document.getElementById('sort-' + currentState.sortType).classList.add('active');
+
+        // タブとタグ表示
+        const statusDiv = document.getElementById('filter-status');
+        const tagNameSpan = document.getElementById('current-tag-name');
+        
+        // タブ要素は削除済みなので、タブのクラス操作はスキップ（エラー回避のためチェックを入れることも可能ですが、DOM要素がないだけなので無視されます）
+        const tabs = document.querySelectorAll('.filter-tab');
+
+        if (currentState.filterType === 'tag') {
+            tabs.forEach(tab => tab.classList.remove('active'));
+            statusDiv.style.display = 'block';
+            tagNameSpan.textContent = currentState.filterValue;
+        } else {
+            statusDiv.style.display = 'none';
+            // タブが存在しないためactive付与処理は実質無効
+        }
+    }
+
+    /**
+     * ページネーションボタン生成
+     */
+    function renderPaginationControls(totalPages) {
+        const container = document.getElementById('pagination-container');
+        container.innerHTML = '';
+
+        if (totalPages <= 1) return;
+
+        // 前へ
+        const prevBtn = document.createElement('button');
+        prevBtn.className = 'page-btn';
+        prevBtn.innerHTML = '&lsaquo;';
+        prevBtn.disabled = currentState.currentPage === 1;
+        prevBtn.onclick = () => goToPage(currentState.currentPage - 1);
+        container.appendChild(prevBtn);
+
+        // 数字ボタンロジック（最大7個表示）
+        let startPage = Math.max(1, currentState.currentPage - 2);
+        let endPage = Math.min(totalPages, startPage + 4);
+        
+        if (endPage - startPage < 4) {
+            startPage = Math.max(1, endPage - 4);
+        }
+
+        if (startPage > 1) {
+            container.appendChild(createPageBtn(1));
+            if (startPage > 2) {
+                const dots = document.createElement('span');
+                dots.textContent = '...';
+                dots.style.alignSelf = 'center';
+                container.appendChild(dots);
+            }
+        }
+
+        for (let i = startPage; i <= endPage; i++) {
+            container.appendChild(createPageBtn(i));
+        }
+
+        if (endPage < totalPages) {
+            if (endPage < totalPages - 1) {
+                const dots = document.createElement('span');
+                dots.textContent = '...';
+                dots.style.alignSelf = 'center';
+                container.appendChild(dots);
+            }
+            container.appendChild(createPageBtn(totalPages));
+        }
+
+        // 次へ
+        const nextBtn = document.createElement('button');
+        nextBtn.className = 'page-btn';
+        nextBtn.innerHTML = '&rsaquo;';
+        nextBtn.disabled = currentState.currentPage === totalPages;
+        nextBtn.onclick = () => goToPage(currentState.currentPage + 1);
+        container.appendChild(nextBtn);
+    }
+
+    function createPageBtn(pageNum) {
+        const btn = document.createElement('button');
+        btn.className = 'page-btn';
+        if (pageNum === currentState.currentPage) btn.classList.add('active');
+        btn.textContent = pageNum;
+        btn.onclick = () => goToPage(pageNum);
+        return btn;
+    }
+</script>

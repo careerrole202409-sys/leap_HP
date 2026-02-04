@@ -4,20 +4,20 @@
 
 <link rel="icon" href="/assets/favicon.png">
 
-<title>海外ビジネス攻略マニュアル | Leap</title>
-  <meta name="description" content="海外進出、営業、代理店開拓、マーケティング、越境EC、国別情報など、海外ビジネスを成功させるための体系的なノウハウを提供する公式ブログです。">
+<title>記事一覧 | 海外ビジネス攻略マニュアル</title>
+  <meta name="description" content="Leapの海外ビジネス攻略マニュアルの全記事一覧です。">
 
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.leap.site/ja/blog/">
-  <meta property="og:title" content="海外ビジネス攻略マニュアル | Leap">
-  <meta property="og:description" content="海外進出、営業、代理店開拓、マーケティング、越境EC、国別情報など、海外ビジネスを成功させるための体系的なノウハウを提供する公式ブログです。">
+  <meta property="og:url" content="https://www.leap.site/ja/blog/list/">
+  <meta property="og:title" content="記事一覧 | 海外ビジネス攻略マニュアル">
+  <meta property="og:description" content="Leapの海外ビジネス攻略マニュアルの全記事一覧です。">
   <meta property="og:image" content="https://www.leap.site/assets/og-image.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="海外ビジネス攻略マニュアル | Leap">
-  <meta property="twitter:description" content="海外進出、営業、代理店開拓、マーケティング、越境EC、国別情報など、海外ビジネスを成功させるための体系的なノウハウを提供する公式ブログです。">
+  <meta property="twitter:title" content="記事一覧 | 海外ビジネス攻略マニュアル">
+  <meta property="twitter:description" content="Leapの海外ビジネス攻略マニュアルの全記事一覧です。">
   <meta property="twitter:image" content="https://www.leap.site/assets/og-image.png">
 
     <!-- Google tag (gtag.js) -->
@@ -40,8 +40,8 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="海外進出、営業、代理店開拓、マーケティング、越境EC、国別情報など、海外ビジネスを成功させるための体系的なノウハウを提供する公式ブログです。">
-    <title>海外ビジネス攻略マニュアル | Leap</title>
+    <meta name="description" content="Leapの海外ビジネス攻略マニュアルの全記事一覧です。">
+    <title>記事一覧 | 海外ビジネス攻略マニュアル</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
@@ -181,120 +181,74 @@
     <!-- Main Content -->
     <main id="main-content">
         
-<!-- ▼ ヒーローセクション -->
-<section class="section py-3xl" style="background: var(--color-primary-gradient); color: var(--color-white);">
-    <div class="container text-center">
-        <span class="text-white font-bold mb-sm d-block" style="opacity: 0.9; letter-spacing: 0.05em;">Leap Knowledge Base</span>
-        <h1 class="text-white mb-md">海外ビジネス攻略マニュアル</h1>
-        <p class="text-white mb-xl" style="font-size: var(--font-size-lg); max-width: 800px; margin-left: auto; margin-right: auto;">
-            海外展開の準備から、営業・代理店開拓、マーケティング、<br>
-            そして国ごとの詳細情報まで。実践的なノウハウを体系的に学べます。
-        </p>
-    </div>
-</section>
-
-<!-- ▼ マニュアルカテゴリ一覧 -->
-<!-- 修正点：padding-topを var(--space-lg) に設定し、mb-md でカードとの距離を確保 -->
-<section class="section bg-white" style="position: relative; margin-top: -60px; padding-top: var(--space-lg); padding-bottom: var(--space-3xl);">
+<!-- ▼ メインコンテンツエリア -->
+<section class="section pt-3xl pb-3xl bg-beige" style="min-height: 80vh;">
     <div class="container">
         
-        <!-- 余白を mb-md (中くらい) にして、上下のバランスを整えました -->
-        <div class="flex justify-end mb-md" style="position: relative; z-index: 10;">
-            <a href="/ja/blog/list/" class="view-all-link">
-                すべての記事一覧を見る &rarr;
-            </a>
+        <!-- ヘッダーエリア：タイトル、戻るリンク、ソート -->
+        <div class="flex justify-between items-end mb-lg flex-wrap" style="gap: 1rem;">
+            
+            <!-- タイトルと戻るリンクをグループ化 -->
+            <div class="flex items-center flex-wrap" style="gap: 1.5rem;">
+                <h1 class="font-bold text-primary" style="font-size: 2rem; margin: 0; line-height: 1.2;">記事一覧</h1>
+                <a href="/ja/blog/" class="back-to-top">
+                    &larr; ブログトップへ
+                </a>
+            </div>
+            
+            <!-- ソート機能 -->
+            <div class="flex items-center" style="font-size: 0.9rem;">
+                <span class="text-secondary mr-sm">並び替え：</span>
+                <button onclick="setSortType('date')" class="sort-btn active" id="sort-date">新着順</button>
+                <span class="text-border mx-xs" style="color: var(--color-border);">|</span>
+                <button onclick="setSortType('views')" class="sort-btn" id="sort-views">人気順</button>
+            </div>
         </div>
 
-        <!-- 6つの大カテゴリへのリンクカード -->
-        <div class="grid-3" style="gap: 20px;">
-            
-            <!-- 1. 海外進出マニュアル -->
-            <a href="/ja/blog/expansion/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" /></svg>
-                </div>
-                <!-- エラー回避のため ['key'] の形に統一 -->
-                <h2 class="manual-title">海外進出マニュアル</h2>
-                <p class="manual-desc">意思決定から事業計画、法務・税務、リスク管理まで、海外進出の完全ロードマップ。</p>
-                <span class="manual-link">一覧を見る &rarr;</span>
-            </a>
-
-            <!-- 2. 海外営業マニュアル -->
-            <a href="/ja/blog/sales/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" /></svg>
-                </div>
-                <h2 class="manual-title">海外営業マニュアル</h2>
-                <p class="manual-desc">製品のローカライズから商談、契約、貿易実務まで。海外で売上を作るための実践テクニック。</p>
-                <span class="manual-link">一覧を見る &rarr;</span>
-            </a>
-
-            <!-- 3. 海外代理店マニュアル -->
-            <a href="/ja/blog/partner/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" /></svg>
-                </div>
-                <h2 class="manual-title">海外代理店マニュアル</h2>
-                <p class="manual-desc">パートナー探索、契約交渉、モチベーション管理など、代理店を活用して販路を拡大する方法。</p>
-                <span class="manual-link">一覧を見る &rarr;</span>
-            </a>
-
-            <!-- 4. 海外マーケティング -->
-            <a href="/ja/blog/marketing/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 1 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.795 23.944 23.944 0 0 1-1.014 5.795m-3.8-11.58a23.917 23.917 0 0 0-4.636 2.02" /></svg>
-                </div>
-                <h2 class="manual-title">海外マーケティング</h2>
-                <p class="manual-desc">市場調査、Webマーケティング、展示会、SNS活用など、現地顧客に響くプロモーション戦略。</p>
-                <span class="manual-link">一覧を見る &rarr;</span>
-            </a>
-
-            <!-- 5. 越境ECマニュアル -->
-            <a href="/ja/blog/ec/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" /></svg>
-                </div>
-                <h2 class="manual-title">越境ECマニュアル</h2>
-                <p class="manual-desc">プラットフォーム選定、物流、決済、カスタマーサポートまで、越境EC立上げと運用の全て。</p>
-                <span class="manual-link">一覧を見る &rarr;</span>
-            </a>
-
-            <!-- 6. 国・地域別情報 -->
-            <a href="/ja/blog/countries/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" /></svg>
-                </div>
-                <h2 class="manual-title">国・地域別情報</h2>
-                <p class="manual-desc">ベトナム、シンガポール、タイ、米国など。各国の市場環境、法規制、商習慣を徹底解説。</p>
-                <span class="manual-link">一覧を見る &rarr;</span>
-            </a>
-
-        </div>
-    </div>
-</section>
-
-<!-- ▼ 新着記事セクション -->
-<section id="latest-articles-section" class="section py-xl bg-beige">
-    <div class="container">
-        
-        <div class="flex justify-between items-center mb-lg" style="width: 100%; justify-content: space-between; gap: 20px;">
-            <h2 id="section-title" class="text-xl font-bold" style="border-left: 5px solid var(--color-primary-start); padding-left: 15px;">新着記事</h2>
+        <!-- カテゴリフィルタ（タブ） -->
+        <div class="flex justify-center" style="border-bottom: 1px solid var(--color-border); margin-bottom: var(--space-xl);">
+            <nav class="filter-nav">
+                <button onclick="setFilter('category', 'all')" class="filter-tab active" id="tab-all">すべて</button>
+                <button onclick="setFilter('category', 'expansion')" class="filter-tab" id="tab-expansion">海外進出</button>
+                <button onclick="setFilter('category', 'sales')" class="filter-tab" id="tab-sales">海外営業</button>
+                <button onclick="setFilter('category', 'partner')" class="filter-tab" id="tab-partner">海外代理店</button>
+                <button onclick="setFilter('category', 'marketing')" class="filter-tab" id="tab-marketing">マーケティング</button>
+                <button onclick="setFilter('category', 'ec')" class="filter-tab" id="tab-ec">越境EC</button>
+                <button onclick="setFilter('category', 'countries')" class="filter-tab" id="tab-countries">国・地域別</button>
+            </nav>
         </div>
 
-        <div class="grid-3" id="posts-container">
+        <!-- 絞り込み状態表示（タグ検索時のみ表示） -->
+        <div id="filter-status" class="mb-lg hidden" style="display: none;">
+            <span class="text-lg font-bold">
+                <span class="text-primary">#<span id="current-tag-name"></span></span> の記事一覧
+            </span>
+            <button onclick="resetFilter()" class="ml-sm text-sm text-secondary underline hover:text-primary" style="background:none; border:none; cursor:pointer;">
+                すべて表示に戻す
+            </button>
+        </div>
+
+        <!-- 記事グリッド -->
+        <div class="grid-3" id="articles-grid">
             
             
+
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,タイ進出,インフルエンサーマーケティング,展示会,海外展開,市場調査"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                             data-date="1770163200000" 
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/thailand/thailand-marketing-strategy/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
                             <img src="https://images.unsplash.com/photo-1563720223523-491ff04651de?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
@@ -332,19 +286,23 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,タイ進出,販路開拓,マーケティング,海外ビジネス,EC戦略"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                             data-date="1770076800000" 
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/thailand/thailand-market-entry-strategy/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
                             <img src="https://images.unsplash.com/photo-1510525009512-ad7fc13eefab?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
@@ -382,19 +340,23 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,タイ,海外進出,異文化理解,商習慣,マネジメント,交渉術"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                             data-date="1769990400000" 
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/thailand/thai-business-culture-and-negotiation/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
                             <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
@@ -432,19 +394,23 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,タイ進出,知的財産,商標登録,模倣品対策,リスク管理"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                             data-date="1769731200000" 
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/thailand/thailand-ip-protection/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
                             <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" 
@@ -482,19 +448,23 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,海外進出,タイ,会社設立,BOI,投資,税制"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                             data-date="1769644800000" 
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/thailand/thailand-company-incorporation-boi/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
                             <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
@@ -532,19 +502,23 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,海外進出,タイ市場,食品産業,ヘルスケア,成功事例,市場調査"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                             data-date="1769558400000" 
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/thailand/thai-market-trends-and-success-stories/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
                             <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
@@ -582,18 +556,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,タイ,経済動向,中小企業,海外進出,EEC"
+                             data-date="1769472000000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/thailand/thailand-economic-report-2025/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -632,18 +610,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,シンガポール,海外進出,ビジネス支援,公的機関,業界団体"
+                             data-date="1769385600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/singapore/singapore-business-contacts/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -682,18 +664,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,海外進出,シンガポール,事例研究,製造業,越境EC,経営戦略"
+                             data-date="1769126400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/singapore/singapore-expansion-success-failure/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -732,18 +718,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,シンガポール,海外進出,リスク管理,コンプライアンス,法務"
+                             data-date="1769040000000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/singapore/singapore-business-risk-compliance/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -782,18 +772,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,シンガポール,デジタルマーケティング,展示会,海外進出,販路開拓"
+                             data-date="1768953600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/singapore/singapore-digital-marketing-exhibition-strategy/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -832,18 +826,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,シンガポール,B2B,販路開拓,海外進出,展示会"
+                             data-date="1768867200000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/singapore/singapore-b2b-sales-channel-strategy/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -882,18 +880,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,シンガポール,海外進出,ビジネスマナー,交渉術,異文化マネジメント"
+                             data-date="1768780800000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/singapore/singapore-business-etiquette/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -932,18 +934,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,シンガポール,知的財産,商標登録,特許,ブランド保護,海外進出"
+                             data-date="1768521600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/singapore/singapore-ip-brand-protection/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -982,18 +988,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,シンガポール,会社設立,海外進出,APAC,税制,経営戦略"
+                             data-date="1768435200000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/singapore/singapore-incorporation-manual/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1032,18 +1042,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,シンガポール,海外進出,成功事例,中小企業,高付加価値"
+                             data-date="1768348800000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/singapore/singapore-market-success-cases/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1082,18 +1096,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,シンガポール,海外進出,中小企業,市場調査,越境EC"
+                             data-date="1768262400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/singapore/singapore-economic-report-2025/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1132,18 +1150,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="sales"
                              data-tags="blog,ローカライズ,製品開発,海外進出,マーケティング,UI/UX"
+                             data-date="1768003200000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/sales/product-localization-strategies/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1182,18 +1204,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="partner"
                              data-tags="blog,海外進出,販売チャネル,代理店戦略,D2C,越境EC"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/partner/sales-channels-comparison-global-expansion/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1232,18 +1258,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="partner"
                              data-tags="blog,KPI管理,海外代理店,パートナーシップ,評価制度,マネジメント"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/partner/overseas-distributor-kpi-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1282,18 +1312,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="partner"
                              data-tags="blog,海外展開,代理店管理,契約交渉,リスク管理,パートナーシップ"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/partner/overseas-distributor-contract-renewal/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1332,18 +1366,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="partner"
                              data-tags="blog,海外進出,契約書,リスク管理,代理店契約,法務"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/partner/overseas-distributor-agreement-risks/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1382,18 +1420,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="partner"
                              data-tags="blog,海外契約,知的財産権,NDA,リスク管理,中小企業"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/partner/overseas-contract-key-clauses/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1432,18 +1474,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="partner"
                              data-tags="blog,海外展開,パートナー戦略,代理店契約,ディストリビューター,エージェント"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/partner/distributor-vs-agent/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1482,18 +1528,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="partner"
                              data-tags="blog,代理店戦略,インセンティブ,海外展開,パートナーシップ,売上拡大"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/partner/distributor-incentive-strategy/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1532,18 +1582,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="partner"
                              data-tags="blog,海外展開,代理店管理,VoC,情報共有,パートナーシップ"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/partner/distributor-feedback-strategy/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1582,18 +1636,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="partner"
                              data-tags="blog,海外展開,パートナーシップ,異文化理解,コミュニケーション,代理店営業"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/partner/distributor-communication-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1632,18 +1690,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="partner"
                              data-tags="blog,海外展開,パートナー戦略,マーケティング,展示会,契約実務"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/partner/distributor-collaboration-marketing-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1682,18 +1744,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="partner"
                              data-tags="blog,海外進出,代理店戦略,リスク管理,パートナーシップ,中小企業"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/partner/5-reasons-to-partner-with-overseas-agents/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1732,18 +1798,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="expansion"
                              data-tags="blog,経営戦略,リーダーシップ,組織開発,海外進出,マネジメント"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/global-expansion-vision-leadership/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1782,18 +1852,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,ベトナム進出,知財戦略,商標登録,ブランド保護,リスク管理"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/vietnam/vietnam-trademark-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1832,18 +1906,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,海外進出,マネジメント,ベトナム,異文化理解,組織開発"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/vietnam/vietnam-team-management/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1882,18 +1960,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,ベトナム,海外進出,ニッチ市場,中小企業,成功事例"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/vietnam/vietnam-niche-market-strategy/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1932,18 +2014,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,海外進出,展示会,ベトナム,営業戦略,マーケティング"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/vietnam/vietnam-exhibition-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -1982,18 +2068,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,ベトナム進出,会社設立,海外展開,法務・税務,市場調査"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/vietnam/vietnam-entry-forms-comparison/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2032,18 +2122,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,ベトナム進出,販売代理店,市場開拓,パートナーシップ,契約実務"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/vietnam/vietnam-distributor-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2082,18 +2176,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,ベトナム進出,リスク管理,法務・労務,税務,海外展開"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/vietnam/vietnam-business-risk-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2132,18 +2230,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,ベトナム進出,海外展開,市場調査,成長産業,中小企業"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/vietnam/vietnam-business-opportunities-2025/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2182,18 +2284,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="countries"
                              data-tags="blog,ベトナム進出,JETRO,海外展開,市場調査,ビジネスマッチング"
+                             data-date="1767830400000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/countries/vietnam/jetro-vietnam-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2232,18 +2338,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="sales"
                              data-tags="blog,海外展開,資料作成,ローカライゼーション,デザイン,ブランディング"
+                             data-date="1767744000000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/sales/winning-global-materials-strategy/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2282,18 +2392,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="sales"
                              data-tags="blog,海外進出,東南アジア,ビジネスマナー,異文化理解,市場開拓"
+                             data-date="1767744000000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/sales/southeast-asia-business-manners/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2332,18 +2446,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="sales"
                              data-tags="blog,海外展示会,販路開拓,マーケティング,ROI,中小企業"
+                             data-date="1767744000000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/sales/overseas-trade-show-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2382,18 +2500,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="sales"
                              data-tags="blog,海外SEO,デジタルマーケティング,市場開拓,グローバル展開,中小企業"
+                             data-date="1767744000000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/sales/overseas-seo-guide-for-smes/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2432,18 +2554,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="sales"
                              data-tags="blog,海外展開,販路開拓,販売チャネル,代理店戦略,越境EC"
+                             data-date="1767744000000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/sales/overseas-sales-channels-comparison/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2482,18 +2608,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="sales"
                              data-tags="blog,海外営業,メールマーケティング,異文化コミュニケーション,テンプレート,交渉術"
+                             data-date="1767744000000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/sales/mastering-overseas-sales-emails/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2532,18 +2662,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="sales"
                              data-tags="blog,国際取引,契約書,リスク管理,海外進出,法務"
+                             data-date="1767744000000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/sales/international-sales-contract-essentials-checklist/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2582,18 +2716,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="sales"
                              data-tags="blog,顧客満足度,アフターサービス,グローバル展開,DX,CRM"
+                             data-date="1767744000000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/sales/global-after-sales-strategy/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2632,18 +2770,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="sales"
                              data-tags="blog,貿易実務,輸出入手続き,インボイス,海外展開,リスク管理"
+                             data-date="1767744000000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/sales/export-import-procedures-and-documents-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2682,18 +2824,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="sales"
                              data-tags="blog,海外進出,ビジネスマナー,中国,韓国,台湾,商習慣"
+                             data-date="1767744000000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/sales/east-asia-business-manners-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2732,18 +2878,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="sales"
                              data-tags="blog,海外取引,リスク管理,代金回収,与信管理,決済手段"
+                             data-date="1767744000000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/sales/complete-guide-to-payment-recovery-risk/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2782,18 +2932,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="expansion"
                              data-tags="blog,SWOT分析,経営戦略,海外進出,中小企業,リスク管理"
+                             data-date="1767657600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/swot-analysis-global-expansion/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2832,18 +2986,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="expansion"
                              data-tags="blog,知的財産,海外進出,リスク管理,ブランド戦略,経営戦略"
+                             data-date="1767657600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/strategic-ip-protection-for-global-expansion/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2882,18 +3040,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="expansion"
                              data-tags="blog,海外進出,経営戦略,代理店開拓,越境EC,市場調査"
+                             data-date="1767657600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/sme-global-expansion-strategies/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2932,18 +3094,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="expansion"
                              data-tags="blog,コンプライアンス,海外子会社管理,リスクマネジメント,内部統制,海外進出"
+                             data-date="1767657600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/overseas-subsidiary-compliance-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -2982,18 +3148,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="expansion"
                              data-tags="blog,海外進出,拠点設立,経営戦略,ロードマップ,グローバルビジネス"
+                             data-date="1767657600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/overseas-office-setup-roadmap/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -3032,18 +3202,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="expansion"
                              data-tags="blog,KPI設定,海外進出,経営戦略,PDCA,データ分析"
+                             data-date="1767657600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/overseas-business-kpis/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -3082,18 +3256,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="expansion"
                              data-tags="blog,市場調査,海外進出,マーケティング,コスト削減,データ分析"
+                             data-date="1767657600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/mastering-overseas-desk-research/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -3132,18 +3310,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="expansion"
                              data-tags="blog,海外進出,JETRO,公的支援,市場調査,ビジネスマッチング"
+                             data-date="1767657600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/jetro-guide-global-expansion-support/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -3182,18 +3364,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="expansion"
                              data-tags="blog,海外進出,コンサルタント,パートナー戦略,専門家連携,リスク管理"
+                             data-date="1767657600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/how-to-choose-overseas-consultants/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -3232,18 +3418,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="expansion"
                              data-tags="blog,海外進出,補助金,助成金,中小企業,資金調達"
+                             data-date="1767657600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/guide-to-overseas-expansion-subsidies/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -3282,18 +3472,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="expansion"
                              data-tags="blog,駐在員,海外進出,人材育成,異文化理解,リスク管理"
+                             data-date="1767657600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/guide-to-expatriate-assignment/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -3332,18 +3526,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="expansion"
                              data-tags="blog,海外進出,法務,許認可,東アジア,経営戦略"
+                             data-date="1767657600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/east-asia-expansion-legal-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -3382,18 +3580,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="expansion"
                              data-tags="blog,リスク管理,海外進出,市場調査,経営戦略,カントリーリスク"
+                             data-date="1767657600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/country-risk-management-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -3432,18 +3634,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="expansion"
                              data-tags="blog,経営戦略,市場開拓,リスク管理,人材育成,ブランディング"
+                             data-date="1767657600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/benefits-of-global-expansion/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -3482,18 +3688,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="expansion"
                              data-tags="blog,海外進出,マーケティング戦略,4P分析,ローカライズ,中小企業経営"
+                             data-date="1767657600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/4p-strategy-and-localization-for-global-expansion/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -3532,18 +3742,22 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
-                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
                 
                     
-                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
                     
                     
-
-                    <article class="card p-0 blog-item" 
+                    
+                    
+                    <!-- 
+                       data-date: ソート用の日付データ（ミリ秒）
+                       data-views属性は削除しました
+                    -->
+                    <article class="card p-0 blog-item article-card" 
+                             data-topic="sales"
                              data-tags="blog,貿易実務,インコタームズ,リスク管理,海外展開,契約"
+                             data-date="1739577600000" 
                              style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/sales/incoterms-2020-guide-for-smes/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
@@ -3582,16 +3796,21 @@
                             </div>
                         </div>
                     </article>
-                    
                 
             
             
-            
+            <!-- 該当なしメッセージ -->
+            <div id="no-results-message" class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; padding: var(--space-3xl) 0; display: none;">
+                <p class="text-secondary">該当する記事は見つかりませんでした。</p>
+            </div>
         </div>
         
-        <div id="no-result-msg" class="text-center w-full py-3xl text-secondary" style="display: none;">
-            該当する記事は見つかりませんでした。
+        <!-- ページネーション -->
+        <div id="pagination-container" class="flex justify-center mt-xl" style="gap: 8px;">
+            <!-- JSでボタンが生成されます -->
         </div>
+
+        
 
     </div>
 </section>
@@ -3769,120 +3988,332 @@
 </script>
 
 <style>
-/* 全記事一覧リンクのスタイル */
-    .view-all-link {
-        color: var(--color-primary-start);
-        font-weight: bold;
+/* ブログトップへ戻るリンク */
+    .back-to-top {
+        color: var(--color-text-secondary);
         text-decoration: none;
-        font-size: 0.95rem;
-        transition: transform 0.2s, opacity 0.2s;
-        display: inline-block;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: color 0.2s, transform 0.2s;
+        display: flex;
+        align-items: center;
     }
 
-    .view-all-link:hover {
-        transform: translateX(5px); /* 右に少し動く */
-        opacity: 0.8;
+    .back-to-top:hover {
+        color: var(--color-primary-start);
+        transform: translateX(-3px); /* 左に少し動く */
         text-decoration: underline;
     }
-    /* マニュアルカードのスタイル */
-    .manual-card {
-        display: block;
-        background: white;
-        padding: 30px 20px;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        text-decoration: none;
-        color: inherit;
-        transition: transform 0.3s, box-shadow 0.3s;
-        border: 1px solid rgba(0,0,0,0.05);
-        text-align: center;
-        height: 100%;
+    /* フィルタリングタブ */
+    .filter-nav {
+        display: flex;
+        gap: var(--space-lg);
+        overflow-x: auto;
+        padding-bottom: 0;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .filter-nav::-webkit-scrollbar { display: none; }
+
+    .filter-tab {
+        background: none;
+        border: none;
+        padding-bottom: var(--space-sm);
+        border-bottom: 3px solid transparent;
+        color: var(--color-text-secondary);
+        font-size: 1rem;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-family: inherit;
+    }
+    .filter-tab:hover { color: var(--color-primary-start); }
+    .filter-tab.active {
+        border-bottom: 3px solid var(--color-primary-start);
+        color: var(--color-primary-start);
+        font-weight: bold;
     }
 
-    .manual-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-        border-color: var(--color-primary-start);
+    /* ソートボタン */
+    .sort-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        font-family: inherit;
+        font-size: inherit;
+        color: var(--color-text-secondary);
+        font-weight: normal;
+        transition: color 0.3s;
+    }
+    .sort-btn:hover { color: var(--color-primary-start); }
+    .sort-btn.active {
+        color: var(--color-primary-start);
+        font-weight: bold;
+        text-decoration: underline;
     }
 
-    .icon-box {
-        background: #fff5f7;
-        width: 64px;
-        height: 64px;
+    /* ページネーションボタン */
+    .page-btn {
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
+        border: 1px solid var(--color-border);
+        background: white;
+        color: var(--color-text-primary);
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0 auto 20px;
     }
-
-    .manual-title {
-        font-size: 1.25rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-        color: var(--color-text-primary);
-    }
-
-    .manual-desc {
-        font-size: 0.9rem;
-        color: var(--color-text-secondary);
-        line-height: 1.6;
-        margin-bottom: 20px;
-    }
-
-    .manual-link {
-        font-size: 0.9rem;
-        font-weight: bold;
+    .page-btn:hover {
+        border-color: var(--color-primary-start);
         color: var(--color-primary-start);
     }
+    .page-btn.active {
+        background: var(--color-primary-start);
+        color: white;
+        border-color: var(--color-primary-start);
+    }
+    .page-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
 
-    /* 記事カードのホバーエフェクト */
+    /* カード */
     .blog-item:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
     }
-    
-    .blog-item:hover h3 a {
-        color: var(--color-primary-start) !important;
-    }
+    .blog-item:hover h3 a { color: var(--color-primary-start) !important; }
 </style>
 
-<!-- ▼ タグフィルタリング用のスクリプト -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const targetTag = urlParams.get('tag');
+    // --- 状態管理 ---
+    const ITEMS_PER_PAGE = 15; // 3列 * 5行
+    let currentState = {
+        filterType: 'category', // 'category' or 'tag'
+        filterValue: 'all',     // 'all', 'expansion', 'thailand' etc.
+        sortType: 'date',       // 'date' (新着順) or 'views' (人気順 ※実態は古い順)
+        currentPage: 1
+    };
 
-    if (targetTag) {
-        const sectionTitle = document.getElementById('section-title');
-        const articles = document.querySelectorAll('.blog-item');
-        const noResultMsg = document.getElementById('no-result-msg');
-        let matchCount = 0;
+    let allArticleElements = [];
 
-        if (sectionTitle) {
-            sectionTitle.textContent = `#${targetTag} の記事一覧`;
+    document.addEventListener("DOMContentLoaded", function() {
+        allArticleElements = Array.from(document.querySelectorAll('.article-card'));
+
+        // URLパラメータのチェック
+        const urlParams = new URLSearchParams(window.location.search);
+        const tag = urlParams.get('tag');
+
+        if (tag) {
+            setFilter('tag', tag);
+        } else {
+            render(); 
         }
+    });
 
-        articles.forEach(article => {
-            const articleTags = article.getAttribute('data-tags') || "";
-            if (articleTags.includes(targetTag)) {
-                article.style.display = 'flex';
-                matchCount++;
+    /**
+     * フィルタ条件をセットして再描画
+     */
+    function setFilter(type, value) {
+        currentState.filterType = type;
+        currentState.filterValue = value;
+        currentState.currentPage = 1;
+        render();
+    }
+
+    /**
+     * ソート順をセットして再描画
+     */
+    function setSortType(type) {
+        currentState.sortType = type;
+        render();
+    }
+
+    /**
+     * ページ移動
+     */
+    function goToPage(page) {
+        currentState.currentPage = page;
+        render();
+        const grid = document.getElementById('articles-grid');
+        grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    /**
+     * 「すべて表示に戻す」ボタン用
+     */
+    function resetFilter() {
+        const url = new URL(window.location);
+        url.searchParams.delete('tag');
+        window.history.pushState({}, '', url);
+        setFilter('category', 'all');
+    }
+
+    /**
+     * メイン描画処理
+     */
+    function render() {
+        updateUIControls();
+
+        // 1. フィルタリング
+        let filteredArticles = allArticleElements.filter(article => {
+            if (currentState.filterType === 'category') {
+                const topic = article.getAttribute('data-topic');
+                return currentState.filterValue === 'all' || topic === currentState.filterValue;
+            } else if (currentState.filterType === 'tag') {
+                const tags = article.getAttribute('data-tags') || "";
+                return tags.split(',').includes(currentState.filterValue);
+            }
+            return true;
+        });
+
+        // 2. ソート
+        filteredArticles.sort((a, b) => {
+            // data-date属性を取得して数値化
+            const dateA = Number(a.getAttribute('data-date') || 0);
+            const dateB = Number(b.getAttribute('data-date') || 0);
+
+            if (currentState.sortType === 'views') {
+                // 【人気順】として振る舞うが、実態は【古い順（昇順）】
+                // 古い記事ほど累積PVが多いという仮説に基づく簡易実装
+                return dateA - dateB; 
             } else {
-                article.style.display = 'none';
+                // 【新着順】（降順）
+                return dateB - dateA;
             }
         });
 
-        if (matchCount === 0) {
-            noResultMsg.style.display = 'block';
+        // 3. ページネーション計算
+        const totalItems = filteredArticles.length;
+        const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE);
+        
+        if (currentState.currentPage > totalPages && totalPages > 0) {
+            currentState.currentPage = totalPages;
         }
 
-        const section = document.getElementById('latest-articles-section');
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
+        const startIndex = (currentState.currentPage - 1) * ITEMS_PER_PAGE;
+        const endIndex = startIndex + ITEMS_PER_PAGE;
+        const visibleArticles = filteredArticles.slice(startIndex, endIndex);
+
+        // 4. DOM表示更新
+        const grid = document.getElementById('articles-grid');
+        
+        // 全要素を一旦非表示に
+        allArticleElements.forEach(el => el.style.display = 'none');
+
+        // 該当ページ分の要素を表示し、並び替えてGridに追加
+        visibleArticles.forEach(el => {
+            el.style.display = 'flex';
+            grid.appendChild(el); 
+        });
+
+        // 該当なしメッセージ制御
+        const noResultsMsg = document.getElementById('no-results-message');
+        if (totalItems === 0) {
+            noResultsMsg.style.display = 'flex';
+        } else {
+            noResultsMsg.style.display = 'none';
+        }
+
+        renderPaginationControls(totalPages);
+    }
+
+    /**
+     * UI（ボタンやタブ）の見た目更新
+     */
+    function updateUIControls() {
+        // ソートボタン
+        document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
+        document.getElementById('sort-' + currentState.sortType).classList.add('active');
+
+        // タブとタグ表示
+        const statusDiv = document.getElementById('filter-status');
+        const tagNameSpan = document.getElementById('current-tag-name');
+        const tabs = document.querySelectorAll('.filter-tab');
+
+        if (currentState.filterType === 'tag') {
+            tabs.forEach(tab => tab.classList.remove('active'));
+            statusDiv.style.display = 'block';
+            tagNameSpan.textContent = currentState.filterValue;
+        } else {
+            statusDiv.style.display = 'none';
+            tabs.forEach(tab => tab.classList.remove('active'));
+            const activeTab = document.getElementById('tab-' + currentState.filterValue);
+            if (activeTab) activeTab.classList.add('active');
         }
     }
-});
+
+    /**
+     * ページネーションボタン生成
+     */
+    function renderPaginationControls(totalPages) {
+        const container = document.getElementById('pagination-container');
+        container.innerHTML = '';
+
+        if (totalPages <= 1) return;
+
+        // 前へ
+        const prevBtn = document.createElement('button');
+        prevBtn.className = 'page-btn';
+        prevBtn.innerHTML = '&lsaquo;';
+        prevBtn.disabled = currentState.currentPage === 1;
+        prevBtn.onclick = () => goToPage(currentState.currentPage - 1);
+        container.appendChild(prevBtn);
+
+        // 数字ボタンロジック（最大7個表示）
+        let startPage = Math.max(1, currentState.currentPage - 2);
+        let endPage = Math.min(totalPages, startPage + 4);
+        
+        if (endPage - startPage < 4) {
+            startPage = Math.max(1, endPage - 4);
+        }
+
+        if (startPage > 1) {
+            container.appendChild(createPageBtn(1));
+            if (startPage > 2) {
+                const dots = document.createElement('span');
+                dots.textContent = '...';
+                dots.style.alignSelf = 'center';
+                container.appendChild(dots);
+            }
+        }
+
+        for (let i = startPage; i <= endPage; i++) {
+            container.appendChild(createPageBtn(i));
+        }
+
+        if (endPage < totalPages) {
+            if (endPage < totalPages - 1) {
+                const dots = document.createElement('span');
+                dots.textContent = '...';
+                dots.style.alignSelf = 'center';
+                container.appendChild(dots);
+            }
+            container.appendChild(createPageBtn(totalPages));
+        }
+
+        // 次へ
+        const nextBtn = document.createElement('button');
+        nextBtn.className = 'page-btn';
+        nextBtn.innerHTML = '&rsaquo;';
+        nextBtn.disabled = currentState.currentPage === totalPages;
+        nextBtn.onclick = () => goToPage(currentState.currentPage + 1);
+        container.appendChild(nextBtn);
+    }
+
+    function createPageBtn(pageNum) {
+        const btn = document.createElement('button');
+        btn.className = 'page-btn';
+        if (pageNum === currentState.currentPage) btn.classList.add('active');
+        btn.textContent = pageNum;
+        btn.onclick = () => goToPage(pageNum);
+        return btn;
+    }
 </script>
     </main>
     
