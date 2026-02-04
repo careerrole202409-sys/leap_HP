@@ -16,7 +16,7 @@ description: 海外展開に役立つ情報を無料でダウンロード。越�
         </p>
         
         <div class="flex justify-center items-center" style="gap: var(--space-lg); flex-wrap: wrap;">
-            <a href="#all-resources" class="btn btn-xl btn-white">
+            <a href="#resources-section" class="btn btn-xl btn-white">
                 すべての資料を見る ↓
             </a>
             <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="btn btn-xl btn-outline-white">
@@ -27,32 +27,42 @@ description: 海外展開に役立つ情報を無料でダウンロード。越�
 </section>
 
 <!-- 
-  SECTION 2: POPULAR RESOURCES (TABS)
+  SECTION 2: RESOURCES MAIN (MERGED)
 -->
-<section class="section py-xl bg-beige">
+<section id="resources-section" class="section py-xl bg-beige">
     <div class="container">
-        <h2 class="text-center mb-lg" style="font-size: var(--font-size-3xl);">人気の資料集</h2>
+        <h2 class="text-center mb-lg" style="font-size: var(--font-size-3xl);">お役立ち資料一覧</h2>
         
         <!-- タブナビゲーション -->
         <div class="flex justify-center" style="border-bottom: 1px solid var(--color-border); margin-bottom: var(--space-xl);">
             <nav style="display: flex; gap: var(--space-xl); overflow-x: auto; padding-bottom: 0;">
                 
-                <div onclick="switchTab('region')" class="tab-btn active" id="btn-region" 
+                <!-- すべて (All) -->
+                <div onclick="filterResources('all')" class="tab-btn active" id="btn-all" 
                      style="padding-bottom: var(--space-sm); border-bottom: 3px solid var(--color-primary-start); color: var(--color-primary-start); font-weight: bold; cursor: pointer; font-size: 1rem; white-space: nowrap;">
+                    すべて
+                </div>
+
+                <!-- 国・地域別 (region) -->
+                <div onclick="filterResources('region')" class="tab-btn" id="btn-region" 
+                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
                     国・地域別
                 </div>
                 
-                <div onclick="switchTab('ec')" class="tab-btn" id="btn-ec" 
+                <!-- 越境EC (ec) -->
+                <div onclick="filterResources('ec')" class="tab-btn" id="btn-ec" 
                      style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
                     越境EC
                 </div>
                 
-                <div onclick="switchTab('marketing')" class="tab-btn" id="btn-marketing" 
+                <!-- 海外マーケティング (marketing) -->
+                <div onclick="filterResources('marketing')" class="tab-btn" id="btn-marketing" 
                      style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
                     海外マーケティング
                 </div>
                 
-                <div onclick="switchTab('sales')" class="tab-btn" id="btn-sales" 
+                <!-- 海外営業 (sales) -->
+                <div onclick="filterResources('sales')" class="tab-btn" id="btn-sales" 
                      style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
                     海外営業
                 </div>
@@ -61,206 +71,61 @@ description: 海外展開に役立つ情報を無料でダウンロード。越�
         </div>
 
         <!-- 
-          タブコンテンツエリア 
-          【修正】インラインスタイルの min-height: 500px を削除しました。
-          代わりに下部の <style> タグで全タブ共通の高さ設定を行っています。
+          資料一覧グリッド 
+          全ての資料を出力し、JSで表示/非表示を制御します
         -->
+        <div id="resources-grid" class="grid-3">
+            {% set all_posts = collections.resource | reverse %}
+            {% set has_posts = false %}
 
-        <!-- 1. 国・地域別 (region) -->
-        <div id="tab-content-region" class="tab-content grid-3">
-            {% set topic_posts = collections.resource | selectattr("data.topic", "equalto", "region") | reverse %}
-            {% set count = 0 %}
-
-            {% for post in topic_posts %}
-                {% if post.data.locale == 'ja' and count < 3 %}
-                    <article class="card p-0" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none;">
-                        <div style="background-color: var(--color-background); height: 160px; display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 3rem;">{{ post.data.icon | default('📄') }}</span>
-                        </div>
-                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
-                            <span class="text-light font-bold mb-sm" style="font-size: var(--font-size-xs); text-transform: uppercase;">{{ post.data.type }}</span>
-                            <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--space-sm);">{{ post.data.title }}</h3>
-                            <p class="text-secondary mb-lg" style="flex: 1; font-size: var(--font-size-sm);">{{ post.data.description }}</p>
-                            <a href="{{ post.url }}" class="text-primary font-bold">ダウンロードする &rarr;</a>
-                        </div>
-                    </article>
-                    {% set count = count + 1 %}
-                {% endif %}
-            {% endfor %}
-
-            {% if count == 0 %}
-                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
-                    <p class="text-secondary">現在準備中です。</p>
-                </div>
-            {% endif %}
-        </div>
-
-        <!-- 2. 越境EC (ec) -->
-        <div id="tab-content-ec" class="tab-content grid-3 hidden">
-            {% set topic_posts = collections.resource | selectattr("data.topic", "equalto", "ec") | reverse %}
-            {% set count = 0 %}
-
-            {% for post in topic_posts %}
-                {% if post.data.locale == 'ja' and count < 3 %}
-                    <article class="card p-0" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none;">
-                        <div style="background-color: var(--color-background); height: 160px; display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 3rem;">{{ post.data.icon | default('🛒') }}</span>
-                        </div>
-                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
-                            <span class="text-light font-bold mb-sm" style="font-size: var(--font-size-xs); text-transform: uppercase;">{{ post.data.type }}</span>
-                            <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--space-sm);">{{ post.data.title }}</h3>
-                            <p class="text-secondary mb-lg" style="flex: 1; font-size: var(--font-size-sm);">{{ post.data.description }}</p>
-                            <a href="{{ post.url }}" class="text-primary font-bold">ダウンロードする &rarr;</a>
-                        </div>
-                    </article>
-                    {% set count = count + 1 %}
-                {% endif %}
-            {% endfor %}
-
-            {% if count == 0 %}
-                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
-                    <p class="text-secondary">現在準備中です。</p>
-                </div>
-            {% endif %}
-        </div>
-
-        <!-- 3. 海外マーケティング (marketing) -->
-        <div id="tab-content-marketing" class="tab-content grid-3 hidden">
-            {% set topic_posts = collections.resource | selectattr("data.topic", "equalto", "marketing") | reverse %}
-            {% set count = 0 %}
-
-            {% for post in topic_posts %}
-                {% if post.data.locale == 'ja' and count < 3 %}
-                    <article class="card p-0" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none;">
-                        <div style="background-color: var(--color-background); height: 160px; display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 3rem;">{{ post.data.icon | default('📈') }}</span>
-                        </div>
-                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
-                            <span class="text-light font-bold mb-sm" style="font-size: var(--font-size-xs); text-transform: uppercase;">{{ post.data.type }}</span>
-                            <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--space-sm);">{{ post.data.title }}</h3>
-                            <p class="text-secondary mb-lg" style="flex: 1; font-size: var(--font-size-sm);">{{ post.data.description }}</p>
-                            <a href="{{ post.url }}" class="text-primary font-bold">ダウンロードする &rarr;</a>
-                        </div>
-                    </article>
-                    {% set count = count + 1 %}
-                {% endif %}
-            {% endfor %}
-
-            {% if count == 0 %}
-                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
-                    <p class="text-secondary">現在準備中です。</p>
-                </div>
-            {% endif %}
-        </div>
-
-        <!-- 4. 海外営業 (sales) -->
-        <div id="tab-content-sales" class="tab-content grid-3 hidden">
-            {% set topic_posts = collections.resource | selectattr("data.topic", "equalto", "sales") | reverse %}
-            {% set count = 0 %}
-
-            {% for post in topic_posts %}
-                {% if post.data.locale == 'ja' and count < 3 %}
-                    <article class="card p-0" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none;">
-                        <div style="background-color: var(--color-background); height: 160px; display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 3rem;">{{ post.data.icon | default('💼') }}</span>
-                        </div>
-                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
-                            <span class="text-light font-bold mb-sm" style="font-size: var(--font-size-xs); text-transform: uppercase;">{{ post.data.type }}</span>
-                            <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--space-sm);">{{ post.data.title }}</h3>
-                            <p class="text-secondary mb-lg" style="flex: 1; font-size: var(--font-size-sm);">{{ post.data.description }}</p>
-                            <a href="{{ post.url }}" class="text-primary font-bold">ダウンロードする &rarr;</a>
-                        </div>
-                    </article>
-                    {% set count = count + 1 %}
-                {% endif %}
-            {% endfor %}
-
-            {% if count == 0 %}
-                <div class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; height: 100%;">
-                    <p class="text-secondary">現在準備中です。</p>
-                </div>
-            {% endif %}
-        </div>
-
-    </div>
-</section>
-
-<!-- 
-  SECTION 3: ALL RESOURCES (FILTER & GRID)
--->
-<section id="all-resources" class="section py-3xl bg-white">
-    <div class="container">
-        <h2 class="text-center mb-sm">すべての資料を見る</h2>
-        <p class="page-subtitle mb-2xl">海外売上を拡大させる無料資料集</p>
-
-        <!-- Filters -->
-        <div class="grid-3 mb-2xl">
-            <div class="form-group mb-0">
-                <label class="form-label" for="topic-select">トピック</label>
-                <select id="topic-select" class="form-control" onchange="applyFilters()">
-                    <option value="all">すべてのトピック</option>
-                    <option value="region">国・地域別</option>
-                    <option value="ec">越境EC</option>
-                    <option value="marketing">海外マーケティング</option>
-                    <option value="sales">海外営業</option>
-                </select>
-            </div>
-            <div class="form-group mb-0">
-                <label class="form-label" for="content-type-select">コンテンツ形式</label>
-                <select id="content-type-select" class="form-control" onchange="applyFilters()">
-                    <option value="all">すべての種類</option>
-                    <option value="guide">ガイドブック</option>
-                    <option value="template">テンプレート</option>
-                    <option value="report">調査レポート</option>
-                    <option value="checklist">チェックリスト</option>
-                    <option value="tool">Excelツール</option>
-                </select>
-            </div>
-            <div class="form-group mb-0">
-                <label class="form-label" for="file-format-select">ファイル形式</label>
-                <select id="file-format-select" class="form-control" onchange="applyFilters()">
-                    <option value="all">すべてのファイル形式</option>
-                    <option value="pdf">PDF</option>
-                    <option value="excel">Excel</option>
-                    <option value="ppt">PowerPoint</option>
-                </select>
-            </div>
-        </div>
-
-        <p id="result-count" class="text-right text-light mb-lg" style="font-size: var(--font-size-sm);">読み込み中...</p>
-
-        <!-- Resources Grid -->
-        <div class="grid-3" id="resources-grid">
-            {% for post in collections.resource | reverse %}
+            {% for post in all_posts %}
                 {% if post.data.locale == 'ja' %}
-                    <div class="card p-0 resource-item" 
-                         data-topic="{{ post.data.topic }}" 
-                         data-type="{{ post.data.type }}" 
-                         data-format="{{ post.data.format }}" 
-                         style="padding: 0; border: 1px solid var(--color-border); box-shadow: none;">
+                    {% set has_posts = true %}
+                    {# 
+                       変更点: articleタグをaタグに変更し、カード全体をリンク化しました。
+                       スタイルに text-decoration: none; color: inherit; を追加して見た目を維持しています。
+                    #}
+                    <a href="{{ post.url }}" 
+                       class="resource-item card p-0" 
+                       data-topic="{{ post.data.topic }}" 
+                       style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; text-decoration: none; color: inherit;">
                         
+                        <!-- アイコンエリア -->
                         <div style="background-color: var(--color-background); height: 160px; display: flex; align-items: center; justify-content: center;">
                             <span style="font-size: 3rem;">{{ post.data.icon | default('📄') }}</span>
                         </div>
                         
-                        <div class="px-lg py-lg">
-                            <span class="mb-sm d-block" style="display:inline-block; background:var(--color-background); padding: 4px 8px; border-radius: 4px; font-size: 12px; text-transform: uppercase;">
+                        <!-- コンテンツエリア -->
+                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                            <span class="text-light font-bold mb-sm" style="font-size: var(--font-size-xs); text-transform: uppercase;">
                                 {{ post.data.type }}
                             </span>
-                            <h3 style="font-size: var(--font-size-lg);">{{ post.data.title }}</h3>
-                            <p class="text-secondary" style="font-size: var(--font-size-sm);">
+                            <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--space-sm);">
+                                {{ post.data.title }}
+                            </h3>
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: var(--font-size-sm);">
                                 {{ post.data.description }}
                             </p>
-                            <a href="{{ post.url }}" class="btn btn-primary w-full mt-md">無料ダウンロード</a>
+                            {# 変更点: 親要素がaタグになったため、ここはaタグではなくspanに変更（入れ子禁止のため） #}
+                            <span class="text-primary font-bold">
+                                ダウンロードする &rarr;
+                            </span>
                         </div>
-                    </div>
+                    </a>
                 {% endif %}
-            {% else %}
-                <div class="text-center py-xl" style="grid-column: 1 / -1;">
-                    <p>現在、資料はありません。</p>
-                </div>
             {% endfor %}
+
+            <!-- 資料がない場合のメッセージ -->
+            <div id="no-results-message" class="text-center w-full flex items-center justify-center hidden" style="grid-column: 1/-1; padding: var(--space-2xl) 0;">
+                <p class="text-secondary">該当する資料が見つかりませんでした。</p>
+            </div>
         </div>
+
+        {% if not has_posts %}
+            <div class="text-center w-full flex items-center justify-center" style="padding: var(--space-2xl) 0;">
+                <p class="text-secondary">現在、公開されている資料はありません。</p>
+            </div>
+        {% endif %}
 
     </div>
 </section>
@@ -269,74 +134,68 @@ description: 海外展開に役立つ情報を無料でダウンロード。越�
 
 <!-- SCRIPTS -->
 <script>
-    // 1. タブ切り替え
-    function switchTab(topic) {
-        document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-        const targetContent = document.getElementById('tab-content-' + topic);
-        if(targetContent) targetContent.classList.remove('hidden');
-
-        document.querySelectorAll('.tab-btn').forEach(btn => {
+    /**
+     * 資料のフィルタリング機能
+     * @param {string} topic - 選択されたトピック ('all', 'region', 'ec', 'marketing', 'sales')
+     */
+    function filterResources(topic) {
+        // 1. タブのスタイル更新
+        const buttons = document.querySelectorAll('.tab-btn');
+        buttons.forEach(btn => {
             btn.style.borderBottom = '3px solid transparent';
             btn.style.color = 'var(--color-text-secondary)';
+            btn.style.fontWeight = 'normal';
             btn.classList.remove('active');
         });
-        
+
         const activeBtn = document.getElementById('btn-' + topic);
-        if(activeBtn) {
+        if (activeBtn) {
             activeBtn.style.borderBottom = '3px solid var(--color-primary-start)';
             activeBtn.style.color = 'var(--color-primary-start)';
+            activeBtn.style.fontWeight = 'bold';
             activeBtn.classList.add('active');
         }
-    }
 
-    // 2. 絞り込み
-    document.addEventListener('DOMContentLoaded', function() {
-        applyFilters();
-    });
-
-    function applyFilters() {
-        const topic = document.getElementById('topic-select').value;
-        const type = document.getElementById('content-type-select').value;
-        const format = document.getElementById('file-format-select').value;
-        
-        const items = document.querySelectorAll('#resources-grid .resource-item');
+        // 2. リストのフィルタリング
+        const items = document.querySelectorAll('.resource-item');
         let visibleCount = 0;
-        let totalCount = 0;
 
         items.forEach(item => {
-            totalCount++;
             const itemTopic = item.getAttribute('data-topic');
-            const itemType = item.getAttribute('data-type');
-            const itemFormat = item.getAttribute('data-format');
-
-            const matchesTopic = (topic === 'all' || itemTopic === topic);
-            const matchesType = (type === 'all' || itemType === type);
-            const matchesFormat = (format === 'all' || itemFormat === format);
-
-            if (matchesTopic && matchesType && matchesFormat) {
-                item.style.display = 'block';
+            
+            // 'all'が選択されているか、トピックが一致する場合に表示
+            if (topic === 'all' || itemTopic === topic) {
+                item.style.display = 'flex'; // カードレイアウトに合わせてflexを指定
                 visibleCount++;
             } else {
                 item.style.display = 'none';
             }
         });
 
-        const countElement = document.getElementById('result-count');
-        if (countElement) {
-            countElement.textContent = `全 ${totalCount} 資料中の ${visibleCount} 件を表示中`;
+        // 3. 件数が0の場合のメッセージ表示制御
+        const noResultsMsg = document.getElementById('no-results-message');
+        if (noResultsMsg) {
+            if (visibleCount === 0) {
+                noResultsMsg.classList.remove('hidden');
+                noResultsMsg.style.display = 'flex';
+            } else {
+                noResultsMsg.classList.add('hidden');
+                noResultsMsg.style.display = 'none';
+            }
         }
     }
+
+    // 初期ロード時は「すべて」を表示（HTML側ですでに表示されているが、念のため実行）
+    document.addEventListener('DOMContentLoaded', () => {
+        // 必要に応じて初期化処理
+    });
 </script>
 
 <style>
     .hidden { display: none !important; }
     
-    /* 
-       【修正点】
-       すべてのタブコンテンツエリアの高さを統一してジャンプを防止。
-       500pxだと大きすぎたので、300px程度に調整。
-    */
-    .tab-content {
-        min-height: 300px;
+    /* タブのホバーエフェクト */
+    .tab-btn:hover {
+        color: var(--color-primary-start) !important;
     }
 </style>
