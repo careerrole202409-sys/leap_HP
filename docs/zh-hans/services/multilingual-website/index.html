@@ -414,78 +414,177 @@
 </section>
 
 <!-- ============================================
-     Pricing
+     Pricing Section (Simplified Chinese Version)
 ============================================= -->
-<section class="section bg-beige" id="pricing">
-    <div class="container">
-        <h2 class="text-center mb-sm">收费方案</h2>
-        <p class="text-center text-secondary mb-2xl">既可免费开始，也能随着业务扩大进行扩展。</p>
-        
-        <div class="flex justify-center" style="gap: var(--space-xl); flex-wrap: wrap;">
+<style>
+    .pricing-grid-final {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 15px;
+        justify-content: center;
+        align-items: stretch;
+        margin: 0 auto;
+    }
+    .pricing-card-final {
+        flex: 1;
+        min-width: 0; 
+        background: #fff;
+        border-radius: 12px;
+        border-top: 6px solid #a4001d;
+        padding: 30px 15px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: transform 0.2s;
+    }
+    .plan-name-final {
+        color: #a4001d;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+        white-space: nowrap; 
+        letter-spacing: -0.02em;
+    }
+    .plan-desc-final {
+        font-size: 0.8rem;
+        color: #666;
+        font-weight: bold;
+        margin-bottom: 20px;
+        height: 2.8em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.3;
+    }
+    .plan-price-final {
+        color: #a4001d;
+        font-size: 2rem;
+        font-weight: bold;
+        white-space: nowrap;
+        line-height: 1;
+    }
+    .price-unit-final {
+        font-size: 0.85rem;
+        color: #666;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+    .plan-features-final {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        font-size: 0.85rem;
+        line-height: 1.5;
+        margin-top: auto;
+    }
+    .plan-features-final li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .plan-features-final li::before {
+        content: "✔";
+        color: #333;
+        margin-right: 8px;
+        font-weight: bold;
+        flex-shrink: 0;
+    }
+
+    /* 响应式调整 */
+    @media (max-width: 1200px) {
+        .plan-name-final { font-size: 1.2rem; }
+        .plan-price-final { font-size: 1.7rem; }
+    }
+    @media (max-width: 1024px) {
+        .pricing-grid-final { flex-wrap: wrap; }
+        .pricing-card-final { flex: 1 1 calc(33.33% - 20px); min-width: 250px; }
+    }
+    @media (max-width: 600px) {
+        .pricing-card-final { flex: 1 1 100%; }
+    }
+</style>
+
+<section class="section bg-beige" style="padding: 80px 0;">
+    <div class="container-fluid" style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
+        <h2 class="text-center" style="font-size: 1.8rem; font-weight: bold; margin-bottom: 10px;">价格方案</h2>
+        <p class="text-center text-secondary" style="font-size: 1rem; margin-bottom: 40px;">*不含税</p>
+
+        <div class="pricing-grid-final">
             
-            <!-- Free Plan -->
-            <div class="card" style="width: 100%; max-width: 400px; border-top: 6px solid var(--color-gray);">
-                <div class="mb-lg">
-                    <h3 class="h2 mb-xs">Free</h3>
-                    <p class="text-secondary">适合想要尝试的用户</p>
-                </div>
-                
-                <div class="mb-lg">
-                    <span class="stat-number" style="color: var(--color-text-primary);">¥0</span>
-                    <span class="text-secondary">/月</span>
-                </div>
-                
-                <ul class="mb-xl" style="list-style: none; padding: 0;">
-                    <li class="flex items-center mb-sm">
-                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> 1种语言支持
-                    </li>
-                    <li class="flex items-center mb-sm">
-                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> AI自动翻译与搭建
-                    </li>
-                    <li class="flex items-center mb-sm">
-                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> 聊天编辑功能
-                    </li>
-                    <li class="flex items-center mb-sm" style="color: var(--color-text-light);">
-                        <span class="mr-sm">✖</span> 不可使用独立域名
-                    </li>
+            <!-- 免费版 -->
+            <div class="pricing-card-final">
+                <div class="plan-name-final">免费版</div>
+                <div class="plan-desc-final">免费体验</div>
+                <div class="plan-price-final">0 日元</div>
+                <div class="price-unit-final">/月</div>
+                <ul class="plan-features-final">
+                    <li>最多 3 个页面</li>
+                    <li>不支持独立域名</li>
+                    <li>每月 5 次对话式编辑</li>
                 </ul>
-                
-                <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-full text-center">免费开始</a>
             </div>
 
-            <!-- Standard Plan (Paid) -->
-            <div class="card" style="width: 100%; max-width: 400px; border-top: 6px solid var(--color-primary-start);">
-                <div class="mb-lg">
-                    <h3 class="h2 mb-xs">Standard</h3>
-                    <p class="text-secondary">适合正式拓展海外业务的企业</p>
-                </div>
-                
-                <div class="mb-lg">
-                    <span class="stat-number">¥20,000</span>
-                    <span class="text-secondary">/月（每增加1种语言）</span>
-                </div>
-                
-                <ul class="mb-xl" style="list-style: none; padding: 0;">
-                    <li class="flex items-center mb-sm">
-                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> <strong>语言数量无限制</strong>（按量付费）
-                    </li>
-                    <li class="flex items-center mb-sm">
-                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> AI自动翻译与搭建
-                    </li>
-                    <li class="flex items-center mb-sm">
-                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> 聊天编辑功能
-                    </li>
-                    <li class="flex items-center mb-sm">
-                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> <strong>可设置独立域名</strong>
-                    </li>
-                    <li class="flex items-center mb-sm">
-                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> 优先支持
-                    </li>
+            <!-- 入门版 -->
+            <div class="pricing-card-final">
+                <div class="plan-name-final">入门版</div>
+                <div class="plan-desc-final">发布多语言网站</div>
+                <div class="plan-price-final">2,980 日元</div>
+                <div class="price-unit-final">/月</div>
+                <ul class="plan-features-final">
+                    <li>最多 10 个页面</li>
+                    <li>支持独立域名发布</li>
+                    <li>每月 30 次对话式编辑</li>
                 </ul>
-                
-                <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full text-center">选择付费方案</a>
             </div>
-            
+
+            <!-- 基础版 -->
+            <div class="pricing-card-final">
+                <div class="plan-name-final">基础版</div>
+                <div class="plan-desc-final">开启多语言博客</div>
+                <div class="plan-price-final">9,800 日元</div>
+                <div class="price-unit-final">/月</div>
+                <ul class="plan-features-final">
+                    <li>最多 50 个页面</li>
+                    <li>搭建多语言博客</li>
+                    <li>每月 50 次对话式编辑</li>
+                </ul>
+            </div>
+
+            <!-- 标准版 -->
+            <div class="pricing-card-final">
+                <div class="plan-name-final">标准版</div>
+                <div class="plan-desc-final">AI 智能化本地化</div>
+                <div class="plan-price-final">49,800 日元</div>
+                <div class="price-unit-final">/月</div>
+                <ul class="plan-features-final">
+                    <li>最多 150 个页面</li>
+                    <li>AI 自动撰写博客与 SEO 优化</li>
+                    <li>每月 200 次对话式编辑</li>
+                    <li>基于标杆企业的自动本地化</li>
+                </ul>
+            </div>
+
+            <!-- 旗舰版 -->
+            <div class="pricing-card-final">
+                <div class="plan-name-final">旗舰版</div>
+                <div class="plan-desc-final">AI 全自动深度优化</div>
+                <div class="plan-price-final">198,000 日元</div>
+                <div class="price-unit-final">/月</div>
+                <ul class="plan-features-final">
+                    <li>包含标准版所有功能</li>
+                    <li>页面数量无限制</li>
+                    <li>对话式编辑无限制</li>
+                    <li>AI 自动 A/B 测试优化</li>
+                    <li>针对不同用户动态展示网页</li>
+                </ul>
+            </div>
+
+        </div>
+        
+        <div class="text-center" style="margin-top: 50px;">
+            <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" style="background-color: #a4001d; color: #fff; padding: 16px 50px; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-block; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(164, 0, 29, 0.3);">免费开始使用</a>
         </div>
     </div>
 </section>
