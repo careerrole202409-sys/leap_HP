@@ -237,78 +237,177 @@ description: Just enter your existing URL, and AI automatically creates a native
 </section>
 
 <!-- ============================================
-     Pricing
+     Pricing Section (English Version)
 ============================================= -->
-<section class="section bg-beige" id="pricing">
-    <div class="container">
-        <h2 class="text-center mb-sm">Pricing Plans</h2>
-        <p class="text-center text-secondary mb-2xl">Start for free and expand as your business grows.</p>
-        
-        <div class="flex justify-center" style="gap: var(--space-xl); flex-wrap: wrap;">
+<style>
+    .pricing-grid-final {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 15px;
+        justify-content: center;
+        align-items: stretch;
+        margin: 0 auto;
+    }
+    .pricing-card-final {
+        flex: 1;
+        min-width: 0; 
+        background: #fff;
+        border-radius: 12px;
+        border-top: 6px solid #a4001d;
+        padding: 30px 15px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: transform 0.2s;
+    }
+    .plan-name-final {
+        color: #a4001d;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+        white-space: nowrap; 
+        letter-spacing: -0.02em;
+    }
+    .plan-desc-final {
+        font-size: 0.8rem;
+        color: #666;
+        font-weight: bold;
+        margin-bottom: 20px;
+        height: 2.8em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.3;
+    }
+    .plan-price-final {
+        color: #a4001d;
+        font-size: 2rem;
+        font-weight: bold;
+        white-space: nowrap;
+        line-height: 1;
+    }
+    .price-unit-final {
+        font-size: 0.85rem;
+        color: #666;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+    .plan-features-final {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        font-size: 0.85rem;
+        line-height: 1.5;
+        margin-top: auto;
+    }
+    .plan-features-final li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .plan-features-final li::before {
+        content: "✔";
+        color: #333;
+        margin-right: 8px;
+        font-weight: bold;
+        flex-shrink: 0;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1200px) {
+        .plan-name-final { font-size: 1.2rem; }
+        .plan-price-final { font-size: 1.7rem; }
+    }
+    @media (max-width: 1024px) {
+        .pricing-grid-final { flex-wrap: wrap; }
+        .pricing-card-final { flex: 1 1 calc(33.33% - 20px); min-width: 250px; }
+    }
+    @media (max-width: 600px) {
+        .pricing-card-final { flex: 1 1 100%; }
+    }
+</style>
+
+<section class="section bg-beige" style="padding: 80px 0;">
+    <div class="container-fluid" style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
+        <h2 class="text-center" style="font-size: 1.8rem; font-weight: bold; margin-bottom: 10px;">Pricing Plans</h2>
+        <p class="text-center text-secondary" style="font-size: 1rem; margin-bottom: 40px;">*Excl. tax</p>
+
+        <div class="pricing-grid-final">
             
             <!-- Free Plan -->
-            <div class="card" style="width: 100%; max-width: 400px; border-top: 6px solid var(--color-gray);">
-                <div class="mb-lg">
-                    <h3 class="h2 mb-xs">Free</h3>
-                    <p class="text-secondary">For those who want to try it out first</p>
-                </div>
-                
-                <div class="mb-lg">
-                    <span class="stat-number" style="color: var(--color-text-primary);">¥0</span>
-                    <span class="text-secondary">/month</span>
-                </div>
-                
-                <ul class="mb-xl" style="list-style: none; padding: 0;">
-                    <li class="flex items-center mb-sm">
-                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> 1 Language supported
-                    </li>
-                    <li class="flex items-center mb-sm">
-                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> AI Auto-Translation & Build
-                    </li>
-                    <li class="flex items-center mb-sm">
-                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> Chat Editing
-                    </li>
-                    <li class="flex items-center mb-sm" style="color: var(--color-text-light);">
-                        <span class="mr-sm">✖</span> Custom domain not available
-                    </li>
+            <div class="pricing-card-final">
+                <div class="plan-name-final">Free</div>
+                <div class="plan-desc-final">Try for free</div>
+                <div class="plan-price-final">0 JPY</div>
+                <div class="price-unit-final">/mo</div>
+                <ul class="plan-features-final">
+                    <li>Up to 3 pages</li>
+                    <li>No custom domain</li>
+                    <li>5 chat edits/mo</li>
                 </ul>
-                
-                <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-full text-center">Start for Free</a>
             </div>
 
-            <!-- Standard Plan (Paid) -->
-            <div class="card" style="width: 100%; max-width: 400px; border-top: 6px solid var(--color-primary-start);">
-                <div class="mb-lg">
-                    <h3 class="h2 mb-xs">Standard</h3>
-                    <p class="text-secondary">For companies expanding globally in earnest</p>
-                </div>
-                
-                <div class="mb-lg">
-                    <span class="stat-number">¥20,000</span>
-                    <span class="text-secondary">/month (per added language)</span>
-                </div>
-                
-                <ul class="mb-xl" style="list-style: none; padding: 0;">
-                    <li class="flex items-center mb-sm">
-                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> <strong>Unlimited Languages</strong> (Pay-as-you-go)
-                    </li>
-                    <li class="flex items-center mb-sm">
-                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> AI Auto-Translation & Build
-                    </li>
-                    <li class="flex items-center mb-sm">
-                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> Chat Editing
-                    </li>
-                    <li class="flex items-center mb-sm">
-                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> <strong>Custom Domain Available</strong>
-                    </li>
-                    <li class="flex items-center mb-sm">
-                        <span class="text-primary mr-sm" style="color: var(--color-primary-start);">✔</span> Priority Support
-                    </li>
+            <!-- Starter Plan -->
+            <div class="pricing-card-final">
+                <div class="plan-name-final">Starter</div>
+                <div class="plan-desc-final">Launch your site</div>
+                <div class="plan-price-final">2,980 JPY</div>
+                <div class="price-unit-final">/mo</div>
+                <ul class="plan-features-final">
+                    <li>Up to 10 pages</li>
+                    <li>Custom domain support</li>
+                    <li>30 chat edits/mo</li>
                 </ul>
-                
-                <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full text-center">Select Paid Plan</a>
             </div>
-            
+
+            <!-- Basic Plan -->
+            <div class="pricing-card-final">
+                <div class="plan-name-final">Basic</div>
+                <div class="plan-desc-final">Expand with a blog</div>
+                <div class="plan-price-final">9,800 JPY</div>
+                <div class="price-unit-final">/mo</div>
+                <ul class="plan-features-final">
+                    <li>Up to 50 pages</li>
+                    <li>Multilingual blog setup</li>
+                    <li>50 chat edits/mo</li>
+                </ul>
+            </div>
+
+            <!-- Standard Plan -->
+            <div class="pricing-card-final">
+                <div class="plan-name-final">Standard</div>
+                <div class="plan-desc-final">AI-driven localization</div>
+                <div class="plan-price-final">49,800 JPY</div>
+                <div class="price-unit-final">/mo</div>
+                <ul class="plan-features-final">
+                    <li>Up to 150 pages</li>
+                    <li>AI auto-blogging & SEO</li>
+                    <li>200 chat edits/mo</li>
+                    <li>Benchmark-based auto-localization</li>
+                </ul>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="pricing-card-final">
+                <div class="plan-name-final">Premium</div>
+                <div class="plan-desc-final">Full AI automation</div>
+                <div class="plan-price-final">198,000 JPY</div>
+                <div class="price-unit-final">/mo</div>
+                <ul class="plan-features-final">
+                    <li>All Standard features</li>
+                    <li>Unlimited pages</li>
+                    <li>Unlimited chat edits</li>
+                    <li>AI-driven A/B testing</li>
+                    <li>Dynamic personalized content</li>
+                </ul>
+            </div>
+
+        </div>
+        
+        <div class="text-center" style="margin-top: 50px;">
+            <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" style="background-color: #a4001d; color: #fff; padding: 16px 50px; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-block; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(164, 0, 29, 0.3);">Start for Free</a>
         </div>
     </div>
 </section>
