@@ -4,20 +4,20 @@
 
 <link rel="icon" href="/assets/favicon.png">
 
-<title>Leap - One-Stop Support for Global Expansion</title>
-  <meta name="description" content="Leap is a cross-border platform that makes everything from multilingual websites to local distributor matching and cross-border EC setup easy.">
+<title>Multilingual Website Creation Tool Leap | Global Expansion with AI Auto-Localization</title>
+  <meta name="description" content="Leap is a tool where our proprietary AI automatically creates multilingual websites and blogs. Unlike simple machine translation, it localizes design, layout, and CTAs to suit local markets. Achieve effective global web marketing with low initial costs.">
 
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.leap.site/en/">
-  <meta property="og:title" content="Leap - One-Stop Support for Global Expansion">
-  <meta property="og:description" content="Leap is a cross-border platform that makes everything from multilingual websites to local distributor matching and cross-border EC setup easy.">
+  <meta property="og:title" content="Multilingual Website Creation Tool Leap | Global Expansion with AI Auto-Localization">
+  <meta property="og:description" content="Leap is a tool where our proprietary AI automatically creates multilingual websites and blogs. Unlike simple machine translation, it localizes design, layout, and CTAs to suit local markets. Achieve effective global web marketing with low initial costs.">
   <meta property="og:image" content="https://www.leap.site/assets/og-image.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="Leap - One-Stop Support for Global Expansion">
-  <meta property="twitter:description" content="Leap is a cross-border platform that makes everything from multilingual websites to local distributor matching and cross-border EC setup easy.">
+  <meta property="twitter:title" content="Multilingual Website Creation Tool Leap | Global Expansion with AI Auto-Localization">
+  <meta property="twitter:description" content="Leap is a tool where our proprietary AI automatically creates multilingual websites and blogs. Unlike simple machine translation, it localizes design, layout, and CTAs to suit local markets. Achieve effective global web marketing with low initial costs.">
   <meta property="twitter:image" content="https://www.leap.site/assets/og-image.png">
 
     <!-- Google tag (gtag.js) -->
@@ -40,8 +40,8 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Leap is a cross-border platform that makes everything from multilingual websites to local distributor matching and cross-border EC setup easy.">
-    <title>Leap - One-Stop Support for Global Expansion</title>
+    <meta name="description" content="Leap is a tool where our proprietary AI automatically creates multilingual websites and blogs. Unlike simple machine translation, it localizes design, layout, and CTAs to suit local markets. Achieve effective global web marketing with low initial costs.">
+    <title>Multilingual Website Creation Tool Leap | Global Expansion with AI Auto-Localization</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
@@ -98,10 +98,8 @@
                         <span class="nav-link" id="servicesLabel">サービス ▼</span>
                         <div class="dropdown-menu">
                             <a href="/en/services/multilingual-website" class="dropdown-item" id="serviceWebsite">多言語HP作成</a>
-                            <a href="/en/services/cross-border-ec" class="dropdown-item" id="serviceEc">越境EC開設運用</a>
-                            <a href="/en/services/multilingual-content" class="dropdown-item" id="serviceContent">多言語コンテンツ制作</a>
-                            <a href="/en/services/global-sns" class="dropdown-item" id="serviceSns">海外向けSNS運用</a>
-                            <a href="/en/services/btob-matching" class="dropdown-item" id="serviceMatching">代理店マッチング</a>
+                            <a href="/en/services/multilingual-blog" class="dropdown-item" id="serviceBlog">多言語ブログ作成</a>
+                            <a href="/en/services/ai-localize" class="dropdown-item" id="serviceAiLocalize">AI自動ローカライズ</a>
                         </div>
                     </div>
                     <a href="/en/pricing" class="nav-link" id="pricingLink">価格</a>
@@ -109,7 +107,6 @@
                         <span class="nav-link" id="resourcesLabel">資料 ▼</span>
                         <div class="dropdown-menu">
                             <a href="/en/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
-                            <!-- ▼ 修正箇所: リンク先を /en/blog に変更（別タブ維持） -->
                             <a href="/en/blog" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">ブログ</a>
                         </div>
                     </div>
@@ -138,16 +135,14 @@
         </div>
         
         <div class="mobile-nav-item">
-            <div class="mobile-dropdown-toggle" id="mobileServicesLabel" onclick="toggleMobileDropdown(this)">
-                <span>サービス</span>
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(this)">
+                <span id="mobileServicesText">サービス</span>
                 <span>▼</span>
             </div>
             <div class="mobile-dropdown-content">
                 <a href="/en/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">多言語HP作成</a>
-                <a href="/en/services/cross-border-ec" class="mobile-dropdown-item" id="mobileServiceEc">越境EC開設運用</a>
-                <a href="/en/services/multilingual-content" class="mobile-dropdown-item" id="mobileServiceContent">多言語コンテンツ制作</a>
-                <a href="/en/services/global-sns" class="mobile-dropdown-item" id="mobileServiceSns">海外向けSNS運用</a>
-                <a href="/en/services/btob-matching" class="mobile-dropdown-item" id="mobileServiceMatching">代理店マッチング</a>
+                <a href="/en/services/multilingual-blog" class="mobile-dropdown-item" id="mobileServiceBlog">多言語ブログ作成</a>
+                <a href="/en/services/ai-localize" class="mobile-dropdown-item" id="mobileServiceAiLocalize">AI自動ローカライズ</a>
             </div>
         </div>
 
@@ -156,19 +151,18 @@
         </div>
 
         <div class="mobile-nav-item">
-            <div class="mobile-dropdown-toggle" id="mobileResourcesLabel" onclick="toggleMobileDropdown(this)">
-                <span>資料</span>
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(this)">
+                <span id="mobileResourcesText">資料</span>
                 <span>▼</span>
             </div>
             <div class="mobile-dropdown-content">
                 <a href="/en/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
-                <!-- ▼ 修正箇所: リンク先を /en/blog に変更（別タブ維持） -->
                 <a href="/en/blog" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">ブログ</a>
             </div>
         </div>
 
         <div class="mobile-nav-item">
-            <a href="/en/about" class="mobile-nav-link" id="mobileAbout">About</a>
+            <a href="/en/about" class="mobile-nav-link" id="mobileAbout">会社概要</a>
         </div>
 
         <div class="mobile-cta-buttons">
@@ -177,15 +171,136 @@
         </div>
     </div>
 </div>
+
+<!-- ============================================
+     多言語化ロジック (JavaScript)
+============================================= -->
+<script>
+(function() {
+    const translations = {
+        ja: {
+            langName: "日本語",
+            login: "ログイン",
+            about: "会社概要",
+            servicesLabel: "サービス ▼",
+            serviceWebsite: "多言語HP作成",
+            serviceBlog: "多言語ブログ作成",
+            serviceAiLocalize: "AI自動ローカライズ",
+            pricing: "価格",
+            resourcesLabel: "資料 ▼",
+            resourceDownload: "資料ダウンロード",
+            resourceBlog: "ブログ",
+            demo: "デモを申し込む",
+            start: "無料スタート",
+            
+            // モバイル専用
+            mobileHome: "ホーム",
+            mobileServicesText: "サービス",
+            mobileResourcesText: "資料",
+            mobileStart: "無料で始める"
+        },
+        en: {
+            langName: "English",
+            login: "Login",
+            about: "About Us",
+            servicesLabel: "Services ▼",
+            serviceWebsite: "Multilingual Website",
+            serviceBlog: "Multilingual Blog",
+            serviceAiLocalize: "AI Localization",
+            pricing: "Pricing",
+            resourcesLabel: "Resources ▼",
+            resourceDownload: "Downloads",
+            resourceBlog: "Blog",
+            demo: "Request Demo",
+            start: "Start for Free",
+            
+            // モバイル専用
+            mobileHome: "Home",
+            mobileServicesText: "Services",
+            mobileResourcesText: "Resources",
+            mobileStart: "Start for Free"
+        },
+        'zh-hans': {
+            langName: "简体中文",
+            login: "登录",
+            about: "公司简介",
+            servicesLabel: "服务 ▼",
+            serviceWebsite: "多语言建站",
+            serviceBlog: "多语言博客",
+            serviceAiLocalize: "AI本地化",
+            pricing: "价格方案",
+            resourcesLabel: "资料 ▼",
+            resourceDownload: "资料下载",
+            resourceBlog: "博客",
+            demo: "申请演示",
+            start: "免费开始",
+            
+            // モバイル専用
+            mobileHome: "首页",
+            mobileServicesText: "服务",
+            mobileResourcesText: "资料",
+            mobileStart: "免费开始"
+        }
+    };
+
+    function getHeaderLanguage() {
+        const path = window.location.pathname;
+        const match = path.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+        if (!match) return 'ja';
+        return match[1] === 'jp' ? 'ja' : match[1];
+    }
+
+    function updateHeaderContent() {
+        const lang = getHeaderLanguage();
+        const t = translations[lang] || translations['ja'];
+
+        const setText = (id, text) => {
+            const el = document.getElementById(id);
+            if (el) el.textContent = text;
+        };
+
+        // 言語表示
+        setText('currentLang', t.langName);
+
+        // トップリンク
+        setText('loginLink', t.login);
+        setText('aboutLink', t.about);
+
+        // メインナビゲーション (PC)
+        setText('servicesLabel', t.servicesLabel);
+        setText('serviceWebsite', t.serviceWebsite);
+        setText('serviceBlog', t.serviceBlog);
+        setText('serviceAiLocalize', t.serviceAiLocalize);
+        setText('pricingLink', t.pricing);
+        setText('resourcesLabel', t.resourcesLabel);
+        setText('resourceDownload', t.resourceDownload);
+        setText('resourceBlog', t.resourceBlog);
+        setText('demoBtn', t.demo);
+        setText('startBtn', t.start);
+
+        // モバイルナビゲーション
+        setText('mobileHome', t.mobileHome);
+        setText('mobileServicesText', t.mobileServicesText);
+        setText('mobileServiceWebsite', t.serviceWebsite);
+        setText('mobileServiceBlog', t.serviceBlog);
+        setText('mobileServiceAiLocalize', t.serviceAiLocalize);
+        setText('mobilePricing', t.pricing);
+        setText('mobileResourcesText', t.mobileResourcesText);
+        setText('mobileResourceDownload', t.resourceDownload);
+        setText('mobileResourceBlog', t.resourceBlog);
+        setText('mobileAbout', t.about);
+        setText('mobileDemoBtn', t.demo);
+        setText('mobileStartBtn', t.mobileStart);
+    }
+
+    document.addEventListener('DOMContentLoaded', updateHeaderContent);
+})();
+</script>
     
     <!-- Main Content -->
     <main id="main-content">
         
-<!-- Section 1: Hero Area (Key Visual) -->
-<!-- 
-  Fix: Using actual Unsplash photo, resolved text overlap.
-  Adjusted background color and overlay for better readability.
--->
+<!-- Section 1: Hero Area -->
 <section class="section pt-0 pb-0" style="position: relative; overflow: hidden; background-color: var(--color-dark-gray);">
     <div style="
         background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
@@ -195,15 +310,19 @@
         justify-content: center;
     ">
         <div class="container text-center text-white">
-            <p class="text-white font-bold mb-md" style="letter-spacing: 0.1em; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Leap Cross-Border Platform</p>
-            <h1 class="text-white mb-lg" style="font-size: clamp(2rem, 5vw, 4rem); text-shadow: 0 2px 4px rgba(0,0,0,0.5);">One-Stop Support for Global Expansion</h1>
+            <p class="text-white font-bold mb-md" style="letter-spacing: 0.1em; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
+                Multilingual Website Creation Tool
+            </p>
+            <h1 class="text-white mb-lg" style="font-size: clamp(2rem, 5vw, 4rem); text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
+                Attract global customers<br>with words that resonate locally.
+            </h1>
             <p class="text-xl text-white mb-2xl mx-auto" style="max-width: 800px; opacity: 0.95; text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
-                Easily handle everything from multilingual websites and local distributor matching to launching cross-border e-commerce.
+                The first in Japan. More than just automatic translation—an AI tool that automatically creates and optimizes design and layout for local markets.
             </p>
             
             <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
-                <a href="/en/about/#contact" class="btn btn-primary btn-xl">Request a Demo &rarr;</a>
-                <a href="https://app.leap.site" class="btn btn-white btn-xl">Try for Free &rarr;</a>
+                <a href="/en/about/#contact" class="btn btn-primary btn-xl" style="padding: 1.2rem 4rem; font-size: 1.2rem;">Request a Demo &rarr;</a>
+                <a href="https://app.leap.site" class="btn btn-white btn-xl" style="padding: 1.2rem 4rem; font-size: 1.2rem;">Start for Free &rarr;</a>
             </div>
         </div>
     </div>
@@ -310,179 +429,223 @@
     </div>
 </section>
 
-<!-- Section 3: Services -->
-<!-- 
-  Fixes:
-  1. Narrowed left text area, expanded right space.
-  2. Right cards set to 3 columns on PC (displaying 5 cards as 3 then 2).
-  3. Removed full-width setting for the 5th card for natural layout.
-  4. Added URLs to buttons and service links.
--->
-<section class="section section-lg bg-white">
-    <div class="container">
-        <!-- Section-specific styles -->
-        <style>
-            .service-layout {
-                display: grid;
-                gap: 40px;
-            }
+<!-- Section 3: Identifying the Problem -->
+<section class="section bg-beige">
+    <div class="container text-center">
+        <h2 class="mb-2xl">Two Common Reasons for Failure</h2>
+        
+        <div class="grid-2 text-left" style="gap: 40px;">
+            <!-- Reason 1 -->
+            <div class="card flex flex-col" style="padding: 0 !important; border: 1px solid var(--color-border); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 12px; overflow: hidden; background-color: white;">
+                <!-- Red Line -->
+                <div style="width: 100%; height: 8px; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); margin: 0;"></div>
+                <!-- Content Box -->
+                <div class="flex flex-col flex-grow-1" style="padding: 40px 32px;">
+                    <div class="mb-md" style="color: var(--color-primary-start);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            <path d="M15 9l-6 6"></path>
+                            <path d="M9 9l6 6"></path>
+                        </svg>
+                    </div>
+                    <div class="text-primary font-bold mb-xs" style="font-size: 3rem; line-height: 1;">87%</div>
+                    <h3 class="h4 mb-md">Conventional auto-translation<br>fails to resonate locally</h3>
+                    <p class="text-secondary flex-grow-1" style="line-height: 1.8;">
+                        If the page structure and messaging remain exactly the same as the original site after translation, many users will bounce because "there is no proper local site" or "it looks unnatural."
+                    </p>
+                </div>
+            </div>
             
-            .service-cards-grid {
-                display: grid;
-                gap: 24px;
-                grid-template-columns: 1fr; /* Mobile: 1 column */
-            }
+            <!-- Reason 2 -->
+            <div class="card flex flex-col" style="padding: 0 !important; border: 1px solid var(--color-border); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 12px; overflow: hidden; background-color: white;">
+                <!-- Red Line -->
+                <div style="width: 100%; height: 8px; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); margin: 0;"></div>
+                <!-- Content Box -->
+                <div class="flex flex-col flex-grow-1" style="padding: 40px 32px;">
+                    <div class="mb-md" style="color: var(--color-primary-start);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                            <line x1="8" y1="6" x2="16" y2="6"></line>
+                            <line x1="16" y1="14" x2="16.01" y2="14"></line>
+                            <line x1="16" y1="18" x2="16.01" y2="18"></line>
+                            <line x1="12" y1="14" x2="12.01" y2="14"></line>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            <line x1="8" y1="14" x2="8.01" y2="14"></line>
+                            <line x1="8" y1="18" x2="8.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <div class="text-primary font-bold mb-xs" style="font-size: 3rem; line-height: 1;">$30K–$130K</div>
+                    <h3 class="h4 mb-md">Outsourcing to specialized agencies<br>becomes a cost barrier</h3>
+                    <p class="text-secondary flex-grow-1" style="line-height: 1.8;">
+                        Creating a localized multilingual website from scratch is highly expensive. Furthermore, since you cannot make edits yourself, annual maintenance costs also pile up.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-            /* Tablet settings */
-            @media (min-width: 768px) {
-                .service-cards-grid {
-                    grid-template-columns: repeat(2, 1fr); /* Tablet: 2 columns */
-                }
-            }
+<!-- Section 4: Solution & Leap's Strengths -->
+<section class="section bg-white pb-0">
+    <div class="container">
+        <div class="text-center mb-2xl">
+            <h2 class="mb-sm">Leap's Multilingual Website Creation Tool</h2>
+        </div>
 
-            /* PC settings */
+        <div class="grid-2" style="align-items: center; gap: 60px;">
+            <div>
+                <h3 class="h3 mb-md" style="line-height: 1.4;">Not just translation, but auto-creation of<br><span class="text-primary">localized multilingual websites</span></h3>
+                <p class="text-secondary mb-lg">
+                    Changing the language is not enough; you need "localization" tailored to the local market. With Leap, AI analyzes local benchmarks and builds the optimal website.
+                </p>
+                
+                <ul class="content-list" style="list-style: none; padding: 0;">
+                    <li class="flex items-center justify-start mb-md text-lg">
+                        <div style="background: linear-gradient(135deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; margin-right: 12px; flex-shrink: 0;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        Proprietary AI automatically creates multilingual websites
+                    </li>
+                    <li class="flex items-center justify-start mb-md text-lg">
+                        <div style="background: linear-gradient(135deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; margin-right: 12px; flex-shrink: 0;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        Unlike auto-translation, colors and layouts can be customized
+                    </li>
+                    <li class="flex items-center justify-start text-lg">
+                        <div style="background: linear-gradient(135deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; margin-right: 12px; flex-shrink: 0;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        Supports all major languages (Just input your URL)
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1771677333/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-02-21_21.35.25_ose8qa.png" alt="Leap Editor" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid var(--color-border);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 5: Core Services -->
+<section class="section bg-white pt-xl">
+    <div class="container">
+        <style>
+            .service-layout { display: grid; gap: 40px; }
+            .service-cards-grid { display: grid; gap: 24px; grid-template-columns: 1fr; }
+            @media (min-width: 768px) { .service-cards-grid { grid-template-columns: repeat(2, 1fr); } }
             @media (min-width: 1024px) {
-                .service-layout {
-                    /* Left 280px fixed, rest to right */
-                    grid-template-columns: 280px 1fr;
-                    align-items: start;
-                }
-                .service-cards-grid {
-                    /* Cards in 3 columns -> 5 cards become 2 rows (3, 2) */
-                    grid-template-columns: repeat(3, 1fr);
-                }
+                .service-layout { grid-template-columns: 280px 1fr; align-items: start; }
+                .service-cards-grid { grid-template-columns: repeat(3, 1fr); }
             }
         </style>
 
         <div class="service-layout">
-            <!-- Left: Message -->
             <div class="mb-xl">
-                <h2 class="mb-lg" style="font-size: var(--font-size-3xl);">Global expansion<br>made easy with Leap.</h2>
-                <p class="text-lg mb-xl text-secondary">
-                    Expanding abroad often comes with high initial costs.<br>
-                    With Leap, you can launch your global expansion while keeping initial investments low.
+                <h2 class="mb-lg" style="font-size: var(--font-size-2xl); line-height: 1.4;">How to Generate<br>Global Leads</h2>
+                <p class="text-md mb-xl text-secondary">
+                    Here are three features designed to drive results through thorough localization, going far beyond simple translation.
                 </p>
                 <div class="flex flex-col gap-md">
-                    <a href="/en/about/#contact" class="btn btn-primary btn-lg w-full text-center">Request a Demo &rarr;</a>
-                    <a href="https://app.leap.site" class="btn btn-secondary btn-lg w-full text-center">Try for Free &rarr;</a>
+                    <a href="/en/about/#contact" class="btn btn-primary btn-lg w-full text-center" style="background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); border: none; font-weight: bold;">Request a Demo &rarr;</a>
+                    <a href="https://app.leap.site" class="btn btn-outline btn-lg w-full text-center font-bold" style="color: var(--color-primary-start, #C8102E); border-color: var(--color-border, #E5E7EB);">Start for Free &rarr;</a>
                 </div>
             </div>
 
-            <!-- Right: Service Cards -->
             <div class="service-cards-grid">
-                
-                <!-- Service 1: Multilingual Website -->
-                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; transition: all 0.2s;">
+                <!-- Service 1 -->
+                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; background-color: white; border-radius: var(--radius-md);">
                     <div class="mb-md text-primary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                     </div>
-                    <h3 class="h5 mb-sm">Multilingual Websites</h3>
+                    <h3 class="h5 mb-sm" style="font-size: 1.25rem;">Multilingual Websites</h3>
                     <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> Instant build with auto-translation</li>
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> SEO optimized</li>
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> Create target language versions based on your existing site</li>
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> Optimize for local users</li>
                     </ul>
-                    <a href="/en/services/multilingual-website" class="text-primary font-bold text-sm mt-md hover:underline">Learn more &rarr;</a>
+                    <a href="/en/services/multilingual-website" class="font-bold text-sm mt-md hover:underline" style="color: var(--color-dark-gray);">View Details &rarr;</a>
                 </div>
 
-                <!-- Service 2: Cross-Border E-Commerce -->
-                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; transition: all 0.2s;">
-                    <div class="mb-md text-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-                    </div>
-                    <h3 class="h5 mb-sm">Cross-Border E-Commerce</h3>
-                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> Centralized payment & shipping</li>
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> Local currency support</li>
-                    </ul>
-                    <a href="/en/services/cross-border-ec" class="text-primary font-bold text-sm mt-md hover:underline">Learn more &rarr;</a>
-                </div>
-
-                <!-- Service 3: Multilingual Content -->
-                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; transition: all 0.2s;">
+                <!-- Service 2 -->
+                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; background-color: white; border-radius: var(--radius-md);">
                     <div class="mb-md text-primary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
                     </div>
-                    <h3 class="h5 mb-sm">Multilingual Content</h3>
+                    <h3 class="h5 mb-sm" style="font-size: 1.25rem;">Multilingual Blogs</h3>
                     <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> Culturally adapted creation</li>
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> Native speaker review</li>
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> Identify local language keywords</li>
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> Generate native-quality articles with AI</li>
                     </ul>
-                    <a href="/en/services/multilingual-content" class="text-primary font-bold text-sm mt-md hover:underline">Learn more &rarr;</a>
+                    <a href="/en/services/multilingual-blog" class="font-bold text-sm mt-md hover:underline" style="color: var(--color-dark-gray);">View Details &rarr;</a>
                 </div>
 
-                <!-- Service 4: Global SNS -->
-                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; transition: all 0.2s;">
+                <!-- Service 3 -->
+                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; background-color: white; border-radius: var(--radius-md);">
                     <div class="mb-md text-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
                     </div>
-                    <h3 class="h5 mb-sm">Global Social Media</h3>
+                    <h3 class="h5 mb-sm" style="font-size: 1.25rem;">AI Auto-Localization</h3>
                     <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> Expand global brand awareness</li>
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> Influencer marketing</li>
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> Localize colors, layouts, and CTAs</li>
+                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> Quantitative measurement through A/B testing</li>
                     </ul>
-                    <a href="/en/services/global-sns" class="text-primary font-bold text-sm mt-md hover:underline">Learn more &rarr;</a>
+                    <a href="/en/services/ai-localize" class="font-bold text-sm mt-md hover:underline" style="color: var(--color-dark-gray);">View Details &rarr;</a>
                 </div>
-
-                <!-- Service 5: Distributor Matching -->
-                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; transition: all 0.2s;">
-                    <div class="mb-md text-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                    </div>
-                    <h3 class="h5 mb-sm">Distributor Matching</h3>
-                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> Local partner search</li>
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px;">✔</span> Meeting arrangement support</li>
-                    </ul>
-                    <a href="/en/services/btob-matching" class="text-primary font-bold text-sm mt-md hover:underline">Learn more &rarr;</a>
-                </div>
-
             </div>
         </div>
     </div>
 </section>
 
-<!-- Section 4: Case Studies (Tab-like Layout) -->
-<section class="section section-lg bg-beige">
+<!-- Section 6: Case Studies -->
+<section class="section bg-beige">
     <div class="container">
         <div class="text-center mb-2xl">
-            <h2 class="mb-sm">Amazing results for businesses of all sizes.</h2>
-            <p class="text-secondary mb-xl">Here are some success stories from companies using Leap.</p>
-            
-            <div class="flex justify-center gap-md">
-                <button class="btn btn-primary btn-sm" style="border-radius: 20px; pointer-events: none;">Case Study 1</button>
-                <button class="btn btn-outline btn-sm bg-white" style="border-radius: 20px; opacity: 0.6;">Case Study 2</button>
-            </div>
+            <h2 class="mb-sm">Case Studies</h2>
+            <p class="text-secondary">Take a look at the real-world impact and results our clients have achieved.</p>
         </div>
 
-        <!-- Case Content -->
-        <div class="card p-0 overflow-hidden" style="border: none;">
-            <div class="grid-2" style="gap: 0; align-items: stretch;">
-                <!-- Left: Image -->
-                <div style="min-height: 400px;">
-                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Case Study Image" class="img-cover" style="height: 100%; width: 100%; border-radius: var(--radius-lg) 0 0 var(--radius-lg); object-fit: cover;">
+        <div class="grid-2" style="gap: 40px; align-items: stretch;">
+            <!-- Case Study 1: JIRCAS -->
+            <div class="card p-0 overflow-hidden flex flex-col" style="border: 1px solid var(--color-border); box-shadow: none; background-color: white;">
+                <div style="background-color: var(--color-beige); padding: 3rem 2rem; display: flex; justify-content: center; align-items: center; border-bottom: 1px solid var(--color-border); min-height: 200px;">
+                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767491868/logo_ja_qjjpkp.png" alt="JIRCAS Logo" style="max-height: 80px; width: auto; object-fit: contain;">
                 </div>
-                <!-- Right: Text -->
-                <div class="flex flex-col justify-center bg-white" style="padding: 4rem;">
-                    <div class="mb-lg">
-                         <span style="font-weight:bold; font-size: 1.5rem; letter-spacing: 2px;">COMPANY</span>
+                <div class="p-xl flex flex-col flex-grow-1">
+                    <h3 class="h4 mb-lg text-center">JIRCAS</h3>
+                    <div class="mb-md">
+                        <span class="font-bold text-sm" style="display: inline-block; background: var(--color-dark-gray); color: white; padding: 4px 12px; border-radius: 4px; margin-bottom: 8px;">Challenge</span>
+                        <p class="text-secondary text-sm" style="line-height: 1.6;">For a national project in Malaysia, they needed to develop a web application accessible to locals but lacked the necessary know-how.</p>
                     </div>
-                    <h3 class="h4 mb-md">"Thanks to Leap, we expanded into Europe in just 3 months."</h3>
-                    <p class="mb-lg text-secondary">
-                        Traditional methods couldn't keep up with the speed of change.
-                        Introducing Leap enabled efficient, digitally-driven global expansion.
-                        Matching with local agents was smooth, and the results have exceeded our expectations.
-                    </p>
-                    <div class="mb-lg">
-                        <p class="font-bold mb-xs">Global Tech Inc.</p>
-                        <p class="text-sm text-light">Taro Yamada, CEO</p>
+                    <div class="mt-auto">
+                        <span class="font-bold text-sm" style="display: inline-block; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); color: white; padding: 4px 12px; border-radius: 4px; margin-bottom: 8px;">Solution & Results</span>
+                        <p class="text-secondary font-bold text-sm" style="line-height: 1.6;">Leap participated from the requirements definition stage and is currently developing the system.</p>
                     </div>
-                    <a href="#" class="link-arrow">Read the full case study &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Case Study 2: Komatsu Spring Industrial -->
+            <div class="card p-0 overflow-hidden flex flex-col" style="border: 1px solid var(--color-border); box-shadow: none; background-color: white;">
+                <div style="background-color: var(--color-beige); padding: 3rem 2rem; display: flex; justify-content: center; align-items: center; border-bottom: 1px solid var(--color-border); min-height: 200px;">
+                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767492043/2026-01-04_11.00%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_wpugxv.jpg" alt="Komatsu Spring Industrial Co., Ltd. Logo" style="max-height: 80px; width: auto; object-fit: contain;">
+                </div>
+                <div class="p-xl flex flex-col flex-grow-1">
+                    <h3 class="h4 mb-lg text-center">Komatsu Spring Industrial Co., Ltd.</h3>
+                    <div class="mb-md">
+                        <span class="font-bold text-sm" style="display: inline-block; background: var(--color-dark-gray); color: white; padding: 4px 12px; border-radius: 4px; margin-bottom: 8px;">Challenge</span>
+                        <p class="text-secondary text-sm" style="line-height: 1.6;">The CEO was handling overseas projects personally, and they lacked personnel skilled in SEO and multilingual support. Due to a shortage of resources, they couldn't manage global web marketing.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <span class="font-bold text-sm" style="display: inline-block; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); color: white; padding: 4px 12px; border-radius: 4px; margin-bottom: 8px;">Solution & Results</span>
+                        <p class="text-secondary font-bold text-sm" style="line-height: 1.6;">Leap created and published multilingual websites and blogs in English and Chinese, implementing SEO strategies using local keywords.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Bottom CTA (Included) -->
 <!-- CTA Section Component -->
 <style>
     /* ===================================
@@ -665,17 +828,14 @@
                 <h3 id="footerFeaturesTitle">人気の機能</h3>
                 <ul>
                     <li><a href="/en/services/multilingual-website" id="footerWebsite">多言語HP作成</a></li>
-                    <li><a href="/en/services/cross-border-ec" id="footerEc">越境EC開設・運用</a></li>
-                    <li><a href="/en/services/multilingual-content" id="footerContent">多言語コンテンツ制作</a></li>
-                    <li><a href="/en/services/global-sns" id="footerSns">海外向けSNS運用</a></li>
-                    <li><a href="/en/services/btob-matching" id="footerMatching">代理店マッチング</a></li>
+                    <li><a href="/en/services/multilingual-blog" id="footerBlogService">多言語ブログ作成</a></li>
+                    <li><a href="/en/services/ai-localize" id="footerAiLocalize">AI自動ローカライズ</a></li>
                 </ul>
             </div>
 
             <div class="footer-column">
                 <h3 id="footerToolsTitle">無料ツール</h3>
                 <ul>
-                    <!-- ▼ 修正箇所: リンク先を /en/blog に変更（別タブ維持） -->
                     <li><a href="/en/blog" target="_blank" rel="noopener noreferrer" id="footerBlog">ブログ</a></li>
                     <li><a href="/en/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
                 </ul>
@@ -700,10 +860,8 @@
                 <div class="mobile-accordion-content">
                     <ul>
                         <li><a href="/en/services/multilingual-website" id="footerMobileWebsite">多言語HP作成</a></li>
-                        <li><a href="/en/services/cross-border-ec" id="footerMobileEc">越境EC開設・運用</a></li>
-                        <li><a href="/en/services/multilingual-content" id="footerMobileContent">多言語コンテンツ制作</a></li>
-                        <li><a href="/en/services/global-sns" id="footerMobileSns">海外向けSNS運用</a></li>
-                        <li><a href="/en/services/btob-matching" id="footerMobileMatching">代理店マッチング</a></li>
+                        <li><a href="/en/services/multilingual-blog" id="footerMobileBlogService">多言語ブログ作成</a></li>
+                        <li><a href="/en/services/ai-localize" id="footerMobileAiLocalize">AI自動ローカライズ</a></li>
                     </ul>
                 </div>
             </div>
@@ -715,7 +873,6 @@
                 </button>
                 <div class="mobile-accordion-content">
                     <ul>
-                        <!-- ▼ 修正箇所: リンク先を /en/blog に変更（別タブ維持） -->
                         <li><a href="/en/blog" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">ブログ</a></li>
                         <li><a href="/en/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
                     </ul>
@@ -775,6 +932,117 @@
         </div>
     </div>
 </footer>
+
+<!-- ============================================
+     多言語化ロジック (JavaScript) - Footer用
+============================================= -->
+<script>
+(function() {
+    const footerTranslations = {
+        ja: {
+            featuresTitle: "人気の機能",
+            website: "多言語HP作成",
+            blogService: "多言語ブログ作成",
+            aiLocalize: "AI自動ローカライズ",
+            toolsTitle: "無料ツール",
+            blog: "ブログ",
+            resources: "資料ダウンロード",
+            companyTitle: "会社",
+            about: "会社概要",
+            contact: "お問い合わせ",
+            privacy: "プライバシーポリシー",
+            terms: "利用規約",
+            commerce: "特定商取引法に基づく表示",
+            withdrawal: "退会規定"
+        },
+        en: {
+            featuresTitle: "Popular Features",
+            website: "Multilingual Website",
+            blogService: "Multilingual Blog",
+            aiLocalize: "AI Localization",
+            toolsTitle: "Free Tools",
+            blog: "Blog",
+            resources: "Downloads",
+            companyTitle: "Company",
+            about: "About Us",
+            contact: "Contact Us",
+            privacy: "Privacy Policy",
+            terms: "Terms of Service",
+            commerce: "Commercial Transaction Act",
+            withdrawal: "Withdrawal Policy"
+        },
+        'zh-hans': {
+            featuresTitle: "热门功能",
+            website: "多语言建站",
+            blogService: "多语言博客",
+            aiLocalize: "AI本地化",
+            toolsTitle: "免费工具",
+            blog: "博客",
+            resources: "资料下载",
+            companyTitle: "公司",
+            about: "公司简介",
+            contact: "联系我们",
+            privacy: "隐私政策",
+            terms: "使用条款",
+            commerce: "特定商业交易法",
+            withdrawal: "退会规定"
+        }
+    };
+
+    function getFooterLanguage() {
+        const path = window.location.pathname;
+        const match = path.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+        if (!match) return 'ja';
+        return match[1] === 'jp' ? 'ja' : match[1];
+    }
+
+    function updateFooterContent() {
+        const lang = getFooterLanguage();
+        const t = footerTranslations[lang] || footerTranslations['ja'];
+
+        const setText = (id, text) => {
+            const el = document.getElementById(id);
+            if (el) el.textContent = text;
+        };
+
+        // Desktop
+        setText('footerFeaturesTitle', t.featuresTitle);
+        setText('footerWebsite', t.website);
+        setText('footerBlogService', t.blogService);
+        setText('footerAiLocalize', t.aiLocalize);
+        
+        setText('footerToolsTitle', t.toolsTitle);
+        setText('footerBlog', t.blog);
+        setText('footerResources', t.resources);
+        
+        setText('footerCompanyTitle', t.companyTitle);
+        setText('footerAbout', t.about);
+        setText('footerContact', t.contact);
+
+        // Mobile
+        setText('footerMobileFeaturesTitle', t.featuresTitle);
+        setText('footerMobileWebsite', t.website);
+        setText('footerMobileBlogService', t.blogService);
+        setText('footerMobileAiLocalize', t.aiLocalize);
+        
+        setText('footerMobileToolsTitle', t.toolsTitle);
+        setText('footerMobileBlog', t.blog);
+        setText('footerMobileResources', t.resources);
+        
+        setText('footerMobileCompanyTitle', t.companyTitle);
+        setText('footerMobileAbout', t.about);
+        setText('footerMobileContact', t.contact);
+
+        // Legal
+        setText('footerPrivacy', t.privacy);
+        setText('footerTerms', t.terms);
+        setText('footerCommerce', t.commerce);
+        setText('footerWithdrawal', t.withdrawal);
+    }
+
+    document.addEventListener('DOMContentLoaded', updateFooterContent);
+})();
+</script>
     
     <!-- JavaScript -->
     <script src="/assets/js/header.js"></script>

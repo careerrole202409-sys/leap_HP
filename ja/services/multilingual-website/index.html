@@ -1,453 +1,169 @@
 ---
 layout: base.njk
-title: 多言語HP作成サービス | Leap
-description: 既存のURLを入力するだけで、AIが自動でネイティブ品質の多言語HPを作成。チャットでの修正も可能。世界への発信をLeapで始めましょう。
+title: 多言語Webサイト作成・AIローカライズ | Leap (リープ)
+description: 既存サイトのURLを入力するだけで、AIが現地競合を分析。デザイン、構成、CTAまで現地仕様に最適化した「刺さる」多言語HPを自動作成します。
 ---
 
-<!-- ============================================
-     Hero Section
-============================================= -->
-
-<section class="section bg-beige">
+<!-- セクション1：Hero Section（【修正】確実に2行に収まるようにレイアウトと改行を調整） -->
+<section class="section pt-xl pb-xl bg-white" style="overflow: hidden;">
     <div class="container">
-        <div class="grid-2 items-center">
-            <!-- Left Content -->
-            <div class="order-2-mobile">
-                <div class="mb-md">
-                    <span style="color: var(--color-accent-orange); font-weight: bold; letter-spacing: 0.05em;">Leap Multilingual Website Builder</span>
-                </div>
-                <h1 class="mb-lg" style="line-height: 1.2;">
-                    AIの力で、<br>
-                    海外からのHPアクセスを<br>
-                    3倍に。
+        <!-- 【修正】カラム比率を 1.2 : 0.8 に変更してテキストエリアを拡張 -->
+        <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; align-items: center; gap: 40px;" class="grid-1-mobile mb-2xl">
+            <!-- 左側（テキスト） -->
+            <div>
+                <p class="font-bold mb-sm" style="color: var(--color-primary-start); letter-spacing: 0.1em; font-size: 0.9rem;">
+                    多言語Webサイト作成サービス
+                </p>
+                <!-- 【修正】文字サイズを微調整し、特定の単語がバラけないように制御した上で2行に固定 -->
+                <h1 class="mb-lg" style="font-size: clamp(1.8rem, 3.5vw, 3rem); line-height: 1.3; letter-spacing: -0.02em;">
+                    <span style="display: inline-block; white-space: nowrap;">AIで、「売れる」多言語サイトを</span><br>
+                    <span style="display: inline-block; white-space: nowrap;">瞬時に自動作成。</span>
                 </h1>
-                <p class="text-secondary mb-xl" style="font-size: var(--font-size-lg);">
-                    すでに持っている会社HPのURLを入力し、言語を選ぶだけ。<br>
-                    AIが翻訳・構築を行い、あなたのビジネスを世界中に届けます。
+                <p class="text-lg text-secondary mb-xl" style="line-height: 1.8;">
+                    翻訳だけでは届かない。既存URLを入力するだけで、AIが現地の競合を徹底分析。デザイン・構成まで現地仕様に最適化（ローカライズ）された「刺さる」HPを生成します。
                 </p>
-                <div class="flex" style="gap: 16px; flex-wrap: wrap;">
-                    <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">無料で作成してみる</a>
-                    <a href="/{{ locale }}/about/#contact" class="btn btn-secondary btn-lg">デモを申し込む</a>
-                </div>
             </div>
+            
+            <!-- 右側（サービスUI画像） -->
+            <div style="position: relative;">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1771677333/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-02-21_21.35.25_ose8qa.png" alt="Leap Multilingual HP Builder" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid var(--color-border);">
+            </div>
+        </div>
 
-            <!-- Right Image -->
-            <div class="text-center order-1-mobile mb-xl">
-                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767578754/2026-01-05_10.58%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_gwulov.jpg" alt="Leap多言語HP作成サービスのダッシュボード画面" class="img-cover shadow-lg rounded">
+        <!-- 下段：中央 特大CTA -->
+        <div class="text-center mt-xl pt-lg">
+            <div style="display: flex; gap: 24px; flex-wrap: wrap; justify-content: center;">
+                <a href="/{{ locale }}/about/#contact" class="btn font-bold" style="font-size: 1.2rem; padding: 1.2rem 4rem; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); color: white; border: none; border-radius: 50px; box-shadow: 0 8px 16px rgba(200, 16, 46, 0.2);">デモを申し込む &rarr;</a>
+                <!-- 【修正】ボタン名を「無料で多言語HP作成」に変更 -->
+                <a href="https://app.leap.site" class="btn font-bold" style="font-size: 1.2rem; padding: 1.2rem 4rem; background-color: white; color: var(--color-primary-start, #C8102E); border: 2px solid var(--color-primary-start, #C8102E); border-radius: 50px;">無料で多言語HP作成 &rarr;</a>
             </div>
+            <p class="text-sm text-light mt-md">※クレジットカード登録不要でフリープランをお試しいただけます</p>
         </div>
     </div>
 </section>
 
-<!-- ============================================
-     Feature 1: URL Input
-============================================= -->
-
-<section class="section bg-white">
-    <div class="container">
-        <div class="grid-2 items-center">
-            <!-- Text -->
-            <div>
-                <h2 class="mb-md">URL入力と言語選択だけで<br>即座にグローバル化</h2>
-                <p class="mb-lg">
-                    面倒なコーディングや翻訳会社への依頼は不要です。Leapなら、既存のホームページURLを入力し、展開したい言語を選ぶだけ。<br>
-                    AIがサイト構造を解析し、自動で多言語サイトを生成します。公開設定さえすれば、その日のうちに世界中へアクセス可能になります。
-                </p>
-
-                <div class="content-list">
-                    <ul>
-                        <li><strong>最短数分で構築：</strong> 待ち時間なく、ビジネスのスピードを加速させます。</li>
-                        <li><strong>デザインそのまま：</strong> 既存サイトの世界観を崩さず多言語化します。</li>
-                    </ul>
-                </div>
-
-                <a href="/{{ locale }}/about/#contact" class="link-arrow">作成フローの詳細のデモを申し込む →</a>
-            </div>
-
-            <!-- Image -->
-            <div>
-                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767578753/2026-01-05_10.58%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_1_vsbho3.jpg" alt="URL入力と言語選択画面" class="img-cover shadow-md rounded">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================
-     Feature 2: AI Double Check
-============================================= -->
-
+<!-- セクション2：STEP 1 日本語HPの多言語化 -->
 <section class="section bg-beige">
     <div class="container">
         <div class="grid-2 items-center">
-            <!-- Image (Left on Desktop) -->
-            <div class="order-1-mobile mb-xl">
-                <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80" alt="AIによる翻訳ダブルチェック" class="img-cover shadow-md rounded">
-            </div>
-
-            <!-- Text -->
-            <div class="order-2-mobile">
-                <h2 class="mb-md">AIダブルチェックによる<br>ネイティブ品質の翻訳</h2>
-                <p class="mb-lg">
-                    単なる機械翻訳ではありません。LeapのAIは、生成された翻訳を二重でチェック（ダブルチェック）するプロセスを搭載。<br>
-                    文脈を理解し、ネイティブスピーカーが読んでも違和感のない、自然で洗練された表現に仕上げます。
+            <div>
+                <div class="text-primary font-bold mb-sm">STEP 1</div>
+                <h2 class="mb-md">URL入力だけで、<br>即座に多言語サイトを構築</h2>
+                <p class="mb-lg text-secondary" style="line-height: 1.8;">
+                    面倒なコーディングや翻訳会社への依頼は不要です。既存のホームページURLを入力し、展開したい言語を選ぶだけ。<br>
+                    AIがサイト構造を解析し、最短数分でネイティブ品質の多言語サイトを生成します。
                 </p>
-                <a href="/{{ locale }}/about/#contact" class="link-arrow">翻訳精度の仕組みのデモを申し込む →</a>
+                <div class="mb-xl">
+                    <a href="/{{ locale }}/about/#contact" class="link-arrow font-bold" style="color: var(--color-primary-start);">スピード構築機能のデモを申し込む →</a>
+                </div>
+            </div>
+            <div class="text-center">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1771677333/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-02-21_21.35.25_ose8qa.png" alt="URL入力によるスピード構築" class="img-cover shadow-md rounded" style="border: 1px solid var(--color-border);">
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============================================
-     Feature 3: Chat Editing
-============================================= -->
-
+<!-- セクション3：STEP 2 AIローカライズ・チャット編集 -->
 <section class="section bg-white">
     <div class="container">
         <div class="grid-2 items-center">
-            <!-- Text -->
-            <div>
-                <h2 class="mb-md">「ここを変えて」と<br>チャットに書くだけ</h2>
-                <p class="mb-lg">
-                    完成したサイトの微調整も、専門知識は一切不要です。<br>
-                    編集画面のチャットボットに向かって「この見出しを〇〇という表現に変えて」「ここはもっとカジュアルなトーンで」と指示するだけ。<br>
-                    まるで専属のWEB担当者と話しているかのように、直感的にサイトを編集できます。
+            <div class="order-1-mobile mb-xl">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1771680639/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-02-21_22.30.16_q5g9qq.png" alt="AIによる現地競合分析とチャット編集" class="img-cover shadow-md rounded" style="border: 1px solid var(--color-border);">
+            </div>
+            <div class="order-2-mobile">
+                <div class="text-primary font-bold mb-sm">STEP 2</div>
+                <h2 class="mb-md">現地ベンチマーク企業を元に<br>AIが「勝てるデザイン」へ最適化</h2>
+                <p class="mb-lg text-secondary" style="line-height: 1.8;">
+                    単なる翻訳では消費者の心は掴めません。LeapのAIは、現地の競合サイトを自動収集・分析。
+                    現地の文化や好みに合わせて、カラー、サイト構成、CTA（問い合わせボタン）の位置まで、現地仕様に自動で最適化（ローカライズ）します。
+                    さらに、チャット形式で「ここを修正して」と指示を送るだけで、AIがリアルタイムでデザインやテキストを微調整。専門知識不要で理想のサイトへと仕上げることができます。
                 </p>
-                <a href="/{{ locale }}/about/#contact" class="link-arrow">チャット編集機能のデモを申し込む →</a>
-            </div>
-
-            <!-- Image -->
-            <div>
-                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767578752/2026-01-05_10.59%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_nwpc77.jpg" alt="チャットによる修正指示画面" class="img-cover shadow-md rounded">
+                <div class="mb-xl">
+                    <a href="/{{ locale }}/about/#contact" class="link-arrow font-bold" style="color: var(--color-primary-start);">AIローカライズ・チャット編集のデモを申し込む →</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============================================
-     Features Grid
-============================================= -->
+<!-- セクション4：STEP 3 & 4 解析と継続改善 -->
+<section class="section bg-beige">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <div>
+                <div class="text-primary font-bold mb-sm">STEP 3 & 4</div>
+                <h2 class="mb-md">データに基づく継続改善で<br>成約率を最大化する</h2>
+                <p class="mb-lg text-secondary" style="line-height: 1.8;">
+                    サイトを公開して終わりではありません。Googleアナリティクスやヒートマップ解析ツールと自動連携。
+                    アクセスデータをもとに、キービジュアルやコンテンツ内容をAIがABテストし続け、常に「今、最も売れる状態」にアップデートし続けます。
+                </p>
+                <div class="mb-xl">
+                    <a href="/{{ locale }}/about/#contact" class="link-arrow font-bold" style="color: var(--color-primary-start);">ABテスト・継続改善機能のデモを申し込む →</a>
+                </div>
+            </div>
+            <div class="text-center">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="解析と継続改善のイメージ" class="img-cover shadow-md rounded" style="border: 1px solid var(--color-border);">
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- セクション5：提供内容一覧 -->
 <section class="section bg-white">
     <div class="container">
-        <h2 class="text-center mb-2xl">グローバル展開に必要な<br>すべての機能を搭載</h2>
-
-        <div class="grid-4">
-            <!-- Item 1 -->
-            <div>
-                <div class="solution-icon text-primary">
-                    <span style="font-size: 32px;">🌐</span>
-                </div>
-                <h3 class="h5 mb-sm">自動言語検知</h3>
-                <p class="text-sm text-secondary">訪問者のブラウザ言語に合わせて、最適な言語ページを自動で表示します。</p>
+        <h2 class="text-center mb-2xl">多言語HP作成・ローカライズの<br>充実した提供内容</h2>
+        <div class="grid-3" style="gap: 30px;">
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">多言語HPの作成・公開</h3><p class="text-sm text-secondary">最短数分でのスピーディな立ち上げ。</p></div>
             </div>
-
-            <!-- Item 2 -->
-            <div>
-                <div class="solution-icon text-primary">
-                    <span style="font-size: 32px;">📈</span>
-                </div>
-                <h3 class="h5 mb-sm">多言語SEO対策</h3>
-                <p class="text-sm text-secondary">翻訳されたページも自動でSEO最適化。海外の検索エンジンでも上位表示を狙えます。</p>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">AI現地ベンチマーク抽出</h3><p class="text-sm text-secondary">現地の競合企業を自動でリサーチ。</p></div>
             </div>
-
-            <!-- Item 3 -->
-            <div>
-                <div class="solution-icon text-primary">
-                    <span style="font-size: 32px;">🔒</span>
-                </div>
-                <h3 class="h5 mb-sm">SSL標準対応</h3>
-                <p class="text-sm text-secondary">すべての生成ページはSSL化され、セキュリティ面でも安心してご利用いただけます。</p>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">競合を参考にしたローカライズ</h3><p class="text-sm text-secondary">デザインや構成まで現地仕様に最適化。</p></div>
             </div>
-
-            <!-- Item 4 -->
-            <div>
-                <div class="solution-icon text-primary">
-                    <span style="font-size: 32px;">🎧</span>
-                </div>
-                <h3 class="h5 mb-sm">24時間サポート</h3>
-                <p class="text-sm text-secondary">ご不明な点はいつでもサポートチームへ。AIだけでなく人の手による支援も万全です。</p>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">解析ツールとの連携</h3><p class="text-sm text-secondary">GAやヒートマップで成果を可視化。</p></div>
+            </div>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">ABテストの運用</h3><p class="text-sm text-secondary">AIが最適なパターンを自動検証。</p></div>
+            </div>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">月次レポート提出</h3><p class="text-sm text-secondary">成果と改善案を定期的に報告。</p></div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============================================
-     Case Study
-============================================= -->
-
-<section class="section bg-background">
+<!-- セクション6：導入企業の声 -->
+<section class="section bg-beige">
     <div class="container">
-        <h2 class="mb-xl">導入企業の声</h2>
-
-        <div class="card p-0 overflow-hidden">
+        <h2 class="text-center mb-xl">導入企業の声</h2>
+        <div class="card p-0 overflow-hidden" style="border: 1px solid var(--color-border); box-shadow: none; background-color: white; border-radius: var(--radius-lg);">
             <div class="grid-2" style="gap: 0;">
-                <!-- Image -->
-                <div style="min-height: 300px; max-height: 500px; position: relative;">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" 
-                         alt="Leap導入企業の担当者" 
-                         style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%;">
+                <div style="min-height: 300px; display: flex; align-items: center; justify-content: center; background-color: #ffffff; padding: 3rem;">
+                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767492043/2026-01-04_11.00%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_wpugxv.jpg" alt="小松ばね工業株式会社様ロゴ" style="max-width: 100%; max-height: 200px; object-fit: contain;">
                 </div>
-                
-                <!-- Content -->
-                <div class="py-xl px-lg flex flex-col justify-center bg-white">
-                    <div class="mb-lg">
-                        <div style="font-weight: bold; font-size: 24px; color: var(--color-dark-gray);">Global Tech Inc.</div>
-                    </div>
-                    
-                    <p class="quote-text mb-lg" style="font-size: var(--font-size-lg);">
-                        「Leapのおかげで、エンジニアリソースを使わずに3ヶ国語対応が完了しました。AIの翻訳精度が高く、修正もチャットで指示するだけなので、マーケティングチームだけで運用が回っています。」
+                <div class="py-xl px-lg flex flex-col justify-center bg-white" style="padding: 3rem;">
+                    <div class="mb-lg"><div style="font-weight: bold; font-size: 1.5rem; color: var(--color-dark-gray);">小松ばね工業株式会社 様</div></div>
+                    <p class="quote-text mb-lg" style="font-size: 1.1rem; line-height: 1.8;">
+                        「海外案件は代表が自ら対応しており工数不足でしたが、Leapで英語・中国語の多言語HPを制作したことで、Webマーケティングが自動化されました。AIのローカライズ精度が高く、非常に助かっています。」
                     </p>
-                    
-                    <div>
-                        <p class="font-bold mb-0">田中 健太 氏</p>
-                        <p class="text-sm text-secondary">マーケティング部 マネージャー</p>
-                    </div>
+                    <div><p class="font-bold mb-0">代表取締役 小松 氏</p></div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============================================
-     Stats
-============================================= -->
-
-<section class="section bg-white">
-    <div class="container">
-        <h2 class="text-center mb-2xl">Leapが選ばれる理由</h2>
-
-        <div class="grid-3 text-center">
-            <div>
-                <span class="stat-number">95%</span>
-                <p class="stat-label">翻訳業務の削減率</p>
-                <p class="text-sm text-secondary mt-sm">従来の手作業と比較して<br>圧倒的な時間短縮を実現</p>
-            </div>
-            
-            <div>
-                <span class="stat-number">10分</span>
-                <p class="stat-label">サイト公開までの平均時間</p>
-                <p class="text-sm text-secondary mt-sm">URL入力から公開まで<br>驚異的なスピードで完了</p>
-            </div>
-            
-            <div>
-                <span class="stat-number">3.5倍</span>
-                <p class="stat-label">海外アクセス増加率</p>
-                <p class="text-sm text-secondary mt-sm">多言語化により<br>平均してアクセス数が急増</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================
-     Pricing Section (視認性重視・1行キープ版)
-============================================= -->
-<style>
-    .pricing-grid-final {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 15px; /* カード間の間隔を適切に */
-        justify-content: center;
-        align-items: stretch;
-        margin: 0 auto;
-    }
-    .pricing-card-final {
-        flex: 1;
-        min-width: 0; 
-        background: #fff;
-        border-radius: 12px;
-        border-top: 6px solid #a4001d;
-        padding: 30px 15px; /* 上下の余白を増やして高級感を出す */
-        box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        transition: transform 0.2s;
-    }
-    .plan-name-final {
-        color: #a4001d;
-        font-size: 1.4rem; /* 大きく戻しました */
-        font-weight: bold;
-        margin-bottom: 8px;
-        white-space: nowrap; 
-        letter-spacing: -0.02em;
-    }
-    .plan-desc-final {
-        font-size: 0.8rem;
-        color: #666;
-        font-weight: bold;
-        margin-bottom: 20px;
-        height: 2.8em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        line-height: 1.3;
-    }
-    .plan-price-final {
-        color: #a4001d;
-        font-size: 2rem; /* 料金をしっかり強調 */
-        font-weight: bold;
-        white-space: nowrap;
-        line-height: 1;
-    }
-    .price-unit-final {
-        font-size: 0.85rem;
-        color: #666;
-        margin-top: 5px;
-        margin-bottom: 25px;
-    }
-    .plan-features-final {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        text-align: left;
-        font-size: 0.85rem; /* リストの文字も見やすく */
-        line-height: 1.5;
-        margin-top: auto; /* 下側に寄せる */
-    }
-    .plan-features-final li {
-        margin-bottom: 10px;
-        display: flex;
-        align-items: flex-start;
-    }
-    .plan-features-final li::before {
-        content: "✔";
-        color: #333;
-        margin-right: 8px;
-        font-weight: bold;
-        flex-shrink: 0;
-    }
-
-    /* レスポンシブ設定 */
-    @media (max-width: 1200px) {
-        .plan-name-final { font-size: 1.2rem; }
-        .plan-price-final { font-size: 1.7rem; }
-    }
-    @media (max-width: 1024px) {
-        .pricing-grid-final { flex-wrap: wrap; }
-        .pricing-card-final { flex: 1 1 calc(33.33% - 20px); min-width: 250px; }
-    }
-    @media (max-width: 600px) {
-        .pricing-card-final { flex: 1 1 100%; }
-    }
-</style>
-
-<section class="section bg-beige" style="padding: 80px 0;">
-    <div class="container-fluid" style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
-        <h2 class="text-center" style="font-size: 1.8rem; font-weight: bold; margin-bottom: 10px;">料金表</h2>
-        <p class="text-center text-secondary" style="font-size: 1rem; margin-bottom: 40px;">※税別</p>
-
-        <div class="pricing-grid-final">
-            
-            <div class="pricing-card-final">
-                <div class="plan-name-final">フリー</div>
-                <div class="plan-desc-final">無料でお試し</div>
-                <div class="plan-price-final">0円</div>
-                <div class="price-unit-final">/月</div>
-                <ul class="plan-features-final">
-                    <li>3ページまで</li>
-                    <li>独自ドメイン不可</li>
-                    <li>チャット編集5回/月</li>
-                </ul>
-            </div>
-
-            <div class="pricing-card-final">
-                <div class="plan-name-final">スターター</div>
-                <div class="plan-desc-final">多言語HP公開</div>
-                <div class="plan-price-final">2,980円</div>
-                <div class="price-unit-final">/月</div>
-                <ul class="plan-features-final">
-                    <li>10ページまで</li>
-                    <li>独自ドメイン公開</li>
-                    <li>チャット編集30回/月</li>
-                </ul>
-            </div>
-
-            <div class="pricing-card-final">
-                <div class="plan-name-final">ベーシック</div>
-                <div class="plan-desc-final">多言語ブログ公開</div>
-                <div class="plan-price-final">9,800円</div>
-                <div class="price-unit-final">/月</div>
-                <ul class="plan-features-final">
-                    <li>50ページまで</li>
-                    <li>多言語ブログの立ち上げ</li>
-                    <li>チャット編集50回/月</li>
-                </ul>
-            </div>
-
-            <div class="pricing-card-final">
-                <div class="plan-name-final">スタンダード</div>
-                <div class="plan-desc-final">AIがローカライズ</div>
-                <div class="plan-price-final">49,800円</div>
-                <div class="price-unit-final">/月</div>
-                <ul class="plan-features-final">
-                    <li>150ページまで</li>
-                    <li>AIがブログ自動作成、SEO最適化</li>
-                    <li>チャット編集200回/月</li>
-                    <li>ベンチマーク企業をベースにした自動ローカライズ</li>
-                </ul>
-            </div>
-
-            <div class="pricing-card-final">
-                <div class="plan-name-final">プレミアム</div>
-                <div class="plan-desc-final">AIが自動完全最適化</div>
-                <div class="plan-price-final">198,000円</div>
-                <div class="price-unit-final">/月</div>
-                <ul class="plan-features-final">
-                    <li>スタンダードプランの機能</li>
-                    <li>ページ数無制限</li>
-                    <li>チャット無制限</li>
-                    <li>AIが自動でABテストで最適化</li>
-                    <li>ユーザーごとにHPを動的に変更</li>
-                </ul>
-            </div>
-
-        </div>
-        
-        <div class="text-center" style="margin-top: 50px;">
-            <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" style="background-color: #a4001d; color: #fff; padding: 16px 50px; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-block; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(164, 0, 29, 0.3);">無料で作成してみる</a>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================
-     FAQ
-============================================= -->
-
-<section class="section bg-white">
-    <div class="container content-medium">
-        <h2 class="mb-xl">よくあるご質問 (FAQ)</h2>
-
-        <div class="mb-md">
-            <details class="card p-md mb-sm" style="cursor: pointer;">
-                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">翻訳の精度はどのくらいですか？</summary>
-                <div class="mt-md text-secondary">
-                    Leapは最新のAI技術を使用しており、さらにAIによるダブルチェック機能（推敲機能）を搭載しています。これにより、直訳ではない、文脈に沿ったネイティブ品質の自然な表現を実現しています。
-                </div>
-            </details>
-
-            <details class="card p-md mb-sm" style="cursor: pointer;">
-                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">元となる日本語サイトを変更した場合、翻訳サイトはどうなりますか？</summary>
-                <div class="mt-md text-secondary">
-                    元のサイトの更新を検知し、差分のみを自動で翻訳・反映させる機能があります。常に最新の状態を多言語で維持することが可能です。
-                </div>
-            </details>
-
-            <details class="card p-md mb-sm" style="cursor: pointer;">
-                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">独自ドメインは使えますか？</summary>
-                <div class="mt-md text-secondary">
-                    はい、スタータープラン以上をご利用いただくことで、お客様がお持ちの独自ドメイン（例: en.yourcompany.com）を設定することが可能です。フリープランではLeapのサブドメインとなります。
-                </div>
-            </details>
-
-            <details class="card p-md mb-sm" style="cursor: pointer;">
-                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">途中でのプラン変更は可能ですか？</summary>
-                <div class="mt-md text-secondary">
-                    はい、いつでもダッシュボードからプランのアップグレードが可能です。サイトの規模拡大に合わせて、最適なプランをお選びいただけます。
-                </div>
-            </details>
-        </div>
-    </div>
-</section>
-
+<!-- セクション7：料金表 -->
+{% include "pricing.njk" %}
 
 {% include "cta1.njk" %}

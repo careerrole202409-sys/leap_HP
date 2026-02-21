@@ -98,10 +98,8 @@
                         <span class="nav-link" id="servicesLabel">サービス ▼</span>
                         <div class="dropdown-menu">
                             <a href="/en/services/multilingual-website" class="dropdown-item" id="serviceWebsite">多言語HP作成</a>
-                            <a href="/en/services/cross-border-ec" class="dropdown-item" id="serviceEc">越境EC開設運用</a>
-                            <a href="/en/services/multilingual-content" class="dropdown-item" id="serviceContent">多言語コンテンツ制作</a>
-                            <a href="/en/services/global-sns" class="dropdown-item" id="serviceSns">海外向けSNS運用</a>
-                            <a href="/en/services/btob-matching" class="dropdown-item" id="serviceMatching">代理店マッチング</a>
+                            <a href="/en/services/multilingual-blog" class="dropdown-item" id="serviceBlog">多言語ブログ作成</a>
+                            <a href="/en/services/ai-localize" class="dropdown-item" id="serviceAiLocalize">AI自動ローカライズ</a>
                         </div>
                     </div>
                     <a href="/en/pricing" class="nav-link" id="pricingLink">価格</a>
@@ -109,7 +107,6 @@
                         <span class="nav-link" id="resourcesLabel">資料 ▼</span>
                         <div class="dropdown-menu">
                             <a href="/en/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
-                            <!-- ▼ 修正箇所: リンク先を /en/blog に変更（別タブ維持） -->
                             <a href="/en/blog" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">ブログ</a>
                         </div>
                     </div>
@@ -138,16 +135,14 @@
         </div>
         
         <div class="mobile-nav-item">
-            <div class="mobile-dropdown-toggle" id="mobileServicesLabel" onclick="toggleMobileDropdown(this)">
-                <span>サービス</span>
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(this)">
+                <span id="mobileServicesText">サービス</span>
                 <span>▼</span>
             </div>
             <div class="mobile-dropdown-content">
                 <a href="/en/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">多言語HP作成</a>
-                <a href="/en/services/cross-border-ec" class="mobile-dropdown-item" id="mobileServiceEc">越境EC開設運用</a>
-                <a href="/en/services/multilingual-content" class="mobile-dropdown-item" id="mobileServiceContent">多言語コンテンツ制作</a>
-                <a href="/en/services/global-sns" class="mobile-dropdown-item" id="mobileServiceSns">海外向けSNS運用</a>
-                <a href="/en/services/btob-matching" class="mobile-dropdown-item" id="mobileServiceMatching">代理店マッチング</a>
+                <a href="/en/services/multilingual-blog" class="mobile-dropdown-item" id="mobileServiceBlog">多言語ブログ作成</a>
+                <a href="/en/services/ai-localize" class="mobile-dropdown-item" id="mobileServiceAiLocalize">AI自動ローカライズ</a>
             </div>
         </div>
 
@@ -156,19 +151,18 @@
         </div>
 
         <div class="mobile-nav-item">
-            <div class="mobile-dropdown-toggle" id="mobileResourcesLabel" onclick="toggleMobileDropdown(this)">
-                <span>資料</span>
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(this)">
+                <span id="mobileResourcesText">資料</span>
                 <span>▼</span>
             </div>
             <div class="mobile-dropdown-content">
                 <a href="/en/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
-                <!-- ▼ 修正箇所: リンク先を /en/blog に変更（別タブ維持） -->
                 <a href="/en/blog" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">ブログ</a>
             </div>
         </div>
 
         <div class="mobile-nav-item">
-            <a href="/en/about" class="mobile-nav-link" id="mobileAbout">About</a>
+            <a href="/en/about" class="mobile-nav-link" id="mobileAbout">会社概要</a>
         </div>
 
         <div class="mobile-cta-buttons">
@@ -177,6 +171,131 @@
         </div>
     </div>
 </div>
+
+<!-- ============================================
+     多言語化ロジック (JavaScript)
+============================================= -->
+<script>
+(function() {
+    const translations = {
+        ja: {
+            langName: "日本語",
+            login: "ログイン",
+            about: "会社概要",
+            servicesLabel: "サービス ▼",
+            serviceWebsite: "多言語HP作成",
+            serviceBlog: "多言語ブログ作成",
+            serviceAiLocalize: "AI自動ローカライズ",
+            pricing: "価格",
+            resourcesLabel: "資料 ▼",
+            resourceDownload: "資料ダウンロード",
+            resourceBlog: "ブログ",
+            demo: "デモを申し込む",
+            start: "無料スタート",
+            
+            // モバイル専用
+            mobileHome: "ホーム",
+            mobileServicesText: "サービス",
+            mobileResourcesText: "資料",
+            mobileStart: "無料で始める"
+        },
+        en: {
+            langName: "English",
+            login: "Login",
+            about: "About Us",
+            servicesLabel: "Services ▼",
+            serviceWebsite: "Multilingual Website",
+            serviceBlog: "Multilingual Blog",
+            serviceAiLocalize: "AI Localization",
+            pricing: "Pricing",
+            resourcesLabel: "Resources ▼",
+            resourceDownload: "Downloads",
+            resourceBlog: "Blog",
+            demo: "Request Demo",
+            start: "Start for Free",
+            
+            // モバイル専用
+            mobileHome: "Home",
+            mobileServicesText: "Services",
+            mobileResourcesText: "Resources",
+            mobileStart: "Start for Free"
+        },
+        'zh-hans': {
+            langName: "简体中文",
+            login: "登录",
+            about: "公司简介",
+            servicesLabel: "服务 ▼",
+            serviceWebsite: "多语言建站",
+            serviceBlog: "多语言博客",
+            serviceAiLocalize: "AI本地化",
+            pricing: "价格方案",
+            resourcesLabel: "资料 ▼",
+            resourceDownload: "资料下载",
+            resourceBlog: "博客",
+            demo: "申请演示",
+            start: "免费开始",
+            
+            // モバイル専用
+            mobileHome: "首页",
+            mobileServicesText: "服务",
+            mobileResourcesText: "资料",
+            mobileStart: "免费开始"
+        }
+    };
+
+    function getHeaderLanguage() {
+        const path = window.location.pathname;
+        const match = path.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+        if (!match) return 'ja';
+        return match[1] === 'jp' ? 'ja' : match[1];
+    }
+
+    function updateHeaderContent() {
+        const lang = getHeaderLanguage();
+        const t = translations[lang] || translations['ja'];
+
+        const setText = (id, text) => {
+            const el = document.getElementById(id);
+            if (el) el.textContent = text;
+        };
+
+        // 言語表示
+        setText('currentLang', t.langName);
+
+        // トップリンク
+        setText('loginLink', t.login);
+        setText('aboutLink', t.about);
+
+        // メインナビゲーション (PC)
+        setText('servicesLabel', t.servicesLabel);
+        setText('serviceWebsite', t.serviceWebsite);
+        setText('serviceBlog', t.serviceBlog);
+        setText('serviceAiLocalize', t.serviceAiLocalize);
+        setText('pricingLink', t.pricing);
+        setText('resourcesLabel', t.resourcesLabel);
+        setText('resourceDownload', t.resourceDownload);
+        setText('resourceBlog', t.resourceBlog);
+        setText('demoBtn', t.demo);
+        setText('startBtn', t.start);
+
+        // モバイルナビゲーション
+        setText('mobileHome', t.mobileHome);
+        setText('mobileServicesText', t.mobileServicesText);
+        setText('mobileServiceWebsite', t.serviceWebsite);
+        setText('mobileServiceBlog', t.serviceBlog);
+        setText('mobileServiceAiLocalize', t.serviceAiLocalize);
+        setText('mobilePricing', t.pricing);
+        setText('mobileResourcesText', t.mobileResourcesText);
+        setText('mobileResourceDownload', t.resourceDownload);
+        setText('mobileResourceBlog', t.resourceBlog);
+        setText('mobileAbout', t.about);
+        setText('mobileDemoBtn', t.demo);
+        setText('mobileStartBtn', t.mobileStart);
+    }
+
+    document.addEventListener('DOMContentLoaded', updateHeaderContent);
+})();
+</script>
     
     <!-- Main Content -->
     <main id="main-content">
@@ -558,17 +677,14 @@
                 <h3 id="footerFeaturesTitle">人気の機能</h3>
                 <ul>
                     <li><a href="/en/services/multilingual-website" id="footerWebsite">多言語HP作成</a></li>
-                    <li><a href="/en/services/cross-border-ec" id="footerEc">越境EC開設・運用</a></li>
-                    <li><a href="/en/services/multilingual-content" id="footerContent">多言語コンテンツ制作</a></li>
-                    <li><a href="/en/services/global-sns" id="footerSns">海外向けSNS運用</a></li>
-                    <li><a href="/en/services/btob-matching" id="footerMatching">代理店マッチング</a></li>
+                    <li><a href="/en/services/multilingual-blog" id="footerBlogService">多言語ブログ作成</a></li>
+                    <li><a href="/en/services/ai-localize" id="footerAiLocalize">AI自動ローカライズ</a></li>
                 </ul>
             </div>
 
             <div class="footer-column">
                 <h3 id="footerToolsTitle">無料ツール</h3>
                 <ul>
-                    <!-- ▼ 修正箇所: リンク先を /en/blog に変更（別タブ維持） -->
                     <li><a href="/en/blog" target="_blank" rel="noopener noreferrer" id="footerBlog">ブログ</a></li>
                     <li><a href="/en/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
                 </ul>
@@ -593,10 +709,8 @@
                 <div class="mobile-accordion-content">
                     <ul>
                         <li><a href="/en/services/multilingual-website" id="footerMobileWebsite">多言語HP作成</a></li>
-                        <li><a href="/en/services/cross-border-ec" id="footerMobileEc">越境EC開設・運用</a></li>
-                        <li><a href="/en/services/multilingual-content" id="footerMobileContent">多言語コンテンツ制作</a></li>
-                        <li><a href="/en/services/global-sns" id="footerMobileSns">海外向けSNS運用</a></li>
-                        <li><a href="/en/services/btob-matching" id="footerMobileMatching">代理店マッチング</a></li>
+                        <li><a href="/en/services/multilingual-blog" id="footerMobileBlogService">多言語ブログ作成</a></li>
+                        <li><a href="/en/services/ai-localize" id="footerMobileAiLocalize">AI自動ローカライズ</a></li>
                     </ul>
                 </div>
             </div>
@@ -608,7 +722,6 @@
                 </button>
                 <div class="mobile-accordion-content">
                     <ul>
-                        <!-- ▼ 修正箇所: リンク先を /en/blog に変更（別タブ維持） -->
                         <li><a href="/en/blog" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">ブログ</a></li>
                         <li><a href="/en/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
                     </ul>
@@ -668,6 +781,117 @@
         </div>
     </div>
 </footer>
+
+<!-- ============================================
+     多言語化ロジック (JavaScript) - Footer用
+============================================= -->
+<script>
+(function() {
+    const footerTranslations = {
+        ja: {
+            featuresTitle: "人気の機能",
+            website: "多言語HP作成",
+            blogService: "多言語ブログ作成",
+            aiLocalize: "AI自動ローカライズ",
+            toolsTitle: "無料ツール",
+            blog: "ブログ",
+            resources: "資料ダウンロード",
+            companyTitle: "会社",
+            about: "会社概要",
+            contact: "お問い合わせ",
+            privacy: "プライバシーポリシー",
+            terms: "利用規約",
+            commerce: "特定商取引法に基づく表示",
+            withdrawal: "退会規定"
+        },
+        en: {
+            featuresTitle: "Popular Features",
+            website: "Multilingual Website",
+            blogService: "Multilingual Blog",
+            aiLocalize: "AI Localization",
+            toolsTitle: "Free Tools",
+            blog: "Blog",
+            resources: "Downloads",
+            companyTitle: "Company",
+            about: "About Us",
+            contact: "Contact Us",
+            privacy: "Privacy Policy",
+            terms: "Terms of Service",
+            commerce: "Commercial Transaction Act",
+            withdrawal: "Withdrawal Policy"
+        },
+        'zh-hans': {
+            featuresTitle: "热门功能",
+            website: "多语言建站",
+            blogService: "多语言博客",
+            aiLocalize: "AI本地化",
+            toolsTitle: "免费工具",
+            blog: "博客",
+            resources: "资料下载",
+            companyTitle: "公司",
+            about: "公司简介",
+            contact: "联系我们",
+            privacy: "隐私政策",
+            terms: "使用条款",
+            commerce: "特定商业交易法",
+            withdrawal: "退会规定"
+        }
+    };
+
+    function getFooterLanguage() {
+        const path = window.location.pathname;
+        const match = path.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+        if (!match) return 'ja';
+        return match[1] === 'jp' ? 'ja' : match[1];
+    }
+
+    function updateFooterContent() {
+        const lang = getFooterLanguage();
+        const t = footerTranslations[lang] || footerTranslations['ja'];
+
+        const setText = (id, text) => {
+            const el = document.getElementById(id);
+            if (el) el.textContent = text;
+        };
+
+        // Desktop
+        setText('footerFeaturesTitle', t.featuresTitle);
+        setText('footerWebsite', t.website);
+        setText('footerBlogService', t.blogService);
+        setText('footerAiLocalize', t.aiLocalize);
+        
+        setText('footerToolsTitle', t.toolsTitle);
+        setText('footerBlog', t.blog);
+        setText('footerResources', t.resources);
+        
+        setText('footerCompanyTitle', t.companyTitle);
+        setText('footerAbout', t.about);
+        setText('footerContact', t.contact);
+
+        // Mobile
+        setText('footerMobileFeaturesTitle', t.featuresTitle);
+        setText('footerMobileWebsite', t.website);
+        setText('footerMobileBlogService', t.blogService);
+        setText('footerMobileAiLocalize', t.aiLocalize);
+        
+        setText('footerMobileToolsTitle', t.toolsTitle);
+        setText('footerMobileBlog', t.blog);
+        setText('footerMobileResources', t.resources);
+        
+        setText('footerMobileCompanyTitle', t.companyTitle);
+        setText('footerMobileAbout', t.about);
+        setText('footerMobileContact', t.contact);
+
+        // Legal
+        setText('footerPrivacy', t.privacy);
+        setText('footerTerms', t.terms);
+        setText('footerCommerce', t.commerce);
+        setText('footerWithdrawal', t.withdrawal);
+    }
+
+    document.addEventListener('DOMContentLoaded', updateFooterContent);
+})();
+</script>
     
     <!-- JavaScript -->
     <script src="/assets/js/header.js"></script>
