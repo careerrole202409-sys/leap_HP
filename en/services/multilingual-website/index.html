@@ -1,454 +1,166 @@
 ---
 layout: base.njk
-title: Multilingual Website Builder | Leap
-description: Just enter your existing URL, and AI automatically creates a native-quality multilingual website. Chat-based editing is also available. Start reaching the world with Leap.
+title: Multilingual Website Creation & AI Localization | Leap
+description: Simply enter your existing URL, and our AI analyzes local competitors. We automatically generate a high-converting multilingual website with design, structure, and CTAs fully localized for your target market.
 ---
 
-<!-- ============================================
-     Hero Section
-============================================= -->
-<section class="section bg-beige">
+<!-- セクション1：Hero Section（【修正】確実に2行に収まるようにレイアウトと改行を調整） -->
+<section class="section pt-xl pb-xl bg-white" style="overflow: hidden;">
     <div class="container">
-        <div class="grid-2 items-center">
-            <!-- Left Content -->
-            <div class="order-2-mobile">
-                <div class="mb-md">
-                    <span style="color: var(--color-accent-orange); font-weight: bold; letter-spacing: 0.05em;">Leap Multilingual Website Builder</span>
-                </div>
-                <h1 class="mb-lg" style="line-height: 1.2;">
-                    Triple your<br>
-                    overseas website traffic<br>
-                    with the power of AI.
+        <!-- 【修正】カラム比率を 1.2 : 0.8 に変更してテキストエリアを拡張 -->
+        <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; align-items: center; gap: 40px;" class="grid-1-mobile mb-2xl">
+            <!-- 左側（テキスト） -->
+            <div>
+                <p class="font-bold mb-sm" style="color: var(--color-primary-start); letter-spacing: 0.1em; font-size: 0.9rem;">
+                    Multilingual Website Creation Service
+                </p>
+                <!-- 【修正】文字サイズを微調整し、特定の単語がバラけないように制御した上で2行に固定 -->
+                <h1 class="mb-lg" style="font-size: clamp(1.8rem, 3.5vw, 3rem); line-height: 1.3; letter-spacing: -0.02em;">
+                    <span style="display: inline-block; white-space: nowrap;">Instantly build high-converting</span><br>
+                    <span style="display: inline-block; white-space: nowrap;">multilingual websites with AI.</span>
                 </h1>
-                <p class="text-secondary mb-xl" style="font-size: var(--font-size-lg);">
-                    Simply enter your existing company website URL and select a language.<br>
-                    AI handles the translation and construction, delivering your business to the world.
+                <p class="text-lg text-secondary mb-xl" style="line-height: 1.8;">
+                    Translation alone isn't enough. Simply enter your existing URL, and our AI thoroughly analyzes local competitors. We generate a highly-effective website with its design and structure fully localized for your target market.
                 </p>
-                <div class="flex" style="gap: 16px; flex-wrap: wrap;">
-                    <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Create for Free</a>
-                    <a href="/{{ locale }}/about/#contact" class="btn btn-secondary btn-lg">Request a Demo</a>
-                </div>
             </div>
             
-            <!-- Right Image -->
-            <div class="text-center order-1-mobile mb-xl">
-                <!-- 修正: LeapのWEBアプリトップの写真 -->
-                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767578754/2026-01-05_10.58%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_gwulov.jpg" alt="Dashboard screen of Leap Multilingual Website Builder service" class="img-cover shadow-lg rounded">
+            <!-- 右側（サービスUI画像） -->
+            <div style="position: relative;">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1771677333/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-02-21_21.35.25_ose8qa.png" alt="Leap Multilingual Website Builder" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid var(--color-border);">
             </div>
+        </div>
+
+        <!-- 下段：中央 特大CTA -->
+        <div class="text-center mt-xl pt-lg">
+            <div style="display: flex; gap: 24px; flex-wrap: wrap; justify-content: center;">
+                <a href="/{{ locale }}/about/#contact" class="btn font-bold" style="font-size: 1.2rem; padding: 1.2rem 4rem; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); color: white; border: none; border-radius: 50px; box-shadow: 0 8px 16px rgba(200, 16, 46, 0.2);">Request a Demo &rarr;</a>
+                <!-- 【修正】ボタン名を「無料で多言語HP作成」に変更 -->
+                <a href="https://app.leap.site" class="btn font-bold" style="font-size: 1.2rem; padding: 1.2rem 4rem; background-color: white; color: var(--color-primary-start, #C8102E); border: 2px solid var(--color-primary-start, #C8102E); border-radius: 50px;">Build for Free &rarr;</a>
+            </div>
+            <p class="text-sm text-light mt-md">* Try our Free Plan with no credit card required.</p>
         </div>
     </div>
 </section>
 
-<!-- ============================================
-     Feature 1: URL Input
-============================================= -->
-<section class="section bg-white">
-    <div class="container">
-        <div class="grid-2 items-center">
-            <!-- Text -->
-            <div>
-                <h2 class="mb-md">Go global instantly just by<br>entering a URL and selecting a language</h2>
-                <p class="mb-lg">
-                    No tedious coding or requests to translation agencies required. With Leap, just enter your existing website URL and choose the target language.<br>
-                    AI analyzes the site structure and automatically generates a multilingual site. Once published, it's accessible worldwide the same day.
-                </p>
-                
-                <div class="content-list">
-                    <ul>
-                        <li><strong>Build in minutes:</strong> Accelerate your business speed without waiting times.</li>
-                        <li><strong>Keep your design:</strong> Translates your site while maintaining its existing worldview.</li>
-                    </ul>
-                </div>
-
-                <a href="/{{ locale }}/about/#contact" class="link-arrow">Request a demo of the creation flow →</a>
-            </div>
-
-            <!-- Image -->
-            <div>
-                <!-- 修正: 多言語HP作成のトップの写真 -->
-                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767578753/2026-01-05_10.58%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_1_vsbho3.jpg" alt="URL input and language selection screen" class="img-cover shadow-md rounded">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================
-     Feature 2: AI Double Check
-============================================= -->
+<!-- セクション2：STEP 1 日本語HPの多言語化 -->
 <section class="section bg-beige">
     <div class="container">
         <div class="grid-2 items-center">
-            <!-- Image (Left on Desktop) -->
-            <div class="order-1-mobile mb-xl">
-                <!-- 修正: 提供画像リストに対応するものがないため、Unsplashより「AI解析・コードチェック」のイメージ写真を補完 -->
-                <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80" alt="AI double-check translation" class="img-cover shadow-md rounded">
-            </div>
-
-            <!-- Text -->
-            <div class="order-2-mobile">
-                <h2 class="mb-md">Native-quality translation<br>with AI Double Check</h2>
-                <p class="mb-lg">
-                    It's not just machine translation. Leap's AI includes a process to double-check the generated translations.<br>
-                    It understands context to create natural, sophisticated expressions that feel seamless to native speakers.
+            <div>
+                <div class="text-primary font-bold mb-sm">STEP 1</div>
+                <h2 class="mb-md">Instantly build a multilingual site<br>just by entering your URL</h2>
+                <p class="mb-lg text-secondary" style="line-height: 1.8;">
+                    No need for tedious coding or hiring translation agencies. Just enter your existing website URL and select your target languages.<br>
+                    Our AI analyzes your site structure and generates a native-quality multilingual website in just minutes.
                 </p>
-                <a href="/{{ locale }}/about/#contact" class="link-arrow">Request a demo of the translation accuracy →</a>
+                <div class="mb-xl">
+                    <a href="/{{ locale }}/about/#contact" class="link-arrow font-bold" style="color: var(--color-primary-start);">Request a demo of our rapid builder →</a>
+                </div>
+            </div>
+            <div class="text-center">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1771677333/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-02-21_21.35.25_ose8qa.png" alt="Rapid setup by entering URL" class="img-cover shadow-md rounded" style="border: 1px solid var(--color-border);">
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============================================
-     Feature 3: Chat Editing
-============================================= -->
+<!-- セクション3：STEP 2 AIローカライズ・チャット編集 -->
 <section class="section bg-white">
     <div class="container">
         <div class="grid-2 items-center">
-            <!-- Text -->
-            <div>
-                <h2 class="mb-md">Just type "Change this"<br>in the chat</h2>
-                <p class="mb-lg">
-                    No specialized knowledge is needed to fine-tune the finished site.<br>
-                    Simply instruct the chatbot on the editing screen: "Change this headline to [X]" or "Make the tone more casual here."<br>
-                    You can edit the site intuitively, just like talking to a dedicated web specialist.
+            <div class="order-1-mobile mb-xl">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1771680639/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-02-21_22.30.16_q5g9qq.png" alt="AI local competitor analysis and chat editing" class="img-cover shadow-md rounded" style="border: 1px solid var(--color-border);">
+            </div>
+            <div class="order-2-mobile">
+                <div class="text-primary font-bold mb-sm">STEP 2</div>
+                <h2 class="mb-md">AI optimizes for a "winning design"<br>based on local benchmarks</h2>
+                <p class="mb-lg text-secondary" style="line-height: 1.8;">
+                    Mere translation won't capture consumers' hearts. Leap's AI automatically collects and analyzes local competitor websites. It localizes your site—adjusting colors, layout, and CTA (contact button) placements—to perfectly match the local culture and preferences. Furthermore, simply tell the AI "fix this part" via chat, and it will tweak the design and text in real-time. You can craft your ideal website with zero technical expertise required.
                 </p>
-                <a href="/{{ locale }}/about/#contact" class="link-arrow">Request a demo of the chat editing feature →</a>
-            </div>
-
-            <!-- Image -->
-            <div>
-                <!-- 修正: 多言語HP作成の作成途中の写真 -->
-                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767578752/2026-01-05_10.59%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_nwpc77.jpg" alt="Chat-based modification instruction screen" class="img-cover shadow-md rounded">
+                <div class="mb-xl">
+                    <a href="/{{ locale }}/about/#contact" class="link-arrow font-bold" style="color: var(--color-primary-start);">Request a demo of AI localization & chat editing →</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============================================
-     Features Grid
-============================================= -->
+<!-- セクション4：STEP 3 & 4 解析と継続改善 -->
+<section class="section bg-beige">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <div>
+                <div class="text-primary font-bold mb-sm">STEP 3 & 4</div>
+                <h2 class="mb-md">Maximize conversion rates<br>through data-driven continuous improvement</h2>
+                <p class="mb-lg text-secondary" style="line-height: 1.8;">
+                    Publishing your site is just the beginning. We automatically integrate with Google Analytics and heatmap tools. Based on user data, our AI continuously A/B tests key visuals and content, keeping your site updated to its highest-converting state at all times.
+                </p>
+                <div class="mb-xl">
+                    <a href="/{{ locale }}/about/#contact" class="link-arrow font-bold" style="color: var(--color-primary-start);">Request a demo of A/B testing & continuous improvement →</a>
+                </div>
+            </div>
+            <div class="text-center">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Analytics and continuous improvement" class="img-cover shadow-md rounded" style="border: 1px solid var(--color-border);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- セクション5：提供内容一覧 -->
 <section class="section bg-white">
     <div class="container">
-        <h2 class="text-center mb-2xl">Fully equipped with features<br>for global expansion</h2>
-        
-        <div class="grid-4">
-            <!-- Item 1 -->
-            <div>
-                <div class="solution-icon text-primary">
-                    <span style="font-size: 32px;">🌐</span>
-                </div>
-                <h3 class="h5 mb-sm">Auto Language Detection</h3>
-                <p class="text-sm text-secondary">Automatically displays the optimal language page based on the visitor's browser.</p>
+        <h2 class="text-center mb-2xl">Comprehensive features for<br>multilingual site creation & localization</h2>
+        <div class="grid-3" style="gap: 30px;">
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">Multilingual Site Publishing</h3><p class="text-sm text-secondary">Rapid launch in just a few minutes.</p></div>
             </div>
-
-            <!-- Item 2 -->
-            <div>
-                <div class="solution-icon text-primary">
-                    <span style="font-size: 32px;">📈</span>
-                </div>
-                <h3 class="h5 mb-sm">Multilingual SEO</h3>
-                <p class="text-sm text-secondary">Translated pages are automatically optimized for SEO. Aim for top rankings in overseas search engines.</p>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">AI Local Benchmarking</h3><p class="text-sm text-secondary">Automatically researches local competitors.</p></div>
             </div>
-
-            <!-- Item 3 -->
-            <div>
-                <div class="solution-icon text-primary">
-                    <span style="font-size: 32px;">🔒</span>
-                </div>
-                <h3 class="h5 mb-sm">SSL Standard Support</h3>
-                <p class="text-sm text-secondary">All generated pages are SSL-secured, ensuring safe and secure usage.</p>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">Competitor-Based Localization</h3><p class="text-sm text-secondary">Optimizes design and structure for the local market.</p></div>
             </div>
-
-            <!-- Item 4 -->
-            <div>
-                <div class="solution-icon text-primary">
-                    <span style="font-size: 32px;">🎧</span>
-                </div>
-                <h3 class="h5 mb-sm">24-Hour Support</h3>
-                <p class="text-sm text-secondary">Contact our support team anytime. Full support via both AI and human staff.</p>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">Analytics Integration</h3><p class="text-sm text-secondary">Visualizes performance with GA and heatmaps.</p></div>
+            </div>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">A/B Testing Management</h3><p class="text-sm text-secondary">AI automatically verifies the best-performing patterns.</p></div>
+            </div>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">Monthly Reporting</h3><p class="text-sm text-secondary">Regular reports on performance and improvement plans.</p></div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============================================
-     Case Study
-============================================= -->
-<section class="section bg-background">
+<!-- セクション6：導入企業の声 -->
+<section class="section bg-beige">
     <div class="container">
-        <h2 class="mb-xl">User Testimonials</h2>
-        
-        <div class="card p-0 overflow-hidden">
+        <h2 class="text-center mb-xl">What Our Clients Say</h2>
+        <div class="card p-0 overflow-hidden" style="border: 1px solid var(--color-border); box-shadow: none; background-color: white; border-radius: var(--radius-lg);">
             <div class="grid-2" style="gap: 0;">
-                <!-- Image -->
-                <!-- 修正: 写真を横長でも収まりの良いものに変更し、高さ制限(max-height)を追加して縦長になりすぎないよう調整 -->
-                <div style="min-height: 300px; max-height: 500px; position: relative;">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" 
-                         alt="Representative of a company using Leap" 
-                         style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%;">
+                <div style="min-height: 300px; display: flex; align-items: center; justify-content: center; background-color: #ffffff; padding: 3rem;">
+                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767492043/2026-01-04_11.00%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_wpugxv.jpg" alt="Komatsu Spring Industrial Co., Ltd. Logo" style="max-width: 100%; max-height: 200px; object-fit: contain;">
                 </div>
-                
-                <!-- Content -->
-                <div class="py-xl px-lg flex flex-col justify-center bg-white">
-                    <div class="mb-lg">
-                        <div style="font-weight: bold; font-size: 24px; color: var(--color-dark-gray);">Global Tech Inc.</div>
-                    </div>
-                    
-                    <p class="quote-text mb-lg" style="font-size: var(--font-size-lg);">
-                        "Thanks to Leap, we completed support for three languages without using engineer resources. The AI translation accuracy is high, and since corrections are just chat instructions, our marketing team handles operations entirely on their own."
+                <div class="py-xl px-lg flex flex-col justify-center bg-white" style="padding: 3rem;">
+                    <div class="mb-lg"><div style="font-weight: bold; font-size: 1.5rem; color: var(--color-dark-gray);">Komatsu Spring Industrial Co., Ltd.</div></div>
+                    <p class="quote-text mb-lg" style="font-size: 1.1rem; line-height: 1.8;">
+                        "Our CEO used to handle overseas inquiries personally, which led to a shortage of manpower. By creating English and Chinese multilingual websites with Leap, our web marketing has been fully automated. The AI's localization accuracy is exceptionally high, and it has been a huge help."
                     </p>
-                    
-                    <div>
-                        <p class="font-bold mb-0">Mr. Kenta Tanaka</p>
-                        <p class="text-sm text-secondary">Marketing Manager</p>
-                    </div>
+                    <div><p class="font-bold mb-0">Mr. Komatsu, CEO</p></div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============================================
-     Stats
-============================================= -->
-<section class="section bg-white">
-    <div class="container">
-        <h2 class="text-center mb-2xl">Why Leap is Chosen</h2>
-        
-        <div class="grid-3 text-center">
-            <div>
-                <span class="stat-number">95%</span>
-                <p class="stat-label">Translation Workload Reduction</p>
-                <p class="text-sm text-secondary mt-sm">Achieved overwhelming time savings<br>compared to traditional manual work</p>
-            </div>
-            
-            <div>
-                <span class="stat-number">10 min</span>
-                <p class="stat-label">Avg. Time to Launch</p>
-                <p class="text-sm text-secondary mt-sm">Completed at breakneck speed<br>from URL input to publication</p>
-            </div>
-            
-            <div>
-                <span class="stat-number">3.5x</span>
-                <p class="stat-label">Overseas Traffic Increase</p>
-                <p class="text-sm text-secondary mt-sm">Traffic numbers surged on average<br>due to multilingualization</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================
-     Pricing Section (English Version)
-============================================= -->
-<style>
-    .pricing-grid-final {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 15px;
-        justify-content: center;
-        align-items: stretch;
-        margin: 0 auto;
-    }
-    .pricing-card-final {
-        flex: 1;
-        min-width: 0; 
-        background: #fff;
-        border-radius: 12px;
-        border-top: 6px solid #a4001d;
-        padding: 30px 15px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        transition: transform 0.2s;
-    }
-    .plan-name-final {
-        color: #a4001d;
-        font-size: 1.4rem;
-        font-weight: bold;
-        margin-bottom: 8px;
-        white-space: nowrap; 
-        letter-spacing: -0.02em;
-    }
-    .plan-desc-final {
-        font-size: 0.8rem;
-        color: #666;
-        font-weight: bold;
-        margin-bottom: 20px;
-        height: 2.8em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        line-height: 1.3;
-    }
-    .plan-price-final {
-        color: #a4001d;
-        font-size: 2rem;
-        font-weight: bold;
-        white-space: nowrap;
-        line-height: 1;
-    }
-    .price-unit-final {
-        font-size: 0.85rem;
-        color: #666;
-        margin-top: 5px;
-        margin-bottom: 25px;
-    }
-    .plan-features-final {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        text-align: left;
-        font-size: 0.85rem;
-        line-height: 1.5;
-        margin-top: auto;
-    }
-    .plan-features-final li {
-        margin-bottom: 10px;
-        display: flex;
-        align-items: flex-start;
-    }
-    .plan-features-final li::before {
-        content: "✔";
-        color: #333;
-        margin-right: 8px;
-        font-weight: bold;
-        flex-shrink: 0;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 1200px) {
-        .plan-name-final { font-size: 1.2rem; }
-        .plan-price-final { font-size: 1.7rem; }
-    }
-    @media (max-width: 1024px) {
-        .pricing-grid-final { flex-wrap: wrap; }
-        .pricing-card-final { flex: 1 1 calc(33.33% - 20px); min-width: 250px; }
-    }
-    @media (max-width: 600px) {
-        .pricing-card-final { flex: 1 1 100%; }
-    }
-</style>
-
-<section class="section bg-beige" style="padding: 80px 0;">
-    <div class="container-fluid" style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
-        <h2 class="text-center" style="font-size: 1.8rem; font-weight: bold; margin-bottom: 10px;">Pricing Plans</h2>
-        <p class="text-center text-secondary" style="font-size: 1rem; margin-bottom: 40px;">*Excl. tax</p>
-
-        <div class="pricing-grid-final">
-            
-            <!-- Free Plan -->
-            <div class="pricing-card-final">
-                <div class="plan-name-final">Free</div>
-                <div class="plan-desc-final">Try for free</div>
-                <div class="plan-price-final">0 JPY</div>
-                <div class="price-unit-final">/mo</div>
-                <ul class="plan-features-final">
-                    <li>Up to 3 pages</li>
-                    <li>No custom domain</li>
-                    <li>5 chat edits/mo</li>
-                </ul>
-            </div>
-
-            <!-- Starter Plan -->
-            <div class="pricing-card-final">
-                <div class="plan-name-final">Starter</div>
-                <div class="plan-desc-final">Launch your site</div>
-                <div class="plan-price-final">2,980 JPY</div>
-                <div class="price-unit-final">/mo</div>
-                <ul class="plan-features-final">
-                    <li>Up to 10 pages</li>
-                    <li>Custom domain support</li>
-                    <li>30 chat edits/mo</li>
-                </ul>
-            </div>
-
-            <!-- Basic Plan -->
-            <div class="pricing-card-final">
-                <div class="plan-name-final">Basic</div>
-                <div class="plan-desc-final">Expand with a blog</div>
-                <div class="plan-price-final">9,800 JPY</div>
-                <div class="price-unit-final">/mo</div>
-                <ul class="plan-features-final">
-                    <li>Up to 50 pages</li>
-                    <li>Multilingual blog setup</li>
-                    <li>50 chat edits/mo</li>
-                </ul>
-            </div>
-
-            <!-- Standard Plan -->
-            <div class="pricing-card-final">
-                <div class="plan-name-final">Standard</div>
-                <div class="plan-desc-final">AI-driven localization</div>
-                <div class="plan-price-final">49,800 JPY</div>
-                <div class="price-unit-final">/mo</div>
-                <ul class="plan-features-final">
-                    <li>Up to 150 pages</li>
-                    <li>AI auto-blogging & SEO</li>
-                    <li>200 chat edits/mo</li>
-                    <li>Benchmark-based auto-localization</li>
-                </ul>
-            </div>
-
-            <!-- Premium Plan -->
-            <div class="pricing-card-final">
-                <div class="plan-name-final">Premium</div>
-                <div class="plan-desc-final">Full AI automation</div>
-                <div class="plan-price-final">198,000 JPY</div>
-                <div class="price-unit-final">/mo</div>
-                <ul class="plan-features-final">
-                    <li>All Standard features</li>
-                    <li>Unlimited pages</li>
-                    <li>Unlimited chat edits</li>
-                    <li>AI-driven A/B testing</li>
-                    <li>Dynamic personalized content</li>
-                </ul>
-            </div>
-
-        </div>
-        
-        <div class="text-center" style="margin-top: 50px;">
-            <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" style="background-color: #a4001d; color: #fff; padding: 16px 50px; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-block; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(164, 0, 29, 0.3);">Start for Free</a>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================
-     FAQ
-============================================= -->
-<section class="section bg-white">
-    <div class="container content-medium">
-        <h2 class="mb-xl">Frequently Asked Questions (FAQ)</h2>
-        
-        <div class="mb-md">
-            <details class="card p-md mb-sm" style="cursor: pointer;">
-                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">How accurate is the translation?</summary>
-                <div class="mt-md text-secondary">
-                    Leap uses the latest AI technology and is equipped with an AI double-check (refinement) function. This achieves natural, native-quality expressions that fit the context, rather than literal translations.
-                </div>
-            </details>
-
-            <details class="card p-md mb-sm" style="cursor: pointer;">
-                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">What happens if the original Japanese site changes?</summary>
-                <div class="mt-md text-secondary">
-                    It detects updates to the original site and automatically translates and reflects only the differences. It is possible to keep the multilingual versions constantly up to date.
-                </div>
-            </details>
-
-            <details class="card p-md mb-sm" style="cursor: pointer;">
-                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">Can I use a custom domain?</summary>
-                <div class="mt-md text-secondary">
-                    Yes, by using the paid plan (Standard), you can set up your own custom domain (e.g., en.yourcompany.com). The free plan uses a Leap subdomain.
-                </div>
-            </details>
-
-            <details class="card p-md mb-sm" style="cursor: pointer;">
-                <summary class="font-bold text-primary" style="font-size: var(--font-size-lg);">Can you tell me more about the pricing structure?</summary>
-                <div class="mt-md text-secondary">
-                    You can use the Free Plan forever if you only need 1 language. For the second language onwards, or if using a custom domain, a fee of 20,000 JPY (excluding tax) per added language applies.
-                </div>
-            </details>
-        </div>
-    </div>
-</section>
+<!-- セクション7：料金表 -->
+{% include "pricing.njk" %}
 
 {% include "cta1.njk" %}

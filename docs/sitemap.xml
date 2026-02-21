@@ -41,10 +41,6 @@
     <lastmod>2025-12-30T03:21:23.341Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/en/terms/</loc>
-    <lastmod>2025-12-30T03:21:23.343Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/en/tokushoho/</loc>
     <lastmod>2025-12-30T03:21:23.348Z</lastmod>
   </url>
@@ -57,10 +53,6 @@
     <lastmod>2025-12-30T03:21:23.354Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/terms/</loc>
-    <lastmod>2025-12-30T03:21:23.358Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/ja/tokushoho/</loc>
     <lastmod>2025-12-30T03:21:23.360Z</lastmod>
   </url>
@@ -69,28 +61,12 @@
     <lastmod>2025-12-30T03:21:23.487Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/zh-hans/terms/</loc>
-    <lastmod>2025-12-30T03:21:23.489Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/zh-hans/tokushoho/</loc>
     <lastmod>2025-12-30T03:21:23.492Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/en/resources/</loc>
-    <lastmod>2026-01-03T02:10:59.334Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/</loc>
     <lastmod>2026-01-03T02:10:59.336Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/resources/</loc>
-    <lastmod>2026-01-03T02:10:59.343Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/zh-hans/resources/</loc>
-    <lastmod>2026-01-03T02:10:59.354Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/en/pricing/</loc>
@@ -133,10 +109,6 @@
     <lastmod>2026-01-05T08:11:21.055Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/en/services/multilingual-website/</loc>
-    <lastmod>2026-01-05T08:11:21.057Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/ja/services/btob-matching/</loc>
     <lastmod>2026-01-05T08:11:21.058Z</lastmod>
   </url>
@@ -153,10 +125,6 @@
     <lastmod>2026-01-05T08:11:21.063Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/services/multilingual-website/</loc>
-    <lastmod>2026-01-05T08:11:21.066Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/zh-hans/services/btob-matching/</loc>
     <lastmod>2026-01-05T08:11:21.068Z</lastmod>
   </url>
@@ -171,10 +139,6 @@
   <url>
     <loc>https://www.leap.site/zh-hans/services/multilingual-content/</loc>
     <lastmod>2026-01-05T08:11:21.074Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/zh-hans/services/multilingual-website/</loc>
-    <lastmod>2026-01-05T08:11:21.075Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/blog/expansion/4p-strategy-and-localization-for-global-expansion/</loc>
@@ -413,10 +377,6 @@
     <lastmod>2026-01-08T00:00:00.000Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/blog/</loc>
-    <lastmod>2026-01-09T00:25:30.814Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/ja/blog/sales/product-localization-strategies/</loc>
     <lastmod>2026-01-10T00:00:00.000Z</lastmod>
   </url>
@@ -513,34 +473,6 @@
     <lastmod>2026-02-04T00:00:00.000Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/blog/list/</loc>
-    <lastmod>2026-02-04T01:54:20.271Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/blog/expansion/</loc>
-    <lastmod>2026-02-04T02:22:13.227Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/blog/sales/</loc>
-    <lastmod>2026-02-04T02:34:50.570Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/blog/ec/</loc>
-    <lastmod>2026-02-04T02:36:49.633Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/blog/countries/</loc>
-    <lastmod>2026-02-04T02:38:40.558Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/blog/partner/</loc>
-    <lastmod>2026-02-04T02:42:14.592Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/blog/marketing/</loc>
-    <lastmod>2026-02-04T02:45:21.783Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/ja/blog/countries/thailand/thailand-business-risk-bcp/</loc>
     <lastmod>2026-02-05T00:00:00.000Z</lastmod>
   </url>
@@ -587,5 +519,97 @@
   <url>
     <loc>https://www.leap.site/ja/blog/marketing/us-b2b-content-strategy-for-japanese-companies/</loc>
     <lastmod>2026-02-18T00:00:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/en/resources/</loc>
+    <lastmod>2026-02-21T06:06:58.990Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/en/services/multilingual-website/</loc>
+    <lastmod>2026-02-21T06:06:58.991Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/en/terms/</loc>
+    <lastmod>2026-02-21T06:06:58.992Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/countries/</loc>
+    <lastmod>2026-02-21T06:06:58.992Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/ec/</loc>
+    <lastmod>2026-02-21T06:06:59.013Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/expansion/</loc>
+    <lastmod>2026-02-21T06:06:59.014Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/</loc>
+    <lastmod>2026-02-21T06:06:59.014Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/list/</loc>
+    <lastmod>2026-02-21T06:06:59.015Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/marketing/</loc>
+    <lastmod>2026-02-21T06:06:59.016Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/partner/</loc>
+    <lastmod>2026-02-21T06:06:59.019Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/sales/</loc>
+    <lastmod>2026-02-21T06:06:59.019Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/resources/</loc>
+    <lastmod>2026-02-21T06:06:59.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/services/multilingual-website/</loc>
+    <lastmod>2026-02-21T06:06:59.025Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/terms/</loc>
+    <lastmod>2026-02-21T06:06:59.026Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/zh-hans/resources/</loc>
+    <lastmod>2026-02-21T06:06:59.027Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/zh-hans/services/multilingual-website/</loc>
+    <lastmod>2026-02-21T06:06:59.028Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/zh-hans/terms/</loc>
+    <lastmod>2026-02-21T06:06:59.029Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/services/multilingual-blog/</loc>
+    <lastmod>2026-02-21T13:58:35.088Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/services/ai-localize/</loc>
+    <lastmod>2026-02-21T14:10:57.190Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/en/services/ai-localize/</loc>
+    <lastmod>2026-02-21T14:47:57.469Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/en/services/multilingual-blog/</loc>
+    <lastmod>2026-02-21T14:48:48.144Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/zh-hans/services/ai-localize/</loc>
+    <lastmod>2026-02-21T14:56:44.095Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/zh-hans/services/multilingual-blog/</loc>
+    <lastmod>2026-02-21T14:57:29.491Z</lastmod>
   </url>
 </urlset>

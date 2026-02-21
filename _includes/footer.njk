@@ -6,17 +6,14 @@
                 <h3 id="footerFeaturesTitle">人気の機能</h3>
                 <ul>
                     <li><a href="/{{ locale }}/services/multilingual-website" id="footerWebsite">多言語HP作成</a></li>
-                    <li><a href="/{{ locale }}/services/cross-border-ec" id="footerEc">越境EC開設・運用</a></li>
-                    <li><a href="/{{ locale }}/services/multilingual-content" id="footerContent">多言語コンテンツ制作</a></li>
-                    <li><a href="/{{ locale }}/services/global-sns" id="footerSns">海外向けSNS運用</a></li>
-                    <li><a href="/{{ locale }}/services/btob-matching" id="footerMatching">代理店マッチング</a></li>
+                    <li><a href="/{{ locale }}/services/multilingual-blog" id="footerBlogService">多言語ブログ作成</a></li>
+                    <li><a href="/{{ locale }}/services/ai-localize" id="footerAiLocalize">AI自動ローカライズ</a></li>
                 </ul>
             </div>
 
             <div class="footer-column">
                 <h3 id="footerToolsTitle">無料ツール</h3>
                 <ul>
-                    <!-- ▼ 修正箇所: リンク先を /{{ locale }}/blog に変更（別タブ維持） -->
                     <li><a href="/{{ locale }}/blog" target="_blank" rel="noopener noreferrer" id="footerBlog">ブログ</a></li>
                     <li><a href="/{{ locale }}/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
                 </ul>
@@ -41,10 +38,8 @@
                 <div class="mobile-accordion-content">
                     <ul>
                         <li><a href="/{{ locale }}/services/multilingual-website" id="footerMobileWebsite">多言語HP作成</a></li>
-                        <li><a href="/{{ locale }}/services/cross-border-ec" id="footerMobileEc">越境EC開設・運用</a></li>
-                        <li><a href="/{{ locale }}/services/multilingual-content" id="footerMobileContent">多言語コンテンツ制作</a></li>
-                        <li><a href="/{{ locale }}/services/global-sns" id="footerMobileSns">海外向けSNS運用</a></li>
-                        <li><a href="/{{ locale }}/services/btob-matching" id="footerMobileMatching">代理店マッチング</a></li>
+                        <li><a href="/{{ locale }}/services/multilingual-blog" id="footerMobileBlogService">多言語ブログ作成</a></li>
+                        <li><a href="/{{ locale }}/services/ai-localize" id="footerMobileAiLocalize">AI自動ローカライズ</a></li>
                     </ul>
                 </div>
             </div>
@@ -56,7 +51,6 @@
                 </button>
                 <div class="mobile-accordion-content">
                     <ul>
-                        <!-- ▼ 修正箇所: リンク先を /{{ locale }}/blog に変更（別タブ維持） -->
                         <li><a href="/{{ locale }}/blog" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">ブログ</a></li>
                         <li><a href="/{{ locale }}/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
                     </ul>
@@ -116,3 +110,114 @@
         </div>
     </div>
 </footer>
+
+<!-- ============================================
+     多言語化ロジック (JavaScript) - Footer用
+============================================= -->
+<script>
+(function() {
+    const footerTranslations = {
+        ja: {
+            featuresTitle: "人気の機能",
+            website: "多言語HP作成",
+            blogService: "多言語ブログ作成",
+            aiLocalize: "AI自動ローカライズ",
+            toolsTitle: "無料ツール",
+            blog: "ブログ",
+            resources: "資料ダウンロード",
+            companyTitle: "会社",
+            about: "会社概要",
+            contact: "お問い合わせ",
+            privacy: "プライバシーポリシー",
+            terms: "利用規約",
+            commerce: "特定商取引法に基づく表示",
+            withdrawal: "退会規定"
+        },
+        en: {
+            featuresTitle: "Popular Features",
+            website: "Multilingual Website",
+            blogService: "Multilingual Blog",
+            aiLocalize: "AI Localization",
+            toolsTitle: "Free Tools",
+            blog: "Blog",
+            resources: "Downloads",
+            companyTitle: "Company",
+            about: "About Us",
+            contact: "Contact Us",
+            privacy: "Privacy Policy",
+            terms: "Terms of Service",
+            commerce: "Commercial Transaction Act",
+            withdrawal: "Withdrawal Policy"
+        },
+        'zh-hans': {
+            featuresTitle: "热门功能",
+            website: "多语言建站",
+            blogService: "多语言博客",
+            aiLocalize: "AI本地化",
+            toolsTitle: "免费工具",
+            blog: "博客",
+            resources: "资料下载",
+            companyTitle: "公司",
+            about: "公司简介",
+            contact: "联系我们",
+            privacy: "隐私政策",
+            terms: "使用条款",
+            commerce: "特定商业交易法",
+            withdrawal: "退会规定"
+        }
+    };
+
+    function getFooterLanguage() {
+        const path = window.location.pathname;
+        const match = path.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+        if (!match) return 'ja';
+        return match[1] === 'jp' ? 'ja' : match[1];
+    }
+
+    function updateFooterContent() {
+        const lang = getFooterLanguage();
+        const t = footerTranslations[lang] || footerTranslations['ja'];
+
+        const setText = (id, text) => {
+            const el = document.getElementById(id);
+            if (el) el.textContent = text;
+        };
+
+        // Desktop
+        setText('footerFeaturesTitle', t.featuresTitle);
+        setText('footerWebsite', t.website);
+        setText('footerBlogService', t.blogService);
+        setText('footerAiLocalize', t.aiLocalize);
+        
+        setText('footerToolsTitle', t.toolsTitle);
+        setText('footerBlog', t.blog);
+        setText('footerResources', t.resources);
+        
+        setText('footerCompanyTitle', t.companyTitle);
+        setText('footerAbout', t.about);
+        setText('footerContact', t.contact);
+
+        // Mobile
+        setText('footerMobileFeaturesTitle', t.featuresTitle);
+        setText('footerMobileWebsite', t.website);
+        setText('footerMobileBlogService', t.blogService);
+        setText('footerMobileAiLocalize', t.aiLocalize);
+        
+        setText('footerMobileToolsTitle', t.toolsTitle);
+        setText('footerMobileBlog', t.blog);
+        setText('footerMobileResources', t.resources);
+        
+        setText('footerMobileCompanyTitle', t.companyTitle);
+        setText('footerMobileAbout', t.about);
+        setText('footerMobileContact', t.contact);
+
+        // Legal
+        setText('footerPrivacy', t.privacy);
+        setText('footerTerms', t.terms);
+        setText('footerCommerce', t.commerce);
+        setText('footerWithdrawal', t.withdrawal);
+    }
+
+    document.addEventListener('DOMContentLoaded', updateFooterContent);
+})();
+</script>
