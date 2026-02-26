@@ -1,0 +1,104 @@
+---
+layout: base.njk
+title: 多言語HP作成の完全ガイド | Leap
+description: 中国語・英語・韓国語など、言語ごとのHP作成に必要な知識をまとめたガイドです。
+---
+
+<!-- HERO SECTION -->
+<section class="section py-md" style="background: var(--color-primary-gradient); color: var(--color-white); overflow: hidden;">
+    <div class="container">
+        <div style="display: flex; align-items: stretch; gap: var(--space-2xl); flex-wrap: wrap;">
+            
+            <!-- 左：タイトル＋説明（2） -->
+            <div style="flex: 2; min-width: 280px; display: flex; flex-direction: column; justify-content: center;">
+                <h1 class="text-white mb-md">多言語HP作成の完全ガイド</h1>
+                <p class="text-white mb-xl" style="font-size: var(--font-size-lg); opacity: 0.9;">
+                    中国語・英語・韓国語など、言語ごとのHP作成に必要な<br>
+                    注意点・テンプレート・成功事例をまとめました。
+                </p>
+                <a href="#guides-section" class="btn btn-xl btn-white" style="align-self: flex-start;">
+                    言語ガイドを見る ↓
+                </a>
+            </div>
+
+            <!-- 右：Leapの使い方ボックス（1）SP非表示 -->
+            <div class="hero-right-box" style="flex: 1.5; min-width: 320px; background: var(--color-white); border-radius: 12px; padding: 60px; text-align: center; margin-top: -60px; margin-bottom: -60px; overflow: hidden;">
+                <img 
+                    src="https://res.cloudinary.com/duh6rnjba/image/upload/v1771677333/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-02-21_21.35.25_ose8qa.png"
+                    alt="Leapの画面"
+                    style="width: 100%; max-height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: var(--space-md); box-shadow: 0 4px 20px rgba(0,0,0,0.1);"
+                >
+                <a href="/{{ locale }}/hp-guide/leap-howto/" class="btn btn-xl btn-primary" style="width: 100%; border: 2px solid var(--color-white);">
+                    Leapの使い方を見る →
+                </a>
+            </div>
+
+            <!-- SP時のみ表示：Leapの使い方ボタン -->
+            <div class="hero-sp-btn">
+                <a href="/{{ locale }}/hp-guide/leap-howto/" class="btn btn-xl btn-primary" style="width: 100%; border: 2px solid var(--color-white);">
+                    Leapの使い方を見る →
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+@media (max-width: 768px) {
+    .hero-right-box {
+        display: none !important;
+    }
+    .hero-sp-btn {
+        display: block;
+        width: 100%;
+        margin-top: calc(-1 * var(--space-xl));
+    }
+    .hero-sp-btn .btn {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .hero-sp-btn {
+        display: none;
+    }
+}
+</style>
+
+<!-- GUIDES SECTION -->
+<section id="guides-section" class="section py-xl bg-beige">
+    <div class="container">
+        <h2 class="text-center mb-lg" style="font-size: var(--font-size-3xl);">言語別HP作成ガイド</h2>
+
+        <div class="grid-3">
+            {% for post in collections.all %}
+                {% if post.data.type == "language-guide" and post.data.locale == "ja" %}
+                    <a href="{{ post.url }}"
+                       class="card p-0"
+                       style="overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; text-decoration: none; color: inherit;">
+
+                        <!-- アイコンエリア -->
+                        <div style="background-color: var(--color-background); height: 160px; display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 3rem;">{{ post.data.icon | default('🌐') }}</span>
+                        </div>
+
+                        <!-- コンテンツエリア -->
+                        <div class="px-lg py-lg" style="flex: 1; display: flex; flex-direction: column;">
+                            <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--space-sm);">
+                                {{ post.data.title }}
+                            </h3>
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: var(--font-size-sm);">
+                                {{ post.data.description }}
+                            </p>
+                            <span class="text-primary font-bold">
+                                詳しく見る &rarr;
+                            </span>
+                        </div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -88,7 +88,6 @@
     <div class="header-main">
         <div class="header-main-content">
             <div class="nav-left">
-                <!-- ロゴ画像を挿入 -->
                 <a href="/ja/" class="logo-link">
                     <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="logo-img">
                 </a>
@@ -108,6 +107,7 @@
                         <div class="dropdown-menu">
                             <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
                             <a href="/ja/blog" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">ブログ</a>
+                            <a href="/ja/hp-guide" target="_blank" class="dropdown-item" id="resourceHpGuide">HP作成ガイド</a>
                         </div>
                     </div>
                 </nav>
@@ -117,7 +117,6 @@
                 <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="btn btn-start" id="startBtn">無料スタート</a>
             </div>
 
-            <!-- ハンバーガーメニュー -->
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -158,6 +157,7 @@
             <div class="mobile-dropdown-content">
                 <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
                 <a href="/ja/blog" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">ブログ</a>
+                <a href="/ja/hp-guide" target="_blank" class="mobile-dropdown-item" id="mobileResourceHpGuide">HP作成ガイド</a>
             </div>
         </div>
 
@@ -172,9 +172,6 @@
     </div>
 </div>
 
-<!-- ============================================
-     多言語化ロジック (JavaScript)
-============================================= -->
 <script>
 (function() {
     const translations = {
@@ -190,10 +187,9 @@
             resourcesLabel: "資料 ▼",
             resourceDownload: "資料ダウンロード",
             resourceBlog: "ブログ",
+            resourceHpGuide: "HP作成ガイド",
             demo: "デモを申し込む",
             start: "無料スタート",
-            
-            // モバイル専用
             mobileHome: "ホーム",
             mobileServicesText: "サービス",
             mobileResourcesText: "資料",
@@ -211,10 +207,9 @@
             resourcesLabel: "Resources ▼",
             resourceDownload: "Downloads",
             resourceBlog: "Blog",
+            resourceHpGuide: "Website Creation Guide",
             demo: "Request Demo",
             start: "Start for Free",
-            
-            // モバイル専用
             mobileHome: "Home",
             mobileServicesText: "Services",
             mobileResourcesText: "Resources",
@@ -232,10 +227,9 @@
             resourcesLabel: "资料 ▼",
             resourceDownload: "资料下载",
             resourceBlog: "博客",
+            resourceHpGuide: "建站指南",
             demo: "申请演示",
             start: "免费开始",
-            
-            // モバイル専用
             mobileHome: "首页",
             mobileServicesText: "服务",
             mobileResourcesText: "资料",
@@ -259,14 +253,9 @@
             if (el) el.textContent = text;
         };
 
-        // 言語表示
         setText('currentLang', t.langName);
-
-        // トップリンク
         setText('loginLink', t.login);
         setText('aboutLink', t.about);
-
-        // メインナビゲーション (PC)
         setText('servicesLabel', t.servicesLabel);
         setText('serviceWebsite', t.serviceWebsite);
         setText('serviceBlog', t.serviceBlog);
@@ -275,10 +264,9 @@
         setText('resourcesLabel', t.resourcesLabel);
         setText('resourceDownload', t.resourceDownload);
         setText('resourceBlog', t.resourceBlog);
+        setText('resourceHpGuide', t.resourceHpGuide);
         setText('demoBtn', t.demo);
         setText('startBtn', t.start);
-
-        // モバイルナビゲーション
         setText('mobileHome', t.mobileHome);
         setText('mobileServicesText', t.mobileServicesText);
         setText('mobileServiceWebsite', t.serviceWebsite);
@@ -288,6 +276,7 @@
         setText('mobileResourcesText', t.mobileResourcesText);
         setText('mobileResourceDownload', t.resourceDownload);
         setText('mobileResourceBlog', t.resourceBlog);
+        setText('mobileResourceHpGuide', t.resourceHpGuide);
         setText('mobileAbout', t.about);
         setText('mobileDemoBtn', t.demo);
         setText('mobileStartBtn', t.mobileStart);
@@ -1031,6 +1020,7 @@
                 <ul>
                     <li><a href="/ja/blog" target="_blank" rel="noopener noreferrer" id="footerBlog">ブログ</a></li>
                     <li><a href="/ja/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
+                    <li><a href="/ja/hp-guide" target="_blank" id="footerHpGuide">HP作成ガイド</a></li>
                 </ul>
             </div>
 
@@ -1068,6 +1058,7 @@
                     <ul>
                         <li><a href="/ja/blog" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">ブログ</a></li>
                         <li><a href="/ja/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
+                        <li><a href="/ja/hp-guide" target="_blank" id="footerMobileHpGuide">HP作成ガイド</a></li>
                     </ul>
                 </div>
             </div>
@@ -1107,7 +1098,6 @@
         </div>
 
         <div class="footer-brand">
-            <!-- ロゴ画像 -->
             <a href="/ja/" class="footer-logo-link">
                 <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="footer-logo-img">
             </a>
@@ -1126,9 +1116,6 @@
     </div>
 </footer>
 
-<!-- ============================================
-     多言語化ロジック (JavaScript) - Footer用
-============================================= -->
 <script>
 (function() {
     const footerTranslations = {
@@ -1140,6 +1127,7 @@
             toolsTitle: "無料ツール",
             blog: "ブログ",
             resources: "資料ダウンロード",
+            hpGuide: "HP作成ガイド",
             companyTitle: "会社",
             about: "会社概要",
             contact: "お問い合わせ",
@@ -1156,6 +1144,7 @@
             toolsTitle: "Free Tools",
             blog: "Blog",
             resources: "Downloads",
+            hpGuide: "Website Creation Guide",
             companyTitle: "Company",
             about: "About Us",
             contact: "Contact Us",
@@ -1172,6 +1161,7 @@
             toolsTitle: "免费工具",
             blog: "博客",
             resources: "资料下载",
+            hpGuide: "建站指南",
             companyTitle: "公司",
             about: "公司简介",
             contact: "联系我们",
@@ -1203,11 +1193,10 @@
         setText('footerWebsite', t.website);
         setText('footerBlogService', t.blogService);
         setText('footerAiLocalize', t.aiLocalize);
-        
         setText('footerToolsTitle', t.toolsTitle);
         setText('footerBlog', t.blog);
         setText('footerResources', t.resources);
-        
+        setText('footerHpGuide', t.hpGuide);
         setText('footerCompanyTitle', t.companyTitle);
         setText('footerAbout', t.about);
         setText('footerContact', t.contact);
@@ -1217,11 +1206,10 @@
         setText('footerMobileWebsite', t.website);
         setText('footerMobileBlogService', t.blogService);
         setText('footerMobileAiLocalize', t.aiLocalize);
-        
         setText('footerMobileToolsTitle', t.toolsTitle);
         setText('footerMobileBlog', t.blog);
         setText('footerMobileResources', t.resources);
-        
+        setText('footerMobileHpGuide', t.hpGuide);
         setText('footerMobileCompanyTitle', t.companyTitle);
         setText('footerMobileAbout', t.about);
         setText('footerMobileContact', t.contact);

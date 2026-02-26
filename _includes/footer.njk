@@ -16,6 +16,7 @@
                 <ul>
                     <li><a href="/{{ locale }}/blog" target="_blank" rel="noopener noreferrer" id="footerBlog">ブログ</a></li>
                     <li><a href="/{{ locale }}/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
+                    <li><a href="/{{ locale }}/hp-guide" target="_blank" id="footerHpGuide">HP作成ガイド</a></li>
                 </ul>
             </div>
 
@@ -53,6 +54,7 @@
                     <ul>
                         <li><a href="/{{ locale }}/blog" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">ブログ</a></li>
                         <li><a href="/{{ locale }}/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
+                        <li><a href="/{{ locale }}/hp-guide" target="_blank" id="footerMobileHpGuide">HP作成ガイド</a></li>
                     </ul>
                 </div>
             </div>
@@ -92,7 +94,6 @@
         </div>
 
         <div class="footer-brand">
-            <!-- ロゴ画像 -->
             <a href="/{{ locale }}/" class="footer-logo-link">
                 <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="footer-logo-img">
             </a>
@@ -111,9 +112,6 @@
     </div>
 </footer>
 
-<!-- ============================================
-     多言語化ロジック (JavaScript) - Footer用
-============================================= -->
 <script>
 (function() {
     const footerTranslations = {
@@ -125,6 +123,7 @@
             toolsTitle: "無料ツール",
             blog: "ブログ",
             resources: "資料ダウンロード",
+            hpGuide: "HP作成ガイド",
             companyTitle: "会社",
             about: "会社概要",
             contact: "お問い合わせ",
@@ -141,6 +140,7 @@
             toolsTitle: "Free Tools",
             blog: "Blog",
             resources: "Downloads",
+            hpGuide: "Website Creation Guide",
             companyTitle: "Company",
             about: "About Us",
             contact: "Contact Us",
@@ -157,6 +157,7 @@
             toolsTitle: "免费工具",
             blog: "博客",
             resources: "资料下载",
+            hpGuide: "建站指南",
             companyTitle: "公司",
             about: "公司简介",
             contact: "联系我们",
@@ -188,11 +189,10 @@
         setText('footerWebsite', t.website);
         setText('footerBlogService', t.blogService);
         setText('footerAiLocalize', t.aiLocalize);
-        
         setText('footerToolsTitle', t.toolsTitle);
         setText('footerBlog', t.blog);
         setText('footerResources', t.resources);
-        
+        setText('footerHpGuide', t.hpGuide);
         setText('footerCompanyTitle', t.companyTitle);
         setText('footerAbout', t.about);
         setText('footerContact', t.contact);
@@ -202,11 +202,10 @@
         setText('footerMobileWebsite', t.website);
         setText('footerMobileBlogService', t.blogService);
         setText('footerMobileAiLocalize', t.aiLocalize);
-        
         setText('footerMobileToolsTitle', t.toolsTitle);
         setText('footerMobileBlog', t.blog);
         setText('footerMobileResources', t.resources);
-        
+        setText('footerMobileHpGuide', t.hpGuide);
         setText('footerMobileCompanyTitle', t.companyTitle);
         setText('footerMobileAbout', t.about);
         setText('footerMobileContact', t.contact);
