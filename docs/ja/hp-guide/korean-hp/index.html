@@ -4,20 +4,20 @@
 
 <link rel="icon" href="/assets/favicon.png">
 
-<title>多言語HP作成の完全ガイド | Leap</title>
-  <meta name="description" content="中国語・英語・韓国語など、言語ごとのHP作成に必要な知識をまとめたガイドです。">
+<title>韓国語HP作成ガイド</title>
+  <meta name="description" content="韓国語のHP作成に必要な注意点・テンプレート・成功事例をまとめました。">
 
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.leap.site/ja/hp-guide/">
-  <meta property="og:title" content="多言語HP作成の完全ガイド | Leap">
-  <meta property="og:description" content="中国語・英語・韓国語など、言語ごとのHP作成に必要な知識をまとめたガイドです。">
+  <meta property="og:url" content="https://www.leap.site/ja/hp-guide/korean-hp/">
+  <meta property="og:title" content="韓国語HP作成ガイド">
+  <meta property="og:description" content="韓国語のHP作成に必要な注意点・テンプレート・成功事例をまとめました。">
   <meta property="og:image" content="https://www.leap.site/assets/og-image.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="多言語HP作成の完全ガイド | Leap">
-  <meta property="twitter:description" content="中国語・英語・韓国語など、言語ごとのHP作成に必要な知識をまとめたガイドです。">
+  <meta property="twitter:title" content="韓国語HP作成ガイド">
+  <meta property="twitter:description" content="韓国語のHP作成に必要な注意点・テンプレート・成功事例をまとめました。">
   <meta property="twitter:image" content="https://www.leap.site/assets/og-image.png">
 
     <!-- Google tag (gtag.js) -->
@@ -40,8 +40,8 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="中国語・英語・韓国語など、言語ごとのHP作成に必要な知識をまとめたガイドです。">
-    <title>多言語HP作成の完全ガイド | Leap</title>
+    <meta name="description" content="韓国語のHP作成に必要な注意点・テンプレート・成功事例をまとめました。">
+    <title>韓国語HP作成ガイド</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
@@ -289,24 +289,28 @@
     <!-- Main Content -->
     <main id="main-content">
         
+<!-- _includes/language-guide.njk -->
+
 <!-- HERO SECTION -->
 <section class="section py-md" style="background: var(--color-primary-gradient); color: var(--color-white); overflow: hidden;">
     <div class="container">
         <div style="display: flex; align-items: stretch; gap: var(--space-2xl); flex-wrap: wrap;">
-            
-            <!-- 左：タイトル＋説明（2） -->
+
+            <!-- 左：タイトル＋説明 -->
             <div style="flex: 2; min-width: 280px; display: flex; flex-direction: column; justify-content: center;">
-                <h1 class="text-white mb-md">多言語HP作成の完全ガイド</h1>
+                <a href="/ja/hp-guide/" style="font-size: var(--font-size-sm); color: rgba(255,255,255,0.7); text-decoration: none; margin-bottom: var(--space-md); display: inline-block;">
+                    ← HP作成ガイドに戻る
+                </a>
+                <h1 class="text-white mb-md">韓国語HP作成ガイド</h1>
                 <p class="text-white mb-xl" style="font-size: var(--font-size-lg); opacity: 0.9;">
-                    中国語・英語・韓国語など、言語ごとのHP作成に必要な<br>
-                    注意点・テンプレート・成功事例をまとめました。
+                    韓国語のHP作成に必要な注意点・テンプレート・成功事例をまとめました。
                 </p>
                 <a href="#guides-section" class="btn btn-xl btn-white" style="align-self: flex-start;">
-                    言語ガイドを見る ↓
+                    ガイドを見る ↓
                 </a>
             </div>
 
-            <!-- 右：Leapの使い方ボックス（1）SP非表示 -->
+            <!-- 右：Leapの使い方ボックス（PC） -->
             <div class="hero-right-box" style="flex: 1.5; min-width: 320px; background: var(--color-white); border-radius: 12px; padding: 60px; text-align: center; margin-top: -60px; margin-bottom: -60px; overflow: hidden;">
                 <img 
                     src="https://res.cloudinary.com/duh6rnjba/image/upload/v1771677333/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-02-21_21.35.25_ose8qa.png"
@@ -318,7 +322,7 @@
                 </a>
             </div>
 
-            <!-- SP時のみ表示：Leapの使い方ボタン -->
+            <!-- SP時のみ：Leapの使い方ボタン -->
             <div class="hero-sp-btn">
                 <a href="/ja/hp-guide/leap-howto/" class="btn btn-xl btn-primary" style="width: 100%; border: 2px solid var(--color-white);">
                     Leapの使い方を見る →
@@ -329,33 +333,10 @@
     </div>
 </section>
 
-<style>
-@media (max-width: 768px) {
-    .hero-right-box {
-        display: none !important;
-    }
-    .hero-sp-btn {
-        display: block;
-        width: 100%;
-        margin-top: calc(-1 * var(--space-xl));
-    }
-    .hero-sp-btn .btn {
-        text-align: center;
-        justify-content: center;
-    }
-}
-
-@media (min-width: 769px) {
-    .hero-sp-btn {
-        display: none;
-    }
-}
-</style>
-
 <!-- GUIDES SECTION -->
 <section id="guides-section" class="section py-xl bg-beige">
     <div class="container">
-        <h2 class="text-center mb-lg" style="font-size: var(--font-size-3xl);">言語別HP作成ガイド</h2>
+        <h2 class="text-center mb-lg" style="font-size: var(--font-size-3xl);">ガイド一覧</h2>
 
         <div class="grid-3">
             
@@ -674,76 +655,241 @@
                 
             
                 
-                    <a href="/ja/hp-guide/chinese-hp/"
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="/ja/hp-guide/korean-hp/caution/"
                        class="card p-0"
                        style="overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; text-decoration: none; color: inherit;">
 
-                        <!-- アイコンエリア -->
-                        <div style="background-color: var(--color-background); height: 160px; display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 3rem;">🇨🇳</span>
-                        </div>
-
-                        <!-- コンテンツエリア -->
                         <div class="px-lg py-lg" style="flex: 1; display: flex; flex-direction: column;">
                             <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--space-sm);">
-                                中国語HP作成ガイド
+                                韓国語ホームページ作成の注意点・完全ガイド
                             </h3>
                             <p class="text-secondary mb-lg" style="flex: 1; font-size: var(--font-size-sm);">
-                                中国語のHP作成に必要な注意点・テンプレート・成功事例をまとめました。
+                                
                             </p>
                             <span class="text-primary font-bold">
                                 詳しく見る &rarr;
                             </span>
                         </div>
                     </a>
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-                    <a href="/ja/hp-guide/korean-hp/"
-                       class="card p-0"
-                       style="overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; text-decoration: none; color: inherit;">
-
-                        <!-- アイコンエリア -->
-                        <div style="background-color: var(--color-background); height: 160px; display: flex; align-items: center; justify-content: center;">
-                            <span style="font-size: 3rem;">🇰🇷</span>
-                        </div>
-
-                        <!-- コンテンツエリア -->
-                        <div class="px-lg py-lg" style="flex: 1; display: flex; flex-direction: column;">
-                            <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--space-sm);">
-                                韓国語HP作成ガイド
-                            </h3>
-                            <p class="text-secondary mb-lg" style="flex: 1; font-size: var(--font-size-sm);">
-                                韓国語のHP作成に必要な注意点・テンプレート・成功事例をまとめました。
-                            </p>
-                            <span class="text-primary font-bold">
-                                詳しく見る &rarr;
-                            </span>
-                        </div>
-                    </a>
-                
-            
                 
             
         </div>
     </div>
 </section>
+
+<!-- CTA Section Component -->
+<style>
+    /* ===================================
+       CTA Section Styles (Self-contained)
+       =================================== */
+    .section-cta {
+        background-color: #26000a; /* Deep dark red/black */
+        color: #ffffff;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cta-image-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cta-blob-background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 120%;
+        height: 120%;
+        background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        z-index: 0;
+        opacity: 0.8;
+        max-width: 550px;
+    }
+
+    .cta-image {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 500px;
+        aspect-ratio: 4 / 3;
+        margin: 0 auto;
+        object-fit: cover;
+        border-radius: 8px; /* var(--radius-lg) fallback */
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* var(--shadow-2xl) fallback */
+    }
+
+    .btn-cta-primary {
+        background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+        color: #ffffff;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 14px 0 rgba(193, 0, 51, 0.4);
+    }
+    
+    .btn-cta-primary:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
+        color: #ffffff;
+    }
+
+    .btn-cta-outline {
+        background: transparent;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+    }
+
+    .btn-cta-outline:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+    }
+</style>
+
+<section class="section section-cta py-3xl">
+    <div class="container">
+        <div class="grid-2 items-center" style="gap: 3rem;">
+            
+            <!-- Left: Image & Decoration -->
+            <div class="cta-image-wrapper">
+                <div class="cta-blob-background"></div>
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Leap global business" class="cta-image">
+            </div>
+
+            <!-- Right: Text & Buttons -->
+            <div class="text-left">
+                <h2 id="cta-title" class="mb-lg text-white" style="font-size: 2.25rem;">
+                    <!-- JSで書き換え -->
+                    Leapでグローバルに<br>飛躍しましょう。
+                </h2>
+                
+                <p id="cta-subtitle" class="mb-lg text-white font-bold" style="font-size: 1.125rem; line-height: 1.6;">
+                    <!-- JSで書き換え -->
+                    海外売上を伸ばすためのオールインワンツール
+                </p>
+                
+                <p id="cta-desc" class="mb-xl text-white" style="line-height: 1.8; opacity: 0.9;">
+                    <!-- JSで書き換え -->
+                    多言語HP作成、越境ECの開設・運用、多言語コンテンツ制作、海外向けSNS運用、そして現地の代理店マッチングまで。<br>
+                    Leapなら、複雑な海外展開のプロセスを一元管理し、効率的に海外売上を拡大させることができます。
+                </p>
+                
+                <div class="flex flex-wrap" style="gap: 1rem;">
+                    <a id="cta-demo-btn" href="/ja/about/#contact" class="btn btn-lg btn-cta-primary">
+                        <!-- JSで書き換え -->
+                        デモを申し込む &rarr;
+                    </a>
+                    <a id="cta-free-btn" href="https://app.leap.site" class="btn btn-lg btn-cta-outline">
+                        <!-- JSで書き換え -->
+                        無料で試してみる &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+(function() {
+    // 翻訳データ定義
+    const ctaTranslations = {
+        ja: {
+            title: 'Leapでグローバルに<br>飛躍しましょう。',
+            subtitle: '海外売上を伸ばすためのオールインワンツール',
+            desc: '多言語HP作成、越境ECの開設・運用、多言語コンテンツ制作、海外向けSNS運用、そして現地の代理店マッチングまで。<br>Leapなら、複雑な海外展開のプロセスを一元管理し、効率的に海外売上を拡大させることができます。',
+            demo: 'デモを申し込む &rarr;',
+            free: '無料で試してみる &rarr;'
+        },
+        en: {
+            title: 'Leap into the Global Market.',
+            subtitle: 'The All-in-One Tool to Boost International Sales',
+            desc: 'From multilingual website creation and cross-border EC management to global content production, SNS marketing, and local partner matching.<br>Leap centralizes the complex process of global expansion, enabling you to efficiently scale your overseas revenue.',
+            demo: 'Request a Demo &rarr;',
+            free: 'Try for Free &rarr;'
+        },
+        'zh-hans': {
+            title: '使用 Leap 实现<br>全球业务飞跃。',
+            subtitle: '提升海外销售额的一站式工具',
+            desc: '多语言网站制作、跨境电商开设运营、多语言内容制作、面向海外的社交媒体运营，以及当地代理商匹配。<br>Leap 能够一元化管理复杂的海外拓展流程，高效助力您的海外销售额增长。',
+            demo: '申请演示 &rarr;',
+            free: '免费试用 &rarr;'
+        }
+    };
+
+    // 現在の言語を取得 (header.jsと同じロジック)
+    function getCtaLanguage() {
+        const path = window.location.pathname;
+        const match = path.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+        if (!match) return 'ja';
+        return match[1] === 'jp' ? 'ja' : match[1];
+    }
+
+    // コンテンツ更新処理
+    function updateCtaContent() {
+        const lang = getCtaLanguage();
+        const t = ctaTranslations[lang] || ctaTranslations['ja']; // フォールバック
+
+        const titleEl = document.getElementById('cta-title');
+        const subtitleEl = document.getElementById('cta-subtitle');
+        const descEl = document.getElementById('cta-desc');
+        const demoBtnEl = document.getElementById('cta-demo-btn');
+        const freeBtnEl = document.getElementById('cta-free-btn');
+
+        if (titleEl) titleEl.innerHTML = t.title;
+        if (subtitleEl) subtitleEl.textContent = t.subtitle;
+        if (descEl) descEl.innerHTML = t.desc;
+        if (demoBtnEl) demoBtnEl.innerHTML = t.demo;
+        if (freeBtnEl) freeBtnEl.innerHTML = t.free;
+    }
+
+    // 実行
+    document.addEventListener('DOMContentLoaded', updateCtaContent);
+})();
+</script>
+
+<style>
+@media (max-width: 768px) {
+    .hero-right-box {
+        display: none !important;
+    }
+    .hero-sp-btn {
+        display: block;
+        width: 100%;
+        margin-top: calc(-1 * var(--space-xl));
+    }
+    .hero-sp-btn .btn {
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media (min-width: 769px) {
+    .hero-sp-btn {
+        display: none;
+    }
+}
+</style>
     </main>
     
     <!-- Footer -->
