@@ -58,9 +58,7 @@
 </head>
 <body>
     <!-- Header -->
-    <!-- ヘッダー -->
-<header class="header-container" id="header">
-    <!-- 1行目：小さい行 -->
+    <header class="header-container" id="header">
     <div class="header-top" id="headerTop">
         <div class="header-top-content">
             <div class="header-top-left">
@@ -84,7 +82,6 @@
         </div>
     </div>
 
-    <!-- 2行目：メインナビゲーション -->
     <div class="header-main">
         <div class="header-main-content">
             <div class="nav-left">
@@ -96,8 +93,9 @@
                     <div class="nav-item">
                         <span class="nav-link" id="servicesLabel">サービス ▼</span>
                         <div class="dropdown-menu">
-                            <a href="/ja/services/multilingual-website" class="dropdown-item" id="serviceWebsite">多言語HP作成</a>
+                            <a href="/ja/services/multilingual-website" class="dropdown-item" id="serviceWebsite">多言語HP・LP作成</a>
                             <a href="/ja/services/multilingual-blog" class="dropdown-item" id="serviceBlog">多言語ブログ作成</a>
+                            <a href="/ja/services/multilingual-ec" class="dropdown-item" id="serviceEc">多言語EC（越境EC）制作</a>
                             <a href="/ja/services/ai-localize" class="dropdown-item" id="serviceAiLocalize">AI自動ローカライズ</a>
                         </div>
                     </div>
@@ -126,7 +124,6 @@
     </div>
 </header>
 
-<!-- モバイルメニュー -->
 <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-content">
         <div class="mobile-nav-item">
@@ -139,8 +136,9 @@
                 <span>▼</span>
             </div>
             <div class="mobile-dropdown-content">
-                <a href="/ja/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">多言語HP作成</a>
+                <a href="/ja/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">多言語HP・LP作成</a>
                 <a href="/ja/services/multilingual-blog" class="mobile-dropdown-item" id="mobileServiceBlog">多言語ブログ作成</a>
+                <a href="/ja/services/multilingual-ec" class="mobile-dropdown-item" id="mobileServiceEc">多言語EC（越境EC）制作</a>
                 <a href="/ja/services/ai-localize" class="mobile-dropdown-item" id="mobileServiceAiLocalize">AI自動ローカライズ</a>
             </div>
         </div>
@@ -180,8 +178,9 @@
             login: "ログイン",
             about: "会社概要",
             servicesLabel: "サービス ▼",
-            serviceWebsite: "多言語HP作成",
+            serviceWebsite: "多言語HP・LP作成",
             serviceBlog: "多言語ブログ作成",
+            serviceEc: "多言語EC（越境EC）制作",
             serviceAiLocalize: "AI自動ローカライズ",
             pricing: "価格",
             resourcesLabel: "資料 ▼",
@@ -200,8 +199,9 @@
             login: "Login",
             about: "About Us",
             servicesLabel: "Services ▼",
-            serviceWebsite: "Multilingual Website",
+            serviceWebsite: "Multilingual Website & LP",
             serviceBlog: "Multilingual Blog",
+            serviceEc: "Cross-border EC",
             serviceAiLocalize: "AI Localization",
             pricing: "Pricing",
             resourcesLabel: "Resources ▼",
@@ -220,8 +220,9 @@
             login: "登录",
             about: "公司简介",
             servicesLabel: "服务 ▼",
-            serviceWebsite: "多语言建站",
+            serviceWebsite: "多语言建站・LP制作",
             serviceBlog: "多语言博客",
+            serviceEc: "跨境电商制作",
             serviceAiLocalize: "AI本地化",
             pricing: "价格方案",
             resourcesLabel: "资料 ▼",
@@ -259,6 +260,7 @@
         setText('servicesLabel', t.servicesLabel);
         setText('serviceWebsite', t.serviceWebsite);
         setText('serviceBlog', t.serviceBlog);
+        setText('serviceEc', t.serviceEc);
         setText('serviceAiLocalize', t.serviceAiLocalize);
         setText('pricingLink', t.pricing);
         setText('resourcesLabel', t.resourcesLabel);
@@ -271,6 +273,7 @@
         setText('mobileServicesText', t.mobileServicesText);
         setText('mobileServiceWebsite', t.serviceWebsite);
         setText('mobileServiceBlog', t.serviceBlog);
+        setText('mobileServiceEc', t.serviceEc);
         setText('mobileServiceAiLocalize', t.serviceAiLocalize);
         setText('mobilePricing', t.pricing);
         setText('mobileResourcesText', t.mobileResourcesText);
@@ -1694,8 +1697,9 @@
             <div class="footer-column">
                 <h3 id="footerFeaturesTitle">人気の機能</h3>
                 <ul>
-                    <li><a href="/ja/services/multilingual-website" id="footerWebsite">多言語HP作成</a></li>
+                    <li><a href="/ja/services/multilingual-website" id="footerWebsite">多言語HP・LP作成</a></li>
                     <li><a href="/ja/services/multilingual-blog" id="footerBlogService">多言語ブログ作成</a></li>
+                    <li><a href="/ja/services/multilingual-ec" id="footerEc">多言語EC（越境EC）制作</a></li>
                     <li><a href="/ja/services/ai-localize" id="footerAiLocalize">AI自動ローカライズ</a></li>
                 </ul>
             </div>
@@ -1727,8 +1731,9 @@
                 </button>
                 <div class="mobile-accordion-content">
                     <ul>
-                        <li><a href="/ja/services/multilingual-website" id="footerMobileWebsite">多言語HP作成</a></li>
+                        <li><a href="/ja/services/multilingual-website" id="footerMobileWebsite">多言語HP・LP作成</a></li>
                         <li><a href="/ja/services/multilingual-blog" id="footerMobileBlogService">多言語ブログ作成</a></li>
+                        <li><a href="/ja/services/multilingual-ec" id="footerMobileEc">多言語EC（越境EC）制作</a></li>
                         <li><a href="/ja/services/ai-localize" id="footerMobileAiLocalize">AI自動ローカライズ</a></li>
                     </ul>
                 </div>
@@ -1806,8 +1811,9 @@
     const footerTranslations = {
         ja: {
             featuresTitle: "人気の機能",
-            website: "多言語HP作成",
+            website: "多言語HP・LP作成",
             blogService: "多言語ブログ作成",
+            ec: "多言語EC（越境EC）制作",
             aiLocalize: "AI自動ローカライズ",
             toolsTitle: "無料ツール",
             blog: "ブログ",
@@ -1823,8 +1829,9 @@
         },
         en: {
             featuresTitle: "Popular Features",
-            website: "Multilingual Website",
+            website: "Multilingual Website & LP",
             blogService: "Multilingual Blog",
+            ec: "Cross-border EC",
             aiLocalize: "AI Localization",
             toolsTitle: "Free Tools",
             blog: "Blog",
@@ -1840,8 +1847,9 @@
         },
         'zh-hans': {
             featuresTitle: "热门功能",
-            website: "多语言建站",
+            website: "多语言建站・LP制作",
             blogService: "多语言博客",
+            ec: "跨境电商制作",
             aiLocalize: "AI本地化",
             toolsTitle: "免费工具",
             blog: "博客",
@@ -1877,6 +1885,7 @@
         setText('footerFeaturesTitle', t.featuresTitle);
         setText('footerWebsite', t.website);
         setText('footerBlogService', t.blogService);
+        setText('footerEc', t.ec);
         setText('footerAiLocalize', t.aiLocalize);
         setText('footerToolsTitle', t.toolsTitle);
         setText('footerBlog', t.blog);
@@ -1890,6 +1899,7 @@
         setText('footerMobileFeaturesTitle', t.featuresTitle);
         setText('footerMobileWebsite', t.website);
         setText('footerMobileBlogService', t.blogService);
+        setText('footerMobileEc', t.ec);
         setText('footerMobileAiLocalize', t.aiLocalize);
         setText('footerMobileToolsTitle', t.toolsTitle);
         setText('footerMobileBlog', t.blog);

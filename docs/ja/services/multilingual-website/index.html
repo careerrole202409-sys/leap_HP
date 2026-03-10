@@ -58,9 +58,7 @@
 </head>
 <body>
     <!-- Header -->
-    <!-- ヘッダー -->
-<header class="header-container" id="header">
-    <!-- 1行目：小さい行 -->
+    <header class="header-container" id="header">
     <div class="header-top" id="headerTop">
         <div class="header-top-content">
             <div class="header-top-left">
@@ -84,7 +82,6 @@
         </div>
     </div>
 
-    <!-- 2行目：メインナビゲーション -->
     <div class="header-main">
         <div class="header-main-content">
             <div class="nav-left">
@@ -96,8 +93,9 @@
                     <div class="nav-item">
                         <span class="nav-link" id="servicesLabel">サービス ▼</span>
                         <div class="dropdown-menu">
-                            <a href="/ja/services/multilingual-website" class="dropdown-item" id="serviceWebsite">多言語HP作成</a>
+                            <a href="/ja/services/multilingual-website" class="dropdown-item" id="serviceWebsite">多言語HP・LP作成</a>
                             <a href="/ja/services/multilingual-blog" class="dropdown-item" id="serviceBlog">多言語ブログ作成</a>
+                            <a href="/ja/services/multilingual-ec" class="dropdown-item" id="serviceEc">多言語EC（越境EC）制作</a>
                             <a href="/ja/services/ai-localize" class="dropdown-item" id="serviceAiLocalize">AI自動ローカライズ</a>
                         </div>
                     </div>
@@ -126,7 +124,6 @@
     </div>
 </header>
 
-<!-- モバイルメニュー -->
 <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-content">
         <div class="mobile-nav-item">
@@ -139,8 +136,9 @@
                 <span>▼</span>
             </div>
             <div class="mobile-dropdown-content">
-                <a href="/ja/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">多言語HP作成</a>
+                <a href="/ja/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">多言語HP・LP作成</a>
                 <a href="/ja/services/multilingual-blog" class="mobile-dropdown-item" id="mobileServiceBlog">多言語ブログ作成</a>
+                <a href="/ja/services/multilingual-ec" class="mobile-dropdown-item" id="mobileServiceEc">多言語EC（越境EC）制作</a>
                 <a href="/ja/services/ai-localize" class="mobile-dropdown-item" id="mobileServiceAiLocalize">AI自動ローカライズ</a>
             </div>
         </div>
@@ -180,8 +178,9 @@
             login: "ログイン",
             about: "会社概要",
             servicesLabel: "サービス ▼",
-            serviceWebsite: "多言語HP作成",
+            serviceWebsite: "多言語HP・LP作成",
             serviceBlog: "多言語ブログ作成",
+            serviceEc: "多言語EC（越境EC）制作",
             serviceAiLocalize: "AI自動ローカライズ",
             pricing: "価格",
             resourcesLabel: "資料 ▼",
@@ -200,8 +199,9 @@
             login: "Login",
             about: "About Us",
             servicesLabel: "Services ▼",
-            serviceWebsite: "Multilingual Website",
+            serviceWebsite: "Multilingual Website & LP",
             serviceBlog: "Multilingual Blog",
+            serviceEc: "Cross-border EC",
             serviceAiLocalize: "AI Localization",
             pricing: "Pricing",
             resourcesLabel: "Resources ▼",
@@ -220,8 +220,9 @@
             login: "登录",
             about: "公司简介",
             servicesLabel: "服务 ▼",
-            serviceWebsite: "多语言建站",
+            serviceWebsite: "多语言建站・LP制作",
             serviceBlog: "多语言博客",
+            serviceEc: "跨境电商制作",
             serviceAiLocalize: "AI本地化",
             pricing: "价格方案",
             resourcesLabel: "资料 ▼",
@@ -259,6 +260,7 @@
         setText('servicesLabel', t.servicesLabel);
         setText('serviceWebsite', t.serviceWebsite);
         setText('serviceBlog', t.serviceBlog);
+        setText('serviceEc', t.serviceEc);
         setText('serviceAiLocalize', t.serviceAiLocalize);
         setText('pricingLink', t.pricing);
         setText('resourcesLabel', t.resourcesLabel);
@@ -271,6 +273,7 @@
         setText('mobileServicesText', t.mobileServicesText);
         setText('mobileServiceWebsite', t.serviceWebsite);
         setText('mobileServiceBlog', t.serviceBlog);
+        setText('mobileServiceEc', t.serviceEc);
         setText('mobileServiceAiLocalize', t.serviceAiLocalize);
         setText('mobilePricing', t.pricing);
         setText('mobileResourcesText', t.mobileResourcesText);
@@ -449,21 +452,53 @@
 </section>
 
 <!-- セクション7：料金表 -->
-<!-- ============================================
-     Pricing Section (5-Plan Layout with Localization & CTA)
-============================================= -->
-
 <style>
+    :root {
+        --color-tab-bg: #f0f0f0;
+        --color-tab-active: var(--color-primary-start, #C8102E);
+    }
+
     .pricing-wrapper {
         padding: 80px 0;
         overflow: hidden;
     }
-    .pricing-grid-5 {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 15px;
+
+    /* タブ切り替えボタン */
+    .pricing-tabs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        gap: 10px;
+    }
+    .tab-btn {
+        padding: 12px 30px;
+        border-radius: 50px;
+        border: 2px solid var(--color-tab-bg);
+        background: var(--color-tab-bg);
+        color: var(--color-text-secondary);
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 1rem;
+    }
+    .tab-btn.active {
+        background: var(--color-tab-active);
+        border-color: var(--color-tab-active);
+        color: #fff;
+        box-shadow: 0 4px 15px rgba(200, 16, 46, 0.3);
+    }
+
+    /* プラン表示制御 */
+    .pricing-group {
+        display: none; /* 初期は非表示 */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
         align-items: stretch;
     }
+    .pricing-group.active {
+        display: grid; /* アクティブなタブのみ表示 */
+    }
+
     .pricing-card {
         background: #fff;
         border-radius: 20px;
@@ -479,6 +514,7 @@
     .pricing-card:hover {
         transform: translateY(-5px);
     }
+
     /* 返金保証バッジ */
     .refund-badge {
         position: absolute;
@@ -495,6 +531,7 @@
         z-index: 5;
         white-space: nowrap;
     }
+
     .plan-name {
         color: var(--color-primary-start);
         font-size: 1.5rem;
@@ -521,6 +558,7 @@
         color: var(--color-text-secondary);
         margin-bottom: 30px;
     }
+
     .plan-features {
         list-style: none;
         padding: 0;
@@ -542,7 +580,7 @@
         font-weight: bold;
         flex-shrink: 0;
     }
-    /* プラン用のCTAボタン */
+
     .plan-btn {
         display: block;
         width: 100%;
@@ -583,7 +621,7 @@
         gap: 15px;
     }
     .condition-item {
-        background: var(--color-beige);
+        background: var(--color-beige, #f9f7f2);
         padding: 20px;
         border-left: 6px solid var(--color-primary-start);
         font-size: 0.95rem;
@@ -604,11 +642,8 @@
     }
 
     /* レスポンシブ */
-    @media (max-width: 1200px) {
-        .pricing-grid-5 { grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    }
-    @media (max-width: 768px) {
-        .pricing-grid-5 { grid-template-columns: 1fr; }
+    @media (max-width: 992px) {
+        .pricing-group.active { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
         .refund-step-grid { grid-template-columns: 1fr; }
         .refund-arrow { transform: rotate(90deg); margin: 20px 0; text-align: center; }
         .refund-detail-box { padding: 30px 20px; }
@@ -622,223 +657,203 @@
             <p id="pr-desc" class="text-secondary">ビジネスの規模に合わせて最適なプランを選択いただけます。</p>
         </div>
 
-        <div class="pricing-grid-5">
-            <!-- 1. フリー -->
+        <div class="pricing-tabs">
+            <button class="tab-btn active" onclick="switchTab('personal')" id="tab-label-personal">個人向け</button>
+            <button class="tab-btn" onclick="switchTab('business')" id="tab-label-business">法人向け</button>
+        </div>
+
+        <div id="personal-plans" class="pricing-group active">
             <div class="pricing-card">
-                <div id="pr-name-free" class="plan-name">フリー</div>
-                <div id="pr-sub-free" class="plan-sub">無料でお試し</div>
-                <div id="pr-price-free" class="plan-price">0円</div>
-                <div id="pr-unit-free" class="plan-unit">/月</div>
-                <ul id="pr-list-free" class="plan-features">
-                    <li>3ページまで</li>
-                    <li>独自ドメイン不可</li>
-                    <li>チャット編集5回/月</li>
-                </ul>
-                <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="plan-btn" id="pr-btn-free">無料でお試し</a>
+                <div id="pr-name-free" class="plan-name"></div>
+                <div id="pr-sub-free" class="plan-sub"></div>
+                <div id="pr-price-free" class="plan-price"></div>
+                <div id="pr-unit-free" class="plan-unit"></div>
+                <ul id="pr-list-free" class="plan-features"></ul>
+                <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="plan-btn" id="pr-btn-free"></a>
             </div>
-
-            <!-- 2. スターター -->
             <div class="pricing-card">
-                <div id="pr-name-starter" class="plan-name">スターター</div>
-                <div id="pr-sub-starter" class="plan-sub">多言語HP公開</div>
-                <div id="pr-price-starter" class="plan-price">2,980円</div>
-                <div id="pr-unit-starter" class="plan-unit">/月</div>
-                <ul id="pr-list-starter" class="plan-features">
-                    <li>10ページまで</li>
-                    <li>独自ドメイン公開</li>
-                    <li>チャット編集30回/月</li>
-                </ul>
-                <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="plan-btn" id="pr-btn-starter">無料でお試し</a>
+                <div id="pr-name-starter" class="plan-name"></div>
+                <div id="pr-sub-starter" class="plan-sub"></div>
+                <div id="pr-price-starter" class="plan-price"></div>
+                <div id="pr-unit-starter" class="plan-unit"></div>
+                <ul id="pr-list-starter" class="plan-features"></ul>
+                <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="plan-btn" id="pr-btn-starter"></a>
             </div>
-
-            <!-- 3. ベーシック -->
             <div class="pricing-card">
-                <div id="pr-name-basic" class="plan-name">ベーシック</div>
-                <div id="pr-sub-basic" class="plan-sub">多言語ブログ公開</div>
-                <div id="pr-price-basic" class="plan-price">9,800円</div>
-                <div id="pr-unit-basic" class="plan-unit">/月</div>
-                <ul id="pr-list-basic" class="plan-features">
-                    <li>50ページまで</li>
-                    <li>多言語ブログの立ち上げ</li>
-                    <li>チャット編集50回/月</li>
-                </ul>
-                <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="plan-btn" id="pr-btn-basic">無料でお試し</a>
-            </div>
-
-            <!-- 4. スタンダード -->
-            <div class="pricing-card" style="border: 2px solid var(--color-primary-start); margin-top: 15px;">
-                <div id="pr-badge-std" class="refund-badge">返金保証あり！</div>
-                <div id="pr-name-std" class="plan-name">スタンダード</div>
-                <div id="pr-sub-std" class="plan-sub">ローカライズ＆ABテスト</div>
-                <div id="pr-price-std" class="plan-price">98,000円</div>
-                <div id="pr-unit-std" class="plan-unit">/月</div>
-                <ul id="pr-list-std" class="plan-features">
-                    <li>150ページまで</li>
-                    <li>AIがブログ自動作成、SEO最適化</li>
-                    <li>チャット編集200回/月</li>
-                    <li>HPローカライズ</li>
-                    <li>ABテストでLP最適化</li>
-                    <li class="font-bold">Leapの担当者がアドバイス</li>
-                </ul>
-                <a href="/ja/about/#contact" class="plan-btn" id="pr-btn-std">お問い合わせ</a>
-            </div>
-
-            <!-- 5. プレミアム -->
-            <div class="pricing-card" style="background: #fff; border: 2px solid var(--color-primary-start); box-shadow: var(--shadow-xl); margin-top: 15px;">
-                <div id="pr-badge-prem" class="refund-badge">返金保証あり！</div>
-                <div id="pr-name-prem" class="plan-name">プレミアム</div>
-                <div id="pr-sub-prem" class="plan-sub">動的サイト＆無制限対応</div>
-                <div id="pr-price-prem" class="plan-price">298,000円</div>
-                <div id="pr-unit-prem" class="plan-unit">/月</div>
-                <ul id="pr-list-prem" class="plan-features">
-                    <li class="font-bold">スタンダードプランの機能</li>
-                    <li>ページ数無制限</li>
-                    <li>チャット無制限</li>
-                    <li>ECなど動的ウェブサイトの作成</li>
-                    <li class="font-bold">Leapの担当者が運用</li>
-                </ul>
-                <a href="/ja/about/#contact" class="plan-btn" id="pr-btn-prem">お問い合わせ</a>
+                <div id="pr-name-basic" class="plan-name"></div>
+                <div id="pr-sub-basic" class="plan-sub"></div>
+                <div id="pr-price-basic" class="plan-price"></div>
+                <div id="pr-unit-basic" class="plan-unit"></div>
+                <ul id="pr-list-basic" class="plan-features"></ul>
+                <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="plan-btn" id="pr-btn-basic"></a>
             </div>
         </div>
 
-        <!-- ============================================
-             返金保証詳細セクション
-        ============================================= -->
+        <div id="business-plans" class="pricing-group">
+            <div class="pricing-card" style="border: 2px solid var(--color-primary-start);">
+                <div id="pr-name-std" class="plan-name"></div>
+                <div id="pr-sub-std" class="plan-sub"></div>
+                <div id="pr-price-std" class="plan-price"></div>
+                <div id="pr-unit-std" class="plan-unit"></div>
+                <ul id="pr-list-std" class="plan-features"></ul>
+                <a href="/ja/about/#contact" class="plan-btn" id="pr-btn-std"></a>
+            </div>
+            <div class="pricing-card" style="border: 2px solid var(--color-primary-start); box-shadow: 0 15px 40px rgba(0,0,0,0.1);">
+                <div id="pr-badge-prem" class="refund-badge"></div>
+                <div id="pr-name-prem" class="plan-name"></div>
+                <div id="pr-sub-prem" class="plan-sub"></div>
+                <div id="pr-price-prem" class="plan-price"></div>
+                <div id="pr-unit-prem" class="plan-unit"></div>
+                <ul id="pr-list-prem" class="plan-features"></ul>
+                <a href="/ja/about/#contact" class="plan-btn" id="pr-btn-prem"></a>
+            </div>
+            <div class="pricing-card" style="border: 2px solid var(--color-primary-start);">
+                <div id="pr-badge-ent" class="refund-badge"></div>
+                <div id="pr-name-ent" class="plan-name"></div>
+                <div id="pr-sub-ent" class="plan-sub"></div>
+                <div id="pr-price-ent" class="plan-price"></div>
+                <div id="pr-unit-ent" class="plan-unit" style="visibility: hidden;">/月</div>
+                <ul id="pr-list-ent" class="plan-features"></ul>
+                <a href="/ja/about/#contact" class="plan-btn" id="pr-btn-ent"></a>
+            </div>
+        </div>
+
         <div class="refund-detail-box">
             <h3 class="text-center mb-xl" style="font-size: 2rem; font-weight: bold;">
-                <span id="pr-refund-title" style="border-bottom: 4px solid var(--color-primary-start);">返金保証とは？</span>
+                <span id="pr-refund-title" style="border-bottom: 4px solid var(--color-primary-start);"></span>
             </h3>
-
             <div class="refund-step-grid">
-                <!-- 左：条件 -->
                 <div class="refund-condition-list">
-                    <div id="pr-refund-cond1" class="condition-item">開始時点で、お客様と海外からのアクセス数の目標値を定めます。</div>
-                    <div id="pr-refund-cond2" class="condition-item">例えば、半年後、月間1,000件のアクセス数を目標に設定。</div>
-                    <div id="pr-refund-cond3" class="condition-item">もし、実際の結果が月間800件のアクセスとなった場合...</div>
+                    <div id="pr-refund-cond1" class="condition-item"></div>
+                    <div id="pr-refund-cond2" class="condition-item"></div>
+                    <div id="pr-refund-cond3" class="condition-item"></div>
                 </div>
-
-                <!-- 中央：矢印 -->
                 <div class="refund-arrow" style="font-size: 2rem; color: var(--color-primary-start);">▶</div>
-
-                <!-- 右：結果 -->
                 <div class="refund-result-card">
-                    <div id="pr-refund-amount" class="refund-amount">20%返金</div>
-                    <p id="pr-refund-commit" class="font-bold text-lg mb-md">成果にコミットします</p>
-                    <p id="pr-refund-reason" class="text-secondary text-sm">Leapが価値を提供できなかった分、<br>しっかりと返金をさせていただきます。</p>
+                    <div id="pr-refund-amount" class="refund-amount"></div>
+                    <p id="pr-refund-commit" class="font-bold text-lg mb-md"></p>
+                    <p id="pr-refund-reason" class="text-secondary text-sm"></p>
                 </div>
             </div>
-
-            <p id="pr-refund-footer" class="text-center mt-xl font-bold" style="font-size: 1.1rem;">
-                海外からのアクセス数を確実に伸ばし、認知拡大・売上向上につなげます。
-            </p>
+            <p id="pr-refund-footer" class="text-center mt-xl font-bold" style="font-size: 1.1rem;"></p>
         </div>
     </div>
 </section>
 
-<!-- ============================================
-     多言語化ロジック (JavaScript)
-============================================= -->
 <script>
 (function() {
     const translations = {
         ja: {
             title: "料金プラン",
             desc: "ビジネスの規模に合わせて最適なプランを選択いただけます。",
+            tab_personal: "個人向け", tab_business: "法人向け",
             badge_refund: "返金保証あり！",
-            unit: "/月",
-            
-            btn_try_free: "無料でお試し",
-            btn_contact: "お問い合わせ",
+            unit: "/月", btn_try_free: "無料でお試し", btn_contact: "お問い合わせ",
             
             free_name: "フリー", free_sub: "無料でお試し", free_price: "0円",
-            free_list: "<li>3ページまで</li><li>独自ドメイン不可</li><li>チャット編集5回/月</li>",
+            free_list: "<li>3ページまで</li><li>独自ドメイン不可</li>",
             
             starter_name: "スターター", starter_sub: "多言語HP公開", starter_price: "2,980円",
-            starter_list: "<li>10ページまで</li><li>独自ドメイン公開</li><li>チャット編集30回/月</li>",
+            starter_list: "<li>10ページまで</li><li>独自ドメイン公開</li>",
             
             basic_name: "ベーシック", basic_sub: "多言語ブログ公開", basic_price: "9,800円",
-            basic_list: "<li>50ページまで</li><li>多言語ブログの立ち上げ</li><li>チャット編集50回/月</li>",
+            basic_list: "<li>50ページまで</li><li>多言語ブログの立ち上げ</li>",
             
             std_name: "スタンダード", std_sub: "ローカライズ＆ABテスト", std_price: "98,000円",
-            std_list: "<li>150ページまで</li><li>AIがブログ自動作成、SEO最適化</li><li>チャット編集200回/月</li><li>HPローカライズ</li><li>ABテストでLP最適化</li><li class='font-bold'>Leapの担当者がアドバイス</li>",
+            std_list: "<li>150ページまで</li><li>AIがブログ自動作成、SEO最適化</li><li>HPローカライズ</li><li>ABテストでLP最適化</li><li class='font-bold'>Leapの担当者がサポート</li>",
             
-            prem_name: "プレミアム", prem_sub: "動的サイト＆無制限対応", prem_price: "298,000円",
-            prem_list: "<li class='font-bold'>スタンダードプランの機能</li><li>ページ数無制限</li><li>チャット無制限</li><li>ECなど動的ウェブサイトの作成</li><li class='font-bold'>Leapの担当者が運用</li>",
+            prem_name: "プレミアム", prem_sub: "動的サイト＆多ページ対応", prem_price: "298,000円",
+            prem_list: "<li class='font-bold'>スタンダードプランの機能</li><li>500ページまで</li><li>ECなど動的ウェブサイトの作成</li><li class='font-bold'>Leapの担当者が運用</li>",
+
+            ent_name: "エンタープライズ", ent_sub: "ページ数無制限", ent_price: "別途お見積もり",
+            ent_list: "<li class='font-bold'>プレミアムプランの機能</li><li>ページ数無制限</li><li class='font-bold'>Leapの担当者が運用</li>",
 
             refund_title: "返金保証とは？",
             refund_cond1: "開始時点で、お客様と海外からのアクセス数の目標値を定めます。",
             refund_cond2: "例えば、半年後、月間1,000件のアクセス数を目標に設定。",
             refund_cond3: "もし、実際の結果が月間800件のアクセスとなった場合...",
-            refund_amount: "20%返金",
-            refund_commit: "成果にコミットします",
+            refund_amount: "20%返金", refund_commit: "成果にコミットします",
             refund_reason: "Leapが価値を提供できなかった分、<br>しっかりと返金をさせていただきます。",
             refund_footer: "海外からのアクセス数を確実に伸ばし、認知拡大・売上向上につなげます。"
         },
         en: {
             title: "Pricing Plans",
             desc: "Choose the best plan tailored to your business scale.",
+            tab_personal: "Personal", tab_business: "Business",
             badge_refund: "Money-back Guarantee!",
-            unit: "/mo",
-            
-            btn_try_free: "Try for Free",
-            btn_contact: "Contact Us",
+            unit: "/mo", btn_try_free: "Try for Free", btn_contact: "Contact Us",
             
             free_name: "Free", free_sub: "Try for free", free_price: "¥0",
-            free_list: "<li>Up to 3 pages</li><li>No custom domain</li><li>Chat editing: 5 times/mo</li>",
+            free_list: "<li>Up to 3 pages</li><li>No custom domain</li>",
             
             starter_name: "Starter", starter_sub: "Publish multilingual site", starter_price: "¥2,980",
-            starter_list: "<li>Up to 10 pages</li><li>Custom domain supported</li><li>Chat editing: 30 times/mo</li>",
+            starter_list: "<li>Up to 10 pages</li><li>Custom domain supported</li>",
             
             basic_name: "Basic", basic_sub: "Publish multilingual blog", basic_price: "¥9,800",
-            basic_list: "<li>Up to 50 pages</li><li>Multilingual blog setup</li><li>Chat editing: 50 times/mo</li>",
+            basic_list: "<li>Up to 50 pages</li><li>Multilingual blog setup</li>",
             
             std_name: "Standard", std_sub: "Managed by our experts", std_price: "¥98,000",
-            std_list: "<li>Up to 150 pages</li><li>AI blog creation & SEO optimization</li><li>Chat editing: 200 times/mo</li><li>Website localization</li><li>Landing page optimization via A/B testing</li><li class='font-bold'>Dedicated advice from a Leap expert</li>",
+            std_list: "<li>Up to 150 pages</li><li>AI blog creation & SEO optimization</li><li>Website localization</li><li>Landing page optimization via A/B testing</li><li class='font-bold'>Dedicated support from a Leap expert</li>",
             
-            prem_name: "Premium", prem_sub: "Fully optimized by AI", prem_price: "¥298,000",
-            prem_list: "<li class='font-bold'>Everything in Standard</li><li>Unlimited pages</li><li>Unlimited chat editing</li><li>Dynamic site creation (e.g., e-commerce)</li><li class='font-bold'>Fully managed by a Leap expert</li>",
+            prem_name: "Premium", prem_sub: "Dynamic site & High volume", prem_price: "¥298,000",
+            prem_list: "<li class='font-bold'>Everything in Standard</li><li>Up to 500 pages</li><li>Dynamic site creation (e.g., e-commerce)</li><li class='font-bold'>Fully managed by a Leap expert</li>",
+
+            ent_name: "Enterprise", ent_sub: "Unlimited pages", ent_price: "Custom Quote",
+            ent_list: "<li class='font-bold'>Everything in Premium</li><li>Unlimited pages</li><li class='font-bold'>Fully managed by a Leap expert</li>",
 
             refund_title: "What is the Money-back Guarantee?",
             refund_cond1: "At the start, we set a target for overseas traffic together with you.",
             refund_cond2: "For example, targeting 1,000 monthly visits after 6 months.",
             refund_cond3: "If the actual result turns out to be only 800 monthly visits...",
-            refund_amount: "20% Refund",
-            refund_commit: "Committed to results",
-            refund_reason: "We will refund the exact proportion<br>of the value we failed to deliver.",
-            refund_footer: "We ensure steady growth in overseas traffic, boosting your global brand awareness and sales."
+            refund_amount: "20% Refund", refund_commit: "Committed to results",
+            refund_reason: "We will refund the exact proportion of the value we failed to deliver.",
+            refund_footer: "We ensure steady growth in overseas traffic, boosting your global sales."
         },
         'zh-hans': {
             title: "价格方案",
             desc: "根据您的业务规模选择最合适的方案。",
+            tab_personal: "个人版", tab_business: "企业版",
             badge_refund: "退款保证！",
-            unit: "/月",
-            
-            btn_try_free: "免费试用",
-            btn_contact: "联系我们",
+            unit: "/月", btn_try_free: "免费试用", btn_contact: "联系我们",
             
             free_name: "免费版", free_sub: "免费试用", free_price: "0日元",
-            free_list: "<li>最多3个页面</li><li>不可使用独立域名</li><li>聊天编辑：5次/月</li>",
+            free_list: "<li>最多3个页面</li><li>不可使用独立域名</li>",
             
             starter_name: "入门版", starter_sub: "发布多语言网站", starter_price: "2,980日元",
-            starter_list: "<li>最多10个页面</li><li>支持独立域名</li><li>聊天编辑：30次/月</li>",
+            starter_list: "<li>最多10个页面</li><li>支持独立域名</li>",
             
             basic_name: "基础版", basic_sub: "发布多语言博客", basic_price: "9,800日元",
-            basic_list: "<li>最多50个页面</li><li>搭建多语言博客</li><li>聊天编辑：50次/月</li>",
+            basic_list: "<li>最多50个页面</li><li>搭建多语言博客</li>",
             
             std_name: "标准版", std_sub: "专属顾问全程跟进", std_price: "98,000日元",
-            std_list: "<li>最多150个页面</li><li>AI自动生成博客及SEO优化</li><li>聊天编辑：200次/月</li><li>网站本地化</li><li>基于A/B测试优化落地页</li><li class='font-bold'>Leap专属顾问提供建议</li>",
+            std_list: "<li>最多150个页面</li><li>AI自动生成博客及SEO优化</li><li>网站本地化</li><li>基于A/B测试优化落地页</li><li class='font-bold'>Leap专属顾问提供支持</li>",
             
-            prem_name: "尊享版", prem_sub: "AI全自动深度优化", prem_price: "298,000日元",
-            prem_list: "<li class='font-bold'>包含标准版全部功能</li><li>页面数量无限制</li><li>无限次聊天编辑</li><li>支持电商等动态网站制作</li><li class='font-bold'>Leap专属顾问全程运营</li>",
+            prem_name: "尊享版", prem_sub: "动态网站与多页面支持", prem_price: "298,000日元",
+            prem_list: "<li class='font-bold'>包含标准版全部功能</li><li>最多500个页面</li><li>支持电商等动态网站制作</li><li class='font-bold'>Leap专属顾问全程运营</li>",
+
+            ent_name: "企业版", ent_sub: "页面数量无限制", ent_price: "另行估价",
+            ent_list: "<li class='font-bold'>包含尊享版全部功能</li><li>页面数量无限制</li><li class='font-bold'>Leap专属顾问全程运营</li>",
 
             refund_title: "什么是退款保证？",
             refund_cond1: "项目开始时，我们将与您共同设定海外访问量的目标值。",
             refund_cond2: "例如，设定6个月后每月海外访问量达到1,000次的目标。",
             refund_cond3: "如果实际结果只有每月800次访问...",
-            refund_amount: "退款20%",
-            refund_commit: "对效果全面负责",
-            refund_reason: "由于未能达到预期效果，<br>Leap将按未达标比例为您办理退款。",
-            refund_footer: "我们将切实提升您的海外访问量，助您扩大品牌知名度并提升销售额。"
+            refund_amount: "退款20%", refund_commit: "对效果全面负责",
+            refund_reason: "由于未能达到预期效果，Leap将为您办理退款。",
+            refund_footer: "我们将切实提升您的海外访问量，助您提升全球销售额。"
+        }
+    };
+
+    window.switchTab = function(type) {
+        document.querySelectorAll('.pricing-group').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+        
+        if(type === 'personal') {
+            document.getElementById('personal-plans').classList.add('active');
+            document.getElementById('tab-label-personal').classList.add('active');
+        } else {
+            document.getElementById('business-plans').classList.add('active');
+            document.getElementById('tab-label-business').classList.add('active');
         }
     };
 
@@ -858,29 +873,24 @@
             if (el) el.innerHTML = html;
         };
 
-        // Header
         setHTML('pr-title', t.title);
         setHTML('pr-desc', t.desc);
-        setHTML('pr-badge-std', t.badge_refund);
+        setHTML('tab-label-personal', t.tab_personal);
+        setHTML('tab-label-business', t.tab_business);
         setHTML('pr-badge-prem', t.badge_refund);
+        setHTML('pr-badge-ent', t.badge_refund);
 
-        // Plans
-        ['free', 'starter', 'basic', 'std', 'prem'].forEach(plan => {
+        ['free', 'starter', 'basic', 'std', 'prem', 'ent'].forEach(plan => {
             setHTML(`pr-name-${plan}`, t[`${plan}_name`]);
             setHTML(`pr-sub-${plan}`, t[`${plan}_sub`]);
             setHTML(`pr-price-${plan}`, t[`${plan}_price`]);
             setHTML(`pr-unit-${plan}`, t.unit);
             setHTML(`pr-list-${plan}`, t[`${plan}_list`]);
         });
-        
-        // Buttons
-        setHTML('pr-btn-free', t.btn_try_free);
-        setHTML('pr-btn-starter', t.btn_try_free);
-        setHTML('pr-btn-basic', t.btn_try_free);
-        setHTML('pr-btn-std', t.btn_contact);
-        setHTML('pr-btn-prem', t.btn_contact);
 
-        // Refund Section
+        ['free', 'starter', 'basic'].forEach(id => setHTML(`pr-btn-${id}`, t.btn_try_free));
+        ['std', 'prem', 'ent'].forEach(id => setHTML(`pr-btn-${id}`, t.btn_contact));
+
         setHTML('pr-refund-title', t.refund_title);
         setHTML('pr-refund-cond1', t.refund_cond1);
         setHTML('pr-refund-cond2', t.refund_cond2);
@@ -1076,8 +1086,9 @@
             <div class="footer-column">
                 <h3 id="footerFeaturesTitle">人気の機能</h3>
                 <ul>
-                    <li><a href="/ja/services/multilingual-website" id="footerWebsite">多言語HP作成</a></li>
+                    <li><a href="/ja/services/multilingual-website" id="footerWebsite">多言語HP・LP作成</a></li>
                     <li><a href="/ja/services/multilingual-blog" id="footerBlogService">多言語ブログ作成</a></li>
+                    <li><a href="/ja/services/multilingual-ec" id="footerEc">多言語EC（越境EC）制作</a></li>
                     <li><a href="/ja/services/ai-localize" id="footerAiLocalize">AI自動ローカライズ</a></li>
                 </ul>
             </div>
@@ -1109,8 +1120,9 @@
                 </button>
                 <div class="mobile-accordion-content">
                     <ul>
-                        <li><a href="/ja/services/multilingual-website" id="footerMobileWebsite">多言語HP作成</a></li>
+                        <li><a href="/ja/services/multilingual-website" id="footerMobileWebsite">多言語HP・LP作成</a></li>
                         <li><a href="/ja/services/multilingual-blog" id="footerMobileBlogService">多言語ブログ作成</a></li>
+                        <li><a href="/ja/services/multilingual-ec" id="footerMobileEc">多言語EC（越境EC）制作</a></li>
                         <li><a href="/ja/services/ai-localize" id="footerMobileAiLocalize">AI自動ローカライズ</a></li>
                     </ul>
                 </div>
@@ -1188,8 +1200,9 @@
     const footerTranslations = {
         ja: {
             featuresTitle: "人気の機能",
-            website: "多言語HP作成",
+            website: "多言語HP・LP作成",
             blogService: "多言語ブログ作成",
+            ec: "多言語EC（越境EC）制作",
             aiLocalize: "AI自動ローカライズ",
             toolsTitle: "無料ツール",
             blog: "ブログ",
@@ -1205,8 +1218,9 @@
         },
         en: {
             featuresTitle: "Popular Features",
-            website: "Multilingual Website",
+            website: "Multilingual Website & LP",
             blogService: "Multilingual Blog",
+            ec: "Cross-border EC",
             aiLocalize: "AI Localization",
             toolsTitle: "Free Tools",
             blog: "Blog",
@@ -1222,8 +1236,9 @@
         },
         'zh-hans': {
             featuresTitle: "热门功能",
-            website: "多语言建站",
+            website: "多语言建站・LP制作",
             blogService: "多语言博客",
+            ec: "跨境电商制作",
             aiLocalize: "AI本地化",
             toolsTitle: "免费工具",
             blog: "博客",
@@ -1259,6 +1274,7 @@
         setText('footerFeaturesTitle', t.featuresTitle);
         setText('footerWebsite', t.website);
         setText('footerBlogService', t.blogService);
+        setText('footerEc', t.ec);
         setText('footerAiLocalize', t.aiLocalize);
         setText('footerToolsTitle', t.toolsTitle);
         setText('footerBlog', t.blog);
@@ -1272,6 +1288,7 @@
         setText('footerMobileFeaturesTitle', t.featuresTitle);
         setText('footerMobileWebsite', t.website);
         setText('footerMobileBlogService', t.blogService);
+        setText('footerMobileEc', t.ec);
         setText('footerMobileAiLocalize', t.aiLocalize);
         setText('footerMobileToolsTitle', t.toolsTitle);
         setText('footerMobileBlog', t.blog);

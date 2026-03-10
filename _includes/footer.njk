@@ -5,8 +5,9 @@
             <div class="footer-column">
                 <h3 id="footerFeaturesTitle">人気の機能</h3>
                 <ul>
-                    <li><a href="/{{ locale }}/services/multilingual-website" id="footerWebsite">多言語HP作成</a></li>
+                    <li><a href="/{{ locale }}/services/multilingual-website" id="footerWebsite">多言語HP・LP作成</a></li>
                     <li><a href="/{{ locale }}/services/multilingual-blog" id="footerBlogService">多言語ブログ作成</a></li>
+                    <li><a href="/{{ locale }}/services/multilingual-ec" id="footerEc">多言語EC（越境EC）制作</a></li>
                     <li><a href="/{{ locale }}/services/ai-localize" id="footerAiLocalize">AI自動ローカライズ</a></li>
                 </ul>
             </div>
@@ -38,8 +39,9 @@
                 </button>
                 <div class="mobile-accordion-content">
                     <ul>
-                        <li><a href="/{{ locale }}/services/multilingual-website" id="footerMobileWebsite">多言語HP作成</a></li>
+                        <li><a href="/{{ locale }}/services/multilingual-website" id="footerMobileWebsite">多言語HP・LP作成</a></li>
                         <li><a href="/{{ locale }}/services/multilingual-blog" id="footerMobileBlogService">多言語ブログ作成</a></li>
+                        <li><a href="/{{ locale }}/services/multilingual-ec" id="footerMobileEc">多言語EC（越境EC）制作</a></li>
                         <li><a href="/{{ locale }}/services/ai-localize" id="footerMobileAiLocalize">AI自動ローカライズ</a></li>
                     </ul>
                 </div>
@@ -117,8 +119,9 @@
     const footerTranslations = {
         ja: {
             featuresTitle: "人気の機能",
-            website: "多言語HP作成",
+            website: "多言語HP・LP作成",
             blogService: "多言語ブログ作成",
+            ec: "多言語EC（越境EC）制作",
             aiLocalize: "AI自動ローカライズ",
             toolsTitle: "無料ツール",
             blog: "ブログ",
@@ -134,8 +137,9 @@
         },
         en: {
             featuresTitle: "Popular Features",
-            website: "Multilingual Website",
+            website: "Multilingual Website & LP",
             blogService: "Multilingual Blog",
+            ec: "Cross-border EC",
             aiLocalize: "AI Localization",
             toolsTitle: "Free Tools",
             blog: "Blog",
@@ -151,8 +155,9 @@
         },
         'zh-hans': {
             featuresTitle: "热门功能",
-            website: "多语言建站",
+            website: "多语言建站・LP制作",
             blogService: "多语言博客",
+            ec: "跨境电商制作",
             aiLocalize: "AI本地化",
             toolsTitle: "免费工具",
             blog: "博客",
@@ -188,6 +193,7 @@
         setText('footerFeaturesTitle', t.featuresTitle);
         setText('footerWebsite', t.website);
         setText('footerBlogService', t.blogService);
+        setText('footerEc', t.ec);
         setText('footerAiLocalize', t.aiLocalize);
         setText('footerToolsTitle', t.toolsTitle);
         setText('footerBlog', t.blog);
@@ -201,6 +207,7 @@
         setText('footerMobileFeaturesTitle', t.featuresTitle);
         setText('footerMobileWebsite', t.website);
         setText('footerMobileBlogService', t.blogService);
+        setText('footerMobileEc', t.ec);
         setText('footerMobileAiLocalize', t.aiLocalize);
         setText('footerMobileToolsTitle', t.toolsTitle);
         setText('footerMobileBlog', t.blog);

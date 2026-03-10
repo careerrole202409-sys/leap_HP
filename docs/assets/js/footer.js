@@ -2,7 +2,7 @@
 const footerTranslations = {
     ja: {
         featuresTitle: '人気の機能',
-        website: '多言語HP作成',
+        website: '多言語HP・LP作成',
         ec: '越境EC開設・運用',
         content: '多言語コンテンツ制作',
         sns: '海外向けSNS運用',
@@ -21,7 +21,7 @@ const footerTranslations = {
     },
     en: {
         featuresTitle: 'Popular Features',
-        website: 'Multilingual Website',
+        website: 'Multilingual Website & LP',
         ec: 'Cross-border EC',
         content: 'Multilingual Content',
         sns: 'Global SNS',
@@ -40,7 +40,7 @@ const footerTranslations = {
     },
     'zh-hans': {
         featuresTitle: '热门功能',
-        website: '多语言网站制作',
+        website: '多语言建站・LP制作',
         ec: '跨境电商运营',
         content: '多语言内容制作',
         sns: '海外SNS运营',

@@ -6,7 +6,8 @@ const translations = {
         home: 'ホーム',
         services: 'サービス',
         serviceItems: {
-            website: '多言語HP作成',
+            // ▼ 修正: HP・LP作成に変更
+            website: '多言語HP・LP作成',
             ec: '越境EC開設運用',
             content: '多言語コンテンツ制作',
             sns: '海外向けSNS運用',
@@ -18,7 +19,6 @@ const translations = {
             download: '資料ダウンロード',
             blog: 'ブログ'
         },
-        // ▼ 修正: 文言変更
         demo: 'デモを申し込む',
         start: '無料スタート',
         startMobile: '無料で始める',
@@ -26,11 +26,11 @@ const translations = {
     },
     en: {
         login: 'Login',
-        about: 'About',
+        about: 'About Us',
         home: 'Home',
         services: 'Services',
         serviceItems: {
-            website: 'Multilingual Website',
+            website: 'Multilingual Website & LP',
             ec: 'Cross-border EC',
             content: 'Multilingual Content',
             sns: 'Global SNS',
@@ -39,34 +39,32 @@ const translations = {
         pricing: 'Pricing',
         resources: 'Resources',
         resourceItems: {
-            download: 'Download',
+            download: 'Downloads',
             blog: 'Blog'
         },
-        // ▼ 修正: 文言変更
-        demo: 'Get a demo',
-        start: 'Get Started Free',
-        startMobile: 'Get Started Free',
+        demo: 'Request Demo',
+        start: 'Start for Free',
+        startMobile: 'Start for Free',
         language: 'English'
     },
     'zh-hans': {
         login: '登录',
-        about: '关于我们',
+        about: '公司简介',
         home: '首页',
         services: '服务',
         serviceItems: {
-            website: '多语言网站制作',
+            website: '多语言建站・LP制作',
             ec: '跨境电商运营',
             content: '多语言内容制作',
             sns: '海外SNS运营',
             matching: '代理商匹配'
         },
-        pricing: '价格',
+        pricing: '价格方案',
         resources: '资料',
         resourceItems: {
             download: '资料下载',
             blog: '博客'
         },
-        // ▼ 修正: 文言変更
         demo: '申请演示',
         start: '免费开始',
         startMobile: '免费开始',
@@ -77,33 +75,23 @@ const translations = {
 // 現在の言語をURLから取得
 function getCurrentLanguage() {
     const path = window.location.pathname;
-    // jp も ja のエイリアスとして認識
     const match = path.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
-    if (!match) return 'ja'; // デフォルトは日本語
-    
-    // jp は ja として扱う
+    if (!match) return 'ja'; 
     return match[1] === 'jp' ? 'ja' : match[1];
 }
 
 // 言語を変更（URLを変更して遷移）
 function changeLanguage(newLang) {
     const currentPath = window.location.pathname;
-    
-    // 現在のパスから言語プレフィックスを検出
     const langMatch = currentPath.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
     
     let newPath;
-    
     if (langMatch) {
-        // 既に言語プレフィックスがある場合
         const detectedLang = langMatch[1];
         newPath = currentPath.replace(`/${detectedLang}`, `/${newLang}`);
     } else {
-        // 言語プレフィックスがない場合
         newPath = `/${newLang}${currentPath}`;
     }
-    
-    // 新しいURLに遷移
     window.location.href = newPath;
 }
 
@@ -112,7 +100,6 @@ function updateContent() {
     const lang = getCurrentLanguage();
     const t = translations[lang];
 
-    // 安全に要素を更新する関数
     function safeUpdate(id, content, isHTML = false) {
         const element = document.getElementById(id);
         if (element) {
@@ -124,14 +111,12 @@ function updateContent() {
         }
     }
 
-    // 言語セレクター
+    // 各要素の更新
     safeUpdate('currentLang', t.language);
-
-    // 1行目
     safeUpdate('loginLink', t.login);
     safeUpdate('aboutLink', t.about);
 
-    // 2行目 - デスクトップ
+    // デスクトップメニュー
     safeUpdate('servicesLabel', t.services + ' ▼', true);
     safeUpdate('serviceWebsite', t.serviceItems.website);
     safeUpdate('serviceEc', t.serviceItems.ec);
@@ -161,7 +146,6 @@ function updateContent() {
     safeUpdate('mobileDemoBtn', t.demo);
     safeUpdate('mobileStartBtn', t.startMobile);
 
-    // 言語ドロップダウンのアクティブ状態
     document.querySelectorAll('.language-option').forEach(option => {
         if (option.dataset.lang === lang) {
             option.classList.add('active');
@@ -173,14 +157,12 @@ function updateContent() {
 
 // 初期化
 document.addEventListener('DOMContentLoaded', () => {
-    let lastScroll = 0;
     const headerTop = document.getElementById('headerTop');
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
     const languageCurrent = document.getElementById('languageCurrent');
     const languageDropdown = document.getElementById('languageDropdown');
 
-    // 言語セレクターをクリックで開閉
     if (languageCurrent && languageDropdown) {
         languageCurrent.addEventListener('click', (e) => {
             e.preventDefault();
@@ -188,17 +170,14 @@ document.addEventListener('DOMContentLoaded', () => {
             languageDropdown.classList.toggle('active');
         });
 
-        // ドロップダウン外をクリックで閉じる
         document.addEventListener('click', () => {
             languageDropdown.classList.remove('active');
         });
 
-        // ドロップダウン内のクリックは伝播させない
         languageDropdown.addEventListener('click', (e) => {
             e.stopPropagation();
         });
 
-        // 言語オプションのクリックイベントを追加
         document.querySelectorAll('.language-option').forEach(option => {
             option.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -210,22 +189,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // スクロールで1行目を隠す
     if (headerTop) {
         window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-
-            if (currentScroll > 50) {
+            if (window.pageYOffset > 50) {
                 headerTop.classList.add('hidden');
             } else {
                 headerTop.classList.remove('hidden');
             }
-
-            lastScroll = currentScroll;
         });
     }
 
-    // ハンバーガーメニュートグル
     if (hamburger && mobileMenu) {
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
@@ -233,7 +206,6 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
         });
 
-        // メニュー外クリックで閉じる
         mobileMenu.addEventListener('click', (e) => {
             if (e.target === mobileMenu) {
                 hamburger.classList.remove('active');
@@ -243,15 +215,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ページロード時にコンテンツを更新
     updateContent();
 });
 
-// モバイルドロップダウントグル
-function toggleMobileDropdown(element) {
+// モバイルドロップダウントグル（グローバル関数として保持）
+window.toggleMobileDropdown = function(element) {
     const content = element.nextElementSibling;
     const arrow = element.querySelector('span:last-child');
     
     content.classList.toggle('active');
     arrow.textContent = content.classList.contains('active') ? '▲' : '▼';
-}
+};
