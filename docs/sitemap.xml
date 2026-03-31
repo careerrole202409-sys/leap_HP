@@ -541,10 +541,6 @@
     <lastmod>2026-03-24T05:05:04.989Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/en/terms/</loc>
-    <lastmod>2026-03-24T05:05:04.989Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/en/tokushoho/</loc>
     <lastmod>2026-03-24T05:05:04.989Z</lastmod>
   </url>
@@ -669,10 +665,6 @@
     <lastmod>2026-03-24T05:05:05.007Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/terms/</loc>
-    <lastmod>2026-03-24T05:05:05.008Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/ja/tokushoho/</loc>
     <lastmod>2026-03-24T05:05:05.008Z</lastmod>
   </url>
@@ -733,10 +725,6 @@
     <lastmod>2026-03-24T05:05:05.010Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/zh-hans/terms/</loc>
-    <lastmod>2026-03-24T05:05:05.010Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/zh-hans/tokushoho/</loc>
     <lastmod>2026-03-24T05:05:05.010Z</lastmod>
   </url>
@@ -745,12 +733,12 @@
     <lastmod>2026-03-25T00:00:00.000Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/lp/ja/multilingual-ec/</loc>
-    <lastmod>2026-03-26T22:42:36.862Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/ja/blog/marketing/global-b2b-whitepaper-strategy/</loc>
     <lastmod>2026-03-26T00:00:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/lp/ja/multilingual-ec/</loc>
+    <lastmod>2026-03-26T22:42:36.862Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/blog/marketing/integrated-marketing-omo-strategy/</loc>
@@ -759,5 +747,21 @@
   <url>
     <loc>https://www.leap.site/ja/blog/marketing/global-referral-marketing-culture/</loc>
     <lastmod>2026-03-30T00:00:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/en/terms/</loc>
+    <lastmod>2026-03-30T01:35:16.724Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/terms/</loc>
+    <lastmod>2026-03-30T01:35:16.726Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/zh-hans/terms/</loc>
+    <lastmod>2026-03-30T01:35:16.727Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/marketing/overseas-martech-selection-pitfalls/</loc>
+    <lastmod>2026-03-31T00:00:00.000Z</lastmod>
   </url>
 </urlset>
