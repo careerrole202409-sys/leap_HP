@@ -3,7 +3,7 @@ layout: blog-post.njk
 title: 翻訳管理システム(TMS)は本当に必要か── マーケティング視点での投資判断
 description: 翻訳管理システム（TMS）は、多言語コンテンツの翻訳ワークフローを一元管理するプラットフォームです。グローバル展開を加速する強力なツールとして注目される一方、「年商数十億円規模の中小企業が本当に必要とするものか」という疑問も根強くあります。本記事では、TMSの本質的な機能と導入コスト、投資対効果を判断するための基準を整理します。
 thumbnail: https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
-date: 2024-05-20
+date: 2026-04-06
 topic: 'marketing'
 locale: 'ja'
 tags: ['blog', '多言語展開', 'マーケティング', '翻訳管理システム', 'ローカライゼーション', '海外進出']
