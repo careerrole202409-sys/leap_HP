@@ -3,7 +3,7 @@ layout: blog-post.njk
 title: 「翻訳サイト」から脱却する── 売上に直結する多言語サイト設計の全体像
 description: 海外向けサイト制作において、日本語サイトをそのまま自動翻訳した「翻訳サイト」と、現地市場に最適化した「多言語サイト」は、見た目が似ていても成果に大きな開きが出ます。本記事では、売上に直結するグローバルサイト設計の全体像を解説します。
 thumbnail: https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
-date: 2026-03-02
+date: 2026-04-08
 topic: marketing
 locale: ja
 tags: ['blog', '多言語サイト', '海外マーケティング', 'ローカライズ', 'グローバルSEO', 'ウェブサイト制作']
