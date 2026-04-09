@@ -106,6 +106,7 @@
                             <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
                             <a href="/ja/blog" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">ブログ</a>
                             <a href="/ja/hp-guide" target="_blank" class="dropdown-item" id="resourceHpGuide">HP作成ガイド</a>
+                            <a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBuyerSearch">海外バイヤー検索</a>
                         </div>
                     </div>
                 </nav>
@@ -156,6 +157,7 @@
                 <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
                 <a href="/ja/blog" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">ブログ</a>
                 <a href="/ja/hp-guide" target="_blank" class="mobile-dropdown-item" id="mobileResourceHpGuide">HP作成ガイド</a>
+                <a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBuyerSearch">海外バイヤー検索</a>
             </div>
         </div>
 
@@ -187,6 +189,7 @@
             resourceDownload: "資料ダウンロード",
             resourceBlog: "ブログ",
             resourceHpGuide: "HP作成ガイド",
+            resourceBuyerSearch: "海外バイヤー検索",
             demo: "デモを申し込む",
             start: "無料スタート",
             mobileHome: "ホーム",
@@ -208,6 +211,7 @@
             resourceDownload: "Downloads",
             resourceBlog: "Blog",
             resourceHpGuide: "Website Creation Guide",
+            resourceBuyerSearch: "Find Overseas Buyers",
             demo: "Request Demo",
             start: "Start for Free",
             mobileHome: "Home",
@@ -229,6 +233,7 @@
             resourceDownload: "资料下载",
             resourceBlog: "博客",
             resourceHpGuide: "建站指南",
+            resourceBuyerSearch: "海外买家搜索",
             demo: "申请演示",
             start: "免费开始",
             mobileHome: "首页",
@@ -267,6 +272,7 @@
         setText('resourceDownload', t.resourceDownload);
         setText('resourceBlog', t.resourceBlog);
         setText('resourceHpGuide', t.resourceHpGuide);
+        setText('resourceBuyerSearch', t.resourceBuyerSearch);
         setText('demoBtn', t.demo);
         setText('startBtn', t.start);
         setText('mobileHome', t.mobileHome);
@@ -280,6 +286,7 @@
         setText('mobileResourceDownload', t.resourceDownload);
         setText('mobileResourceBlog', t.resourceBlog);
         setText('mobileResourceHpGuide', t.resourceHpGuide);
+        setText('mobileResourceBuyerSearch', t.resourceBuyerSearch);
         setText('mobileAbout', t.about);
         setText('mobileDemoBtn', t.demo);
         setText('mobileStartBtn', t.mobileStart);
@@ -579,7 +586,7 @@
         <div class="meta-info">
             <div class="meta-item">
                 <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/></svg>
-                <time datetime="Thu Jan 08 2026 09:00:00 GMT+0900 (日本標準時)">2026年01月08日</time>
+                <time datetime="Thu Jan 08 2026 09:00:00 GMT+0900 (Japan Standard Time)">2026年01月08日</time>
             </div>
             <div class="meta-item">
                 <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
@@ -737,6 +744,26 @@
                         
                     
                     
+                
+            
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
+                    
                         <article class="card p-0 bg-white shadow-sm border border-gray-100 rounded-lg overflow-hidden flex flex-col h-full">
                              <a href="/ja/blog/marketing/multilingual-chatbot-pitfalls/" class="block aspect-video overflow-hidden"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="多言語チャットボット導入の落とし穴── 「24時間対応」で満足度が下がる理由" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"></a>
                             <div class="p-lg flex-1 flex flex-col">
@@ -824,8 +851,6 @@
                         </article>
                         
                     
-                
-            
                 
             
                 
@@ -1292,6 +1317,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li><a href="/ja/blog" target="_blank" rel="noopener noreferrer" id="footerBlog">ブログ</a></li>
                     <li><a href="/ja/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
                     <li><a href="/ja/hp-guide" target="_blank" id="footerHpGuide">HP作成ガイド</a></li>
+                    <li><a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" id="footerBuyerSearch">海外バイヤー検索</a></li>
                 </ul>
             </div>
 
@@ -1331,6 +1357,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <li><a href="/ja/blog" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">ブログ</a></li>
                         <li><a href="/ja/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
                         <li><a href="/ja/hp-guide" target="_blank" id="footerMobileHpGuide">HP作成ガイド</a></li>
+                        <li><a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" id="footerMobileBuyerSearch">海外バイヤー検索</a></li>
                     </ul>
                 </div>
             </div>
@@ -1401,6 +1428,7 @@ document.addEventListener('DOMContentLoaded', function() {
             blog: "ブログ",
             resources: "資料ダウンロード",
             hpGuide: "HP作成ガイド",
+            buyerSearch: "海外バイヤー検索",
             companyTitle: "会社",
             about: "会社概要",
             contact: "お問い合わせ",
@@ -1419,6 +1447,7 @@ document.addEventListener('DOMContentLoaded', function() {
             blog: "Blog",
             resources: "Downloads",
             hpGuide: "Website Creation Guide",
+            buyerSearch: "Find Overseas Buyers",
             companyTitle: "Company",
             about: "About Us",
             contact: "Contact Us",
@@ -1437,6 +1466,7 @@ document.addEventListener('DOMContentLoaded', function() {
             blog: "博客",
             resources: "资料下载",
             hpGuide: "建站指南",
+            buyerSearch: "海外买家搜索",
             companyTitle: "公司",
             about: "公司简介",
             contact: "联系我们",
@@ -1473,6 +1503,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setText('footerBlog', t.blog);
         setText('footerResources', t.resources);
         setText('footerHpGuide', t.hpGuide);
+        setText('footerBuyerSearch', t.buyerSearch);
         setText('footerCompanyTitle', t.companyTitle);
         setText('footerAbout', t.about);
         setText('footerContact', t.contact);
@@ -1487,6 +1518,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setText('footerMobileBlog', t.blog);
         setText('footerMobileResources', t.resources);
         setText('footerMobileHpGuide', t.hpGuide);
+        setText('footerMobileBuyerSearch', t.buyerSearch);
         setText('footerMobileCompanyTitle', t.companyTitle);
         setText('footerMobileAbout', t.about);
         setText('footerMobileContact', t.contact);
