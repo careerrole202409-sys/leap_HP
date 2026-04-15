@@ -1,0 +1,118 @@
+---
+layout: base.njk
+---
+
+{% set ui = {
+    ja: { home: "ホーム", cases: "導入事例", toc: "目次", share: "この記事をシェアする", toast: "リンクをコピーしました", cta_text: "多言語対応のHPを無料作成", cta_btn: "Leapで作成" },
+    en: { home: "Home", cases: "Case Studies", toc: "Table of Contents", share: "Share this article", toast: "Link copied to clipboard", cta_text: "Create a Multilingual Website for Free", cta_btn: "Start with Leap" },
+    "zh-hans": { home: "首页", cases: "客户案例", toc: "目录", share: "分享本文", toast: "链接已复制", cta_text: "免费创建多语言网站", cta_btn: "免费开始" }
+} %}
+
+{% set categories = {
+    industry: {
+        "manufacturing": { ja: "製造業", en: "Manufacturing", "zh-hans": "制造业" },
+        "finance": { ja: "金融", en: "Finance", "zh-hans": "金融" },
+        "media": { ja: "メディア・エンタメ・ゲーム", en: "Media/Entertainment/Game", "zh-hans": "媒体/娱乐/游戏" },
+        "retail": { ja: "小売・中間流通", en: "Retail/Distribution", "zh-hans": "零售/流通" },
+        "tourism": { ja: "観光・飲食・宿泊", en: "Tourism/Dining/Accommodation", "zh-hans": "旅游/餐饮/住宿" },
+        "it": { ja: "IT・SaaS・Webサービス", en: "IT/SaaS/Web Services", "zh-hans": "IT/SaaS/Web服务" },
+        "education": { ja: "学校・教育", en: "Education", "zh-hans": "教育" },
+        "realestate": { ja: "鉄道・不動産・建設", en: "Real Estate/Construction/Railway", "zh-hans": "铁路/房地产/建筑" },
+        "public": { ja: "自治体・公共インフラ", en: "Public Sector/Infrastructure", "zh-hans": "地方政府/公共设施" }
+    },
+    site_type: {
+        "global": { ja: "公式サイト・グローバルサイト", en: "Corporate/Global Site", "zh-hans": "官网/全球网站" },
+        "brand": { ja: "製品・ブランドサイト", en: "Product/Brand Site", "zh-hans": "产品/品牌网站" },
+        "ec": { ja: "EC・通販", en: "E-Commerce", "zh-hans": "电子商务" },
+        "blog": { ja: "ブログ", en: "Blog", "zh-hans": "博客" },
+        "web_service": { ja: "Webサービス", en: "Web Service", "zh-hans": "Web服务" }
+    }
+} %}
+
+{# 現在の言語に合わせて変数をセット（超シンプル・エラーなし） #}
+{% set current_lang = locale | default('ja') %}
+{% set t = ui[current_lang] %}
+
+{% set current_title = case_title_ja %}
+{% set current_company = company_name_ja %}
+{% if current_lang == 'en' %}
+    {% set current_title = case_title_en %}
+    {% set current_company = company_name_en %}
+{% elif current_lang == 'zh-hans' %}
+    {% set current_title = case_title_zh %}
+    {% set current_company = company_name_zh %}
+{% endif %}
+
+{% set ind_label = categories.industry[industry][current_lang] %}
+{% set st_label = categories.site_type[site_type][current_lang] %}
+
+<style>
+    .blog-container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+    .breadcrumb-nav { font-size: 1rem; color: #64748b; margin-bottom: 2rem; line-height: 1.5; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .breadcrumb-nav a { color: #64748b; text-decoration: none; transition: color 0.2s; }
+    .breadcrumb-nav a:hover { color: #C10033; text-decoration: underline; }
+    .breadcrumb-separator { font-size: 0.9rem; color: #cbd5e1; }
+    .breadcrumb-current { color: #94a3b8; font-weight: 500; }
+    .title-area { display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; margin-bottom: 1.5rem; }
+    .case-header-content { flex: 1; display: flex; flex-direction: column; gap: 16px; }
+    .case-company-logo { max-height: 60px; width: auto; object-fit: contain; display: block; margin-bottom: 8px; }
+    .post-title { font-size: 2.2rem; font-weight: 800; line-height: 1.4; color: #1e293b; margin: 0; letter-spacing: -0.02em; }
+    .header-cta-group { flex-shrink: 0; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 40px 32px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 24px; min-width: 360px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    .header-cta-text { font-size: 1.15rem; font-weight: bold; color: #1e293b; margin: 0; line-height: 1.6; }
+    .cta-btn-primary { display: inline-flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #C10033 0%, #8B0024 100%); color: white !important; font-weight: bold; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-size: 1.2rem; line-height: 1.4; width: 100%; box-shadow: 0 6px 12px -2px rgba(193, 0, 51, 0.3); transition: transform 0.2s, box-shadow 0.2s; }
+    .cta-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 15px -3px rgba(193, 0, 51, 0.4); }
+    .meta-tags { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 2rem; }
+    .meta-tag { background: #f1f5f9; color: #475569; font-size: 0.9rem; font-weight: bold; padding: 6px 16px; border-radius: 20px; border: 1px solid #e2e8f0; }
+    .header-divider { border: 0; border-top: 1px solid #e2e8f0; margin-bottom: 0rem; }
+    .blog-content { font-size: 1.125rem; line-height: 1.9; color: #334155; }
+    .bottom-cta-box { margin: 4rem 0; padding: 3rem 2rem; background: #fffafb; border: 2px solid #C10033; border-radius: 12px; text-align: center; display: flex; flex-direction: column; align-items: center; }
+    .bottom-cta-title { font-weight: bold; font-size: 1.5rem; margin-bottom: 1.5rem; color: #1e293b; }
+    .bottom-cta-box .cta-btn-primary { width: auto; padding: 16px 48px; font-size: 1.2rem; border-radius: 8px; }
+    @media (max-width: 768px) { .title-area { flex-direction: column; gap: 24px; } .post-title { font-size: 1.6rem; } .header-cta-group { width: 100%; min-width: auto; padding: 32px 20px; gap: 20px; } .blog-container { padding: 0 20px; } .bottom-cta-box .cta-btn-primary { width: 100%; } }
+</style>
+
+<div class="bg-white pb-0" style="padding-top: 100px;">
+    <div class="blog-container">
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb-nav">
+            <a href="/{{ current_lang }}/">{{ t.home }}</a>
+            <span class="breadcrumb-separator">›</span>
+            <a href="/{{ current_lang }}/case-studies/">{{ t.cases }}</a>
+            <span class="breadcrumb-separator">›</span>
+            <span class="breadcrumb-current">{{ current_company }}</span>
+        </nav>
+
+        <!-- タイトル & ヘッダーCTA -->
+        <div class="title-area">
+            <div class="case-header-content">
+                {% if logo %}<img src="{{ logo }}" alt="{{ current_company }} ロゴ" class="case-company-logo">{% endif %}
+                <h1 class="post-title">{{ current_title }}</h1>
+            </div>
+            <div class="header-cta-group">
+                <p class="header-cta-text">{{ t.cta_text }}</p>
+                <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="cta-btn-primary">{{ t.cta_btn }}</a>
+            </div>
+        </div>
+
+        <!-- タグ -->
+        <div class="meta-tags">
+            {% if ind_label %}<span class="meta-tag">#{{ ind_label }}</span>{% endif %}
+            {% if st_label %}<span class="meta-tag">#{{ st_label }}</span>{% endif %}
+        </div>
+        <hr class="header-divider">
+    </div>
+</div>
+
+<!-- 本文 -->
+<section class="section pt-lg pb-3xl bg-white">
+    <div class="blog-container"> 
+        <div class="blog-content">
+            {{ content | safe }}
+        </div>
+        <!-- 下部CTA -->
+        <div class="bottom-cta-box">
+            <p class="bottom-cta-title">{{ t.cta_text }}</p>
+            <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="cta-btn-primary">{{ t.cta_btn }}</a>
+        </div>
+    </div>
+</section>
