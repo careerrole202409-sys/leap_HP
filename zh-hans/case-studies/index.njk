@@ -360,18 +360,22 @@ document.addEventListener("DOMContentLoaded", function() {
     const noResultsMsg = document.getElementById('no-results-msg');
 
     function filterCases() {
+        // 選択されたチェックボックスの値を配列で取得
         const selectedIndustries = Array.from(industryCheckboxes).filter(cb => cb.checked).map(cb => cb.value);
         const selectedSiteTypes = Array.from(siteTypeCheckboxes).filter(cb => cb.checked).map(cb => cb.value);
 
         let visibleCount = 0;
 
         cards.forEach(card => {
-            const ind = card.getAttribute('data-industry');
-            const st = card.getAttribute('data-site-type');
+            // カード側の属性値を取得（nullの場合は空文字にする）
+            const ind = card.getAttribute('data-industry') || "";
+            const st = card.getAttribute('data-site-type') || "";
 
-            const matchInd = selectedIndustries.length === 0 || selectedIndustries.includes(ind);
-            const matchST = selectedSiteTypes.length === 0 || selectedSiteTypes.includes(st);
+            // 選択された値の「いずれか」が、カードの属性文字列に「含まれているか」を判定
+            const matchInd = selectedIndustries.length === 0 || selectedIndustries.some(val => ind.includes(val));
+            const matchST = selectedSiteTypes.length === 0 || selectedSiteTypes.some(val => st.includes(val));
 
+            // 両方の条件を満たせば表示
             if (matchInd && matchST) {
                 card.style.display = 'flex';
                 visibleCount++;
@@ -380,6 +384,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
+        // 1件も表示されない場合はメッセージを出す
         if (visibleCount === 0) {
             noResultsMsg.style.display = 'block';
         } else {
