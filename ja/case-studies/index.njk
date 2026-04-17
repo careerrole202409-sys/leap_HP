@@ -1,0 +1,399 @@
+---
+layout: base.njk
+title: 導入事例 | Leap
+description: Leapを導入し、多言語化や海外展開を成功させた企業様の事例をご紹介します。
+---
+
+{% set ui = {
+    ja: {
+        hero_title: "Leap を導入された企業様の事例",
+        hero_desc1: "どんな企業様が、何故多言語化することになったのか・その狙いは？",
+        hero_desc2: "どんな課題を抱えておられ、どう解決して、どんな効果を出したのか？",
+        hero_desc3: "導入検討の際の参考に、たくさんの事例を公開しています。",
+        filter_title: "業界・サイトを絞り込む",
+        industry_label: "業種",
+        site_type_label: "サイト種類",
+        no_results: "該当する事例は見つかりませんでした。"
+    },
+    en: {
+        hero_title: "Case Studies of Leap Users",
+        hero_desc1: "Why do companies choose to go multilingual, and what are their goals?",
+        hero_desc2: "What challenges did they face, how did they solve them, and what results did they achieve?",
+        hero_desc3: "We have published many case studies to help you consider introducing our service.",
+        filter_title: "Filter by Industry and Site Type",
+        industry_label: "Industry",
+        site_type_label: "Site Type",
+        no_results: "No matching case studies found."
+    },
+    "zh-hans": {
+        hero_title: "Leap 客户成功案例",
+        hero_desc1: "企业为何选择多语言化，他们的目标是什么？",
+        hero_desc2: "他们面临了哪些挑战，如何解决，并取得了什么效果？",
+        hero_desc3: "我们发布了许多案例研究，供您在考虑导入时参考。",
+        filter_title: "按行业和网站类型筛选",
+        industry_label: "行业",
+        site_type_label: "网站类型",
+        no_results: "未找到匹配的案例。"
+    }
+} %}
+
+{% set categories = {
+    industry: {
+        "manufacturing": { ja: "製造業", en: "Manufacturing", "zh-hans": "制造业" },
+        "finance": { ja: "金融", en: "Finance", "zh-hans": "金融" },
+        "media": { ja: "メディア・エンタメ・ゲーム", en: "Media/Entertainment/Game", "zh-hans": "媒体/娱乐/游戏" },
+        "retail": { ja: "小売・中間流通", en: "Retail/Distribution", "zh-hans": "零售/流通" },
+        "tourism": { ja: "観光・飲食・宿泊", en: "Tourism/Dining/Accommodation", "zh-hans": "旅游/餐饮/住宿" },
+        "it": { ja: "IT・SaaS・Webサービス", en: "IT/SaaS/Web Services", "zh-hans": "IT/SaaS/Web服务" },
+        "education": { ja: "学校・教育", en: "Education", "zh-hans": "教育" },
+        "realestate": { ja: "鉄道・不動産・建設", en: "Real Estate/Construction/Railway", "zh-hans": "铁路/房地产/建筑" },
+        "public": { ja: "自治体・公共インフラ", en: "Public Sector/Infrastructure", "zh-hans": "地方政府/公共设施" }
+    },
+    site_type: {
+        "global": { ja: "公式サイト・グローバルサイト", en: "Corporate/Global Site", "zh-hans": "官网/全球网站" },
+        "brand": { ja: "製品・ブランドサイト", en: "Product/Brand Site", "zh-hans": "产品/品牌网站" },
+        "ec": { ja: "EC・通販", en: "E-Commerce", "zh-hans": "电子商务" },
+        "blog": { ja: "ブログ", en: "Blog", "zh-hans": "博客" },
+        "web_service": { ja: "Webサービス", en: "Web Service", "zh-hans": "Web服务" }
+    }
+} %}
+
+<!-- ▼ ヒーローセクション -->
+<section class="section" style="background: var(--color-primary-gradient); color: var(--color-white); padding-top: 4rem; padding-bottom: 4rem;">
+    <div class="container text-center">
+        <h1 class="text-white mb-sm" style="font-size: 2rem; font-weight: bold;">{{ ui[locale].hero_title }}</h1>
+        <p class="text-white" style="font-size: 0.95rem; max-width: 700px; margin: 0 auto; line-height: 1.6; opacity: 0.9;">
+            {{ ui[locale].hero_desc1 }}<br>
+            {{ ui[locale].hero_desc2 }}<br>
+            {{ ui[locale].hero_desc3 }}
+        </p>
+    </div>
+</section>
+
+<!-- ▼ 絞り込みフィルターセクション -->
+<section class="section bg-beige" style="padding-top: 3rem; padding-bottom: 3rem;">
+    <div class="container">
+        <div class="filter-container">
+            <div class="filter-header" onclick="toggleFilterContent()">
+                <h2>{{ ui[locale].filter_title }}</h2>
+                <span class="filter-toggle-icon">▼</span>
+            </div>
+            
+            <div class="filter-content" id="filterContent" style="display: none;">
+                <!-- 業種フィルター -->
+                <div class="filter-row">
+                    <div class="filter-label">{{ ui[locale].industry_label }}</div>
+                    <div class="filter-options">
+                        {% for key, val in categories.industry %}
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="industry" value="{{ key }}">
+                            <span>{{ val[locale] }}</span>
+                        </label>
+                        {% endfor %}
+                    </div>
+                </div>
+                
+                <!-- サイト種類フィルター -->
+                <div class="filter-row">
+                    <div class="filter-label">{{ ui[locale].site_type_label }}</div>
+                    <div class="filter-options">
+                        {% for key, val in categories.site_type %}
+                        <label class="filter-checkbox">
+                            <input type="checkbox" name="site_type" value="{{ key }}">
+                            <span>{{ val[locale] }}</span>
+                        </label>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ▼ 事例カード一覧セクション -->
+<section class="section bg-white" style="padding-top: 2rem; padding-bottom: 4rem;">
+    <div class="container">
+        <div class="grid-3" id="casesContainer">
+            <!-- コレクションの 'cases' から記事を取得しループ -->
+            {% for post in collections.cases | reverse %}
+                
+                {# 言語に合わせて表示する変数をセット #}
+                {% set card_title = post.data.case_title_ja %}
+                {% set card_company = post.data.company_name_ja %}
+                {% if locale == 'en' %}
+                    {% set card_title = post.data.case_title_en %}
+                    {% set card_company = post.data.company_name_en %}
+                {% elif locale == 'zh-hans' %}
+                    {% set card_title = post.data.case_title_zh %}
+                    {% set card_company = post.data.company_name_zh %}
+                {% endif %}
+
+                {# タイトルが存在する場合のみ表示 #}
+                {% if card_title %}
+                    
+                    {% set ind_key = post.data.industry %}
+                    {% set st_key = post.data.site_type %}
+                    
+                    <!-- 辞書からラベルを取得 -->
+                    {% set ind_label = categories.industry[ind_key][locale] %}
+                    {% set st_label = categories.site_type[st_key][locale] %}
+
+                    <article class="case-card" data-industry="{{ ind_key }}" data-site-type="{{ st_key }}">
+                        <a href="{{ post.url }}">
+                            <!-- ロゴエリア -->
+                            <div class="case-logo-wrapper">
+                                <img src="{{ post.data.logo }}" alt="{{ card_company }} logo">
+                            </div>
+                            
+                            <!-- Leapメインカラーのアクセントライン -->
+                            <div class="case-accent-line"></div>
+                            
+                            <!-- コンテンツエリア -->
+                            <div class="case-content">
+                                <div class="case-company">{{ card_company }}</div>
+                                <div class="case-tags">
+                                    {% if ind_label %}<span>#{{ ind_label }}</span>{% endif %}
+                                    {% if st_label %}<span>#{{ st_label }}</span>{% endif %}
+                                </div>
+                                <h3 class="case-title">{{ card_title }}</h3>
+                            </div>
+                        </a>
+                    </article>
+                {% endif %}
+            {% endfor %}
+        </div>
+        
+        <!-- 該当なしメッセージ -->
+        <div id="no-results-msg" class="text-center w-full py-3xl text-secondary" style="display: none;">
+            {{ ui[locale].no_results }}
+        </div>
+    </div>
+</section>
+
+{% include "cta1.njk" %}
+
+<!-- ▼ CSS -->
+<style>
+/* フィルターセクション */
+.filter-container {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    z-index: 10;
+}
+
+.filter-header {
+    padding: 15px 20px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-header h2 {
+    font-size: 1.05rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--color-text-primary);
+}
+
+.filter-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.filter-row {
+    display: flex;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 15px;
+}
+
+.filter-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.filter-label {
+    width: 150px;
+    font-weight: bold;
+    color: var(--color-text-primary);
+    flex-shrink: 0;
+}
+
+.filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+}
+
+.filter-checkbox input {
+    cursor: pointer;
+}
+
+/* カードデザイン */
+.case-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f1f5f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-card a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.case-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.case-logo-wrapper {
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 20px;
+}
+
+.case-logo-wrapper img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.case-accent-line {
+    height: 4px;
+    width: 100%;
+    background: var(--color-primary-gradient);
+}
+
+.case-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.case-company {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 4px;
+}
+
+.case-tags {
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.case-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.case-card:hover .case-title {
+    color: var(--color-primary-start);
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+    .filter-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .filter-label {
+        width: 100%;
+    }
+}
+</style>
+
+<!-- ▼ JavaScript (フィルタリング処理) -->
+<script>
+function toggleFilterContent() {
+    const content = document.getElementById('filterContent');
+    const icon = document.querySelector('.filter-toggle-icon');
+    
+    if (content.style.display === 'none') {
+        content.style.display = 'flex';
+        icon.textContent = '▲';
+    } else {
+        content.style.display = 'none';
+        icon.textContent = '▼';
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const industryCheckboxes = document.querySelectorAll('input[name="industry"]');
+    const siteTypeCheckboxes = document.querySelectorAll('input[name="site_type"]');
+    const cards = document.querySelectorAll('.case-card');
+    const noResultsMsg = document.getElementById('no-results-msg');
+
+    function filterCases() {
+        // 選択されたチェックボックスの値を配列で取得
+        const selectedIndustries = Array.from(industryCheckboxes).filter(cb => cb.checked).map(cb => cb.value);
+        const selectedSiteTypes = Array.from(siteTypeCheckboxes).filter(cb => cb.checked).map(cb => cb.value);
+
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+            // カード側の属性値を取得（nullの場合は空文字にする）
+            const ind = card.getAttribute('data-industry') || "";
+            const st = card.getAttribute('data-site-type') || "";
+
+            // 選択された値の「いずれか」が、カードの属性文字列に「含まれているか」を判定
+            const matchInd = selectedIndustries.length === 0 || selectedIndustries.some(val => ind.includes(val));
+            const matchST = selectedSiteTypes.length === 0 || selectedSiteTypes.some(val => st.includes(val));
+
+            // 両方の条件を満たせば表示
+            if (matchInd && matchST) {
+                card.style.display = 'flex';
+                visibleCount++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        // 1件も表示されない場合はメッセージを出す
+        if (visibleCount === 0) {
+            noResultsMsg.style.display = 'block';
+        } else {
+            noResultsMsg.style.display = 'none';
+        }
+    }
+
+    [...industryCheckboxes, ...siteTypeCheckboxes].forEach(cb => {
+        cb.addEventListener('change', filterCases);
+    });
+});
+</script>

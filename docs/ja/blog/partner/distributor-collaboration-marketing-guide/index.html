@@ -99,6 +99,8 @@
                             <a href="/ja/services/ai-localize" class="dropdown-item" id="serviceAiLocalize">AI自動ローカライズ</a>
                         </div>
                     </div>
+                    <!-- 導入事例を追加 -->
+                    <a href="/ja/case-studies" class="nav-link" id="casesLink">導入事例</a>
                     <a href="/ja/pricing" class="nav-link" id="pricingLink">価格</a>
                     <div class="nav-item">
                         <span class="nav-link" id="resourcesLabel">資料 ▼</span>
@@ -144,6 +146,11 @@
             </div>
         </div>
 
+        <!-- モバイル版 導入事例を追加 -->
+        <div class="mobile-nav-item">
+            <a href="/ja/case-studies" class="mobile-nav-link" id="mobileCases">導入事例</a>
+        </div>
+
         <div class="mobile-nav-item">
             <a href="/ja/pricing" class="mobile-nav-link" id="mobilePricing">価格</a>
         </div>
@@ -184,6 +191,7 @@
             serviceBlog: "多言語ブログ作成",
             serviceEc: "多言語EC（越境EC）制作",
             serviceAiLocalize: "AI自動ローカライズ",
+            cases: "導入事例", // 追加
             pricing: "価格",
             resourcesLabel: "資料 ▼",
             resourceDownload: "資料ダウンロード",
@@ -206,6 +214,7 @@
             serviceBlog: "Multilingual Blog",
             serviceEc: "Cross-border EC",
             serviceAiLocalize: "AI Localization",
+            cases: "Case Studies", // 追加
             pricing: "Pricing",
             resourcesLabel: "Resources ▼",
             resourceDownload: "Downloads",
@@ -228,6 +237,7 @@
             serviceBlog: "多语言博客",
             serviceEc: "跨境电商制作",
             serviceAiLocalize: "AI本地化",
+            cases: "客户案例", // 追加
             pricing: "价格方案",
             resourcesLabel: "资料 ▼",
             resourceDownload: "资料下载",
@@ -267,6 +277,7 @@
         setText('serviceBlog', t.serviceBlog);
         setText('serviceEc', t.serviceEc);
         setText('serviceAiLocalize', t.serviceAiLocalize);
+        setText('casesLink', t.cases); // 追加
         setText('pricingLink', t.pricing);
         setText('resourcesLabel', t.resourcesLabel);
         setText('resourceDownload', t.resourceDownload);
@@ -281,6 +292,7 @@
         setText('mobileServiceBlog', t.serviceBlog);
         setText('mobileServiceEc', t.serviceEc);
         setText('mobileServiceAiLocalize', t.serviceAiLocalize);
+        setText('mobileCases', t.cases); // 追加
         setText('mobilePricing', t.pricing);
         setText('mobileResourcesText', t.mobileResourcesText);
         setText('mobileResourceDownload', t.resourceDownload);
@@ -726,6 +738,46 @@
         <h2 class="text-center mb-xl" style="font-size: 1.75rem;">関連記事</h2>
         <div class="grid-3">
             
+            
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
+                    
+                
+            
+                
+                    
+                    
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
+                    
+                
             
                 
                     
@@ -1329,6 +1381,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li><a href="/ja/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
                     <li><a href="/ja/hp-guide" target="_blank" id="footerHpGuide">HP作成ガイド</a></li>
                     <li><a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" id="footerBuyerSearch">海外バイヤー検索</a></li>
+                    <!-- 導入事例を追加 -->
+                    <li><a href="/ja/case-studies" target="_blank" rel="noopener noreferrer" id="footerCases">導入事例</a></li>
                 </ul>
             </div>
 
@@ -1369,6 +1423,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         <li><a href="/ja/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
                         <li><a href="/ja/hp-guide" target="_blank" id="footerMobileHpGuide">HP作成ガイド</a></li>
                         <li><a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" id="footerMobileBuyerSearch">海外バイヤー検索</a></li>
+                        <!-- モバイル版 導入事例を追加 -->
+                        <li><a href="/ja/case-studies" target="_blank" rel="noopener noreferrer" id="footerMobileCases">導入事例</a></li>
                     </ul>
                 </div>
             </div>
@@ -1440,6 +1496,7 @@ document.addEventListener('DOMContentLoaded', function() {
             resources: "資料ダウンロード",
             hpGuide: "HP作成ガイド",
             buyerSearch: "海外バイヤー検索",
+            cases: "導入事例", // 追加
             companyTitle: "会社",
             about: "会社概要",
             contact: "お問い合わせ",
@@ -1459,6 +1516,7 @@ document.addEventListener('DOMContentLoaded', function() {
             resources: "Downloads",
             hpGuide: "Website Creation Guide",
             buyerSearch: "Find Overseas Buyers",
+            cases: "Case Studies", // 追加
             companyTitle: "Company",
             about: "About Us",
             contact: "Contact Us",
@@ -1478,6 +1536,7 @@ document.addEventListener('DOMContentLoaded', function() {
             resources: "资料下载",
             hpGuide: "建站指南",
             buyerSearch: "海外买家搜索",
+            cases: "客户案例", // 追加
             companyTitle: "公司",
             about: "公司简介",
             contact: "联系我们",
@@ -1515,6 +1574,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setText('footerResources', t.resources);
         setText('footerHpGuide', t.hpGuide);
         setText('footerBuyerSearch', t.buyerSearch);
+        setText('footerCases', t.cases); // 追加
         setText('footerCompanyTitle', t.companyTitle);
         setText('footerAbout', t.about);
         setText('footerContact', t.contact);
@@ -1530,6 +1590,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setText('footerMobileResources', t.resources);
         setText('footerMobileHpGuide', t.hpGuide);
         setText('footerMobileBuyerSearch', t.buyerSearch);
+        setText('footerMobileCases', t.cases); // 追加
         setText('footerMobileCompanyTitle', t.companyTitle);
         setText('footerMobileAbout', t.about);
         setText('footerMobileContact', t.contact);

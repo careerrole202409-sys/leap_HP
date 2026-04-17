@@ -1,0 +1,11 @@
+{
+  "layout": "case-detail.njk",
+  "tags": ["cases"],
+  "pagination": {
+    "data": "locales",
+    "size": 1,
+    "alias": "locale"
+  },
+  "locales": ["ja", "en", "zh-hans"],
+  "permalink": "/{{ locale }}/case-studies/{{ page.fileSlug }}/index.html"
+}
