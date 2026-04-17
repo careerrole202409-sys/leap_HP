@@ -1,7 +1,7 @@
 ---
 layout: case-detail.njk
 tags: cases
-logo: "https://res.cloudinary.com/duh6rnjba/image/upload/v1776393836/957D0D93BD68EF8143F731EF14AB001E3DC1660D_ujuyjj.jpg"
+logo: "https://res.cloudinary.com/duh6rnjba/image/upload/v1776408660/IMG_6201_xqubsz.jpg"
 industry: "manufacturing"
 site_type: ["global"]
 
