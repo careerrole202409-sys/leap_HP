@@ -11,7 +11,7 @@ company_name_ja: "都や Co., Ltd."
 company_name_en: "Miyakoya Co., Ltd."
 company_name_zh: "Miyakoya Co., Ltd."
 
-case_title_ja: "多言語HPの作成"
+case_title_ja: "多言語HPの作成とSNSの運用"
 case_title_en: "Creation of Multilingual Official Website"
 case_title_zh: "创建多语言官方网站"
 

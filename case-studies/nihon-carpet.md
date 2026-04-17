@@ -11,7 +11,7 @@ company_name_ja: "日本カーペット工業株式会社"
 company_name_en: "Nihon Carpet Kogyo Co., Ltd."
 company_name_zh: "日本地毯工业株式会社"
 
-case_title_ja: "多言語のHPおよび中国法人HPの作成"
+case_title_ja: "多言語のHPおよび中国法人HPの作成およびSNSの運用"
 case_title_en: "Creation of Multilingual Website and Chinese Subsidiary Website"
 case_title_zh: "创建多语言官方网站及中国分公司网站"
 

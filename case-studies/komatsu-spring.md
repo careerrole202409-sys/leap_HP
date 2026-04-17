@@ -11,7 +11,7 @@ company_name_ja: "小松ばね工業株式会社"
 company_name_en: "Komatsu Spring Industrial Co., Ltd."
 company_name_zh: "小松弹簧工业株式会社"
 
-case_title_ja: "英語・中国語の公式サイトおよびブログの作成"
+case_title_ja: "英語・中国語の公式サイトおよびブログの作成とSNSの運用"
 case_title_en: "Creation of Official Website and Blog in English and Chinese"
 case_title_zh: "创建英语和中文的官方网站及博客"
 

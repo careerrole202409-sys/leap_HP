@@ -11,7 +11,7 @@ company_name_ja: "株式会社LAP"
 company_name_en: "LAP Inc."
 company_name_zh: "株式会社LAP"
 
-case_title_ja: "多言語LPの作成"
+case_title_ja: "多言語LPの作成とSNSの運用"
 case_title_en: "Creation of a Multilingual Landing Page"
 case_title_zh: "创建多语言着陆页（LP）"
 
