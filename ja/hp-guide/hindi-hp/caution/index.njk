@@ -1,0 +1,191 @@
+---
+layout: base.njk
+title: ヒンディー語ホームページ作成の注意点・完全ガイド
+target_lang: ヒンディー語
+parent_url: /ja/hp-guide/hindi-hp/
+thumbnail: "/assets/images/guide-hindi.jpg"
+---
+
+{% extends "guide-caution.njk" %}
+
+{% block section_0 %}
+<p>
+  「ヒンディー語のホームページを作ったのに、インドのユーザーに全く刺さらない」というケースは珍しくありません。<br>
+  その主な理由は、<strong>文字コードの扱い・フォントのレンダリング・モバイルファーストな閲覧環境・インド独自の文化的コンテキスト</strong>を無視したまま制作されているからです。<br>
+  ヒンディー語はデーヴァナーガリー文字という独自の文字体系を使い、英語とはまったく異なるタイポグラフィの扱いが必要です。さらに、インドのインターネットユーザーの70%以上がスマートフォンからアクセスしており、モバイル最適化は絶対条件です。<br>
+  このガイドでは、インド市場で成果を出すために必須となる、技術・デザイン・文化面の重要ポイントを網羅的に解説します。
+</p>
+{% endblock %}
+
+{% block section_1_1 %}
+<p>
+  ヒンディー語は<strong>デーヴァナーガリー文字（Devanagari script）</strong>で表記されます。アルファベットとはまったく異なる文字体系であり、ウェブ上で正しく扱うためにはいくつかの重要な前提知識が必要です。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>Unicodeを必ず使用する：</strong>ヒンディー語のUnicode範囲はU+0900〜U+097Fです。かつて使われていた「Kruti Dev」「Shusha」「Chanakya」などのレガシーフォントはWebでの互換性が低く、文字化けや検索エンジンによる認識不能の原因になります。テキストはすべてUnicode（UTF-8）で管理してください。</li>
+  <li><strong>ファイルはUTF-8で保存する：</strong>HTMLファイルのエンコーディングをUTF-8に設定し、HTTPヘッダーでも<code>Content-Type: text/html; charset=utf-8</code>を明示することで、文字化けを防げます。</li>
+  <li><strong>HTMLの言語属性を設定する：</strong><code>&lt;html lang="hi"&gt;</code>と指定することで、ブラウザや検索エンジンがヒンディー語コンテンツとして正しく認識します。</li>
+</ul>
+<p>
+  <strong>注意：</strong>翻訳ツールでヒンディー語に変換しただけでは、地域ごとの慣用表現や敬語ニュアンスが不自然になることがあります。インドのネイティブスピーカーによる最終確認を入れることを強くお勧めします。
+</p>
+{% endblock %}
+
+{% block section_1_2 %}
+<p>
+  デーヴァナーガリー文字は、子音と母音が組み合わさって複雑な「合字（コンジャンクト）」を形成する文字体系です。フォントの選び方を誤ると、文字が正しく結合されず、崩れた表示になってしまいます。
+</p>
+<p>
+  Webサイトには必ずデーヴァナーガリーに対応したWebフォントを指定してください。Googleが開発した<strong>「Noto Sans Devanagari」</strong>は、Unicodeに完全対応し、すべての合字を正確にレンダリングできるため、現在のWeb標準として最も推奨されています。Google Fontsから無料で利用可能で、ユーザーがフォントをインストールしていなくてもブラウザが自動的にダウンロードして表示します。
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-family: 'Noto Sans Devanagari', 'Hind', sans-serif;
+</div>
+<div style="background:#fff4f4; padding:16px; border-radius:8px; border:1px solid #fc9292; margin-bottom:24px;">
+  <p style="font-weight:bold; color:#c53030; margin-bottom:8px;">❌ やってはいけないこと</p>
+  <ul style="list-style:none; padding:0; margin:0;">
+    <li style="margin-bottom:8px;">・Kruti Dev、Mangal、Shusha などのレガシーフォントをWebに使用する（コピー&ペーストや検索が正しく機能しません）</li>
+    <li>・日本語や英語向けのフォントをそのままヒンディー語テキストに適用する（文字が豆腐（□）になるか、不正確な形で表示されます）</li>
+  </ul>
+</div>
+{% endblock %}
+
+{% block section_1_3 %}
+<p>
+  インドではGoogleが検索エンジンシェアの約98%を占めており、GoogleのSEO対策がそのままインド市場向けSEOになります。ただし、ヒンディー語コンテンツには英語と異なる技術要件があります。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>hreflang属性の設定：</strong>英語版とヒンディー語版を両方持つ場合は、<code>&lt;link rel="alternate" hreflang="hi" href="..."&gt;</code>を設定してください。Googleがどちらの言語のユーザーにどちらのページを表示すべきかを正確に判断できるようになります。</li>
+  <li><strong>URLの設計：</strong>ヒンディー語のDevanagari文字をそのままURLに使う方法（例：<code>/मोबाइल-फोन</code>）は技術的には可能ですが、リンク共有時にエンコードされて読みにくくなることがあります。管理のしやすさから、<code>/mobile-phone-hindi</code>のようなローマ字スラッグを採用するのが現実的な選択です。</li>
+  <li><strong>音声検索への対応：</strong>インドでは音声検索が年率270%で成長しており、ヒンディー語での音声クエリも急増しています。口語的・会話的なキーワードをコンテンツに自然に盛り込むことが、音声検索流入を増やすポイントになります。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_1 %}
+<p>
+  インドのユーザーは、Webサイトに対して高い信頼性の証明を求めます。詐欺サイトへの警戒心が強いため、以下の信頼シグナルを目立つ場所に配置しましょう。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>会社情報の明示：</strong>インドの住所・電話番号・設立年・GST番号（Goods and Services Tax番号、インドの事業者識別番号）などを詳細に記載することで、実在する企業であることを証明できます。</li>
+  <li><strong>受賞歴・認証の掲示：</strong>ISO認証や業界受賞歴があれば、ページ上部やフッターにロゴを目立つように掲載しましょう。</li>
+  <li><strong>実績の数値化：</strong>「導入社数〇〇社」「創業〇〇年」「顧客満足度〇〇%」など、具体的な数字で信頼性を訴求することが効果的です。</li>
+  <li><strong>カスタマーレビューの掲載：</strong>インドのユーザーは購入・問い合わせ前に口コミや評価を強く参考にします。Googleレビューや実際の顧客の声を掲載することが成約率の向上につながります。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_2 %}
+<p>
+  インドのインターネットユーザーの70%以上がスマートフォンからWebにアクセスしており、特にヒンディー語ユーザー層（地方都市・農村部の新規ユーザーを含む）はほぼスマホのみでブラウジングします。モバイル対応は「あれば良い」ではなく「絶対条件」です。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>レスポンシブデザイン：</strong>画面サイズに応じてレイアウトが自動調整されるレスポンシブデザインを採用してください。</li>
+  <li><strong>ページ速度の最適化：</strong>インドでは回線速度が不安定な地域も多く、読み込みが遅いと即座に離脱されます。画像はWebP形式で圧縮し、ファーストビューは3秒以内に表示されることを目標にしてください。</li>
+  <li><strong>タップしやすいUI：</strong>ボタンのサイズは最低44×44px以上を確保し、指での操作をしやすくしてください。</li>
+</ul>
+<p>
+  Googleは「モバイルファーストインデックス」を採用しており、モバイル版のページを基準に検索順位を決定します。モバイル最適化はSEO上も直接的に有利に働きます。
+</p>
+{% endblock %}
+
+{% block section_2_3 %}
+<p>
+  Googleが検索エンジンシェアを独占するインドでは、中国のような特殊な制限は存在しません。ただし、ヒンディー語コンテンツのGoogle検索における最適化には以下のポイントが重要です。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>メタタグのヒンディー語対応：</strong><code>&lt;title&gt;</code>タグと<code>&lt;meta name="description"&gt;</code>はヒンディー語（デーヴァナーガリー文字）で記述することで、ヒンディー語検索結果での表示品質が向上します。</li>
+  <li><strong>構造化データ（Schema.org）の活用：</strong>企業情報・製品・FAQなどにSchema.orgの構造化データを設定すると、Googleのリッチリザルトに表示されやすくなります。</li>
+  <li><strong>Google Search Consoleへの登録：</strong>ヒンディー語版と英語版両方のサイトマップを送信し、インデックス状況を定期的に確認しましょう。</li>
+</ul>
+{% endblock %}
+
+{% block section_3_1 %}
+<p>
+  色はインド文化において深い意味を持ちます。ヒンディー語サイトのデザインでは、以下の色の文化的意味を理解した上で配色を決めましょう。
+</p>
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px;">🟠 <strong>サフラン（オレンジ）：</strong>インドを象徴する最も神聖な色のひとつ。「純粋さ」「勇気」「希望」を表し、国旗にも使われています。ポジティブな印象を与えたい場面に適しています。</li>
+  <li style="margin-bottom: 12px;">🟢 <strong>緑（Green）：</strong>「繁栄」「自然」「成長」を象徴します。農業や自然・健康に関連するビジネスとの親和性が高い色です。</li>
+  <li style="margin-bottom: 12px;">🔴 <strong>赤（Red）：</strong>「エネルギー」「情熱」「祝い」を表し、ブライダルや祝祭関連のサイトでは最もよく使われます。CTAボタンにも効果的です。</li>
+  <li style="margin-bottom: 12px;">⚪ <strong>白（White）：</strong>インドでは「悲しみ・喪」を連想させる場合があります。背景色として使うことは問題ありませんが、お祝い・祭典関連のページでは多用を避けましょう。</li>
+</ul>
+{% endblock %}
+
+{% block section_3_2 %}
+<p>
+  デーヴァナーガリー文字はアルファベットより構造が複雑で、上部に「シロレーカ（横線）」が走る独自の字形を持ちます。適切なフォントサイズと行間を設定しないと、文字同士が重なって読みにくくなります。
+</p>
+<p>
+  デーヴァナーガリーのテキストには、英語テキストよりも<strong>大きめのフォントサイズ（16px〜18px以上）</strong>と<strong>広めの行間（line-height: 1.8〜2.0程度）</strong>を設定することを推奨します。字の上部に「マートラ（母音記号）」が付く場合、行間が狭すぎると上下の行で重なって見えます。
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-family: 'Noto Sans Devanagari', 'Hind', sans-serif;<br>
+  font-size: 16px;<br>
+  line-height: 1.9;
+</div>
+<p>
+  また、<strong>「Hind」</strong>もGoogle Fontsで利用できるヒンディー語向けの高品質Webフォントです。Noto Sans Devanagariと組み合わせてフォールバックとして設定しておくと安全です。
+</p>
+{% endblock %}
+
+{% block section_3_3 %}
+<p>
+  インドのWebデザインは、スマートフォンでの視認性を最優先にした「モバイルファースト・フラットデザイン」が主流です。
+</p>
+<p>
+  ただし、インドのユーザーは情報量の多さを好む傾向があり、一度に多くの情報を提供することへの抵抗感が低い傾向があります。「シンプルすぎる」よりも、コンテンツが充実していることで「このサイトは真剣にビジネスをしている」という印象につながります。また、インドは宗教行事・祝日が多く、ディワリ（光のお祭り）やホーリー（色彩祭）などの時期に合わせた季節コンテンツは高いエンゲージメントを生みます。現地のカレンダーに合わせた更新を意識しましょう。
+</p>
+{% endblock %}
+
+{% block section_4_1 %}
+<p>
+  インドのビジネスシーンでは、WhatsAppがコミュニケーションの中心ツールとして定着しています。メールフォームよりも即時性の高い手段を優先する傾向があるため、問い合わせページへの導線設計を工夫しましょう。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>WhatsApp Business：</strong>インドではビジネス用途でのWhatsApp活用が非常に一般的です。問い合わせページに担当者のWhatsApp番号またはWhatsApp Business用のQRコードを掲載することで、商談のハードルが大きく下がります。</li>
+  <li><strong>クリック・トゥ・コール（電話番号のタップ発信）：</strong>スマートフォンからのアクセスが多いため、電話番号は必ず<code>&lt;a href="tel:+91..."&gt;</code>形式でリンクにしておきましょう。</li>
+  <li><strong>問い合わせフォームの簡素化：</strong>入力項目が多いと離脱率が上がります。名前・電話番号・メッセージの3項目程度に絞るのが効果的です。</li>
+</ul>
+{% endblock %}
+
+{% block section_4_2 %}
+<p>
+  インドのユーザーの多くは格安スマートフォンを使用しており、通信環境が不安定な地方ユーザーもターゲットに含まれる場合があります。そのため、ページの軽量化は単なる「快適性」ではなく「到達できるかどうか」の問題になります。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>画像の圧縮・WebP形式の採用：</strong>JPEG/PNGではなくWebP形式を使うことで、画質を維持しながらファイルサイズを大幅に削減できます。</li>
+  <li><strong>遅延読み込み（Lazy Loading）の実装：</strong><code>loading="lazy"</code>属性を画像に付与することで、画面外の画像は必要になるまで読み込まれず、初期表示が速くなります。</li>
+  <li><strong>CDN（コンテンツ・デリバリ・ネットワーク）の活用：</strong>インド国内に配信ノードを持つCDNを使うと、遠距離からのアクセスでもサーバー応答速度が向上します。</li>
+</ul>
+{% endblock %}
+
+{% block section_5 %}
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>ファイルエンコーディングをUTF-8に設定し、<code>&lt;html lang="hi"&gt;</code>を指定しているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Kruti Devなどのレガシーフォントを排除し、Noto Sans Devanagariなどのウェブフォントを設定しているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>フォントサイズ16px以上・行間1.8以上でデーヴァナーガリーが読みやすく表示されているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>スマートフォンからの表示・操作に問題がないか（レスポンシブ・ボタンサイズ・読み込み速度）？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>問い合わせページにWhatsApp連絡先またはQRコードを設置しているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>英語版と併用する場合、hreflangタグとGoogle Search Consoleへのサイトマップ送信を設定しているか？</span>
+  </li>
+</ul>
+<p>
+  これらを全て自社で対応するには、専門的な技術と知識が必要です。しかし、Leapを使えば、これらの「ヒンディー語サイト特有のハードル」を最初からクリアした状態でWebサイトを作成できます。
+</p>
+{% endblock %}
