@@ -1,0 +1,196 @@
+---
+layout: base.njk
+title: ポルトガル語ホームページ作成の注意点・完全ガイド
+target_lang: ポルトガル語
+parent_url: /ja/hp-guide/portuguese-hp/
+thumbnail: "/assets/images/guide-portuguese.jpg"
+---
+
+{% extends "guide-caution.njk" %}
+
+{% block section_0 %}
+<p>
+  「ポルトガル語でホームページを作ったのに、現地ユーザーに全く響かない」というケースは少なくありません。<br>
+  その主な理由は、<strong>ブラジル葡語（PT-BR）とヨーロッパ葡語（PT-PT）の混同</strong>と、特にブラジル市場における<strong>SNS文化・コミュニケーションスタイルへの無理解</strong>にあります。同じ「ポルトガル語」でも、ブラジルとポルトガルでは語彙・スペル・文法・ユーザー行動が大きく異なり、的外れなサイトはユーザーの信頼を一瞬で失います。<br>
+  このガイドでは、ポルトガル語市場で成果を出すために必須となる、技術・デザイン・文化面の重要ポイントを網羅的に解説します。
+</p>
+{% endblock %}
+
+{% block section_1_1 %}
+<p>
+  ポルトガル語は世界約2億6千万人が話す言語ですが、主要な話者地域によって<strong>「ブラジル葡語（Português do Brasil / PT-BR）」</strong>と<strong>「ヨーロッパ葡語（Português Europeu / PT-PT）」</strong>に大別されます。両者の違いは日本語と中国語ほど大きくはありませんが、ターゲットを誤ると「外国語のような違和感」を与えます。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>ブラジル葡語（PT-BR）：</strong>話者数が圧倒的に多く（約2億2千万人）、カジュアルで親しみやすい表現が好まれます。二人称は「você」が一般的で、スペルもポルトガルとは一部異なります（例：「fato」→PT-PTは「facto」）。</li>
+  <li><strong>ヨーロッパ葡語（PT-PT）：</strong>ポルトガル本国に加え、モザンビーク・アンゴラ・カーボベルデなどアフリカ諸国でも使用。フォーマルな文体が好まれ、二人称は「tu」も広く使われます。EUのデジタル規制（GDPR）にも対応が必要です。</li>
+</ul>
+<p>
+  <strong>注意：</strong>自動翻訳ツールはブラジル葡語で出力されることが多く、ポルトガル向けサイトに使うと不自然さが際立ちます。また、ブラジル向けであっても、フォーマルな業種（法律・金融・医療）とカジュアルな業種（EC・飲食・エンタメ）では求められる文体が大きく異なります。必ずネイティブによる校正を行いましょう。
+</p>
+{% endblock %}
+
+{% block section_1_2 %}
+<p>
+  ポルトガル語はラテン文字を使用するため、日本語や中国語のような特殊フォントの問題は発生しません。しかし、ポルトガル語特有の<strong>アクセント記号付き文字（特殊文字）</strong>が正しく表示されない問題がしばしば発生します。
+</p>
+<p>
+  ポルトガル語で頻出する特殊文字には以下のものがあります。
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  ã / õ（鼻母音）、á / é / í / ó / ú（アクセント符号）、â / ê / ô（曲折アクセント）、à（グラーヴ）、ç（セジーユ）
+</div>
+<p>
+  これらが文字化けする最大の原因は、HTMLファイルの<strong>文字コード指定の漏れ</strong>です。必ずHTMLの<code>&lt;head&gt;</code>内に以下を記述してください。
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  &lt;meta charset="UTF-8"&gt;
+</div>
+<p>
+  また、<code>lang</code>属性もターゲットに合わせて正しく設定しましょう。ブラジル向けは<code>lang="pt-BR"</code>、ポルトガル向けは<code>lang="pt-PT"</code>が適切です。
+</p>
+{% endblock %}
+
+{% block section_1_3 %}
+<p>
+  ポルトガル本国はEU加盟国であるため、ポルトガル（およびEU圏）のユーザーを対象としたWebサイトには<strong>「GDPR（一般データ保護規則）」</strong>への対応が法的に義務付けられています。
+</p>
+<p>
+  GDPRに違反した場合、最大で「全世界年間売上高の4%」または「2,000万ユーロ」のいずれか高い方の制裁金が科される可能性があります。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>Cookieの同意バナー：</strong>サイト訪問者に対し、Cookie使用の同意を明示的に取得するバナーの設置が必須です。</li>
+  <li><strong>プライバシーポリシーの整備：</strong>収集するデータの種類・目的・保存期間・第三者提供の有無を明記したプライバシーポリシーページを設ける必要があります。</li>
+  <li><strong>Google Analytics等の設定：</strong>GAをはじめとする解析ツールは、GDPR準拠の設定（IPアドレスの匿名化など）を行う必要があります。</li>
+</ul>
+<p>
+  <strong>ブラジル向けの注意：</strong>ブラジルにもGDPRに相当する<strong>「LGPD（Lei Geral de Proteção de Dados）」</strong>が施行されています。ブラジルのユーザーを対象とする場合も、同様のプライバシー対応が求められます。
+</p>
+{% endblock %}
+
+{% block section_2_1 %}
+<p>
+  ブラジルのユーザーは、Webサイトに対して<strong>「親しみやすさ」「温かみ」「人間らしさ」</strong>を強く求めます。堅苦しいコーポレートサイトよりも、語りかけるようなフレンドリーなトーンが好まれます。一方、ポルトガルのユーザーはより落ち着いたフォーマルな表現を好む傾向があります。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>ブラジル向け：</strong>一人称・二人称を積極的に使い、「あなたのために」という語りかけを前面に出す。社員の顔写真や動画メッセージが信頼感を高めます。</li>
+  <li><strong>ポルトガル・EU向け：</strong>実績・認証・受賞歴など客観的な信頼指標を重視する。プライバシーポリシーやセキュリティの明示が特に効果的です。</li>
+  <li><strong>共通：</strong>「保証」「返品対応」「サポート体制」を明確に示すことで、購入・契約のハードルが下がります。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_2 %}
+<p>
+  ブラジル・ポルトガルともに検索エンジンは<strong>Google</strong>が圧倒的シェアを誇ります（ともに95%以上）。そのため、SEO対策はGoogle標準の手法が有効ですが、ポルトガル語特有の注意点があります。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>キーワードの地域差：</strong>同じ商品・サービスでも、ブラジルとポルトガルでは検索キーワードが異なる場合があります（例：「celular」（ブラジル）vs「telemóvel」（ポルトガル）＝スマートフォンの意）。ターゲット地域のキーワードで最適化することが重要です。</li>
+  <li><strong>hreflang属性の設定：</strong>ブラジル向けとポルトガル向けでページを分ける場合、<code>hreflang="pt-BR"</code>と<code>hreflang="pt-PT"</code>を正しく設定しないと、Googleが誤ったページを各地域に表示してしまいます。</li>
+  <li><strong>ローカルSEO：</strong>ブラジルの実店舗・現地サービスには、Google ビジネスプロフィールへの登録が特に効果的です。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_3 %}
+<p>
+  ブラジルはSNS利用率が世界トップクラスであり、特に<strong>Instagram・WhatsApp・YouTube</strong>の浸透率が極めて高く、Webサイトよりもこれらのプラットフォームを入り口にするユーザーが多数います。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>Instagram：</strong>ブラジルは世界有数のInstagram大国です。HPにInstagramフィードを埋め込んだり、InstagramとHPを連携させることで、ブランドの一貫性とエンゲージメントが高まります。</li>
+  <li><strong>WhatsApp：</strong>ビジネス用途での利用が非常に盛んで、「WhatsAppで今すぐ相談」ボタンの設置はコンバージョン向上に直結します。WhatsApp Business APIを活用した自動応答の導入も有効です。</li>
+  <li><strong>YouTube：</strong>ブラジルはYouTube利用率が世界最高水準です。製品紹介・チュートリアル動画をHPに埋め込むことで、離脱率の低下と滞在時間の向上が期待できます。</li>
+</ul>
+{% endblock %}
+
+{% block section_3_1 %}
+<p>
+  色は文化的なメッセージを持ちます。ブラジルとポルトガルでは、色に対する感覚に若干の違いがあります。
+</p>
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px;">🟢 <strong>緑・黄（Green / Yellow）：</strong>ブラジル国旗の色であり、ブラジル人にとって強いナショナルアイデンティティを持ちます。ブラジル向けのキャンペーンや祝祭（カーニバル・6月祭りなど）に合わせると効果的です。</li>
+  <li style="margin-bottom: 12px;">🔵 <strong>青（Blue）：</strong>ブラジル・ポルトガルともに信頼・誠実さの象徴として広く好まれます。金融・医療・テクノロジー分野のWebサイトに特に適しています。</li>
+  <li style="margin-bottom: 12px;">🔴 <strong>赤（Red）：</strong>情熱・エネルギーを象徴し、セールやCTAボタンに効果的です。ただし、ブラジルでは政治的な連想（特定の政党カラー）を持つ場合があるため、文脈に注意しましょう。</li>
+  <li style="margin-bottom: 12px;">🟣 <strong>紫（Purple）：</strong>ブラジルでは「悲しみ・喪」を連想させる色とされており、特に葬儀以外の文脈での多用は避けた方が無難です。</li>
+</ul>
+{% endblock %}
+
+{% block section_3_2 %}
+<p>
+  ポルトガル語はラテン文字を使用するため、日本語や中国語のような特殊フォントの問題は基本的に発生しません。ただし、アクセント記号付き文字（ã、ç、êなど）が含まれるため、選択するフォントがこれらのグリフ（字形）を正しくサポートしているかを確認する必要があります。
+</p>
+<p>
+  ほとんどの主要Webフォントはポルトガル語の特殊文字に対応していますが、念のため<strong>Latin Extended</strong>サブセットを含むフォントを選ぶと安全です。以下はポルトガル語Webサイトで実績のある定番フォントです。
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-family: "Inter", "Lato", "Open Sans", "Roboto", sans-serif;
+</div>
+<p>
+  文字サイズはアルファベット圏の標準である<strong>16px</strong>を基準にし、本文は1.6〜1.8の行間（line-height）を設定すると読みやすいレイアウトになります。
+</p>
+{% endblock %}
+
+{% block section_3_3 %}
+<p>
+  ブラジルのWebデザイントレンドは、鮮やかな配色と大胆なビジュアルを好む傾向があります。ただし、近年はグローバルなデザイントレンドの影響を強く受けており、モダンでクリーンなデザインも広く受け入れられています。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>温かみのある人物写真：</strong>多様な人種・年齢層が映ったインクルーシブなビジュアルが好まれます。ブラジルは多民族国家であり、特定の人種に偏った写真はブランドイメージに影響することがあります。</li>
+  <li><strong>明確なCTAボタン：</strong>ブラジルのユーザーは行動志向が強く、「今すぐ購入」「無料で試す」「WhatsAppで相談」など、具体的な行動を促すボタンへの反応が良い傾向があります。</li>
+  <li><strong>ポルトガル向け：</strong>より落ち着いたトーン・マナー（シンプルで洗練されたデザイン）が好まれます。過度なアニメーションや派手な色使いは避け、ヨーロッパ的なミニマリズムを意識しましょう。</li>
+</ul>
+{% endblock %}
+
+{% block section_4_1 %}
+<p>
+  ブラジルのユーザーは、メールフォームよりも<strong>即時性の高いコミュニケーション手段</strong>を強く好みます。特にWhatsAppの普及率はほぼ100%に近く、ビジネスの問い合わせ手段として最も信頼されています。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>WhatsAppボタン：</strong>フローティングボタン（画面右下に常時表示）として「WhatsAppで相談する」を設置するのが、ブラジルのWebサイトではほぼ標準となっています。クリック一つでチャットが開く設計にしましょう。</li>
+  <li><strong>Instagram DM連携：</strong>ブラジルのユーザーはInstagramのDMでもビジネス問い合わせを行います。HPとInstagramアカウントを連携し、DMへの誘導リンクを設けることも有効です。</li>
+  <li><strong>ポルトガル・EU向け：</strong>メールフォームやお問い合わせフォームが依然として主流です。ただし、GDPRに準拠した個人情報の取り扱いに関する同意チェックボックスの設置が必須です。</li>
+</ul>
+{% endblock %}
+
+{% block section_4_2 %}
+<p>
+  ブラジルはモバイルインターネット利用率が極めて高く、スマートフォンが主要なWeb閲覧デバイスです。特に低・中所得層ではPCを持たずスマホのみでネットを利用するユーザーが多数を占めるため、モバイルファーストの設計は絶対条件です。
+</p>
+<p>
+  また、ブラジルでは地域によって通信環境の格差が大きく、農村部や北部・北東部地域では低速回線のユーザーも多数います。ページの表示速度を最優先に考え、以下の点に配慮してください。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Core Web Vitals の最適化：</strong>GoogleのCWV指標（LCP・FID・CLS）を良好に保つことが、ブラジル市場でのGoogle検索順位にも直結します。</li>
+  <li><strong>画像の最適化：</strong>WebP形式の採用、遅延読み込み（lazy loading）、適切な解像度の設定を徹底する。</li>
+  <li><strong>決済手段への対応（ECサイトの場合）：</strong>ブラジルでは「Pix（ピックス）」と呼ばれる即時決済システムや「Boleto（ボレト）」という銀行振込伝票が広く使われています。クレジットカード以外の決済手段への対応がコンバージョン率向上に直結します。</li>
+</ul>
+{% endblock %}
+
+{% block section_5 %}
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>ターゲットが「ブラジル（PT-BR）」か「ポルトガル・EU（PT-PT）」かを明確に区別し、語彙・文体・表現を使い分けているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>HTMLに<code>charset="UTF-8"</code>を設定し、ã・ç・êなどの特殊文字が正しく表示されているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span><code>hreflang</code>属性を正しく設定し、ブラジルとポルトガル向けのページをGoogleが適切に判別できるようになっているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>ポルトガル・EU向けサイトで、GDPR（またはブラジル向けにLGPD）に準拠したCookie同意バナーとプライバシーポリシーを整備しているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>ブラジル向けにWhatsAppのフローティングボタンを設置し、即時問い合わせができる導線を作っているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>モバイルファーストで設計され、低速回線でも快適に表示できる軽量なページになっているか？</span>
+  </li>
+</ul>
+<p>
+  これらを全て自社で対応するには、言語・文化・法規制の幅広い専門知識が必要です。しかし、Leapを使えば、これらの「ポルトガル語特有の壁」を最初からクリアした状態でWebサイトを作成できます。
+</p>
+{% endblock %}
