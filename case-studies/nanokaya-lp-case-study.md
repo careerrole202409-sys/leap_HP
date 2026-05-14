@@ -2,6 +2,7 @@
 layout: case-detail.njk
 tags: cases
 eleventyExcludeFromCollections: true
+permalink: false
 logo: "https://res.cloudinary.com/duh6rnjba/image/upload/v1778721642/Nanokaya_logo_lc2dmf.png"
 industry: "retail"
 site_type: ["brand"]
