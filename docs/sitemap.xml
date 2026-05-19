@@ -989,10 +989,6 @@
     <lastmod>2026-05-14T00:00:00.000Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/case-studies/purely/</loc>
-    <lastmod>2026-05-14T00:47:47.896Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/ja/blog/marketing/wovn-io-implementation-guide/</loc>
     <lastmod>2026-05-15T00:00:00.000Z</lastmod>
   </url>
@@ -1003,5 +999,9 @@
   <url>
     <loc>https://www.leap.site/ja/blog/marketing/wovn-manual-multilingualization/</loc>
     <lastmod>2026-05-19T00:00:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/case-studies/purely/</loc>
+    <lastmod>2026-05-19T01:53:23.221Z</lastmod>
   </url>
 </urlset>
