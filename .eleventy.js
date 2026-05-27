@@ -15,6 +15,9 @@ module.exports = function(eleventyConfig) {
   // CNAMEファイルをそのままdocs/CNAMEにコピー
   eleventyConfig.addPassthroughCopy("CNAME");
 
+  // Jekyll無効化ファイルをdocs/.nojekyllにコピー
+  eleventyConfig.addPassthroughCopy(".nojekyll");
+
   return {
     dir: {
       input: ".",

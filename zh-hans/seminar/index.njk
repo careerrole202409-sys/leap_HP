@@ -1,0 +1,173 @@
+---
+layout: base.njk
+title: Leap活动与研讨会 | Leap
+description: 浏览Leap举办的关于海外拓展、跨境电商及国际营销的最新活动、网络研讨会及往期回放。
+---
+
+<!--
+  SECTION 1: HERO AREA
+-->
+<section class="section py-3xl" style="background: var(--color-primary-gradient); color: var(--color-white);">
+    <div class="container text-center">
+        <h1 class="text-white mb-md">Leap活动与研讨会</h1>
+    </div>
+</section>
+
+<!--
+  SECTION 2: SEMINAR MAIN
+-->
+<section id="seminar-section" class="section py-xl bg-beige">
+    <div class="container">
+        <h2 class="text-center mb-lg" style="font-size: var(--font-size-3xl);">活动与研讨会</h2>
+
+        <!-- 标签导航 -->
+        <div class="flex justify-center" style="border-bottom: 1px solid var(--color-border); margin-bottom: var(--space-xl);">
+            <nav style="display: flex; gap: var(--space-xl); overflow-x: auto; padding-bottom: 0;">
+
+                <!-- 即将举办 (ongoing) -->
+                <div onclick="filterSeminars('ongoing')" class="tab-btn active" id="btn-ongoing"
+                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid var(--color-primary-start); color: var(--color-primary-start); font-weight: bold; cursor: pointer; font-size: 1rem; white-space: nowrap;">
+                    即将举办
+                </div>
+
+                <!-- 回放中 (archive) -->
+                <div onclick="filterSeminars('archive')" class="tab-btn" id="btn-archive"
+                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
+                    回放中
+                </div>
+
+                <!-- 往期活动 (past) -->
+                <div onclick="filterSeminars('past')" class="tab-btn" id="btn-past"
+                     style="padding-bottom: var(--space-sm); border-bottom: 3px solid transparent; color: var(--color-text-secondary); cursor: pointer; font-size: 1rem; white-space: nowrap;">
+                    往期活动
+                </div>
+
+            </nav>
+        </div>
+
+        <div id="seminar-grid" class="grid-3">
+            {% set all_posts = collections.seminar | reverse %}
+            {% set has_posts = false %}
+
+            {% for post in all_posts %}
+                {% if post.data.locale == 'zh-hans' %}
+                    {% set has_posts = true %}
+                    <a href="{{ post.url }}"
+                       class="seminar-item card p-0"
+                       data-date="{{ post.data.event_date | date('yyyy-MM-dd') }}"
+                       data-archive="{{ post.data.archive_url | default('') }}"
+                       style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; text-decoration: none; color: inherit;">
+
+                        <!-- 缩略图 -->
+                        {% if post.data.thumbnail_url %}
+                        <div style="height: 160px; overflow: hidden;">
+                            <img src="{{ post.data.thumbnail_url }}" alt="{{ post.data.title }}"
+                                 style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        {% else %}
+                        <div style="background-color: var(--color-background); height: 160px; display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 3rem;">🎤</span>
+                        </div>
+                        {% endif %}
+
+                        <!-- 内容 -->
+                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                            <span class="text-light font-bold mb-sm" style="font-size: var(--font-size-xs); text-transform: uppercase;">
+                                {{ post.data.type }}
+                            </span>
+                            <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--space-sm);">
+                                {{ post.data.title }}
+                            </h3>
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: var(--font-size-sm);">
+                                {{ post.data.description }}
+                            </p>
+                            <span class="text-primary font-bold">
+                                了解详情 &rarr;
+                            </span>
+                        </div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+
+            <!-- 无结果提示 -->
+            <div id="no-results-message" class="text-center w-full flex items-center justify-center hidden" style="grid-column: 1/-1; padding: var(--space-2xl) 0;">
+                <p class="text-secondary">未找到相关活动。</p>
+            </div>
+        </div>
+
+        {% if not has_posts %}
+            <div class="text-center w-full flex items-center justify-center" style="padding: var(--space-2xl) 0;">
+                <p class="text-secondary">目前暂无公开活动信息。</p>
+            </div>
+        {% endif %}
+
+    </div>
+</section>
+
+{% include "cta1.njk" %}
+
+<!-- SCRIPTS -->
+<script>
+    function getSeminarCategory(dateStr, archiveUrl) {
+        if (!dateStr) return 'past';
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const eventDate = new Date(dateStr);
+        if (eventDate >= today) return 'ongoing';
+        if (archiveUrl) return 'archive';
+        return 'past';
+    }
+
+    function filterSeminars(topic) {
+        const buttons = document.querySelectorAll('.tab-btn');
+        buttons.forEach(btn => {
+            btn.style.borderBottom = '3px solid transparent';
+            btn.style.color = 'var(--color-text-secondary)';
+            btn.style.fontWeight = 'normal';
+            btn.classList.remove('active');
+        });
+
+        const activeBtn = document.getElementById('btn-' + topic);
+        if (activeBtn) {
+            activeBtn.style.borderBottom = '3px solid var(--color-primary-start)';
+            activeBtn.style.color = 'var(--color-primary-start)';
+            activeBtn.style.fontWeight = 'bold';
+            activeBtn.classList.add('active');
+        }
+
+        const items = document.querySelectorAll('.seminar-item');
+        let visibleCount = 0;
+
+        items.forEach(item => {
+            const category = getSeminarCategory(item.dataset.date, item.dataset.archive);
+            if (category === topic) {
+                item.style.display = 'flex';
+                visibleCount++;
+            } else {
+                item.style.display = 'none';
+            }
+        });
+
+        const noResultsMsg = document.getElementById('no-results-message');
+        if (noResultsMsg) {
+            if (visibleCount === 0) {
+                noResultsMsg.classList.remove('hidden');
+                noResultsMsg.style.display = 'flex';
+            } else {
+                noResultsMsg.classList.add('hidden');
+                noResultsMsg.style.display = 'none';
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        filterSeminars('ongoing');
+    });
+</script>
+
+<style>
+    .hidden { display: none !important; }
+    .tab-btn:hover {
+        color: var(--color-primary-start) !important;
+    }
+</style>

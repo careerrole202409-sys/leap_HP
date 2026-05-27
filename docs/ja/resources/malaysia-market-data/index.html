@@ -106,6 +106,7 @@
                         <span class="nav-link" id="resourcesLabel">資料 ▼</span>
                         <div class="dropdown-menu">
                             <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
+                            <a href="/ja/seminar" class="dropdown-item" id="resourceSeminar">セミナー・イベント</a>
                             <a href="/ja/blog" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">ブログ</a>
                             <a href="/ja/hp-guide" target="_blank" class="dropdown-item" id="resourceHpGuide">HP作成ガイド</a>
                             <a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBuyerSearch">海外バイヤー検索</a>
@@ -162,6 +163,7 @@
             </div>
             <div class="mobile-dropdown-content">
                 <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
+                <a href="/ja/seminar" class="mobile-dropdown-item" id="mobileResourceSeminar">セミナー・イベント</a>
                 <a href="/ja/blog" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">ブログ</a>
                 <a href="/ja/hp-guide" target="_blank" class="mobile-dropdown-item" id="mobileResourceHpGuide">HP作成ガイド</a>
                 <a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBuyerSearch">海外バイヤー検索</a>
@@ -195,6 +197,7 @@
             pricing: "価格",
             resourcesLabel: "資料 ▼",
             resourceDownload: "資料ダウンロード",
+            resourceSeminar: "セミナー・イベント",
             resourceBlog: "ブログ",
             resourceHpGuide: "HP作成ガイド",
             resourceBuyerSearch: "海外バイヤー検索",
@@ -218,6 +221,7 @@
             pricing: "Pricing",
             resourcesLabel: "Resources ▼",
             resourceDownload: "Downloads",
+            resourceSeminar: "Events & Webinars",
             resourceBlog: "Blog",
             resourceHpGuide: "Website Creation Guide",
             resourceBuyerSearch: "Find Overseas Buyers",
@@ -241,6 +245,7 @@
             pricing: "价格方案",
             resourcesLabel: "资料 ▼",
             resourceDownload: "资料下载",
+            resourceSeminar: "活动与研讨会",
             resourceBlog: "博客",
             resourceHpGuide: "建站指南",
             resourceBuyerSearch: "海外买家搜索",
@@ -281,6 +286,7 @@
         setText('pricingLink', t.pricing);
         setText('resourcesLabel', t.resourcesLabel);
         setText('resourceDownload', t.resourceDownload);
+        setText('resourceSeminar', t.resourceSeminar);
         setText('resourceBlog', t.resourceBlog);
         setText('resourceHpGuide', t.resourceHpGuide);
         setText('resourceBuyerSearch', t.resourceBuyerSearch);
@@ -296,6 +302,7 @@
         setText('mobilePricing', t.pricing);
         setText('mobileResourcesText', t.mobileResourcesText);
         setText('mobileResourceDownload', t.resourceDownload);
+        setText('mobileResourceSeminar', t.resourceSeminar);
         setText('mobileResourceBlog', t.resourceBlog);
         setText('mobileResourceHpGuide', t.resourceHpGuide);
         setText('mobileResourceBuyerSearch', t.resourceBuyerSearch);
@@ -677,6 +684,7 @@
                 <ul>
                     <li><a href="/ja/blog" target="_blank" rel="noopener noreferrer" id="footerBlog">ブログ</a></li>
                     <li><a href="/ja/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
+                    <li><a href="/ja/seminar" id="footerSeminar">セミナー・イベント</a></li>
                     <li><a href="/ja/hp-guide" target="_blank" id="footerHpGuide">HP作成ガイド</a></li>
                     <li><a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" id="footerBuyerSearch">海外バイヤー検索</a></li>
                     <!-- 導入事例を追加 -->
@@ -719,6 +727,7 @@
                     <ul>
                         <li><a href="/ja/blog" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">ブログ</a></li>
                         <li><a href="/ja/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
+                        <li><a href="/ja/seminar" id="footerMobileSeminar">セミナー・イベント</a></li>
                         <li><a href="/ja/hp-guide" target="_blank" id="footerMobileHpGuide">HP作成ガイド</a></li>
                         <li><a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" id="footerMobileBuyerSearch">海外バイヤー検索</a></li>
                         <!-- モバイル版 導入事例を追加 -->
@@ -792,6 +801,7 @@
             toolsTitle: "無料ツール",
             blog: "ブログ",
             resources: "資料ダウンロード",
+            seminar: "セミナー・イベント",
             hpGuide: "HP作成ガイド",
             buyerSearch: "海外バイヤー検索",
             cases: "導入事例", // 追加
@@ -812,6 +822,7 @@
             toolsTitle: "Free Tools",
             blog: "Blog",
             resources: "Downloads",
+            seminar: "Events & Webinars",
             hpGuide: "Website Creation Guide",
             buyerSearch: "Find Overseas Buyers",
             cases: "Case Studies", // 追加
@@ -832,6 +843,7 @@
             toolsTitle: "免费工具",
             blog: "博客",
             resources: "资料下载",
+            seminar: "活动与研讨会",
             hpGuide: "建站指南",
             buyerSearch: "海外买家搜索",
             cases: "客户案例", // 追加
@@ -870,6 +882,7 @@
         setText('footerToolsTitle', t.toolsTitle);
         setText('footerBlog', t.blog);
         setText('footerResources', t.resources);
+        setText('footerSeminar', t.seminar);
         setText('footerHpGuide', t.hpGuide);
         setText('footerBuyerSearch', t.buyerSearch);
         setText('footerCases', t.cases); // 追加
@@ -886,6 +899,7 @@
         setText('footerMobileToolsTitle', t.toolsTitle);
         setText('footerMobileBlog', t.blog);
         setText('footerMobileResources', t.resources);
+        setText('footerMobileSeminar', t.seminar);
         setText('footerMobileHpGuide', t.hpGuide);
         setText('footerMobileBuyerSearch', t.buyerSearch);
         setText('footerMobileCases', t.cases); // 追加
