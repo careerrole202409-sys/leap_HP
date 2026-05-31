@@ -1,0 +1,32 @@
+{
+  "store-setup": {
+    "ja": "ストア構築",
+    "en": "Store Setup",
+    "zh-hans": "店铺搭建"
+  },
+  "inventory": {
+    "ja": "商品・在庫管理",
+    "en": "Product & Inventory",
+    "zh-hans": "商品与库存管理"
+  },
+  "logistics": {
+    "ja": "物流・配送",
+    "en": "Logistics & Shipping",
+    "zh-hans": "物流与配送"
+  },
+  "marketing": {
+    "ja": "集客・広告",
+    "en": "Marketing & Advertising",
+    "zh-hans": "引流与广告"
+  },
+  "customer-support": {
+    "ja": "顧客対応",
+    "en": "Customer Support",
+    "zh-hans": "客户服务"
+  },
+  "cross-border": {
+    "ja": "越境EC",
+    "en": "Cross-border EC",
+    "zh-hans": "跨境电商"
+  }
+}
