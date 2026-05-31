@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<link rel="icon" href="/assets/favicon.png">
+
+<title>EC運用マニュアル | Leap</title>
+  <meta name="description" content="ストア構築から商品管理、物流・配送、集客・広告、顧客対応、越境ECまで、ECを成功させるための実践的なノウハウを体系的に学べます。">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.leap.site/ja/ec-guide/">
+  <meta property="og:title" content="EC運用マニュアル | Leap">
+  <meta property="og:description" content="ストア構築から商品管理、物流・配送、集客・広告、顧客対応、越境ECまで、ECを成功させるための実践的なノウハウを体系的に学べます。">
+  <meta property="og:image" content="https://www.leap.site/assets/og-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="EC運用マニュアル | Leap">
+  <meta property="twitter:description" content="ストア構築から商品管理、物流・配送、集客・広告、顧客対応、越境ECまで、ECを成功させるための実践的なノウハウを体系的に学べます。">
+  <meta property="twitter:image" content="https://www.leap.site/assets/og-image.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E0BHMWHJNK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-E0BHMWHJNK');
+    </script>
+
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "uxpxgpg8ea");
+</script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ストア構築から商品管理、物流・配送、集客・広告、顧客対応、越境ECまで、ECを成功させるための実践的なノウハウを体系的に学べます。">
+    <title>EC運用マニュアル | Leap</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    
+    
+    <!-- Fonts (Optional: Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-container" id="header">
+    <div class="header-top" id="headerTop">
+        <div class="header-top-content">
+            <div class="header-top-left">
+                <div class="language-selector">
+                    <div class="language-current" id="languageCurrent">
+                        <span>🌐</span>
+                        <span id="currentLang">日本語</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <a href="#" class="language-option" data-lang="ja">日本語</a>
+                        <a href="#" class="language-option" data-lang="en">English</a>
+                        <a href="#" class="language-option" data-lang="zh-hans">简体中文</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-top-right">
+                <a href="https://app.leap.site" class="header-top-link" id="loginLink">ログイン</a>
+                <a href="/ja/about" class="header-top-link" id="aboutLink">会社概要</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <div class="header-main-content">
+            <div class="nav-left">
+                <a href="/ja/" class="logo-link">
+                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="logo-img">
+                </a>
+                
+                <nav class="nav-links">
+                    <div class="nav-item">
+                        <span class="nav-link" id="servicesLabel">サービス ▼</span>
+                        <div class="dropdown-menu">
+                            <a href="/ja/services/multilingual-website" class="dropdown-item" id="serviceWebsite">多言語HP・LP作成</a>
+                            <a href="/ja/services/multilingual-blog" class="dropdown-item" id="serviceBlog">多言語ブログ作成</a>
+                            <a href="/ja/services/multilingual-ec" class="dropdown-item" id="serviceEc">多言語EC（越境EC）制作</a>
+                            <a href="/ja/services/ai-localize" class="dropdown-item" id="serviceAiLocalize">AI自動ローカライズ</a>
+                        </div>
+                    </div>
+                    <!-- 導入事例を追加 -->
+                    <a href="/ja/case-studies" class="nav-link" id="casesLink">導入事例</a>
+                    <a href="/ja/pricing" class="nav-link" id="pricingLink">価格</a>
+                    <div class="nav-item">
+                        <span class="nav-link" id="resourcesLabel">資料 ▼</span>
+                        <div class="dropdown-menu">
+                            <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
+                            <a href="/ja/seminar" class="dropdown-item" id="resourceSeminar">セミナー・イベント</a>
+                            <a href="/ja/blog" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">ブログ</a>
+                            <a href="/ja/hp-guide" target="_blank" class="dropdown-item" id="resourceHpGuide">HP作成ガイド</a>
+                            <a href="/ja/ec-guide" target="_blank" class="dropdown-item" id="resourceEcGuide">EC運用マニュアル</a>
+                            <a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBuyerSearch">海外バイヤー検索</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <a href="/ja/about/#contact" class="btn btn-demo" id="demoBtn">デモを申し込む</a>
+                <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="btn btn-start" id="startBtn">無料スタート</a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+        <div class="mobile-nav-item">
+            <a href="/ja/" class="mobile-nav-link" id="mobileHome">ホーム</a>
+        </div>
+        
+        <div class="mobile-nav-item">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(this)">
+                <span id="mobileServicesText">サービス</span>
+                <span>▼</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <a href="/ja/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">多言語HP・LP作成</a>
+                <a href="/ja/services/multilingual-blog" class="mobile-dropdown-item" id="mobileServiceBlog">多言語ブログ作成</a>
+                <a href="/ja/services/multilingual-ec" class="mobile-dropdown-item" id="mobileServiceEc">多言語EC（越境EC）制作</a>
+                <a href="/ja/services/ai-localize" class="mobile-dropdown-item" id="mobileServiceAiLocalize">AI自動ローカライズ</a>
+            </div>
+        </div>
+
+        <!-- モバイル版 導入事例を追加 -->
+        <div class="mobile-nav-item">
+            <a href="/ja/case-studies" class="mobile-nav-link" id="mobileCases">導入事例</a>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a href="/ja/pricing" class="mobile-nav-link" id="mobilePricing">価格</a>
+        </div>
+
+        <div class="mobile-nav-item">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(this)">
+                <span id="mobileResourcesText">資料</span>
+                <span>▼</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
+                <a href="/ja/seminar" class="mobile-dropdown-item" id="mobileResourceSeminar">セミナー・イベント</a>
+                <a href="/ja/blog" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">ブログ</a>
+                <a href="/ja/hp-guide" target="_blank" class="mobile-dropdown-item" id="mobileResourceHpGuide">HP作成ガイド</a>
+                <a href="/ja/ec-guide" target="_blank" class="mobile-dropdown-item" id="mobileResourceEcGuide">EC運用マニュアル</a>
+                <a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBuyerSearch">海外バイヤー検索</a>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a href="/ja/about" class="mobile-nav-link" id="mobileAbout">会社概要</a>
+        </div>
+
+        <div class="mobile-cta-buttons">
+            <a href="/ja/about/#contact" class="btn btn-demo-mobile" id="mobileDemoBtn">デモを申し込む</a>
+            <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="btn btn-start-mobile" id="mobileStartBtn">無料で始める</a>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    const translations = {
+        ja: {
+            langName: "日本語",
+            login: "ログイン",
+            about: "会社概要",
+            servicesLabel: "サービス ▼",
+            serviceWebsite: "多言語HP・LP作成",
+            serviceBlog: "多言語ブログ作成",
+            serviceEc: "多言語EC（越境EC）制作",
+            serviceAiLocalize: "AI自動ローカライズ",
+            cases: "導入事例", // 追加
+            pricing: "価格",
+            resourcesLabel: "資料 ▼",
+            resourceDownload: "資料ダウンロード",
+            resourceSeminar: "セミナー・イベント",
+            resourceBlog: "ブログ",
+            resourceHpGuide: "HP作成ガイド",
+            resourceEcGuide: "EC運用マニュアル",
+            resourceBuyerSearch: "海外バイヤー検索",
+            demo: "デモを申し込む",
+            start: "無料スタート",
+            mobileHome: "ホーム",
+            mobileServicesText: "サービス",
+            mobileResourcesText: "資料",
+            mobileStart: "無料で始める"
+        },
+        en: {
+            langName: "English",
+            login: "Login",
+            about: "About Us",
+            servicesLabel: "Services ▼",
+            serviceWebsite: "Multilingual Website & LP",
+            serviceBlog: "Multilingual Blog",
+            serviceEc: "Cross-border EC",
+            serviceAiLocalize: "AI Localization",
+            cases: "Case Studies", // 追加
+            pricing: "Pricing",
+            resourcesLabel: "Resources ▼",
+            resourceDownload: "Downloads",
+            resourceSeminar: "Events & Webinars",
+            resourceBlog: "Blog",
+            resourceHpGuide: "Website Creation Guide",
+            resourceEcGuide: "EC Operations Manual",
+            resourceBuyerSearch: "Find Overseas Buyers",
+            demo: "Request Demo",
+            start: "Start for Free",
+            mobileHome: "Home",
+            mobileServicesText: "Services",
+            mobileResourcesText: "Resources",
+            mobileStart: "Start for Free"
+        },
+        'zh-hans': {
+            langName: "简体中文",
+            login: "登录",
+            about: "公司简介",
+            servicesLabel: "服务 ▼",
+            serviceWebsite: "多语言建站・LP制作",
+            serviceBlog: "多语言博客",
+            serviceEc: "跨境电商制作",
+            serviceAiLocalize: "AI本地化",
+            cases: "客户案例", // 追加
+            pricing: "价格方案",
+            resourcesLabel: "资料 ▼",
+            resourceDownload: "资料下载",
+            resourceSeminar: "活动与研讨会",
+            resourceBlog: "博客",
+            resourceHpGuide: "建站指南",
+            resourceEcGuide: "EC运营手册",
+            resourceBuyerSearch: "海外买家搜索",
+            demo: "申请演示",
+            start: "免费开始",
+            mobileHome: "首页",
+            mobileServicesText: "服务",
+            mobileResourcesText: "资料",
+            mobileStart: "免费开始"
+        }
+    };
+
+    function getHeaderLanguage() {
+        const path = window.location.pathname;
+        const match = path.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+        if (!match) return 'ja';
+        return match[1] === 'jp' ? 'ja' : match[1];
+    }
+
+    function updateHeaderContent() {
+        const lang = getHeaderLanguage();
+        const t = translations[lang] || translations['ja'];
+
+        const setText = (id, text) => {
+            const el = document.getElementById(id);
+            if (el) el.textContent = text;
+        };
+
+        setText('currentLang', t.langName);
+        setText('loginLink', t.login);
+        setText('aboutLink', t.about);
+        setText('servicesLabel', t.servicesLabel);
+        setText('serviceWebsite', t.serviceWebsite);
+        setText('serviceBlog', t.serviceBlog);
+        setText('serviceEc', t.serviceEc);
+        setText('serviceAiLocalize', t.serviceAiLocalize);
+        setText('casesLink', t.cases); // 追加
+        setText('pricingLink', t.pricing);
+        setText('resourcesLabel', t.resourcesLabel);
+        setText('resourceDownload', t.resourceDownload);
+        setText('resourceSeminar', t.resourceSeminar);
+        setText('resourceBlog', t.resourceBlog);
+        setText('resourceHpGuide', t.resourceHpGuide);
+        setText('resourceEcGuide', t.resourceEcGuide);
+        setText('resourceBuyerSearch', t.resourceBuyerSearch);
+        setText('demoBtn', t.demo);
+        setText('startBtn', t.start);
+        setText('mobileHome', t.mobileHome);
+        setText('mobileServicesText', t.mobileServicesText);
+        setText('mobileServiceWebsite', t.serviceWebsite);
+        setText('mobileServiceBlog', t.serviceBlog);
+        setText('mobileServiceEc', t.serviceEc);
+        setText('mobileServiceAiLocalize', t.serviceAiLocalize);
+        setText('mobileCases', t.cases); // 追加
+        setText('mobilePricing', t.pricing);
+        setText('mobileResourcesText', t.mobileResourcesText);
+        setText('mobileResourceDownload', t.resourceDownload);
+        setText('mobileResourceSeminar', t.resourceSeminar);
+        setText('mobileResourceBlog', t.resourceBlog);
+        setText('mobileResourceHpGuide', t.resourceHpGuide);
+        setText('mobileResourceEcGuide', t.resourceEcGuide);
+        setText('mobileResourceBuyerSearch', t.resourceBuyerSearch);
+        setText('mobileAbout', t.about);
+        setText('mobileDemoBtn', t.demo);
+        setText('mobileStartBtn', t.mobileStart);
+    }
+
+    document.addEventListener('DOMContentLoaded', updateHeaderContent);
+})();
+</script>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        
+<!-- ▼ ヒーローセクション -->
+<section class="section py-3xl" style="background: var(--color-primary-gradient); color: var(--color-white);">
+    <div class="container text-center">
+        <span class="text-white font-bold mb-sm d-block" style="opacity: 0.9; letter-spacing: 0.05em;">Leap Knowledge Base</span>
+        <h1 class="text-white mb-md">EC運用マニュアル</h1>
+        <p class="text-white mb-xl" style="font-size: var(--font-size-lg); max-width: 800px; margin-left: auto; margin-right: auto;">
+            ストア構築から商品・在庫管理、物流・配送、集客・広告、<br>
+            顧客対応、そして越境ECまで。EC担当者が現場で使える実践ノウハウを体系的に学べます。
+        </p>
+    </div>
+</section>
+
+<!-- ▼ マニュアルカテゴリ一覧 -->
+<section class="section bg-white" style="position: relative; margin-top: -60px; padding-top: var(--space-lg); padding-bottom: var(--space-3xl);">
+    <div class="container">
+
+        <div class="flex justify-end mb-md" style="position: relative; z-index: 10;">
+            <a href="/ja/ec-guide/list/" class="view-all-link">
+                すべての記事一覧を見る &rarr;
+            </a>
+        </div>
+
+        <!-- 6つの大カテゴリへのリンクカード -->
+        <div class="grid-3" style="gap: 20px;">
+
+            <!-- 1. ストア構築 -->
+            <a href="/ja/ec-guide/store-setup/" class="manual-card">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016 2.993 2.993 0 0 0 2.25-1.016 3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" /></svg>
+                </div>
+                <h2 class="manual-title">ストア構築</h2>
+                <p class="manual-desc">プラットフォーム選定・初期設定・ストアデザインまで、ECを立ち上げるための完全ガイド。</p>
+                <span class="manual-link">一覧を見る &rarr;</span>
+            </a>
+
+            <!-- 2. 商品・在庫管理 -->
+            <a href="/ja/ec-guide/inventory/" class="manual-card">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" /></svg>
+                </div>
+                <h2 class="manual-title">商品・在庫管理</h2>
+                <p class="manual-desc">商品登録・説明文作成・価格設定・在庫管理を効率化し、販売機会を最大化するノウハウ。</p>
+                <span class="manual-link">一覧を見る &rarr;</span>
+            </a>
+
+            <!-- 3. 物流・配送 -->
+            <a href="/ja/ec-guide/logistics/" class="manual-card">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg>
+                </div>
+                <h2 class="manual-title">物流・配送</h2>
+                <p class="manual-desc">発送フロー・梱包・返品対応・配送業者選定まで、物流コストを削減して顧客満足を高める方法。</p>
+                <span class="manual-link">一覧を見る &rarr;</span>
+            </a>
+
+            <!-- 4. 集客・広告 -->
+            <a href="/ja/ec-guide/marketing/" class="manual-card">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 1 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.795 23.944 23.944 0 0 1-1.014 5.795m-3.8-11.58a23.917 23.917 0 0 0-4.636 2.02" /></svg>
+                </div>
+                <h2 class="manual-title">集客・広告</h2>
+                <p class="manual-desc">SEO・SNS・リスティング広告・メールマーケティングで購買数を最大化するプロモーション戦略。</p>
+                <span class="manual-link">一覧を見る &rarr;</span>
+            </a>
+
+            <!-- 5. 顧客対応 -->
+            <a href="/ja/ec-guide/customer-support/" class="manual-card">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" /></svg>
+                </div>
+                <h2 class="manual-title">顧客対応</h2>
+                <p class="manual-desc">レビュー管理・クレーム対応・リピーター獲得まで、顧客満足度を高めるCSの実践テクニック。</p>
+                <span class="manual-link">一覧を見る &rarr;</span>
+            </a>
+
+            <!-- 6. 越境EC -->
+            <a href="/ja/ec-guide/cross-border/" class="manual-card">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" /></svg>
+                </div>
+                <h2 class="manual-title">越境EC</h2>
+                <p class="manual-desc">多言語対応・海外配送・関税・現地決済まで。国境を越えてECで売上を伸ばす実践マニュアル。</p>
+                <span class="manual-link">一覧を見る &rarr;</span>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- ▼ 新着記事セクション -->
+<section id="latest-articles-section" class="section py-xl bg-beige">
+    <div class="container">
+
+        <div class="flex justify-between items-center mb-lg" style="width: 100%; justify-content: space-between; gap: 20px;">
+            <h2 id="section-title" class="text-xl font-bold" style="border-left: 5px solid var(--color-primary-start); padding-left: 15px;">新着記事</h2>
+        </div>
+
+        <div class="grid-3" id="posts-container">
+            
+
+            
+                
+
+                    
+                    
+
+                    <article class="card p-0 blog-item"
+                             data-tags="ec-guide,中国進出,越境EC,中国SNSマーケティング,小紅書,ライブコマース,海外展開"
+                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+
+                        <a href="/ja/ec-guide/cross-border/china-cross-border-ec-strategy/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1538428494232-9c0d8a3ab403?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+                                 alt="日本の商品は、まだまだ中国・アジアで戦える──CrossLinkAsia Founder &amp; CEO Emma Wangが語る、中国SNS・越境ECでチャンスをつかむための実践論"
+                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                        </a>
+
+                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                            <div class="flex justify-between items-center mb-sm">
+                                <span class="text-primary font-bold" style="font-size: 12px; background: rgba(193, 0, 51, 0.1); padding: 4px 8px; border-radius: 4px;">
+                                    越境EC
+                                </span>
+                                <time style="font-size: 12px; color: var(--color-text-secondary);">
+                                    2026.05.29
+                                </time>
+                            </div>
+
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
+                                <a href="/ja/ec-guide/cross-border/china-cross-border-ec-strategy/" style="color: inherit; text-decoration: none;">
+                                    日本の商品は、まだまだ中国・アジアで戦える──CrossLinkAsia Founder &amp; CEO Emma Wangが語る、中国SNS・越境ECでチャンスをつかむための実践論
+                                </a>
+                            </h3>
+
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
+                                日本企業の商品を見ていると、つい「これ、中国やアジアにちゃんと届けられたら、もっと広がるのにな」と思ってしまう。CrossLinkAsia Founder &amp; CEOのEmma Wang氏に、日本企業が中国・アジアでチャンスをつかむための視点を聞いた。
+                            </p>
+
+                            <div class="flex items-center pt-sm" style="border-top: 1px solid #eee;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background: #ccc; margin-right: 8px; overflow: hidden;">
+                                    <img src="https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap" alt="author" style="width:100%; height:100%; object-fit:cover;">
+                                </div>
+                                <span style="font-size: 12px; font-weight: bold; color: var(--color-text-primary);">
+                                    Leap 編集部
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                
+            
+
+            
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA Section Component -->
+<style>
+    /* ===================================
+       CTA Section Styles (Self-contained)
+       =================================== */
+    .section-cta {
+        background-color: #26000a; /* Deep dark red/black */
+        color: #ffffff;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cta-image-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cta-blob-background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 120%;
+        height: 120%;
+        background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        z-index: 0;
+        opacity: 0.8;
+        max-width: 550px;
+    }
+
+    .cta-image {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 500px;
+        aspect-ratio: 4 / 3;
+        margin: 0 auto;
+        object-fit: cover;
+        border-radius: 8px; /* var(--radius-lg) fallback */
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* var(--shadow-2xl) fallback */
+    }
+
+    .btn-cta-primary {
+        background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+        color: #ffffff;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 14px 0 rgba(193, 0, 51, 0.4);
+    }
+    
+    .btn-cta-primary:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
+        color: #ffffff;
+    }
+
+    .btn-cta-outline {
+        background: transparent;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+    }
+
+    .btn-cta-outline:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+    }
+</style>
+
+<section class="section section-cta py-3xl">
+    <div class="container">
+        <div class="grid-2 items-center" style="gap: 3rem;">
+            
+            <!-- Left: Image & Decoration -->
+            <div class="cta-image-wrapper">
+                <div class="cta-blob-background"></div>
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Leap global business" class="cta-image">
+            </div>
+
+            <!-- Right: Text & Buttons -->
+            <div class="text-left">
+                <h2 id="cta-title" class="mb-lg text-white" style="font-size: 2.25rem;">
+                    <!-- JSで書き換え -->
+                    Leapでグローバルに<br>飛躍しましょう。
+                </h2>
+                
+                <p id="cta-subtitle" class="mb-lg text-white font-bold" style="font-size: 1.125rem; line-height: 1.6;">
+                    <!-- JSで書き換え -->
+                    海外売上を伸ばすためのオールインワンツール
+                </p>
+                
+                <p id="cta-desc" class="mb-xl text-white" style="line-height: 1.8; opacity: 0.9;">
+                    <!-- JSで書き換え -->
+                    多言語HP作成、越境ECの開設・運用、多言語コンテンツ制作、海外向けSNS運用、そして現地の代理店マッチングまで。<br>
+                    Leapなら、複雑な海外展開のプロセスを一元管理し、効率的に海外売上を拡大させることができます。
+                </p>
+                
+                <div class="flex flex-wrap" style="gap: 1rem;">
+                    <a id="cta-demo-btn" href="/ja/about/#contact" class="btn btn-lg btn-cta-primary">
+                        <!-- JSで書き換え -->
+                        デモを申し込む &rarr;
+                    </a>
+                    <a id="cta-free-btn" href="https://app.leap.site" class="btn btn-lg btn-cta-outline">
+                        <!-- JSで書き換え -->
+                        無料で試してみる &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+(function() {
+    // 翻訳データ定義
+    const ctaTranslations = {
+        ja: {
+            title: 'Leapでグローバルに<br>飛躍しましょう。',
+            subtitle: '海外売上を伸ばすためのオールインワンツール',
+            desc: '多言語HP作成、越境ECの開設・運用、多言語コンテンツ制作、海外向けSNS運用、そして現地の代理店マッチングまで。<br>Leapなら、複雑な海外展開のプロセスを一元管理し、効率的に海外売上を拡大させることができます。',
+            demo: 'デモを申し込む &rarr;',
+            free: '無料で試してみる &rarr;'
+        },
+        en: {
+            title: 'Leap into the Global Market.',
+            subtitle: 'The All-in-One Tool to Boost International Sales',
+            desc: 'From multilingual website creation and cross-border EC management to global content production, SNS marketing, and local partner matching.<br>Leap centralizes the complex process of global expansion, enabling you to efficiently scale your overseas revenue.',
+            demo: 'Request a Demo &rarr;',
+            free: 'Try for Free &rarr;'
+        },
+        'zh-hans': {
+            title: '使用 Leap 实现<br>全球业务飞跃。',
+            subtitle: '提升海外销售额的一站式工具',
+            desc: '多语言网站制作、跨境电商开设运营、多语言内容制作、面向海外的社交媒体运营，以及当地代理商匹配。<br>Leap 能够一元化管理复杂的海外拓展流程，高效助力您的海外销售额增长。',
+            demo: '申请演示 &rarr;',
+            free: '免费试用 &rarr;'
+        }
+    };
+
+    // 現在の言語を取得 (header.jsと同じロジック)
+    function getCtaLanguage() {
+        const path = window.location.pathname;
+        const match = path.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+        if (!match) return 'ja';
+        return match[1] === 'jp' ? 'ja' : match[1];
+    }
+
+    // コンテンツ更新処理
+    function updateCtaContent() {
+        const lang = getCtaLanguage();
+        const t = ctaTranslations[lang] || ctaTranslations['ja']; // フォールバック
+
+        const titleEl = document.getElementById('cta-title');
+        const subtitleEl = document.getElementById('cta-subtitle');
+        const descEl = document.getElementById('cta-desc');
+        const demoBtnEl = document.getElementById('cta-demo-btn');
+        const freeBtnEl = document.getElementById('cta-free-btn');
+
+        if (titleEl) titleEl.innerHTML = t.title;
+        if (subtitleEl) subtitleEl.textContent = t.subtitle;
+        if (descEl) descEl.innerHTML = t.desc;
+        if (demoBtnEl) demoBtnEl.innerHTML = t.demo;
+        if (freeBtnEl) freeBtnEl.innerHTML = t.free;
+    }
+
+    // 実行
+    document.addEventListener('DOMContentLoaded', updateCtaContent);
+})();
+</script>
+
+<style>
+    .view-all-link {
+        color: var(--color-primary-start);
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: transform 0.2s, opacity 0.2s;
+        display: inline-block;
+    }
+
+    .view-all-link:hover {
+        transform: translateX(5px);
+        opacity: 0.8;
+        text-decoration: underline;
+    }
+
+    .manual-card {
+        display: block;
+        background: white;
+        padding: 30px 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.3s, box-shadow 0.3s;
+        border: 1px solid rgba(0,0,0,0.05);
+        text-align: center;
+        height: 100%;
+    }
+
+    .manual-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        border-color: var(--color-primary-start);
+    }
+
+    .icon-box {
+        background: #fff5f7;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+    }
+
+    .manual-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: var(--color-text-primary);
+    }
+
+    .manual-desc {
+        font-size: 0.9rem;
+        color: var(--color-text-secondary);
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .manual-link {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: var(--color-primary-start);
+    }
+</style>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+    <div class="footer-container">
+        <!-- Desktop View -->
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3 id="footerFeaturesTitle">人気の機能</h3>
+                <ul>
+                    <li><a href="/ja/services/multilingual-website" id="footerWebsite">多言語HP・LP作成</a></li>
+                    <li><a href="/ja/services/multilingual-blog" id="footerBlogService">多言語ブログ作成</a></li>
+                    <li><a href="/ja/services/multilingual-ec" id="footerEc">多言語EC（越境EC）制作</a></li>
+                    <li><a href="/ja/services/ai-localize" id="footerAiLocalize">AI自動ローカライズ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerToolsTitle">無料ツール</h3>
+                <ul>
+                    <li><a href="/ja/blog" target="_blank" rel="noopener noreferrer" id="footerBlog">ブログ</a></li>
+                    <li><a href="/ja/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
+                    <li><a href="/ja/seminar" id="footerSeminar">セミナー・イベント</a></li>
+                    <li><a href="/ja/hp-guide" target="_blank" id="footerHpGuide">HP作成ガイド</a></li>
+                    <li><a href="/ja/ec-guide" target="_blank" id="footerEcGuide">EC運用マニュアル</a></li>
+                    <li><a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" id="footerBuyerSearch">海外バイヤー検索</a></li>
+                    <!-- 導入事例を追加 -->
+                    <li><a href="/ja/case-studies" target="_blank" rel="noopener noreferrer" id="footerCases">導入事例</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerCompanyTitle">会社</h3>
+                <ul>
+                    <li><a href="/ja/about" id="footerAbout">会社概要</a></li>
+                    <li><a href="/ja/about/#contact" id="footerContact">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mobile View -->
+        <div class="footer-mobile-section">
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileFeaturesTitle">人気の機能</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="/ja/services/multilingual-website" id="footerMobileWebsite">多言語HP・LP作成</a></li>
+                        <li><a href="/ja/services/multilingual-blog" id="footerMobileBlogService">多言語ブログ作成</a></li>
+                        <li><a href="/ja/services/multilingual-ec" id="footerMobileEc">多言語EC（越境EC）制作</a></li>
+                        <li><a href="/ja/services/ai-localize" id="footerMobileAiLocalize">AI自動ローカライズ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileToolsTitle">無料ツール</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="/ja/blog" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">ブログ</a></li>
+                        <li><a href="/ja/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
+                        <li><a href="/ja/seminar" id="footerMobileSeminar">セミナー・イベント</a></li>
+                        <li><a href="/ja/hp-guide" target="_blank" id="footerMobileHpGuide">HP作成ガイド</a></li>
+                        <li><a href="/ja/ec-guide" target="_blank" id="footerMobileEcGuide">EC運用マニュアル</a></li>
+                        <li><a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" id="footerMobileBuyerSearch">海外バイヤー検索</a></li>
+                        <!-- モバイル版 導入事例を追加 -->
+                        <li><a href="/ja/case-studies" target="_blank" rel="noopener noreferrer" id="footerMobileCases">導入事例</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileCompanyTitle">会社</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="/ja/about" id="footerMobileAbout">会社概要</a></li>
+                        <li><a href="/ja/about/#contact" id="footerMobileContact">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/company/leap-site-inc" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/leap20240729/" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                </svg>
+            </a>
+            <a href="https://x.com/leap_0729" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="footer-brand">
+            <a href="/ja/" class="footer-logo-link">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="footer-logo-img">
+            </a>
+            <div class="footer-copyright" id="footerCopyright">Copyright © 2025 Leap, Inc.</div>
+        </div>
+
+        <div class="footer-legal">
+            <a href="/ja/privacypolicy" id="footerPrivacy">プライバシーポリシー</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="/ja/terms" id="footerTerms">利用規約</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="/ja/tokushoho" id="footerCommerce">特定商取引法に基づく表示</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="/ja/delete-user" id="footerWithdrawal">退会規定</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+(function() {
+    const footerTranslations = {
+        ja: {
+            featuresTitle: "人気の機能",
+            website: "多言語HP・LP作成",
+            blogService: "多言語ブログ作成",
+            ec: "多言語EC（越境EC）制作",
+            aiLocalize: "AI自動ローカライズ",
+            toolsTitle: "無料ツール",
+            blog: "ブログ",
+            resources: "資料ダウンロード",
+            seminar: "セミナー・イベント",
+            hpGuide: "HP作成ガイド",
+            ecGuide: "EC運用マニュアル",
+            buyerSearch: "海外バイヤー検索",
+            cases: "導入事例", // 追加
+            companyTitle: "会社",
+            about: "会社概要",
+            contact: "お問い合わせ",
+            privacy: "プライバシーポリシー",
+            terms: "利用規約",
+            commerce: "特定商取引法に基づく表示",
+            withdrawal: "退会規定"
+        },
+        en: {
+            featuresTitle: "Popular Features",
+            website: "Multilingual Website & LP",
+            blogService: "Multilingual Blog",
+            ec: "Cross-border EC",
+            aiLocalize: "AI Localization",
+            toolsTitle: "Free Tools",
+            blog: "Blog",
+            resources: "Downloads",
+            seminar: "Events & Webinars",
+            hpGuide: "Website Creation Guide",
+            ecGuide: "EC Operations Manual",
+            buyerSearch: "Find Overseas Buyers",
+            cases: "Case Studies", // 追加
+            companyTitle: "Company",
+            about: "About Us",
+            contact: "Contact Us",
+            privacy: "Privacy Policy",
+            terms: "Terms of Service",
+            commerce: "Commercial Transaction Act",
+            withdrawal: "Withdrawal Policy"
+        },
+        'zh-hans': {
+            featuresTitle: "热门功能",
+            website: "多语言建站・LP制作",
+            blogService: "多语言博客",
+            ec: "跨境电商制作",
+            aiLocalize: "AI本地化",
+            toolsTitle: "免费工具",
+            blog: "博客",
+            resources: "资料下载",
+            seminar: "活动与研讨会",
+            hpGuide: "建站指南",
+            ecGuide: "EC运营手册",
+            buyerSearch: "海外买家搜索",
+            cases: "客户案例", // 追加
+            companyTitle: "公司",
+            about: "公司简介",
+            contact: "联系我们",
+            privacy: "隐私政策",
+            terms: "使用条款",
+            commerce: "特定商业交易法",
+            withdrawal: "退会规定"
+        }
+    };
+
+    function getFooterLanguage() {
+        const path = window.location.pathname;
+        const match = path.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+        if (!match) return 'ja';
+        return match[1] === 'jp' ? 'ja' : match[1];
+    }
+
+    function updateFooterContent() {
+        const lang = getFooterLanguage();
+        const t = footerTranslations[lang] || footerTranslations['ja'];
+
+        const setText = (id, text) => {
+            const el = document.getElementById(id);
+            if (el) el.textContent = text;
+        };
+
+        // Desktop
+        setText('footerFeaturesTitle', t.featuresTitle);
+        setText('footerWebsite', t.website);
+        setText('footerBlogService', t.blogService);
+        setText('footerEc', t.ec);
+        setText('footerAiLocalize', t.aiLocalize);
+        setText('footerToolsTitle', t.toolsTitle);
+        setText('footerBlog', t.blog);
+        setText('footerResources', t.resources);
+        setText('footerSeminar', t.seminar);
+        setText('footerHpGuide', t.hpGuide);
+        setText('footerEcGuide', t.ecGuide);
+        setText('footerBuyerSearch', t.buyerSearch);
+        setText('footerCases', t.cases); // 追加
+        setText('footerCompanyTitle', t.companyTitle);
+        setText('footerAbout', t.about);
+        setText('footerContact', t.contact);
+
+        // Mobile
+        setText('footerMobileFeaturesTitle', t.featuresTitle);
+        setText('footerMobileWebsite', t.website);
+        setText('footerMobileBlogService', t.blogService);
+        setText('footerMobileEc', t.ec);
+        setText('footerMobileAiLocalize', t.aiLocalize);
+        setText('footerMobileToolsTitle', t.toolsTitle);
+        setText('footerMobileBlog', t.blog);
+        setText('footerMobileResources', t.resources);
+        setText('footerMobileSeminar', t.seminar);
+        setText('footerMobileHpGuide', t.hpGuide);
+        setText('footerMobileEcGuide', t.ecGuide);
+        setText('footerMobileBuyerSearch', t.buyerSearch);
+        setText('footerMobileCases', t.cases); // 追加
+        setText('footerMobileCompanyTitle', t.companyTitle);
+        setText('footerMobileAbout', t.about);
+        setText('footerMobileContact', t.contact);
+
+        // Legal
+        setText('footerPrivacy', t.privacy);
+        setText('footerTerms', t.terms);
+        setText('footerCommerce', t.commerce);
+        setText('footerWithdrawal', t.withdrawal);
+    }
+
+    document.addEventListener('DOMContentLoaded', updateFooterContent);
+})();
+</script>
+    
+    <!-- JavaScript -->
+    <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/footer.js"></script>
+    
+</body>
+</html>

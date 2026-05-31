@@ -106,8 +106,10 @@
                         <span class="nav-link" id="resourcesLabel">資料 ▼</span>
                         <div class="dropdown-menu">
                             <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
+                            <a href="/ja/seminar" class="dropdown-item" id="resourceSeminar">セミナー・イベント</a>
                             <a href="/ja/blog" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">ブログ</a>
                             <a href="/ja/hp-guide" target="_blank" class="dropdown-item" id="resourceHpGuide">HP作成ガイド</a>
+                            <a href="/ja/ec-guide" target="_blank" class="dropdown-item" id="resourceEcGuide">EC運用マニュアル</a>
                             <a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBuyerSearch">海外バイヤー検索</a>
                         </div>
                     </div>
@@ -162,8 +164,10 @@
             </div>
             <div class="mobile-dropdown-content">
                 <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
+                <a href="/ja/seminar" class="mobile-dropdown-item" id="mobileResourceSeminar">セミナー・イベント</a>
                 <a href="/ja/blog" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">ブログ</a>
                 <a href="/ja/hp-guide" target="_blank" class="mobile-dropdown-item" id="mobileResourceHpGuide">HP作成ガイド</a>
+                <a href="/ja/ec-guide" target="_blank" class="mobile-dropdown-item" id="mobileResourceEcGuide">EC運用マニュアル</a>
                 <a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBuyerSearch">海外バイヤー検索</a>
             </div>
         </div>
@@ -195,8 +199,10 @@
             pricing: "価格",
             resourcesLabel: "資料 ▼",
             resourceDownload: "資料ダウンロード",
+            resourceSeminar: "セミナー・イベント",
             resourceBlog: "ブログ",
             resourceHpGuide: "HP作成ガイド",
+            resourceEcGuide: "EC運用マニュアル",
             resourceBuyerSearch: "海外バイヤー検索",
             demo: "デモを申し込む",
             start: "無料スタート",
@@ -218,8 +224,10 @@
             pricing: "Pricing",
             resourcesLabel: "Resources ▼",
             resourceDownload: "Downloads",
+            resourceSeminar: "Events & Webinars",
             resourceBlog: "Blog",
             resourceHpGuide: "Website Creation Guide",
+            resourceEcGuide: "EC Operations Manual",
             resourceBuyerSearch: "Find Overseas Buyers",
             demo: "Request Demo",
             start: "Start for Free",
@@ -241,8 +249,10 @@
             pricing: "价格方案",
             resourcesLabel: "资料 ▼",
             resourceDownload: "资料下载",
+            resourceSeminar: "活动与研讨会",
             resourceBlog: "博客",
             resourceHpGuide: "建站指南",
+            resourceEcGuide: "EC运营手册",
             resourceBuyerSearch: "海外买家搜索",
             demo: "申请演示",
             start: "免费开始",
@@ -281,8 +291,10 @@
         setText('pricingLink', t.pricing);
         setText('resourcesLabel', t.resourcesLabel);
         setText('resourceDownload', t.resourceDownload);
+        setText('resourceSeminar', t.resourceSeminar);
         setText('resourceBlog', t.resourceBlog);
         setText('resourceHpGuide', t.resourceHpGuide);
+        setText('resourceEcGuide', t.resourceEcGuide);
         setText('resourceBuyerSearch', t.resourceBuyerSearch);
         setText('demoBtn', t.demo);
         setText('startBtn', t.start);
@@ -296,8 +308,10 @@
         setText('mobilePricing', t.pricing);
         setText('mobileResourcesText', t.mobileResourcesText);
         setText('mobileResourceDownload', t.resourceDownload);
+        setText('mobileResourceSeminar', t.resourceSeminar);
         setText('mobileResourceBlog', t.resourceBlog);
         setText('mobileResourceHpGuide', t.resourceHpGuide);
+        setText('mobileResourceEcGuide', t.resourceEcGuide);
         setText('mobileResourceBuyerSearch', t.resourceBuyerSearch);
         setText('mobileAbout', t.about);
         setText('mobileDemoBtn', t.demo);
@@ -423,8 +437,608 @@
                     
 
                     <article class="card p-0 blog-item" 
-                             data-tags="blog,多言語化,海外展開,ローカライズ,SaaS,業務効率化"
+                             data-tags="blog,Webサイト翻訳,多言語化,海外展開,AI翻訳,海外SEO"
                              style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                        
+                        <a href="/ja/blog/marketing/website-translation-services-comparison/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
+                                 alt="【2026年版】Webサイト翻訳サービス徹底比較！機能・料金・選び方を一覧表で解説" 
+                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                        </a>
+
+                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                            <div class="flex justify-between items-center mb-sm">
+                                <span class="text-primary font-bold" style="font-size: 12px; background: rgba(193, 0, 51, 0.1); padding: 4px 8px; border-radius: 4px;">
+                                    海外マーケティング
+                                </span>
+                                <time style="font-size: 12px; color: var(--color-text-secondary);">
+                                    2026.05.31
+                                </time>
+                            </div>
+
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
+                                <a href="/ja/blog/marketing/website-translation-services-comparison/" style="color: inherit; text-decoration: none;">
+                                    【2026年版】Webサイト翻訳サービス徹底比較！機能・料金・選び方を一覧表で解説
+                                </a>
+                            </h3>
+
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
+                                海外展開を検討する企業にとって、自社Webサイトの多言語対応は避けて通れない課題です。本記事では、翻訳サービスの2大タイプである人力翻訳とAI（機械）翻訳の違いから始まり、国内外の主要ツール型翻訳サービスの機能・料金・対応言語を一覧表で比較します。
+                            </p>
+
+                            <div class="flex items-center pt-sm" style="border-top: 1px solid #eee;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background: #ccc; margin-right: 8px; overflow: hidden;">
+                                    <img src="https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap" alt="author" style="width:100%; height:100%; object-fit:cover;">
+                                </div>
+                                <span style="font-size: 12px; font-weight: bold; color: var(--color-text-primary);">
+                                    Leap 編集部
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                
+            
+                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
+                
+                    
+                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
+                    
+                    
+
+                    <article class="card p-0 blog-item" 
+                             data-tags="blog,Webサイト多言語化,自動翻訳,海外展開,多言語SEO,翻訳ツール比較"
+                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                        
+                        <a href="/ja/blog/marketing/website-auto-translation-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
+                                 alt="Webサイト自動翻訳ツール完全ガイド！仕組み・メリット・おすすめサービスを比較" 
+                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                        </a>
+
+                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                            <div class="flex justify-between items-center mb-sm">
+                                <span class="text-primary font-bold" style="font-size: 12px; background: rgba(193, 0, 51, 0.1); padding: 4px 8px; border-radius: 4px;">
+                                    海外マーケティング
+                                </span>
+                                <time style="font-size: 12px; color: var(--color-text-secondary);">
+                                    2026.05.29
+                                </time>
+                            </div>
+
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
+                                <a href="/ja/blog/marketing/website-auto-translation-guide/" style="color: inherit; text-decoration: none;">
+                                    Webサイト自動翻訳ツール完全ガイド！仕組み・メリット・おすすめサービスを比較
+                                </a>
+                            </h3>
+
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
+                                Webサイト自動翻訳ツールの仕組みから導入メリット、代表的なツールの比較（WOVN.io、shutto翻訳など）、失敗しない選び方までを徹底解説。海外展開や多言語SEOを目指す担当者必見の完全ガイドです。
+                            </p>
+
+                            <div class="flex items-center pt-sm" style="border-top: 1px solid #eee;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background: #ccc; margin-right: 8px; overflow: hidden;">
+                                    <img src="https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap" alt="author" style="width:100%; height:100%; object-fit:cover;">
+                                </div>
+                                <span style="font-size: 12px; font-weight: bold; color: var(--color-text-primary);">
+                                    Leap 編集部
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                
+            
+                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
+                
+                    
+                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
+                    
+                    
+
+                    <article class="card p-0 blog-item" 
+                             data-tags="blog,中国進出,越境EC,中国SNSマーケティング,小紅書,ライブコマース,海外展開"
+                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                        
+                        <a href="/ja/blog/countries/China/china-cross-border-ec-strategy/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1538428494232-9c0d8a3ab403?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
+                                 alt="日本の商品は、まだまだ中国・アジアで戦える──CrossLinkAsia Founder &amp; CEO Emma Wangが語る、中国SNS・越境ECでチャンスをつかむための実践論" 
+                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                        </a>
+
+                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                            <div class="flex justify-between items-center mb-sm">
+                                <span class="text-primary font-bold" style="font-size: 12px; background: rgba(193, 0, 51, 0.1); padding: 4px 8px; border-radius: 4px;">
+                                    越境ECマニュアル
+                                </span>
+                                <time style="font-size: 12px; color: var(--color-text-secondary);">
+                                    2026.05.29
+                                </time>
+                            </div>
+
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
+                                <a href="/ja/blog/countries/China/china-cross-border-ec-strategy/" style="color: inherit; text-decoration: none;">
+                                    日本の商品は、まだまだ中国・アジアで戦える──CrossLinkAsia Founder &amp; CEO Emma Wangが語る、中国SNS・越境ECでチャンスをつかむための実践論
+                                </a>
+                            </h3>
+
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
+                                日本企業の商品を見ていると、つい「これ、中国やアジアにちゃんと届けられたら、もっと広がるのにな」と思ってしまう。CrossLinkAsia Founder &amp; CEOのEmma Wang氏に、日本企業が中国・アジアでチャンスをつかむための視点を聞いた。
+                            </p>
+
+                            <div class="flex items-center pt-sm" style="border-top: 1px solid #eee;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background: #ccc; margin-right: 8px; overflow: hidden;">
+                                    <img src="https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap" alt="author" style="width:100%; height:100%; object-fit:cover;">
+                                </div>
+                                <span style="font-size: 12px; font-weight: bold; color: var(--color-text-primary);">
+                                    Leap 編集部
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                
+            
+                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
+                
+                    
+                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
+                    
+                    
+
+                    <article class="card p-0 blog-item" 
+                             data-tags="blog,多言語化,翻訳ソリューション,海外展開,Webサイト多言語化"
+                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                        
+                        <a href="/ja/blog/marketing/multilingual-translation-solutions/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
+                                 alt="多言語翻訳ソリューションとは？種類・選び方・おすすめツールを徹底解説" 
+                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                        </a>
+
+                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                            <div class="flex justify-between items-center mb-sm">
+                                <span class="text-primary font-bold" style="font-size: 12px; background: rgba(193, 0, 51, 0.1); padding: 4px 8px; border-radius: 4px;">
+                                    海外マーケティング
+                                </span>
+                                <time style="font-size: 12px; color: var(--color-text-secondary);">
+                                    2026.05.28
+                                </time>
+                            </div>
+
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
+                                <a href="/ja/blog/marketing/multilingual-translation-solutions/" style="color: inherit; text-decoration: none;">
+                                    多言語翻訳ソリューションとは？種類・選び方・おすすめツールを徹底解説
+                                </a>
+                            </h3>
+
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
+                                海外展開を進める企業に向けて、多言語翻訳ソリューションの種類（クラウド翻訳・人力翻訳・機械翻訳）や選び方を徹底解説。Webサイト多言語化ツール（WOVN.io等）の比較や、通訳サービス、翻訳資産管理についても網羅します。
+                            </p>
+
+                            <div class="flex items-center pt-sm" style="border-top: 1px solid #eee;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background: #ccc; margin-right: 8px; overflow: hidden;">
+                                    <img src="https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap" alt="author" style="width:100%; height:100%; object-fit:cover;">
+                                </div>
+                                <span style="font-size: 12px; font-weight: bold; color: var(--color-text-primary);">
+                                    Leap 編集部
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                
+            
+                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
+                
+                    
+                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
+                    
+                    
+
+                    <article class="card p-0 blog-item" 
+                             data-tags="blog,多言語化,WOVN,海外展開,ローカライズ,ウェブマーケティング"
+                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                        
+                        <a href="/ja/blog/marketing/wovn-meaning-origin/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1451226428352-cf66bf8a0317?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
+                                 alt="WOVNとはどういう意味？名前の由来・サービスの意味・多言語化との関係をわかりやすく解説" 
+                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                        </a>
+
+                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                            <div class="flex justify-between items-center mb-sm">
+                                <span class="text-primary font-bold" style="font-size: 12px; background: rgba(193, 0, 51, 0.1); padding: 4px 8px; border-radius: 4px;">
+                                    海外マーケティング
+                                </span>
+                                <time style="font-size: 12px; color: var(--color-text-secondary);">
+                                    2026.05.27
+                                </time>
+                            </div>
+
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
+                                <a href="/ja/blog/marketing/wovn-meaning-origin/" style="color: inherit; text-decoration: none;">
+                                    WOVNとはどういう意味？名前の由来・サービスの意味・多言語化との関係をわかりやすく解説
+                                </a>
+                            </h3>
+
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
+                                WOVN（ウォーブン）の名前の由来から、サービスが生まれた背景、Google翻訳などのブラウザ翻訳との根本的な違いまでをわかりやすく解説します。多言語化とローカライズの違いについても触れ、海外展開に向けた最適なアプローチを提案します。
+                            </p>
+
+                            <div class="flex items-center pt-sm" style="border-top: 1px solid #eee;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background: #ccc; margin-right: 8px; overflow: hidden;">
+                                    <img src="https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap" alt="author" style="width:100%; height:100%; object-fit:cover;">
+                                </div>
+                                <span style="font-size: 12px; font-weight: bold; color: var(--color-text-primary);">
+                                    Leap 編集部
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                
+            
+                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
+                
+                    
+                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
+                    
+                    
+
+                    <article class="card p-0 blog-item" 
+                             data-tags="blog,多言語化,SaaS,カスタマーサクセス,サポート体制,Web制作"
+                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                        
+                        <a href="/ja/blog/marketing/wovn-support-system/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
+                                 alt="WOVNのサポート体制を徹底解説！導入前・翻訳時・運用後の3段階サポートとは" 
+                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                        </a>
+
+                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                            <div class="flex justify-between items-center mb-sm">
+                                <span class="text-primary font-bold" style="font-size: 12px; background: rgba(193, 0, 51, 0.1); padding: 4px 8px; border-radius: 4px;">
+                                    海外マーケティング
+                                </span>
+                                <time style="font-size: 12px; color: var(--color-text-secondary);">
+                                    2026.05.26
+                                </time>
+                            </div>
+
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
+                                <a href="/ja/blog/marketing/wovn-support-system/" style="color: inherit; text-decoration: none;">
+                                    WOVNのサポート体制を徹底解説！導入前・翻訳時・運用後の3段階サポートとは
+                                </a>
+                            </h3>
+
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
+                                Webサイトの多言語化ツール「WOVN.io」の充実したサポート体制について解説します。導入前・翻訳時・運用後の3段階に分かれたサポート内容や、CSチームによる伴走、実際の導入事例までを詳しくご紹介。多言語対応に課題を感じている方は必見です。
+                            </p>
+
+                            <div class="flex items-center pt-sm" style="border-top: 1px solid #eee;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background: #ccc; margin-right: 8px; overflow: hidden;">
+                                    <img src="https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap" alt="author" style="width:100%; height:100%; object-fit:cover;">
+                                </div>
+                                <span style="font-size: 12px; font-weight: bold; color: var(--color-text-primary);">
+                                    Leap 編集部
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                
+            
+                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
+                
+                    
+                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
+                    
+                    
+
+                    <article class="card p-0 blog-item" 
+                             data-tags="blog,ベトナム進出,市場調査,海外展開,中小企業,消費者インサイト,食品飲料"
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                        
+                        <a href="/ja/blog/expansion/vietnam-consumer-insights-research/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
+                                 alt="ベトナム市場調査のプロが教える「現地消費者のリアル」──インテージベトナム・青葉大助氏が語る、進出前に知っておくべきこと" 
+                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                        </a>
+
+                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                            <div class="flex justify-between items-center mb-sm">
+                                <span class="text-primary font-bold" style="font-size: 12px; background: rgba(193, 0, 51, 0.1); padding: 4px 8px; border-radius: 4px;">
+                                    海外進出マニュアル
+                                </span>
+                                <time style="font-size: 12px; color: var(--color-text-secondary);">
+                                    2026.05.25
+                                </time>
+                            </div>
+
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
+                                <a href="/ja/blog/expansion/vietnam-consumer-insights-research/" style="color: inherit; text-decoration: none;">
+                                    ベトナム市場調査のプロが教える「現地消費者のリアル」──インテージベトナム・青葉大助氏が語る、進出前に知っておくべきこと
+                                </a>
+                            </h3>
+
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
+                                ベトナム市場への参入・拡大を目指す日本企業に向けて、現地消費者のリアルなインサイトと、調査を活かした進出戦略を解説。定量・定性・個人購買データの3つの手法を駆使した最新のマーケティングリサーチの勘所。
+                            </p>
+
+                            <div class="flex items-center pt-sm" style="border-top: 1px solid #eee;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background: #ccc; margin-right: 8px; overflow: hidden;">
+                                    <img src="https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap" alt="author" style="width:100%; height:100%; object-fit:cover;">
+                                </div>
+                                <span style="font-size: 12px; font-weight: bold; color: var(--color-text-primary);">
+                                    Leap 編集部
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                
+            
+                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
+                
+                    
+                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
+                    
+                    
+
+                    <article class="card p-0 blog-item" 
+                             data-tags="blog,海外展開,中小企業,海外進出,リスクヘッジ,中国銀行"
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                        
+                        <a href="/ja/blog/expansion/overseas-expansion-chugoku-bank/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
+                                 alt="銀行が教える海外展開の現実──中国銀行・辰己誠氏が語る、中小企業が海外で成功するために知っておくべきこと" 
+                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                        </a>
+
+                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                            <div class="flex justify-between items-center mb-sm">
+                                <span class="text-primary font-bold" style="font-size: 12px; background: rgba(193, 0, 51, 0.1); padding: 4px 8px; border-radius: 4px;">
+                                    海外進出マニュアル
+                                </span>
+                                <time style="font-size: 12px; color: var(--color-text-secondary);">
+                                    2026.05.25
+                                </time>
+                            </div>
+
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
+                                <a href="/ja/blog/expansion/overseas-expansion-chugoku-bank/" style="color: inherit; text-decoration: none;">
+                                    銀行が教える海外展開の現実──中国銀行・辰己誠氏が語る、中小企業が海外で成功するために知っておくべきこと
+                                </a>
+                            </h3>
+
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
+                                香港・シンガポール・ニューヨークなど世界6拠点を統制する中国銀行国際部長の辰己誠氏が、中小企業の海外進出におけるリアルな失敗パターンと成功への道筋、銀行を「情報と人脈の入り口」として使い倒す極意を語る。
+                            </p>
+
+                            <div class="flex items-center pt-sm" style="border-top: 1px solid #eee;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background: #ccc; margin-right: 8px; overflow: hidden;">
+                                    <img src="https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap" alt="author" style="width:100%; height:100%; object-fit:cover;">
+                                </div>
+                                <span style="font-size: 12px; font-weight: bold; color: var(--color-text-primary);">
+                                    Leap 編集部
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                
+            
+                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
+                
+                    
+                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
+                    
+                    
+
+                    <article class="card p-0 blog-item" 
+                             data-tags="blog,海外展開,駐在,異文化理解,中小企業,海外ビジネス,グローバル人材"
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                        
+                        <a href="/ja/blog/expansion/expat-wife-global-business-insights/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
+                                 alt="駐在妻が見た世界3カ国のリアル──アメリカ・シンガポール・ロシアで気づいた、海外ビジネスの「現地感覚」" 
+                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                        </a>
+
+                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                            <div class="flex justify-between items-center mb-sm">
+                                <span class="text-primary font-bold" style="font-size: 12px; background: rgba(193, 0, 51, 0.1); padding: 4px 8px; border-radius: 4px;">
+                                    海外進出マニュアル
+                                </span>
+                                <time style="font-size: 12px; color: var(--color-text-secondary);">
+                                    2026.05.25
+                                </time>
+                            </div>
+
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
+                                <a href="/ja/blog/expansion/expat-wife-global-business-insights/" style="color: inherit; text-decoration: none;">
+                                    駐在妻が見た世界3カ国のリアル──アメリカ・シンガポール・ロシアで気づいた、海外ビジネスの「現地感覚」
+                                </a>
+                            </h3>
+
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
+                                海外展開を考えるときに見落としがちな「生活者目線」からの現地理解。アメリカ・シンガポール・ロシアで駐在妻を経験した中原美由己さんに、各国の文化・商習慣の違いと日本企業の海外対応における課題について伺いました。
+                            </p>
+
+                            <div class="flex items-center pt-sm" style="border-top: 1px solid #eee;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background: #ccc; margin-right: 8px; overflow: hidden;">
+                                    <img src="https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap" alt="author" style="width:100%; height:100%; object-fit:cover;">
+                                </div>
+                                <span style="font-size: 12px; font-weight: bold; color: var(--color-text-primary);">
+                                    Leap 編集部
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                
+            
+                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
+                
+                    
+                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
+                    
+                    
+
+                    <article class="card p-0 blog-item" 
+                             data-tags="blog,多言語化,Web制作,海外進出,SEO対策"
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                        
+                        <a href="/ja/blog/marketing/wovn-script-method/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
+                                 alt="WOVNのスクリプト方式とは？HTMLへの挿入手順・仕組み・他の導入方式との違いを解説" 
+                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                        </a>
+
+                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                            <div class="flex justify-between items-center mb-sm">
+                                <span class="text-primary font-bold" style="font-size: 12px; background: rgba(193, 0, 51, 0.1); padding: 4px 8px; border-radius: 4px;">
+                                    海外マーケティング
+                                </span>
+                                <time style="font-size: 12px; color: var(--color-text-secondary);">
+                                    2026.05.22
+                                </time>
+                            </div>
+
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
+                                <a href="/ja/blog/marketing/wovn-script-method/" style="color: inherit; text-decoration: none;">
+                                    WOVNのスクリプト方式とは？HTMLへの挿入手順・仕組み・他の導入方式との違いを解説
+                                </a>
+                            </h3>
+
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
+                                WOVNは、既存のWebサイトにコードを追加するだけで多言語翻訳機能を実装できるSaaSサービスです。なかでも最も手軽な「スクリプト方式」の仕組みから、導入手順、GTM経由の挿入、他の導入方式との違いまでを実務に即して解説します。
+                            </p>
+
+                            <div class="flex items-center pt-sm" style="border-top: 1px solid #eee;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background: #ccc; margin-right: 8px; overflow: hidden;">
+                                    <img src="https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap" alt="author" style="width:100%; height:100%; object-fit:cover;">
+                                </div>
+                                <span style="font-size: 12px; font-weight: bold; color: var(--color-text-primary);">
+                                    Leap 編集部
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                
+            
+                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
+                
+                    
+                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
+                    
+                    
+
+                    <article class="card p-0 blog-item" 
+                             data-tags="blog,多言語化,SaaS,海外展開,ローカライズ,企業情報"
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                        
+                        <a href="/ja/blog/marketing/wovn-technologies-overview/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
+                                 alt="Wovn Technologiesとは？会社概要・サービス内容・導入実績を徹底解説" 
+                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                        </a>
+
+                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                            <div class="flex justify-between items-center mb-sm">
+                                <span class="text-primary font-bold" style="font-size: 12px; background: rgba(193, 0, 51, 0.1); padding: 4px 8px; border-radius: 4px;">
+                                    海外マーケティング
+                                </span>
+                                <time style="font-size: 12px; color: var(--color-text-secondary);">
+                                    2026.05.21
+                                </time>
+                            </div>
+
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
+                                <a href="/ja/blog/marketing/wovn-technologies-overview/" style="color: inherit; text-decoration: none;">
+                                    Wovn Technologiesとは？会社概要・サービス内容・導入実績を徹底解説
+                                </a>
+                            </h3>
+
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
+                                Wovn Technologies株式会社のミッションや主力サービス「WOVN.io」「WOVN.app」の特徴、三菱UFJ銀行やスズキなどの導入事例、多言語化市場の背景まで徹底解説します。
+                            </p>
+
+                            <div class="flex items-center pt-sm" style="border-top: 1px solid #eee;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background: #ccc; margin-right: 8px; overflow: hidden;">
+                                    <img src="https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap" alt="author" style="width:100%; height:100%; object-fit:cover;">
+                                </div>
+                                <span style="font-size: 12px; font-weight: bold; color: var(--color-text-primary);">
+                                    Leap 編集部
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                
+            
+                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
+                
+                    
+                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
+                    
+                    
+
+                    <article class="card p-0 blog-item" 
+                             data-tags="blog,多言語化,SaaS,運用管理,海外展開,ローカライズ"
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                        
+                        <a href="/ja/blog/marketing/wovn-admin-dashboard-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
+                                 alt="WOVN.io管理画面でできること完全ガイド！ログイン後の操作と運用方法を解説" 
+                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                        </a>
+
+                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                            <div class="flex justify-between items-center mb-sm">
+                                <span class="text-primary font-bold" style="font-size: 12px; background: rgba(193, 0, 51, 0.1); padding: 4px 8px; border-radius: 4px;">
+                                    海外マーケティング
+                                </span>
+                                <time style="font-size: 12px; color: var(--color-text-secondary);">
+                                    2026.05.20
+                                </time>
+                            </div>
+
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
+                                <a href="/ja/blog/marketing/wovn-admin-dashboard-guide/" style="color: inherit; text-decoration: none;">
+                                    WOVN.io管理画面でできること完全ガイド！ログイン後の操作と運用方法を解説
+                                </a>
+                            </h3>
+
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
+                                WOVN.ioの管理画面でできることを網羅。ログイン方法から翻訳ページの追加・公開、ライブ編集、権限設定、セキュリティ機能まで、グローバルサイト運用に必要な実践的な操作方法を解説します。
+                            </p>
+
+                            <div class="flex items-center pt-sm" style="border-top: 1px solid #eee;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background: #ccc; margin-right: 8px; overflow: hidden;">
+                                    <img src="https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap" alt="author" style="width:100%; height:100%; object-fit:cover;">
+                                </div>
+                                <span style="font-size: 12px; font-weight: bold; color: var(--color-text-primary);">
+                                    Leap 編集部
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                
+            
+                <!-- ★localeが設定されていて、かつ現在のlocaleと一致する場合のみ表示 -->
+                
+                    
+                    <!-- topic_translation からラベル名を取得（ない場合は英語IDをそのまま表示） -->
+                    
+                    
+
+                    <article class="card p-0 blog-item" 
+                             data-tags="blog,多言語化,海外展開,ローカライズ,SaaS,業務効率化"
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/marketing/wovn-manual-multilingualization/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
                             <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
@@ -474,7 +1088,7 @@
 
                     <article class="card p-0 blog-item" 
                              data-tags="blog,翻訳,WOVN.io,多言語化,Web制作,DX,AI翻訳"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/marketing/wovn-io-translation-features-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
                             <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
@@ -524,7 +1138,7 @@
 
                     <article class="card p-0 blog-item" 
                              data-tags="blog,海外展開,GTM,PMF,海外営業,バリュープロポジション,中小企業"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/why-small-businesses-fail-in-global-expansion/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
                             <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
@@ -574,7 +1188,7 @@
 
                     <article class="card p-0 blog-item" 
                              data-tags="blog,海外展開,中小企業,販路開拓,東南アジア,越境ビジネス"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/small-start-overseas-expansion/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
                             <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
@@ -624,7 +1238,7 @@
 
                     <article class="card p-0 blog-item" 
                              data-tags="blog,海外展開,ベトナム進出,合弁会社,中小企業,事業立ち上げ,食品製造業"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/expansion/overseas-expansion-vietnam/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
                             <img src="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
@@ -674,7 +1288,7 @@
 
                     <article class="card p-0 blog-item" 
                              data-tags="blog,マーケティング,多言語化,SaaS,海外進出,ウェブ開発"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/marketing/wovn-io-implementation-guide/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
                             <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
@@ -724,7 +1338,7 @@
 
                     <article class="card p-0 blog-item" 
                              data-tags="blog,マーケティング,多言語化,SaaS,WOVN,DX"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
                         
                         <a href="/ja/blog/marketing/how-to-read-wovn/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
                             <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
@@ -7786,7 +8400,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 <ul>
                     <li><a href="/ja/blog" target="_blank" rel="noopener noreferrer" id="footerBlog">ブログ</a></li>
                     <li><a href="/ja/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
+                    <li><a href="/ja/seminar" id="footerSeminar">セミナー・イベント</a></li>
                     <li><a href="/ja/hp-guide" target="_blank" id="footerHpGuide">HP作成ガイド</a></li>
+                    <li><a href="/ja/ec-guide" target="_blank" id="footerEcGuide">EC運用マニュアル</a></li>
                     <li><a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" id="footerBuyerSearch">海外バイヤー検索</a></li>
                     <!-- 導入事例を追加 -->
                     <li><a href="/ja/case-studies" target="_blank" rel="noopener noreferrer" id="footerCases">導入事例</a></li>
@@ -7828,7 +8444,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     <ul>
                         <li><a href="/ja/blog" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">ブログ</a></li>
                         <li><a href="/ja/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
+                        <li><a href="/ja/seminar" id="footerMobileSeminar">セミナー・イベント</a></li>
                         <li><a href="/ja/hp-guide" target="_blank" id="footerMobileHpGuide">HP作成ガイド</a></li>
+                        <li><a href="/ja/ec-guide" target="_blank" id="footerMobileEcGuide">EC運用マニュアル</a></li>
                         <li><a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" id="footerMobileBuyerSearch">海外バイヤー検索</a></li>
                         <!-- モバイル版 導入事例を追加 -->
                         <li><a href="/ja/case-studies" target="_blank" rel="noopener noreferrer" id="footerMobileCases">導入事例</a></li>
@@ -7901,7 +8519,9 @@ document.addEventListener("DOMContentLoaded", function() {
             toolsTitle: "無料ツール",
             blog: "ブログ",
             resources: "資料ダウンロード",
+            seminar: "セミナー・イベント",
             hpGuide: "HP作成ガイド",
+            ecGuide: "EC運用マニュアル",
             buyerSearch: "海外バイヤー検索",
             cases: "導入事例", // 追加
             companyTitle: "会社",
@@ -7921,7 +8541,9 @@ document.addEventListener("DOMContentLoaded", function() {
             toolsTitle: "Free Tools",
             blog: "Blog",
             resources: "Downloads",
+            seminar: "Events & Webinars",
             hpGuide: "Website Creation Guide",
+            ecGuide: "EC Operations Manual",
             buyerSearch: "Find Overseas Buyers",
             cases: "Case Studies", // 追加
             companyTitle: "Company",
@@ -7941,7 +8563,9 @@ document.addEventListener("DOMContentLoaded", function() {
             toolsTitle: "免费工具",
             blog: "博客",
             resources: "资料下载",
+            seminar: "活动与研讨会",
             hpGuide: "建站指南",
+            ecGuide: "EC运营手册",
             buyerSearch: "海外买家搜索",
             cases: "客户案例", // 追加
             companyTitle: "公司",
@@ -7979,7 +8603,9 @@ document.addEventListener("DOMContentLoaded", function() {
         setText('footerToolsTitle', t.toolsTitle);
         setText('footerBlog', t.blog);
         setText('footerResources', t.resources);
+        setText('footerSeminar', t.seminar);
         setText('footerHpGuide', t.hpGuide);
+        setText('footerEcGuide', t.ecGuide);
         setText('footerBuyerSearch', t.buyerSearch);
         setText('footerCases', t.cases); // 追加
         setText('footerCompanyTitle', t.companyTitle);
@@ -7995,7 +8621,9 @@ document.addEventListener("DOMContentLoaded", function() {
         setText('footerMobileToolsTitle', t.toolsTitle);
         setText('footerMobileBlog', t.blog);
         setText('footerMobileResources', t.resources);
+        setText('footerMobileSeminar', t.seminar);
         setText('footerMobileHpGuide', t.hpGuide);
+        setText('footerMobileEcGuide', t.ecGuide);
         setText('footerMobileBuyerSearch', t.buyerSearch);
         setText('footerMobileCases', t.cases); // 追加
         setText('footerMobileCompanyTitle', t.companyTitle);

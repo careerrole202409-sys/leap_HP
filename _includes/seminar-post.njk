@@ -1,0 +1,182 @@
+---
+layout: base.njk
+---
+
+<style>
+    .hero-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-2xl);
+        align-items: center;
+    }
+
+    .hero-thumbnail {
+        border-radius: 12px;
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    }
+
+    .event-meta {
+        display: flex;
+        align-items: center;
+        gap: var(--space-sm);
+        font-size: var(--font-size-sm);
+        color: var(--color-text-secondary);
+        margin-bottom: var(--space-lg);
+    }
+
+    .check-list ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    .check-list li {
+        position: relative;
+        padding-left: 3.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.125rem;
+        line-height: 1.6;
+        color: var(--color-text-primary);
+        font-weight: 500;
+    }
+    .check-list li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 2px;
+        width: 32px;
+        height: 32px;
+        background-color: #2d2d2d;
+        border-radius: 50%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .sticky-cta-bar {
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #26000a;
+        padding: var(--space-md) 0;
+        text-align: center;
+        z-index: 100;
+        box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .sticky-text {
+        display: inline;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: white;
+        margin-right: var(--space-lg);
+    }
+
+    @media (max-width: 768px) {
+        .hero-layout {
+            grid-template-columns: 1fr;
+            gap: var(--space-lg);
+        }
+        .hero-thumbnail { order: -1; }
+        .check-list li { padding-left: 2.5rem; font-size: 1rem; }
+        .check-list li::before { width: 24px; height: 24px; background-size: 14px; }
+        .sticky-text { display: none; }
+        h1 { font-size: 2rem !important; }
+    }
+</style>
+
+<!--
+  SECTION 1: HERO AREA
+-->
+<section class="section pt-3xl pb-4xl">
+    <div class="container">
+        <div class="hero-layout">
+
+            <!-- Left: Text Content -->
+            <div>
+                <h1 class="mb-lg" style="font-size: 2.75rem; line-height: 1.2;">{{ title }}</h1>
+                <p class="text-secondary mb-lg" style="font-size: var(--font-size-lg); line-height: 1.8;">
+                    {{ description }}
+                </p>
+
+                {% if event_date %}
+                <div class="event-meta">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>
+                    {% if locale == 'en' %}
+                    <span>Event Date: {{ event_date | date("MMMM d, yyyy") }}</span>
+                    {% elif locale == 'zh-hans' %}
+                    <span>活动日期: {{ event_date | date("yyyy年MM月dd日") }}</span>
+                    {% else %}
+                    <span>開催日: {{ event_date | date("yyyy年MM月dd日") }}</span>
+                    {% endif %}
+                </div>
+                {% endif %}
+
+                <a href="{{ event_url | default('#') }}" target="_blank" rel="noopener noreferrer"
+                   class="btn btn-primary"
+                   style="padding: 16px 48px; font-size: 1.25rem; font-weight: 800; border-radius: 4px; box-shadow: 0 4px 12px rgba(193, 0, 51, 0.3);">
+                    {% if locale == 'en' %}Register{% elif locale == 'zh-hans' %}立即报名{% else %}申し込む{% endif %}
+                </a>
+            </div>
+
+            <!-- Right: Thumbnail -->
+            <div>
+                {% if thumbnail_url %}
+                <img src="{{ thumbnail_url }}" alt="{{ title }}" class="hero-thumbnail">
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--
+  SECTION 2: DETAILS
+-->
+<section class="section py-3xl bg-beige">
+    <div class="container">
+        <h2 class="text-center mb-2xl" style="font-size: 2.5rem;">
+            {% if locale == 'en' %}Event Details{% elif locale == 'zh-hans' %}活动详情{% else %}イベント詳細{% endif %}
+        </h2>
+
+        <div class="grid-2 items-start gap-3xl">
+            <!-- Left: Thumbnail -->
+            <div>
+                {% if thumbnail_url %}
+                <img src="{{ thumbnail_url }}" alt="{{ title }}"
+                     style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; border: 1px solid rgba(0,0,0,0.1);">
+                {% endif %}
+            </div>
+
+            <!-- Right: Body Content -->
+            <div class="check-list">
+                {{ content | safe }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--
+  STICKY FOOTER CTA
+-->
+<div class="sticky-cta-bar">
+    <div class="container flex items-center justify-center">
+        {% if event_date %}
+        <span class="sticky-text">
+            {% if locale == 'en' %}Event Date: {{ event_date | date("MMMM d, yyyy") }}
+            {% elif locale == 'zh-hans' %}活动日期: {{ event_date | date("yyyy年MM月dd日") }}
+            {% else %}開催日: {{ event_date | date("yyyy年MM月dd日") }}
+            {% endif %}
+        </span>
+        {% endif %}
+        <a href="{{ event_url | default('#') }}" target="_blank" rel="noopener noreferrer"
+           class="btn"
+           style="background: white; color: var(--color-primary-start); font-weight: bold; border: none; padding: 12px 32px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); text-decoration: none; display: inline-block;">
+            {% if locale == 'en' %}Register{% elif locale == 'zh-hans' %}立即报名{% else %}申し込む{% endif %}
+        </a>
+    </div>
+</div>
