@@ -68,9 +68,119 @@
     <!-- Footer -->
     {% include "footer.njk" %}
     
-    <!-- JavaScript -->
-    <script src="/assets/js/header.js"></script>
-    <script src="/assets/js/footer.js"></script>
     {% block scripts %}{% endblock %}
+
+    <!-- ▼ 固定CTA -->
+    <style>
+        #fixed-cta-card {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 290px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+            overflow: hidden;
+            z-index: 9999;
+            transition: opacity 0.28s, transform 0.28s;
+        }
+        #fixed-cta-tab {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+            border-radius: 40px;
+            box-shadow: 0 4px 18px rgba(193,0,51,0.35);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            transition: opacity 0.28s, transform 0.28s;
+        }
+        @media (max-width: 768px) {
+            #fixed-cta-card { display: none !important; }
+            #fixed-cta-tab { display: flex !important; }
+            #fixed-cta-expand-btn { display: none !important; }
+        }
+    </style>
+
+    <!-- 大カード -->
+    <div id="fixed-cta-card">
+        <!-- ✕ ボタン -->
+        <button onclick="minimizeFixedCta()" style="position:absolute;top:9px;right:9px;width:24px;height:24px;border-radius:50%;border:none;background:rgba(255,255,255,0.25);color:white;font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:1;">✕</button>
+
+        <!-- 赤グラデヘッダー -->
+        <div style="background:linear-gradient(135deg,#C10033 0%,#8B0024 100%);padding:16px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png"
+                     alt="Leap" style="height:64px;display:block;flex-shrink:0;">
+                <p style="color:white;font-size:13px;font-weight:bold;margin:0;line-height:1.4;">Webサイト生成<br>AIエージェント</p>
+            </div>
+        </div>
+
+        <!-- スクショ -->
+        <div style="padding:12px 12px 0;">
+            <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1780199379/f2e65838-a2f4-4a3c-8bc4-0666632aad0b.png"
+                     alt="Leap アプリ画面" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover;border-radius:8px;">
+            </a>
+        </div>
+
+        <!-- CTAボタン -->
+        <div style="padding:12px 14px 14px;">
+            <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer"
+               style="display:block;background:linear-gradient(135deg,#C10033 0%,#8B0024 100%);color:white;text-align:center;padding:10px;border-radius:8px;font-size:13px;font-weight:bold;text-decoration:none;transition:opacity 0.2s;"
+               onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+                無料ではじめる →
+            </a>
+        </div>
+    </div>
+
+    <!-- ミニタブ -->
+    <div id="fixed-cta-tab">
+        <!-- Leapロゴ -->
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png"
+             alt="Leap" style="height:60px;display:block;flex-shrink:0;margin:-15px 0;">
+        <!-- 無料ではじめるリンク -->
+        <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer"
+           style="color:#C10033;background:white;font-size:12px;font-weight:bold;text-decoration:none;white-space:nowrap;border-radius:20px;padding:6px 14px;transition:opacity 0.2s;"
+           onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+            無料ではじめる
+        </a>
+        <!-- 展開ボタン -->
+        <button id="fixed-cta-expand-btn" onclick="expandFixedCta()" style="background:rgba(255,255,255,0.2);border:none;color:white;width:26px;height:26px;border-radius:50%;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background 0.2s;"
+                onmouseover="this.style.background='rgba(255,255,255,0.35)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'">↑</button>
+    </div>
+
+    <script>
+    function minimizeFixedCta() {
+        var card = document.getElementById('fixed-cta-card');
+        var tab  = document.getElementById('fixed-cta-tab');
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(12px)';
+        setTimeout(function() {
+            card.style.display = 'none';
+            tab.style.display = 'flex';
+            requestAnimationFrame(function() {
+                tab.style.opacity = '1';
+                tab.style.transform = 'translateY(0)';
+            });
+        }, 280);
+    }
+
+    function expandFixedCta() {
+        var card = document.getElementById('fixed-cta-card');
+        var tab  = document.getElementById('fixed-cta-tab');
+        tab.style.display = 'none';
+        card.style.display = 'block';
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(12px)';
+        requestAnimationFrame(function() {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        });
+    }
+    </script>
 </body>
 </html>

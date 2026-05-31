@@ -46,9 +46,9 @@
                         <span class="nav-link" id="resourcesLabel">資料 ▼</span>
                         <div class="dropdown-menu">
                             <a href="/{{ locale }}/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
-                            <a href="/{{ locale }}/seminar" class="dropdown-item" id="resourceSeminar">セミナー・イベント</a>
-                            <a href="/{{ locale }}/blog" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">ブログ</a>
-                            <a href="/{{ locale }}/hp-guide" target="_blank" class="dropdown-item" id="resourceHpGuide">HP作成ガイド</a>
+                            <a href="/{{ locale }}/seminar" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceSeminar">セミナー・イベント</a>
+                            <a href="/{{ locale }}/blog" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">海外ビジネスマニュアル</a>
+                            <a href="/{{ locale }}/hp-guide" target="_blank" class="dropdown-item" id="resourceHpGuide">HP作成マニュアル</a>
                             <a href="/{{ locale }}/ec-guide" target="_blank" class="dropdown-item" id="resourceEcGuide">EC運用マニュアル</a>
                             <a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBuyerSearch">海外バイヤー検索</a>
                         </div>
@@ -104,9 +104,9 @@
             </div>
             <div class="mobile-dropdown-content">
                 <a href="/{{ locale }}/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
-                <a href="/{{ locale }}/seminar" class="mobile-dropdown-item" id="mobileResourceSeminar">セミナー・イベント</a>
-                <a href="/{{ locale }}/blog" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">ブログ</a>
-                <a href="/{{ locale }}/hp-guide" target="_blank" class="mobile-dropdown-item" id="mobileResourceHpGuide">HP作成ガイド</a>
+                <a href="/{{ locale }}/seminar" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceSeminar">セミナー・イベント</a>
+                <a href="/{{ locale }}/blog" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">海外ビジネスマニュアル</a>
+                <a href="/{{ locale }}/hp-guide" target="_blank" class="mobile-dropdown-item" id="mobileResourceHpGuide">HP作成マニュアル</a>
                 <a href="/{{ locale }}/ec-guide" target="_blank" class="mobile-dropdown-item" id="mobileResourceEcGuide">EC運用マニュアル</a>
                 <a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBuyerSearch">海外バイヤー検索</a>
             </div>
@@ -140,8 +140,8 @@
             resourcesLabel: "資料 ▼",
             resourceDownload: "資料ダウンロード",
             resourceSeminar: "セミナー・イベント",
-            resourceBlog: "ブログ",
-            resourceHpGuide: "HP作成ガイド",
+            resourceBlog: "海外ビジネスマニュアル",
+            resourceHpGuide: "HP作成マニュアル",
             resourceEcGuide: "EC運用マニュアル",
             resourceBuyerSearch: "海外バイヤー検索",
             demo: "デモを申し込む",
@@ -165,8 +165,8 @@
             resourcesLabel: "Resources ▼",
             resourceDownload: "Downloads",
             resourceSeminar: "Events & Webinars",
-            resourceBlog: "Blog",
-            resourceHpGuide: "Website Creation Guide",
+            resourceBlog: "Global Business Manual",
+            resourceHpGuide: "Website Creation Manual",
             resourceEcGuide: "EC Operations Manual",
             resourceBuyerSearch: "Find Overseas Buyers",
             demo: "Request Demo",
@@ -190,8 +190,8 @@
             resourcesLabel: "资料 ▼",
             resourceDownload: "资料下载",
             resourceSeminar: "活动与研讨会",
-            resourceBlog: "博客",
-            resourceHpGuide: "建站指南",
+            resourceBlog: "海外商务手册",
+            resourceHpGuide: "建站手册",
             resourceEcGuide: "EC运营手册",
             resourceBuyerSearch: "海外买家搜索",
             demo: "申请演示",
@@ -260,4 +260,83 @@
 
     document.addEventListener('DOMContentLoaded', updateHeaderContent);
 })();
+</script>
+
+<script>
+// 言語切り替え
+function changeLanguage(newLang) {
+    const currentPath = window.location.pathname;
+    const langMatch = currentPath.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+    let newPath;
+    if (langMatch) {
+        newPath = currentPath.replace('/' + langMatch[1], '/' + newLang);
+    } else {
+        newPath = '/' + newLang + currentPath;
+    }
+    window.location.href = newPath;
+}
+
+// モバイルドロップダウントグル
+window.toggleMobileDropdown = function(element) {
+    const content = element.nextElementSibling;
+    const arrow = element.querySelector('span:last-child');
+    content.classList.toggle('active');
+    arrow.textContent = content.classList.contains('active') ? '▲' : '▼';
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 言語ドロップダウン
+    const languageCurrent = document.getElementById('languageCurrent');
+    const languageDropdown = document.getElementById('languageDropdown');
+    if (languageCurrent && languageDropdown) {
+        languageCurrent.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            languageDropdown.classList.toggle('active');
+        });
+        document.addEventListener('click', function() {
+            languageDropdown.classList.remove('active');
+        });
+        languageDropdown.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+        document.querySelectorAll('.language-option').forEach(function(option) {
+            option.addEventListener('click', function(e) {
+                e.preventDefault();
+                const newLang = option.dataset.lang;
+                if (newLang) changeLanguage(newLang);
+            });
+        });
+    }
+
+    // スクロールでヘッダー上部バーを非表示
+    const headerTop = document.getElementById('headerTop');
+    if (headerTop) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 50) {
+                headerTop.classList.add('hidden');
+            } else {
+                headerTop.classList.remove('hidden');
+            }
+        });
+    }
+
+    // ハンバーガーメニュー
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (hamburger && mobileMenu) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        });
+        mobileMenu.addEventListener('click', function(e) {
+            if (e.target === mobileMenu) {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+});
 </script>
