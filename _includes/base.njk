@@ -71,6 +71,19 @@
     {% block scripts %}{% endblock %}
 
     <!-- ▼ 固定CTA -->
+    {% if locale == 'en' %}
+        {% set cta_subtitle = 'Website Generation<br>AI Agent' %}
+        {% set cta_btn = 'Start for Free →' %}
+        {% set cta_btn_mini = 'Start for Free' %}
+    {% elif locale == 'zh-hans' %}
+        {% set cta_subtitle = '网站生成<br>AI代理' %}
+        {% set cta_btn = '免费开始 →' %}
+        {% set cta_btn_mini = '免费开始' %}
+    {% else %}
+        {% set cta_subtitle = 'Webサイト生成<br>AIエージェント' %}
+        {% set cta_btn = '無料ではじめる →' %}
+        {% set cta_btn_mini = '無料ではじめる' %}
+    {% endif %}
     <style>
         #fixed-cta-card {
             position: fixed;
@@ -115,7 +128,7 @@
             <div style="display:flex;align-items:center;gap:12px;">
                 <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png"
                      alt="Leap" style="height:64px;display:block;flex-shrink:0;">
-                <p style="color:white;font-size:13px;font-weight:bold;margin:0;line-height:1.4;">Webサイト生成<br>AIエージェント</p>
+                <p style="color:white;font-size:13px;font-weight:bold;margin:0;line-height:1.4;">{{ cta_subtitle | safe }}</p>
             </div>
         </div>
 
@@ -132,7 +145,7 @@
             <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer"
                style="display:block;background:linear-gradient(135deg,#C10033 0%,#8B0024 100%);color:white;text-align:center;padding:10px;border-radius:8px;font-size:13px;font-weight:bold;text-decoration:none;transition:opacity 0.2s;"
                onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
-                無料ではじめる →
+                {{ cta_btn }}
             </a>
         </div>
     </div>
@@ -146,7 +159,7 @@
         <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer"
            style="color:#C10033;background:white;font-size:12px;font-weight:bold;text-decoration:none;white-space:nowrap;border-radius:20px;padding:6px 14px;transition:opacity 0.2s;"
            onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
-            無料ではじめる
+            {{ cta_btn_mini }}
         </a>
         <!-- 展開ボタン -->
         <button id="fixed-cta-expand-btn" onclick="expandFixedCta()" style="background:rgba(255,255,255,0.2);border:none;color:white;width:26px;height:26px;border-radius:50%;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background 0.2s;"
