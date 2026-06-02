@@ -737,10 +737,6 @@
     <lastmod>2026-04-30T13:03:21.452Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/en/</loc>
-    <lastmod>2026-04-30T13:03:21.457Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/en/resources/</loc>
     <lastmod>2026-04-30T13:03:21.459Z</lastmod>
   </url>
@@ -881,10 +877,6 @@
     <lastmod>2026-04-30T13:03:21.591Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/</loc>
-    <lastmod>2026-04-30T13:03:21.592Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/ja/resources/</loc>
     <lastmod>2026-04-30T13:03:21.594Z</lastmod>
   </url>
@@ -919,10 +911,6 @@
   <url>
     <loc>https://www.leap.site/zh-hans/case-studies/</loc>
     <lastmod>2026-04-30T13:03:21.663Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/zh-hans/</loc>
-    <lastmod>2026-04-30T13:03:21.668Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/zh-hans/resources/</loc>
@@ -1138,6 +1126,18 @@
   </url>
   <url>
     <loc>https://www.leap.site/ja/new/</loc>
-    <lastmod>2026-06-02T01:12:07.504Z</lastmod>
+    <lastmod>2026-06-02T02:46:22.264Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/</loc>
+    <lastmod>2026-06-02T03:26:31.609Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/en/</loc>
+    <lastmod>2026-06-02T03:26:31.611Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/zh-hans/</loc>
+    <lastmod>2026-06-02T03:26:31.614Z</lastmod>
   </url>
 </urlset>
