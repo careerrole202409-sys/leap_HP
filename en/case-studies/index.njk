@@ -142,7 +142,11 @@ description: Explore case studies of companies that have successfully achieved m
                         <a href="{{ post.url }}">
                             <!-- ロゴエリア -->
                             <div class="case-logo-wrapper">
-                                <img src="{{ post.data.logo }}" alt="{{ card_company }} logo">
+                                <img
+                                    src="{{ post.data.logo | replace('/upload/', '/upload/f_auto,q_auto,w_300/') }}"
+                                    alt="{{ card_company }} logo"
+                                    loading="{{ 'eager' if loop.index <= 6 else 'lazy' }}"
+                                    decoding="async">
                             </div>
                             
                             <!-- Leapメインカラーのアクセントライン -->

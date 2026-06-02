@@ -53,11 +53,18 @@
                 <nav class="nav-links">
                     <div class="nav-item">
                         <span class="nav-link" id="servicesLabel">特徴 ▼</span>
-                        <div class="dropdown-menu">
-                            <a href="/{{ locale }}/services/multilingual-website" class="dropdown-item" id="serviceWebsite">HP/LP作成</a>
-                            <a href="/{{ locale }}/services/multilingual-blog" class="dropdown-item" id="serviceBlog">ブログ作成</a>
-                            <a href="/{{ locale }}/services/multilingual-ec" class="dropdown-item" id="serviceEc">EC作成</a>
-                            <a href="/{{ locale }}/services/ai-localize" class="dropdown-item" id="serviceAiLocalize">AIチャット編集</a>
+                        <div class="dropdown-menu dropdown-menu-wide">
+                            <div class="dropdown-col">
+                                <div class="dropdown-col-title" id="dropdownLabelAgent">AIエージェント</div>
+                                <a href="/{{ locale }}/services/multilingual-website" class="dropdown-item" id="serviceWebsite">HP/LP作成</a>
+                                <a href="/{{ locale }}/services/multilingual-blog" class="dropdown-item" id="serviceBlog">ブログ作成</a>
+                                <a href="/{{ locale }}/services/multilingual-ec" class="dropdown-item" id="serviceEc">EC作成</a>
+                                <a href="/{{ locale }}/services/ai-localize" class="dropdown-item" id="serviceAiLocalize">AIチャット編集</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <div class="dropdown-col-title" id="dropdownLabelMarketing">海外マーケ支援</div>
+                                <a href="/{{ locale }}/services/global-marketing" class="dropdown-item" id="serviceGlobalMarketing">LinkedIn・ECモール運用</a>
+                            </div>
                         </div>
                     </div>
                     <!-- 導入事例を追加 -->
@@ -108,10 +115,14 @@
                 <span>▼</span>
             </div>
             <div class="mobile-dropdown-content">
+                <div style="font-size:0.72rem; font-weight:700; color:#9ca3af; letter-spacing:0.08em; text-transform:uppercase; padding:0.5rem 0 0.25rem;" id="mobileDropdownLabelAgent">AIエージェント</div>
                 <a href="/{{ locale }}/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">HP/LP作成</a>
                 <a href="/{{ locale }}/services/multilingual-blog" class="mobile-dropdown-item" id="mobileServiceBlog">ブログ作成</a>
                 <a href="/{{ locale }}/services/multilingual-ec" class="mobile-dropdown-item" id="mobileServiceEc">EC作成</a>
                 <a href="/{{ locale }}/services/ai-localize" class="mobile-dropdown-item" id="mobileServiceAiLocalize">AIチャット編集</a>
+                <div style="border-top:1px solid #f3f4f6; margin: 0.25rem 0;"></div>
+                <div style="font-size:0.72rem; font-weight:700; color:#9ca3af; letter-spacing:0.08em; text-transform:uppercase; padding:0.25rem 0;" id="mobileDropdownLabelMarketing">海外マーケ支援</div>
+                <a href="/{{ locale }}/services/global-marketing" class="mobile-dropdown-item" id="mobileServiceGlobalMarketing">LinkedIn・ECモール運用</a>
             </div>
         </div>
 
@@ -160,10 +171,13 @@
             login: "ログイン",
             about: "会社概要",
             servicesLabel: "特徴 ▼",
+            dropdownLabelAgent: "AIエージェント",
+            dropdownLabelMarketing: "海外マーケ支援",
             serviceWebsite: "HP/LP作成",
             serviceBlog: "ブログ作成",
             serviceEc: "EC作成",
             serviceAiLocalize: "AIチャット編集",
+            serviceGlobalMarketing: "LinkedIn・ECモール運用",
             cases: "導入事例",
             pricing: "価格",
             resourcesLabel: "資料 ▼",
@@ -187,10 +201,13 @@
             login: "Login",
             about: "About Us",
             servicesLabel: "Features ▼",
+            dropdownLabelAgent: "AI Agent",
+            dropdownLabelMarketing: "Global Marketing",
             serviceWebsite: "Multilingual Website & LP",
             serviceBlog: "Multilingual Blog",
             serviceEc: "Cross-border EC",
             serviceAiLocalize: "AI Chat Editing",
+            serviceGlobalMarketing: "LinkedIn & EC Mall",
             cases: "Case Studies",
             pricing: "Pricing",
             resourcesLabel: "Resources ▼",
@@ -214,10 +231,13 @@
             login: "登录",
             about: "公司简介",
             servicesLabel: "特征 ▼",
+            dropdownLabelAgent: "AI代理功能",
+            dropdownLabelMarketing: "海外营销支援",
             serviceWebsite: "多语言建站・LP制作",
             serviceBlog: "多语言博客",
             serviceEc: "跨境电商制作",
             serviceAiLocalize: "AI聊天编辑",
+            serviceGlobalMarketing: "LinkedIn・电商平台运营",
             cases: "客户案例",
             pricing: "价格方案",
             resourcesLabel: "资料 ▼",
@@ -258,11 +278,14 @@
         setText('loginLink', t.login);
         setText('aboutLink', t.about);
         setText('servicesLabel', t.servicesLabel);
+        setText('dropdownLabelAgent', t.dropdownLabelAgent);
+        setText('dropdownLabelMarketing', t.dropdownLabelMarketing);
         setText('serviceWebsite', t.serviceWebsite);
         setText('serviceBlog', t.serviceBlog);
         setText('serviceEc', t.serviceEc);
         setText('serviceAiLocalize', t.serviceAiLocalize);
-        setText('casesLink', t.cases); // 追加
+        setText('serviceGlobalMarketing', t.serviceGlobalMarketing);
+        setText('casesLink', t.cases);
         setText('pricingLink', t.pricing);
         setText('resourcesLabel', t.resourcesLabel);
         setText('resourceColManual', t.resourceColManual);
@@ -277,11 +300,14 @@
         setText('startBtn', t.start);
         setText('mobileHome', t.mobileHome);
         setText('mobileServicesText', t.mobileServicesText);
+        setText('mobileDropdownLabelAgent', t.dropdownLabelAgent);
+        setText('mobileDropdownLabelMarketing', t.dropdownLabelMarketing);
         setText('mobileServiceWebsite', t.serviceWebsite);
         setText('mobileServiceBlog', t.serviceBlog);
         setText('mobileServiceEc', t.serviceEc);
         setText('mobileServiceAiLocalize', t.serviceAiLocalize);
-        setText('mobileCases', t.cases); // 追加
+        setText('mobileServiceGlobalMarketing', t.serviceGlobalMarketing);
+        setText('mobileCases', t.cases);
         setText('mobilePricing', t.pricing);
         setText('mobileResourcesText', t.mobileResourcesText);
         setText('mobileResourceColManual', t.resourceColManual);
@@ -348,16 +374,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // スクロールでヘッダー上部バーを非表示
+    // スクロールでヘッダー上部バーを非表示（ヒステリシスで閾値に幅を持たせてチラつき防止）
     const headerTop = document.getElementById('headerTop');
     if (headerTop) {
         window.addEventListener('scroll', function() {
-            if (window.pageYOffset > 50) {
+            if (window.pageYOffset > 80) {
                 headerTop.classList.add('hidden');
-            } else {
+            } else if (window.pageYOffset < 30) {
                 headerTop.classList.remove('hidden');
             }
-        });
+        }, { passive: true });
     }
 
     // ハンバーガーメニュー
