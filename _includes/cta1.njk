@@ -37,11 +37,11 @@
         z-index: 1;
         width: 100%;
         max-width: 500px;
-        aspect-ratio: 4 / 3;
         margin: 0 auto;
-        object-fit: cover;
-        border-radius: 8px; /* var(--radius-lg) fallback */
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* var(--shadow-2xl) fallback */
+        object-fit: contain;
+        border-radius: 8px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        display: block;
     }
 
     .btn-cta-primary {
@@ -76,35 +76,29 @@
             <!-- Left: Image & Decoration -->
             <div class="cta-image-wrapper">
                 <div class="cta-blob-background"></div>
-                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Leap global business" class="cta-image">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780199379/f2e65838-a2f4-4a3c-8bc4-0666632aad0b.png" alt="Leap website builder" class="cta-image">
             </div>
 
             <!-- Right: Text & Buttons -->
             <div class="text-left">
                 <h2 id="cta-title" class="mb-lg text-white" style="font-size: 2.25rem;">
-                    <!-- JSで書き換え -->
-                    Leapでグローバルに<br>飛躍しましょう。
+                    チャットだけで、グローバル水準のサイトを。
                 </h2>
-                
+
                 <p id="cta-subtitle" class="mb-lg text-white font-bold" style="font-size: 1.125rem; line-height: 1.6;">
-                    <!-- JSで書き換え -->
-                    海外売上を伸ばすためのオールインワンツール
+                    AIがサイトを作って、最適化して、グローバルに届ける
                 </p>
-                
+
                 <p id="cta-desc" class="mb-xl text-white" style="line-height: 1.8; opacity: 0.9;">
-                    <!-- JSで書き換え -->
-                    多言語HP作成、越境ECの開設・運用、多言語コンテンツ制作、海外向けSNS運用、そして現地の代理店マッチングまで。<br>
-                    Leapなら、複雑な海外展開のプロセスを一元管理し、効率的に海外売上を拡大させることができます。
+                    ECサイト・ウェブサイト・LPの作成から多言語展開・AI自動最適化まで、すべてAIチャットだけで完結。あなたは話しかけるだけ。
                 </p>
-                
+
                 <div class="flex flex-wrap" style="gap: 1rem;">
                     <a id="cta-demo-btn" href="/{{ locale }}/about/#contact" class="btn btn-lg btn-cta-primary">
-                        <!-- JSで書き換え -->
                         デモを申し込む &rarr;
                     </a>
-                    <a id="cta-free-btn" href="https://app.leap.site" class="btn btn-lg btn-cta-outline">
-                        <!-- JSで書き換え -->
-                        無料で試してみる &rarr;
+                    <a id="cta-free-btn" href="https://app.leap.site" target="_blank" rel="noopener" class="btn btn-lg btn-cta-outline">
+                        無料で始める &rarr;
                     </a>
                 </div>
             </div>
@@ -117,25 +111,25 @@
     // 翻訳データ定義
     const ctaTranslations = {
         ja: {
-            title: 'Leapでグローバルに<br>飛躍しましょう。',
-            subtitle: '海外売上を伸ばすためのオールインワンツール',
-            desc: '多言語HP作成、越境ECの開設・運用、多言語コンテンツ制作、海外向けSNS運用、そして現地の代理店マッチングまで。<br>Leapなら、複雑な海外展開のプロセスを一元管理し、効率的に海外売上を拡大させることができます。',
+            title: 'チャットだけで、グローバル水準のサイトを。',
+            subtitle: 'AIがサイトを作って、最適化して、グローバルに届ける',
+            desc: 'ECサイト・ウェブサイト・LPの作成から多言語展開・AI自動最適化まで、すべてAIチャットだけで完結。あなたは話しかけるだけ。',
             demo: 'デモを申し込む &rarr;',
-            free: '無料で試してみる &rarr;'
+            free: '無料で始める &rarr;'
         },
         en: {
-            title: 'Leap into the Global Market.',
-            subtitle: 'The All-in-One Tool to Boost International Sales',
-            desc: 'From multilingual website creation and cross-border EC management to global content production, SNS marketing, and local partner matching.<br>Leap centralizes the complex process of global expansion, enabling you to efficiently scale your overseas revenue.',
-            demo: 'Request a Demo &rarr;',
-            free: 'Try for Free &rarr;'
+            title: 'Say it. Build it. Go global.',
+            subtitle: 'The AI website builder that works entirely through chat.',
+            desc: 'Build e-commerce stores, websites, and landing pages. Go multilingual. Let AI optimize for you — all through a single conversation. You talk, Leap builds.',
+            demo: 'Book a Demo &rarr;',
+            free: 'Get Started Free &rarr;'
         },
         'zh-hans': {
-            title: '使用 Leap 实现<br>全球业务飞跃。',
-            subtitle: '提升海外销售额的一站式工具',
-            desc: '多语言网站制作、跨境电商开设运营、多语言内容制作、面向海外的社交媒体运营，以及当地代理商匹配。<br>Leap 能够一元化管理复杂的海外拓展流程，高效助力您的海外销售额增长。',
+            title: '开口说，建好站，走向全球。',
+            subtitle: '只需对话的 AI 建站工具，从创建到全球化一站搞定',
+            desc: '电商网站、官网、落地页——创建、多语言拓展、AI 自动优化，全通过 AI 对话完成。你只需开口，Leap 搞定其余。',
             demo: '申请演示 &rarr;',
-            free: '免费试用 &rarr;'
+            free: '免费开始 &rarr;'
         }
     };
 

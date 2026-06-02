@@ -58,7 +58,28 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header-container" id="header">
+    <style>
+.dropdown-menu-wide {
+    display: flex !important;
+    gap: 0;
+    min-width: 380px;
+}
+.dropdown-col { flex: 1; }
+.dropdown-col-title {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.6rem 1rem 0.3rem;
+    border-bottom: 1px solid #f3f4f6;
+    margin-bottom: 0.25rem;
+}
+.dropdown-col + .dropdown-col {
+    border-left: 1px solid #f3f4f6;
+}
+</style>
+<header class="header-container" id="header">
     <div class="header-top" id="headerTop">
         <div class="header-top-content">
             <div class="header-top-left">
@@ -91,12 +112,12 @@
                 
                 <nav class="nav-links">
                     <div class="nav-item">
-                        <span class="nav-link" id="servicesLabel">サービス ▼</span>
+                        <span class="nav-link" id="servicesLabel">特徴 ▼</span>
                         <div class="dropdown-menu">
-                            <a href="/ja/services/multilingual-website" class="dropdown-item" id="serviceWebsite">多言語HP・LP作成</a>
-                            <a href="/ja/services/multilingual-blog" class="dropdown-item" id="serviceBlog">多言語ブログ作成</a>
-                            <a href="/ja/services/multilingual-ec" class="dropdown-item" id="serviceEc">多言語EC（越境EC）制作</a>
-                            <a href="/ja/services/ai-localize" class="dropdown-item" id="serviceAiLocalize">AI自動ローカライズ</a>
+                            <a href="/ja/services/multilingual-website" class="dropdown-item" id="serviceWebsite">HP/LP作成</a>
+                            <a href="/ja/services/multilingual-blog" class="dropdown-item" id="serviceBlog">ブログ作成</a>
+                            <a href="/ja/services/multilingual-ec" class="dropdown-item" id="serviceEc">EC作成</a>
+                            <a href="/ja/services/ai-localize" class="dropdown-item" id="serviceAiLocalize">AIチャット編集</a>
                         </div>
                     </div>
                     <!-- 導入事例を追加 -->
@@ -104,13 +125,19 @@
                     <a href="/ja/pricing" class="nav-link" id="pricingLink">価格</a>
                     <div class="nav-item">
                         <span class="nav-link" id="resourcesLabel">資料 ▼</span>
-                        <div class="dropdown-menu">
-                            <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
-                            <a href="/ja/seminar" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceSeminar">セミナー・イベント</a>
-                            <a href="/ja/blog" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">海外ビジネスマニュアル</a>
-                            <a href="/ja/hp-guide" target="_blank" class="dropdown-item" id="resourceHpGuide">HP作成マニュアル</a>
-                            <a href="/ja/ec-guide" target="_blank" class="dropdown-item" id="resourceEcGuide">EC運用マニュアル</a>
-                            <a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBuyerSearch">海外バイヤー検索</a>
+                        <div class="dropdown-menu dropdown-menu-wide">
+                            <div class="dropdown-col">
+                                <div class="dropdown-col-title" id="resourceColManual">マニュアル</div>
+                                <a href="/ja/hp-guide" target="_blank" class="dropdown-item" id="resourceHpGuide">HP作成マニュアル</a>
+                                <a href="/ja/ec-guide" target="_blank" class="dropdown-item" id="resourceEcGuide">EC運用マニュアル</a>
+                                <a href="/ja/blog" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">海外ビジネスマニュアル</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <div class="dropdown-col-title" id="resourceColResources">リソース</div>
+                                <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
+                                <a href="/ja/seminar" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceSeminar">セミナー・イベント</a>
+                                <a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBuyerSearch">海外バイヤー検索</a>
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -137,14 +164,14 @@
         
         <div class="mobile-nav-item">
             <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(this)">
-                <span id="mobileServicesText">サービス</span>
+                <span id="mobileServicesText">特徴</span>
                 <span>▼</span>
             </div>
             <div class="mobile-dropdown-content">
-                <a href="/ja/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">多言語HP・LP作成</a>
-                <a href="/ja/services/multilingual-blog" class="mobile-dropdown-item" id="mobileServiceBlog">多言語ブログ作成</a>
-                <a href="/ja/services/multilingual-ec" class="mobile-dropdown-item" id="mobileServiceEc">多言語EC（越境EC）制作</a>
-                <a href="/ja/services/ai-localize" class="mobile-dropdown-item" id="mobileServiceAiLocalize">AI自動ローカライズ</a>
+                <a href="/ja/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">HP/LP作成</a>
+                <a href="/ja/services/multilingual-blog" class="mobile-dropdown-item" id="mobileServiceBlog">ブログ作成</a>
+                <a href="/ja/services/multilingual-ec" class="mobile-dropdown-item" id="mobileServiceEc">EC作成</a>
+                <a href="/ja/services/ai-localize" class="mobile-dropdown-item" id="mobileServiceAiLocalize">AIチャット編集</a>
             </div>
         </div>
 
@@ -163,11 +190,13 @@
                 <span>▼</span>
             </div>
             <div class="mobile-dropdown-content">
-                <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
-                <a href="/ja/seminar" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceSeminar">セミナー・イベント</a>
-                <a href="/ja/blog" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">海外ビジネスマニュアル</a>
+                <div style="font-size:0.72rem; font-weight:700; color:#9ca3af; letter-spacing:0.08em; text-transform:uppercase; padding:0.5rem 0 0.25rem;" id="mobileResourceColManual">マニュアル</div>
                 <a href="/ja/hp-guide" target="_blank" class="mobile-dropdown-item" id="mobileResourceHpGuide">HP作成マニュアル</a>
                 <a href="/ja/ec-guide" target="_blank" class="mobile-dropdown-item" id="mobileResourceEcGuide">EC運用マニュアル</a>
+                <a href="/ja/blog" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">海外ビジネスマニュアル</a>
+                <div style="font-size:0.72rem; font-weight:700; color:#9ca3af; letter-spacing:0.08em; text-transform:uppercase; padding:0.75rem 0 0.25rem; border-top:1px solid #f3f4f6; margin-top:0.25rem;" id="mobileResourceColResources">リソース</div>
+                <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
+                <a href="/ja/seminar" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceSeminar">セミナー・イベント</a>
                 <a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBuyerSearch">海外バイヤー検索</a>
             </div>
         </div>
@@ -190,14 +219,16 @@
             langName: "日本語",
             login: "ログイン",
             about: "会社概要",
-            servicesLabel: "サービス ▼",
-            serviceWebsite: "多言語HP・LP作成",
-            serviceBlog: "多言語ブログ作成",
-            serviceEc: "多言語EC（越境EC）制作",
-            serviceAiLocalize: "AI自動ローカライズ",
-            cases: "導入事例", // 追加
+            servicesLabel: "特徴 ▼",
+            serviceWebsite: "HP/LP作成",
+            serviceBlog: "ブログ作成",
+            serviceEc: "EC作成",
+            serviceAiLocalize: "AIチャット編集",
+            cases: "導入事例",
             pricing: "価格",
             resourcesLabel: "資料 ▼",
+            resourceColManual: "マニュアル",
+            resourceColResources: "リソース",
             resourceDownload: "資料ダウンロード",
             resourceSeminar: "セミナー・イベント",
             resourceBlog: "海外ビジネスマニュアル",
@@ -207,7 +238,7 @@
             demo: "デモを申し込む",
             start: "無料スタート",
             mobileHome: "ホーム",
-            mobileServicesText: "サービス",
+            mobileServicesText: "特徴",
             mobileResourcesText: "資料",
             mobileStart: "無料で始める"
         },
@@ -215,14 +246,16 @@
             langName: "English",
             login: "Login",
             about: "About Us",
-            servicesLabel: "Services ▼",
+            servicesLabel: "Features ▼",
             serviceWebsite: "Multilingual Website & LP",
             serviceBlog: "Multilingual Blog",
             serviceEc: "Cross-border EC",
-            serviceAiLocalize: "AI Localization",
-            cases: "Case Studies", // 追加
+            serviceAiLocalize: "AI Chat Editing",
+            cases: "Case Studies",
             pricing: "Pricing",
             resourcesLabel: "Resources ▼",
+            resourceColManual: "Manuals",
+            resourceColResources: "Resources",
             resourceDownload: "Downloads",
             resourceSeminar: "Events & Webinars",
             resourceBlog: "Global Business Manual",
@@ -232,7 +265,7 @@
             demo: "Request Demo",
             start: "Start for Free",
             mobileHome: "Home",
-            mobileServicesText: "Services",
+            mobileServicesText: "Features",
             mobileResourcesText: "Resources",
             mobileStart: "Start for Free"
         },
@@ -240,14 +273,16 @@
             langName: "简体中文",
             login: "登录",
             about: "公司简介",
-            servicesLabel: "服务 ▼",
+            servicesLabel: "特征 ▼",
             serviceWebsite: "多语言建站・LP制作",
             serviceBlog: "多语言博客",
             serviceEc: "跨境电商制作",
-            serviceAiLocalize: "AI本地化",
-            cases: "客户案例", // 追加
+            serviceAiLocalize: "AI聊天编辑",
+            cases: "客户案例",
             pricing: "价格方案",
             resourcesLabel: "资料 ▼",
+            resourceColManual: "手册",
+            resourceColResources: "资源",
             resourceDownload: "资料下载",
             resourceSeminar: "活动与研讨会",
             resourceBlog: "海外商务手册",
@@ -257,7 +292,7 @@
             demo: "申请演示",
             start: "免费开始",
             mobileHome: "首页",
-            mobileServicesText: "服务",
+            mobileServicesText: "特征",
             mobileResourcesText: "资料",
             mobileStart: "免费开始"
         }
@@ -290,6 +325,8 @@
         setText('casesLink', t.cases); // 追加
         setText('pricingLink', t.pricing);
         setText('resourcesLabel', t.resourcesLabel);
+        setText('resourceColManual', t.resourceColManual);
+        setText('resourceColResources', t.resourceColResources);
         setText('resourceDownload', t.resourceDownload);
         setText('resourceSeminar', t.resourceSeminar);
         setText('resourceBlog', t.resourceBlog);
@@ -307,6 +344,8 @@
         setText('mobileCases', t.cases); // 追加
         setText('mobilePricing', t.pricing);
         setText('mobileResourcesText', t.mobileResourcesText);
+        setText('mobileResourceColManual', t.resourceColManual);
+        setText('mobileResourceColResources', t.resourceColResources);
         setText('mobileResourceDownload', t.resourceDownload);
         setText('mobileResourceSeminar', t.resourceSeminar);
         setText('mobileResourceBlog', t.resourceBlog);
@@ -2651,11 +2690,11 @@ document.addEventListener('DOMContentLoaded', function() {
         z-index: 1;
         width: 100%;
         max-width: 500px;
-        aspect-ratio: 4 / 3;
         margin: 0 auto;
-        object-fit: cover;
-        border-radius: 8px; /* var(--radius-lg) fallback */
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* var(--shadow-2xl) fallback */
+        object-fit: contain;
+        border-radius: 8px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        display: block;
     }
 
     .btn-cta-primary {
@@ -2690,35 +2729,29 @@ document.addEventListener('DOMContentLoaded', function() {
             <!-- Left: Image & Decoration -->
             <div class="cta-image-wrapper">
                 <div class="cta-blob-background"></div>
-                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Leap global business" class="cta-image">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780199379/f2e65838-a2f4-4a3c-8bc4-0666632aad0b.png" alt="Leap website builder" class="cta-image">
             </div>
 
             <!-- Right: Text & Buttons -->
             <div class="text-left">
                 <h2 id="cta-title" class="mb-lg text-white" style="font-size: 2.25rem;">
-                    <!-- JSで書き換え -->
-                    Leapでグローバルに<br>飛躍しましょう。
+                    チャットだけで、グローバル水準のサイトを。
                 </h2>
-                
+
                 <p id="cta-subtitle" class="mb-lg text-white font-bold" style="font-size: 1.125rem; line-height: 1.6;">
-                    <!-- JSで書き換え -->
-                    海外売上を伸ばすためのオールインワンツール
+                    AIがサイトを作って、最適化して、グローバルに届ける
                 </p>
-                
+
                 <p id="cta-desc" class="mb-xl text-white" style="line-height: 1.8; opacity: 0.9;">
-                    <!-- JSで書き換え -->
-                    多言語HP作成、越境ECの開設・運用、多言語コンテンツ制作、海外向けSNS運用、そして現地の代理店マッチングまで。<br>
-                    Leapなら、複雑な海外展開のプロセスを一元管理し、効率的に海外売上を拡大させることができます。
+                    ECサイト・ウェブサイト・LPの作成から多言語展開・AI自動最適化まで、すべてAIチャットだけで完結。あなたは話しかけるだけ。
                 </p>
-                
+
                 <div class="flex flex-wrap" style="gap: 1rem;">
                     <a id="cta-demo-btn" href="/ja/about/#contact" class="btn btn-lg btn-cta-primary">
-                        <!-- JSで書き換え -->
                         デモを申し込む &rarr;
                     </a>
-                    <a id="cta-free-btn" href="https://app.leap.site" class="btn btn-lg btn-cta-outline">
-                        <!-- JSで書き換え -->
-                        無料で試してみる &rarr;
+                    <a id="cta-free-btn" href="https://app.leap.site" target="_blank" rel="noopener" class="btn btn-lg btn-cta-outline">
+                        無料で始める &rarr;
                     </a>
                 </div>
             </div>
@@ -2731,25 +2764,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // 翻訳データ定義
     const ctaTranslations = {
         ja: {
-            title: 'Leapでグローバルに<br>飛躍しましょう。',
-            subtitle: '海外売上を伸ばすためのオールインワンツール',
-            desc: '多言語HP作成、越境ECの開設・運用、多言語コンテンツ制作、海外向けSNS運用、そして現地の代理店マッチングまで。<br>Leapなら、複雑な海外展開のプロセスを一元管理し、効率的に海外売上を拡大させることができます。',
+            title: 'チャットだけで、グローバル水準のサイトを。',
+            subtitle: 'AIがサイトを作って、最適化して、グローバルに届ける',
+            desc: 'ECサイト・ウェブサイト・LPの作成から多言語展開・AI自動最適化まで、すべてAIチャットだけで完結。あなたは話しかけるだけ。',
             demo: 'デモを申し込む &rarr;',
-            free: '無料で試してみる &rarr;'
+            free: '無料で始める &rarr;'
         },
         en: {
-            title: 'Leap into the Global Market.',
-            subtitle: 'The All-in-One Tool to Boost International Sales',
-            desc: 'From multilingual website creation and cross-border EC management to global content production, SNS marketing, and local partner matching.<br>Leap centralizes the complex process of global expansion, enabling you to efficiently scale your overseas revenue.',
-            demo: 'Request a Demo &rarr;',
-            free: 'Try for Free &rarr;'
+            title: 'Say it. Build it. Go global.',
+            subtitle: 'The AI website builder that works entirely through chat.',
+            desc: 'Build e-commerce stores, websites, and landing pages. Go multilingual. Let AI optimize for you — all through a single conversation. You talk, Leap builds.',
+            demo: 'Book a Demo &rarr;',
+            free: 'Get Started Free &rarr;'
         },
         'zh-hans': {
-            title: '使用 Leap 实现<br>全球业务飞跃。',
-            subtitle: '提升海外销售额的一站式工具',
-            desc: '多语言网站制作、跨境电商开设运营、多语言内容制作、面向海外的社交媒体运营，以及当地代理商匹配。<br>Leap 能够一元化管理复杂的海外拓展流程，高效助力您的海外销售额增长。',
+            title: '开口说，建好站，走向全球。',
+            subtitle: '只需对话的 AI 建站工具，从创建到全球化一站搞定',
+            desc: '电商网站、官网、落地页——创建、多语言拓展、AI 自动优化，全通过 AI 对话完成。你只需开口，Leap 搞定其余。',
             demo: '申请演示 &rarr;',
-            free: '免费试用 &rarr;'
+            free: '免费开始 &rarr;'
         }
     };
 
@@ -3121,23 +3154,29 @@ document.addEventListener('DOMContentLoaded', function() {
         <!-- Desktop View -->
         <div class="footer-columns">
             <div class="footer-column">
-                <h3 id="footerFeaturesTitle">人気の機能</h3>
+                <h3 id="footerFeaturesTitle">特徴</h3>
                 <ul>
-                    <li><a href="/ja/services/multilingual-website" id="footerWebsite">多言語HP・LP作成</a></li>
-                    <li><a href="/ja/services/multilingual-blog" id="footerBlogService">多言語ブログ作成</a></li>
-                    <li><a href="/ja/services/multilingual-ec" id="footerEc">多言語EC（越境EC）制作</a></li>
-                    <li><a href="/ja/services/ai-localize" id="footerAiLocalize">AI自動ローカライズ</a></li>
+                    <li><a href="/ja/services/multilingual-website" id="footerWebsite">HP/LP作成</a></li>
+                    <li><a href="/ja/services/multilingual-blog" id="footerBlogService">ブログ作成</a></li>
+                    <li><a href="/ja/services/multilingual-ec" id="footerEc">EC作成</a></li>
+                    <li><a href="/ja/services/ai-localize" id="footerAiLocalize">AIチャット編集</a></li>
                 </ul>
             </div>
 
             <div class="footer-column">
-                <h3 id="footerToolsTitle">無料ツール</h3>
+                <h3 id="footerToolsTitle">マニュアル</h3>
+                <ul>
+                    <li><a href="/ja/hp-guide" target="_blank" id="footerHpGuide">HP作成マニュアル</a></li>
+                    <li><a href="/ja/ec-guide" target="_blank" id="footerEcGuide">EC運用マニュアル</a></li>
+                    <li><a href="/ja/blog" target="_blank" rel="noopener noreferrer" id="footerBlog">海外ビジネスマニュアル</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerResourcesTitle">リソース</h3>
                 <ul>
                     <li><a href="/ja/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
                     <li><a href="/ja/seminar" target="_blank" rel="noopener noreferrer" id="footerSeminar">セミナー・イベント</a></li>
-                    <li><a href="/ja/blog" target="_blank" rel="noopener noreferrer" id="footerBlog">海外ビジネスマニュアル</a></li>
-                    <li><a href="/ja/hp-guide" target="_blank" id="footerHpGuide">HP作成マニュアル</a></li>
-                    <li><a href="/ja/ec-guide" target="_blank" id="footerEcGuide">EC運用マニュアル</a></li>
                     <li><a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" id="footerBuyerSearch">海外バイヤー検索</a></li>
                     <li><a href="/ja/case-studies" target="_blank" rel="noopener noreferrer" id="footerCases">導入事例</a></li>
                 </ul>
@@ -3156,31 +3195,42 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="footer-mobile-section">
             <div class="mobile-accordion-item">
                 <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
-                    <span id="footerMobileFeaturesTitle">人気の機能</span>
+                    <span id="footerMobileFeaturesTitle">特徴</span>
                     <span class="mobile-accordion-icon">›</span>
                 </button>
                 <div class="mobile-accordion-content">
                     <ul>
-                        <li><a href="/ja/services/multilingual-website" id="footerMobileWebsite">多言語HP・LP作成</a></li>
-                        <li><a href="/ja/services/multilingual-blog" id="footerMobileBlogService">多言語ブログ作成</a></li>
-                        <li><a href="/ja/services/multilingual-ec" id="footerMobileEc">多言語EC（越境EC）制作</a></li>
-                        <li><a href="/ja/services/ai-localize" id="footerMobileAiLocalize">AI自動ローカライズ</a></li>
+                        <li><a href="/ja/services/multilingual-website" id="footerMobileWebsite">HP/LP作成</a></li>
+                        <li><a href="/ja/services/multilingual-blog" id="footerMobileBlogService">ブログ作成</a></li>
+                        <li><a href="/ja/services/multilingual-ec" id="footerMobileEc">EC作成</a></li>
+                        <li><a href="/ja/services/ai-localize" id="footerMobileAiLocalize">AIチャット編集</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="mobile-accordion-item">
                 <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
-                    <span id="footerMobileToolsTitle">無料ツール</span>
+                    <span id="footerMobileToolsTitle">マニュアル</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="/ja/hp-guide" target="_blank" id="footerMobileHpGuide">HP作成マニュアル</a></li>
+                        <li><a href="/ja/ec-guide" target="_blank" id="footerMobileEcGuide">EC運用マニュアル</a></li>
+                        <li><a href="/ja/blog" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">海外ビジネスマニュアル</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileResourcesTitle">リソース</span>
                     <span class="mobile-accordion-icon">›</span>
                 </button>
                 <div class="mobile-accordion-content">
                     <ul>
                         <li><a href="/ja/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
                         <li><a href="/ja/seminar" target="_blank" rel="noopener noreferrer" id="footerMobileSeminar">セミナー・イベント</a></li>
-                        <li><a href="/ja/blog" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">海外ビジネスマニュアル</a></li>
-                        <li><a href="/ja/hp-guide" target="_blank" id="footerMobileHpGuide">HP作成マニュアル</a></li>
-                        <li><a href="/ja/ec-guide" target="_blank" id="footerMobileEcGuide">EC運用マニュアル</a></li>
                         <li><a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" id="footerMobileBuyerSearch">海外バイヤー検索</a></li>
                         <li><a href="/ja/case-studies" target="_blank" rel="noopener noreferrer" id="footerMobileCases">導入事例</a></li>
                     </ul>
@@ -3244,12 +3294,13 @@ document.addEventListener('DOMContentLoaded', function() {
 (function() {
     const footerTranslations = {
         ja: {
-            featuresTitle: "人気の機能",
-            website: "多言語HP・LP作成",
-            blogService: "多言語ブログ作成",
-            ec: "多言語EC（越境EC）制作",
-            aiLocalize: "AI自動ローカライズ",
-            toolsTitle: "無料ツール",
+            featuresTitle: "特徴",
+            website: "HP/LP作成",
+            blogService: "ブログ作成",
+            ec: "EC作成",
+            resourcesTitle: "リソース",
+            aiLocalize: "AIチャット編集",
+            toolsTitle: "マニュアル",
             resources: "資料ダウンロード",
             seminar: "セミナー・イベント",
             blog: "海外ビジネスマニュアル",
@@ -3266,12 +3317,12 @@ document.addEventListener('DOMContentLoaded', function() {
             withdrawal: "退会規定"
         },
         en: {
-            featuresTitle: "Popular Features",
+            featuresTitle: "Features",
             website: "Multilingual Website & LP",
             blogService: "Multilingual Blog",
             ec: "Cross-border EC",
             aiLocalize: "AI Localization",
-            toolsTitle: "Free Tools",
+            toolsTitle: "Manuals",
             blog: "Global Business Manual",
             resources: "Downloads",
             seminar: "Events & Webinars",
@@ -3288,12 +3339,12 @@ document.addEventListener('DOMContentLoaded', function() {
             withdrawal: "Withdrawal Policy"
         },
         'zh-hans': {
-            featuresTitle: "热门功能",
+            featuresTitle: "特征",
             website: "多语言建站・LP制作",
             blogService: "多语言博客",
             ec: "跨境电商制作",
             aiLocalize: "AI本地化",
-            toolsTitle: "免费工具",
+            toolsTitle: "手册",
             blog: "海外商务手册",
             resources: "资料下载",
             seminar: "活动与研讨会",
@@ -3334,6 +3385,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setText('footerEc', t.ec);
         setText('footerAiLocalize', t.aiLocalize);
         setText('footerToolsTitle', t.toolsTitle);
+        setText('footerResourcesTitle', t.resourcesTitle);
         setText('footerBlog', t.blog);
         setText('footerResources', t.resources);
         setText('footerSeminar', t.seminar);
@@ -3352,6 +3404,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setText('footerMobileEc', t.ec);
         setText('footerMobileAiLocalize', t.aiLocalize);
         setText('footerMobileToolsTitle', t.toolsTitle);
+        setText('footerMobileResourcesTitle', t.resourcesTitle);
         setText('footerMobileBlog', t.blog);
         setText('footerMobileResources', t.resources);
         setText('footerMobileSeminar', t.seminar);

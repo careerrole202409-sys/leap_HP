@@ -1,255 +1,788 @@
 ---
 layout: base.njk
-title: Multilingual Website Creation Tool Leap | Global Expansion with AI Auto-Localization
-description: Leap is a tool where our proprietary AI automatically creates multilingual websites and blogs. Unlike simple machine translation, it localizes design, layout, and CTAs to suit local markets. Achieve effective global web marketing with low initial costs.
+title: Build Websites with AI Chat | Leap
+description: Leap is an AI agent that lets you build, manage, and grow any website — e-commerce stores, landing pages, multilingual sites — all through simple chat.
 ---
 
-<!-- Section 1: Hero Area -->
-<section class="section pt-0 pb-0" style="position: relative; overflow: hidden; background-color: var(--color-dark-gray);">
-    <div style="
-        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
-        min-height: 700px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    ">
-        <div class="container text-center text-white">
-            <p class="text-white font-bold mb-md" style="letter-spacing: 0.1em; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
-                Multilingual Website Creation Tool
+<style>
+/* ===== Hero ===== */
+.hero-new {
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 40%, #fff0e8 100%);
+    padding: 2.5rem 1rem;
+}
+.hero-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 1.5rem;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-left  { order: 1; }
+    .hero-btns  { order: 2; }
+    .hero-stack { order: 3; padding-top: 4rem; max-width: 360px; margin: 0 auto; }
+    .stack-img  { width: 75%; }
+    .btn-hero-primary,
+    .btn-hero-secondary {
+        font-size: 1rem;
+        padding: 0.85rem 2rem;
+    }
+}
+.hero-left { text-align: left; }
+.hero-left .hero-sub {
+    font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+.hero-btns {
+    text-align: center;
+    margin-top: 1.5rem;
+    grid-column: 1 / -1;
+}
+
+/* ===== Stacked cards ===== */
+.hero-stack {
+    position: relative;
+    padding-top: 9rem;
+}
+.stack-img {
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.07);
+    display: block;
+    width: 88%;
+}
+.stack-front {
+    position: relative;
+    z-index: 3;
+    margin-left: 0;
+    transform: rotate(-1deg);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+}
+.stack-mid {
+    position: absolute;
+    top: 4.5rem;
+    left: 6%;
+    z-index: 2;
+    transform: rotate(1deg);
+    opacity: 0.85;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+.stack-back {
+    position: absolute;
+    top: 0;
+    left: 12%;
+    z-index: 1;
+    transform: rotate(3deg);
+    opacity: 0.7;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.hero-new h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 800;
+    color: #1a1a2e;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+.hero-new .hero-sub {
+    font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+    color: #555;
+    max-width: 540px;
+    margin: 0 auto 2rem;
+    line-height: 1.8;
+}
+.btn-hero-primary {
+    display: inline-block;
+    background: linear-gradient(135deg, #C10033, #8B0024);
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1.15rem 3.5rem;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    margin: 0.4rem;
+}
+.btn-hero-primary:hover { opacity: 0.85; }
+.btn-hero-secondary {
+    display: inline-block;
+    background: #fff;
+    color: #1a1a2e;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1.15rem 3.5rem;
+    border-radius: 100px;
+    text-decoration: none;
+    border: 2px solid #e5e7eb;
+    transition: border-color 0.2s;
+    margin: 0.4rem;
+}
+.btn-hero-secondary:hover { border-color: #C10033; }
+
+/* ===== Section common ===== */
+.section-new {
+    padding: 4rem 1.5rem;
+}
+.section-new .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.section-label {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #C10033;
+    margin-bottom: 0.6rem;
+    display: block;
+}
+.section-new h2 {
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    font-weight: 800;
+    color: #1a1a2e;
+    line-height: 1.25;
+    margin-bottom: 0.85rem;
+    letter-spacing: -0.02em;
+}
+.section-new .section-desc {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+    max-width: 520px;
+}
+
+/* ===== bg variants ===== */
+.bg-soft { background: #fafafa; }
+.bg-pink { background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 60%, #fff0e8 100%); }
+
+/* ===== 3 Pillars ===== */
+.pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+@media (max-width: 768px) { .pillars { grid-template-columns: 1fr; } }
+.pillar-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+.pillar-card:hover {
+    box-shadow: 0 8px 24px rgba(193,0,51,0.1);
+    border-color: #C10033;
+}
+.pillar-icon {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, #C10033, #8B0024);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+}
+.pillar-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.4rem;
+}
+.pillar-card p {
+    font-size: 0.875rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0.6rem;
+}
+.pillar-link {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #C10033;
+}
+
+/* ===== All features grid ===== */
+.all-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+@media (max-width: 768px) { .all-features-grid { grid-template-columns: 1fr; } }
+.feature-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.feature-card-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #C10033, #8B0024);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+    flex-shrink: 0;
+}
+.feature-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.4rem;
+}
+.feature-card p {
+    font-size: 0.875rem;
+    color: #666;
+    line-height: 1.65;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+.btn-feature-link {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #C10033;
+    border: 1.5px solid #C10033;
+    border-radius: 100px;
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    align-self: flex-start;
+    transition: background 0.15s, color 0.15s;
+}
+.btn-feature-link:hover { background: #C10033; color: #fff; }
+
+/* ===== Feature sections ===== */
+.feature-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+.feature-row.reverse { direction: rtl; }
+.feature-row.reverse > * { direction: ltr; }
+@media (max-width: 768px) {
+    .feature-row, .feature-row.reverse { grid-template-columns: 1fr; direction: ltr; gap: 1.5rem; }
+}
+.feature-img {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.07);
+}
+
+/* ===== Accordion ===== */
+.accordion { margin-top: 1.25rem; }
+.accordion-item {
+    border-top: 1px solid #e5e7eb;
+    padding: 1rem 0;
+}
+.accordion-item:last-child { border-bottom: 1px solid #e5e7eb; }
+.accordion-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1a1a2e;
+    list-style: none;
+    user-select: none;
+}
+.accordion-trigger::-webkit-details-marker { display: none; }
+details[open] .accordion-trigger .acc-icon { transform: rotate(45deg); }
+.acc-icon {
+    font-size: 1.3rem;
+    color: #9ca3af;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.accordion-body {
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ===== How it works ===== */
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.75rem;
+    margin-top: 2rem;
+}
+@media (max-width: 768px) { .steps { grid-template-columns: 1fr 1fr; } }
+.step { text-align: center; }
+.step-num {
+    width: 52px;
+    height: 52px;
+    background: linear-gradient(135deg, #C10033, #8B0024);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.75rem;
+}
+.step h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.4rem;
+}
+.step p { font-size: 0.85rem; color: #666; line-height: 1.6; }
+
+/* ===== Use cases tabs ===== */
+.usecase-tabs {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.usecase-tab {
+    padding: 0.45rem 1.1rem;
+    border-radius: 100px;
+    border: 1px solid #e5e7eb;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: #fff;
+    color: #555;
+    transition: all 0.15s;
+}
+.usecase-tab.active { background: #1a1a2e; color: #fff; border-color: #1a1a2e; }
+.usecase-content { display: none; }
+.usecase-content.active {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: center;
+}
+@media (max-width: 768px) { .usecase-content.active { grid-template-columns: 1fr; } }
+.usecase-content h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.6rem;
+}
+.usecase-content p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+.usecase-list { list-style: none; padding: 0; }
+.usecase-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.usecase-list li::before { content: "✓"; color: #C10033; font-weight: 700; flex-shrink: 0; }
+
+@media (max-width: 768px) {
+    .btn-hero-primary,
+    .btn-hero-secondary {
+        font-size: 1rem;
+        padding: 0.85rem 2rem;
+    }
+}
+</style>
+
+<!-- ==============================
+     1. HERO
+============================== -->
+<section class="hero-new">
+    <div class="hero-grid">
+        <div class="hero-left">
+            <span class="section-label">The AI Website Builder for a Global World</span>
+            <h1>Build any website,<br>just by chatting.</h1>
+            <p class="hero-sub">
+                From e-commerce stores to websites and landing pages —<br>create, go global, optimize with AI, and manage everything<br>through a single conversation.
             </p>
-            <h1 class="text-white mb-lg" style="font-size: clamp(2rem, 5vw, 4rem); text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
-                Attract global customers<br>with words that resonate locally.
-            </h1>
-            <p class="text-xl text-white mb-2xl mx-auto" style="max-width: 800px; opacity: 0.95; text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
-                The first in Japan. More than just automatic translation—an AI tool that automatically creates and optimizes design and layout for local markets.
-            </p>
-            
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
-                <a href="/{{ locale }}/about/#contact" class="btn btn-primary btn-xl" style="padding: 1.2rem 4rem; font-size: 1.2rem;">Request a Demo &rarr;</a>
-                <a href="https://app.leap.site" class="btn btn-white btn-xl" style="padding: 1.2rem 4rem; font-size: 1.2rem;">Start for Free &rarr;</a>
-            </div>
+        </div>
+
+        <div class="hero-stack">
+            <img class="stack-img stack-back"  src="https://app.leap.site/images/website_images/005.png" alt="Customer site example 3">
+            <img class="stack-img stack-mid"   src="https://app.leap.site/images/website_images/002.png" alt="Customer site example 2">
+            <img class="stack-img stack-front" src="https://app.leap.site/images/website_images/001.png" alt="Customer site example 1">
+        </div>
+
+        <div class="hero-btns">
+            <a href="https://app.leap.site" class="btn-hero-primary" target="_blank" rel="noopener">Get Started Free</a>
+            <a href="/{{ locale }}/about/#contact" class="btn-hero-secondary">Book a Demo</a>
         </div>
     </div>
 </section>
 
-<!-- Section 2: Client Logos -->
+<!-- ==============================
+     2. Client logos
+============================== -->
 {% include "client-logos.njk" %}
 
-<!-- Section 3: Identifying the Problem -->
-<section class="section bg-beige">
-    <div class="container text-center">
-        <h2 class="mb-2xl">Two Common Reasons for Failure</h2>
-        
-        <div class="grid-2 text-left" style="gap: 40px;">
-            <!-- Reason 1 -->
-            <div class="card flex flex-col" style="padding: 0 !important; border: 1px solid var(--color-border); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 12px; overflow: hidden; background-color: white;">
-                <!-- Red Line -->
-                <div style="width: 100%; height: 8px; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); margin: 0;"></div>
-                <!-- Content Box -->
-                <div class="flex flex-col flex-grow-1" style="padding: 40px 32px;">
-                    <div class="mb-md" style="color: var(--color-primary-start);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                            <path d="M15 9l-6 6"></path>
-                            <path d="M9 9l6 6"></path>
-                        </svg>
-                    </div>
-                    <div class="text-primary font-bold mb-xs" style="font-size: 3rem; line-height: 1;">87%</div>
-                    <h3 class="h4 mb-md">Conventional auto-translation<br>fails to resonate locally</h3>
-                    <p class="text-secondary flex-grow-1" style="line-height: 1.8;">
-                        If the page structure and messaging remain exactly the same as the original site after translation, many users will bounce because "there is no proper local site" or "it looks unnatural."
-                    </p>
+<!-- ==============================
+     3. Why Leap
+============================== -->
+<section class="section-new bg-soft">
+    <div class="container">
+        <span class="section-label text-center">Why Leap</span>
+        <h2 class="text-center">Three things only Leap does.</h2>
+        <div class="pillars">
+            <a href="#feature-ec" class="pillar-card">
+                <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
                 </div>
+                <h3>Build and run your store<br>through chat</h3>
+                <p>Add products, configure payments, manage inventory — just tell the AI. No code, no tools needed.</p>
+                <span class="pillar-link">Learn more →</span>
+            </a>
+            <a href="#feature-optimization" class="pillar-card">
+                <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                </div>
+                <h3>AI keeps optimizing<br>your site for you</h3>
+                <p>Set it and don't forget it. AI runs A/B tests, writes blog posts, and refines your design — automatically.</p>
+                <span class="pillar-link">Learn more →</span>
+            </a>
+            <a href="#feature-multilingual" class="pillar-card">
+                <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <h3>Go live in 10+ languages<br>instantly</h3>
+                <p>One click to localize your site for any market — design, copy, and CTAs all adapted for each country.</p>
+                <span class="pillar-link">Learn more →</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     4. All Features
+============================== -->
+<section class="section-new bg-pink">
+    <div class="container">
+        <span class="section-label text-center">All Features</span>
+        <h2 class="text-center">Everything you can do with Leap</h2>
+        <div class="all-features-grid">
+            <div class="feature-card">
+                <div class="feature-card-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                </div>
+                <h3>Website &amp; LP Builder</h3>
+                <p>Just describe your industry and goals in chat. AI generates your design, copy, and page structure — no code required.</p>
+                <a href="/{{ locale }}/services/multilingual-website/" class="btn-feature-link">Learn more →</a>
             </div>
-            
-            <!-- Reason 2 -->
-            <div class="card flex flex-col" style="padding: 0 !important; border: 1px solid var(--color-border); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 12px; overflow: hidden; background-color: white;">
-                <!-- Red Line -->
-                <div style="width: 100%; height: 8px; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); margin: 0;"></div>
-                <!-- Content Box -->
-                <div class="flex flex-col flex-grow-1" style="padding: 40px 32px;">
-                    <div class="mb-md" style="color: var(--color-primary-start);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
-                            <line x1="8" y1="6" x2="16" y2="6"></line>
-                            <line x1="16" y1="14" x2="16.01" y2="14"></line>
-                            <line x1="16" y1="18" x2="16.01" y2="18"></line>
-                            <line x1="12" y1="14" x2="12.01" y2="14"></line>
-                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                            <line x1="8" y1="14" x2="8.01" y2="14"></line>
-                            <line x1="8" y1="18" x2="8.01" y2="18"></line>
-                        </svg>
-                    </div>
-                    <div class="text-primary font-bold mb-xs" style="font-size: 3rem; line-height: 1;">$30K–$130K</div>
-                    <h3 class="h4 mb-md">Outsourcing to specialized agencies<br>becomes a cost barrier</h3>
-                    <p class="text-secondary flex-grow-1" style="line-height: 1.8;">
-                        Creating a localized multilingual website from scratch is highly expensive. Furthermore, since you cannot make edits yourself, annual maintenance costs also pile up.
-                    </p>
+            <div class="feature-card">
+                <div class="feature-card-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
                 </div>
+                <h3>E-Commerce Creation &amp; Management</h3>
+                <p>Launch your store and manage products, inventory, payments, and campaigns — entirely through AI chat.</p>
+                <a href="/{{ locale }}/services/multilingual-ec/" class="btn-feature-link">Learn more →</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                </div>
+                <h3>Blog &amp; AI Auto-Optimization</h3>
+                <p>AI analyzes keywords, writes SEO blog posts, and runs A/B tests on CTAs and design — automatically and continuously.</p>
+                <a href="/{{ locale }}/services/multilingual-blog/" class="btn-feature-link">Learn more →</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <h3>AI Chat Editing</h3>
+                <p>'Make this button red.' 'Update this section.' Just say it and watch your page update instantly.</p>
+                <a href="/{{ locale }}/services/ai-localize/" class="btn-feature-link">Learn more →</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Section 4: Solution & Leap's Strengths -->
-<section class="section bg-white pb-0">
+<!-- ==============================
+     5. E-Commerce via Chat
+============================== -->
+<section class="section-new" id="feature-ec">
     <div class="container">
-        <div class="text-center mb-2xl">
-            <h2 class="mb-sm">Leap's Multilingual Website Creation Tool</h2>
+        <div class="feature-row">
+            <div>
+                <span class="section-label">E-Commerce via Chat</span>
+                <h2>Build and run your store<br>through AI chat alone.</h2>
+                <p class="section-desc">Add products, set up payments, run campaigns — just say it in plain English. No technical expertise needed.</p>
+                <div class="accordion">
+                    <details>
+                        <summary class="accordion-trigger">Add products and manage inventory through chat<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">Just type 'Add a T-shirt, price $38, stock 50 units' and it's live instantly. CSV import also supported.</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">AI recommends payment and shipping setup<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">Connect Stripe or Shopify through chat. Tell us 'I want credit card and COD options' and AI handles the rest.</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">Run sales and campaigns with a single message<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">Type 'Set up a 10% off sale this weekend' and AI creates banners, applies discounts, and issues coupons automatically.</p>
+                    </details>
+                </div>
+            </div>
+            <img class="feature-img" loading="lazy" src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780364275/30c2bf5a-e253-4e3c-91c4-e847d75ff028.png" alt="E-commerce management screen">
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     6. AI Auto-Optimization
+============================== -->
+<section class="section-new bg-soft" id="feature-optimization">
+    <div class="container">
+        <div class="feature-row reverse">
+            <div>
+                <span class="section-label">AI Auto-Optimization</span>
+                <h2>Your site, always<br>getting better.</h2>
+                <p class="section-desc">CTAs, design, SEO content — AI generates, tests, and improves continuously to maximize results.</p>
+                <div class="accordion">
+                    <details>
+                        <summary class="accordion-trigger">Automatic CTA A/B testing<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">AI creates multiple versions of your CTAs like 'Buy now' vs 'Try for free,' distributes them, analyzes performance, and optimizes automatically.</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">Automatic SEO blog post generation<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">AI researches keywords in your target language, writes the posts, and publishes them on a weekly or monthly schedule.</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">Design and layout optimization<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">Based on heatmap data, AI suggests layout improvements. Just say 'This section has too much drop-off, fix it' and it's done.</p>
+                    </details>
+                </div>
+            </div>
+            <img class="feature-img" loading="lazy" src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780364365/ec44e00c-d656-4b2b-92f0-335f6c0904a9.png" alt="AI optimization and blog creation screen">
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     7. Multilingual Support
+============================== -->
+<section class="section-new" id="feature-multilingual">
+    <div class="container">
+        <div class="feature-row">
+            <div>
+                <span class="section-label">Multilingual Support</span>
+                <h2>Take your site global<br>in 10+ languages.</h2>
+                <p class="section-desc">It's more than translation. Colors, structure, and CTAs are all adapted for each local market — at a fraction of the usual cost.</p>
+                <div class="accordion">
+                    <details>
+                        <summary class="accordion-trigger">Instant support for 10+ languages<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">English, Chinese, Spanish, Arabic and more — go live in any language instantly. Just enter the URL of your existing site to get started.</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">Design and structure adapted for each market<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">AI analyzes top local competitors and adapts your colors, layout, and messaging for each country.</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">Full multilingual e-commerce support<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">Product descriptions, currencies, and shipping settings are automatically adjusted for each country. Launch your global store today.</p>
+                    </details>
+                </div>
+            </div>
+            <img class="feature-img" loading="lazy" src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780199379/f2e65838-a2f4-4a3c-8bc4-0666632aad0b.png" alt="Multilingual support screen">
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     8. Page Editing
+============================== -->
+<section class="section-new bg-soft" id="feature-editing">
+    <div class="container">
+        <div class="feature-row reverse">
+            <div>
+                <span class="section-label">Page Editing</span>
+                <h2>Edit any page<br>just by saying so.</h2>
+                <p class="section-desc">'Make this button red.' 'Swap the hero image.' — no code, no design tools. AI handles it instantly.</p>
+                <div class="accordion">
+                    <details>
+                        <summary class="accordion-trigger">Change text, images, and colors through chat<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">Give instructions in plain English. 'Make the headline simpler.' 'Use a brighter hero image.' Done.</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">Add, remove, or reorder sections<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">Say 'Add an FAQ section' or 'Move the pricing table up' and AI restructures your page layout.</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">Version control so you can experiment freely<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">Every change is saved. Just say 'Undo that last change' to roll back instantly.</p>
+                    </details>
+                </div>
+            </div>
+            <img class="feature-img" loading="lazy" src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780364059/635d3425-4cf8-4d88-afb6-ef0c1bcbd467.png" alt="AI chat editing screen">
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     9. How Leap Works
+============================== -->
+<section class="section-new bg-pink">
+    <div class="container text-center">
+        <span class="section-label">How Leap Works</span>
+        <h2>Just start a conversation.</h2>
+        <p style="color:#666; font-size:0.95rem; max-width:480px; margin:0.4rem auto 0;">Start from a URL or build from scratch — it all happens through chat.</p>
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <h3>Tell us your goal</h3>
+                <p>Describe your industry, goals, and the pages you need. Drop in a reference URL if you have one.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <h3>AI builds your site</h3>
+                <p>Design, copy, and e-commerce setup — AI builds it all automatically. Your site is ready in minutes.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <h3>Refine through chat</h3>
+                <p>Adjust anything through chat. Trigger multilingual setup or optimization here too.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <h3>Publish and grow</h3>
+                <p>One click to go live. AI keeps optimizing in the background.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     10. Use Cases
+============================== -->
+<section class="section-new">
+    <div class="container">
+        <span class="section-label">Use Cases</span>
+        <h2>Leap works for every<br>type of business.</h2>
+        <div class="usecase-tabs">
+            <button class="usecase-tab active" onclick="switchTab('ec')">E-Commerce</button>
+            <button class="usecase-tab" onclick="switchTab('d2c')">D2C Brands</button>
+            <button class="usecase-tab" onclick="switchTab('global')">Going Global</button>
+            <button class="usecase-tab" onclick="switchTab('agency')">Web Agencies</button>
         </div>
 
-        <div class="grid-2" style="align-items: center; gap: 60px;">
+        <div id="tab-ec" class="usecase-content active">
             <div>
-                <h3 class="h3 mb-md" style="line-height: 1.4;">Not just translation, but auto-creation of<br><span class="text-primary">localized multilingual websites</span></h3>
-                <p class="text-secondary mb-lg">
-                    Changing the language is not enough; you need "localization" tailored to the local market. With Leap, AI analyzes local benchmarks and builds the optimal website.
-                </p>
-                
-                <ul class="content-list" style="list-style: none; padding: 0;">
-                    <li class="flex items-center justify-start mb-md text-lg">
-                        <div style="background: linear-gradient(135deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; margin-right: 12px; flex-shrink: 0;">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        </div>
-                        Proprietary AI automatically creates multilingual websites
-                    </li>
-                    <li class="flex items-center justify-start mb-md text-lg">
-                        <div style="background: linear-gradient(135deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; margin-right: 12px; flex-shrink: 0;">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        </div>
-                        Unlike auto-translation, colors and layouts can be customized
-                    </li>
-                    <li class="flex items-center justify-start text-lg">
-                        <div style="background: linear-gradient(135deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; margin-right: 12px; flex-shrink: 0;">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        </div>
-                        Supports all major languages (Just input your URL)
-                    </li>
+                <h3>E-Commerce</h3>
+                <p>Launch and run your online store entirely through AI chat — no engineers or designers needed.</p>
+                <ul class="usecase-list">
+                    <li>Manage products, inventory, and pricing through chat</li>
+                    <li>Run sales and issue coupons with a single message</li>
+                    <li>Sell globally with multilingual e-commerce</li>
+                    <li>AI analyzes sales data and suggests improvements</li>
                 </ul>
             </div>
+            <img class="feature-img" loading="lazy" src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780364885/132dc817-35b8-4325-acb7-58f57ceeb70a.png" alt="E-commerce site example">
+        </div>
+
+        <div id="tab-d2c" class="usecase-content">
             <div>
-                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1771677333/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-02-21_21.35.25_ose8qa.png" alt="Leap Editor" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid var(--color-border);">
+                <h3>D2C Brands</h3>
+                <p>AI recreates your brand world — from story pages to e-commerce and blog.</p>
+                <ul class="usecase-list">
+                    <li>AI learns your brand tone and generates copy</li>
+                    <li>Manage LP, store, and blog in one place</li>
+                    <li>AI sets up social and email integrations</li>
+                    <li>AI suggests next campaigns based on purchase data</li>
+                </ul>
             </div>
+            <img class="feature-img" loading="lazy" src="https://app.leap.site/images/website_images/002.png" alt="D2C brand site example">
+        </div>
+
+        <div id="tab-global" class="usecase-content">
+            <div>
+                <h3>Going Global</h3>
+                <p>Enter your existing site URL and AI generates localized versions in 10+ languages instantly.</p>
+                <ul class="usecase-list">
+                    <li>Generate multilingual versions from any URL</li>
+                    <li>Design, culture, and CTAs adapted for each market</li>
+                    <li>Multilingual e-commerce with multiple currencies</li>
+                    <li>AI writes and publishes local SEO blog posts</li>
+                </ul>
+            </div>
+            <img class="feature-img" loading="lazy" src="https://app.leap.site/images/website_images/005.png" alt="Global expansion site example">
+        </div>
+
+        <div id="tab-agency" class="usecase-content">
+            <div>
+                <h3>Web Agencies</h3>
+                <p>AI dramatically speeds up client site production — compress timelines from weeks to days.</p>
+                <ul class="usecase-list">
+                    <li>Brief the AI in chat, get a first draft instantly</li>
+                    <li>Client revision requests handled through chat</li>
+                    <li>Handle multilingual projects at no extra cost</li>
+                    <li>Hand off sites clients can manage themselves</li>
+                </ul>
+            </div>
+            <img class="feature-img" loading="lazy" src="https://app.leap.site/images/website_images/001.png" alt="Web agency site example">
         </div>
     </div>
 </section>
 
-<!-- Section 5: Core Services -->
-<section class="section bg-white pt-xl">
+<!-- ==============================
+     11. Case Studies
+============================== -->
+<section class="section-new bg-soft">
     <div class="container">
-        <style>
-            .service-layout { display: grid; gap: 40px; }
-            .service-cards-grid { display: grid; gap: 24px; grid-template-columns: 1fr; }
-            @media (min-width: 768px) { .service-cards-grid { grid-template-columns: repeat(2, 1fr); } }
-            @media (min-width: 1024px) {
-                .service-layout { grid-template-columns: 280px 1fr; align-items: start; }
-                .service-cards-grid { grid-template-columns: repeat(3, 1fr); }
-            }
-        </style>
-
-        <div class="service-layout">
-            <div class="mb-xl">
-                <h2 class="mb-lg" style="font-size: var(--font-size-2xl); line-height: 1.4;">How to Generate<br>Global Leads</h2>
-                <p class="text-md mb-xl text-secondary">
-                    Here are three features designed to drive results through thorough localization, going far beyond simple translation.
-                </p>
-                <div class="flex flex-col gap-md">
-                    <a href="/{{ locale }}/about/#contact" class="btn btn-primary btn-lg w-full text-center" style="background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); border: none; font-weight: bold;">Request a Demo &rarr;</a>
-                    <a href="https://app.leap.site" class="btn btn-outline btn-lg w-full text-center font-bold" style="color: var(--color-primary-start, #C8102E); border-color: var(--color-border, #E5E7EB);">Start for Free &rarr;</a>
+        <span class="section-label text-center">CASE STUDIES</span>
+        <h2 class="text-center">Success Stories</h2>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:2rem;">
+            <div style="background:#fff; border:1px solid #e5e7eb; border-radius:16px; overflow:hidden;">
+                <div style="background:#f9fafb; padding:2rem 2rem; display:flex; justify-content:center; align-items:center; border-bottom:1px solid #e5e7eb; min-height:140px;">
+                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767491868/logo_ja_qjjpkp.png" alt="Japan International Research Center for Agricultural Sciences" style="max-height:60px; width:auto; object-fit:contain;" loading="lazy">
+                </div>
+                <div style="padding:1.5rem;">
+                    <h3 style="font-size:1rem; font-weight:700; color:#1a1a2e; margin-bottom:0.5rem;">Japan International Research Center for Agricultural Sciences</h3>
+                    <p style="font-size:0.85rem; color:#666; line-height:1.65;">Leap joined from the requirements definition phase to build a web application accessible to local users in Malaysia.</p>
                 </div>
             </div>
-
-            <div class="service-cards-grid">
-                <!-- Service 1 -->
-                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; background-color: white; border-radius: var(--radius-md);">
-                    <div class="mb-md text-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                    </div>
-                    <h3 class="h5 mb-sm" style="font-size: 1.25rem;">Multilingual Websites</h3>
-                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> Create target language versions based on your existing site</li>
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> Optimize for local users</li>
-                    </ul>
-                    <a href="/{{ locale }}/services/multilingual-website" class="font-bold text-sm mt-md hover:underline" style="color: var(--color-dark-gray);">View Details &rarr;</a>
+            <div style="background:#fff; border:1px solid #e5e7eb; border-radius:16px; overflow:hidden;">
+                <div style="background:#f9fafb; padding:2rem 2rem; display:flex; justify-content:center; align-items:center; border-bottom:1px solid #e5e7eb; min-height:140px;">
+                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767492043/2026-01-04_11.00%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_wpugxv.jpg" alt="Komatsu Spring Manufacturing Co., Ltd." style="max-height:60px; width:auto; object-fit:contain;" loading="lazy">
                 </div>
-
-                <!-- Service 2 -->
-                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; background-color: white; border-radius: var(--radius-md);">
-                    <div class="mb-md text-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                    </div>
-                    <h3 class="h5 mb-sm" style="font-size: 1.25rem;">Multilingual Blogs</h3>
-                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> Identify local language keywords</li>
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> Generate native-quality articles with AI</li>
-                    </ul>
-                    <a href="/{{ locale }}/services/multilingual-blog" class="font-bold text-sm mt-md hover:underline" style="color: var(--color-dark-gray);">View Details &rarr;</a>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; background-color: white; border-radius: var(--radius-md);">
-                    <div class="mb-md text-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-                    </div>
-                    <h3 class="h5 mb-sm" style="font-size: 1.25rem;">AI Auto-Localization</h3>
-                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> Localize colors, layouts, and CTAs</li>
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> Quantitative measurement through A/B testing</li>
-                    </ul>
-                    <a href="/{{ locale }}/services/ai-localize" class="font-bold text-sm mt-md hover:underline" style="color: var(--color-dark-gray);">View Details &rarr;</a>
+                <div style="padding:1.5rem;">
+                    <h3 style="font-size:1rem; font-weight:700; color:#1a1a2e; margin-bottom:0.5rem;">Komatsu Spring Manufacturing Co., Ltd.</h3>
+                    <p style="font-size:0.85rem; color:#666; line-height:1.65;">Leap created multilingual websites and blogs in English and Chinese, implemented local-language SEO, and helped the company win international business.</p>
                 </div>
             </div>
+        </div>
+        <div style="text-align:center; margin-top:1.5rem;">
+            <a href="/{{ locale }}/case-studies/" style="font-size:0.875rem; font-weight:600; color:#C10033; text-decoration:underline;">See all case studies →</a>
         </div>
     </div>
 </section>
 
-<!-- Section 6: Case Studies -->
-<section class="section bg-beige">
-    <div class="container">
-        <div class="text-center mb-2xl">
-            <h2 class="mb-sm">Case Studies</h2>
-            <p class="text-secondary">Take a look at the real-world impact and results our clients have achieved.</p>
-        </div>
-
-        <div class="grid-2" style="gap: 40px; align-items: stretch;">
-            <!-- Case Study 1: JIRCAS -->
-            <div class="card p-0 overflow-hidden flex flex-col" style="border: 1px solid var(--color-border); box-shadow: none; background-color: white;">
-                <div style="background-color: var(--color-beige); padding: 3rem 2rem; display: flex; justify-content: center; align-items: center; border-bottom: 1px solid var(--color-border); min-height: 200px;">
-                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767491868/logo_ja_qjjpkp.png" alt="JIRCAS Logo" style="max-height: 80px; width: auto; object-fit: contain;">
-                </div>
-                <div class="p-xl flex flex-col flex-grow-1">
-                    <h3 class="h4 mb-lg text-center">JIRCAS</h3>
-                    <div class="mb-md">
-                        <span class="font-bold text-sm" style="display: inline-block; background: var(--color-dark-gray); color: white; padding: 4px 12px; border-radius: 4px; margin-bottom: 8px;">Challenge</span>
-                        <p class="text-secondary text-sm" style="line-height: 1.6;">For a national project in Malaysia, they needed to develop a web application accessible to locals.</p>
-                    </div>
-                    <div class="mt-auto">
-                        <span class="font-bold text-sm" style="display: inline-block; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); color: white; padding: 4px 12px; border-radius: 4px; margin-bottom: 8px;">Solution & Results</span>
-                        <p class="text-secondary font-bold text-sm" style="line-height: 1.6;">Leap participated from the requirements definition stage and is currently developing the system.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Case Study 2: Komatsu Spring Industrial -->
-            <div class="card p-0 overflow-hidden flex flex-col" style="border: 1px solid var(--color-border); box-shadow: none; background-color: white;">
-                <div style="background-color: var(--color-beige); padding: 3rem 2rem; display: flex; justify-content: center; align-items: center; border-bottom: 1px solid var(--color-border); min-height: 200px;">
-                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767492043/2026-01-04_11.00%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_wpugxv.jpg" alt="Komatsu Spring Industrial Co., Ltd. Logo" style="max-height: 80px; width: auto; object-fit: contain;">
-                </div>
-                <div class="p-xl flex flex-col flex-grow-1">
-                    <h3 class="h4 mb-lg text-center">Komatsu Spring Industrial Co., Ltd.</h3>
-                    <div class="mb-md">
-                        <span class="font-bold text-sm" style="display: inline-block; background: var(--color-dark-gray); color: white; padding: 4px 12px; border-radius: 4px; margin-bottom: 8px;">Challenge</span>
-                        <p class="text-secondary text-sm" style="line-height: 1.6;">The CEO was handling overseas projects personally, and they lacked personnel skilled in SEO and multilingual support. Due to a shortage of resources, they couldn't manage global web marketing.</p>
-                    </div>
-                    <div class="mt-auto">
-                        <span class="font-bold text-sm" style="display: inline-block; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); color: white; padding: 4px 12px; border-radius: 4px; margin-bottom: 8px;">Solution & Results</span>
-                        <p class="text-secondary font-bold text-sm" style="line-height: 1.6;">Leap created and published multilingual websites and blogs in English and Chinese, implementing SEO strategies using local keywords.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Bottom CTA (Included) -->
+<!-- ==============================
+     12. CTA
+============================== -->
 {% include "cta1.njk" %}
+
+<script>
+function switchTab(id) {
+    document.querySelectorAll('.usecase-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.usecase-content').forEach(c => c.classList.remove('active'));
+    document.querySelector('[onclick="switchTab(\'' + id + '\')"]').classList.add('active');
+    document.getElementById('tab-' + id).classList.add('active');
+}
+</script>

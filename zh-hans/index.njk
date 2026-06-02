@@ -1,256 +1,788 @@
 ---
 layout: base.njk
-title: 多语言网站建设工具 Leap | AI自动本地化助力出海业务
-description: Leap是一款通过独创AI自动生成多语言网站和博客的工具。与一般的自动翻译不同，Leap能将设计、页面结构甚至CTA都进行本地化适配。帮助企业以较低的初期成本实现高效的海外Web营销。
+title: 只需 AI 对话，即可建站 | Leap
+description: Leap 是一款 AI 智能体，通过简单的对话即可完成网站创建、电商运营、多语言拓展和自动优化，一站式搞定所有环节。
 ---
 
-<!-- セクション1：ヒーローエリア（デザインを当初の背景画像スタイルに戻し、文言は最新に） -->
-<section class="section pt-0 pb-0" style="position: relative; overflow: hidden; background-color: var(--color-dark-gray);">
-    <div style="
-        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
-        min-height: 700px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    ">
-        <div class="container text-center text-white">
-            <p class="text-white font-bold mb-md" style="letter-spacing: 0.1em; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
-                多语言网站建设工具
+<style>
+/* ===== Hero ===== */
+.hero-new {
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 40%, #fff0e8 100%);
+    padding: 2.5rem 1rem;
+}
+.hero-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 1.5rem;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-left  { order: 1; }
+    .hero-btns  { order: 2; }
+    .hero-stack { order: 3; padding-top: 4rem; max-width: 360px; margin: 0 auto; }
+    .stack-img  { width: 75%; }
+    .btn-hero-primary,
+    .btn-hero-secondary {
+        font-size: 1rem;
+        padding: 0.85rem 2rem;
+    }
+}
+.hero-left { text-align: left; }
+.hero-left .hero-sub {
+    font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+.hero-btns {
+    text-align: center;
+    margin-top: 1.5rem;
+    grid-column: 1 / -1;
+}
+
+/* ===== Stacked cards ===== */
+.hero-stack {
+    position: relative;
+    padding-top: 9rem;
+}
+.stack-img {
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.07);
+    display: block;
+    width: 88%;
+}
+.stack-front {
+    position: relative;
+    z-index: 3;
+    margin-left: 0;
+    transform: rotate(-1deg);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+}
+.stack-mid {
+    position: absolute;
+    top: 4.5rem;
+    left: 6%;
+    z-index: 2;
+    transform: rotate(1deg);
+    opacity: 0.85;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+.stack-back {
+    position: absolute;
+    top: 0;
+    left: 12%;
+    z-index: 1;
+    transform: rotate(3deg);
+    opacity: 0.7;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.hero-new h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 800;
+    color: #1a1a2e;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+.hero-new .hero-sub {
+    font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+    color: #555;
+    max-width: 540px;
+    margin: 0 auto 2rem;
+    line-height: 1.8;
+}
+.btn-hero-primary {
+    display: inline-block;
+    background: linear-gradient(135deg, #C10033, #8B0024);
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1.15rem 3.5rem;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    margin: 0.4rem;
+}
+.btn-hero-primary:hover { opacity: 0.85; }
+.btn-hero-secondary {
+    display: inline-block;
+    background: #fff;
+    color: #1a1a2e;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1.15rem 3.5rem;
+    border-radius: 100px;
+    text-decoration: none;
+    border: 2px solid #e5e7eb;
+    transition: border-color 0.2s;
+    margin: 0.4rem;
+}
+.btn-hero-secondary:hover { border-color: #C10033; }
+
+/* ===== Section common ===== */
+.section-new {
+    padding: 4rem 1.5rem;
+}
+.section-new .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.section-label {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #C10033;
+    margin-bottom: 0.6rem;
+    display: block;
+}
+.section-new h2 {
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    font-weight: 800;
+    color: #1a1a2e;
+    line-height: 1.25;
+    margin-bottom: 0.85rem;
+    letter-spacing: -0.02em;
+}
+.section-new .section-desc {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+    max-width: 520px;
+}
+
+/* ===== bg variants ===== */
+.bg-soft { background: #fafafa; }
+.bg-pink { background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 60%, #fff0e8 100%); }
+
+/* ===== 3 Pillars ===== */
+.pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+@media (max-width: 768px) { .pillars { grid-template-columns: 1fr; } }
+.pillar-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+.pillar-card:hover {
+    box-shadow: 0 8px 24px rgba(193,0,51,0.1);
+    border-color: #C10033;
+}
+.pillar-icon {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, #C10033, #8B0024);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+}
+.pillar-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.4rem;
+}
+.pillar-card p {
+    font-size: 0.875rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0.6rem;
+}
+.pillar-link {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #C10033;
+}
+
+/* ===== All features grid ===== */
+.all-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+@media (max-width: 768px) { .all-features-grid { grid-template-columns: 1fr; } }
+.feature-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.feature-card-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #C10033, #8B0024);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+    flex-shrink: 0;
+}
+.feature-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.4rem;
+}
+.feature-card p {
+    font-size: 0.875rem;
+    color: #666;
+    line-height: 1.65;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+.btn-feature-link {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #C10033;
+    border: 1.5px solid #C10033;
+    border-radius: 100px;
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    align-self: flex-start;
+    transition: background 0.15s, color 0.15s;
+}
+.btn-feature-link:hover { background: #C10033; color: #fff; }
+
+/* ===== Feature sections ===== */
+.feature-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+.feature-row.reverse { direction: rtl; }
+.feature-row.reverse > * { direction: ltr; }
+@media (max-width: 768px) {
+    .feature-row, .feature-row.reverse { grid-template-columns: 1fr; direction: ltr; gap: 1.5rem; }
+}
+.feature-img {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.07);
+}
+
+/* ===== Accordion ===== */
+.accordion { margin-top: 1.25rem; }
+.accordion-item {
+    border-top: 1px solid #e5e7eb;
+    padding: 1rem 0;
+}
+.accordion-item:last-child { border-bottom: 1px solid #e5e7eb; }
+.accordion-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1a1a2e;
+    list-style: none;
+    user-select: none;
+}
+.accordion-trigger::-webkit-details-marker { display: none; }
+details[open] .accordion-trigger .acc-icon { transform: rotate(45deg); }
+.acc-icon {
+    font-size: 1.3rem;
+    color: #9ca3af;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.accordion-body {
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ===== How it works ===== */
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.75rem;
+    margin-top: 2rem;
+}
+@media (max-width: 768px) { .steps { grid-template-columns: 1fr 1fr; } }
+.step { text-align: center; }
+.step-num {
+    width: 52px;
+    height: 52px;
+    background: linear-gradient(135deg, #C10033, #8B0024);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.75rem;
+}
+.step h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.4rem;
+}
+.step p { font-size: 0.85rem; color: #666; line-height: 1.6; }
+
+/* ===== Use cases tabs ===== */
+.usecase-tabs {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.usecase-tab {
+    padding: 0.45rem 1.1rem;
+    border-radius: 100px;
+    border: 1px solid #e5e7eb;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: #fff;
+    color: #555;
+    transition: all 0.15s;
+}
+.usecase-tab.active { background: #1a1a2e; color: #fff; border-color: #1a1a2e; }
+.usecase-content { display: none; }
+.usecase-content.active {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: center;
+}
+@media (max-width: 768px) { .usecase-content.active { grid-template-columns: 1fr; } }
+.usecase-content h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.6rem;
+}
+.usecase-content p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+.usecase-list { list-style: none; padding: 0; }
+.usecase-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.usecase-list li::before { content: "✓"; color: #C10033; font-weight: 700; flex-shrink: 0; }
+
+@media (max-width: 768px) {
+    .btn-hero-primary,
+    .btn-hero-secondary {
+        font-size: 1rem;
+        padding: 0.85rem 2rem;
+    }
+}
+</style>
+
+<!-- ==============================
+     1. HERO
+============================== -->
+<section class="hero-new">
+    <div class="hero-grid">
+        <div class="hero-left">
+            <span class="section-label">全球化时代的 AI 建站智能体</span>
+            <h1>只需对话，<br>轻松建站。</h1>
+            <p class="hero-sub">
+                从电商网站、官网到落地页，<br>建站、多语言拓展、AI 自动优化到日常运营，<br>一个对话窗口，全部搞定。
             </p>
-            <h1 class="text-white mb-lg" style="font-size: clamp(2rem, 5vw, 4rem); text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
-                用打动当地市场的语言，<br>吸引海外客户。
-            </h1>
-            <p class="text-xl text-white mb-2xl mx-auto" style="max-width: 800px; opacity: 0.95; text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
-                日本首创。不仅仅是自动翻译，更是能将设计和结构都自动生成并优化至符合当地标准的AI工具。
-            </p>
-            
-            <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
-                <a href="/{{ locale }}/about/#contact" class="btn btn-primary btn-xl" style="padding: 1.2rem 4rem; font-size: 1.2rem;">申请演示 &rarr;</a>
-                <a href="https://app.leap.site" class="btn btn-white btn-xl" style="padding: 1.2rem 4rem; font-size: 1.2rem;">免费创建多语言网站 &rarr;</a>
-            </div>
+        </div>
+
+        <div class="hero-stack">
+            <img class="stack-img stack-back"  src="https://app.leap.site/images/website_images/005.png" alt="客户网站案例3">
+            <img class="stack-img stack-mid"   src="https://app.leap.site/images/website_images/002.png" alt="客户网站案例2">
+            <img class="stack-img stack-front" src="https://app.leap.site/images/website_images/001.png" alt="客户网站案例1">
+        </div>
+
+        <div class="hero-btns">
+            <a href="https://app.leap.site" class="btn-hero-primary" target="_blank" rel="noopener">免费开始</a>
+            <a href="/{{ locale }}/about/#contact" class="btn-hero-secondary">申请演示</a>
         </div>
     </div>
 </section>
 
-<!-- セクション2：導入企業ロゴ -->
+<!-- ==============================
+     2. 信任 logo 带
+============================== -->
 {% include "client-logos.njk" %}
 
-<!-- セクション3：課題喚起（デザイン維持） -->
-<section class="section bg-beige">
-    <div class="container text-center">
-        <h2 class="mb-2xl">出海不顺的2大常见原因</h2>
-        
-        <div class="grid-2 text-left" style="gap: 40px;">
-            <!-- 理由1 -->
-            <div class="card flex flex-col" style="padding: 0 !important; border: 1px solid var(--color-border); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 12px; overflow: hidden; background-color: white;">
-                <!-- 赤い線 -->
-                <div style="width: 100%; height: 8px; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); margin: 0;"></div>
-                <!-- 中身の箱 -->
-                <div class="flex flex-col flex-grow-1" style="padding: 40px 32px;">
-                    <div class="mb-md" style="color: var(--color-primary-start);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                            <path d="M15 9l-6 6"></path>
-                            <path d="M9 9l6 6"></path>
-                        </svg>
-                    </div>
-                    <div class="text-primary font-bold mb-xs" style="font-size: 3rem; line-height: 1;">87%</div>
-                    <h3 class="h4 mb-md">传统的自动翻译工具<br>无法打动当地市场</h3>
-                    <p class="text-secondary flex-grow-1" style="line-height: 1.8;">
-                        翻译后的页面结构和营销诉求如果与日文原版完全一样，许多用户会因为“没有本地语言网站，或者网站看着不自然”而离开。
-                    </p>
+<!-- ==============================
+     3. Leap 的特色
+============================== -->
+<section class="section-new bg-soft">
+    <div class="container">
+        <span class="section-label text-center">Leap 的特色</span>
+        <h2 class="text-center">只有 Leap 才能做到</h2>
+        <div class="pillars">
+            <a href="#feature-ec" class="pillar-card">
+                <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
                 </div>
+                <h3>电商创建与运营，<br>只需对话</h3>
+                <p>添加商品、设置支付、管理库存，只需告诉 AI 即可。无需代码，无需工具。</p>
+                <span class="pillar-link">了解更多 →</span>
+            </a>
+            <a href="#feature-optimization" class="pillar-card">
+                <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                </div>
+                <h3>AI 自动优化 CTA、<br>设计与博客</h3>
+                <p>不只是建站。AI 持续进行 A/B 测试、自动撰写博客、优化设计，让效果不断提升。</p>
+                <span class="pillar-link">了解更多 →</span>
+            </a>
+            <a href="#feature-multilingual" class="pillar-card">
+                <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <h3>一键拓展至<br>10 种以上语言</h3>
+                <p>一键将网站本地化，适配各地市场的设计、文案与 CTA，轻松走向全球。</p>
+                <span class="pillar-link">了解更多 →</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     4. 全部功能
+============================== -->
+<section class="section-new bg-pink">
+    <div class="container">
+        <span class="section-label text-center">全部功能</span>
+        <h2 class="text-center">用 Leap 能做什么</h2>
+        <div class="all-features-grid">
+            <div class="feature-card">
+                <div class="feature-card-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                </div>
+                <h3>官网 / 落地页创建</h3>
+                <p>只需在对话中告知行业与目标，AI 自动生成设计、文案与页面结构，无需代码或设计工具。</p>
+                <a href="/{{ locale }}/services/multilingual-website/" class="btn-feature-link">了解更多 →</a>
             </div>
-            
-            <!-- 理由2 -->
-            <div class="card flex flex-col" style="padding: 0 !important; border: 1px solid var(--color-border); box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 12px; overflow: hidden; background-color: white;">
-                <!-- 赤い線 -->
-                <div style="width: 100%; height: 8px; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); margin: 0;"></div>
-                <!-- 中身の箱 -->
-                <div class="flex flex-col flex-grow-1" style="padding: 40px 32px;">
-                    <div class="mb-md" style="color: var(--color-primary-start);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
-                            <line x1="8" y1="6" x2="16" y2="6"></line>
-                            <line x1="16" y1="14" x2="16.01" y2="14"></line>
-                            <line x1="16" y1="18" x2="16.01" y2="18"></line>
-                            <line x1="12" y1="14" x2="12.01" y2="14"></line>
-                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                            <line x1="8" y1="14" x2="8.01" y2="14"></line>
-                            <line x1="8" y1="18" x2="8.01" y2="18"></line>
-                        </svg>
-                    </div>
-                    <div class="text-primary font-bold mb-xs" style="font-size: 3rem; line-height: 1;">500〜2,000<span style="font-size: 1.5rem;">万日元</span></div>
-                    <h3 class="h4 mb-md">委托专业营销公司<br>成本会成为巨大壁垒</h3>
-                    <p class="text-secondary flex-grow-1" style="line-height: 1.8;">
-                        从零开始建立一个完全本地化的多语言网站需要高昂的费用。而且由于无法自行修改，每年的维护成本也会水涨船高。
-                    </p>
+            <div class="feature-card">
+                <div class="feature-card-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
                 </div>
+                <h3>电商创建与运营</h3>
+                <p>从电商网站搭建到商品录入、库存管理、支付设置与促销活动，全部通过 AI 对话完成。</p>
+                <a href="/{{ locale }}/services/multilingual-ec/" class="btn-feature-link">了解更多 →</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                </div>
+                <h3>博客创建与 AI 自动优化</h3>
+                <p>AI 分析目标语言关键词，自动撰写并发布 SEO 博客文章，持续进行 A/B 测试，最大化转化效果。</p>
+                <a href="/{{ locale }}/services/multilingual-blog/" class="btn-feature-link">了解更多 →</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <h3>AI 对话编辑</h3>
+                <p>只需说「把这个按钮改成红色」或「修改这段文字」，页面即时更新，版本管理让你放心尝试。</p>
+                <a href="/{{ locale }}/services/ai-localize/" class="btn-feature-link">了解更多 →</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- セクション4：解決策＆Leapの強み -->
-<section class="section bg-white pb-0">
+<!-- ==============================
+     5. 电商，只需对话
+============================== -->
+<section class="section-new" id="feature-ec">
     <div class="container">
-        <div class="text-center mb-2xl">
-            <h2 class="mb-sm">Leap 提供的多语言网站建设工具</h2>
+        <div class="feature-row">
+            <div>
+                <span class="section-label">电商，只需对话</span>
+                <h2>电商创建与运营，<br>只靠 AI 对话就能完成。</h2>
+                <p class="section-desc">添加商品、设置支付、发起促销——只需用自然语言告诉 AI，无需任何技术知识。</p>
+                <div class="accordion">
+                    <details>
+                        <summary class="accordion-trigger">通过对话录入商品、管理库存<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">输入「添加一件 T 恤，价格 ¥380，库存 50 件」即可立即生效，同时支持 CSV 导入。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">AI 推荐支付与物流设置<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">通过对话接入 Stripe 或 Shopify。告诉 AI「我想支持信用卡和货到付款」，它会自动完成配置。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">一句话发起促销活动<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">输入「本周末设置 9 折优惠」即可自动创建横幅、应用折扣并发放优惠券。</p>
+                    </details>
+                </div>
+            </div>
+            <img class="feature-img" loading="lazy" src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780364275/30c2bf5a-e253-4e3c-91c4-e847d75ff028.png" alt="电商管理界面">
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     6. AI 自动优化
+============================== -->
+<section class="section-new bg-soft" id="feature-optimization">
+    <div class="container">
+        <div class="feature-row reverse">
+            <div>
+                <span class="section-label">AI 自动优化</span>
+                <h2>AI 持续优化你的网站</h2>
+                <p class="section-desc">CTA 文案、设计配色、SEO 博客——AI 自动生成、测试与改进，让转化效果持续提升。</p>
+                <div class="accordion">
+                    <details>
+                        <summary class="accordion-trigger">自动 A/B 测试 CTA<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">AI 自动生成「立即购买」与「免费试用」等多种 CTA 版本，分发、分析并优化至效果最佳的方案。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">自动生成 SEO 博客文章<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">从目标语言关键词分析到文章撰写与发布，全程自动化，支持按周或按月定期推送。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">优化设计与页面布局<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">基于热图数据，AI 提出布局优化建议。只需说「这个板块跳出率太高，帮我改一下」即可。</p>
+                    </details>
+                </div>
+            </div>
+            <img class="feature-img" loading="lazy" src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780364365/ec44e00c-d656-4b2b-92f0-335f6c0904a9.png" alt="AI 优化与博客创建界面">
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     7. 多语言支持
+============================== -->
+<section class="section-new" id="feature-multilingual">
+    <div class="container">
+        <div class="feature-row">
+            <div>
+                <span class="section-label">多语言支持</span>
+                <h2>一键将网站<br>拓展至全球 10 种以上语言</h2>
+                <p class="section-desc">不只是翻译，颜色、结构与 CTA 均按当地市场需求本地化，大幅降低全球化成本。</p>
+                <div class="accordion">
+                    <details>
+                        <summary class="accordion-trigger">一键支持 10 种以上语言<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">英语、日语、西班牙语、阿拉伯语等主流语言即时上线。也可输入现有网站 URL 直接生成多语言版本。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">设计与结构按当地市场定制<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">AI 分析当地竞品网站，针对各国市场优化颜色、布局与文案，而非简单翻译。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">完整支持多语言电商<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">商品描述、支付货币与配送设置自动适配各国需求，快速搭建全球电商。</p>
+                    </details>
+                </div>
+            </div>
+            <img class="feature-img" loading="lazy" src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780199379/f2e65838-a2f4-4a3c-8bc4-0666632aad0b.png" alt="多语言支持界面">
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     8. 页面编辑
+============================== -->
+<section class="section-new bg-soft" id="feature-editing">
+    <div class="container">
+        <div class="feature-row reverse">
+            <div>
+                <span class="section-label">页面编辑</span>
+                <h2>页面编辑，<br>只需开口说。</h2>
+                <p class="section-desc">「把这个按钮改成红色」「替换顶部图片」——无需代码，无需设计工具，AI 即时响应。</p>
+                <div class="accordion">
+                    <details>
+                        <summary class="accordion-trigger">通过对话修改文字、图片与颜色<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">用自然语言下达指令，如「让标题更简洁」或「换一张更明亮的顶部图片」，即刻生效。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">添加、删除或调整板块顺序<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">说「添加一个常见问题板块」或「把价格表移到上面」，AI 即刻重组页面结构。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">版本管理，放心大胆尝试<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">所有修改均自动保存。只需说「撤销刚才的改动」即可一键回滚。</p>
+                    </details>
+                </div>
+            </div>
+            <img class="feature-img" loading="lazy" src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780364059/635d3425-4cf8-4d88-afb6-ef0c1bcbd467.png" alt="AI 对话编辑界面">
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     9. Leap 的建站流程
+============================== -->
+<section class="section-new bg-pink">
+    <div class="container text-center">
+        <span class="section-label">Leap 的建站流程</span>
+        <h2>只需开始对话</h2>
+        <p style="color:#666; font-size:0.95rem; max-width:480px; margin:0.4rem auto 0;">可以从现有网站 URL 开始，也可以从零创建，一切通过对话完成。</p>
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <h3>告知目标</h3>
+                <p>在对话中输入行业、目标与所需页面，也可贴上参考网站链接。</p>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <h3>AI 生成网站</h3>
+                <p>设计、文案与电商配置，AI 全自动完成，数分钟内即可看到成品。</p>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <h3>对话调整</h3>
+                <p>通过对话即时修改，多语言化与优化指令也在这里下达。</p>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <h3>发布并持续成长</h3>
+                <p>一键发布上线，AI 在后台持续优化，无需人工干预。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     10. 使用场景
+============================== -->
+<section class="section-new">
+    <div class="container">
+        <span class="section-label">使用场景</span>
+        <h2>适合各类业务，<br>Leap 为你的网站赋能</h2>
+        <div class="usecase-tabs">
+            <button class="usecase-tab active" onclick="switchTab('ec')">电商卖家</button>
+            <button class="usecase-tab" onclick="switchTab('d2c')">D2C 品牌</button>
+            <button class="usecase-tab" onclick="switchTab('global')">出海企业</button>
+            <button class="usecase-tab" onclick="switchTab('agency')">网站制作公司</button>
         </div>
 
-        <div class="grid-2" style="align-items: center; gap: 60px;">
+        <div id="tab-ec" class="usecase-content active">
             <div>
-                <h3 class="h3 mb-md" style="line-height: 1.4;">并非简单的翻译，而是自动创建<br><span class="text-primary">深度本地化的多语言网站与博客</span></h3>
-                <p class="text-secondary mb-lg">
-                    出海不仅需要改变语言，还需要进行符合当地市场的“本地化”。使用 Leap，AI将分析当地对标案例，为您打造最合适的网站。
-                </p>
-                
-                <ul class="content-list" style="list-style: none; padding: 0;">
-                    <li class="flex items-center justify-start mb-md text-lg">
-                        <div style="background: linear-gradient(135deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; margin-right: 12px; flex-shrink: 0;">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        </div>
-                        独创AI自动生成多语言网站
-                    </li>
-                    <li class="flex items-center justify-start mb-md text-lg">
-                        <div style="background: linear-gradient(135deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; margin-right: 12px; flex-shrink: 0;">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        </div>
-                        不同于自动翻译，可自由调整颜色和页面结构
-                    </li>
-                    <li class="flex items-center justify-start text-lg">
-                        <div style="background: linear-gradient(135deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; margin-right: 12px; flex-shrink: 0;">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        </div>
-                        支持所有主要语言（只需输入日文网址）
-                    </li>
+                <h3>电商卖家</h3>
+                <p>从电商搭建到日常运营，完全通过 AI 对话完成，无需专职工程师或设计师。</p>
+                <ul class="usecase-list">
+                    <li>通过对话管理商品、库存与定价</li>
+                    <li>一句话发起促销、生成优惠券</li>
+                    <li>多语言电商，即刻开拓海外市场</li>
+                    <li>AI 分析销售数据并提出改进建议</li>
                 </ul>
             </div>
+            <img class="feature-img" loading="lazy" src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780364885/132dc817-35b8-4325-acb7-58f57ceeb70a.png" alt="电商网站案例">
+        </div>
+
+        <div id="tab-d2c" class="usecase-content">
             <div>
-                <!-- 【修正】画像URLをCloudinaryのものに差し替え -->
-                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1771677333/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-02-21_21.35.25_ose8qa.png" alt="Leap Editor" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid var(--color-border);">
+                <h3>D2C 品牌</h3>
+                <p>AI 还原品牌调性，从品牌故事页到电商与博客，构建风格统一的完整站点。</p>
+                <ul class="usecase-list">
+                    <li>AI 学习品牌语调，自动生成文案</li>
+                    <li>统一管理落地页、电商与博客</li>
+                    <li>AI 配置社交媒体与邮件营销</li>
+                    <li>基于购买数据，AI 自动提出下一步营销策略</li>
+                </ul>
             </div>
+            <img class="feature-img" loading="lazy" src="https://app.leap.site/images/website_images/002.png" alt="D2C 品牌网站案例">
+        </div>
+
+        <div id="tab-global" class="usecase-content">
+            <div>
+                <h3>出海企业</h3>
+                <p>输入现有网站 URL，AI 即时生成 10 种以上语言的本地化版本，大幅降低出海成本。</p>
+                <ul class="usecase-list">
+                    <li>从任意 URL 自动生成多语言版本</li>
+                    <li>针对各地市场优化设计、文化适配与 CTA</li>
+                    <li>支持多货币的多语言电商</li>
+                    <li>AI 自动撰写并发布本地语言 SEO 博客</li>
+                </ul>
+            </div>
+            <img class="feature-img" loading="lazy" src="https://app.leap.site/images/website_images/005.png" alt="出海企业网站案例">
+        </div>
+
+        <div id="tab-agency" class="usecase-content">
+            <div>
+                <h3>网站制作公司</h3>
+                <p>AI 大幅提升客户项目效率，将交付周期从数周压缩至数天。</p>
+                <ul class="usecase-list">
+                    <li>在对话中输入需求，AI 即时生成初稿</li>
+                    <li>客户修改意见通过对话即刻落地</li>
+                    <li>多语言项目无需额外成本</li>
+                    <li>交付客户可自主管理的网站</li>
+                </ul>
+            </div>
+            <img class="feature-img" loading="lazy" src="https://app.leap.site/images/website_images/001.png" alt="网站制作公司案例">
         </div>
     </div>
 </section>
 
-<!-- セクション5：主要サービス -->
-<section class="section bg-white pt-xl">
+<!-- ==============================
+     11. 成功案例
+============================== -->
+<section class="section-new bg-soft">
     <div class="container">
-        <style>
-            .service-layout { display: grid; gap: 40px; }
-            .service-cards-grid { display: grid; gap: 24px; grid-template-columns: 1fr; }
-            @media (min-width: 768px) { .service-cards-grid { grid-template-columns: repeat(2, 1fr); } }
-            @media (min-width: 1024px) {
-                .service-layout { grid-template-columns: 280px 1fr; align-items: start; }
-                .service-cards-grid { grid-template-columns: repeat(3, 1fr); }
-            }
-        </style>
-
-        <div class="service-layout">
-            <div class="mb-xl">
-                <h2 class="mb-lg" style="font-size: var(--font-size-2xl); line-height: 1.4;">斩获海外客户<br>询盘的秘诀</h2>
-                <p class="text-md mb-xl text-secondary">
-                    为您介绍旨在通过深度本地化保障实际效果（而不仅仅是表面翻译）的3大核心功能。
-                </p>
-                <div class="flex flex-col gap-md">
-                    <a href="/{{ locale }}/about/#contact" class="btn btn-primary btn-lg w-full text-center" style="background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); border: none; font-weight: bold;">申请演示 &rarr;</a>
-                    <a href="https://app.leap.site" class="btn btn-outline btn-lg w-full text-center font-bold" style="color: var(--color-primary-start, #C8102E); border-color: var(--color-border, #E5E7EB);">免费创建多语言网站 &rarr;</a>
+        <span class="section-label text-center">CASE STUDIES</span>
+        <h2 class="text-center">成功案例</h2>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:2rem;">
+            <div style="background:#fff; border:1px solid #e5e7eb; border-radius:16px; overflow:hidden;">
+                <div style="background:#f9fafb; padding:2rem 2rem; display:flex; justify-content:center; align-items:center; border-bottom:1px solid #e5e7eb; min-height:140px;">
+                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767491868/logo_ja_qjjpkp.png" alt="国际农林水产业研究中心" style="max-height:60px; width:auto; object-fit:contain;" loading="lazy">
+                </div>
+                <div style="padding:1.5rem;">
+                    <h3 style="font-size:1rem; font-weight:700; color:#1a1a2e; margin-bottom:0.5rem;">国际农林水产业研究中心</h3>
+                    <p style="font-size:0.85rem; color:#666; line-height:1.65;">Leap 从需求定义阶段介入，助力开发了一款面向马来西亚当地用户的 Web 应用程序。</p>
                 </div>
             </div>
-
-            <div class="service-cards-grid">
-                <!-- サービス1 -->
-                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; background-color: white; border-radius: var(--radius-md);">
-                    <div class="mb-md text-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                    </div>
-                    <h3 class="h5 mb-sm" style="font-size: 1.25rem;">多语言网站建设</h3>
-                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> 基于现有网站制作目标语言版本</li>
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> 针对当地用户的偏好进行优化</li>
-                    </ul>
-                    <a href="/{{ locale }}/services/multilingual-website" class="font-bold text-sm mt-md hover:underline" style="color: var(--color-dark-gray);">查看产品详情 &rarr;</a>
+            <div style="background:#fff; border:1px solid #e5e7eb; border-radius:16px; overflow:hidden;">
+                <div style="background:#f9fafb; padding:2rem 2rem; display:flex; justify-content:center; align-items:center; border-bottom:1px solid #e5e7eb; min-height:140px;">
+                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767492043/2026-01-04_11.00%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_wpugxv.jpg" alt="小松弹簧工业株式会社" style="max-height:60px; width:auto; object-fit:contain;" loading="lazy">
                 </div>
-
-                <!-- サービス2 -->
-                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; background-color: white; border-radius: var(--radius-md);">
-                    <div class="mb-md text-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                    </div>
-                    <h3 class="h5 mb-sm" style="font-size: 1.25rem;">多语言博客创建</h3>
-                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> 布局当地语言关键词</li>
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> 借助AI生成母语级别的文章</li>
-                    </ul>
-                    <a href="/{{ locale }}/services/multilingual-blog" class="font-bold text-sm mt-md hover:underline" style="color: var(--color-dark-gray);">查看产品详情 &rarr;</a>
-                </div>
-
-                <!-- サービス3 -->
-                <div class="card p-lg flex flex-col items-start" style="border: 1px solid var(--color-border); box-shadow: none; background-color: white; border-radius: var(--radius-md);">
-                    <div class="mb-md text-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary-start);"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-                    </div>
-                    <h3 class="h5 mb-sm" style="font-size: 1.25rem;">AI自动本地化</h3>
-                    <ul class="content-list" style="margin-left: 0; padding-left: 0; list-style: none; flex-grow: 1;">
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> 将颜色、结构、CTA适配为当地标准</li>
-                        <li class="flex items-start mb-xs text-sm text-secondary"><span style="color: var(--color-primary-start); margin-right: 8px; font-weight: bold;">✔</span> 通过A/B测试进行定量分析</li>
-                    </ul>
-                    <a href="/{{ locale }}/services/ai-localize" class="font-bold text-sm mt-md hover:underline" style="color: var(--color-dark-gray);">查看产品详情 &rarr;</a>
+                <div style="padding:1.5rem;">
+                    <h3 style="font-size:1rem; font-weight:700; color:#1a1a2e; margin-bottom:0.5rem;">小松弹簧工业株式会社</h3>
+                    <p style="font-size:0.85rem; color:#666; line-height:1.65;">Leap 制作并发布了英语与中文多语言官网及博客，实施本地语言 SEO 策略，助力企业开拓海外业务。</p>
                 </div>
             </div>
+        </div>
+        <div style="text-align:center; margin-top:1.5rem;">
+            <a href="/{{ locale }}/case-studies/" style="font-size:0.875rem; font-weight:600; color:#C10033; text-decoration:underline;">查看所有案例 →</a>
         </div>
     </div>
 </section>
 
-<!-- セクション6：導入事例 -->
-<section class="section bg-beige">
-    <div class="container">
-        <div class="text-center mb-2xl">
-            <h2 class="mb-sm">客户案例</h2>
-            <p class="text-secondary">让我们来看看实际的成效与成果。</p>
-        </div>
-
-        <div class="grid-2" style="gap: 40px; align-items: stretch;">
-            <!-- 事例1：国際農研様 -->
-            <div class="card p-0 overflow-hidden flex flex-col" style="border: 1px solid var(--color-border); box-shadow: none; background-color: white;">
-                <div style="background-color: var(--color-beige); padding: 3rem 2rem; display: flex; justify-content: center; align-items: center; border-bottom: 1px solid var(--color-border); min-height: 200px;">
-                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767491868/logo_ja_qjjpkp.png" alt="国际农林水产业研究中心标志" style="max-height: 80px; width: auto; object-fit: contain;">
-                </div>
-                <div class="p-xl flex flex-col flex-grow-1">
-                    <h3 class="h4 mb-lg text-center">国际农林水产业研究中心</h3>
-                    <div class="mb-md">
-                        <span class="font-bold text-sm" style="display: inline-block; background: var(--color-dark-gray); color: white; padding: 4px 12px; border-radius: 4px; margin-bottom: 8px;">面临挑战</span>
-                        <p class="text-secondary text-sm" style="line-height: 1.6;">在马来西亚的国家级项目中，需要开发一款当地人也能轻松使用的网络应用程序，但缺乏相关经验和技术诀窍。</p>
-                    </div>
-                    <div class="mt-auto">
-                        <span class="font-bold text-sm" style="display: inline-block; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); color: white; padding: 4px 12px; border-radius: 4px; margin-bottom: 8px;">解决方案与成果</span>
-                        <p class="text-secondary font-bold text-sm" style="line-height: 1.6;">Leap 从需求定义阶段就开始深度参与，并负责系统的开发。</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 事例2：小松ばね工業様 -->
-            <div class="card p-0 overflow-hidden flex flex-col" style="border: 1px solid var(--color-border); box-shadow: none; background-color: white;">
-                <div style="background-color: var(--color-beige); padding: 3rem 2rem; display: flex; justify-content: center; align-items: center; border-bottom: 1px solid var(--color-border); min-height: 200px;">
-                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767492043/2026-01-04_11.00%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_wpugxv.jpg" alt="小松弹簧工业株式会社标志" style="max-height: 80px; width: auto; object-fit: contain;">
-                </div>
-                <div class="p-xl flex flex-col flex-grow-1">
-                    <h3 class="h4 mb-lg text-center">小松弹簧工业株式会社</h3>
-                    <div class="mb-md">
-                        <span class="font-bold text-sm" style="display: inline-block; background: var(--color-dark-gray); color: white; padding: 4px 12px; border-radius: 4px; margin-bottom: 8px;">面临挑战</span>
-                        <p class="text-secondary text-sm" style="line-height: 1.6;">海外业务一直由代表亲自处理，公司内部缺乏精通SEO和多语言支持的人才。因人手不足，导致无暇顾及海外Web营销。</p>
-                    </div>
-                    <div class="mt-auto">
-                        <span class="font-bold text-sm" style="display: inline-block; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); color: white; padding: 4px 12px; border-radius: 4px; margin-bottom: 8px;">解决方案与成果</span>
-                        <p class="text-secondary font-bold text-sm" style="line-height: 1.6;">Leap 制作并上线了英语和中文版的多语言网站与博客，并围绕当地语言的关键词开展了SEO优化。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ボトムCTA（インクルード） -->
+<!-- ==============================
+     12. CTA
+============================== -->
 {% include "cta1.njk" %}
+
+<script>
+function switchTab(id) {
+    document.querySelectorAll('.usecase-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.usecase-content').forEach(c => c.classList.remove('active'));
+    document.querySelector('[onclick="switchTab(\'' + id + '\')"]').classList.add('active');
+    document.getElementById('tab-' + id).classList.add('active');
+}
+</script>
