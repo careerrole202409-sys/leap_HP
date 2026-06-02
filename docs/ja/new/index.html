@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<link rel="icon" href="/assets/favicon.png">
+
+<title>AIチャットだけで、サイト作成 | Leap</title>
+  <meta name="description" content="LeapはAIチャットだけでECサイト・ウェブサイト・LPの作成から運用・多言語展開・自動最適化まで一気通貫で完結するAIエージェントです。">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.leap.site/ja/new/">
+  <meta property="og:title" content="AIチャットだけで、サイト作成 | Leap">
+  <meta property="og:description" content="LeapはAIチャットだけでECサイト・ウェブサイト・LPの作成から運用・多言語展開・自動最適化まで一気通貫で完結するAIエージェントです。">
+  <meta property="og:image" content="https://www.leap.site/assets/og-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="AIチャットだけで、サイト作成 | Leap">
+  <meta property="twitter:description" content="LeapはAIチャットだけでECサイト・ウェブサイト・LPの作成から運用・多言語展開・自動最適化まで一気通貫で完結するAIエージェントです。">
+  <meta property="twitter:image" content="https://www.leap.site/assets/og-image.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E0BHMWHJNK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-E0BHMWHJNK');
+    </script>
+
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "uxpxgpg8ea");
+</script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LeapはAIチャットだけでECサイト・ウェブサイト・LPの作成から運用・多言語展開・自動最適化まで一気通貫で完結するAIエージェントです。">
+    <title>AIチャットだけで、サイト作成 | Leap</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    
+    
+    <!-- Fonts (Optional: Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Header -->
+    <style>
+.dropdown-menu-wide {
+    display: flex !important;
+    gap: 0;
+    min-width: 380px;
+}
+.dropdown-col { flex: 1; }
+.dropdown-col-title {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.6rem 1rem 0.3rem;
+    border-bottom: 1px solid #f3f4f6;
+    margin-bottom: 0.25rem;
+}
+.dropdown-col + .dropdown-col {
+    border-left: 1px solid #f3f4f6;
+}
+</style>
+<header class="header-container" id="header">
+    <div class="header-top" id="headerTop">
+        <div class="header-top-content">
+            <div class="header-top-left">
+                <div class="language-selector">
+                    <div class="language-current" id="languageCurrent">
+                        <span>🌐</span>
+                        <span id="currentLang">日本語</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <a href="#" class="language-option" data-lang="ja">日本語</a>
+                        <a href="#" class="language-option" data-lang="en">English</a>
+                        <a href="#" class="language-option" data-lang="zh-hans">简体中文</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-top-right">
+                <a href="https://app.leap.site" class="header-top-link" id="loginLink">ログイン</a>
+                <a href="/ja/about" class="header-top-link" id="aboutLink">会社概要</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <div class="header-main-content">
+            <div class="nav-left">
+                <a href="/ja/" class="logo-link">
+                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="logo-img">
+                </a>
+                
+                <nav class="nav-links">
+                    <div class="nav-item">
+                        <span class="nav-link" id="servicesLabel">特徴 ▼</span>
+                        <div class="dropdown-menu">
+                            <a href="/ja/services/multilingual-website" class="dropdown-item" id="serviceWebsite">HP/LP作成</a>
+                            <a href="/ja/services/multilingual-blog" class="dropdown-item" id="serviceBlog">ブログ作成</a>
+                            <a href="/ja/services/multilingual-ec" class="dropdown-item" id="serviceEc">EC作成</a>
+                            <a href="/ja/services/ai-localize" class="dropdown-item" id="serviceAiLocalize">AIチャット編集</a>
+                        </div>
+                    </div>
+                    <!-- 導入事例を追加 -->
+                    <a href="/ja/case-studies" class="nav-link" id="casesLink">導入事例</a>
+                    <a href="/ja/pricing" class="nav-link" id="pricingLink">価格</a>
+                    <div class="nav-item">
+                        <span class="nav-link" id="resourcesLabel">資料 ▼</span>
+                        <div class="dropdown-menu dropdown-menu-wide">
+                            <div class="dropdown-col">
+                                <div class="dropdown-col-title" id="resourceColManual">マニュアル</div>
+                                <a href="/ja/hp-guide" target="_blank" class="dropdown-item" id="resourceHpGuide">HP作成マニュアル</a>
+                                <a href="/ja/ec-guide" target="_blank" class="dropdown-item" id="resourceEcGuide">EC運用マニュアル</a>
+                                <a href="/ja/blog" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBlog">海外ビジネスマニュアル</a>
+                            </div>
+                            <div class="dropdown-col">
+                                <div class="dropdown-col-title" id="resourceColResources">リソース</div>
+                                <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceDownload">資料ダウンロード</a>
+                                <a href="/ja/seminar" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceSeminar">セミナー・イベント</a>
+                                <a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" class="dropdown-item" id="resourceBuyerSearch">海外バイヤー検索</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <a href="/ja/about/#contact" class="btn btn-demo" id="demoBtn">デモを申し込む</a>
+                <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="btn btn-start" id="startBtn">無料スタート</a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+        <div class="mobile-nav-item">
+            <a href="/ja/" class="mobile-nav-link" id="mobileHome">ホーム</a>
+        </div>
+        
+        <div class="mobile-nav-item">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(this)">
+                <span id="mobileServicesText">特徴</span>
+                <span>▼</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <a href="/ja/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">HP/LP作成</a>
+                <a href="/ja/services/multilingual-blog" class="mobile-dropdown-item" id="mobileServiceBlog">ブログ作成</a>
+                <a href="/ja/services/multilingual-ec" class="mobile-dropdown-item" id="mobileServiceEc">EC作成</a>
+                <a href="/ja/services/ai-localize" class="mobile-dropdown-item" id="mobileServiceAiLocalize">AIチャット編集</a>
+            </div>
+        </div>
+
+        <!-- モバイル版 導入事例を追加 -->
+        <div class="mobile-nav-item">
+            <a href="/ja/case-studies" class="mobile-nav-link" id="mobileCases">導入事例</a>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a href="/ja/pricing" class="mobile-nav-link" id="mobilePricing">価格</a>
+        </div>
+
+        <div class="mobile-nav-item">
+            <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(this)">
+                <span id="mobileResourcesText">資料</span>
+                <span>▼</span>
+            </div>
+            <div class="mobile-dropdown-content">
+                <div style="font-size:0.72rem; font-weight:700; color:#9ca3af; letter-spacing:0.08em; text-transform:uppercase; padding:0.5rem 0 0.25rem;" id="mobileResourceColManual">マニュアル</div>
+                <a href="/ja/hp-guide" target="_blank" class="mobile-dropdown-item" id="mobileResourceHpGuide">HP作成マニュアル</a>
+                <a href="/ja/ec-guide" target="_blank" class="mobile-dropdown-item" id="mobileResourceEcGuide">EC運用マニュアル</a>
+                <a href="/ja/blog" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBlog">海外ビジネスマニュアル</a>
+                <div style="font-size:0.72rem; font-weight:700; color:#9ca3af; letter-spacing:0.08em; text-transform:uppercase; padding:0.75rem 0 0.25rem; border-top:1px solid #f3f4f6; margin-top:0.25rem;" id="mobileResourceColResources">リソース</div>
+                <a href="/ja/resources" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceDownload">資料ダウンロード</a>
+                <a href="/ja/seminar" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceSeminar">セミナー・イベント</a>
+                <a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" class="mobile-dropdown-item" id="mobileResourceBuyerSearch">海外バイヤー検索</a>
+            </div>
+        </div>
+
+        <div class="mobile-nav-item">
+            <a href="/ja/about" class="mobile-nav-link" id="mobileAbout">会社概要</a>
+        </div>
+
+        <div class="mobile-cta-buttons">
+            <a href="/ja/about/#contact" class="btn btn-demo-mobile" id="mobileDemoBtn">デモを申し込む</a>
+            <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" class="btn btn-start-mobile" id="mobileStartBtn">無料で始める</a>
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+    const translations = {
+        ja: {
+            langName: "日本語",
+            login: "ログイン",
+            about: "会社概要",
+            servicesLabel: "特徴 ▼",
+            serviceWebsite: "HP/LP作成",
+            serviceBlog: "ブログ作成",
+            serviceEc: "EC作成",
+            serviceAiLocalize: "AIチャット編集",
+            cases: "導入事例",
+            pricing: "価格",
+            resourcesLabel: "資料 ▼",
+            resourceColManual: "マニュアル",
+            resourceColResources: "リソース",
+            resourceDownload: "資料ダウンロード",
+            resourceSeminar: "セミナー・イベント",
+            resourceBlog: "海外ビジネスマニュアル",
+            resourceHpGuide: "HP作成マニュアル",
+            resourceEcGuide: "EC運用マニュアル",
+            resourceBuyerSearch: "海外バイヤー検索",
+            demo: "デモを申し込む",
+            start: "無料スタート",
+            mobileHome: "ホーム",
+            mobileServicesText: "特徴",
+            mobileResourcesText: "資料",
+            mobileStart: "無料で始める"
+        },
+        en: {
+            langName: "English",
+            login: "Login",
+            about: "About Us",
+            servicesLabel: "Features ▼",
+            serviceWebsite: "Multilingual Website & LP",
+            serviceBlog: "Multilingual Blog",
+            serviceEc: "Cross-border EC",
+            serviceAiLocalize: "AI Chat Editing",
+            cases: "Case Studies",
+            pricing: "Pricing",
+            resourcesLabel: "Resources ▼",
+            resourceColManual: "Manuals",
+            resourceColResources: "Resources",
+            resourceDownload: "Downloads",
+            resourceSeminar: "Events & Webinars",
+            resourceBlog: "Global Business Manual",
+            resourceHpGuide: "Website Creation Manual",
+            resourceEcGuide: "EC Operations Manual",
+            resourceBuyerSearch: "Find Overseas Buyers",
+            demo: "Request Demo",
+            start: "Start for Free",
+            mobileHome: "Home",
+            mobileServicesText: "Features",
+            mobileResourcesText: "Resources",
+            mobileStart: "Start for Free"
+        },
+        'zh-hans': {
+            langName: "简体中文",
+            login: "登录",
+            about: "公司简介",
+            servicesLabel: "特征 ▼",
+            serviceWebsite: "多语言建站・LP制作",
+            serviceBlog: "多语言博客",
+            serviceEc: "跨境电商制作",
+            serviceAiLocalize: "AI聊天编辑",
+            cases: "客户案例",
+            pricing: "价格方案",
+            resourcesLabel: "资料 ▼",
+            resourceColManual: "手册",
+            resourceColResources: "资源",
+            resourceDownload: "资料下载",
+            resourceSeminar: "活动与研讨会",
+            resourceBlog: "海外商务手册",
+            resourceHpGuide: "建站手册",
+            resourceEcGuide: "EC运营手册",
+            resourceBuyerSearch: "海外买家搜索",
+            demo: "申请演示",
+            start: "免费开始",
+            mobileHome: "首页",
+            mobileServicesText: "特征",
+            mobileResourcesText: "资料",
+            mobileStart: "免费开始"
+        }
+    };
+
+    function getHeaderLanguage() {
+        const path = window.location.pathname;
+        const match = path.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+        if (!match) return 'ja';
+        return match[1] === 'jp' ? 'ja' : match[1];
+    }
+
+    function updateHeaderContent() {
+        const lang = getHeaderLanguage();
+        const t = translations[lang] || translations['ja'];
+
+        const setText = (id, text) => {
+            const el = document.getElementById(id);
+            if (el) el.textContent = text;
+        };
+
+        setText('currentLang', t.langName);
+        setText('loginLink', t.login);
+        setText('aboutLink', t.about);
+        setText('servicesLabel', t.servicesLabel);
+        setText('serviceWebsite', t.serviceWebsite);
+        setText('serviceBlog', t.serviceBlog);
+        setText('serviceEc', t.serviceEc);
+        setText('serviceAiLocalize', t.serviceAiLocalize);
+        setText('casesLink', t.cases); // 追加
+        setText('pricingLink', t.pricing);
+        setText('resourcesLabel', t.resourcesLabel);
+        setText('resourceColManual', t.resourceColManual);
+        setText('resourceColResources', t.resourceColResources);
+        setText('resourceDownload', t.resourceDownload);
+        setText('resourceSeminar', t.resourceSeminar);
+        setText('resourceBlog', t.resourceBlog);
+        setText('resourceHpGuide', t.resourceHpGuide);
+        setText('resourceEcGuide', t.resourceEcGuide);
+        setText('resourceBuyerSearch', t.resourceBuyerSearch);
+        setText('demoBtn', t.demo);
+        setText('startBtn', t.start);
+        setText('mobileHome', t.mobileHome);
+        setText('mobileServicesText', t.mobileServicesText);
+        setText('mobileServiceWebsite', t.serviceWebsite);
+        setText('mobileServiceBlog', t.serviceBlog);
+        setText('mobileServiceEc', t.serviceEc);
+        setText('mobileServiceAiLocalize', t.serviceAiLocalize);
+        setText('mobileCases', t.cases); // 追加
+        setText('mobilePricing', t.pricing);
+        setText('mobileResourcesText', t.mobileResourcesText);
+        setText('mobileResourceColManual', t.resourceColManual);
+        setText('mobileResourceColResources', t.resourceColResources);
+        setText('mobileResourceDownload', t.resourceDownload);
+        setText('mobileResourceSeminar', t.resourceSeminar);
+        setText('mobileResourceBlog', t.resourceBlog);
+        setText('mobileResourceHpGuide', t.resourceHpGuide);
+        setText('mobileResourceEcGuide', t.resourceEcGuide);
+        setText('mobileResourceBuyerSearch', t.resourceBuyerSearch);
+        setText('mobileAbout', t.about);
+        setText('mobileDemoBtn', t.demo);
+        setText('mobileStartBtn', t.mobileStart);
+    }
+
+    document.addEventListener('DOMContentLoaded', updateHeaderContent);
+})();
+</script>
+
+<script>
+// 言語切り替え
+function changeLanguage(newLang) {
+    const currentPath = window.location.pathname;
+    const langMatch = currentPath.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+    let newPath;
+    if (langMatch) {
+        newPath = currentPath.replace('/' + langMatch[1], '/' + newLang);
+    } else {
+        newPath = '/' + newLang + currentPath;
+    }
+    window.location.href = newPath;
+}
+
+// モバイルドロップダウントグル
+window.toggleMobileDropdown = function(element) {
+    const content = element.nextElementSibling;
+    const arrow = element.querySelector('span:last-child');
+    content.classList.toggle('active');
+    arrow.textContent = content.classList.contains('active') ? '▲' : '▼';
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 言語ドロップダウン
+    const languageCurrent = document.getElementById('languageCurrent');
+    const languageDropdown = document.getElementById('languageDropdown');
+    if (languageCurrent && languageDropdown) {
+        languageCurrent.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            languageDropdown.classList.toggle('active');
+        });
+        document.addEventListener('click', function() {
+            languageDropdown.classList.remove('active');
+        });
+        languageDropdown.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+        document.querySelectorAll('.language-option').forEach(function(option) {
+            option.addEventListener('click', function(e) {
+                e.preventDefault();
+                const newLang = option.dataset.lang;
+                if (newLang) changeLanguage(newLang);
+            });
+        });
+    }
+
+    // スクロールでヘッダー上部バーを非表示
+    const headerTop = document.getElementById('headerTop');
+    if (headerTop) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 50) {
+                headerTop.classList.add('hidden');
+            } else {
+                headerTop.classList.remove('hidden');
+            }
+        });
+    }
+
+    // ハンバーガーメニュー
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (hamburger && mobileMenu) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        });
+        mobileMenu.addEventListener('click', function(e) {
+            if (e.target === mobileMenu) {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+});
+</script>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        
+<style>
+/* ===== Hero ===== */
+.hero-new {
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 40%, #fff0e8 100%);
+    padding: 2.5rem 1rem;
+}
+.hero-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 1.5rem;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-left  { order: 1; }
+    .hero-btns  { order: 2; }
+    .hero-stack { order: 3; padding-top: 4rem; max-width: 360px; margin: 0 auto; }
+    .stack-img  { width: 75%; }
+    .btn-hero-primary,
+    .btn-hero-secondary {
+        font-size: 1rem;
+        padding: 0.85rem 2rem;
+    }
+}
+.hero-left { text-align: left; }
+.hero-left .hero-sub {
+    font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+.hero-btns {
+    text-align: center;
+    margin-top: 1.5rem;
+    grid-column: 1 / -1;
+}
+
+/* ===== Stacked cards ===== */
+.hero-stack {
+    position: relative;
+    padding-top: 9rem;
+}
+.stack-img {
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.07);
+    display: block;
+    width: 88%;
+}
+.stack-front {
+    position: relative;
+    z-index: 3;
+    margin-left: 0;
+    transform: rotate(-1deg);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+}
+.stack-mid {
+    position: absolute;
+    top: 4.5rem;
+    left: 6%;
+    z-index: 2;
+    transform: rotate(1deg);
+    opacity: 0.85;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+.stack-back {
+    position: absolute;
+    top: 0;
+    left: 12%;
+    z-index: 1;
+    transform: rotate(3deg);
+    opacity: 0.7;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.hero-new h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 800;
+    color: #1a1a2e;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+.hero-new .hero-sub {
+    font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+    color: #555;
+    max-width: 540px;
+    margin: 0 auto 2rem;
+    line-height: 1.8;
+}
+.btn-hero-primary {
+    display: inline-block;
+    background: linear-gradient(135deg, #C10033, #8B0024);
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1.15rem 3.5rem;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    margin: 0.4rem;
+}
+.btn-hero-primary:hover { opacity: 0.85; }
+.btn-hero-secondary {
+    display: inline-block;
+    background: #fff;
+    color: #1a1a2e;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 1.15rem 3.5rem;
+    border-radius: 100px;
+    text-decoration: none;
+    border: 2px solid #e5e7eb;
+    transition: border-color 0.2s;
+    margin: 0.4rem;
+}
+.btn-hero-secondary:hover { border-color: #C10033; }
+
+/* ===== Section common ===== */
+.section-new {
+    padding: 4rem 1.5rem;
+}
+.section-new .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.section-label {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #C10033;
+    margin-bottom: 0.6rem;
+    display: block;
+}
+.section-new h2 {
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    font-weight: 800;
+    color: #1a1a2e;
+    line-height: 1.25;
+    margin-bottom: 0.85rem;
+    letter-spacing: -0.02em;
+}
+.section-new .section-desc {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+    max-width: 520px;
+}
+
+/* ===== bg variants ===== */
+.bg-soft { background: #fafafa; }
+.bg-pink { background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 60%, #fff0e8 100%); }
+
+/* ===== 3 Pillars ===== */
+.pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+@media (max-width: 768px) { .pillars { grid-template-columns: 1fr; } }
+.pillar-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+.pillar-card:hover {
+    box-shadow: 0 8px 24px rgba(193,0,51,0.1);
+    border-color: #C10033;
+}
+.pillar-icon {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, #C10033, #8B0024);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+}
+.pillar-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.4rem;
+}
+.pillar-card p {
+    font-size: 0.875rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0.6rem;
+}
+.pillar-link {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #C10033;
+}
+
+/* ===== 全機能グリッド ===== */
+.all-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+@media (max-width: 768px) { .all-features-grid { grid-template-columns: 1fr; } }
+.feature-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.feature-card-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #C10033, #8B0024);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+    flex-shrink: 0;
+}
+.feature-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.4rem;
+}
+.feature-card p {
+    font-size: 0.875rem;
+    color: #666;
+    line-height: 1.65;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+.btn-feature-link {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #C10033;
+    border: 1.5px solid #C10033;
+    border-radius: 100px;
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    align-self: flex-start;
+    transition: background 0.15s, color 0.15s;
+}
+.btn-feature-link:hover { background: #C10033; color: #fff; }
+
+/* ===== Feature sections ===== */
+.feature-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+.feature-row.reverse { direction: rtl; }
+.feature-row.reverse > * { direction: ltr; }
+@media (max-width: 768px) {
+    .feature-row, .feature-row.reverse { grid-template-columns: 1fr; direction: ltr; gap: 1.5rem; }
+}
+.feature-img {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.07);
+}
+
+/* ===== Accordion ===== */
+.accordion { margin-top: 1.25rem; }
+.accordion-item {
+    border-top: 1px solid #e5e7eb;
+    padding: 1rem 0;
+}
+.accordion-item:last-child { border-bottom: 1px solid #e5e7eb; }
+.accordion-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1a1a2e;
+    list-style: none;
+    user-select: none;
+}
+.accordion-trigger::-webkit-details-marker { display: none; }
+details[open] .accordion-trigger .acc-icon { transform: rotate(45deg); }
+.acc-icon {
+    font-size: 1.3rem;
+    color: #9ca3af;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+.accordion-body {
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ===== How it works ===== */
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.75rem;
+    margin-top: 2rem;
+}
+@media (max-width: 768px) { .steps { grid-template-columns: 1fr 1fr; } }
+.step { text-align: center; }
+.step-num {
+    width: 52px;
+    height: 52px;
+    background: linear-gradient(135deg, #C10033, #8B0024);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.75rem;
+}
+.step h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.4rem;
+}
+.step p { font-size: 0.85rem; color: #666; line-height: 1.6; }
+
+/* ===== Use cases tabs ===== */
+.usecase-tabs {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.usecase-tab {
+    padding: 0.45rem 1.1rem;
+    border-radius: 100px;
+    border: 1px solid #e5e7eb;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: #fff;
+    color: #555;
+    transition: all 0.15s;
+}
+.usecase-tab.active { background: #1a1a2e; color: #fff; border-color: #1a1a2e; }
+.usecase-content { display: none; }
+.usecase-content.active {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: center;
+}
+@media (max-width: 768px) { .usecase-content.active { grid-template-columns: 1fr; } }
+.usecase-content h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.6rem;
+}
+.usecase-content p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+.usecase-list { list-style: none; padding: 0; }
+.usecase-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.usecase-list li::before { content: "✓"; color: #C10033; font-weight: 700; flex-shrink: 0; }
+
+@media (max-width: 768px) {
+    .btn-hero-primary,
+    .btn-hero-secondary {
+        font-size: 1rem;
+        padding: 0.85rem 2rem;
+    }
+}
+</style>
+
+<!-- ==============================
+     1. HERO
+============================== -->
+<section class="hero-new">
+    <div class="hero-grid">
+        <!-- 左：テキスト -->
+        <div class="hero-left">
+            <span class="section-label">グローバル時代のWEB生成AIエージェント</span>
+            <h1>AIチャットだけで、<br>サイト作成。</h1>
+            <p class="hero-sub">
+                ECサイト・ウェブサイト・LPの作成から、<br>多言語展開・AI自動最適化・運用まで、<br>チャットひとつで完結。
+            </p>
+        </div>
+
+        <!-- 右：スタックカード（お客様サイト事例） -->
+        <div class="hero-stack">
+            <img class="stack-img stack-back"  src="https://app.leap.site/images/website_images/005.png" alt="お客様サイト事例3">
+            <img class="stack-img stack-mid"   src="https://app.leap.site/images/website_images/002.png" alt="お客様サイト事例2">
+            <img class="stack-img stack-front" src="https://app.leap.site/images/website_images/001.png" alt="お客様サイト事例1">
+        </div>
+
+        <!-- ボタン：2カラム下、中央揃え -->
+        <div class="hero-btns">
+            <a href="https://app.leap.site" class="btn-hero-primary" target="_blank" rel="noopener">無料で始める</a>
+            <a href="/ja/about/#contact" class="btn-hero-secondary">デモを申し込む</a>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     2. 信頼ロゴ帯
+============================== -->
+<!-- Section: Client Logos -->
+<section class="client-logos-section">
+    <style>
+        .client-logos-section {
+            background: #fff;
+            padding: 2rem 0;
+            overflow: hidden;
+        }
+        .client-logos-title {
+            text-align: center;
+            font-size: 1.05rem;
+            color: #1a1a2e;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            padding: 0 1rem;
+        }
+        .client-logos-marquee-wrapper {
+            width: 100%;
+            overflow: hidden;
+            -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+            mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+        }
+        .client-logos-track {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            width: max-content;
+            animation: logos-scroll 40s linear infinite;
+        }
+        .client-logos-track:hover { animation-play-state: paused; }
+        .client-logo-img {
+            height: 52px;
+            width: auto;
+            object-fit: contain;
+            mix-blend-mode: multiply;
+            opacity: 0.75;
+            flex-shrink: 0;
+            transition: opacity 0.2s;
+        }
+        .client-logo-img:hover { opacity: 1; }
+        @keyframes logos-scroll {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        @media (max-width: 768px) {
+            .client-logo-img { height: 40px; }
+            .client-logos-track { gap: 3rem; }
+        }
+    </style>
+
+    <p class="client-logos-title">
+        
+            Leapを使って、多くの企業がWebサイト・ECなどを制作しています。
+        
+    </p>
+
+    <div class="client-logos-marquee-wrapper">
+        <div class="client-logos-track">
+            <!-- オリジナル -->
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767491868/logo_ja_qjjpkp.png" alt="JIRCAS" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767492098/logo_hd_sw2wdr.jpg" alt="Client Logo" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767492043/2026-01-04_11.00%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_wpugxv.jpg" alt="小松ばね工業" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767492263/IMG_3707_auio0r.jpg" alt="Client Logo" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767492525/logo_tzmzot.png" alt="Client Logo" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1778721642/Nanokaya_logo_lc2dmf.png" alt="Nanokaya" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1778720262/copy_of_purebio_logo_asrasv_c93c01.png" alt="PureBio" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1776649456/45DD06BE87DBDBDBC0D7510AFCCE05E9A8DF40B1_dli0ma.jpg" alt="Client Logo" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1776412426/IMG_6203_dr2mri.jpg" alt="Client Logo" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1776392890/LAP_%E5%8D%98%E7%8B%AC%E3%83%AD%E3%82%B3%E3%82%99_xkoi6g.jpg" alt="LAP" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1776408660/IMG_6201_xqubsz.jpg" alt="Client Logo" class="client-logo-img">
+            <!-- 複製（シームレスループ用） -->
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767491868/logo_ja_qjjpkp.png" alt="JIRCAS" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767492098/logo_hd_sw2wdr.jpg" alt="Client Logo" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767492043/2026-01-04_11.00%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_wpugxv.jpg" alt="小松ばね工業" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767492263/IMG_3707_auio0r.jpg" alt="Client Logo" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767492525/logo_tzmzot.png" alt="Client Logo" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1778721642/Nanokaya_logo_lc2dmf.png" alt="Nanokaya" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1778720262/copy_of_purebio_logo_asrasv_c93c01.png" alt="PureBio" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1776649456/45DD06BE87DBDBDBC0D7510AFCCE05E9A8DF40B1_dli0ma.jpg" alt="Client Logo" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1776412426/IMG_6203_dr2mri.jpg" alt="Client Logo" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1776392890/LAP_%E5%8D%98%E7%8B%AC%E3%83%AD%E3%82%B3%E3%82%99_xkoi6g.jpg" alt="LAP" class="client-logo-img">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1776408660/IMG_6201_xqubsz.jpg" alt="Client Logo" class="client-logo-img">
+        </div>
+    </div>
+</section>
+
+
+<!-- ==============================
+     3. Leapの特徴
+============================== -->
+<section class="section-new bg-soft">
+    <div class="container">
+        <span class="section-label text-center">Leapの特徴</span>
+        <h2 class="text-center">Leapだけの3つの強み</h2>
+        <div class="pillars">
+            <a href="#feature-ec" class="pillar-card">
+                <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </div>
+                <h3>ECの作成・運用が<br>チャットで完結</h3>
+                <p>商品登録、決済設定、在庫管理まで、AIに話しかけるだけ。コードもツールも不要。</p>
+                <span class="pillar-link">詳しく見る →</span>
+            </a>
+            <a href="#feature-optimization" class="pillar-card">
+                <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                </div>
+                <h3>CTA・デザイン・ブログを<br>AIが自動最適化</h3>
+                <p>作って終わりじゃない。AIがA/Bテスト、ブログ自動生成、デザイン改善を継続実行。</p>
+                <span class="pillar-link">詳しく見る →</span>
+            </a>
+            <a href="#feature-multilingual" class="pillar-card">
+                <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <h3>10言語以上に<br>そのまま展開</h3>
+                <p>作成したサイトをワンクリックで多言語化。現地仕様にローカライズしてグローバルへ。</p>
+                <span class="pillar-link">詳しく見る →</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     4. 全機能
+============================== -->
+<section class="section-new bg-pink">
+    <div class="container">
+        <span class="section-label text-center">全機能</span>
+        <h2 class="text-center">Leapでできること</h2>
+        <div class="all-features-grid">
+            <div class="feature-card">
+                <div class="feature-card-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                </div>
+                <h3>HP / LP作成</h3>
+                <p>業種・目的をチャットで伝えるだけで、デザイン・コピー・ページ構成までAIが自動生成。コードもデザインツールも不要。</p>
+                <a href="/ja/services/multilingual-website/" class="btn-feature-link">詳しく見る →</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </div>
+                <h3>EC作成・運用</h3>
+                <p>ECサイトの立ち上げから商品登録・在庫管理・決済設定・セール施策まで、すべてAIチャットだけで完結。専任スタッフ不要。</p>
+                <a href="/ja/services/multilingual-ec/" class="btn-feature-link">詳しく見る →</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                </div>
+                <h3>ブログ作成・AI自動最適化</h3>
+                <p>現地語キーワードを分析してSEOブログを自動生成・公開。CTAやデザインのA/Bテストも自動で継続し、成果を最大化。</p>
+                <a href="/ja/services/multilingual-blog/" class="btn-feature-link">詳しく見る →</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <h3>AIチャット編集</h3>
+                <p>「このボタンを赤に」「ここのテキストを変えて」と話しかけるだけでページを即編集。バージョン管理で安心して試せる。</p>
+                <a href="/ja/services/ai-localize/" class="btn-feature-link">詳しく見る →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     5. コア機能① EC × チャット
+============================== -->
+<section class="section-new" id="feature-ec">
+    <div class="container">
+        <div class="feature-row">
+            <div>
+                <span class="section-label">ECをチャットだけで。</span>
+                <h2>EC作成と運用を<br>AIチャットだけで。</h2>
+                <p class="section-desc">商品を追加して、決済を設定して、キャンペーンを打って——そのすべてをAIに話しかけるだけ。専門知識もコードも不要。</p>
+                <div class="accordion">
+                    <details>
+                        <summary class="accordion-trigger">商品登録・在庫管理もチャットで<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">「Tシャツを追加して、価格は3,800円、在庫は50個」と入力するだけで即反映。CSVインポートにも対応。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">決済・配送設定をAIが提案<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">StripeやShopify連携もチャットで設定。「クレカと代引きを使いたい」と伝えれば、最適な設定をAIが行います。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">セール・キャンペーンの実施も一言で<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">「今週末10%オフのセールを設定して」と入力するだけ。バナー追加からクーポン発行まで自動で対応。</p>
+                    </details>
+                </div>
+            </div>
+            <img class="feature-img" src="https://res.cloudinary.com/duh6rnjba/image/upload/v1780364275/30c2bf5a-e253-4e3c-91c4-e847d75ff028.png" alt="EC作成・運用画面">
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     6. コア機能② AI自動最適化
+============================== -->
+<section class="section-new bg-soft" id="feature-optimization">
+    <div class="container">
+        <div class="feature-row reverse">
+            <div>
+                <span class="section-label">AI自動最適化</span>
+                <h2>AIがサイトを<br>最適化する</h2>
+                <p class="section-desc">CTAボタンの文言、デザインの配色、SEOブログ記事——AIが自動で生成・テスト・改善を繰り返し、成果を最大化します。</p>
+                <div class="accordion">
+                    <details>
+                        <summary class="accordion-trigger">CTAの自動A/Bテスト<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">「今すぐ購入」vs「無料で試す」など、AIが複数パターンを自動生成・配信・分析し、成果の高い方に最適化します。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">SEOブログ記事の自動生成<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">現地語のキーワード分析から記事執筆・公開まで自動。週次・月次のスケジュール配信にも対応。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">デザイン・レイアウトの最適化<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">ヒートマップデータをもとにAIがレイアウト改善を提案。「このセクション、離脱が多いから変えて」と指示するだけでOK。</p>
+                    </details>
+                </div>
+            </div>
+            <img class="feature-img" src="https://res.cloudinary.com/duh6rnjba/image/upload/v1780364365/ec44e00c-d656-4b2b-92f0-335f6c0904a9.png" alt="AI自動最適化・ブログ作成画面">
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     7. コア機能③ 多言語ローカライズ
+============================== -->
+<section class="section-new" id="feature-multilingual">
+    <div class="container">
+        <div class="feature-row">
+            <div>
+                <span class="section-label">多言語化対応</span>
+                <h2>作ったサイトを、<br>そのまま世界10言語へ</h2>
+                <p class="section-desc">単なる翻訳ではなく、カラーや構成・CTAまで現地仕様にローカライズ。グローバル展開のコストを大幅に削減。</p>
+                <div class="accordion">
+                    <details>
+                        <summary class="accordion-trigger">ワンクリックで10言語以上に対応<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">英語・中国語・スペイン語・アラビア語など主要言語に即対応。既存サイトのURLを入力するだけでも生成可能。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">デザイン・構成まで現地仕様に<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">テキスト翻訳だけでなく、現地のベンチマークサイトを分析してカラーやレイアウトも最適化します。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">多言語ECにも完全対応<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">商品説明・決済通貨・配送設定を各国向けに自動調整。グローバルECをすぐに立ち上げられます。</p>
+                    </details>
+                </div>
+            </div>
+            <img class="feature-img" src="https://res.cloudinary.com/duh6rnjba/image/upload/v1780199379/f2e65838-a2f4-4a3c-8bc4-0666632aad0b.png" alt="多言語化対応画面">
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     8. コア機能④ ページ編集
+============================== -->
+<section class="section-new bg-soft" id="feature-editing">
+    <div class="container">
+        <div class="feature-row reverse">
+            <div>
+                <span class="section-label">ページ編集</span>
+                <h2>ページ編集も、<br>"話しかけるだけ"</h2>
+                <p class="section-desc">「このボタンを赤にして」「トップの写真を差し替えて」——コードもデザインツールも不要。AIが即座に反映します。</p>
+                <div class="accordion">
+                    <details>
+                        <summary class="accordion-trigger">テキスト・画像・色をチャットで変更<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">自然な日本語で指示するだけ。「キャッチコピーをもっとシンプルに」「ヘッダー画像を明るい雰囲気に」でOK。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">セクションの追加・削除・並び替え<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">「よくある質問のセクションを追加して」「料金表を上に移動して」と伝えれば、ページ構成をAIが組み替えます。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">バージョン管理で安心して試せる<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">変更前の状態はすべて保存。「さっきの状態に戻して」と入力するだけでロールバック可能。</p>
+                    </details>
+                </div>
+            </div>
+            <img class="feature-img" src="https://res.cloudinary.com/duh6rnjba/image/upload/v1780364059/635d3425-4cf8-4d88-afb6-ef0c1bcbd467.png" alt="AIチャット編集画面">
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     9. Leapのホームページ作り方
+============================== -->
+<section class="section-new bg-pink">
+    <div class="container text-center">
+        <span class="section-label">Leapのホームページ作り方</span>
+        <h2>チャットで話しかけるだけ</h2>
+        <p style="color:#666; font-size:0.95rem; max-width:480px; margin:0.4rem auto 0;">URLから始めることも、ゼロから作ることも可能。すべてチャットで完結します。</p>
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <h3>目的を伝える</h3>
+                <p>業種・目的・欲しいページをチャットで入力。参考サイトやURLを貼ってもOK。</p>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <h3>AIがサイトを生成</h3>
+                <p>デザイン・コピー・EC設定まで、AIが自動で構築。数分で完成形が出てくる。</p>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <h3>チャットで調整</h3>
+                <p>気になるところはチャットで即修正。多言語化・最適化もここで指示するだけ。</p>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <h3>公開・運用開始</h3>
+                <p>ワンクリックで公開。その後もAIが最適化を自動継続。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     10. ユースケース
+============================== -->
+<section class="section-new">
+    <div class="container">
+        <span class="section-label">ユースケース</span>
+        <h2>あらゆるビジネスに、<br>LeapのAIサイト作成を</h2>
+        <div class="usecase-tabs">
+            <button class="usecase-tab active" onclick="switchTab('ec')">EC事業者</button>
+            <button class="usecase-tab" onclick="switchTab('d2c')">D2Cブランド</button>
+            <button class="usecase-tab" onclick="switchTab('global')">海外進出企業</button>
+            <button class="usecase-tab" onclick="switchTab('agency')">ウェブ制作会社</button>
+        </div>
+
+        <div id="tab-ec" class="usecase-content active">
+            <div>
+                <h3>EC事業者</h3>
+                <p>ECの立ち上げから日々の運用まで、AIチャットだけで回せる。専任のエンジニアやデザイナーは不要。</p>
+                <ul class="usecase-list">
+                    <li>商品登録・在庫管理・価格変更をチャットで</li>
+                    <li>セール・クーポン設定も一言で完了</li>
+                    <li>多言語ECで海外販売にも即対応</li>
+                    <li>AIが売上データを分析して改善を提案</li>
+                </ul>
+            </div>
+            <img class="feature-img" src="https://res.cloudinary.com/duh6rnjba/image/upload/v1780364885/132dc817-35b8-4325-acb7-58f57ceeb70a.png" alt="ECサイト例">
+        </div>
+
+        <div id="tab-d2c" class="usecase-content">
+            <div>
+                <h3>D2Cブランド</h3>
+                <p>ブランドの世界観をAIが再現。ストーリーページからEC、ブログまでブランドに統一感のあるサイトを構築。</p>
+                <ul class="usecase-list">
+                    <li>ブランドトーンを学習し、コピーを自動生成</li>
+                    <li>LP・ECサイト・ブログを一元管理</li>
+                    <li>SNS連携・メール配信もAIが設定</li>
+                    <li>購買データから次の施策を自動提案</li>
+                </ul>
+            </div>
+            <img class="feature-img" src="https://app.leap.site/images/website_images/002.png" alt="D2Cブランドサイト例">
+        </div>
+
+        <div id="tab-global" class="usecase-content">
+            <div>
+                <h3>海外進出企業</h3>
+                <p>日本語サイトをURLで入力するだけで、10言語以上の現地仕様サイトを自動生成。グローバル展開のコストを大幅削減。</p>
+                <ul class="usecase-list">
+                    <li>既存サイトのURLから多言語版を自動生成</li>
+                    <li>現地のデザイン・文化・CTAに最適化</li>
+                    <li>海外向けECも多通貨・多言語で対応</li>
+                    <li>現地語SEOブログを自動生成・公開</li>
+                </ul>
+            </div>
+            <img class="feature-img" src="https://app.leap.site/images/website_images/005.png" alt="海外展開サイト例">
+        </div>
+
+        <div id="tab-agency" class="usecase-content">
+            <div>
+                <h3>ウェブ制作会社</h3>
+                <p>クライアントのサイト制作をAIが大幅に効率化。提案から納品まで、工数を従来の数分の1に圧縮。</p>
+                <ul class="usecase-list">
+                    <li>ヒアリング内容をチャットで入力するだけで初稿が完成</li>
+                    <li>修正指示もチャットで即反映。往復コスト削減</li>
+                    <li>多言語対応の案件にも追加コストなしで対応</li>
+                    <li>クライアントが自分で運用できる状態で納品</li>
+                </ul>
+            </div>
+            <img class="feature-img" src="https://app.leap.site/images/website_images/001.png" alt="ウェブ制作支援サイト例">
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     11. 導入事例
+============================== -->
+<section class="section-new bg-soft">
+    <div class="container">
+        <span class="section-label text-center">CASE STUDIES</span>
+        <h2 class="text-center">導入事例</h2>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:2rem;">
+            <div style="background:#fff; border:1px solid #e5e7eb; border-radius:16px; overflow:hidden;">
+                <div style="background:#f9fafb; padding:2rem 2rem; display:flex; justify-content:center; align-items:center; border-bottom:1px solid #e5e7eb; min-height:140px;">
+                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767491868/logo_ja_qjjpkp.png" alt="国際農林水産業研究センター" style="max-height:60px; width:auto; object-fit:contain;">
+                </div>
+                <div style="padding:1.5rem;">
+                    <h3 style="font-size:1rem; font-weight:700; color:#1a1a2e; margin-bottom:0.5rem;">国際農林水産業研究センター様</h3>
+                    <p style="font-size:0.85rem; color:#666; line-height:1.65;">マレーシアでの国プロジェクトにおいて、現地の方でも読めるウェブアプリ開発をLeapが要件定義から参加し実現。</p>
+                </div>
+            </div>
+            <div style="background:#fff; border:1px solid #e5e7eb; border-radius:16px; overflow:hidden;">
+                <div style="background:#f9fafb; padding:2rem 2rem; display:flex; justify-content:center; align-items:center; border-bottom:1px solid #e5e7eb; min-height:140px;">
+                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767492043/2026-01-04_11.00%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_wpugxv.jpg" alt="小松ばね工業" style="max-height:60px; width:auto; object-fit:contain;">
+                </div>
+                <div style="padding:1.5rem;">
+                    <h3 style="font-size:1rem; font-weight:700; color:#1a1a2e; margin-bottom:0.5rem;">小松ばね工業株式会社様</h3>
+                    <p style="font-size:0.85rem; color:#666; line-height:1.65;">英語・中国語の多言語HPとブログを制作・公開。現地語キーワードでのSEO対策を実施し、海外案件の獲得につなげた。</p>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center; margin-top:1.5rem;">
+            <a href="/ja/case-studies/" style="font-size:0.875rem; font-weight:600; color:#C10033; text-decoration:underline;">すべての導入事例を見る →</a>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     12. CTA
+============================== -->
+<!-- CTA Section Component -->
+<style>
+    /* ===================================
+       CTA Section Styles (Self-contained)
+       =================================== */
+    .section-cta {
+        background-color: #26000a; /* Deep dark red/black */
+        color: #ffffff;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cta-image-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cta-blob-background {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 120%;
+        height: 120%;
+        background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        z-index: 0;
+        opacity: 0.8;
+        max-width: 550px;
+    }
+
+    .cta-image {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        object-fit: contain;
+        border-radius: 8px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        display: block;
+    }
+
+    .btn-cta-primary {
+        background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+        color: #ffffff;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 14px 0 rgba(193, 0, 51, 0.4);
+    }
+    
+    .btn-cta-primary:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
+        color: #ffffff;
+    }
+
+    .btn-cta-outline {
+        background: transparent;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+    }
+
+    .btn-cta-outline:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+    }
+</style>
+
+<section class="section section-cta py-3xl">
+    <div class="container">
+        <div class="grid-2 items-center" style="gap: 3rem;">
+            
+            <!-- Left: Image & Decoration -->
+            <div class="cta-image-wrapper">
+                <div class="cta-blob-background"></div>
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780199379/f2e65838-a2f4-4a3c-8bc4-0666632aad0b.png" alt="Leap website builder" class="cta-image">
+            </div>
+
+            <!-- Right: Text & Buttons -->
+            <div class="text-left">
+                <h2 id="cta-title" class="mb-lg text-white" style="font-size: 2.25rem;">
+                    チャットだけで、グローバル水準のサイトを。
+                </h2>
+
+                <p id="cta-subtitle" class="mb-lg text-white font-bold" style="font-size: 1.125rem; line-height: 1.6;">
+                    AIがサイトを作って、最適化して、グローバルに届ける
+                </p>
+
+                <p id="cta-desc" class="mb-xl text-white" style="line-height: 1.8; opacity: 0.9;">
+                    ECサイト・ウェブサイト・LPの作成から多言語展開・AI自動最適化まで、すべてAIチャットだけで完結。あなたは話しかけるだけ。
+                </p>
+
+                <div class="flex flex-wrap" style="gap: 1rem;">
+                    <a id="cta-demo-btn" href="/ja/about/#contact" class="btn btn-lg btn-cta-primary">
+                        デモを申し込む &rarr;
+                    </a>
+                    <a id="cta-free-btn" href="https://app.leap.site" target="_blank" rel="noopener" class="btn btn-lg btn-cta-outline">
+                        無料で始める &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+(function() {
+    // 翻訳データ定義
+    const ctaTranslations = {
+        ja: {
+            title: 'チャットだけで、グローバル水準のサイトを。',
+            subtitle: 'AIがサイトを作って、最適化して、グローバルに届ける',
+            desc: 'ECサイト・ウェブサイト・LPの作成から多言語展開・AI自動最適化まで、すべてAIチャットだけで完結。あなたは話しかけるだけ。',
+            demo: 'デモを申し込む &rarr;',
+            free: '無料で始める &rarr;'
+        },
+        en: {
+            title: 'Say it. Build it. Go global.',
+            subtitle: 'The AI website builder that works entirely through chat.',
+            desc: 'Build e-commerce stores, websites, and landing pages. Go multilingual. Let AI optimize for you — all through a single conversation. You talk, Leap builds.',
+            demo: 'Book a Demo &rarr;',
+            free: 'Get Started Free &rarr;'
+        },
+        'zh-hans': {
+            title: '开口说，建好站，走向全球。',
+            subtitle: '只需对话的 AI 建站工具，从创建到全球化一站搞定',
+            desc: '电商网站、官网、落地页——创建、多语言拓展、AI 自动优化，全通过 AI 对话完成。你只需开口，Leap 搞定其余。',
+            demo: '申请演示 &rarr;',
+            free: '免费开始 &rarr;'
+        }
+    };
+
+    // 現在の言語を取得 (header.jsと同じロジック)
+    function getCtaLanguage() {
+        const path = window.location.pathname;
+        const match = path.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+        if (!match) return 'ja';
+        return match[1] === 'jp' ? 'ja' : match[1];
+    }
+
+    // コンテンツ更新処理
+    function updateCtaContent() {
+        const lang = getCtaLanguage();
+        const t = ctaTranslations[lang] || ctaTranslations['ja']; // フォールバック
+
+        const titleEl = document.getElementById('cta-title');
+        const subtitleEl = document.getElementById('cta-subtitle');
+        const descEl = document.getElementById('cta-desc');
+        const demoBtnEl = document.getElementById('cta-demo-btn');
+        const freeBtnEl = document.getElementById('cta-free-btn');
+
+        if (titleEl) titleEl.innerHTML = t.title;
+        if (subtitleEl) subtitleEl.textContent = t.subtitle;
+        if (descEl) descEl.innerHTML = t.desc;
+        if (demoBtnEl) demoBtnEl.innerHTML = t.demo;
+        if (freeBtnEl) freeBtnEl.innerHTML = t.free;
+    }
+
+    // 実行
+    document.addEventListener('DOMContentLoaded', updateCtaContent);
+})();
+</script>
+
+<script>
+function switchTab(id) {
+    document.querySelectorAll('.usecase-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.usecase-content').forEach(c => c.classList.remove('active'));
+    document.querySelector('[onclick="switchTab(\'' + id + '\')"]').classList.add('active');
+    document.getElementById('tab-' + id).classList.add('active');
+}
+</script>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+    <div class="footer-container">
+        <!-- Desktop View -->
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3 id="footerFeaturesTitle">特徴</h3>
+                <ul>
+                    <li><a href="/ja/services/multilingual-website" id="footerWebsite">HP/LP作成</a></li>
+                    <li><a href="/ja/services/multilingual-blog" id="footerBlogService">ブログ作成</a></li>
+                    <li><a href="/ja/services/multilingual-ec" id="footerEc">EC作成</a></li>
+                    <li><a href="/ja/services/ai-localize" id="footerAiLocalize">AIチャット編集</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerToolsTitle">マニュアル</h3>
+                <ul>
+                    <li><a href="/ja/hp-guide" target="_blank" id="footerHpGuide">HP作成マニュアル</a></li>
+                    <li><a href="/ja/ec-guide" target="_blank" id="footerEcGuide">EC運用マニュアル</a></li>
+                    <li><a href="/ja/blog" target="_blank" rel="noopener noreferrer" id="footerBlog">海外ビジネスマニュアル</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerResourcesTitle">リソース</h3>
+                <ul>
+                    <li><a href="/ja/resources" target="_blank" rel="noopener noreferrer" id="footerResources">資料ダウンロード</a></li>
+                    <li><a href="/ja/seminar" target="_blank" rel="noopener noreferrer" id="footerSeminar">セミナー・イベント</a></li>
+                    <li><a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" id="footerBuyerSearch">海外バイヤー検索</a></li>
+                    <li><a href="/ja/case-studies" target="_blank" rel="noopener noreferrer" id="footerCases">導入事例</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 id="footerCompanyTitle">会社</h3>
+                <ul>
+                    <li><a href="/ja/about" id="footerAbout">会社概要</a></li>
+                    <li><a href="/ja/about/#contact" id="footerContact">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mobile View -->
+        <div class="footer-mobile-section">
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileFeaturesTitle">特徴</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="/ja/services/multilingual-website" id="footerMobileWebsite">HP/LP作成</a></li>
+                        <li><a href="/ja/services/multilingual-blog" id="footerMobileBlogService">ブログ作成</a></li>
+                        <li><a href="/ja/services/multilingual-ec" id="footerMobileEc">EC作成</a></li>
+                        <li><a href="/ja/services/ai-localize" id="footerMobileAiLocalize">AIチャット編集</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileToolsTitle">マニュアル</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="/ja/hp-guide" target="_blank" id="footerMobileHpGuide">HP作成マニュアル</a></li>
+                        <li><a href="/ja/ec-guide" target="_blank" id="footerMobileEcGuide">EC運用マニュアル</a></li>
+                        <li><a href="/ja/blog" target="_blank" rel="noopener noreferrer" id="footerMobileBlog">海外ビジネスマニュアル</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileResourcesTitle">リソース</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="/ja/resources" target="_blank" rel="noopener noreferrer" id="footerMobileResources">資料ダウンロード</a></li>
+                        <li><a href="/ja/seminar" target="_blank" rel="noopener noreferrer" id="footerMobileSeminar">セミナー・イベント</a></li>
+                        <li><a href="https://app.leap.site/agency-matching" target="_blank" rel="noopener noreferrer" id="footerMobileBuyerSearch">海外バイヤー検索</a></li>
+                        <li><a href="/ja/case-studies" target="_blank" rel="noopener noreferrer" id="footerMobileCases">導入事例</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-accordion-item">
+                <button class="mobile-accordion-header" onclick="toggleFooterAccordion(this)">
+                    <span id="footerMobileCompanyTitle">会社</span>
+                    <span class="mobile-accordion-icon">›</span>
+                </button>
+                <div class="mobile-accordion-content">
+                    <ul>
+                        <li><a href="/ja/about" id="footerMobileAbout">会社概要</a></li>
+                        <li><a href="/ja/about/#contact" id="footerMobileContact">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/company/leap-site-inc" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/leap20240729/" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                </svg>
+            </a>
+            <a href="https://x.com/leap_0729" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="footer-brand">
+            <a href="/ja/" class="footer-logo-link">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="footer-logo-img">
+            </a>
+            <div class="footer-copyright" id="footerCopyright">Copyright © 2025 Leap, Inc.</div>
+        </div>
+
+        <div class="footer-legal">
+            <a href="/ja/privacypolicy" id="footerPrivacy">プライバシーポリシー</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="/ja/terms" id="footerTerms">利用規約</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="/ja/tokushoho" id="footerCommerce">特定商取引法に基づく表示</a>
+            <span class="footer-legal-divider">|</span>
+            <a href="/ja/delete-user" id="footerWithdrawal">退会規定</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+(function() {
+    const footerTranslations = {
+        ja: {
+            featuresTitle: "特徴",
+            website: "HP/LP作成",
+            blogService: "ブログ作成",
+            ec: "EC作成",
+            resourcesTitle: "リソース",
+            aiLocalize: "AIチャット編集",
+            toolsTitle: "マニュアル",
+            resources: "資料ダウンロード",
+            seminar: "セミナー・イベント",
+            blog: "海外ビジネスマニュアル",
+            hpGuide: "HP作成マニュアル",
+            ecGuide: "EC運用マニュアル",
+            buyerSearch: "海外バイヤー検索",
+            cases: "導入事例", // 追加
+            companyTitle: "会社",
+            about: "会社概要",
+            contact: "お問い合わせ",
+            privacy: "プライバシーポリシー",
+            terms: "利用規約",
+            commerce: "特定商取引法に基づく表示",
+            withdrawal: "退会規定"
+        },
+        en: {
+            featuresTitle: "Features",
+            website: "Multilingual Website & LP",
+            blogService: "Multilingual Blog",
+            ec: "Cross-border EC",
+            aiLocalize: "AI Localization",
+            toolsTitle: "Manuals",
+            blog: "Global Business Manual",
+            resources: "Downloads",
+            seminar: "Events & Webinars",
+            hpGuide: "Website Creation Manual",
+            ecGuide: "EC Operations Manual",
+            buyerSearch: "Find Overseas Buyers",
+            cases: "Case Studies", // 追加
+            companyTitle: "Company",
+            about: "About Us",
+            contact: "Contact Us",
+            privacy: "Privacy Policy",
+            terms: "Terms of Service",
+            commerce: "Commercial Transaction Act",
+            withdrawal: "Withdrawal Policy"
+        },
+        'zh-hans': {
+            featuresTitle: "特征",
+            website: "多语言建站・LP制作",
+            blogService: "多语言博客",
+            ec: "跨境电商制作",
+            aiLocalize: "AI本地化",
+            toolsTitle: "手册",
+            blog: "海外商务手册",
+            resources: "资料下载",
+            seminar: "活动与研讨会",
+            hpGuide: "建站手册",
+            ecGuide: "EC运营手册",
+            buyerSearch: "海外买家搜索",
+            cases: "客户案例", // 追加
+            companyTitle: "公司",
+            about: "公司简介",
+            contact: "联系我们",
+            privacy: "隐私政策",
+            terms: "使用条款",
+            commerce: "特定商业交易法",
+            withdrawal: "退会规定"
+        }
+    };
+
+    function getFooterLanguage() {
+        const path = window.location.pathname;
+        const match = path.match(/^\/(ja|jp|en|zh-hans)(\/|$)/);
+        if (!match) return 'ja';
+        return match[1] === 'jp' ? 'ja' : match[1];
+    }
+
+    function updateFooterContent() {
+        const lang = getFooterLanguage();
+        const t = footerTranslations[lang] || footerTranslations['ja'];
+
+        const setText = (id, text) => {
+            const el = document.getElementById(id);
+            if (el) el.textContent = text;
+        };
+
+        // Desktop
+        setText('footerFeaturesTitle', t.featuresTitle);
+        setText('footerWebsite', t.website);
+        setText('footerBlogService', t.blogService);
+        setText('footerEc', t.ec);
+        setText('footerAiLocalize', t.aiLocalize);
+        setText('footerToolsTitle', t.toolsTitle);
+        setText('footerResourcesTitle', t.resourcesTitle);
+        setText('footerBlog', t.blog);
+        setText('footerResources', t.resources);
+        setText('footerSeminar', t.seminar);
+        setText('footerHpGuide', t.hpGuide);
+        setText('footerEcGuide', t.ecGuide);
+        setText('footerBuyerSearch', t.buyerSearch);
+        setText('footerCases', t.cases); // 追加
+        setText('footerCompanyTitle', t.companyTitle);
+        setText('footerAbout', t.about);
+        setText('footerContact', t.contact);
+
+        // Mobile
+        setText('footerMobileFeaturesTitle', t.featuresTitle);
+        setText('footerMobileWebsite', t.website);
+        setText('footerMobileBlogService', t.blogService);
+        setText('footerMobileEc', t.ec);
+        setText('footerMobileAiLocalize', t.aiLocalize);
+        setText('footerMobileToolsTitle', t.toolsTitle);
+        setText('footerMobileResourcesTitle', t.resourcesTitle);
+        setText('footerMobileBlog', t.blog);
+        setText('footerMobileResources', t.resources);
+        setText('footerMobileSeminar', t.seminar);
+        setText('footerMobileHpGuide', t.hpGuide);
+        setText('footerMobileEcGuide', t.ecGuide);
+        setText('footerMobileBuyerSearch', t.buyerSearch);
+        setText('footerMobileCases', t.cases); // 追加
+        setText('footerMobileCompanyTitle', t.companyTitle);
+        setText('footerMobileAbout', t.about);
+        setText('footerMobileContact', t.contact);
+
+        // Legal
+        setText('footerPrivacy', t.privacy);
+        setText('footerTerms', t.terms);
+        setText('footerCommerce', t.commerce);
+        setText('footerWithdrawal', t.withdrawal);
+    }
+
+    document.addEventListener('DOMContentLoaded', updateFooterContent);
+})();
+</script>
+
+<script>
+// フッターアコーディオン（モバイル）
+function toggleFooterAccordion(button) {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector('.mobile-accordion-icon');
+    const isActive = content.classList.contains('active');
+
+    document.querySelectorAll('.mobile-accordion-content').forEach(function(item) {
+        item.classList.remove('active');
+    });
+    document.querySelectorAll('.mobile-accordion-icon').forEach(function(item) {
+        item.style.transform = 'rotate(0deg)';
+    });
+
+    if (!isActive) {
+        content.classList.add('active');
+        icon.style.transform = 'rotate(90deg)';
+    }
+}
+</script>
+    
+    
+
+    <!-- ▼ 固定CTA -->
+    
+        
+        
+        
+    
+    <style>
+        #fixed-cta-card {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 290px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+            overflow: hidden;
+            z-index: 9999;
+            transition: opacity 0.28s, transform 0.28s;
+        }
+        #fixed-cta-tab {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+            border-radius: 40px;
+            box-shadow: 0 4px 18px rgba(193,0,51,0.35);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            transition: opacity 0.28s, transform 0.28s;
+        }
+        @media (max-width: 768px) {
+            #fixed-cta-card { display: none !important; }
+            #fixed-cta-tab { display: flex !important; }
+            #fixed-cta-expand-btn { display: none !important; }
+        }
+    </style>
+
+    <!-- 大カード -->
+    <div id="fixed-cta-card">
+        <!-- ✕ ボタン -->
+        <button onclick="minimizeFixedCta()" style="position:absolute;top:9px;right:9px;width:24px;height:24px;border-radius:50%;border:none;background:rgba(255,255,255,0.25);color:white;font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:1;">✕</button>
+
+        <!-- 赤グラデヘッダー -->
+        <div style="background:linear-gradient(135deg,#C10033 0%,#8B0024 100%);padding:16px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png"
+                     alt="Leap" style="height:64px;display:block;flex-shrink:0;">
+                <p style="color:white;font-size:13px;font-weight:bold;margin:0;line-height:1.4;">Webサイト生成<br>AIエージェント</p>
+            </div>
+        </div>
+
+        <!-- スクショ -->
+        <div style="padding:12px 12px 0;">
+            <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1780199379/f2e65838-a2f4-4a3c-8bc4-0666632aad0b.png"
+                     alt="Leap アプリ画面" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover;border-radius:8px;">
+            </a>
+        </div>
+
+        <!-- CTAボタン -->
+        <div style="padding:12px 14px 14px;">
+            <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer"
+               style="display:block;background:linear-gradient(135deg,#C10033 0%,#8B0024 100%);color:white;text-align:center;padding:10px;border-radius:8px;font-size:13px;font-weight:bold;text-decoration:none;transition:opacity 0.2s;"
+               onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+                無料ではじめる →
+            </a>
+        </div>
+    </div>
+
+    <!-- ミニタブ -->
+    <div id="fixed-cta-tab">
+        <!-- Leapロゴ -->
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png"
+             alt="Leap" style="height:60px;display:block;flex-shrink:0;margin:-15px 0;">
+        <!-- 無料ではじめるリンク -->
+        <a href="https://app.leap.site" target="_blank" rel="noopener noreferrer"
+           style="color:#C10033;background:white;font-size:12px;font-weight:bold;text-decoration:none;white-space:nowrap;border-radius:20px;padding:6px 14px;transition:opacity 0.2s;"
+           onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+            無料ではじめる
+        </a>
+        <!-- 展開ボタン -->
+        <button id="fixed-cta-expand-btn" onclick="expandFixedCta()" style="background:rgba(255,255,255,0.2);border:none;color:white;width:26px;height:26px;border-radius:50%;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background 0.2s;"
+                onmouseover="this.style.background='rgba(255,255,255,0.35)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'">↑</button>
+    </div>
+
+    <script>
+    function minimizeFixedCta() {
+        var card = document.getElementById('fixed-cta-card');
+        var tab  = document.getElementById('fixed-cta-tab');
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(12px)';
+        setTimeout(function() {
+            card.style.display = 'none';
+            tab.style.display = 'flex';
+            requestAnimationFrame(function() {
+                tab.style.opacity = '1';
+                tab.style.transform = 'translateY(0)';
+            });
+        }, 280);
+    }
+
+    function expandFixedCta() {
+        var card = document.getElementById('fixed-cta-card');
+        var tab  = document.getElementById('fixed-cta-tab');
+        tab.style.display = 'none';
+        card.style.display = 'block';
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(12px)';
+        requestAnimationFrame(function() {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        });
+    }
+    </script>
+</body>
+</html>
