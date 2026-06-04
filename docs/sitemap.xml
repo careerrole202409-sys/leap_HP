@@ -29,6 +29,58 @@
     <lastmod>2025-02-15T00:00:00.000Z</lastmod>
   </url>
   <url>
+    <loc>https://www.leap.site/en/delete-user/</loc>
+    <lastmod>2025-12-29T13:18:10.090Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/zh-hans/delete-user/</loc>
+    <lastmod>2025-12-29T13:18:10.099Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/en/privacypolicy/</loc>
+    <lastmod>2025-12-30T03:21:23.341Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/en/tokushoho/</loc>
+    <lastmod>2025-12-30T03:21:23.348Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/delete-user/</loc>
+    <lastmod>2025-12-30T03:21:23.353Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/privacypolicy/</loc>
+    <lastmod>2025-12-30T03:21:23.354Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/tokushoho/</loc>
+    <lastmod>2025-12-30T03:21:23.360Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/zh-hans/privacypolicy/</loc>
+    <lastmod>2025-12-30T03:21:23.487Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/zh-hans/tokushoho/</loc>
+    <lastmod>2025-12-30T03:21:23.492Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/</loc>
+    <lastmod>2026-01-03T02:10:59.336Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/en/pricing/</loc>
+    <lastmod>2026-01-03T03:29:43.301Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/pricing/</loc>
+    <lastmod>2026-01-03T03:29:43.302Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/zh-hans/pricing/</loc>
+    <lastmod>2026-01-03T03:29:43.303Z</lastmod>
+  </url>
+  <url>
     <loc>https://www.leap.site/ja/blog/expansion/4p-strategy-and-localization-for-global-expansion/</loc>
     <lastmod>2026-01-06T00:00:00.000Z</lastmod>
   </url>
@@ -481,142 +533,6 @@
     <lastmod>2026-03-24T00:00:00.000Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/en/about/</loc>
-    <lastmod>2026-03-24T05:05:04.987Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/en/delete-user/</loc>
-    <lastmod>2026-03-24T05:05:04.987Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/en/pricing/</loc>
-    <lastmod>2026-03-24T05:05:04.987Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/en/privacypolicy/</loc>
-    <lastmod>2026-03-24T05:05:04.988Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/en/resources/</loc>
-    <lastmod>2026-03-24T05:05:04.988Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/en/tokushoho/</loc>
-    <lastmod>2026-03-24T05:05:04.989Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/</loc>
-    <lastmod>2026-03-24T05:05:04.989Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/about/</loc>
-    <lastmod>2026-03-24T05:05:04.990Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/blog/countries/</loc>
-    <lastmod>2026-03-24T05:05:04.990Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/blog/ec/</loc>
-    <lastmod>2026-03-24T05:05:04.995Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/blog/expansion/</loc>
-    <lastmod>2026-03-24T05:05:04.996Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/blog/</loc>
-    <lastmod>2026-03-24T05:05:04.997Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/blog/list/</loc>
-    <lastmod>2026-03-24T05:05:04.997Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/blog/marketing/</loc>
-    <lastmod>2026-03-24T05:05:04.998Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/blog/partner/</loc>
-    <lastmod>2026-03-24T05:05:05.001Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/blog/sales/</loc>
-    <lastmod>2026-03-24T05:05:05.003Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/delete-user/</loc>
-    <lastmod>2026-03-24T05:05:05.004Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/chinese-hp/caution/</loc>
-    <lastmod>2026-03-24T05:05:05.004Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/chinese-hp/</loc>
-    <lastmod>2026-03-24T05:05:05.004Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/english-hp/caution/</loc>
-    <lastmod>2026-03-24T05:05:05.004Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/english-hp/</loc>
-    <lastmod>2026-03-24T05:05:05.004Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/</loc>
-    <lastmod>2026-03-24T05:05:05.004Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/korean-hp/caution/</loc>
-    <lastmod>2026-03-24T05:05:05.005Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/korean-hp/</loc>
-    <lastmod>2026-03-24T05:05:05.005Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/pricing/</loc>
-    <lastmod>2026-03-24T05:05:05.005Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/privacypolicy/</loc>
-    <lastmod>2026-03-24T05:05:05.005Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/resources/</loc>
-    <lastmod>2026-03-24T05:05:05.005Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/tokushoho/</loc>
-    <lastmod>2026-03-24T05:05:05.008Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/zh-hans/about/</loc>
-    <lastmod>2026-03-24T05:05:05.008Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/zh-hans/delete-user/</loc>
-    <lastmod>2026-03-24T05:05:05.008Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/zh-hans/pricing/</loc>
-    <lastmod>2026-03-24T05:05:05.009Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/zh-hans/privacypolicy/</loc>
-    <lastmod>2026-03-24T05:05:05.009Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/zh-hans/resources/</loc>
-    <lastmod>2026-03-24T05:05:05.009Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/zh-hans/tokushoho/</loc>
-    <lastmod>2026-03-24T05:05:05.010Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/ja/blog/marketing/overseas-email-marketing-cultural-rules/</loc>
     <lastmod>2026-03-25T00:00:00.000Z</lastmod>
   </url>
@@ -669,26 +585,6 @@
     <lastmod>2026-04-09T00:00:00.000Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/hp-guide/german-hp/caution/</loc>
-    <lastmod>2026-04-09T02:48:08.821Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/german-hp/</loc>
-    <lastmod>2026-04-09T02:48:08.821Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/thailand-hp/caution/</loc>
-    <lastmod>2026-04-09T02:48:08.821Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/thailand-hp/</loc>
-    <lastmod>2026-04-09T02:48:08.822Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/lp/ja/multilingual-ec/</loc>
-    <lastmod>2026-04-09T02:48:08.822Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/ja/blog/marketing/multilingual-ab-testing/</loc>
     <lastmod>2026-04-10T00:00:00.000Z</lastmod>
   </url>
@@ -713,48 +609,8 @@
     <lastmod>2026-04-17T00:00:00.000Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/case-studies/jircas/</loc>
-    <lastmod>2026-04-17T00:31:25.091Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/french-hp/caution/</loc>
-    <lastmod>2026-04-17T00:31:25.155Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/french-hp/</loc>
-    <lastmod>2026-04-17T00:31:25.155Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/spanish-hp/caution/</loc>
-    <lastmod>2026-04-17T00:31:25.156Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/spanish-hp/</loc>
-    <lastmod>2026-04-17T00:31:25.156Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/ja/blog/marketing/vietnam-btob-manufacturing-marketing/</loc>
     <lastmod>2026-04-20T00:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/case-studies/komatsu-spring/</loc>
-    <lastmod>2026-04-20T00:03:16.985Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/case-studies/lap/</loc>
-    <lastmod>2026-04-20T00:03:24.296Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/case-studies/maruyasu-yogasa/</loc>
-    <lastmod>2026-04-20T00:03:24.296Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/case-studies/miyakoya/</loc>
-    <lastmod>2026-04-20T00:03:24.297Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/case-studies/nihon-carpet/</loc>
-    <lastmod>2026-04-20T00:03:24.297Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/blog/marketing/philippines-btob-marketing-context/</loc>
@@ -798,23 +654,179 @@
   </url>
   <url>
     <loc>https://www.leap.site/ja/case-studies/greensphere-technology/</loc>
-    <lastmod>2026-04-30T22:26:06.158Z</lastmod>
+    <lastmod>2026-04-30T13:03:21.067Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/case-studies/jircas/</loc>
+    <lastmod>2026-04-30T13:03:21.067Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/case-studies/komatsu-spring/</loc>
+    <lastmod>2026-04-30T13:03:21.069Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/case-studies/lap/</loc>
+    <lastmod>2026-04-30T13:03:21.070Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/case-studies/maruyasu-yogasa/</loc>
+    <lastmod>2026-04-30T13:03:21.070Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/case-studies/miyakoya/</loc>
+    <lastmod>2026-04-30T13:03:21.071Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/case-studies/nihon-carpet/</loc>
+    <lastmod>2026-04-30T13:03:21.071Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/en/about/</loc>
+    <lastmod>2026-04-30T13:03:21.450Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/en/resources/</loc>
+    <lastmod>2026-04-30T13:03:21.459Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/en/terms/</loc>
+    <lastmod>2026-04-30T13:03:21.466Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/about/</loc>
+    <lastmod>2026-04-30T13:03:21.468Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/countries/</loc>
+    <lastmod>2026-04-30T13:03:21.470Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/ec/</loc>
+    <lastmod>2026-04-30T13:03:21.495Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/expansion/</loc>
+    <lastmod>2026-04-30T13:03:21.496Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/</loc>
+    <lastmod>2026-04-30T13:03:21.498Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/list/</loc>
+    <lastmod>2026-04-30T13:03:21.498Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/marketing/</loc>
+    <lastmod>2026-04-30T13:03:21.515Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/partner/</loc>
+    <lastmod>2026-04-30T13:03:21.558Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/sales/</loc>
+    <lastmod>2026-04-30T13:03:21.560Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/hp-guide/arabic-hp/caution/</loc>
-    <lastmod>2026-04-30T22:26:06.225Z</lastmod>
+    <lastmod>2026-04-30T13:03:21.564Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/hp-guide/arabic-hp/</loc>
-    <lastmod>2026-04-30T22:26:06.226Z</lastmod>
+    <lastmod>2026-04-30T13:03:21.565Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/chinese-hp/caution/</loc>
+    <lastmod>2026-04-30T13:03:21.566Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/chinese-hp/</loc>
+    <lastmod>2026-04-30T13:03:21.567Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/english-hp/caution/</loc>
+    <lastmod>2026-04-30T13:03:21.569Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/english-hp/</loc>
+    <lastmod>2026-04-30T13:03:21.571Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/french-hp/caution/</loc>
+    <lastmod>2026-04-30T13:03:21.574Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/french-hp/</loc>
+    <lastmod>2026-04-30T13:03:21.574Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/german-hp/caution/</loc>
+    <lastmod>2026-04-30T13:03:21.575Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/german-hp/</loc>
+    <lastmod>2026-04-30T13:03:21.576Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/hp-guide/hindi-hp/caution/</loc>
-    <lastmod>2026-04-30T22:26:06.226Z</lastmod>
+    <lastmod>2026-04-30T13:03:21.577Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/hp-guide/hindi-hp/</loc>
-    <lastmod>2026-04-30T22:26:06.227Z</lastmod>
+    <lastmod>2026-04-30T13:03:21.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/</loc>
+    <lastmod>2026-04-30T13:03:21.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/korean-hp/caution/</loc>
+    <lastmod>2026-04-30T13:03:21.584Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/korean-hp/</loc>
+    <lastmod>2026-04-30T13:03:21.586Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/spanish-hp/caution/</loc>
+    <lastmod>2026-04-30T13:03:21.590Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/spanish-hp/</loc>
+    <lastmod>2026-04-30T13:03:21.590Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/thailand-hp/caution/</loc>
+    <lastmod>2026-04-30T13:03:21.591Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/thailand-hp/</loc>
+    <lastmod>2026-04-30T13:03:21.591Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/resources/</loc>
+    <lastmod>2026-04-30T13:03:21.594Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/terms/</loc>
+    <lastmod>2026-04-30T13:03:21.639Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/lp/ja/multilingual-ec/</loc>
+    <lastmod>2026-04-30T13:03:21.644Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/zh-hans/about/</loc>
+    <lastmod>2026-04-30T13:03:21.659Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/zh-hans/resources/</loc>
+    <lastmod>2026-04-30T13:03:21.672Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/zh-hans/terms/</loc>
+    <lastmod>2026-04-30T13:03:21.679Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/blog/marketing/germany-btob-marketing-strategy/</loc>
@@ -835,34 +847,6 @@
   <url>
     <loc>https://www.leap.site/ja/blog/marketing/wovn-io-comprehensive-guide/</loc>
     <lastmod>2026-05-13T00:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/en/terms/</loc>
-    <lastmod>2026-05-13T01:42:19.504Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/bengali-hp/caution/</loc>
-    <lastmod>2026-05-13T01:42:19.506Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/bengali-hp/</loc>
-    <lastmod>2026-05-13T01:42:19.507Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/portuguese-hp/caution/</loc>
-    <lastmod>2026-05-13T01:42:19.507Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/portuguese-hp/</loc>
-    <lastmod>2026-05-13T01:42:19.508Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/terms/</loc>
-    <lastmod>2026-05-13T01:42:19.508Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/zh-hans/terms/</loc>
-    <lastmod>2026-05-13T01:42:19.508Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/blog/marketing/how-to-read-wovn/</loc>
@@ -889,12 +873,28 @@
     <lastmod>2026-05-18T00:00:00.000Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/blog/marketing/wovn-manual-multilingualization/</loc>
-    <lastmod>2026-05-19T00:00:00.000Z</lastmod>
+    <loc>https://www.leap.site/ja/case-studies/purely/</loc>
+    <lastmod>2026-05-18T01:11:12.791Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/case-studies/purely/</loc>
-    <lastmod>2026-05-19T01:53:23.221Z</lastmod>
+    <loc>https://www.leap.site/ja/hp-guide/bengali-hp/caution/</loc>
+    <lastmod>2026-05-18T01:11:13.006Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/bengali-hp/</loc>
+    <lastmod>2026-05-18T01:11:13.007Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/portuguese-hp/caution/</loc>
+    <lastmod>2026-05-18T01:11:13.008Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/portuguese-hp/</loc>
+    <lastmod>2026-05-18T01:11:13.009Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/blog/marketing/wovn-manual-multilingualization/</loc>
+    <lastmod>2026-05-19T00:00:00.000Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/blog/marketing/wovn-admin-dashboard-guide/</loc>
@@ -921,8 +921,40 @@
     <lastmod>2026-05-25T00:00:00.000Z</lastmod>
   </url>
   <url>
+    <loc>https://www.leap.site/ja/case-studies/nanokaya/</loc>
+    <lastmod>2026-05-25T00:18:02.334Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/russian-hp/cautioan/</loc>
+    <lastmod>2026-05-25T00:18:02.554Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/russian-hp/</loc>
+    <lastmod>2026-05-25T00:18:02.555Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/urdu-hp/caution/</loc>
+    <lastmod>2026-05-25T00:18:02.555Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/urdu-hp/</loc>
+    <lastmod>2026-05-25T00:18:02.556Z</lastmod>
+  </url>
+  <url>
     <loc>https://www.leap.site/ja/blog/marketing/wovn-support-system/</loc>
     <lastmod>2026-05-26T00:00:00.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/seminar/</loc>
+    <lastmod>2026-05-26T11:27:40.866Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/en/seminar/</loc>
+    <lastmod>2026-05-26T11:38:03.819Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/zh-hans/seminar/</loc>
+    <lastmod>2026-05-26T11:49:04.743Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/blog/marketing/wovn-meaning-origin/</loc>
@@ -949,68 +981,32 @@
     <lastmod>2026-05-31T00:00:00.000Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/blog/marketing/mysite-translation-pricing/</loc>
-    <lastmod>2026-06-01T00:00:00.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/case-studies/nanokaya/</loc>
-    <lastmod>2026-06-01T00:06:12.965Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/en/ec-guide/</loc>
-    <lastmod>2026-06-01T00:06:13.084Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/en/ec-guide/list/</loc>
-    <lastmod>2026-06-01T00:06:13.084Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/en/seminar/</loc>
-    <lastmod>2026-06-01T00:06:13.085Z</lastmod>
+    <loc>https://www.leap.site/ja/ec-guide/list/</loc>
+    <lastmod>2026-05-31T02:15:48.118Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/ec-guide/</loc>
-    <lastmod>2026-06-01T00:06:13.089Z</lastmod>
+    <lastmod>2026-05-31T02:53:26.060Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/ec-guide/list/</loc>
-    <lastmod>2026-06-01T00:06:13.089Z</lastmod>
+    <loc>https://www.leap.site/en/ec-guide/</loc>
+    <lastmod>2026-05-31T03:01:49.108Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/hp-guide/russian-hp/cautioan/</loc>
-    <lastmod>2026-06-01T00:06:13.089Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/russian-hp/</loc>
-    <lastmod>2026-06-01T00:06:13.089Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/urdu-hp/caution/</loc>
-    <lastmod>2026-06-01T00:06:13.089Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/urdu-hp/</loc>
-    <lastmod>2026-06-01T00:06:13.090Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/seminar/btob-digital-marketing-dx/</loc>
-    <lastmod>2026-06-01T00:06:13.090Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/seminar/</loc>
-    <lastmod>2026-06-01T00:06:13.090Z</lastmod>
+    <loc>https://www.leap.site/en/ec-guide/list/</loc>
+    <lastmod>2026-05-31T03:02:45.131Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/zh-hans/ec-guide/</loc>
-    <lastmod>2026-06-01T00:06:13.090Z</lastmod>
+    <lastmod>2026-05-31T03:04:06.088Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/zh-hans/ec-guide/list/</loc>
-    <lastmod>2026-06-01T00:06:13.090Z</lastmod>
+    <lastmod>2026-05-31T03:05:01.604Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/zh-hans/seminar/</loc>
-    <lastmod>2026-06-01T00:06:13.091Z</lastmod>
+    <loc>https://www.leap.site/ja/blog/marketing/mysite-translation-pricing/</loc>
+    <lastmod>2026-06-01T00:00:00.000Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/blog/marketing/ai-website-translation-tools-comparison/</loc>
@@ -1018,87 +1014,87 @@
   </url>
   <url>
     <loc>https://www.leap.site/en/case-studies/</loc>
-    <lastmod>2026-06-02T23:37:47.281Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.928Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/en/</loc>
-    <lastmod>2026-06-02T23:37:47.281Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.929Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/en/services/ai-localize/</loc>
-    <lastmod>2026-06-02T23:37:47.282Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.930Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/en/services/global-marketing/</loc>
-    <lastmod>2026-06-02T23:37:47.282Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.931Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/en/services/multilingual-blog/</loc>
-    <lastmod>2026-06-02T23:37:47.282Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.932Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/en/services/multilingual-ec/</loc>
-    <lastmod>2026-06-02T23:37:47.282Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.933Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/en/services/multilingual-website/</loc>
-    <lastmod>2026-06-02T23:37:47.283Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.935Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/case-studies/</loc>
-    <lastmod>2026-06-02T23:37:47.284Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.936Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/</loc>
-    <lastmod>2026-06-02T23:37:47.284Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.937Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/services/ai-localize/</loc>
-    <lastmod>2026-06-02T23:37:47.284Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.938Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/services/global-marketing/</loc>
-    <lastmod>2026-06-02T23:37:47.285Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.939Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/services/multilingual-blog/</loc>
-    <lastmod>2026-06-02T23:37:47.285Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.940Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/services/multilingual-ec/</loc>
-    <lastmod>2026-06-02T23:37:47.285Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.941Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/services/multilingual-website/</loc>
-    <lastmod>2026-06-02T23:37:47.285Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.941Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/zh-hans/case-studies/</loc>
-    <lastmod>2026-06-02T23:37:47.286Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.942Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/zh-hans/</loc>
-    <lastmod>2026-06-02T23:37:47.286Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.943Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/zh-hans/services/ai-localize/</loc>
-    <lastmod>2026-06-02T23:37:47.286Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.945Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/zh-hans/services/global-marketing/</loc>
-    <lastmod>2026-06-02T23:37:47.286Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.946Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/zh-hans/services/multilingual-blog/</loc>
-    <lastmod>2026-06-02T23:37:47.286Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.947Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/zh-hans/services/multilingual-ec/</loc>
-    <lastmod>2026-06-02T23:37:47.287Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.948Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/zh-hans/services/multilingual-website/</loc>
-    <lastmod>2026-06-02T23:37:47.287Z</lastmod>
+    <lastmod>2026-06-02T12:54:50.949Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/blog/marketing/ec-translation-tools-guide/</loc>
@@ -1106,31 +1102,35 @@
   </url>
   <url>
     <loc>https://www.leap.site/ja/case-studies/zaisu-yamazaki/</loc>
-    <lastmod>2026-06-03T01:42:17.207Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/indonesian-hp/</loc>
-    <lastmod>2026-06-03T01:48:05.999Z</lastmod>
+    <lastmod>2026-06-03T23:42:30.400Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/hp-guide/indonesian-hp/caution/</loc>
-    <lastmod>2026-06-03T01:48:25.494Z</lastmod>
+    <lastmod>2026-06-03T23:42:30.950Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/hp-guide/nigerian-pidgin-hp/</loc>
-    <lastmod>2026-06-03T01:52:50.955Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/nigerian-pidgin-hp/caution/</loc>
-    <lastmod>2026-06-03T01:53:07.163Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/ja/hp-guide/marathi-hp/</loc>
-    <lastmod>2026-06-03T01:55:53.504Z</lastmod>
+    <loc>https://www.leap.site/ja/hp-guide/indonesian-hp/</loc>
+    <lastmod>2026-06-03T23:42:30.951Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/hp-guide/marathi-hp/caution/</loc>
-    <lastmod>2026-06-03T01:57:27.512Z</lastmod>
+    <lastmod>2026-06-03T23:42:30.952Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/marathi-hp/</loc>
+    <lastmod>2026-06-03T23:42:30.952Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/nigerian-pidgin-hp/caution/</loc>
+    <lastmod>2026-06-03T23:42:30.953Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/hp-guide/nigerian-pidgin-hp/</loc>
+    <lastmod>2026-06-03T23:42:30.954Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/seminar/btob-digital-marketing-dx/</loc>
+    <lastmod>2026-06-04T00:32:01.281Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/blog/marketing/shutto-translation-guide/</loc>
