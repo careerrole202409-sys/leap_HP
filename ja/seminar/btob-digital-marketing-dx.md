@@ -2,11 +2,11 @@
 layout: seminar-post.njk
 tags: seminar
 locale: ja
-title: "海外BtoBデジタルマーケティングDX——PR×多言語Webで海外からの問い合わせを仕組み化する方法"
+title: "海外BtoBデジタルマーケティング実践講座——PR戦略×多言語Web構築で海外顧客を集める仕組みの作り方"
 description: "BtoB向けに海外からの問い合わせを継続的に生み出す仕組みの作り方を解説。カスタマージャーニー設計からLinkedIn・多言語Web活用まで、デジタルマーケティングDX時代のグローバルリードジェネレーション戦略を対談形式でお届けします。"
 event_date: 2026-06-24
 event_url: "#"
-thumbnail_url: "https://res.cloudinary.com/duh6rnjba/image/upload/v1780533088/Gemini_Generated_Image_qo5klmqo5klmqo5k_wmyrgw.png"
+thumbnail_url: "https://res.cloudinary.com/duh6rnjba/image/upload/v1780535370/Gemini_Generated_Image_am162bam162bam16_ijjfa4.png"
 speakers_html: |
   <h2 style="font-size:1.4rem; font-weight:700; margin-bottom:1.5rem; color:#1a1a2e;">登壇者</h2>
   <div style="display:flex; gap:1.25rem; align-items:flex-start; margin-bottom:4rem;">
