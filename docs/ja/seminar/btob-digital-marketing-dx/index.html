@@ -501,9 +501,9 @@ document.addEventListener('DOMContentLoaded', function() {
     .check-list li {
         position: relative;
         padding-left: 3.5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         font-size: 1.125rem;
-        line-height: 1.6;
+        line-height: 1.75;
         color: var(--color-text-primary);
         font-weight: 500;
     }
@@ -543,6 +543,16 @@ document.addEventListener('DOMContentLoaded', function() {
         margin-right: var(--space-lg);
     }
 
+    /* 内容セクション内の見出し間隔 */
+    .check-list h2 {
+        margin-top: 3.5rem;
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+    }
+    .check-list h2:first-child {
+        margin-top: 0;
+    }
+
     @media (max-width: 768px) {
         .hero-layout {
             grid-template-columns: 1fr;
@@ -559,7 +569,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--
   SECTION 1: HERO AREA
 -->
-<section class="section pt-3xl pb-4xl">
+<section class="section" style="padding: 2rem 0 2.5rem;">
     <div class="container">
         <div class="hero-layout">
 
@@ -589,6 +599,8 @@ document.addEventListener('DOMContentLoaded', function() {
             <!-- Right: Thumbnail -->
             <div>
                 
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1780533088/Gemini_Generated_Image_qo5klmqo5klmqo5k_wmyrgw.png" alt="海外BtoBデジタルマーケティングDX——PR×多言語Webで海外からの問い合わせを仕組み化する方法" class="hero-thumbnail">
+                
             </div>
 
         </div>
@@ -596,21 +608,39 @@ document.addEventListener('DOMContentLoaded', function() {
 </section>
 
 <!--
-  SECTION 2: DETAILS
+  SECTION 2: SPEAKERS (left) + RECOMMENDATIONS & TIMELINE (right)
 -->
-<section class="section py-3xl bg-beige">
+<section class="section bg-beige" style="padding: 4rem 0;">
     <div class="container">
-        <h2 class="text-center mb-2xl" style="font-size: 2.5rem;">
-            イベント詳細
-        </h2>
-
-        <div class="grid-2 items-start gap-3xl">
-            <!-- Left: Thumbnail -->
+        <div class="grid-2 items-start" style="gap: 3rem;">
+            <!-- Left: Speakers -->
             <div>
+                
+                <h2 style="font-size:1.4rem; font-weight:700; margin-bottom:1.5rem; color:#1a1a2e;">登壇者</h2>
+<div style="display:flex; gap:1.25rem; align-items:flex-start; margin-bottom:4rem;">
+  <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1780530382/KMW_%E6%9D%91%E4%B8%8A%E5%B4%87_1_ndtdrd.png" alt="村上崇氏" style="width:88px; height:88px; border-radius:50%; object-fit:cover; flex-shrink:0; border:2px solid #e5e7eb;">
+  <div>
+    <p style="font-weight:700; font-size:1rem; margin-bottom:0.2rem; color:#1a1a2e;">村上 崇 氏</p>
+    <p style="font-size:0.8rem; color:#C10033; font-weight:600; margin-bottom:0.5rem;">株式会社カーツメディアワークス 代表取締役</p>
+    <p style="font-size:0.82rem; line-height:1.75; color:#555; margin:0 0 0.5rem;">報道番組のディレクターとして数々の事件・政治・トレンド情報のリサーチから取材、リポート、編集まで幅広く手がけ、情報収集と情報発信の礎を築く。</p>
+    <p style="font-size:0.82rem; line-height:1.75; color:#555; margin:0 0 0.5rem;">その後、PRコンサルティングファームにてIT・Web・東証一部上場企業・グローバルブランド・官庁など幅広い業種のPR&amp;マーケティングコンサルティングを手がけて独立。戦略PRとデジタルマーケティングを中心とした株式会社カーツメディアワークスを設立。</p>
+    <p style="font-size:0.82rem; line-height:1.75; color:#555; margin:0;">著書「図解でわかるGoogleマーケティング」「クラウド情報整理術」「新しいWebマーケティングハンドブック」など5冊を執筆。</p>
+  </div>
+</div>
+<div style="display:flex; gap:1.25rem; align-items:flex-start;">
+  <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1780530406/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E7%94%A8%E5%86%99%E7%9C%9F_%E5%8E%9F%E5%BA%83%E5%A4%A7_1_t6sqol.png" alt="原広大" style="width:88px; height:88px; border-radius:50%; object-fit:cover; flex-shrink:0; border:2px solid #e5e7eb;">
+  <div>
+    <p style="font-weight:700; font-size:1rem; margin-bottom:0.2rem; color:#1a1a2e;">原 広大</p>
+    <p style="font-size:0.8rem; color:#C10033; font-weight:600; margin-bottom:0.5rem;">Leap 代表</p>
+    <p style="font-size:0.82rem; line-height:1.75; color:#555; margin:0 0 0.5rem;">東京大学法学部を卒業後、内閣府にてマクロ経済政策に携わる。その後、ITスタートアップに一人目の社員として参画し、マーケティング責任者として事業成長を牽引。</p>
+    <p style="font-size:0.82rem; line-height:1.75; color:#555; margin:0;">2024年7月、Leapを創業。現在は海外向けマーケティング支援として、多言語Webサイト作成ツールを提供している。</p>
+  </div>
+</div>
+
                 
             </div>
 
-            <!-- Right: Body Content -->
+            <!-- Right: Recommendations + Timeline -->
             <div class="check-list">
                 <h2>こんな方におすすめ</h2>
 <ul>
@@ -629,18 +659,32 @@ document.addEventListener('DOMContentLoaded', function() {
 海外展開を検討中の企業がぶつかるリアルな課題について、登壇者2名が本音でお答えします。</li>
 <li><strong>12:55〜13:00（5分）</strong> 参加者限定の特典ご案内</li>
 </ul>
-<h2>登壇者</h2>
-<p><strong>村上氏</strong>（ゲスト）
-海外BtoBマーケティングの第一線で活躍するコンサルタント。カスタマージャーニー設計と情報発信戦略を専門とする。</p>
-<p><strong>Leap担当者</strong>
-多言語Web制作と海外向けデジタルマーケティング支援を手がけるLeapより、実践事例をもとに解説。</p>
-<h2>参加者限定特典</h2>
-<p>セミナー参加者には、<strong>無料個別相談（30分）</strong> の優先枠をご案内予定です。自社の海外マーケティング課題について直接ご相談いただける機会ですので、ぜひご活用ください。</p>
 
             </div>
         </div>
     </div>
 </section>
+
+<!--
+  SECTION 3: BONUS (full width)
+-->
+
+<section class="section bg-white" style="padding: 2.5rem 0;">
+    <div class="container text-center">
+        <h2 class="mb-lg" style="font-size: 1.75rem; font-weight: 700; color: #1a1a2e;">
+            参加者限定特典
+        </h2>
+        <p class="text-secondary" style="font-size: 1.05rem; line-height: 1.8; max-width: 680px; margin: 0 auto; text-align: left;">セミナー当日は、<strong>日本企業の海外マーケティング成功事例を具体的にまとめた資料</strong>を参加者限定でご配布します。実際の事例をもとに、自社の海外展開に活かせるヒントをぜひ持ち帰ってください。</p>
+        <div style="margin-top: 1.5rem;">
+            <a href="#" target="_blank" rel="noopener noreferrer"
+               class="btn btn-primary"
+               style="padding: 14px 40px; font-size: 1.1rem; font-weight: 700; border-radius: 4px;">
+                セミナーに申し込む
+            </a>
+        </div>
+    </div>
+</section>
+
 
 <!--
   STICKY FOOTER CTA

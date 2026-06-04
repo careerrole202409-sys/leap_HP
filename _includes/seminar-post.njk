@@ -34,9 +34,9 @@ layout: base.njk
     .check-list li {
         position: relative;
         padding-left: 3.5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         font-size: 1.125rem;
-        line-height: 1.6;
+        line-height: 1.75;
         color: var(--color-text-primary);
         font-weight: 500;
     }
@@ -76,6 +76,16 @@ layout: base.njk
         margin-right: var(--space-lg);
     }
 
+    /* 内容セクション内の見出し間隔 */
+    .check-list h2 {
+        margin-top: 3.5rem;
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+    }
+    .check-list h2:first-child {
+        margin-top: 0;
+    }
+
     @media (max-width: 768px) {
         .hero-layout {
             grid-template-columns: 1fr;
@@ -92,7 +102,7 @@ layout: base.njk
 <!--
   SECTION 1: HERO AREA
 -->
-<section class="section pt-3xl pb-4xl">
+<section class="section" style="padding: 2rem 0 2.5rem;">
     <div class="container">
         <div class="hero-layout">
 
@@ -135,30 +145,46 @@ layout: base.njk
 </section>
 
 <!--
-  SECTION 2: DETAILS
+  SECTION 2: SPEAKERS (left) + RECOMMENDATIONS & TIMELINE (right)
 -->
-<section class="section py-3xl bg-beige">
+<section class="section bg-beige" style="padding: 4rem 0;">
     <div class="container">
-        <h2 class="text-center mb-2xl" style="font-size: 2.5rem;">
-            {% if locale == 'en' %}Event Details{% elif locale == 'zh-hans' %}活动详情{% else %}イベント詳細{% endif %}
-        </h2>
-
-        <div class="grid-2 items-start gap-3xl">
-            <!-- Left: Thumbnail -->
+        <div class="grid-2 items-start" style="gap: 3rem;">
+            <!-- Left: Speakers -->
             <div>
-                {% if thumbnail_url %}
-                <img src="{{ thumbnail_url }}" alt="{{ title }}"
-                     style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; border: 1px solid rgba(0,0,0,0.1);">
+                {% if speakers_html %}
+                {{ speakers_html | safe }}
                 {% endif %}
             </div>
 
-            <!-- Right: Body Content -->
+            <!-- Right: Recommendations + Timeline -->
             <div class="check-list">
                 {{ content | safe }}
             </div>
         </div>
     </div>
 </section>
+
+<!--
+  SECTION 3: BONUS (full width)
+-->
+{% if bonus %}
+<section class="section bg-white" style="padding: 2.5rem 0;">
+    <div class="container text-center">
+        <h2 class="mb-lg" style="font-size: 1.75rem; font-weight: 700; color: #1a1a2e;">
+            {% if locale == 'en' %}Exclusive Attendee Benefits{% elif locale == 'zh-hans' %}参会者专属福利{% else %}参加者限定特典{% endif %}
+        </h2>
+        <p class="text-secondary" style="font-size: 1.05rem; line-height: 1.8; max-width: 680px; margin: 0 auto; text-align: left;">{{ bonus | safe }}</p>
+        <div style="margin-top: 1.5rem;">
+            <a href="{{ event_url | default('#') }}" target="_blank" rel="noopener noreferrer"
+               class="btn btn-primary"
+               style="padding: 14px 40px; font-size: 1.1rem; font-weight: 700; border-radius: 4px;">
+                {% if locale == 'en' %}Register Now{% elif locale == 'zh-hans' %}立即报名{% else %}セミナーに申し込む{% endif %}
+            </a>
+        </div>
+    </div>
+</section>
+{% endif %}
 
 <!--
   STICKY FOOTER CTA
