@@ -64,12 +64,12 @@ description: Leapが開催する海外展開・越境EC・海外マーケティ�
 
                         <!-- サムネイルエリア -->
                         {% if post.data.thumbnail_url %}
-                        <div style="height: 160px; overflow: hidden;">
+                        <div style="aspect-ratio: 16/9; overflow: hidden;">
                             <img src="{{ post.data.thumbnail_url }}" alt="{{ post.data.title }}"
                                  style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         {% else %}
-                        <div style="background-color: var(--color-background); height: 160px; display: flex; align-items: center; justify-content: center;">
+                        <div style="background-color: var(--color-background); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center;">
                             <span style="font-size: 3rem;">🎤</span>
                         </div>
                         {% endif %}

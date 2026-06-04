@@ -945,10 +945,6 @@
     <lastmod>2026-05-26T00:00:00.000Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/seminar/</loc>
-    <lastmod>2026-05-26T11:27:40.866Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/en/seminar/</loc>
     <lastmod>2026-05-26T11:38:03.819Z</lastmod>
   </url>
@@ -1013,10 +1009,6 @@
     <lastmod>2026-06-02T00:00:00.000Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/en/case-studies/</loc>
-    <lastmod>2026-06-02T12:54:50.928Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/en/</loc>
     <lastmod>2026-06-02T12:54:50.929Z</lastmod>
   </url>
@@ -1041,10 +1033,6 @@
     <lastmod>2026-06-02T12:54:50.935Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/case-studies/</loc>
-    <lastmod>2026-06-02T12:54:50.936Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/ja/</loc>
     <lastmod>2026-06-02T12:54:50.937Z</lastmod>
   </url>
@@ -1067,10 +1055,6 @@
   <url>
     <loc>https://www.leap.site/ja/services/multilingual-website/</loc>
     <lastmod>2026-06-02T12:54:50.941Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/zh-hans/case-studies/</loc>
-    <lastmod>2026-06-02T12:54:50.942Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/zh-hans/</loc>
@@ -1130,7 +1114,23 @@
   </url>
   <url>
     <loc>https://www.leap.site/ja/seminar/btob-digital-marketing-dx/</loc>
-    <lastmod>2026-06-04T00:32:01.281Z</lastmod>
+    <lastmod>2026-06-04T01:11:09.729Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/seminar/</loc>
+    <lastmod>2026-06-04T01:13:36.569Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/case-studies/</loc>
+    <lastmod>2026-06-04T01:17:54.804Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/en/case-studies/</loc>
+    <lastmod>2026-06-04T01:18:12.400Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/zh-hans/case-studies/</loc>
+    <lastmod>2026-06-04T01:18:16.390Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/blog/marketing/shutto-translation-guide/</loc>
