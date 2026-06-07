@@ -1,15 +1,107 @@
-{% set t_home = 'ホーム' %}
-{% set t_guide = 'HP作成ガイド' %}
-{% set t_contents = '目次' %}
-{% set t_share = 'この記事をシェアする' %}
-{% set t_read_time = '読了時間: 約' %}
-{% set t_minutes = '分' %}
-{% set t_toast = 'リンクをコピーしました' %}
-{% set date_format = "yyyy年MM月dd日" %}
+{% if locale == "en" %}
+  {% set t_home       = 'Home' %}
+  {% set t_guide      = 'Website Creation Guides' %}
+  {% set t_contents   = 'Table of Contents' %}
+  {% set t_share      = 'Share this article' %}
+  {% set t_read_time  = 'Reading time: approx.' %}
+  {% set t_minutes    = 'min' %}
+  {% set t_toast      = 'Link copied!' %}
+  {% set date_format  = "MMMM d, yyyy" %}
+  {% set t_cta_text   = 'Create a localized ' + (target_lang | default('')) + '<br>website for free' %}
+  {% set t_cta_btn    = 'Create with Leap' %}
+  {% set t_h0         = '0. Introduction' %}
+  {% set t_h0_1       = 'Why a Simply Translated Site Fails in ' + (target_lang | default('')) + '-Speaking Markets' %}
+  {% set t_h1         = '1. Understanding the Local Internet Environment and Rules' %}
+  {% set t_h1_1       = '1-1. Writing Standards: Adapting ' + (target_lang | default('')) + ' for Your Target Region' %}
+  {% set t_h1_2       = '1-2. Speed and Access Barriers: Handling Regulations and Third-Party Tools' %}
+  {% set t_h1_3       = '1-3. Laws and Licensing: Local Requirements to Check Before Going Live' %}
+  {% set t_h2         = '2. Content and SEO Strategies That Perform Locally' %}
+  {% set t_h2_1       = '2-1. Localized Content Creation: Trustworthy Information That Resonates' %}
+  {% set t_h2_2       = '2-2. SEO Optimization: Targeting Local Search Engines' %}
+  {% set t_h2_3       = '2-3. Choosing a Domain and Server: How Infrastructure Affects Your Rankings' %}
+  {% set t_h3         = '3. Design and Font Best Practices for ' + (target_lang | default('')) + ' Websites' %}
+  {% set t_h3_1       = '3-1. Color Psychology and Cultural Meaning: The Right Colors for Your Market' %}
+  {% set t_h3_2       = '3-2. Recommended Fonts and Sizes: Settings for Optimal Readability' %}
+  {% set t_h3_3       = '3-3. Layout and Information Density: Design Trends That Resonate' %}
+  {% set t_h4         = '4. Contact Options and Social Media Integration' %}
+  {% set t_h4_1       = '4-1. Building Conversion Paths: Contact Options and Social Media Channels' %}
+  {% set t_h4_2       = '4-2. Mobile Optimization: Adapting to a Mobile-First Society' %}
+  {% set t_h5         = '5. Summary' %}
+  {% set t_h5_1       = 'Checklist for Building a Successful ' + (target_lang | default('')) + ' Website' %}
+  {% set t_bottom_cta = 'Create a localized ' + (target_lang | default('')) + ' website for free' %}
+{% elif locale == "zh-hans" %}
+  {% set t_home       = '首页' %}
+  {% set t_guide      = '建站指南' %}
+  {% set t_contents   = '目录' %}
+  {% set t_share      = '分享本文' %}
+  {% set t_read_time  = '阅读时间：约' %}
+  {% set t_minutes    = '分钟' %}
+  {% set t_toast      = '链接已复制' %}
+  {% set date_format  = "yyyy年M月d日" %}
+  {% set t_cta_text   = '免费创建专为' + (target_lang | default('')) + '本地化的网站' %}
+  {% set t_cta_btn    = '用 Leap 创建' %}
+  {% set t_h0         = '0. 前言' %}
+  {% set t_h0_1       = '仅靠翻译的网站为何在' + (target_lang | default('')) + '市场屡屡失败' %}
+  {% set t_h1         = '1. 了解当地网络环境与规则' %}
+  {% set t_h1_1       = '1-1. 书写规范：根据目标地区选择合适的' + (target_lang | default('')) + '表达' %}
+  {% set t_h1_2       = '1-2. 速度与访问壁垒：应对法规限制与第三方工具' %}
+  {% set t_h1_3       = '1-3. 法律与许可：上线前必须确认的当地规定' %}
+  {% set t_h2         = '2. 在本地市场有效的内容策略与 SEO' %}
+  {% set t_h2_1       = '2-1. 本地化内容创作：赢得信任、引发共鸣的信息' %}
+  {% set t_h2_2       = '2-2. 搜索引擎优化：针对当地主流搜索引擎' %}
+  {% set t_h2_3       = '2-3. 域名与服务器选择：基础设施如何影响排名' %}
+  {% set t_h3         = '3. ' + (target_lang | default('')) + '网站的设计与字体最佳实践' %}
+  {% set t_h3_1       = '3-1. 色彩心理与文化含义：适合当地市场的配色方案' %}
+  {% set t_h3_2       = '3-2. 推荐字体与字号：提升可读性的设置建议' %}
+  {% set t_h3_3       = '3-3. 布局与信息密度：受当地用户欢迎的设计趋势' %}
+  {% set t_h4         = '4. 联系方式与社交媒体整合' %}
+  {% set t_h4_1       = '4-1. 构建转化路径：联系渠道与社交媒体' %}
+  {% set t_h4_2       = '4-2. 移动端优化：适应移动优先的社会' %}
+  {% set t_h5         = '5. 总结' %}
+  {% set t_h5_1       = '打造成功的' + (target_lang | default('')) + '网站检查清单' %}
+  {% set t_bottom_cta = '免费创建专为' + (target_lang | default('')) + '本地化的网站' %}
+{% else %}
+  {% set t_home       = 'ホーム' %}
+  {% set t_guide      = 'HP作成ガイド' %}
+  {% set t_contents   = '目次' %}
+  {% set t_share      = 'この記事をシェアする' %}
+  {% set t_read_time  = '読了時間: 約' %}
+  {% set t_minutes    = '分' %}
+  {% set t_toast      = 'リンクをコピーしました' %}
+  {% set date_format  = "yyyy年MM月dd日" %}
+  {% set t_cta_text   = (target_lang | default('')) + '専用にローカライズした<br>HPを無料作成' %}
+  {% set t_cta_btn    = 'Leapで作成' %}
+  {% set t_h0         = '0. はじめに' %}
+  {% set t_h0_1       = '翻訳しただけのサイトが' + (target_lang | default('')) + '圏で失敗する理由' %}
+  {% set t_h1         = '1. ネット環境と現地のルールを把握する' %}
+  {% set t_h1_1       = '1-1. 表記の選択：ターゲット地域に合わせた' + (target_lang | default('')) + 'の使い分け' %}
+  {% set t_h1_2       = '1-2. 表示速度とアクセスの壁：規制や外部ツールへの対応' %}
+  {% set t_h1_3       = '1-3. 法律とライセンス：公開前に確認すべき現地の決まり' %}
+  {% set t_h2         = '2. 現地で評価されるコンテンツとSEO対策' %}
+  {% set t_h2_1       = '2-1. ローカライズされたコンテンツ制作：信頼される情報と刺さる内容' %}
+  {% set t_h2_2       = '2-2. 検索エンジン（SEO）の最適化：現地主要ツールへの対応' %}
+  {% set t_h2_3       = '2-3. ドメインとサーバーの選び方：物理的な環境が検索順位に与える影響' %}
+  {% set t_h3         = '3. ' + (target_lang | default('')) + 'サイトのデザイン・フォントの正解' %}
+  {% set t_h3_1       = '3-1. 色彩が与える印象と文化的な意味：その国での色の正解' %}
+  {% set t_h3_2       = '3-2. おすすめのフォントと文字サイズ：視認性を高める設定' %}
+  {% set t_h3_3       = '3-3. レイアウトと情報の密度：好まれるデザインの傾向' %}
+  {% set t_h4         = '4. お問い合わせとSNSの活用' %}
+  {% set t_h4_1       = '4-1. コンバージョンに繋がる窓口とSNS連携：適切な導線の作り方' %}
+  {% set t_h4_2       = '4-2. モバイルユーザーへの最適化：スマホ完結社会への対応' %}
+  {% set t_h5         = '5. まとめ' %}
+  {% set t_h5_1       = (target_lang | default('')) + 'ホームページ制作で成功するためのチェックリスト' %}
+  {% set t_bottom_cta = (target_lang | default('')) + '専用にローカライズしたHPを無料作成' %}
+{% endif %}
 
 {# ターゲット言語と親階層の設定 #}
 {% set lang_name = target_lang | default("対象言語") %}
-{% set lang_guide_name = lang_name + 'HP作成ガイド' %}
+{% if locale == "en" %}
+  {% set lang_guide_name = lang_name + ' Website Creation Guide' %}
+{% elif locale == "zh-hans" %}
+  {% set lang_guide_name = lang_name + '建站指南' %}
+{% else %}
+  {% set lang_guide_name = lang_name + 'HP作成ガイド' %}
+{% endif %}
 {% set lang_guide_url = parent_url | default('/' + (locale | default('ja')) + '/hp-guide/') %}
 
 <style>
@@ -156,10 +248,9 @@
             <h1 class="post-title">{{ title }}</h1>
             
             <div class="header-cta-group">
-                <p class="header-cta-text">{{ lang_name }}専用にローカライズした<br>HPを無料作成</p>
-                <!-- ★修正: リンク先変更＆別タブ設定 -->
+                <p class="header-cta-text">{{ t_cta_text | safe }}</p>
                 <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="cta-btn-primary">
-                    Leapで作成
+                    {{ t_cta_btn }}
                 </a>
             </div>
         </div>
@@ -193,57 +284,56 @@
         <!-- 記事本文 -->
         <div class="blog-content">
             
-            <h2>0. はじめに</h2>
-            <h3>翻訳しただけのサイトが{{ lang_name }}圏で失敗する理由</h3>
+            <h2>{{ t_h0 }}</h2>
+            <h3>{{ t_h0_1 }}</h3>
             {% block section_0 %}{% endblock %}
 
-            <h2>1. ネット環境と現地のルールを把握する</h2>
-            <h3>1-1. 表記の選択：ターゲット地域に合わせた{{ lang_name }}の使い分け</h3>
+            <h2>{{ t_h1 }}</h2>
+            <h3>{{ t_h1_1 }}</h3>
             {% block section_1_1 %}{% endblock %}
 
-            <h3>1-2. 表示速度とアクセスの壁：規制や外部ツールへの対応</h3>
+            <h3>{{ t_h1_2 }}</h3>
             {% block section_1_2 %}{% endblock %}
 
-            <h3>1-3. 法律とライセンス：公開前に確認すべき現地の決まり</h3>
+            <h3>{{ t_h1_3 }}</h3>
             {% block section_1_3 %}{% endblock %}
 
-            <h2>2. 現地で評価されるコンテンツとSEO対策</h2>
-            <h3>2-1. ローカライズされたコンテンツ制作：信頼される情報と刺さる内容</h3>
+            <h2>{{ t_h2 }}</h2>
+            <h3>{{ t_h2_1 }}</h3>
             {% block section_2_1 %}{% endblock %}
 
-            <h3>2-2. 検索エンジン（SEO）の最適化：現地主要ツールへの対応</h3>
+            <h3>{{ t_h2_2 }}</h3>
             {% block section_2_2 %}{% endblock %}
 
-            <h3>2-3. ドメインとサーバーの選び方：物理的な環境が検索順位に与える影響</h3>
+            <h3>{{ t_h2_3 }}</h3>
             {% block section_2_3 %}{% endblock %}
 
-            <h2>3. {{ lang_name }}サイトのデザイン・フォントの正解</h2>
-            <h3>3-1. 色彩が与える印象と文化的な意味：その国での色の正解</h3>
+            <h2>{{ t_h3 }}</h2>
+            <h3>{{ t_h3_1 }}</h3>
             {% block section_3_1 %}{% endblock %}
 
-            <h3>3-2. おすすめのフォントと文字サイズ：視認性を高める設定</h3>
+            <h3>{{ t_h3_2 }}</h3>
             {% block section_3_2 %}{% endblock %}
 
-            <h3>3-3. レイアウトと情報の密度：好まれるデザインの傾向</h3>
+            <h3>{{ t_h3_3 }}</h3>
             {% block section_3_3 %}{% endblock %}
 
-            <h2>4. お問い合わせとSNSの活用</h2>
-            <h3>4-1. コンバージョンに繋がる窓口とSNS連携：適切な導線の作り方</h3>
+            <h2>{{ t_h4 }}</h2>
+            <h3>{{ t_h4_1 }}</h3>
             {% block section_4_1 %}{% endblock %}
 
-            <h3>4-2. モバイルユーザーへの最適化：スマホ完結社会への対応</h3>
+            <h3>{{ t_h4_2 }}</h3>
             {% block section_4_2 %}{% endblock %}
 
-            <h2>5. まとめ</h2>
-            <h3>{{ lang_name }}ホームページ制作で成功するためのチェックリスト</h3>
+            <h2>{{ t_h5 }}</h2>
+            <h3>{{ t_h5_1 }}</h3>
             {% block section_5 %}{% endblock %}
 
             <!-- 記事下部の最終CTA -->
             <div class="bottom-cta-box">
-                <p class="bottom-cta-title">{{ lang_name }}専用にローカライズしたHPを無料作成</p>
-                <!-- ★修正: リンク先変更＆別タブ設定 -->
+                <p class="bottom-cta-title">{{ t_bottom_cta }}</p>
                 <a href="https://app.leap.site/" target="_blank" rel="noopener noreferrer" class="cta-btn-primary">
-                    Leapで作成
+                    {{ t_cta_btn }}
                 </a>
             </div>
 

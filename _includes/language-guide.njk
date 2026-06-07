@@ -1,5 +1,25 @@
 <!-- _includes/language-guide.njk -->
 
+{% if locale == "en" %}
+  {% set t_back     = "← Back to Website Creation Guides" %}
+  {% set t_view     = "View Guide ↓" %}
+  {% set t_youtube  = "How to Use Leap →" %}
+  {% set t_list     = "Guide List" %}
+  {% set t_readmore = "Read More →" %}
+{% elif locale == "zh-hans" %}
+  {% set t_back     = "← 返回建站指南" %}
+  {% set t_view     = "查看指南 ↓" %}
+  {% set t_youtube  = "查看 Leap 使用教程 →" %}
+  {% set t_list     = "指南列表" %}
+  {% set t_readmore = "查看详情 →" %}
+{% else %}
+  {% set t_back     = "← HP作成ガイドに戻る" %}
+  {% set t_view     = "ガイドを見る ↓" %}
+  {% set t_youtube  = "Leapの使い方を見る →" %}
+  {% set t_list     = "ガイド一覧" %}
+  {% set t_readmore = "詳しく見る →" %}
+{% endif %}
+
 <!-- HERO SECTION -->
 <section class="section py-md" style="background: var(--color-primary-gradient); color: var(--color-white); overflow: hidden;">
     <div class="container">
@@ -8,33 +28,33 @@
             <!-- 左：タイトル＋説明 -->
             <div style="flex: 2; min-width: 280px; display: flex; flex-direction: column; justify-content: center;">
                 <a href="/{{ locale }}/hp-guide/" style="font-size: var(--font-size-sm); color: rgba(255,255,255,0.7); text-decoration: none; margin-bottom: var(--space-md); display: inline-block;">
-                    ← HP作成ガイドに戻る
+                    {{ t_back }}
                 </a>
                 <h1 class="text-white mb-md">{{ title }}</h1>
                 <p class="text-white mb-xl" style="font-size: var(--font-size-lg); opacity: 0.9;">
                     {{ description }}
                 </p>
                 <a href="#guides-section" class="btn btn-xl btn-white" style="align-self: flex-start;">
-                    ガイドを見る ↓
+                    {{ t_view }}
                 </a>
             </div>
 
             <!-- 右：Leapの使い方ボックス（PC） -->
             <div class="hero-right-box" style="flex: 1.5; min-width: 320px; background: var(--color-white); border-radius: 12px; padding: 60px; text-align: center; margin-top: -60px; margin-bottom: -60px; overflow: hidden;">
-                <img 
+                <img
                     src="https://res.cloudinary.com/duh6rnjba/image/upload/v1771677333/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-02-21_21.35.25_ose8qa.png"
                     alt="Leapの画面"
                     style="width: 100%; max-height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: var(--space-md); box-shadow: 0 4px 20px rgba(0,0,0,0.1);"
                 >
                 <a href="https://www.youtube.com/watch?v=NIlrrlLCcFc" target="_blank" rel="noopener noreferrer" class="btn btn-xl btn-primary" style="width: 100%; border: 2px solid var(--color-white);">
-                    Leapの使い方を見る →
+                    {{ t_youtube }}
                 </a>
             </div>
 
             <!-- SP時のみ：Leapの使い方ボタン -->
             <div class="hero-sp-btn">
                 <a href="https://www.youtube.com/watch?v=NIlrrlLCcFc" target="_blank" rel="noopener noreferrer" class="btn btn-xl btn-primary" style="width: 100%; border: 2px solid var(--color-white);">
-                    Leapの使い方を見る →
+                    {{ t_youtube }}
                 </a>
             </div>
 
@@ -45,7 +65,7 @@
 <!-- GUIDES SECTION -->
 <section id="guides-section" class="section py-xl bg-beige">
     <div class="container">
-        <h2 class="text-center mb-lg" style="font-size: var(--font-size-3xl);">ガイド一覧</h2>
+        <h2 class="text-center mb-lg" style="font-size: var(--font-size-3xl);">{{ t_list }}</h2>
 
         <div class="grid-3">
             {% for post in collections.all %}
@@ -62,7 +82,7 @@
                                 {{ post.data.description }}
                             </p>
                             <span class="text-primary font-bold">
-                                詳しく見る &rarr;
+                                {{ t_readmore }}
                             </span>
                         </div>
                     </a>

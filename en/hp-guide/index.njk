@@ -1,0 +1,104 @@
+---
+layout: base.njk
+title: Complete Guide to Building Multilingual Websites | Leap
+description: Language-specific guides covering everything you need to create websites in Chinese, English, Korean, and more.
+---
+
+<!-- HERO SECTION -->
+<section class="section py-md" style="background: var(--color-primary-gradient); color: var(--color-white); overflow: hidden;">
+    <div class="container">
+        <div style="display: flex; align-items: stretch; gap: var(--space-2xl); flex-wrap: wrap;">
+
+            <!-- Left: Title + Description -->
+            <div style="flex: 2; min-width: 280px; display: flex; flex-direction: column; justify-content: center;">
+                <h1 class="text-white mb-md">Complete Guide to Building Multilingual Websites</h1>
+                <p class="text-white mb-xl" style="font-size: var(--font-size-lg); opacity: 0.9;">
+                    Language-specific guides covering key considerations,<br>
+                    templates, and best practices for every market.
+                </p>
+                <a href="#guides-section" class="btn btn-xl btn-white" style="align-self: flex-start;">
+                    View Language Guides ↓
+                </a>
+            </div>
+
+            <!-- Right: How to Use Leap box (desktop) -->
+            <div class="hero-right-box" style="flex: 1.5; min-width: 320px; background: var(--color-white); border-radius: 12px; padding: 60px; text-align: center; margin-top: -60px; margin-bottom: -60px; overflow: hidden;">
+                <img
+                    src="https://res.cloudinary.com/duh6rnjba/image/upload/v1771677333/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-02-21_21.35.25_ose8qa.png"
+                    alt="Leap screen"
+                    style="width: 100%; max-height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: var(--space-md); box-shadow: 0 4px 20px rgba(0,0,0,0.1);"
+                >
+                <a href="https://www.youtube.com/watch?v=NIlrrlLCcFc" target="_blank" rel="noopener noreferrer" class="btn btn-xl btn-primary" style="width: 100%; border: 2px solid var(--color-white);">
+                    How to Use Leap →
+                </a>
+            </div>
+
+            <!-- Mobile only: How to Use Leap button -->
+            <div class="hero-sp-btn">
+                <a href="https://www.youtube.com/watch?v=NIlrrlLCcFc" target="_blank" rel="noopener noreferrer" class="btn btn-xl btn-primary" style="width: 100%; border: 2px solid var(--color-white);">
+                    How to Use Leap →
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+@media (max-width: 768px) {
+    .hero-right-box {
+        display: none !important;
+    }
+    .hero-sp-btn {
+        display: block;
+        width: 100%;
+        margin-top: calc(-1 * var(--space-xl));
+    }
+    .hero-sp-btn .btn {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .hero-sp-btn {
+        display: none;
+    }
+}
+</style>
+
+<!-- GUIDES SECTION -->
+<section id="guides-section" class="section py-xl bg-beige">
+    <div class="container">
+        <h2 class="text-center mb-lg" style="font-size: var(--font-size-3xl);">Language-Specific Website Creation Guides</h2>
+
+        <div class="grid-3">
+            {% for post in collections.all %}
+                {% if post.data.type == "language-guide" and post.data.locale == "en" %}
+                    <a href="{{ post.url }}"
+                       class="card p-0"
+                       style="overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; text-decoration: none; color: inherit;">
+
+                        <!-- Icon area -->
+                        <div style="background-color: var(--color-background); height: 160px; display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 3rem;">{{ post.data.icon | default('🌐') }}</span>
+                        </div>
+
+                        <!-- Content area -->
+                        <div class="px-lg py-lg" style="flex: 1; display: flex; flex-direction: column;">
+                            <h3 style="font-size: var(--font-size-lg); margin-bottom: var(--space-sm);">
+                                {{ post.data.title }}
+                            </h3>
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: var(--font-size-sm);">
+                                {{ post.data.description }}
+                            </p>
+                            <span class="text-primary font-bold">
+                                Read More &rarr;
+                            </span>
+                        </div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
