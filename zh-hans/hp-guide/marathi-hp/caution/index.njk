@@ -1,0 +1,197 @@
+---
+layout: base.njk
+title: 马拉地语网站建设完全指南
+target_lang: 马拉地语
+parent_url: /zh-hans/hp-guide/marathi-hp/
+thumbnail: "/assets/images/guide-marathi.jpg"
+---
+
+{% extends "guide-caution.njk" %}
+
+{% block section_0 %}
+<p>
+  马拉地语（Marathi）是印度马哈拉施特拉邦的官方语言，约有 8,300 万母语使用者，是印度本土使用人数排名第三的语言。马哈拉施特拉邦以孟买（Mumbai）和浦那（Pune）为核心，是印度最重要的工业、金融和科技中心 —— 孟买是印度金融之都，浦那是印度增长最快的科技和汽车制造业基地，也是中国企业投资印度的重要落点。<br>
+  马拉地语与印地语同属印度雅利安语系，同样使用<strong>天城文（Devanagari）脚本</strong>，但马拉地语有自己独特的词汇、文字连字（conjuncts）规则和文化参照，将马拉地语内容视为印地语的方言会引起马哈拉施特拉邦受众的强烈反感 —— 马拉地人对自己的语言和地区文化有深厚的自豪感。<br>
+  本指南将系统梳理构建有效的马拉地语网站所必须了解的关键要素。
+</p>
+{% endblock %}
+
+{% block section_1_1 %}
+<p>
+  马拉地语与印地语都使用天城文脚本，但有若干需要特别注意的区别：
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>马拉地语特有的连字（Conjuncts）：</strong>马拉地语天城文有一些在印地语中不常见的独特连字形式，优质的马拉地文字体须正确渲染这些连字。部分专为印地语优化的字体在显示马拉地语连字时可能出现渲染不准确的情况。</li>
+  <li><strong>推荐字体：</strong>
+    <ul style="list-style: circle; margin-left: 16px; margin-top: 8px;">
+      <li><strong>Noto Sans Devanagari：</strong>覆盖印地语和马拉地语两者的完整天城文字符集，是最稳妥的选择。</li>
+      <li><strong>Laila：</strong>专为马拉地语数字阅读优化设计，在屏幕上表现出色。</li>
+      <li><strong>Hind：</strong>同时支持印地语和马拉地语的优质天城文字体。</li>
+    </ul>
+  </li>
+  <li><strong>马拉地语 vs 印地语：</strong>在马哈拉施特拉邦，使用印地语（而非马拉地语）可能会被视为不尊重当地文化，尤其在 B2C 和本地服务场景。马拉地语内容须由精通马拉地语（而非仅懂印地语）的母语人士创作或审校。</li>
+  <li><strong>lang 属性：</strong>设置 <code>&lt;html lang="mr"&gt;</code>（马拉地语的 BCP 47 代码），而非印地语的 <code>hi</code>。</li>
+</ul>
+{% endblock %}
+
+{% block section_1_2 %}
+<p>
+  马哈拉施特拉邦的互联网环境与印度整体一致 —— 完全开放，Google、WhatsApp 和 YouTube 均可正常使用。主要技术考量与印度市场整体相似，但有若干马哈拉施特拉邦特有的注意事项：
+</p>
+<div style="background:#fff4f4; padding:16px; border-radius:8px; border:1px solid #f9a8a8; margin-bottom:24px;">
+  <p style="font-weight:bold; color:#c53030; margin-bottom:8px;">❌ 马拉地语市场常见问题</p>
+  <ul style="list-style:none; padding:0; margin:0;">
+    <li style="margin-bottom:8px;">· 使用印地语内容覆盖马拉地语市场 —— 马拉地人对自己的语言有强烈认同感，这会被视为不尊重</li>
+    <li style="margin-bottom:8px;">· 天城文字体未正确加载，尤其是马拉地语特有连字无法正确渲染</li>
+    <li>· 未集成 UPI 支付 —— 同样适用于马哈拉施特拉邦的印度本地化支付需求</li>
+  </ul>
+</div>
+<p>
+  孟买是印度最成熟的数字市场之一，用户对设计品质和用户体验的期待相对较高。浦那是印度主要的 IT 服务中心，受众整体数字素养高。在这两个城市，高质量的设计和专业的马拉地语文案对建立品牌可信度至关重要。
+</p>
+{% endblock %}
+
+{% block section_1_3 %}
+<p>
+  马拉地语网站适用与印度其他语言相同的法律框架，以下是最相关的合规要点：
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>《数字个人数据保护法》（DPDP，2023）：</strong>印度 2023 年通过的数据保护法适用于向印度用户提供服务的所有平台，包括马拉地语网站。核心义务包括获取明确同意、数据主体权利、数据泄露通知。具体实施规则仍在公布过程中，但建立数据保护框架和隐私政策是必要的准备工作。</li>
+  <li><strong>RBI 支付监管：</strong>与印度其他市场相同，处理在线支付须使用已获印度储备银行（RBI）授权的支付网关（Razorpay、PayU、Cashfree 等）。这些网关均支持 UPI、网银和信用卡，并覆盖马哈拉施特拉邦的本地支付需求。</li>
+  <li><strong>马哈拉施特拉邦语言政策（店铺招牌法）：</strong>马哈拉施特拉邦有法规要求本地商业招牌须使用马拉地语，类似的本地化期待也延伸到数字领域。面向马哈拉施特拉邦当地受众的商业网站，提供马拉地语版本是建立本地信任的基础，也越来越成为当地政府和企业的隐性期待。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_1 %}
+<p>
+  马拉地语受众有鲜明的文化特征，对内容策略有直接影响：
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>马拉地认同感极强：</strong>马哈拉施特拉邦人，尤其是孟买和浦那的居民，对马拉地语言和文化有强烈的自豪感。品牌能够用地道马拉地语沟通，会被视为真正理解和尊重当地文化，而非仅仅在"敷衍式翻译"。</li>
+  <li><strong>教育程度较高的受众：</strong>马哈拉施特拉邦（尤其是孟买和浦那）的受众整体教育和收入水平高于印度全国平均，对内容深度和信息准确性有较高期待，详尽的产品说明和有依据的主张比泛泛的营销话术更有说服力。</li>
+  <li><strong>马拉地历史和文化参照：</strong>马哈拉施特拉邦有丰富的历史文化传统（马拉塔帝国、蒂拉克节、象神节等），在适当的场景下融入这些文化参照，能与马拉地受众产生强烈共鸣。</li>
+  <li><strong>WhatsApp 是主要联系渠道：</strong>与印度其他地区相同，WhatsApp 是马哈拉施特拉邦商业沟通的主流渠道，展示 WhatsApp 联系选项是面向本地中小企业和消费者转化的关键要素。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_2 %}
+<p>
+  Google 在马哈拉施特拉邦占据主导地位（约 95% 的搜索份额），马拉地语 SEO 有以下特有考量：
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>马拉地文字符关键词研究：</strong>马拉地语搜索者同时使用天城文字符和罗马字母拼写的马拉地语（Romanized Marathi）进行搜索，尤其是年轻城市用户。关键词研究须覆盖两种形式，Google Keyword Planner 支持将地区筛选为马哈拉施特拉邦。</li>
+  <li><strong>马拉地语 vs 印地语关键词：</strong>马拉地语有不同于印地语的词汇，例如"वेबसाइट"（website）在两种语言中写法相同，但"किंमत"（价格）是马拉地语独有词汇，而非印地语的"कीमत"。须以马拉地语为基准进行独立的关键词研究，而非从印地语关键词直接改写。</li>
+  <li><strong>本地 SEO：</strong>孟买和浦那的本地搜索竞争激烈，Google Business Profile 优化对面向本地企业的服务有显著效果。</li>
+  <li><strong>YouTube 马拉地语内容：</strong>马拉地语 YouTube 频道拥有规模可观的订阅量，马拉地语视频内容是一个增长中的搜索流量来源。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_3 %}
+<p>
+  马拉地语网站的服务器选址与印度其他语言市场基本相同：
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>孟买（最佳选择）：</strong>AWS 孟买（ap-south-1）在地理上最接近马哈拉施特拉邦，对孟买、浦那和马哈拉施特拉邦其他城市的延迟最低，通常在 5–15ms 以内。这也是印度主要技术公司和金融机构首选的数据中心位置。</li>
+  <li><strong>CDN 覆盖：</strong>Cloudflare 在孟买和德里均有存在节点，有效缩短马哈拉施特拉邦以外印度用户的访问延迟。</li>
+</ul>
+<p>
+  域名方面，与印度其他语言市场相同，<code>.in</code> 传递本地信任感，外国企业通常使用 <code>.com</code>，两者均被广泛接受。<code>.co.in</code> 适用于在印度注册的公司。
+</p>
+{% endblock %}
+
+{% block section_3_1 %}
+<p>
+  马哈拉施特拉邦的视觉审美融合了马拉地传统文化色彩和现代都市设计风格：
+</p>
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px;">🟠 <strong>橙色（藏红花色）：</strong>与印度教传统、节庆（象神节 Ganesh Chaturthi、蒂拉克节 Tilak Jayanti）高度关联，是马哈拉施特拉邦文化认同的重要颜色。橙色在面向马拉地消费者的 CTA 和节庆营销中有强烈共鸣。</li>
+  <li style="margin-bottom: 12px;">🔵 <strong>蓝色：</strong>信任和专业，在孟买金融、科技和 B2B 服务中主导，孟买"蓝领"金融从业者群体对蓝色品牌形象有天然认同感。</li>
+  <li style="margin-bottom: 12px;">🟢 <strong>绿色：</strong>自然、农业和健康，在马哈拉施特拉邦农业和食品品类中广泛使用，也是印度整体的吉祥色之一。</li>
+  <li style="margin-bottom: 12px;">🟡 <strong>黄色与金色：</strong>繁荣、庆典和神圣，在宗教节庆场景和婚庆相关品类中有特别的文化共鸣。</li>
+</ul>
+{% endblock %}
+
+{% block section_3_2 %}
+<p>
+  马拉地语使用天城文脚本，字体选择和行高设置的技术要求与印地语相近：
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-family: "Noto Sans Devanagari", "Laila", "Hind", sans-serif;<br><br>
+  /* 马拉地语天城文同样需要较大行高 */<br>
+  line-height: 1.8;
+</div>
+<p>
+  马拉地语天城文的行高要求与印地语相同：元音附标（matra）位于字符上下方，须确保足够的行间距（1.8–2.0）避免垂直重叠。正文字号建议 16–18px，在中低端安卓设备上保证天城文的可读性。
+</p>
+<p>
+  须特别测试马拉地语特有连字（如 ळ、ळ्व 等）在目标字体中的渲染效果，确保连字形式正确，而非分离显示。
+</p>
+{% endblock %}
+
+{% block section_3_3 %}
+<p>
+  孟买和浦那作为印度最成熟的数字市场，受众设计期待相对较高：
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>孟买 vs 浦那的设计偏好：</strong>孟买受众整体偏向更商业化、精致的视觉风格，与孟买的金融中心定位一致；浦那受众（大量 IT 从业者）更接受简洁的科技产品设计语言。两者都对低质量设计敏感。</li>
+  <li><strong>节庆营销的重要性：</strong>象神节（Ganesh Chaturthi）是马哈拉施特拉邦最盛大的节日，在这一期间推出主题活动和视觉内容，是面向马拉地受众建立文化连接的最有效时机之一。</li>
+  <li><strong>真实本地化摄影：</strong>使用真实反映孟买/浦那都市生活的图片（而非通用的印度素材图），能与马哈拉施特拉邦受众产生更强的认同感。</li>
+  <li><strong>移动优先基础要求：</strong>与印度整体一致，马哈拉施特拉邦也有大量用户通过手机上网，移动端体验须作为设计的首要优先级。</li>
+</ul>
+{% endblock %}
+
+{% block section_4_1 %}
+<p>
+  马哈拉施特拉邦的联系渠道偏好与印度整体趋势一致，但有若干本地化考量：
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>WhatsApp Business：</strong>WhatsApp 是马哈拉施特拉邦中小企业和消费者的主要联系渠道，与印度其他地区相同。展示 WhatsApp Business 联系按钮是转化率最高的 CTA 设计。</li>
+  <li><strong>LinkedIn（浦那 IT B2B）：</strong>浦那是印度重要的 IT 服务中心，LinkedIn 在浦那科技从业者中的使用率很高，对面向 B2B 软件和咨询服务的品牌，浦那的 LinkedIn 渠道具有特别高的价值。</li>
+  <li><strong>马拉地语客服的竞争优势：</strong>能够用马拉地语提供客服（而非只有英语或印地语），对马哈拉施特拉邦用户是一个有说服力的信任建立因素，尤其在面向中小城市受众时。</li>
+  <li><strong>电话号码：</strong>+91（印度）本地号码是基本信任要素，孟买的 022 区号对本地受众有额外的可信度加持。</li>
+</ul>
+{% endblock %}
+
+{% block section_4_2 %}
+<p>
+  马哈拉施特拉邦的移动互联网使用与印度整体趋势一致：
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>孟买宽带与移动网络并重：</strong>孟买是印度宽带普及率最高的城市之一，在 B2B 场景中桌面端比例高于印度平均，但移动端依然主导 B2C 流量。</li>
+  <li><strong>UPI 是支付主力：</strong>Google Pay（Tez）、PhonePe 和 Paytm 在马哈拉施特拉邦均有很高的 UPI 使用率，UPI 支付集成是印度任何电商网站的基础配置。</li>
+  <li><strong>安卓中端设备测试：</strong>与印度整体相同，在三星 Galaxy A 系列和 Redmi Note 系列上测试关键流程，确保在 2–4GB RAM 设备上的性能达标。</li>
+  <li><strong>天城文输入移动端体验：</strong>确保表单和搜索框设置了正确的 <code>lang="mr"</code> 属性，以在移动端触发合适的马拉地语键盘（与印地语键盘略有不同）。</li>
+</ul>
+{% endblock %}
+
+{% block section_5 %}
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>内容是否由精通马拉地语（而非印地语）的母语人士创作或审校？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>是否设置了正确的 <code>lang="mr"</code> 属性，并加载了支持马拉地语连字的字体（如 Noto Sans Devanagari 或 Laila）？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>是否已测试马拉地语特有连字（如 ळ）在目标字体中的渲染效果？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>是否已集成 UPI 支付（通过 Razorpay 等 RBI 授权网关）？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>是否在网站显眼位置集成了 WhatsApp Business 联系入口？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>关键词研究是否针对马拉地语受众使用 Google Keyword Planner（地区筛选为马哈拉施特拉邦）独立完成，而非依赖印地语关键词数据？</span>
+  </li>
+</ul>
+<p>
+  马拉地语市场的独特性不在于技术复杂度，而在于文化深度 —— 马拉地人希望被真正理解和尊重，而非被视为"印地语受众的延伸"。Leap 处理本地化基础设施，让你专注于与马哈拉施特拉邦受众建立真实的文化连接。
+</p>
+{% endblock %}

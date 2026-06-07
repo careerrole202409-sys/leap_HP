@@ -1,0 +1,198 @@
+---
+layout: base.njk
+title: Complete Guide to Building an Effective French Website
+target_lang: French
+parent_url: /en/hp-guide/french-hp/
+thumbnail: "/assets/images/guide-french.jpg"
+---
+
+{% extends "guide-caution.njk" %}
+
+{% block section_0 %}
+<p>
+  French is spoken by over 320 million people worldwide — not just in France, but across Belgium, Switzerland, Canada (especially Quebec), and 29 African countries where it serves as an official language. This makes French the fifth most spoken language in the world by number of speakers and one of the most geographically distributed.<br>
+  Building an effective French-language website means more than translating copy. French internet users have specific expectations around formality, content quality, legal compliance (particularly for EU-based audiences), and cultural references that differ from both English-speaking and other European markets.<br>
+  This guide covers what you need to know to build a French-language website that earns trust, ranks on Google, and converts.
+</p>
+{% endblock %}
+
+{% block section_1_1 %}
+<p>
+  French has meaningful variation across regions — choosing the right variant matters both linguistically and culturally:
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>French (France) — fr-FR:</strong> The standard reference for most international French-language content. Uses the <em>vous</em> form as default for business communications. French audiences tend to expect formal, precise language — casualness can undermine credibility in professional contexts.</li>
+  <li><strong>Canadian French (Quebec) — fr-CA:</strong> Quebec French has distinct vocabulary, expressions, and spelling conventions. "Courriel" instead of "e-mail," "fin de semaine" instead of "week-end." Québécois readers notice when content is written in European French and targeted at them — it creates a sense of distance. If Quebec is a priority market, native Quebec French content pays off significantly.</li>
+  <li><strong>Belgian and Swiss French:</strong> Minor differences from France French — mostly in number terminology (Belgian/Swiss French uses "septante" and "nonante" for 70 and 90, while France uses "soixante-dix" and "quatre-vingt-dix"). Both generally accept standard France French content.</li>
+  <li><strong>African French:</strong> French-speaking Africa (Côte d'Ivoire, Senegal, DRC, Morocco, etc.) is a rapidly growing digital market. The French used is broadly similar to France French, but cultural references and formality expectations vary by country.</li>
+</ul>
+<p>
+  Set <code>&lt;html lang="fr"&gt;</code> or a specific variant like <code>lang="fr-CA"</code> for Quebec. French uses numerous accented characters (é, è, ê, à, â, ù, û, ç, œ, æ) — ensure your font supports the full French character set and that your CMS handles accented characters correctly in URLs.
+</p>
+{% endblock %}
+
+{% block section_1_2 %}
+<p>
+  France and the French-speaking EU market operate within the standard open Western internet environment — Google, Meta, and standard web platforms function normally. The key technical considerations are:
+</p>
+<div style="background:#fff4f4; padding:16px; border-radius:8px; border:1px solid #f9a8a8; margin-bottom:24px;">
+  <p style="font-weight:bold; color:#c53030; margin-bottom:8px;">❌ Common technical issues in French markets</p>
+  <ul style="list-style:none; padding:0; margin:0;">
+    <li style="margin-bottom:8px;">· Missing or broken cookie consent banner — French CNIL enforcement is active and imposes significant fines</li>
+    <li style="margin-bottom:8px;">· Typographic errors specific to French: missing non-breaking spaces before «», !, ?, ;, : (French typography rules require these)</li>
+    <li>· URLs with accented characters that aren't properly encoded, causing broken links</li>
+  </ul>
+</div>
+<p>
+  French typography has specific conventions that, when broken, immediately signal "foreign" to native readers: guillemet quotation marks (« ») instead of English quotes, spaces before punctuation marks like ! and ?, and the correct use of accented capitals (É, À, etc.). While French users won't refuse to read your content, these details affect perceived quality and professionalism.
+</p>
+{% endblock %}
+
+{% block section_1_3 %}
+<p>
+  France is an EU member state, meaning GDPR compliance is mandatory — and France's national data protection authority, the <strong>CNIL (Commission Nationale de l'Informatique et des Libertés)</strong>, is one of the most active enforcers in the EU:
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>Cookie consent (RGPD / ePrivacy):</strong> The CNIL has issued detailed guidelines that go beyond basic GDPR: "Refuse all" must be as easy as "Accept all" — a single-click refusal is required. Pre-ticked boxes are prohibited. Google Analytics requires explicit consent in France. The CNIL has fined major companies (Google, Facebook) hundreds of millions of euros over consent violations.</li>
+  <li><strong>Privacy policy requirements:</strong> Must be in French, clearly accessible, and cover all data processing activities. The standard template from a GDPR tool is usually sufficient.</li>
+  <li><strong>E-commerce regulations (Code de la consommation):</strong> French consumer law requires a 14-day withdrawal right for online purchases, clear pre-contractual information, and specific invoice requirements. For B2C sales to French consumers, these obligations apply regardless of where your business is based.</li>
+  <li><strong>Quebec (LPRPDE / Law 25):</strong> Quebec's "Law 25" (modernized in 2022–2023) is one of North America's strongest privacy laws — stricter than Canada's federal PIPEDA and comparable in many ways to GDPR.</li>
+</ul>
+{% endblock %}
+
+{% block section_2_1 %}
+<p>
+  French audiences have specific content expectations that differ from Anglo-American norms in important ways:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Quality of writing matters more than in many markets:</strong> French culture places high value on language precision and literary quality. Grammatically imperfect or overly literal translations are noticed and reflect poorly on the brand. Native French copywriting (not just translation) is worthwhile.</li>
+  <li><strong>Skepticism toward marketing hyperbole:</strong> French readers tend to be skeptical of superlatives and aggressive marketing claims ("the best," "revolutionary," "world-class"). Specific, factual claims with evidence outperform enthusiasm-driven copy.</li>
+  <li><strong>Formal tone as default:</strong> B2B content in France defaults to <em>vous</em> (formal "you"). Switching to <em>tu</em> (informal) can work for youth-oriented or startup brands, but should be a deliberate choice, not a default.</li>
+  <li><strong>Long-form content performs well:</strong> French users — particularly in B2B contexts — are receptive to detailed, thorough content. In-depth guides, comprehensive FAQs, and detailed case studies perform well for SEO and trust-building.</li>
+</ul>
+{% endblock %}
+
+{% block section_2_2 %}
+<p>
+  <strong>Google holds approximately 90–92% search market share in France</strong> — Bing and others are marginal. Standard Google SEO practices apply, with some French-specific nuances:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Accented characters in keywords:</strong> French searchers do use accented characters in queries (é, è, à, etc.), and Google handles these correctly. Your content should use proper accented characters — not ASCII approximations — both for linguistic accuracy and for search matching.</li>
+  <li><strong>hreflang for French variants:</strong> If you serve both France French (<code>fr-FR</code>) and Quebec French (<code>fr-CA</code>), hreflang tags ensure Google serves the right version to each audience.</li>
+  <li><strong>Qwant as a secondary consideration:</strong> Qwant is a French privacy-focused search engine with modest market share (~2–3% in France). Some French users prefer it. Standard SEO practices satisfy Qwant as well as Google.</li>
+  <li><strong>Rich snippets and schema markup:</strong> French search results support the same structured data types as English — FAQ schema, review schema, and HowTo schema can all improve click-through rates in French search results.</li>
+</ul>
+{% endblock %}
+
+{% block section_2_3 %}
+<p>
+  For French-language websites, server location within the EU offers both performance and data compliance benefits:
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>France / Western Europe:</strong> AWS Paris (eu-west-3), Google Cloud Paris, or OVHcloud (a major French cloud provider) are the natural choices for France-focused websites. Sub-20ms latency to Paris from an EU data center is achievable.</li>
+  <li><strong>GDPR data residency:</strong> While GDPR doesn't mandate EU data storage per se, choosing an EU-based hosting provider simplifies compliance — no Article 46 transfer mechanisms required for data transfers. Many French enterprise clients specifically require EU-only data storage in vendor contracts.</li>
+  <li><strong>Quebec (Canada):</strong> AWS Canada Central (Montreal) is the optimal choice for Quebec audiences. Canada's PIPEDA and Quebec's Law 25 don't require Canadian data residency, but local hosting is often preferred by Canadian enterprise clients.</li>
+</ul>
+<p>
+  Domain choice: <code>.fr</code> is the standard French domain and strongly preferred for France-focused businesses — it signals local presence and carries an SEO benefit for French search results. It requires a presence in the EU/EEA. <code>.com</code> is universally accepted as well.
+</p>
+{% endblock %}
+
+{% block section_3_1 %}
+<p>
+  French design aesthetics lean toward sophistication, restraint, and quality over visual excess:
+</p>
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px;">⚫ <strong>Black, white, and neutral palettes:</strong> Elegance and minimalism are core French design values. Luxury brands like Chanel, Hermès, and Louis Vuitton have shaped a design culture that values restraint. Clean backgrounds with minimal color are considered more sophisticated than bold, saturated designs.</li>
+  <li style="margin-bottom: 12px;">🔵 <strong>Navy and deep blues:</strong> Trust, tradition, and institutional credibility. The tricolor association (blue, white, red) makes blue particularly resonant in France. Common in finance, government, and professional services.</li>
+  <li style="margin-bottom: 12px;">🟡 <strong>Gold accents:</strong> Premium quality and heritage. Effective in luxury, hospitality, and artisanal product contexts. Avoid cheap-looking metallics — the quality of the gold color execution signals the quality of the brand.</li>
+  <li style="margin-bottom: 12px;">🔴 <strong>Red:</strong> Passion and energy, but also associated with French identity (the tricolor). Used in retail, food, and promotional contexts. The balance of blue-white-red in French flag colors gives all three colors cultural resonance.</li>
+</ul>
+{% endblock %}
+
+{% block section_3_2 %}
+<p>
+  French uses the Latin alphabet with accented characters. Standard Latin web fonts support French natively — the key is choosing fonts that feel appropriately elegant or modern for your brand positioning:
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-family: "Marianne", "Spectral", "Inter", "Helvetica Neue", Arial, sans-serif;
+</div>
+<p>
+  "Marianne" is the official font of the French Republic (used in government communications) — it carries authority and institutional credibility. "Spectral" is an elegant serif designed for digital reading. "Inter" is a safe choice for SaaS and tech products. For luxury positioning, a high-quality serif (Playfair Display, Cormorant) signals heritage and refinement.
+</p>
+<p>
+  Body text at 16px, line-height 1.6–1.8. French sentences are typically longer than English equivalents (the grammatical structure is more complex), so ensure column widths accommodate comfortable line lengths — 60–75 characters per line is the readable range.
+</p>
+{% endblock %}
+
+{% block section_3_3 %}
+<p>
+  French web design reflects a culture that values aesthetics, precision, and quality — with some distinctive patterns compared to Anglo-American web design:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Typography as design:</strong> French websites often treat typography as a primary design element. Large, beautiful headline typography is more common than in purely functional UI-focused design.</li>
+  <li><strong>Whitespace and breathing room:</strong> Similar to other Western European markets, French design favors generous whitespace. Cluttered layouts are perceived as low-quality.</li>
+  <li><strong>Product photography quality:</strong> For any product-oriented website, high-quality photography is non-negotiable. French consumers' exposure to luxury brand standards means low-quality imagery significantly undermines credibility.</li>
+  <li><strong>Subtle animation:</strong> Tasteful micro-animations and scroll effects are well-received in French markets — they signal investment in the user experience without being gimmicky.</li>
+</ul>
+{% endblock %}
+
+{% block section_4_1 %}
+<p>
+  Contact expectations in French markets differ from some other European markets — and vary between France and Quebec:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Email and forms remain strong in France:</strong> Unlike Latin American or Arab markets where instant messaging is the primary business channel, French professionals use email as the primary B2B communication tool. A clean, simple contact form with an email response commitment is standard.</li>
+  <li><strong>Calendar booking (B2B):</strong> Calendly-style booking links are increasingly common for B2B services in France — particularly for consulting and SaaS sales. They signal efficiency and respect for the prospect's time.</li>
+  <li><strong>Phone contact:</strong> A French phone number (+33) adds local credibility. For businesses without French presence, a virtual number can fill this gap.</li>
+  <li><strong>WhatsApp in Quebec:</strong> WhatsApp is more commonly used in Quebec than in France. A WhatsApp option is worth adding for North American French audiences.</li>
+  <li><strong>LinkedIn for B2B:</strong> LinkedIn is heavily used by French professionals — particularly in Paris and major cities. A company LinkedIn page linked from your website strengthens B2B credibility significantly.</li>
+</ul>
+{% endblock %}
+
+{% block section_4_2 %}
+<p>
+  Mobile internet usage in France is high but slightly less dominant than in some other markets — France has relatively strong desktop internet usage in professional contexts. <strong>Roughly 55–60% of French web traffic is from mobile</strong>, with desktop still playing a meaningful role for B2B research.
+</p>
+<p>
+  Mobile considerations for French markets:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Performance still matters:</strong> French mobile users are on fast 4G/5G networks in cities, but rural France has significant connectivity gaps. Optimize for performance beyond just Parisian users.</li>
+  <li><strong>Cookie consent on mobile:</strong> The CNIL's requirement for equal-prominence "Refuse all" buttons must work correctly on mobile screens — cramped cookie banners that hide the reject button are specifically cited in CNIL enforcement guidance.</li>
+  <li><strong>Responsive typography:</strong> French text tends to be longer than English — watch for text overflow on mobile, particularly in navigation, buttons, and card components where space is tight.</li>
+  <li><strong>African French mobile:</strong> In French-speaking Africa, mobile is overwhelmingly dominant (often the only internet access), and mobile networks are slower. Lightweight pages are essential for audiences in Senegal, Côte d'Ivoire, and similar markets.</li>
+</ul>
+{% endblock %}
+
+{% block section_5 %}
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Is the French copy written in the correct register for your audience (<em>vous</em> for B2B France, appropriate variant for Quebec), reviewed by a native speaker?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Have you implemented a CNIL-compliant cookie banner with a one-click "Refuse all" option that is equally prominent as "Accept all"?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Do URLs correctly encode accented characters (é, è, à, etc.) without breaking links?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Have you set up hreflang if serving both France French and Quebec French audiences?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>If selling to French consumers, have you confirmed compliance with the 14-day withdrawal right and pre-contractual information requirements?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Are you using a <code>.fr</code> domain or EU-hosted server for France-focused SEO and compliance benefits?</span>
+  </li>
+</ul>
+<p>
+  CNIL enforcement, French typography conventions, and regional variant management make French-language websites more complex to execute correctly than they appear. Leap handles the localization and compliance infrastructure automatically — so your French site is correct and compliant from the start.
+</p>
+{% endblock %}

@@ -1,0 +1,192 @@
+---
+layout: base.njk
+title: Complete Guide to Building an Effective Portuguese Website
+target_lang: Portuguese
+parent_url: /en/hp-guide/portuguese-hp/
+thumbnail: "/assets/images/guide-portuguese.jpg"
+---
+
+{% extends "guide-caution.njk" %}
+
+{% block section_0 %}
+<p>
+  Portuguese is spoken by over 260 million people worldwide — making it the sixth most spoken language in the world by native speakers. But the most important thing to understand about Portuguese is that it's effectively two distinct languages in practice: <strong>Brazilian Portuguese</strong> and <strong>European Portuguese</strong>.<br>
+  Brazil alone accounts for roughly 215 million of those speakers — and with Latin America's largest economy, a booming e-commerce market, and rapidly growing internet penetration, Brazil represents one of the highest-potential digital markets in the world.<br>
+  This guide covers what you need to build Portuguese-language websites that work for the right audience — whether your target is São Paulo, Lisbon, or the Portuguese-speaking markets of Africa.
+</p>
+{% endblock %}
+
+{% block section_1_1 %}
+<p>
+  The difference between Brazilian and European Portuguese is significant enough that many businesses maintain separate websites for each market. Mixing the two is immediately noticeable to native speakers and signals a lack of local investment:
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>Brazilian Portuguese (pt-BR):</strong> More informal and conversational in tone — even in professional contexts. Vocabulary, grammar, and spelling differ significantly from European Portuguese. Brazilian internet users are the dominant Portuguese-speaking market and the primary audience for most international businesses targeting "Portuguese."</li>
+  <li><strong>European Portuguese (pt-PT):</strong> More formal. Distinct pronunciation (notably, vowels are reduced in European Portuguese to a degree that Brazilians often find difficult to understand). Uses different vocabulary ("autocarro" for bus vs. "ônibus" in Brazil, "telemóvel" for mobile phone vs. "celular"). Set <code>lang="pt-PT"</code> for European audiences.</li>
+  <li><strong>African Portuguese (PALOP countries):</strong> Angola, Mozambique, Cape Verde, and others use Portuguese as an official language. Generally closer to European Portuguese but with local vocabulary. A growing digital market, though smaller than Brazil.</li>
+</ul>
+<p>
+  The 2009 Portuguese Language Orthographic Agreement standardized some spelling across countries, but significant differences remain in vocabulary, pronunciation, and informal usage. Set <code>&lt;html lang="pt-BR"&gt;</code> or <code>&lt;html lang="pt-PT"&gt;</code> as appropriate.
+</p>
+{% endblock %}
+
+{% block section_1_2 %}
+<p>
+  Brazil and Portugal are both open internet environments — Google, Meta, WhatsApp, and standard web platforms operate freely. The key technical considerations are around performance for Brazil specifically:
+</p>
+<div style="background:#fff4f4; padding:16px; border-radius:8px; border:1px solid #f9a8a8; margin-bottom:24px;">
+  <p style="font-weight:bold; color:#c53030; margin-bottom:8px;">❌ Common issues for Brazil-facing websites</p>
+  <ul style="list-style:none; padding:0; margin:0;">
+    <li style="margin-bottom:8px;">· Servers outside Brazil (especially in the US or Europe) introduce significant latency — Brazil is geographically distant and has less international bandwidth than North America or Europe</li>
+    <li style="margin-bottom:8px;">· Heavy pages that load well on fast US connections perform poorly on Brazilian 4G networks in smaller cities</li>
+    <li>· Checkout and payment flows that don't support Brazilian payment methods (Pix, boleto bancário) — foreign-only payment options have very low conversion rates with Brazilian consumers</li>
+  </ul>
+</div>
+<p>
+  Brazil has its own distinct payment infrastructure. If you're running any form of e-commerce or paid service targeting Brazil, integrating Brazilian payment methods is essential — not optional.
+</p>
+{% endblock %}
+
+{% block section_1_3 %}
+<p>
+  Brazil and Portugal have different legal frameworks, both of which have teeth:
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>Brazil — LGPD (Lei Geral de Proteção de Dados):</strong> Brazil's comprehensive data protection law, effective 2020, is modeled closely on GDPR. It requires a lawful basis for data processing, explicit consent for sensitive data, a privacy policy in Portuguese, and a DPO (Data Protection Officer) designation for larger processors. The National Data Protection Authority (ANPD) has begun enforcing fines as of 2023.</li>
+  <li><strong>Brazil — Consumer Protection Code (CDC):</strong> Brazil's Código de Defesa do Consumidor is one of the strongest consumer protection frameworks in the Americas. Online businesses selling to Brazilian consumers must honor a 7-day cooling-off right, provide clear product descriptions, and comply with specific price display rules.</li>
+  <li><strong>Portugal / EU — GDPR:</strong> Portugal is an EU member, so GDPR applies fully. Portugal's national authority (CNPD) oversees enforcement. Cookie consent banners, privacy policies in Portuguese, and data subject rights must all be implemented.</li>
+</ul>
+{% endblock %}
+
+{% block section_2_1 %}
+<p>
+  Content strategy for Brazilian audiences in particular requires understanding a communication style that is quite different from European norms:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Warm, personal, conversational tone:</strong> Brazilian business communication is notably warmer and more informal than European or North American equivalents. Even B2B content benefits from a friendlier, more approachable voice. Stiff, formal copy reads as cold or arrogant to Brazilian audiences.</li>
+  <li><strong>WhatsApp is the primary business channel:</strong> WhatsApp was invented for global use but has become deeply embedded in Brazilian business culture to a degree that surprises outsiders. Brazilian SMBs use WhatsApp as their primary customer service, sales, and support channel. A WhatsApp contact option isn't optional for Brazil-facing businesses — it's expected.</li>
+  <li><strong>Social proof with Brazilian context:</strong> Customer testimonials, case studies, and reviews from recognizable Brazilian brands or cities carry significantly more weight than foreign social proof. "Used by 50 companies in São Paulo" resonates more than a global statistic.</li>
+  <li><strong>Brazilian keyword research:</strong> Search terms in Brazilian Portuguese often differ significantly from European Portuguese — and from English-origin terms. Use Google Keyword Planner filtered to Brazil, and research actual Brazilian search behavior rather than translating English keywords.</li>
+</ul>
+{% endblock %}
+
+{% block section_2_2 %}
+<p>
+  <strong>Google dominates search in both Brazil and Portugal</strong> — holding ~97% market share in Brazil and ~95% in Portugal. Standard Google SEO practices apply, with these Portuguese-specific points:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Separate hreflang for pt-BR and pt-PT:</strong> If you run both Brazilian and European Portuguese content, hreflang tags are important — Google otherwise may serve the wrong version to each audience, or treat them as duplicate content.</li>
+  <li><strong>Brazilian vs. European Portuguese keywords:</strong> Search behavior differs — Brazilians and Portuguese users may search for the same concept using completely different terms. Separate keyword research per market is necessary.</li>
+  <li><strong>E-E-A-T in Brazil:</strong> Brazilian Google has an increasingly strong emphasis on E-E-A-T signals for content ranking. Author credentials, cited sources, and CNPJ (Brazilian business number) displayed on the site all contribute to perceived trustworthiness.</li>
+  <li><strong>Mobile-first indexing:</strong> Google Brazil indexes the mobile version first — especially important given Brazil's mobile-dominant internet landscape.</li>
+</ul>
+{% endblock %}
+
+{% block section_2_3 %}
+<p>
+  Server location choices for Portuguese-language markets:
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>Brazil:</strong> AWS São Paulo (sa-east-1) and Google Cloud São Paulo are the obvious choices for Brazil-focused websites. Brazilian internet infrastructure routes most domestic traffic through São Paulo — a São Paulo-region server gives the lowest possible latency for Brazilian users. Without local hosting, a CDN with São Paulo PoPs (Cloudflare has this) is the next best option.</li>
+  <li><strong>Portugal / EU:</strong> Standard EU region hosting (AWS Ireland eu-west-1, or AWS Frankfurt eu-central-1) is optimal for Portugal. OVHcloud has data centers in Portugal for maximum local performance.</li>
+  <li><strong>LGPD data residency:</strong> Brazil's LGPD does not mandate Brazilian data storage for most use cases, but Brazilian government and financial sector clients often require it contractually. For general commercial websites, São Paulo hosting for performance reasons is the practical choice.</li>
+</ul>
+<p>
+  Domain choice: <code>.com.br</code> is strongly preferred for Brazil-focused businesses — it signals local presence and carries an SEO benefit in Google Brazil. A <code>.com</code> is accepted but feels more generic. <code>.pt</code> is the equivalent for Portugal.
+</p>
+{% endblock %}
+
+{% block section_3_1 %}
+<p>
+  Brazilian color aesthetics tend toward vibrancy and warmth — reflecting the country's visual culture and tropical environment. European Portuguese design aligns more closely with restrained Southern European conventions:
+</p>
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px;">🟢 <strong>Green and yellow (Brazil):</strong> The colors of the Brazilian flag carry strong patriotic and positive cultural associations. Green and gold/yellow combinations resonate particularly well with Brazilian consumers in celebratory or promotional contexts. Be mindful that overuse can feel nationalistic — deploy deliberately.</li>
+  <li style="margin-bottom: 12px;">🔴 <strong>Red and orange:</strong> Energy, warmth, and appetite. Widely used in Brazilian food, retail, and promotional design. Effective for CTAs and urgency signals across both Brazil and Portugal.</li>
+  <li style="margin-bottom: 12px;">🔵 <strong>Blue:</strong> Trust and credibility in both markets. Brazil's sky and ocean associations make blue particularly resonant — it's used by major Brazilian banks (Bradesco, Itaú, Caixa) and tech companies.</li>
+  <li style="margin-bottom: 12px;">⚫ <strong>Black and neutral tones (Portugal):</strong> European Portuguese design tends toward more muted, sophisticated palettes — closer to French or Spanish design conventions than Brazilian vibrancy.</li>
+</ul>
+{% endblock %}
+
+{% block section_3_2 %}
+<p>
+  Portuguese uses the Latin alphabet with accented characters: ã, â, á, à, é, ê, í, ó, ô, õ, ú, ç — plus the unique Brazilian nasal vowels (ã, õ). Standard Latin web fonts support Portuguese natively.
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-family: "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
+</div>
+<p>
+  "Inter" and "Roboto" are both widely used for Brazilian web products — Roboto in particular feels native to Brazilian users through its association with Google's Android and Chrome products, which dominate the Brazilian market. Ensure your font files include the full Latin Extended-A character set to correctly render all Portuguese accented characters.
+</p>
+<p>
+  Body text at 16px, line-height 1.6–1.8. Portuguese sentences tend to be longer than English — similar to Spanish, the grammatical structure adds articles, gendered adjectives, and verb conjugations that expand text length. Watch for button overflow and narrow column truncation.
+</p>
+{% endblock %}
+
+{% block section_3_3 %}
+<p>
+  Brazilian web design has its own distinctive aesthetic that blends international trends with local sensibilities:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Vibrant, energetic visuals:</strong> Brazilian visual culture embraces color, movement, and warmth. Static, overly minimalist pages can feel cold. Photography featuring real people in relatable situations outperforms product-only imagery.</li>
+  <li><strong>WhatsApp CTA prominence:</strong> The WhatsApp button is so standard in Brazilian web design that its absence is noticed. It's typically displayed as a floating green button — the green matches WhatsApp's brand color and is universally recognized by Brazilian users.</li>
+  <li><strong>Trust signals for e-commerce:</strong> Brazilian online shoppers have historically been cautious about e-commerce fraud — trust seals (Reclame Aqui rating, Ebit/Nielsen certification, SSL badge) are prominently displayed on Brazilian e-commerce sites and genuinely influence conversion.</li>
+  <li><strong>Portuguese (Portugal) design:</strong> Closer to Spanish and French design conventions — clean, Mediterranean aesthetic, restrained color palette. Heritage and tradition carry more weight as design signals in Portugal than in Brazil.</li>
+</ul>
+{% endblock %}
+
+{% block section_4_1 %}
+<p>
+  Brazilian contact and communication culture centers on WhatsApp more than almost any other market in the world:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>WhatsApp Business (Brazil):</strong> Brazil has the highest WhatsApp penetration of any country — over 99% of smartphone users. Businesses use WhatsApp for customer service, sales, support, and follow-up. WhatsApp Business API enables catalog browsing, automated replies, and multi-agent customer service at scale. A floating WhatsApp button is the highest-converting CTA for any Brazilian B2C website.</li>
+  <li><strong>Instagram Direct (Brazil):</strong> Instagram is one of the most-used apps in Brazil. For consumer brands, Instagram DM is a common secondary contact channel alongside WhatsApp.</li>
+  <li><strong>Phone contact:</strong> A Brazilian phone number (+55) builds trust — particularly outside major cities, where consumers are more likely to call before purchasing. Virtual Brazilian numbers are available through Twilio and similar providers.</li>
+  <li><strong>Portugal — email and forms:</strong> European Portuguese business culture uses email more formally. A professional contact form with a response time commitment is the standard B2B approach in Portugal.</li>
+</ul>
+{% endblock %}
+
+{% block section_4_2 %}
+<p>
+  Brazil is a <strong>mobile-first market</strong> — approximately 80% of Brazilian internet access is via smartphone, with many users in smaller cities and rural areas using mobile as their sole internet device. The dominant device is mid-range Android (Samsung Galaxy A-series and similar).
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Test on mid-range Android:</strong> Performance on a Samsung Galaxy A-series device on a 4G connection is your real-world baseline for much of Brazil outside São Paulo and Rio. Pages that load well on flagship devices may be painfully slow on mid-range hardware.</li>
+  <li><strong>Page weight:</strong> Keep pages under 1MB where possible. Brazilian mobile data plans are more expensive relative to income than in developed markets — users are sensitive to pages that consume excessive data.</li>
+  <li><strong>WhatsApp click-to-chat on mobile:</strong> <code>https://wa.me/55[number]</code> links open WhatsApp directly. This is your primary CTA for Brazilian mobile users — make the button large, floating, and always visible.</li>
+  <li><strong>Pix payment integration:</strong> For e-commerce, Pix (Brazil's instant payment system) is now the most used payment method in Brazil — far surpassing credit card and boleto in transaction volume. Any checkout targeting Brazilian customers must support Pix.</li>
+</ul>
+{% endblock %}
+
+{% block section_5 %}
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Have you chosen Brazilian (pt-BR) or European (pt-PT) Portuguese and set the correct <code>lang</code> attribute — with separate hreflang if serving both?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Is a WhatsApp Business button prominently displayed as the primary contact CTA for Brazilian audiences?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Is the site hosted in São Paulo (or served via CDN with a São Paulo PoP) for Brazil-targeting websites?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>If collecting data from Brazilian users, have you implemented an LGPD-compliant privacy policy in Portuguese?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Does the site load quickly on a mid-range Android device on a Brazilian 4G connection?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>For e-commerce: does the checkout support Pix and/or boleto bancário for Brazilian customers?</span>
+  </li>
+</ul>
+<p>
+  Managing the Brazil vs. Portugal variant split, LGPD compliance, and WhatsApp-first CTA design are the key complexity drivers for Portuguese-language websites. Leap handles the localization infrastructure so you can focus on market entry — not configuration.
+</p>
+{% endblock %}

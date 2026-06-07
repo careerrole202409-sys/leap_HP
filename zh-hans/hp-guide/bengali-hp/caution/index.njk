@@ -1,0 +1,199 @@
+---
+layout: base.njk
+title: 孟加拉语网站建设完全指南
+target_lang: 孟加拉语
+parent_url: /zh-hans/hp-guide/bengali-hp/
+thumbnail: "/assets/images/guide-bengali.jpg"
+---
+
+{% extends "guide-caution.njk" %}
+
+{% block section_0 %}
+<p>
+  孟加拉语是全球母语使用者排名第七的语言，约 2.3 亿人口以孟加拉语为母语，主要分布在孟加拉国和印度西孟加拉邦（加尔各答）。对中国企业而言，孟加拉国是重要的纺织品和制造业合作伙伴 —— 中国是孟加拉国最大的贸易伙伴，双边往来在棉纱、机械、化工原料和基础设施领域规模可观，且孟加拉国正处于数字化高速发展期，互联网和移动支付普及率快速提升。<br>
+  构建孟加拉语网站的核心挑战在于：<strong>孟加拉文（Bengali script）是一套独立的婆罗米系文字</strong>，对字体选择和文字渲染有特殊要求；孟加拉国和西孟加拉邦（印度）在文化背景、支付习惯和社交平台使用上存在显著差异；此外，孟加拉国的数字受众绝大多数通过移动端上网，且价格敏感性高。<br>
+  本指南将系统梳理构建有效的孟加拉语网站所必须了解的关键要素。
+</p>
+{% endblock %}
+
+{% block section_1_1 %}
+<p>
+  孟加拉文脚本是孟加拉语网站技术实现的核心挑战，与拉丁字母网站有根本性差异：
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>孟加拉文字符集：</strong>孟加拉文包含 11 个元音字母、39 个辅音字母，以及多种元音附标（matra）和合字（conjuncts），需要专门的 OpenType 字体来正确渲染字符的组合规则。</li>
+  <li><strong>推荐字体：</strong>
+    <ul style="list-style: circle; margin-left: 16px; margin-top: 8px;">
+      <li><strong>Noto Sans Bengali：</strong>Google Noto 系列的孟加拉文变体，覆盖完整字符集，渲染稳定，是最安全的选择。</li>
+      <li><strong>Hind Siliguri：</strong>专为数字阅读优化的孟加拉文字体，在屏幕上清晰易读，适合正文。</li>
+      <li><strong>Tiro Bangla：</strong>高质量的孟加拉文字体，适合需要精细排版的场合。</li>
+    </ul>
+  </li>
+  <li><strong>孟加拉国与西孟加拉邦（印度）的地区差异：</strong>两地使用的孟加拉语在标准书面形式上高度一致，但存在若干词汇和表达差异。面向孟加拉国受众的内容，应避免使用主要在西孟加拉邦流通的地区性表达。</li>
+  <li><strong>lang 属性：</strong>设置 <code>&lt;html lang="bn"&gt;</code>（通用孟加拉语）或 <code>lang="bn-BD"</code>（孟加拉国）/ <code>lang="bn-IN"</code>（印度西孟加拉邦）。</li>
+</ul>
+{% endblock %}
+
+{% block section_1_2 %}
+<p>
+  孟加拉国互联网环境基本开放，但有若干重要的技术和市场特征须了解：
+</p>
+<div style="background:#fff4f4; padding:16px; border-radius:8px; border:1px solid #f9a8a8; margin-bottom:24px;">
+  <p style="font-weight:bold; color:#c53030; margin-bottom:8px;">❌ 孟加拉国市场常见技术问题</p>
+  <ul style="list-style:none; padding:0; margin:0;">
+    <li style="margin-bottom:8px;">· 孟加拉文字体未加载 —— 浏览器回退到操作系统默认字体，在低端安卓设备上渲染质量差</li>
+    <li style="margin-bottom:8px;">· 未集成 bKash 或 Nagad —— 孟加拉国最主流的移动支付方式，不集成意味着放弃大多数本地支付场景</li>
+    <li>· 页面在低端安卓设备上加载缓慢 —— 孟加拉国大量用户使用低价安卓手机，网络速度较慢</li>
+  </ul>
+</div>
+<p>
+  孟加拉国的互联网基础设施在快速改善，但在达卡以外的城市和农村地区，3G 网络依然是主流，4G 覆盖不均匀。面向孟加拉国受众的网站，页面轻量化（控制在 500KB–1MB 以内）和渐进式加载策略是用户体验的基础保障。
+</p>
+{% endblock %}
+
+{% block section_1_3 %}
+<p>
+  孟加拉国的数字法规体系仍在发展阶段，以下是最重要的合规考量：
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>《数字安全法》（DSA，2018，现修订为《网络安全法》）：</strong>孟加拉国的《数字安全法》范围宽泛，包含对"负面影响国家统一"或"损害宗教感情"内容的定义模糊的条款，已被用于起诉新闻记者和批评者。商业网站通常不会触碰这些边界，但须确保内容不含任何政治批评或宗教敏感内容。</li>
+  <li><strong>数据保护（无综合性立法）：</strong>孟加拉国目前没有类似 GDPR 的综合数据保护法，但政府正在起草相关立法。建议现在就建立基本的隐私政策，说明数据收集方式和使用目的。</li>
+  <li><strong>孟加拉国银行监管（支付）：</strong>向孟加拉国消费者提供在线支付须使用在孟加拉银行（Bangladesh Bank）授权下运营的支付网关。bKash、Nagad 和 Rocket 是主要的移动金融服务（MFS）提供商，是孟加拉国电商的必备支付集成。</li>
+  <li><strong>西孟加拉邦（印度）：</strong>适用印度数字法律（见印地语/马拉地语指南），包括 DPDP 2023 和 RBI 的支付规定，与孟加拉国完全独立。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_1 %}
+<p>
+  孟加拉国数字受众有若干鲜明特征，对内容策略有直接影响：
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Facebook 是最重要的数字平台：</strong>在孟加拉国，Facebook 的重要性远超其在大多数其他国家的地位 —— Facebook 是孟加拉国最主要的新闻来源、社交沟通渠道和商业发现平台，活跃度极高。许多孟加拉国中小企业将 Facebook 主页作为主要的数字存在（而非独立网站）。拥有活跃的 Facebook 主页并链接到网站，对孟加拉国市场的可信度建立至关重要。</li>
+  <li><strong>价格透明度是优先级：</strong>孟加拉国消费者的价格敏感性很高，隐藏价格或将定价隐藏在"询价"后面会造成强烈的不信任感。即使是高端产品，也应至少提供起始价格或价格区间。</li>
+  <li><strong>孟加拉语内容与英语的平衡：</strong>孟加拉国受过教育的城市受众（达卡）习惯于孟加拉语与英语混用，尤其是技术性词汇。面向大众市场，孟加拉语是首选语言；面向企业和受过高等教育的受众，英语内容也被普遍接受。</li>
+  <li><strong>伊斯兰文化的影响：</strong>孟加拉国约 90% 的人口是穆斯林，伊斯兰文化对消费偏好和内容接受度有重要影响。避免涉及饮酒、猪肉或其他被视为不符合伊斯兰规范的内容；斋月期间的特别活动对孟加拉国消费者有特殊意义。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_2 %}
+<p>
+  <strong>Google 在孟加拉国约占 95% 的搜索份额</strong>，是主导性平台。孟加拉语 SEO 的主要考量：
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>孟加拉文与英语混合的搜索习惯：</strong>孟加拉国用户同时使用孟加拉文字符和英语（或拼音化孟加拉语）进行搜索。关键词研究须覆盖两种形式：标准孟加拉文字符和用罗马字母拼写的孟加拉语（称为 Banglish），尤其是年轻用户大量使用 Banglish 搜索。</li>
+  <li><strong>孟加拉文字符 URL 的考量：</strong>与泰文类似，孟加拉文 URL 在编码后会变得极长，建议使用英语或 Banglish 作为 URL slug。</li>
+  <li><strong>移动端搜索主导：</strong>孟加拉国超过 85% 的搜索来自移动端，Google 的移动优先索引对孟加拉国网站的排名影响尤为显著。移动端页面速度（Google PageSpeed Insights 分数）是 SEO 的关键因素。</li>
+  <li><strong>YouTube 内容的潜力：</strong>孟加拉语 YouTube 内容正在快速增长，孟加拉语教程和产品评测视频有可观的搜索流量。视频 SEO 是孟加拉国市场的增量流量来源。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_3 %}
+<p>
+  孟加拉国的互联网基础设施以达卡为中心，服务器选址对访问速度有实质影响：
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>新加坡（最常用选择）：</strong>AWS 新加坡（ap-southeast-1）是目前面向孟加拉国受众最常用的托管位置，从新加坡到达卡的延迟通常在 40–60ms 以内，对于大多数网站场景是可接受的。</li>
+  <li><strong>印度（孟买或加尔各答方向）：</strong>AWS 孟买（ap-south-1）在地理上更接近孟加拉国，延迟略低。若同时服务西孟加拉邦（印度）受众，孟买是更平衡的选择。</li>
+  <li><strong>CDN 的重要性：</strong>Cloudflare 在孟加拉国有存在节点，使用 CDN 能将静态资源的加载速度大幅提升，对轻量化页面体验尤为重要。</li>
+</ul>
+<p>
+  域名方面，<code>.com.bd</code> 是孟加拉国的常见商业域名，传递本地存在感，但注册通常需要孟加拉国法人实体。外国企业通常使用 <code>.com</code>，同样被接受。
+</p>
+{% endblock %}
+
+{% block section_3_1 %}
+<p>
+  孟加拉国视觉设计受到南亚文化传统和快速崛起的本土数字品牌的双重影响：
+</p>
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px;">🟢 <strong>绿色：</strong>孟加拉国国旗色，具有强烈的国家认同联想。绿色在孟加拉国商业品牌中广泛使用，尤其在金融、农业和消费品领域。bKash（移动支付）的粉色是鲜明例外，体现了孟加拉国数字品牌也接受大胆的颜色创新。</li>
+  <li style="margin-bottom: 12px;">🔴 <strong>红色：</strong>孟加拉国国旗的太阳红色，在民族节庆（独立日、语言烈士纪念日）场景中有强烈的文化共鸣。红色也常用于促销和紧迫感 CTA。</li>
+  <li style="margin-bottom: 12px;">🟠 <strong>橙色与暖色系：</strong>活力和亲和力，在孟加拉国的零售、电商和消费品牌中广泛使用。</li>
+  <li style="margin-bottom: 12px;">🔵 <strong>蓝色：</strong>信任和可靠性，在孟加拉国银行（如孟加拉国银行官方蓝色）和 B2B 服务中常见。</li>
+</ul>
+{% endblock %}
+
+{% block section_3_2 %}
+<p>
+  孟加拉文字体的正确加载是孟加拉语网站最核心的排版技术要求：
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-family: "Noto Sans Bengali", "Hind Siliguri", sans-serif;<br><br>
+  /* 英文内容的回退字体 */<br>
+  font-family: "Inter", "Roboto", "Noto Sans Bengali", "Hind Siliguri", sans-serif;
+</div>
+<p>
+  孟加拉文字符与天城文类似，在垂直方向上比拉丁字符占据更多空间，元音附标（matra）位于基线字符的上方或下方。行高须设置为 1.8–2.0，以避免相邻行的字符标记重叠。
+</p>
+<p>
+  正文字号建议 16–18px，在低分辨率的低端安卓设备上更大的字号能显著改善孟加拉文的可读性。务必在实际低端设备上测试字体渲染效果。
+</p>
+{% endblock %}
+
+{% block section_3_3 %}
+<p>
+  孟加拉国数字设计受到 Facebook 主导的社交文化和快速崛起的本土电商平台的影响：
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>移动端原生设计是基础：</strong>孟加拉国超过 90% 的互联网用户通过手机上网，桌面端的重要性极低。网站须从移动端出发设计，而非做桌面设计的响应式适配。</li>
+  <li><strong>简洁直接的产品展示：</strong>清晰的产品图片、规格说明和价格是孟加拉国电商用户最核心的决策信息，复杂的动效或视频背景在低网速环境下适得其反。</li>
+  <li><strong>Facebook 风格的可信度信号：</strong>由于许多孟加拉国用户通过 Facebook 了解品牌，网站上展示 Facebook 粉丝数量和评价，是建立跨平台可信度的有效手段。</li>
+  <li><strong>避免宗教敏感视觉：</strong>清真寺、《古兰经》内容等宗教图像须以庄重的方式使用，避免与商业促销内容混排，否则会被孟加拉国穆斯林受众视为不尊重。</li>
+</ul>
+{% endblock %}
+
+{% block section_4_1 %}
+<p>
+  孟加拉国的联系偏好高度集中于 Facebook 和移动端：
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Facebook Messenger 是核心联系渠道：</strong>在孟加拉国，Facebook Messenger 是企业与用户沟通最主流的渠道，大量消费者通过 Facebook Messenger 进行售前咨询、下单和售后服务。在网站集成"发消息到 Facebook"的入口，比联系表单更符合孟加拉国用户的沟通习惯。</li>
+  <li><strong>WhatsApp 使用率持续增长：</strong>近年来 WhatsApp 在孟加拉国城市受众中的使用率在快速提升，可作为 Facebook Messenger 之外的补充联系渠道。</li>
+  <li><strong>bKash 用于支付确认：</strong>bKash 不仅是支付工具，也是许多孟加拉国小企业与客户沟通收款的方式 —— 客户会通过 bKash 转账并发送截图确认，这是当地的标准 B2C 交易模式之一。</li>
+  <li><strong>电话：</strong>对于较大金额的 B2C 购买，本地电话号码（+880）仍是建立信任的重要信号。</li>
+</ul>
+{% endblock %}
+
+{% block section_4_2 %}
+<p>
+  孟加拉国是南亚移动优先程度最高的市场之一 —— <strong>超过 90% 的互联网流量来自移动端</strong>，大量用户只通过手机上网。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>低端安卓设备测试：</strong>孟加拉国主流设备是 1,000–3,000 元人民币价位的安卓手机（Symphony、Walton 等本土品牌，以及小米、三星入门款），须在这类 1–2GB RAM 设备上测试关键用户流程。</li>
+  <li><strong>bKash / Nagad 移动支付集成：</strong>bKash 是孟加拉国最大的移动金融服务平台，覆盖孟加拉国约 5,000 万以上的活跃用户。电商结账必须集成 bKash，Nagad（邮政局旗下）是第二重要的移动支付选项。</li>
+  <li><strong>轻量化页面是最高优先级：</strong>孟加拉国移动数据费用相对收入依然偏高，加上网络速度在达卡以外地区较慢，目标页面须尽量控制在 500KB–1MB 以内，使用 WebP 格式图片，并延迟加载非关键资源。</li>
+  <li><strong>SMS 在部分场景依然有效：</strong>在孟加拉国，订单确认和物流通知通过 SMS 发送仍是标准做法，尤其面向非智能手机用户或网络不稳定地区的用户。</li>
+</ul>
+{% endblock %}
+
+{% block section_5 %}
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>是否已加载支持孟加拉文的字体（如 Noto Sans Bengali 或 Hind Siliguri），并将行高设置为 1.8 或以上？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>是否已集成 bKash 和/或 Nagad 作为移动支付方式（孟加拉国市场必须项）？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>是否已在网站集成 Facebook Messenger 联系入口，以适应孟加拉国用户的主流沟通习惯？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>网站是否在低端安卓设备（1–2GB RAM）+ 3G 网络环境下完成了性能测试，页面大小是否控制在 1MB 以内？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>内容是否经过审查，确保符合孟加拉国的伊斯兰文化背景，避免触犯宗教敏感性？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>关键词研究是否同时覆盖了孟加拉文字符和 Banglish（罗马字母拼写孟加拉语）两种搜索形式？</span>
+  </li>
+</ul>
+<p>
+  孟加拉国市场的孟加拉文字体管理、bKash 支付集成、Facebook 中心化的数字生态和极度移动化的用户习惯，构成了一套对外国品牌而言陌生但可攻克的挑战。Leap 处理本地化基础设施，让你专注于真正打动孟加拉国受众。
+</p>
+{% endblock %}

@@ -1,0 +1,192 @@
+---
+layout: base.njk
+title: Complete Guide to Building an Effective Hindi Website
+target_lang: Hindi
+parent_url: /en/hp-guide/hindi-hp/
+thumbnail: "/assets/images/guide-hindi.jpg"
+---
+
+{% extends "guide-caution.njk" %}
+
+{% block section_0 %}
+<p>
+  Hindi is the most widely spoken language in India, with approximately 600 million speakers — making it the third most spoken language in the world. As the official language of the Indian government and the primary language of the Hindi Belt (covering states including Uttar Pradesh, Bihar, Rajasthan, Madhya Pradesh, and Delhi), Hindi reaches the largest and most commercially significant segment of India's 1.4 billion population.<br>
+  India's digital economy is one of the world's fastest-growing, with a booming middle class, rapidly expanding internet access, and a government actively promoting digital services. But building an effective Hindi website requires understanding India's unique linguistic landscape, mobile-first infrastructure, and specific trust signals that differ from Western markets.<br>
+  This guide covers what you need to know to build a Hindi-language website that gets found, earns trust, and converts in India's market.
+</p>
+{% endblock %}
+
+{% block section_1_1 %}
+<p>
+  Hindi's linguistic situation in India is complex. While it's the most widely spoken single language, India has 22 official languages and hundreds of regional languages — and attitudes toward Hindi vary significantly by region:
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>Standard Hindi (Khari Boli):</strong> The formal written standard used in government, media, and education. Uses Devanagari script. The appropriate register for business and professional web content.</li>
+  <li><strong>Hinglish (Hindi + English mixing):</strong> The everyday reality of most urban Hindi speakers — particularly in metro cities like Delhi, Mumbai, and Jaipur. Brands targeting younger, urban audiences often use Hinglish in marketing copy. Purely formal Hindi can feel stiff or distant to this demographic.</li>
+  <li><strong>Regional sensitivity:</strong> Hindi is not spoken (or enthusiastically welcomed) everywhere in India. South Indian states — Tamil Nadu, Karnataka, Kerala, Andhra Pradesh, Telangana — have distinct languages and strong regional identities. A Hindi-only website may be counterproductive for these markets. Consider English as a parallel option for pan-India reach.</li>
+</ul>
+<p>
+  Set <code>&lt;html lang="hi"&gt;</code> for Hindi content. Hindi uses the Devanagari script — script rendering requires Devanagari-supporting fonts, not standard Latin fonts.
+</p>
+{% endblock %}
+
+{% block section_1_2 %}
+<p>
+  India operates an open internet environment — Google, Meta, WhatsApp, and standard web platforms function normally. The primary technical considerations are around performance for India's mobile-dominated, bandwidth-constrained market:
+</p>
+<div style="background:#fff4f4; padding:16px; border-radius:8px; border:1px solid #f9a8a8; margin-bottom:24px;">
+  <p style="font-weight:bold; color:#c53030; margin-bottom:8px;">❌ Common performance issues for India-facing websites</p>
+  <ul style="list-style:none; padding:0; margin:0;">
+    <li style="margin-bottom:8px;">· Heavy pages (3MB+) that load slowly on 4G connections in Tier 2 and Tier 3 cities</li>
+    <li style="margin-bottom:8px;">· Servers outside India (US or Europe) with 150–300ms round-trip latency adding to perceived load time</li>
+    <li>· Devanagari font files loaded from external CDNs without subsetting — full Devanagari font files can be 1MB+</li>
+  </ul>
+</div>
+<p>
+  India has a bimodal internet landscape: fast 4G/5G in metros with cheap Jio data plans, and patchy, slower connections in rural areas and smaller towns. Design for the slower end of the spectrum — sub-1MB pages, lazy-loaded images, and minimal third-party scripts.
+</p>
+{% endblock %}
+
+{% block section_1_3 %}
+<p>
+  India's data protection framework is relatively recent but has significant implications:
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>Digital Personal Data Protection Act (DPDPA), 2023:</strong> India's comprehensive data protection law, enacted in 2023. Requires a lawful basis (primarily consent) for processing personal data, a clear privacy policy, and data breach notification obligations. The Data Protection Board of India (DPBI) will oversee enforcement once implementing rules are finalized.</li>
+  <li><strong>IT Act and IT Rules:</strong> India's existing Information Technology Act (2000) and its Rules (2021) impose obligations on social media intermediaries and digital businesses, including grievance redressal mechanisms and content moderation obligations for larger platforms.</li>
+  <li><strong>E-commerce regulations:</strong> India's Consumer Protection (E-Commerce) Rules require e-commerce entities to display clear information about return policies, grievance officer contact details, and country of origin for products.</li>
+</ul>
+{% endblock %}
+
+{% block section_2_1 %}
+<p>
+  Content strategy for Hindi-speaking Indian audiences requires understanding both the aspiration and the practicality that drives Indian digital consumption:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Value-conscious messaging:</strong> Indian consumers across income brackets are highly value-conscious. Price comparisons, EMI (equated monthly installment) availability, and "best deal" positioning are powerful motivators. Explicit value communication outperforms abstract benefit messaging.</li>
+  <li><strong>Trust through local presence:</strong> An Indian address, Indian phone number, and references to known Indian brands or regions significantly boost trust. Foreign businesses without Indian presence are viewed with more caution.</li>
+  <li><strong>WhatsApp as primary contact:</strong> WhatsApp dominates Indian digital communication — both personal and business. A WhatsApp Business button is essential for any consumer-facing Hindi website. Many Indian SMBs run their entire customer communication through WhatsApp.</li>
+  <li><strong>Hindi keyword research:</strong> Hindi search queries on Google India have grown dramatically. Use Google Keyword Planner filtered to India and Hindi language — search intent and terminology differ significantly from English-language Indian searches.</li>
+</ul>
+{% endblock %}
+
+{% block section_2_2 %}
+<p>
+  <strong>Google dominates Indian search with approximately 98% market share</strong>. Google has made significant investments in Hindi and Indian language search — Google Search supports Hindi voice search, transliteration, and is highly optimized for Indian language queries.
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Voice search in Hindi:</strong> India has high voice search adoption, driven by users whose first language is not English and who find voice input in their native language more natural. Optimizing for conversational Hindi queries is increasingly important.</li>
+  <li><strong>Google Discover:</strong> A significant traffic source for Hindi content — Google's content recommendation feed in the Google app is heavily used in India. Strong E-E-A-T signals and quality Hindi content can generate substantial Discover traffic.</li>
+  <li><strong>Transliteration searches:</strong> Many Hindi speakers search using Romanized Hindi ("kya hal hai" instead of "क्या हाल है"). Google handles this well, but having both Devanagari and Romanized keyword coverage in your content strategy is beneficial.</li>
+</ul>
+{% endblock %}
+
+{% block section_2_3 %}
+<p>
+  For India-facing websites, local hosting makes a meaningful difference in user experience:
+</p>
+<p>
+  AWS Mumbai (ap-south-1) and Google Cloud Mumbai are the primary choices for India-focused deployments, offering sub-10ms latency to most major Indian cities. A CDN with Indian PoPs (Cloudflare, Akamai, and Fastly all have Indian presence in Mumbai, Delhi, and Chennai) is the next best option.
+</p>
+<p>
+  India's DPDPA does not currently mandate data localization for most commercial use cases, though regulations are still being finalized. For government or financial sector work, local data storage requirements may apply.
+</p>
+<p>
+  Domain choice: <code>.in</code> signals Indian presence and carries a marginal SEO benefit in Google India. <code>.co.in</code> is also common for Indian businesses. <code>.com</code> is universally accepted and is what many Indian startups use.
+</p>
+{% endblock %}
+
+{% block section_3_1 %}
+<p>
+  Indian color aesthetics are rich and vibrant — festivals, spirituality, and cultural celebration create a visual culture that embraces bold, saturated colors more than many Western markets:
+</p>
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px;">🟠 <strong>Saffron / orange:</strong> A sacred color in Hinduism — associated with spirituality, courage, and auspiciousness. Appears in the Indian national flag. Powerful in wellness, spiritual, and cultural product contexts. The BJP party's saffron branding makes this color politically charged in certain contexts.</li>
+  <li style="margin-bottom: 12px;">🟢 <strong>Green:</strong> Auspiciousness, growth, and freshness. The Indian flag's green stripe and association with Islam and Sikhism give green positive connotations across religious communities.</li>
+  <li style="margin-bottom: 12px;">🔴 <strong>Red:</strong> Celebration, marriage, and prosperity in Hindu culture. Brides wear red — it's the color of auspicious beginnings. Widely effective for CTAs and promotional elements.</li>
+  <li style="margin-bottom: 12px;">🟡 <strong>Yellow/gold:</strong> Purity, learning, and prosperity. Gold is associated with Lakshmi (goddess of wealth) — gold and yellow tones work well for finance, jewelry, and premium product categories.</li>
+</ul>
+{% endblock %}
+
+{% block section_3_2 %}
+<p>
+  Hindi uses the Devanagari script — a complex abugida script that requires specialized fonts. Standard Latin fonts do not render Devanagari.
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-family: "Noto Sans Devanagari", "Hind", "Poppins", sans-serif;
+</div>
+<p>
+  "Noto Sans Devanagari" is Google's comprehensive Devanagari font — it covers all required Unicode points with clean, modern rendering. "Hind" is a purpose-built Hindi web font from Google Fonts, designed specifically for optimal on-screen readability. Both are available free via Google Fonts. When using Google Fonts for a Hindi site, use subsetting (<code>&subset=devanagari</code>) to reduce file size significantly.
+</p>
+<p>
+  Devanagari text works best at <strong>16–18px</strong> with a line-height of <strong>1.8–2.0</strong>. Devanagari characters have a distinctive top horizontal bar (मात्रा) — generous line spacing prevents these from visually colliding across lines.
+</p>
+{% endblock %}
+
+{% block section_3_3 %}
+<p>
+  Indian web design has evolved rapidly with the growth of domestic tech companies — Flipkart, Zomato, Ola, and BYJU's have set visual expectations for Indian audiences:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Vibrant, information-rich layouts:</strong> Indian e-commerce and app design tends toward dense, colorful interfaces with prominent pricing, offers, and multiple CTA options. Minimalism can feel incomplete to Indian audiences accustomed to Flipkart and Amazon India's detailed product pages.</li>
+  <li><strong>Festive campaign culture:</strong> India's festival calendar — Diwali, Holi, Eid, Onam, Durga Puja — creates major e-commerce peaks. Seasonal campaign designs that acknowledge major festivals are warmly received and expected from businesses serving the Indian market.</li>
+  <li><strong>Trust and certification:</strong> Government certification marks (BIS, FSSAI for food, IRDAI for insurance) and verified seller badges carry real weight. Display any applicable certifications prominently.</li>
+  <li><strong>Mobile-first information hierarchy:</strong> With mobile as the primary access device, information hierarchy must work on a 5–6 inch screen — fold-aware design, sticky CTAs, and single-column layouts for key content.</li>
+</ul>
+{% endblock %}
+
+{% block section_4_1 %}
+<p>
+  Contact and communication in the Indian market is WhatsApp-dominant for consumer contexts, with distinct expectations for different purchase values:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>WhatsApp Business:</strong> India has over 500 million WhatsApp users. For any consumer-facing business, WhatsApp is the primary contact channel. WhatsApp Business API allows catalog browsing, automated responses, and multi-agent support — essential infrastructure for any significant Indian consumer business.</li>
+  <li><strong>Missed call feature:</strong> A uniquely Indian phenomenon — many Indian users give a "missed call" (call and hang up before connecting) as a free signal of interest. Some Indian businesses offer a "give a missed call to [number]" CTA that auto-enrolls the user in a follow-up call. This convention is specifically relevant for lower-income tier audiences.</li>
+  <li><strong>Phone contact:</strong> An Indian phone number (+91) and visible contact availability builds significant trust. Indian consumers frequently call before purchasing for mid-to-high value items.</li>
+  <li><strong>Hindi-language customer support:</strong> For mass-market products, Hindi customer support availability is a meaningful differentiator — many users prefer support in their first language.</li>
+</ul>
+{% endblock %}
+
+{% block section_4_2 %}
+<p>
+  India is overwhelmingly mobile-first — <strong>approximately 80–85% of Indian internet traffic is from smartphones</strong>. The majority of new Indian internet users access the web exclusively through mobile, with low-cost Android devices and Jio's affordable data plans driving adoption.
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Low-end Android testing:</strong> Entry-level Android devices (2GB RAM, MediaTek processors) represent a large share of the Indian market. Sites that load smoothly on a Redmi or Realme entry-level device in "Lite" Chrome will work for the full Indian market.</li>
+  <li><strong>Data sensitivity:</strong> Despite cheap Jio plans, Indian users track data usage carefully. Lazy loading, WebP images, and minimal JavaScript are expected for mobile-optimized Indian websites.</li>
+  <li><strong>UPI and payment integration:</strong> UPI (Unified Payments Interface) is India's dominant digital payment method — far ahead of credit cards. Any e-commerce checkout targeting India must support UPI. PhonePe, Google Pay, and Paytm are the dominant UPI apps.</li>
+  <li><strong>WhatsApp click-to-chat:</strong> Large, persistent WhatsApp floating buttons are the standard Indian mobile CTA — green, recognizable, and expected.</li>
+</ul>
+{% endblock %}
+
+{% block section_5 %}
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Are you using a Devanagari-optimized font (Noto Sans Devanagari or Hind) with appropriate line-height (1.8–2.0)?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Is a WhatsApp Business button prominently displayed as the primary contact CTA?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Is the site hosted in Mumbai (or served via CDN with Indian PoPs) for acceptable load times across India?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Does the site load in under 3 seconds on a mid-range Android device on a 4G connection?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>For e-commerce: does the checkout support UPI as a payment method?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Have you verified that the Devanagari font is subsetted to reduce file size for mobile users?</span>
+  </li>
+</ul>
+<p>
+  India's scale, linguistic diversity, and mobile-first infrastructure create both enormous opportunity and real technical complexity. Leap handles Devanagari rendering, mobile optimization, and localization configuration automatically — so your Hindi site works correctly from the first day.
+</p>
+{% endblock %}
