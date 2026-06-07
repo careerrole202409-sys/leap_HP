@@ -1,0 +1,385 @@
+---
+layout: base.njk
+title: 多语言化・本地化 | Leap
+description: 翻译只是起点。与 Wovn、Autolingual 等工具不同，Leap 为每种语言独立优化设计、CTA 与 SEO 策略，自动生成真正打动本地用户的网站。
+---
+
+<!-- 第一部分：Hero -->
+<section class="section pt-xl pb-xl bg-white" style="overflow: hidden;">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; align-items: center; gap: 40px;" class="grid-1-mobile mb-2xl">
+            <div>
+                <p class="font-bold mb-sm" style="color: var(--color-primary-start); letter-spacing: 0.1em; font-size: 0.9rem;">
+                    多语言化・本地化服务
+                </p>
+                <h1 class="mb-lg" style="font-size: clamp(1.8rem, 3.5vw, 3rem); line-height: 1.3; letter-spacing: -0.02em;">
+                    <span style="display: inline-block; white-space: nowrap;">不止翻译。</span><br>
+                    <span style="display: inline-block; white-space: nowrap;">为每种语言打造专属网站。</span>
+                </h1>
+                <p class="text-lg text-secondary mb-xl" style="line-height: 1.8;">
+                    与 Wovn、Autolingual 等翻译工具不同，Leap 不只替换文字——它为每种语言独立优化设计、CTA 与 SEO。通过分析当地竞品，自动生成真正打动本地用户的网站。
+                </p>
+            </div>
+            <div style="position: relative;">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780199379/f2e65838-a2f4-4a3c-8bc4-0666632aad0b.png" alt="Leap 多语言化・本地化" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid var(--color-border);">
+            </div>
+        </div>
+        <div class="text-center mt-xl pt-lg">
+            <div style="display: flex; gap: 24px; flex-wrap: wrap; justify-content: center;">
+                <a href="/{{ locale }}/about/#contact" class="btn font-bold" style="font-size: 1.2rem; padding: 1.2rem 4rem; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); color: white; border: none; border-radius: 50px; box-shadow: 0 8px 16px rgba(200, 16, 46, 0.2);">申请演示 &rarr;</a>
+                <a href="https://app.leap.site" class="btn font-bold" style="font-size: 1.2rem; padding: 1.2rem 4rem; background-color: white; color: var(--color-primary-start, #C8102E); border: 2px solid var(--color-primary-start, #C8102E); border-radius: 50px;">免费体验 &rarr;</a>
+            </div>
+            <p class="text-sm text-light mt-md">* 无需绑定信用卡即可体验免费套餐。</p>
+        </div>
+    </div>
+</section>
+
+<!-- 第二部分：Leap 与翻译工具的区别 -->
+<section class="section bg-beige">
+    <div class="container">
+        <h2 class="text-center mb-sm">Leap 与翻译工具的区别</h2>
+        <p class="text-center text-secondary mb-2xl" style="font-size: 0.95rem; max-width: 560px; margin-left: auto; margin-right: auto;">
+            现有的多语言化工具只是替换文字。Leap 实现的是「语言不同，网站也随之改变」。
+        </p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 860px; margin: 0 auto;" class="grid-1-mobile">
+            <!-- 翻译工具 -->
+            <div class="card" style="border: 2px solid var(--color-border); background: #fafafa;">
+                <div class="mb-lg text-center">
+                    <span style="font-size: 0.8rem; font-weight: 700; color: #9ca3af; letter-spacing: 0.1em; text-transform: uppercase;">翻译工具（Wovn・Autolingual 等）</span>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">文字翻译</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #ef4444; font-weight: 700; flex-shrink: 0;">✗</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">按语言定制设计</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #ef4444; font-weight: 700; flex-shrink: 0;">✗</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">按语言定制 CTA</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #ef4444; font-weight: 700; flex-shrink: 0;">✗</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">本地语言 SEO（多语言博客）</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #ef4444; font-weight: 700; flex-shrink: 0;">✗</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">参考当地竞品进行本地化</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Leap -->
+            <div class="card" style="border: 2px solid var(--color-primary-start); background: #fff5f5;">
+                <div class="mb-lg text-center">
+                    <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-primary-start); letter-spacing: 0.1em; text-transform: uppercase;">Leap</span>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">文字翻译</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">按语言定制设计</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">按语言定制 CTA</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">本地语言 SEO（多语言博客）</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">参考当地竞品进行本地化</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第三部分：功能 01 — 按语言优化设计 -->
+<section class="section bg-white">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <div>
+                <p class="font-bold mb-sm" style="color: var(--color-primary-start); letter-spacing: 0.1em; font-size: 0.9rem;">功能 01</p>
+                <h2 class="mb-md">针对每种语言，<br>优化网站设计本身</h2>
+                <p class="mb-lg text-secondary" style="line-height: 1.8;">
+                    翻译工具只替换文字，Leap 会自动收集并分析当地竞品网站，针对每种语言调整配色、布局和字体。<br>
+                    东南亚用户偏好鲜艳配色，欧美用户青睐简洁风格——系统自动生成契合当地审美的视觉方案。
+                </p>
+                <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.5rem;">
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">自动收集并分析当地基准网站</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">按语言分别配置配色、布局和字体</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">通过 AI 对话实时微调</span>
+                    </div>
+                </div>
+                <div class="mb-xl">
+                    <a href="/{{ locale }}/about/#contact" class="link-arrow font-bold" style="color: var(--color-primary-start);">申请设计本地化演示 →</a>
+                </div>
+            </div>
+            <div class="text-center">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780199379/f2e65838-a2f4-4a3c-8bc4-0666632aad0b.png" alt="按语言优化设计" class="img-cover shadow-md rounded" style="border: 1px solid var(--color-border);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第四部分：功能 02 — 按语言定制 CTA -->
+<section class="section bg-beige">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <div class="order-1-mobile mb-xl">
+                <!-- CTA 示例 -->
+                <div style="display: flex; flex-direction: column; gap: 16px; max-width: 420px; margin: 0 auto;">
+                    <div class="card" style="padding: 1.25rem 1.5rem; border-left: 4px solid #07C160;">
+                        <p style="font-size: 0.75rem; font-weight: 700; color: #9ca3af; margin-bottom: 0.4rem;">🇨🇳 中国市场</p>
+                        <p class="text-secondary" style="font-size: 0.9rem; margin-bottom: 0.75rem;">立即通过微信咨询</p>
+                        <div style="display: inline-block; background: #07C160; color: white; padding: 0.5rem 1.25rem; border-radius: 6px; font-size: 0.85rem; font-weight: 700;">
+                            微信咨询 →
+                        </div>
+                    </div>
+                    <div class="card" style="padding: 1.25rem 1.5rem; border-left: 4px solid #1877F2;">
+                        <p style="font-size: 0.75rem; font-weight: 700; color: #9ca3af; margin-bottom: 0.4rem;">🇺🇸 英语市场</p>
+                        <p class="text-secondary" style="font-size: 0.9rem; margin-bottom: 0.75rem;">Book a free consultation</p>
+                        <div style="display: inline-block; background: #1877F2; color: white; padding: 0.5rem 1.25rem; border-radius: 6px; font-size: 0.85rem; font-weight: 700;">
+                            Book a Call →
+                        </div>
+                    </div>
+                    <div class="card" style="padding: 1.25rem 1.5rem; border-left: 4px solid var(--color-primary-start);">
+                        <p style="font-size: 0.75rem; font-weight: 700; color: #9ca3af; margin-bottom: 0.4rem;">🇯🇵 日本市场</p>
+                        <p class="text-secondary" style="font-size: 0.9rem; margin-bottom: 0.75rem;">欢迎随时联系我们</p>
+                        <div style="display: inline-block; background: linear-gradient(90deg, var(--color-primary-start), var(--color-primary-end)); color: white; padding: 0.5rem 1.25rem; border-radius: 6px; font-size: 0.85rem; font-weight: 700;">
+                            联系我们 →
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-2-mobile">
+                <p class="font-bold mb-sm" style="color: var(--color-primary-start); letter-spacing: 0.1em; font-size: 0.9rem;">功能 02</p>
+                <h2 class="mb-md">按语言定制 CTA，<br>最大化转化率</h2>
+                <p class="mb-lg text-secondary" style="line-height: 1.8;">
+                    您是否在所有语言版本中使用同一个 CTA？针对中国用户引导至微信，欧美用户引导至日历预约，日本用户引导至表单——仅仅根据各地用户的沟通习惯调整 CTA，就能显著提升询盘数量。
+                </p>
+                <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.5rem;">
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">按语言分别设置微信、LINE、WhatsApp 等跳转链接</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">按钮文字、颜色、位置均可按语言独立配置</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">自动针对每种语言执行 A/B 测试</span>
+                    </div>
+                </div>
+                <div class="mb-xl">
+                    <a href="/{{ locale }}/about/#contact" class="link-arrow font-bold" style="color: var(--color-primary-start);">申请 CTA 优化演示 →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第五部分：功能 03 — 多语言 SEO -->
+<section class="section bg-white">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <div>
+                <p class="font-bold mb-sm" style="color: var(--color-primary-start); letter-spacing: 0.1em; font-size: 0.9rem;">功能 03</p>
+                <h2 class="mb-md">通过多语言博客，<br>自动化本地语言 SEO</h2>
+                <p class="mb-lg text-secondary" style="line-height: 1.8;">
+                    仅多语言化网站并不足以带来更多搜索流量。Leap 以当地语言关键词自动生成博客文章，并自动处理技术 SEO（包含 hreflang 标签配置），确保在 Google、百度、Naver 等各国主流搜索引擎中正确展示对应语言的页面。
+                </p>
+                <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.5rem;">
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">以当地语言关键词自动生成博客文章</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">自动设置 hreflang 标签，确保搜索引擎按语言展示正确页面</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">支持 Google、百度、Naver 等主流搜索引擎</span>
+                    </div>
+                </div>
+                <div class="mb-xl">
+                    <a href="/{{ locale }}/services/multilingual-blog" class="link-arrow font-bold" style="color: var(--color-primary-start);">了解多语言博客功能详情 →</a>
+                </div>
+            </div>
+            <div class="text-center">
+                <!-- SEO ビジュアル -->
+                <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: var(--radius-lg); padding: 2rem; border: 1px solid var(--color-border);">
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <div style="background: white; border-radius: 8px; padding: 1rem 1.25rem; display: flex; align-items: center; gap: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                            <span style="font-size: 1.2rem;">🇺🇸</span>
+                            <div style="flex: 1;">
+                                <p style="font-size: 0.75rem; color: #9ca3af; margin-bottom: 2px;">example.com/en/blog/</p>
+                                <p style="font-size: 0.85rem; font-weight: 600; color: #1a1a2e; margin: 0;">Best suppliers in Japan 2025</p>
+                            </div>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: #10b981; background: #d1fae5; padding: 2px 8px; border-radius: 20px;">SEO ✓</span>
+                        </div>
+                        <div style="background: white; border-radius: 8px; padding: 1rem 1.25rem; display: flex; align-items: center; gap: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                            <span style="font-size: 1.2rem;">🇨🇳</span>
+                            <div style="flex: 1;">
+                                <p style="font-size: 0.75rem; color: #9ca3af; margin-bottom: 2px;">example.com/zh/blog/</p>
+                                <p style="font-size: 0.85rem; font-weight: 600; color: #1a1a2e; margin: 0;">日本高品质零部件供应商</p>
+                            </div>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: #10b981; background: #d1fae5; padding: 2px 8px; border-radius: 20px;">SEO ✓</span>
+                        </div>
+                        <div style="background: white; border-radius: 8px; padding: 1rem 1.25rem; display: flex; align-items: center; gap: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                            <span style="font-size: 1.2rem;">🇰🇷</span>
+                            <div style="flex: 1;">
+                                <p style="font-size: 0.75rem; color: #9ca3af; margin-bottom: 2px;">example.com/ko/blog/</p>
+                                <p style="font-size: 0.85rem; font-weight: 600; color: #1a1a2e; margin: 0;">일본 부품 제조업체 추천</p>
+                            </div>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: #10b981; background: #d1fae5; padding: 2px 8px; border-radius: 20px;">SEO ✓</span>
+                        </div>
+                        <div style="background: white; border-radius: 8px; padding: 1rem 1.25rem; display: flex; align-items: center; gap: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                            <span style="font-size: 1.2rem;">🇪🇸</span>
+                            <div style="flex: 1;">
+                                <p style="font-size: 0.75rem; color: #9ca3af; margin-bottom: 2px;">example.com/es/blog/</p>
+                                <p style="font-size: 0.85rem; font-weight: 600; color: #1a1a2e; margin: 0;">Proveedor japonés de piezas</p>
+                            </div>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: #10b981; background: #d1fae5; padding: 2px 8px; border-radius: 20px;">SEO ✓</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第六部分：发布方式 -->
+<section class="section bg-beige">
+    <div class="container">
+        <h2 class="text-center mb-sm">两种发布方式供您选择</h2>
+        <p class="text-center text-secondary mb-2xl" style="font-size: 0.95rem; max-width: 520px; margin-left: auto; margin-right: auto;">
+            可根据您的 SEO 策略和品牌需求灵活选择网址结构。
+        </p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 800px; margin: 0 auto;" class="grid-1-mobile">
+            <!-- 子目录 -->
+            <div class="card" style="border: 2px solid var(--color-border);">
+                <div class="mb-md">
+                    <p style="font-size: 0.75rem; font-weight: 700; color: var(--color-primary-start); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;">子目录</p>
+                    <div style="background: #f3f4f6; border-radius: 6px; padding: 0.6rem 1rem; font-family: monospace; font-size: 0.9rem; color: #374151;">
+                        example.com<strong style="color: var(--color-primary-start);">/en/</strong>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.85rem;">集中域名权重，SEO 效果更佳</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.85rem;">管理与维护更为简便</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.85rem;">被众多企业用于全球化部署</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 子域名 -->
+            <div class="card" style="border: 2px solid var(--color-border);">
+                <div class="mb-md">
+                    <p style="font-size: 0.75rem; font-weight: 700; color: var(--color-primary-start); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;">子域名</p>
+                    <div style="background: #f3f4f6; border-radius: 6px; padding: 0.6rem 1rem; font-family: monospace; font-size: 0.9rem; color: #374151;">
+                        <strong style="color: var(--color-primary-start);">en.</strong>example.com
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.85rem;">每种语言可作为独立网站运营</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.85rem;">便于精准配置国家定向</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.85rem;">降低对现有网站的影响，稳步推进部署</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第七部分：HP 作成ガイドへの動線 -->
+<section class="section bg-white">
+    <div class="container">
+        <div class="card" style="background: linear-gradient(135deg, #fff5f5 0%, #fff0e8 100%); border: 1px solid #fecdd3; max-width: 860px; margin: 0 auto;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;">
+                <div>
+                    <p class="font-bold mb-sm" style="color: var(--color-primary-start); font-size: 0.85rem;">多语言建站指南</p>
+                    <h3 class="mb-sm" style="font-size: 1.4rem;">各语言建站指南，免费公开</h3>
+                    <p class="text-secondary" style="font-size: 0.9rem; line-height: 1.7; margin: 0;">
+                        我们免费发布了涵盖英语、中文、西班牙语、阿拉伯语等 16 种语言的建站要点与本地化经验指南。欢迎作为本地化工作的参考资料使用。
+                    </p>
+                </div>
+                <div style="flex-shrink: 0;">
+                    <a href="/{{ locale }}/hp-guide/" target="_blank" rel="noopener noreferrer" class="btn font-bold" style="white-space: nowrap; padding: 0.9rem 2rem; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); color: white; border: none; border-radius: 50px; font-size: 0.95rem;">
+                        查看指南 &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第八部分：服务内容一览 -->
+<section class="section bg-beige">
+    <div class="container">
+        <h2 class="text-center mb-2xl">多语言化・本地化<br>丰富的服务内容</h2>
+        <div class="grid-3" style="gap: 30px; max-width: 900px; margin: 0 auto;">
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">支持 10 种以上语言</h3><p class="text-sm text-secondary">即时生成英语、中文、西班牙语等主流语言版本网站。</p></div>
+            </div>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">按语言优化设计</h3><p class="text-sm text-secondary">参考当地竞品，自动调整配色、布局和字体。</p></div>
+            </div>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">按语言配置 CTA</h3><p class="text-sm text-secondary">针对每种语言设置最优转化路径——微信、LINE、表单等。</p></div>
+            </div>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">多语言博客自动生成</h3><p class="text-sm text-secondary">以当地语言关键词自动创作文章，持续获取搜索流量。</p></div>
+            </div>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">hreflang 与技术 SEO</h3><p class="text-sm text-secondary">正确配置各语言 URL 结构，确保搜索引擎准确识别。</p></div>
+            </div>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">支持子目录与子域名</h3><p class="text-sm text-secondary">可根据 SEO 策略灵活选择发布方式。</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "pricing.njk" %}
+
+{% include "cta1.njk" %}

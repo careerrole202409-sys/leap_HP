@@ -1,0 +1,385 @@
+---
+layout: base.njk
+title: 多言語化・ローカライズ | Leap (リープ)
+description: 翻訳だけでは届かない。Leapは言語ごとにデザイン・CTA・SEOまで丸ごとローカライズ。WovnやAutolingualとは異なり、現地仕様のサイトを言語別に自動生成します。
+---
+
+<!-- セクション1：Hero -->
+<section class="section pt-xl pb-xl bg-white" style="overflow: hidden;">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; align-items: center; gap: 40px;" class="grid-1-mobile mb-2xl">
+            <div>
+                <p class="font-bold mb-sm" style="color: var(--color-primary-start); letter-spacing: 0.1em; font-size: 0.9rem;">
+                    多言語化・ローカライズ
+                </p>
+                <h1 class="mb-lg" style="font-size: clamp(1.8rem, 3.5vw, 3rem); line-height: 1.3; letter-spacing: -0.02em;">
+                    <span style="display: inline-block; white-space: nowrap;">翻訳で終わらない。</span><br>
+                    <span style="display: inline-block; white-space: nowrap;">言語ごとに「最適化」されたサイトへ。</span>
+                </h1>
+                <p class="text-lg text-secondary mb-xl" style="line-height: 1.8;">
+                    WovnやAutolingualのような翻訳ツールとは異なり、Leapは言語ごとにデザイン・CTA・SEOまで丸ごとローカライズ。現地の競合を分析し、「刺さる」サイトを自動生成します。
+                </p>
+            </div>
+            <div style="position: relative;">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780199379/f2e65838-a2f4-4a3c-8bc4-0666632aad0b.png" alt="Leap 多言語化・ローカライズ画面" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid var(--color-border);">
+            </div>
+        </div>
+        <div class="text-center mt-xl pt-lg">
+            <div style="display: flex; gap: 24px; flex-wrap: wrap; justify-content: center;">
+                <a href="/{{ locale }}/about/#contact" class="btn font-bold" style="font-size: 1.2rem; padding: 1.2rem 4rem; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); color: white; border: none; border-radius: 50px; box-shadow: 0 8px 16px rgba(200, 16, 46, 0.2);">デモを申し込む &rarr;</a>
+                <a href="https://app.leap.site" class="btn font-bold" style="font-size: 1.2rem; padding: 1.2rem 4rem; background-color: white; color: var(--color-primary-start, #C8102E); border: 2px solid var(--color-primary-start, #C8102E); border-radius: 50px;">無料で試してみる &rarr;</a>
+            </div>
+            <p class="text-sm text-light mt-md">※クレジットカード登録不要でフリープランをお試しいただけます</p>
+        </div>
+    </div>
+</section>
+
+<!-- セクション2：翻訳ツールとLeapの違い -->
+<section class="section bg-beige">
+    <div class="container">
+        <h2 class="text-center mb-sm">翻訳ツールとLeapの違い</h2>
+        <p class="text-center text-secondary mb-2xl" style="font-size: 0.95rem; max-width: 560px; margin-left: auto; margin-right: auto;">
+            既存の多言語化ツールはテキストを置き換えるだけ。Leapは「言語が変わればサイトも変わる」を実現します。
+        </p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 860px; margin: 0 auto;" class="grid-1-mobile">
+            <!-- 翻訳ツール -->
+            <div class="card" style="border: 2px solid var(--color-border); background: #fafafa;">
+                <div class="mb-lg text-center">
+                    <span style="font-size: 0.8rem; font-weight: 700; color: #9ca3af; letter-spacing: 0.1em; text-transform: uppercase;">翻訳ツール（Wovn・Autolingual 等）</span>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">テキストの翻訳</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #ef4444; font-weight: 700; flex-shrink: 0;">✗</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">言語ごとのデザイン変更</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #ef4444; font-weight: 700; flex-shrink: 0;">✗</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">言語ごとのCTAカスタマイズ</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #ef4444; font-weight: 700; flex-shrink: 0;">✗</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">現地語SEO対策（多言語ブログ）</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #ef4444; font-weight: 700; flex-shrink: 0;">✗</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">現地競合を参考にしたローカライズ</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Leap -->
+            <div class="card" style="border: 2px solid var(--color-primary-start); background: #fff5f5;">
+                <div class="mb-lg text-center">
+                    <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-primary-start); letter-spacing: 0.1em; text-transform: uppercase;">Leap</span>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">テキストの翻訳</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">言語ごとのデザイン変更</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">言語ごとのCTAカスタマイズ</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">現地語SEO対策（多言語ブログ）</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.6rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">現地競合を参考にしたローカライズ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- セクション3：特徴① 言語ごとにデザインを変えられる -->
+<section class="section bg-white">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <div>
+                <p class="font-bold mb-sm" style="color: var(--color-primary-start); letter-spacing: 0.1em; font-size: 0.9rem;">特徴 01</p>
+                <h2 class="mb-md">言語ごとに、<br>デザインそのものを最適化</h2>
+                <p class="mb-lg text-secondary" style="line-height: 1.8;">
+                    翻訳ツールはテキストを置き換えるだけ。Leapは現地の競合サイトを自動収集・分析し、言語ごとにカラー・レイアウト・フォントを最適化します。<br>
+                    たとえば、東南アジア向けには鮮やかな配色、欧米向けにはミニマルなデザインへ——現地のトレンドに合わせた「刺さる」ビジュアルを自動で生成します。
+                </p>
+                <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.5rem;">
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">現地ベンチマークサイトを自動収集・分析</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">カラー・レイアウト・フォントを言語別に設定</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">AIチャットでリアルタイムに微調整可能</span>
+                    </div>
+                </div>
+                <div class="mb-xl">
+                    <a href="/{{ locale }}/about/#contact" class="link-arrow font-bold" style="color: var(--color-primary-start);">デザインローカライズのデモを申し込む →</a>
+                </div>
+            </div>
+            <div class="text-center">
+                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780199379/f2e65838-a2f4-4a3c-8bc4-0666632aad0b.png" alt="言語ごとのデザイン最適化" class="img-cover shadow-md rounded" style="border: 1px solid var(--color-border);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- セクション4：特徴② CTAも現地仕様に変えられる -->
+<section class="section bg-beige">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <div class="order-1-mobile mb-xl">
+                <!-- CTA例のビジュアル -->
+                <div style="display: flex; flex-direction: column; gap: 16px; max-width: 420px; margin: 0 auto;">
+                    <div class="card" style="padding: 1.25rem 1.5rem; border-left: 4px solid #07C160;">
+                        <p style="font-size: 0.75rem; font-weight: 700; color: #9ca3af; margin-bottom: 0.4rem;">🇨🇳 中国向け</p>
+                        <p class="text-secondary" style="font-size: 0.9rem; margin-bottom: 0.75rem;">WeChat で今すぐ相談する</p>
+                        <div style="display: inline-block; background: #07C160; color: white; padding: 0.5rem 1.25rem; border-radius: 6px; font-size: 0.85rem; font-weight: 700;">
+                            WeChat で相談 →
+                        </div>
+                    </div>
+                    <div class="card" style="padding: 1.25rem 1.5rem; border-left: 4px solid #1877F2;">
+                        <p style="font-size: 0.75rem; font-weight: 700; color: #9ca3af; margin-bottom: 0.4rem;">🇺🇸 英語圏向け</p>
+                        <p class="text-secondary" style="font-size: 0.9rem; margin-bottom: 0.75rem;">Book a free consultation</p>
+                        <div style="display: inline-block; background: #1877F2; color: white; padding: 0.5rem 1.25rem; border-radius: 6px; font-size: 0.85rem; font-weight: 700;">
+                            Book a Call →
+                        </div>
+                    </div>
+                    <div class="card" style="padding: 1.25rem 1.5rem; border-left: 4px solid var(--color-primary-start);">
+                        <p style="font-size: 0.75rem; font-weight: 700; color: #9ca3af; margin-bottom: 0.4rem;">🇯🇵 日本向け</p>
+                        <p class="text-secondary" style="font-size: 0.9rem; margin-bottom: 0.75rem;">お気軽にお問い合わせください</p>
+                        <div style="display: inline-block; background: linear-gradient(90deg, var(--color-primary-start), var(--color-primary-end)); color: white; padding: 0.5rem 1.25rem; border-radius: 6px; font-size: 0.85rem; font-weight: 700;">
+                            お問い合わせ →
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-2-mobile">
+                <p class="font-bold mb-sm" style="color: var(--color-primary-start); letter-spacing: 0.1em; font-size: 0.9rem;">特徴 02</p>
+                <h2 class="mb-md">CTAも言語ごとに変えて、<br>コンバージョンを最大化</h2>
+                <p class="mb-lg text-secondary" style="line-height: 1.8;">
+                    同じCTAを全言語に使い回していませんか？中国向けにはWeChatへの誘導、欧米向けにはカレンダー予約、日本向けにはフォームへ——各国のコミュニケーション習慣に合わせたCTAに変えるだけで、問い合わせ数が大きく変わります。
+                </p>
+                <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.5rem;">
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">WeChat・LINE・WhatsApp 等への誘導を言語別に設定</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">ボタンテキスト・色・配置も言語ごとに変更可能</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">各言語でのA/Bテストを自動実施</span>
+                    </div>
+                </div>
+                <div class="mb-xl">
+                    <a href="/{{ locale }}/about/#contact" class="link-arrow font-bold" style="color: var(--color-primary-start);">CTA最適化のデモを申し込む →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- セクション5：特徴③ 現地語SEO（多言語ブログ） -->
+<section class="section bg-white">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <div>
+                <p class="font-bold mb-sm" style="color: var(--color-primary-start); letter-spacing: 0.1em; font-size: 0.9rem;">特徴 03</p>
+                <h2 class="mb-md">現地語のSEO対策まで、<br>多言語ブログで自動化</h2>
+                <p class="mb-lg text-secondary" style="line-height: 1.8;">
+                    サイトを多言語化しただけでは、検索エンジンからの流入は増えません。Leapは現地語のキーワードで自動的にブログ記事を生成し、Google・Baidu・Naverなど各国の主要検索エンジンへの最適化（hreflang対応）も自動で行います。
+                </p>
+                <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.5rem;">
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">現地語キーワードで多言語ブログ記事を自動生成</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">hreflang タグを自動設定し、言語ごとに正しいページを表示</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: var(--color-primary-start); font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.9rem;">Google・Baidu・Naver 等、各国の検索エンジンに対応</span>
+                    </div>
+                </div>
+                <div class="mb-xl">
+                    <a href="/{{ locale }}/services/multilingual-blog" class="link-arrow font-bold" style="color: var(--color-primary-start);">多言語ブログ機能の詳細を見る →</a>
+                </div>
+            </div>
+            <div class="text-center">
+                <!-- SEOイメージのビジュアル -->
+                <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: var(--radius-lg); padding: 2rem; border: 1px solid var(--color-border);">
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <div style="background: white; border-radius: 8px; padding: 1rem 1.25rem; display: flex; align-items: center; gap: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                            <span style="font-size: 1.2rem;">🇺🇸</span>
+                            <div style="flex: 1;">
+                                <p style="font-size: 0.75rem; color: #9ca3af; margin-bottom: 2px;">example.com/en/blog/</p>
+                                <p style="font-size: 0.85rem; font-weight: 600; color: #1a1a2e; margin: 0;">Best suppliers in Japan 2025</p>
+                            </div>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: #10b981; background: #d1fae5; padding: 2px 8px; border-radius: 20px;">SEO ✓</span>
+                        </div>
+                        <div style="background: white; border-radius: 8px; padding: 1rem 1.25rem; display: flex; align-items: center; gap: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                            <span style="font-size: 1.2rem;">🇨🇳</span>
+                            <div style="flex: 1;">
+                                <p style="font-size: 0.75rem; color: #9ca3af; margin-bottom: 2px;">example.com/zh/blog/</p>
+                                <p style="font-size: 0.85rem; font-weight: 600; color: #1a1a2e; margin: 0;">日本高品质零部件供应商</p>
+                            </div>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: #10b981; background: #d1fae5; padding: 2px 8px; border-radius: 20px;">SEO ✓</span>
+                        </div>
+                        <div style="background: white; border-radius: 8px; padding: 1rem 1.25rem; display: flex; align-items: center; gap: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                            <span style="font-size: 1.2rem;">🇰🇷</span>
+                            <div style="flex: 1;">
+                                <p style="font-size: 0.75rem; color: #9ca3af; margin-bottom: 2px;">example.com/ko/blog/</p>
+                                <p style="font-size: 0.85rem; font-weight: 600; color: #1a1a2e; margin: 0;">일본 부품 제조업체 추천</p>
+                            </div>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: #10b981; background: #d1fae5; padding: 2px 8px; border-radius: 20px;">SEO ✓</span>
+                        </div>
+                        <div style="background: white; border-radius: 8px; padding: 1rem 1.25rem; display: flex; align-items: center; gap: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+                            <span style="font-size: 1.2rem;">🇪🇸</span>
+                            <div style="flex: 1;">
+                                <p style="font-size: 0.75rem; color: #9ca3af; margin-bottom: 2px;">example.com/es/blog/</p>
+                                <p style="font-size: 0.85rem; font-weight: 600; color: #1a1a2e; margin: 0;">Proveedor japonés de piezas</p>
+                            </div>
+                            <span style="font-size: 0.75rem; font-weight: 700; color: #10b981; background: #d1fae5; padding: 2px 8px; border-radius: 20px;">SEO ✓</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- セクション6：公開方法の選択 -->
+<section class="section bg-beige">
+    <div class="container">
+        <h2 class="text-center mb-sm">公開方法は2種類から選べる</h2>
+        <p class="text-center text-secondary mb-2xl" style="font-size: 0.95rem; max-width: 520px; margin-left: auto; margin-right: auto;">
+            SEO戦略やブランド方針に合わせて、サブディレクトリかサブドメインかを選択できます。
+        </p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 800px; margin: 0 auto;" class="grid-1-mobile">
+            <!-- サブディレクトリ -->
+            <div class="card" style="border: 2px solid var(--color-border);">
+                <div class="mb-md">
+                    <p style="font-size: 0.75rem; font-weight: 700; color: var(--color-primary-start); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;">サブディレクトリ</p>
+                    <div style="background: #f3f4f6; border-radius: 6px; padding: 0.6rem 1rem; font-family: monospace; font-size: 0.9rem; color: #374151;">
+                        example.com<strong style="color: var(--color-primary-start);">/en/</strong>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.85rem;">ドメインパワーを集約できるのでSEOに有利</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.85rem;">管理・運用がシンプル</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.85rem;">多くの企業がグローバル展開で採用</span>
+                    </div>
+                </div>
+            </div>
+            <!-- サブドメイン -->
+            <div class="card" style="border: 2px solid var(--color-border);">
+                <div class="mb-md">
+                    <p style="font-size: 0.75rem; font-weight: 700; color: var(--color-primary-start); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;">サブドメイン</p>
+                    <div style="background: #f3f4f6; border-radius: 6px; padding: 0.6rem 1rem; font-family: monospace; font-size: 0.9rem; color: #374151;">
+                        <strong style="color: var(--color-primary-start);">en.</strong>example.com
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.85rem;">言語ごとに独立したサイトとして運用可能</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.85rem;">国ターゲティングを明確に設定しやすい</span>
+                    </div>
+                    <div class="flex items-start" style="gap: 0.5rem;">
+                        <span style="color: #10b981; font-weight: 700; flex-shrink: 0;">✓</span>
+                        <span class="text-secondary" style="font-size: 0.85rem;">本番サイトへの影響を最小限に抑えて展開</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- セクション7：HP作成ガイドへの動線 -->
+<section class="section bg-white">
+    <div class="container">
+        <div class="card" style="background: linear-gradient(135deg, #fff5f5 0%, #fff0e8 100%); border: 1px solid #fecdd3; max-width: 860px; margin: 0 auto;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;">
+                <div>
+                    <p class="font-bold mb-sm" style="color: var(--color-primary-start); font-size: 0.85rem;">多言語HP作成マニュアル</p>
+                    <h3 class="mb-sm" style="font-size: 1.4rem;">各言語別のHP作成ガイドを無料公開中</h3>
+                    <p class="text-secondary" style="font-size: 0.9rem; line-height: 1.7; margin: 0;">
+                        英語・中国語・スペイン語・アラビア語など、16言語のHP作成のポイントや現地仕様のノウハウをまとめたガイドを無料公開しています。ローカライズの参考にぜひご活用ください。
+                    </p>
+                </div>
+                <div style="flex-shrink: 0;">
+                    <a href="/{{ locale }}/hp-guide/" target="_blank" rel="noopener noreferrer" class="btn font-bold" style="white-space: nowrap; padding: 0.9rem 2rem; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); color: white; border: none; border-radius: 50px; font-size: 0.95rem;">
+                        ガイドを見る &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- セクション8：提供内容一覧 -->
+<section class="section bg-beige">
+    <div class="container">
+        <h2 class="text-center mb-2xl">多言語化・ローカライズの<br>充実した提供内容</h2>
+        <div class="grid-3" style="gap: 30px; max-width: 900px; margin: 0 auto;">
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">10言語以上のサイト生成</h3><p class="text-sm text-secondary">英語・中国語・スペイン語・アラビア語など主要言語に即対応。</p></div>
+            </div>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">言語別デザイン最適化</h3><p class="text-sm text-secondary">カラー・レイアウト・フォントを現地競合を参考に自動調整。</p></div>
+            </div>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">言語別CTA設定</h3><p class="text-sm text-secondary">WeChat・LINE・フォームなど、言語ごとに最適な導線を設定。</p></div>
+            </div>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">多言語ブログ自動生成</h3><p class="text-sm text-secondary">現地語キーワードで記事を自動作成し、検索流入を継続的に獲得。</p></div>
+            </div>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">hreflang・技術SEO対応</h3><p class="text-sm text-secondary">言語ごとのURL構造を正しく設定し、検索エンジンに認識させる。</p></div>
+            </div>
+            <div class="flex items-start">
+                <div style="background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end)); border-radius: 50%; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div><h3 class="h6 mb-xs">サブディレクトリ・サブドメイン対応</h3><p class="text-sm text-secondary">SEO戦略に合わせて公開方法を柔軟に選択可能。</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "pricing.njk" %}
+
+{% include "cta1.njk" %}
