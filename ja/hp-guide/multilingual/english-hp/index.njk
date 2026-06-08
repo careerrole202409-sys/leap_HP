@@ -1,0 +1,195 @@
+---
+layout: base.njk
+title: 英語ホームページ作成の注意点・完全ガイド
+target_lang: 英語
+parent_url: /ja/hp-guide/multilingual/
+thumbnail: "https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/gb.svg"
+---
+
+{% extends "guide-caution.njk" %}
+
+{% block section_0 %}
+<p>
+  「英語のホームページを公開したのに、海外からの問い合わせが全く来ない」という声はよく聞かれます。<br>
+  その原因のほとんどは、日本語サイトを機械的に翻訳しただけで、<strong>現地ユーザーの検索行動・文化的背景・信頼構築のルール</strong>に対応できていないことにあります。<br>
+  英語圏といっても、アメリカ・イギリス・オーストラリア・シンガポールではスペルや表現、商慣習が異なります。このガイドでは、英語サイトで成果を出すために必須となる、技術・SEO・デザイン・文化面の重要ポイントを網羅的に解説します。
+</p>
+{% endblock %}
+
+{% block section_1_1 %}
+<p>
+  「英語」は一つではありません。ターゲット市場によって<strong>スペル・表現・単位・通貨表記</strong>を使い分ける必要があります。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>アメリカ英語（en-US）：</strong>color / organize / September 5, 2025 / $ ── 北米市場を狙う場合はこちらが標準。</li>
+  <li><strong>イギリス英語（en-GB）：</strong>colour / organise / 5 September 2025 / £ ── 欧州・中東・旧英連邦諸国向けはこちら。</li>
+  <li><strong>オーストラリア英語（en-AU）：</strong>基本はイギリス式だが、口語表現はアメリカ式に近い表現も混在。</li>
+</ul>
+<p>
+  HTMLの<code>lang</code>属性（例：<code>&lt;html lang="en-US"&gt;</code>）を正しく設定しないと、ブラウザの自動翻訳機能が誤作動し、ユーザー体験を損なう場合があります。また、日本語からの機械翻訳は文法的に不自然な表現が残りやすいため、ネイティブスピーカーによる校正を必ず行うことが鉄則です。
+</p>
+{% endblock %}
+
+{% block section_1_2 %}
+<p>
+  英語圏ではGoogle・YouTube・Facebook・Instagramといったサービスが問題なく利用できますが、それだけに<strong>これらのサービスのポリシーやアルゴリズム変更への対応</strong>が、サイトの表示品質や集客に直結します。
+</p>
+<div style="background:#fff4f4; padding:16px; border-radius:8px; border:1px solid #f9a8a8; margin-bottom:24px;">
+  <p style="font-weight:bold; color:#c53030; margin-bottom:8px;">❌ よくある落とし穴</p>
+  <ul style="list-style:none; padding:0; margin:0;">
+    <li style="margin-bottom:8px;">・日本語サイトで使っているサードパーティスクリプト（チャットツール・分析ツール）が英語圏のアドブロッカーに遮断されるケースがある</li>
+    <li style="margin-bottom:8px;">・Core Web Vitals（LCP・CLS・INP）の基準を満たさないと、Googleの検索順位に直接影響する</li>
+    <li>・SSL証明書（HTTPS）が未設定のサイトはChromeで「安全ではない」と表示され、離脱率が急増する</li>
+  </ul>
+</div>
+<p>
+  PageSpeed Insights（Google公式ツール）でスコアを定期的に確認し、表示速度とセキュリティを常に最適な状態に保つことが、英語圏でのWeb集客の基本です。
+</p>
+{% endblock %}
+
+{% block section_1_3 %}
+<p>
+  英語圏でWebサイトを運営する際、特にEU・イギリス・カリフォルニア州をターゲットにする場合は、<strong>プライバシー法への対応</strong>が法律で義務付けられています。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>GDPR（EU一般データ保護規則）：</strong>EUおよびイギリスのユーザーの個人データを取得・処理する場合に適用。Cookieの利用同意バナーの設置と、プライバシーポリシーの明示が必須。違反した場合は高額の制裁金が科される。</li>
+  <li><strong>CCPA（カリフォルニア州消費者プライバシー法）：</strong>カリフォルニア州在住のユーザーに対して、データ収集の目的と「Do Not Sell My Personal Information」のオプトアウト手段を提供する必要がある。</li>
+  <li><strong>ADA / WCAG準拠：</strong>アメリカでは障がい者差別禁止法（ADA）に基づき、Webサイトのアクセシビリティ対応（代替テキスト・コントラスト比・キーボード操作対応など）が求められるケースが増加している。</li>
+</ul>
+<p>
+  これらは自社サイトへのアクセス元の地域を問わず適用されるリスクがあります。英語圏への本格展開前に、法律の専門家または対応ツールを活用した確認を行うことを推奨します。
+</p>
+{% endblock %}
+
+{% block section_2_1 %}
+<p>
+  英語圏のユーザーは、Webサイトに対して「透明性」と「即座に価値がわかること」を強く求めます。日本企業が特に見落としがちなポイントを以下に整理します。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>ベネフィット先行の文章構成：</strong>日本語サイトにありがちな「会社の歴史・理念」から始まる構成ではなく、「あなたの課題をこう解決する」というベネフィット訴求をファーストビューに置く。</li>
+  <li><strong>Social Proof（社会的証明）の活用：</strong>顧客の実名レビュー・ケーススタディ・導入企業ロゴを積極的に掲載する。英語圏ユーザーはGoogle レビューやG2・Trustpilotなどの第三者評価サイトとの一致性も確認する。</li>
+  <li><strong>明確なCTA（行動喚起）：</strong>「お問い合わせはこちら」ではなく、「Get a Free Quote」「Book a Demo」など、次のアクションが具体的にイメージできる表現を使う。</li>
+  <li><strong>ローカルSEOキーワードの選定：</strong>日本語の感覚で選んだ英語キーワードは現地で実際に検索されていないことが多い。Googleキーワードプランナーや Ahrefs で現地の検索ボリュームを必ず確認する。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_2 %}
+<p>
+  英語圏では<strong>Google一強</strong>の状況が続いており（グローバルシェア約90%）、Google向けのSEO対策が集客の根幹となります。2024年以降のGoogleアルゴリズムが特に重視しているポイントは以下の通りです。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>E-E-A-T（経験・専門性・権威性・信頼性）：</strong>コンテンツの執筆者プロフィール・参考文献・更新日の明示が評価されやすい。特にYMYL（金融・健康・法律など）分野では厳しく審査される。</li>
+  <li><strong>Core Web Vitals：</strong>LCP（最大コンテンツの描画）は2.5秒以内、CLS（レイアウトのずれ）は0.1以下、INP（操作への応答）は200ミリ秒以内が目安。いずれもPageSpeed Insightsで計測できる。</li>
+  <li><strong>構造化データ（Schema Markup）：</strong>FAQ・レビュー・商品情報などをSchema.orgに準拠したJSONフォーマットで記述すると、リッチリザルト（検索結果の強調表示）に対応し、クリック率が大幅に改善する。</li>
+  <li><strong>モバイルファーストインデックス：</strong>Googleはモバイル版のコンテンツを優先して評価する。PC版とモバイル版でコンテンツ量に差がないよう注意する。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_3 %}
+<p>
+  英語圏（特にアメリカ・欧州）向けには、<strong>物理的に近いサーバーを選ぶこと</strong>が表示速度とSEOに直結します。
+</p>
+<p>
+  アメリカ市場をメインターゲットとする場合、バージニア州（北米東海岸）やオレゴン州（北米西海岸）のデータセンターを持つサーバーが推奨されます。欧州向けにはアイルランドやフランクフルトが一般的です。Googleはページの表示速度をランキング要因に含めており、日本のサーバーからアメリカのユーザーに配信すると物理的な遅延が生じます。
+</p>
+<p>
+  解決策として、<strong>CDN（コンテンツ・デリバリ・ネットワーク）</strong>の活用が有効です。CloudflareやAWSのCloudFrontなどを利用することで、日本に設置したオリジンサーバーのコンテンツを世界中のエッジサーバーにキャッシュし、どの地域からも高速に配信できます。ドメインは<code>.com</code>がグローバル認知度が最も高く、英語圏での信頼性確保に最適です。
+</p>
+{% endblock %}
+
+{% block section_3_1 %}
+<p>
+  英語圏のデザインにおける色の意味は、文化的な背景から日本と共通する部分も多いですが、市場ごとの差異を理解しておくことが重要です。
+</p>
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px;">🔵 <strong>青（Blue）：</strong>最も好まれるビジネスカラー。「信頼」「安定」「専門性」を象徴。IT・金融・医療・B2Bサービスで広く使われる（例：Facebook、Salesforce、Samsung）。</li>
+  <li style="margin-bottom: 12px;">🟢 <strong>緑（Green）：</strong>「自然」「健康」「成長」「安全」を表現。ECサイトの購入ボタンやサステナビリティ関連ブランドで多用される。</li>
+  <li style="margin-bottom: 12px;">🔴 <strong>赤（Red）：</strong>「緊急性」「セール」「情熱」を示す。CTAボタンや期間限定オファーの強調に効果的だが、多用するとアグレッシブな印象を与えるため注意が必要。</li>
+  <li style="margin-bottom: 12px;">⚫ <strong>黒（Black）：</strong>「高級感」「洗練」を演出するラグジュアリーブランドでよく使われる。日本とは異なり、白背景に黒テキストは単なる標準配色として広く受け入れられている。</li>
+</ul>
+{% endblock %}
+
+{% block section_3_2 %}
+<p>
+  英語はアルファベットを使うため、日本語フォントと同じ設定のままでは最適な表示が得られません。英語圏のWebデザインで安定して使われている推奨フォントと設定は以下の通りです。
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+</div>
+<p>
+  「Inter」はGoogleの多くの製品にも採用されているUIフォントで、可読性と現代的な印象を両立します。Google Fontsから無料で読み込むことができ、英語圏ユーザーに違和感を与えません。
+</p>
+<p>
+  文字サイズは本文16px以上を基準とし、行間（line-height）は1.6〜1.8程度が読みやすいとされています。見出しはFont Weightを700（Bold）に設定し、視線の流れを明確にすることが重要です。また、テキストと背景のコントラスト比はWCAG 2.1の基準（通常テキストで4.5:1以上）を満たすよう設定することで、アクセシビリティと検索評価の両面に対応できます。
+</p>
+{% endblock %}
+
+{% block section_3_3 %}
+<p>
+  英語圏のWebデザイントレンドは「余白の多いミニマルデザイン」が主流で、情報を詰め込む日本のデザイン文化とは異なります。
+</p>
+<p>
+  ファーストビューには<strong>端的なキャッチコピー（ヘッドライン）・サブコピー・CTAボタン</strong>の3点セットを配置するのが黄金律です。英語圏ユーザーは平均的なページ滞在時間が短く、「3秒で何をする会社か」が伝わらなければ離脱します。ヘッドラインは10語以内に収め、能動態（Active Voice）で書くことが推奨されています。
+</p>
+<p>
+  また、B2Bサイトでは<strong>縦スクロール型のランディングページ（Long-form LP）</strong>が依然として高いコンバージョンを示しています。問題提起→解決策→機能紹介→実績・事例→FAQ→CTAの構成が基本パターンです。BtoC向けECではInstagramと連携したビジュアル重視の商品ページが標準になっており、商品写真の品質が購買決定に直結します。
+</p>
+{% endblock %}
+
+{% block section_4_1 %}
+<p>
+  英語圏では、問い合わせ窓口の設計がコンバージョン率に大きく影響します。日本と異なり、ビジネス上の連絡にメールよりもダイレクトで即時性の高い手段を好むユーザーが多いのが特徴です。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>LiveChat・チャットボット：</strong>IntercomやHubSpot Chatなどのライブチャットツールは、英語圏BtoBサイトの標準装備になっています。営業時間外はAIチャットボットで一次対応し、翌営業日に担当者が引き継ぐフローが一般的です。</li>
+  <li><strong>予約カレンダーの埋め込み：</strong>CalendlyやHubSpotのミーティング機能を使った「今すぐ商談予約」ボタンの設置は、B2Bリード獲得に非常に効果的です。メールのやり取りを省略できるため、アメリカ・欧州の企業担当者に特に受け入れられています。</li>
+  <li><strong>LinkedInとの連携：</strong>B2B向けサービスでは、LinkedInプロフィールやCompany Pageへのリンクを掲載することで企業の実在性と信頼性を補強できます。</li>
+  <li><strong>電話番号の掲載：</strong>アメリカ市場では信頼性の証明として現地の電話番号（+1から始まる番号）の掲載が有効です。Google VoiceやTwilioで現地番号を取得できます。</li>
+</ul>
+{% endblock %}
+
+{% block section_4_2 %}
+<p>
+  英語圏でも<strong>モバイルファースト</strong>は絶対条件です。Googleの統計によると、グローバルのWeb検索の60%以上はモバイルデバイスから行われています。特にアメリカでは、スマートフォンからの検索がPCを大きく上回っており、モバイルでの表示最適化がそのまま検索順位に直結します。
+</p>
+<p>
+  実装面では、レスポンシブデザイン（CSS Media Queries）による対応が基本ですが、それに加えて以下の点に注意が必要です。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>タップターゲットのサイズ：</strong>ボタンや링크は最低44×44pxを確保し、誤タップを防ぐ。</li>
+  <li><strong>フォント自動拡大の防止：</strong>iOSデバイスでテキストが自動拡大されないよう、<code>-webkit-text-size-adjust: 100%</code>を設定する。</li>
+  <li><strong>画像の最適化：</strong>WebP形式の使用と<code>&lt;img&gt;</code>タグへの<code>loading="lazy"</code>属性の追加により、モバイル回線でも快適な表示速度を実現する。</li>
+</ul>
+{% endblock %}
+
+{% block section_5 %}
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>ターゲット市場に合わせてアメリカ英語／イギリス英語を統一し、<code>lang</code>属性を正しく設定しているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>GDPRやCCPAに対応したCookieバナーとプライバシーポリシーを設置しているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Core Web Vitalsのスコアがすべて「良好（Green）」になっているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>ターゲット国に近いサーバーまたはCDNを利用し、表示速度を確保しているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>ファーストビューに「誰のための・何ができる」サービスかが10語以内で伝わるヘッドラインがあるか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>ライブチャットまたはカレンダー予約など、即時性の高い問い合わせ窓口を設置しているか？</span>
+  </li>
+</ul>
+<p>
+  これらを自社だけで対応するには、英語圏特有の知識と技術の両方が必要です。Leapを使えば、英語圏の商慣習・SEO・デザイン基準に対応したWebサイトをスムーズに構築できます。
+</p>
+{% endblock %}

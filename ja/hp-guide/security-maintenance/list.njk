@@ -1,0 +1,133 @@
+---
+layout: base.njk
+title: 記事一覧 | セキュリティ・保守運用ガイド
+description: Leapのセキュリティ・保守運用ガイドの全記事一覧です。
+---
+
+<section class="section pt-3xl pb-3xl bg-beige" style="min-height: 80vh;">
+    <div class="container">
+
+        <div class="flex justify-between items-end mb-lg flex-wrap" style="gap: 1rem;">
+            <div class="flex items-center flex-wrap" style="gap: 1.5rem;">
+                <h1 class="font-bold text-primary" style="font-size: 2rem; margin: 0; line-height: 1.2;">記事一覧</h1>
+                <a href="/{{ locale }}/hp-guide/security-maintenance/" class="back-to-top">
+                    &larr; セキュリティ・保守運用ガイドトップへ
+                </a>
+            </div>
+            <div class="flex items-center" style="font-size: 0.9rem;">
+                <span class="text-secondary mr-sm">並び替え：</span>
+                <button onclick="setSortType('date')" class="sort-btn active" id="sort-date">新着順</button>
+                <span class="text-border mx-xs" style="color: var(--color-border);">|</span>
+                <button onclick="setSortType('views')" class="sort-btn" id="sort-views">人気順</button>
+            </div>
+        </div>
+
+        <div class="grid-3" id="articles-grid">
+            {% set has_posts = false %}
+            {% for post in collections.all %}
+                {% if ('/hp-guide/security-maintenance/' in post.url)
+                    and (post.data.locale == locale)
+                    and (post.url != '/' + locale + '/hp-guide/security-maintenance/')
+                    and (post.url != '/' + locale + '/hp-guide/security-maintenance/list/') %}
+                    {% set has_posts = true %}
+                    <article class="card p-0 blog-item article-card"
+                             data-date="{{ post.date.getTime() }}"
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+                        <a href="{{ post.url }}" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="{{ post.data.thumbnail | default('https://placehold.co/600x400/f1f5f9/94a3b8?text=No+Image') }}" alt="{{ post.data.title }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                        </a>
+                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
+                                <a href="{{ post.url }}" style="color: inherit; text-decoration: none;">{{ post.data.title }}</a>
+                            </h3>
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">{{ post.data.description }}</p>
+                            <div class="pt-sm" style="border-top: 1px solid #eee;">
+                                <a href="{{ post.url }}" class="text-primary font-bold" style="font-size: 0.9rem; text-decoration: none;">詳しく見る &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+                {% endif %}
+            {% endfor %}
+            <div id="no-results-message" class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; padding: var(--space-3xl) 0; display: none;">
+                <p class="text-secondary">該当する記事は見つかりませんでした。</p>
+            </div>
+        </div>
+
+        <div id="pagination-container" class="flex justify-center mt-xl" style="gap: 8px;"></div>
+
+        {% if not has_posts %}
+            <div class="text-center w-full flex items-center justify-center" style="padding: var(--space-2xl) 0;">
+                <p class="text-secondary">現在、公開されている記事はありません。</p>
+            </div>
+        {% endif %}
+    </div>
+</section>
+
+{% include "cta1.njk" %}
+
+<style>
+    .back-to-top { color: var(--color-text-secondary); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s, transform 0.2s; display: flex; align-items: center; }
+    .back-to-top:hover { color: var(--color-primary-start); transform: translateX(-3px); text-decoration: underline; }
+    .sort-btn { background: none; border: none; cursor: pointer; padding: 0; font-family: inherit; font-size: inherit; color: var(--color-text-secondary); font-weight: normal; transition: color 0.3s; }
+    .sort-btn:hover { color: var(--color-primary-start); }
+    .sort-btn.active { color: var(--color-primary-start); font-weight: bold; text-decoration: underline; }
+    .page-btn { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--color-border); background: white; color: var(--color-text-primary); font-weight: bold; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; }
+    .page-btn:hover { border-color: var(--color-primary-start); color: var(--color-primary-start); }
+    .page-btn.active { background: var(--color-primary-start); color: white; border-color: var(--color-primary-start); }
+    .page-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .blog-item:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important; }
+    .blog-item:hover h3 a { color: var(--color-primary-start) !important; }
+</style>
+
+<script>
+    const ITEMS_PER_PAGE = 15;
+    let currentState = { sortType: 'date', currentPage: 1 };
+    let allArticleElements = [];
+
+    document.addEventListener("DOMContentLoaded", function() {
+        allArticleElements = Array.from(document.querySelectorAll('.article-card'));
+        render();
+    });
+
+    function setSortType(type) { currentState.sortType = type; render(); }
+    function goToPage(page) { currentState.currentPage = page; render(); document.getElementById('articles-grid').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+
+    function render() {
+        document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
+        document.getElementById('sort-' + currentState.sortType).classList.add('active');
+        let sorted = [...allArticleElements].sort((a, b) => {
+            const dateA = Number(a.getAttribute('data-date') || 0);
+            const dateB = Number(b.getAttribute('data-date') || 0);
+            return currentState.sortType === 'views' ? dateA - dateB : dateB - dateA;
+        });
+        const totalPages = Math.ceil(sorted.length / ITEMS_PER_PAGE);
+        if (currentState.currentPage > totalPages && totalPages > 0) currentState.currentPage = totalPages;
+        const start = (currentState.currentPage - 1) * ITEMS_PER_PAGE;
+        const visible = sorted.slice(start, start + ITEMS_PER_PAGE);
+        const grid = document.getElementById('articles-grid');
+        allArticleElements.forEach(el => el.style.display = 'none');
+        visible.forEach(el => { el.style.display = 'flex'; grid.appendChild(el); });
+        document.getElementById('no-results-message').style.display = sorted.length === 0 ? 'flex' : 'none';
+        renderPagination(totalPages);
+    }
+
+    function renderPagination(totalPages) {
+        const container = document.getElementById('pagination-container');
+        container.innerHTML = '';
+        if (totalPages <= 1) return;
+        const prevBtn = document.createElement('button');
+        prevBtn.className = 'page-btn'; prevBtn.innerHTML = '&lsaquo;'; prevBtn.disabled = currentState.currentPage === 1;
+        prevBtn.onclick = () => goToPage(currentState.currentPage - 1);
+        container.appendChild(prevBtn);
+        for (let i = 1; i <= totalPages; i++) {
+            const btn = document.createElement('button');
+            btn.className = 'page-btn' + (i === currentState.currentPage ? ' active' : '');
+            btn.textContent = i; btn.onclick = () => goToPage(i);
+            container.appendChild(btn);
+        }
+        const nextBtn = document.createElement('button');
+        nextBtn.className = 'page-btn'; nextBtn.innerHTML = '&rsaquo;'; nextBtn.disabled = currentState.currentPage === totalPages;
+        nextBtn.onclick = () => goToPage(currentState.currentPage + 1);
+        container.appendChild(nextBtn);
+    }
+</script>

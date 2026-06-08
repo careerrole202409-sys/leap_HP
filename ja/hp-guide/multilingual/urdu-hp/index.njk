@@ -1,0 +1,180 @@
+---
+layout: base.njk
+title: ウルドゥー語ホームページ作成の注意点・完全ガイド
+target_lang: ウルドゥー語
+parent_url: /ja/hp-guide/multilingual/
+thumbnail: "https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/pk.svg"
+---
+
+{% extends "guide-caution.njk" %}
+
+{% block section_0 %}
+<p>
+  「ウルドゥー語のホームページを作ったのに、パキスタンのユーザーにまったく使ってもらえない」というケースには、見落とされがちな根本的な原因があります。<br>
+  最大の落とし穴は<strong>「文字の方向」</strong>です。ウルドゥー語はアラビア文字を基盤とし、<strong>右から左（RTL: Right to Left）</strong>に読み書きします。通常の日本語・英語サイトをそのままウルドゥー語に翻訳しただけでは、文字の流れが逆になり、レイアウト全体が崩壊します。<br>
+  また、ウルドゥー語が主に使われるパキスタンでは、WhatsAppやYouTubeが圧倒的な影響力を持ち、独自のモバイル文化・イスラム文化への配慮がサイトの信頼性に直結します。<br>
+  このガイドでは、ウルドゥー語サイトを正しく機能させるために必須となる、技術・デザイン・文化面の重要ポイントを網羅的に解説します。
+</p>
+{% endblock %}
+
+{% block section_1_1 %}
+<p>
+  ウルドゥー語は、アラビア文字を拡張した<strong>ナスタアリーク（Nastaliq）書体</strong>で表記されます。アラビア語やペルシャ語とも文字を共有しますが、ウルドゥー語固有の文字（ٹ・ڈ・ڑ・ں・ہ など）が追加されており、アラビア語フォントそのままでは正確に表示されません。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>文字コードはUTF-8を必ず指定：</strong><code>&lt;meta charset="UTF-8"&gt;</code>の記述がないと、ウルドゥー文字が文字化けして表示されます。</li>
+  <li><strong>lang属性とdir属性を設定：</strong><code>&lt;html lang="ur" dir="rtl"&gt;</code>と指定することで、ブラウザがウルドゥー語のRTL表示を正しく認識します。</li>
+  <li><strong>アラビア語と混同しない：</strong>アラビア語（<code>lang="ar"</code>）とウルドゥー語（<code>lang="ur"</code>）は異なる言語です。コンテンツに合わせて正しいlang属性を使い分けてください。</li>
+</ul>
+<p>
+  <strong>注意：</strong>機械翻訳ツールによるウルドゥー語変換は、文法上の格変化や敬語表現の誤りが頻発します。特にビジネス向けの丁寧な表現は、ネイティブスピーカーによる確認が不可欠です。
+</p>
+{% endblock %}
+
+{% block section_1_2 %}
+<p>
+  ウルドゥー語サイトで最も見落とされやすい技術的な問題が、<strong>RTL（右から左）レイアウト</strong>の実装です。テキストの向きを変えるだけでなく、ページ全体の構造を反転させる必要があります。
+</p>
+<div style="background:#fff4f4; padding:16px; border-radius:8px; border:1px solid #e29292; margin-bottom:24px;">
+  <p style="font-weight:bold; color:#c53030; margin-bottom:8px;">❌ よくある実装ミス</p>
+  <ul style="list-style:none; padding:0; margin:0;">
+    <li style="margin-bottom:8px;">・<code>direction: rtl;</code>をテキストにだけ指定し、ナビゲーションや余白（padding/margin）が左右反転していないままになっている</li>
+    <li style="margin-bottom:8px;">・アイコンや矢印（→）がLTR向きのまま使われており、RTLでは意味が逆になっている</li>
+    <li>・フォームの入力欄が左寄りのままで、ウルドゥー文字入力時に文字が右端から溢れる</li>
+  </ul>
+</div>
+<p>
+  CSSでは、<code>html</code>要素に<code>direction: rtl;</code>と<code>text-align: right;</code>を設定し、padding・marginの左右も入れ替えます。より効率的な方法として、CSSの論理的プロパティ（<code>margin-inline-start</code>など）や、自動でLTR/RTLを切り替える<strong>RTLCSSライブラリ</strong>の活用も推奨されます。また、電話番号や数字はRTLページ内でも左から右の順序で表示されるため、特別な処理は不要です。
+</p>
+{% endblock %}
+
+{% block section_1_3 %}
+<p>
+  パキスタンでは、通信・コンテンツ規制を担う機関<strong>PTA（Pakistan Telecommunication Authority）</strong>がWebコンテンツを監視しています。イスラム教の価値観や国家への批判に関わるコンテンツは規制対象となりえます。
+</p>
+<p>
+  また、パキスタンは2025年時点でインターネット普及率が約46%と発展途上にあり、<strong>回線速度が不安定な地域も多い</strong>ため、ページの表示速度が直接的にユーザー離脱率に影響します。
+</p>
+<p>
+  <strong>推奨される対応：</strong>画像はWebP形式に圧縮し、不要なJavaScriptは遅延読み込み（Lazy Load）にすることが基本です。サーバーは日本や東南アジアのものでも問題ありませんが、パキスタンからのアクセスが速いCDNを活用し、ファーストビューが素早く表示されるよう最適化しましょう。SSLの導入（HTTPS化）は必須です。
+</p>
+{% endblock %}
+
+{% block section_2_1 %}
+<p>
+  パキスタンのユーザーはWebサイトに対して「信頼性」と「誠実さ」を強く求めます。宗教的・文化的背景から、以下の点が特に重要です。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>企業情報の詳細な記載：</strong>住所、電話番号、担当者名などを明記し、「実在する企業」であることを示す。</li>
+  <li><strong>イスラムへの配慮：</strong>ハラール認証（食品・医薬品関連の場合）や、イスラムの価値観に反しない表現・画像を徹底する。肌の露出が多い写真や、宗教的にセンシティブな内容は避けるべきです。</li>
+  <li><strong>実績の提示：</strong>利用者数や取引実績などを数字で示すことで信頼感が高まります。また、利用者のレビューや推薦文（テスティモニアル）はパキスタンのユーザーに非常に効果的です。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_2 %}
+<p>
+  パキスタンではGoogleが検索エンジンの主流であり、<strong>Google向けのSEO対策</strong>が基本になります。近年はウルドゥー語でのロングテール検索が急速に増えており、ウルドゥー語コンテンツの充実が集客の鍵を握ります。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>ウルドゥー語キーワードの調査：</strong>英語のキーワードをそのまま翻訳するだけでは不十分です。パキスタン現地でどのような言葉で検索されているかをネイティブと共に確認しましょう。</li>
+  <li><strong>hreflangタグの設定：</strong>ウルドゥー語版ページには<code>&lt;link rel="alternate" hreflang="ur"&gt;</code>を設定し、Googleに言語・地域ターゲットを正しく伝えます。</li>
+  <li><strong>Google ビジネスプロフィールの活用：</strong>「near me（近くの〇〇）」検索がパキスタンで急増しています。ビジネスプロフィールにウルドゥー語情報を登録することで、ローカル検索での露出が大幅に向上します。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_3 %}
+<p>
+  パキスタンでは<code>.pk</code>ドメインが現地ユーザーへの親しみやすさと信頼感を高めます。ただし、グローバルな<code>.com</code>ドメインで問題なく運用できます。
+</p>
+<p>
+  重要なのはドメインよりもページ速度です。パキスタンの平均的なモバイル回線速度は日本より遅い環境も多く、<strong>Core Web Vitals（特にLCP: 最大コンテンツ描画）</strong>のスコアを意識した最適化が検索順位と直接結びつきます。Google Search Consoleに登録し、ウルドゥー語サイトのインデックス状況を定期的に確認することを推奨します。
+</p>
+{% endblock %}
+
+{% block section_3_1 %}
+<p>
+  色はパキスタン・イスラム文化においても重要なメッセージを持ちます。ウルドゥー語サイト向けのデザインでは、以下の色の意味を理解しておきましょう。
+</p>
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px;">🟢 <strong>緑（Green）：</strong>最も重要な色です。イスラム教の象徴色であり、パキスタン国旗にも使われています。「信仰」「繁栄」「平和」を象徴し、メインカラーとして広く好まれます。ビジネスサイトのアクセントカラーとして積極的に活用しましょう。</li>
+  <li style="margin-bottom: 12px;">⚪ <strong>白（White）：</strong>パキスタン国旗の白は「少数民族との共存」を表し、清潔感・誠実さの象徴です。背景色として広く使われ、ネガティブな意味はありません。</li>
+  <li style="margin-bottom: 12px;">🟡 <strong>金・黄（Gold）：</strong>高貴さや豊かさの象徴として好まれます。緑との組み合わせで上質な印象を演出できます。</li>
+  <li style="margin-bottom: 12px;">🔴 <strong>赤・黒（Red / Black）：</strong>強調・警告のカラーとして使えますが、ページ全体に多用すると不吉な印象を与えることがあります。CTAボタンなど部分的な使用に留めましょう。</li>
+</ul>
+{% endblock %}
+
+{% block section_3_2 %}
+<p>
+  ウルドゥー語の表示には、専用フォントの指定が不可欠です。日本語・英語向けのデフォルトフォントでは、ウルドゥー文字の合字（リガチャ）が正しく描画されず、文字がバラバラに崩れて表示されてしまいます。
+</p>
+<p>
+  Webサイトで広く使われる推奨フォントは以下の通りです。CSSでは優先順に指定してください。
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Mehr Nastaliq Web", serif;
+</div>
+<p>
+  「Noto Nastaliq Urdu」はGoogleが開発したオープンソースフォントで、Webフォントとしてセルフホスト（自サーバー配置）が可能です。ウルドゥー語フォントはファイルサイズが大きくなりがちなため、使用するグリフのみを切り出した<strong>サブセット化</strong>を行い、表示速度への影響を最小限に抑えましょう。また、ウルドゥー語テキストは縦方向の文字スペースが広いため、<strong>line-height は 2.0〜2.5</strong>程度に広めに設定すると読みやすくなります。
+</p>
+{% endblock %}
+
+{% block section_3_3 %}
+<p>
+  パキスタンではスマートフォンからのインターネットアクセスが圧倒的に多く、<strong>モバイルファーストのデザイン</strong>は絶対条件です。RTLレイアウトのモバイル表示は、ハンバーガーメニューの位置（右端が自然）やスクロール方向など、LTRサイトと細部が異なるため、スマートフォンでの動作確認を必ず行いましょう。
+</p>
+<p>
+  デザインの方向性としては、シンプルで見やすいレイアウトが好まれます。文字の量が多くなりがちなウルドゥー語コンテンツでは、適切な余白（RTLなので右側余白が主体）を確保し、視認性を高めることが重要です。また、イスラム文化の観点から、<strong>人物写真の選定</strong>には慎重を期し、特に女性の露出が多い画像は避けるよう配慮しましょう。
+</p>
+{% endblock %}
+
+{% block section_4_1 %}
+<p>
+  パキスタンでは、ビジネスの問い合わせ・商談の多くが<strong>WhatsApp</strong>を通じて行われています。メールフォームよりも、WhatsAppへの直接誘導が圧倒的にコンバージョン率が高いです。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>WhatsApp Business：</strong>必須のツールです。お問い合わせページには、WhatsApp Businessへの直接リンクボタン（<code>https://wa.me/国番号+電話番号</code>）を目立つ場所に設置しましょう。パキスタンの国番号は<strong>+92</strong>です。</li>
+  <li><strong>YouTube：</strong>パキスタンで最大のリーチを持つ動画プラットフォームです（利用者数5,590万人超）。製品説明やブランド紹介動画をYouTubeに公開し、サイトに埋め込むことが効果的です。</li>
+  <li><strong>Facebook：</strong>パキスタン第2位のSNS（利用者数4,940万人超）です。企業の公式Facebookページへのリンクを設置することで、現地ユーザーの信頼感が高まります。</li>
+</ul>
+{% endblock %}
+
+{% block section_4_2 %}
+<p>
+  パキスタンはモバイルファースト社会であり、PCを持たずスマートフォンだけでインターネットを利用するユーザーが大多数を占めます。レスポンシブデザインは必須条件です。
+</p>
+<p>
+  回線速度が不安定な地域も多いため、ページの軽量化は特に重要です。画像はWebP形式に圧縮し、ファーストビューで必要な画像以外はLazy Loadで遅延読み込みにしましょう。また、ウルドゥー語フォントをセルフホストする場合は、フォントファイルのサブセット化と<code>font-display: swap;</code>の設定を組み合わせることで、フォント読み込み中のレイアウトのずれを防げます。
+</p>
+{% endblock %}
+
+{% block section_5 %}
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span><code>&lt;html lang="ur" dir="rtl"&gt;</code>を設定し、RTLレイアウトをページ全体に適用しているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>ウルドゥー語対応フォント（Noto Nastaliq Urduなど）をセルフホストで指定し、line-heightを広めに設定しているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>ナビゲーション・余白・アイコンなど、ページ全体のレイアウトがRTL用に反転されているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>イスラム文化への配慮（画像選定・表現）を行っているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>hreflangタグ（<code>hreflang="ur"</code>）とGoogle Search Consoleの設定を行っているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>WhatsApp Businessへの直接リンクボタンを目立つ場所に設置しているか？</span>
+  </li>
+</ul>
+<p>
+  RTLレイアウトの実装は、LTRサイトとは根本的に異なる設計が必要であり、高度な技術知識が求められます。しかし、Leapを使えば、これらの「ウルドゥー語・RTL特有の壁」を最初からクリアした状態でWebサイトを作成できます。
+</p>
+{% endblock %}

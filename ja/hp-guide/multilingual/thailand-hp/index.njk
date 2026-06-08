@@ -1,0 +1,174 @@
+---
+layout: base.njk
+title: タイ語ホームページ作成の注意点・完全ガイド
+target_lang: タイ語
+parent_url: /ja/hp-guide/multilingual/
+thumbnail: "https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/th.svg"
+---
+
+{% extends "guide-caution.njk" %}
+
+{% block section_0 %}
+<p>
+  「タイ語のホームページを作ったのに、現地ユーザーに全く刺さらない」というケースは少なくありません。<br>
+  その理由は、タイ独自の<strong>文字体系・文化的感性・モバイル利用環境</strong>にあります。タイ語は日本語や英語とは根本的に異なる文字構造を持ち、フォントや改行の扱いを誤ると<strong>「文字が崩れる」「読みにくい」「信頼感がない」</strong>という致命的な問題が発生します。<br>
+  このガイドでは、タイ市場で成果を出すために必須となる、技術・デザイン・文化面の重要ポイントを網羅的に解説します。
+</p>
+{% endblock %}
+
+{% block section_1_1 %}
+<p>
+  タイ語はタイ文字（อักษรไทย）という独自のアルファベットを使用しており、44の子音字・15の母音記号・4つの声調記号で構成されています。日本語や中国語とは全く異なる特性があり、いくつかの点で特別な配慮が必要です。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>単語間にスペースなし：</strong>タイ語は英語のような単語区切りのスペースを使いません。文章はスペースなしで連続して書かれるため、Webブラウザが自動で改行位置を判定します。不適切なCSS設定では文章が不自然な位置で切れてしまいます。</li>
+  <li><strong>母音・声調記号の上下配置：</strong>タイ文字は子音の上下に母音や声調記号が重なる構造を持ちます。行間（line-height）が狭いと、これらの記号が隣の行の文字と重なって読めなくなります。</li>
+  <li><strong>翻訳の品質管理：</strong>機械翻訳ツールでは、丁寧語・敬語のレベルやビジネス向け表現が不自然になることが多々あります。タイ語にはフォーマル度に応じた語尾表現（例：男性話者は「ครับ/khrap」、女性話者は「ค่ะ/kha」）があり、公式サイトではネイティブによる校正が必須です。</li>
+</ul>
+{% endblock %}
+
+{% block section_1_2 %}
+<p>
+  タイのインターネット環境は中国のような強力な規制はなく、Google・YouTube・Facebook・Instagramなどは問題なく利用できます。ただし、コンテンツに関しては<strong>「コンピュータ犯罪法（Computer Crime Act）」</strong>や<strong>「王室不敬罪（Lèse-majesté）」</strong>の観点から、以下の点に注意が必要です。
+</p>
+<div style="background:#fff4f4; padding:16px; border-radius:8px; border:1px solid #e29292; margin-bottom:24px;">
+  <p style="font-weight:bold; color:#c53030; margin-bottom:8px;">❌ コンテンツ上の禁止事項</p>
+  <ul style="list-style:none; padding:0; margin:0;">
+    <li style="margin-bottom:8px;">・タイ王室（国王・王族）への批判・侮辱にあたるコンテンツの掲載（法的制裁の対象になります）</li>
+    <li style="margin-bottom:8px;">・政治的に対立を招く可能性のある主張や声明の掲載</li>
+    <li>・タイ国内で法的に規制されているサービス（一部のオンラインギャンブルなど）の誘導</li>
+  </ul>
+</div>
+<p>
+  日本企業が一般的なビジネスサイトを作成する分には問題になることはほとんどありませんが、コピーライティングやSNS連動コンテンツを作成する際は、ネイティブの確認を通じてリスクを排除することを推奨します。
+</p>
+{% endblock %}
+
+{% block section_1_3 %}
+<p>
+  タイでWebサービスやECサイトを運営する場合、<strong>「個人データ保護法（PDPA: Personal Data Protection Act）」</strong>への対応が必要です。2022年6月に完全施行されたこの法律は、EUのGDPRに近い内容で、個人情報の収集・利用・管理に関して厳格なルールを定めています。
+</p>
+<p>
+  具体的には、問い合わせフォームやニュースレター登録フォームでユーザーの情報を収集する場合、<strong>同意取得のポップアップ（クッキーバナー）</strong>の設置と、プライバシーポリシーの明示が義務となります。
+</p>
+<p>
+  <strong>解決策：</strong>クッキー同意バナーをサイトに実装し、プライバシーポリシーページを必ずタイ語で用意しましょう。また、収集したデータの管理・削除に対応できる体制を整えることが求められます。
+</p>
+{% endblock %}
+
+{% block section_2_1 %}
+<p>
+  タイのユーザーはWebサイトに対して「温かみ」と「信頼性」を重視します。冷たくソリッドな印象より、<strong>フレンドリーで親しみやすいトーン</strong>のサイトが好まれます。信頼感を高めるために以下の要素を取り入れましょう。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>会社情報の明示：</strong>住所・電話番号・担当者名を明記し、「実在する会社」であることを示す。タイでは直接連絡が取れることへの安心感が重要です。</li>
+  <li><strong>顧客の声・実績の掲載：</strong>タイのユーザーは口コミや第三者の評価を非常に重視します。導入事例や顧客レビューを目立つ場所に配置しましょう。</li>
+  <li><strong>資格・認証・受賞歴：</strong>ISO認証や業界団体への加盟情報があれば積極的に表示することで、ブランドへの信頼を高められます。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_2 %}
+<p>
+  タイではGoogleが検索エンジンのシェアをほぼ独占しており（90%以上）、基本的なSEO戦略はGoogle向けで問題ありません。ただし、タイ語特有の配慮が必要です。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>タイ語キーワードの調査：</strong>タイ語は単語にスペースがないため、検索クエリの単位が英語や日本語とは異なります。タイ語ネイティブの視点で実際に検索されるキーワードを選定することが重要です。</li>
+  <li><strong>ローカルSEO：</strong>タイのユーザーはスマホからのローカル検索（「近くのレストラン」など）を多用します。Googleビジネスプロフィールの登録と最適化は特に効果的です。</li>
+  <li><strong>SNS経由の流入：</strong>後述のFacebook・LINEからの流入が多いため、SNSページとWebサイトを連携させたコンテンツ戦略が有効です。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_3 %}
+<p>
+  タイのサイトを対象としたホスティングは、日本サーバーでも問題なく運用できます。ただし、表示速度の最適化は重要な課題です。
+</p>
+<p>
+  タイではモバイル回線（4G/5G）からのアクセスが主流ですが、地方では回線速度が不安定な場合もあります。<strong>CDN（コンテンツ・デリバリ・ネットワーク）</strong>の利用や、画像の圧縮・WebP形式への変換によって、東南アジアからのアクセス速度を改善することを推奨します。ドメインはグローバルな<code>.com</code>または<code>.co.th</code>（タイの国別ドメイン）が信頼感を高めます。
+</p>
+{% endblock %}
+
+{% block section_3_1 %}
+<p>
+  色はタイ文化において特別な意味を持ちます。特にタイでは<strong>「曜日カラー」</strong>という文化があり、生まれた曜日に対応した色を身にまとう習慣があります。また、以下の色の文化的意味を理解しておきましょう。
+</p>
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px;">🟡 <strong>黄（Gold / Yellow）：</strong>王室・仏教・神聖さを象徴する最も重要な色。月曜日の色でもあり、ポジティブなイメージを持ちます。</li>
+  <li style="margin-bottom: 12px;">🔴 <strong>赤（Red）：</strong>日曜日のカラー。活力や情熱を表しますが、文脈によっては葬儀を連想させることもあるため過剰使用は避けましょう。</li>
+  <li style="margin-bottom: 12px;">⚫ <strong>黒・紺（Black / Dark）：</strong>喪のイメージが強く、特に高齢層には「縁起が悪い」と感じられる場合があります。ビジネスサイトでの多用は避けるのが無難です。</li>
+  <li style="margin-bottom: 12px;">🔵 <strong>青（Blue）：</strong>金曜日のカラーで、故プミポン前国王のシンボルカラーでもあります。タイ人に親しみ深い色です。</li>
+</ul>
+{% endblock %}
+
+{% block section_3_2 %}
+<p>
+  タイ語フォントの選定はWebデザインにおいて非常に重要です。適切なフォントが設定されていないと、OSのデフォルトフォントで表示され、見た目が粗くなったり、上下の記号が欠けたりします。
+</p>
+<p>
+  また、タイ語は行間が英語や日本語より広く必要です。<strong>line-height は1.8以上</strong>を設定しないと、母音・声調記号が上下の行に重なって判読不能になります。
+  <br>CSSでは以下のタイ語対応フォントを優先指定しましょう。
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-family: "Sarabun", "Noto Sans Thai", "Prompt", sans-serif;<br>
+  line-height: 1.8;
+</div>
+<p>
+  Google Fontsには「Sarabun」「Prompt」「Kanit」などのタイ語対応フォントが用意されており、これらを活用することで美しいタイ語表示が実現できます。
+</p>
+{% endblock %}
+
+{% block section_3_3 %}
+<p>
+  タイのインターネット利用は<strong>スマホ（モバイルファースト）</strong>が前提です。2024年時点でタイのモバイルインターネット普及率は非常に高く、多くのユーザーがスマホだけでWebを閲覧・購買・問い合わせを完結させます。
+</p>
+<p>
+  デザインのトレンドとして、シンプルで明るいフラットデザインが好まれる一方、<strong>ビジュアルの訴求力</strong>を重視する傾向があります。バナーや商品画像は高品質なものを使用し、ファーストビューで視覚的に惹きつけることが重要です。また、タイのユーザーはSNSのUIに慣れているため、縦スクロール型のレイアウトと直感的なナビゲーションが適しています。
+</p>
+{% endblock %}
+
+{% block section_4_1 %}
+<p>
+  タイのユーザーはメールよりも<strong>即時性の高いコミュニケーションツール</strong>を圧倒的に好みます。問い合わせ経路の設計はタイ市場の特性に合わせましょう。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>LINE（公式アカウント）：</strong>タイはLINEの普及率が非常に高く（スマホユーザーの約80%が利用）、ビジネス用の「LINE Official Account」を設置し、QRコードをサイトに掲載することは必須レベルです。</li>
+  <li><strong>Facebook Messenger：</strong>タイではFacebookの利用率も非常に高く、Messengerを通じた問い合わせ対応はユーザーへの大きなアピールになります。Facebookページと連携したチャットプラグインの設置を検討しましょう。</li>
+  <li><strong>電話番号の明示：</strong>タイのユーザーは直接電話で問い合わせることを好む傾向もあります。問い合わせページには必ず電話番号を掲載してください。</li>
+</ul>
+{% endblock %}
+
+{% block section_4_2 %}
+<p>
+  タイは<strong>「モバイルファースト」</strong>を超えた「モバイルオンリー」ともいえる社会です。PCを持たずスマホだけで全ての情報収集・購買・コミュニケーションを行うユーザーが多数を占めます。
+</p>
+<p>
+  レスポンシブデザインは絶対条件ですが、それ以上に<strong>「タップしやすいボタンサイズ」「スクロールで完結するUI」「高速な初期表示」</strong>が求められます。画像は必ず圧縮し、WebP形式を採用することで、モバイル回線が不安定な環境でも素早く表示されるよう最適化しましょう。
+</p>
+{% endblock %}
+
+{% block section_5 %}
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>タイ文字が正しく表示されるフォント（SarabunやNoto Sans Thaiなど）を指定し、line-heightを1.8以上に設定しているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>王室・宗教・政治に関するコンテンツでタイのコンピュータ犯罪法・不敬罪に抵触しないか、ネイティブがチェックしているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>PDPA対応として、クッキー同意バナーとタイ語のプライバシーポリシーページを設置しているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>問い合わせ手段としてLINE公式アカウントのQRコードおよびFacebook Messengerを設置しているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>スマホ表示に最適化（レスポンシブ・タップしやすいUI・高速表示）されているか？</span>
+  </li>
+</ul>
+<p>
+  これらを全て自社で対応するには、専門的な技術と知識が必要です。しかし、Leapを使えば、これらの「タイ市場特有の課題」を最初からクリアした状態でWebサイトを作成できます。
+</p>
+{% endblock %}

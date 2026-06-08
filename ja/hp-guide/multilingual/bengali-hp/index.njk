@@ -1,0 +1,181 @@
+---
+layout: base.njk
+title: ベンガル語ホームページ作成の注意点・完全ガイド
+target_lang: ベンガル語
+parent_url: /ja/hp-guide/multilingual/
+thumbnail: "https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/bd.svg"
+---
+
+{% extends "guide-caution.njk" %}
+
+{% block section_0 %}
+<p>
+  「ベンガル語のホームページを作ったのに、現地ユーザーに全く刺さらない」というケースは少なくありません。<br>
+  その主な理由は、ベンガル語特有の<strong>文字（スクリプト）の表示問題</strong>と、バングラデシュ・西ベンガルそれぞれの<strong>文化・表現の違い</strong>にあります。ベンガル文字に対応していないフォントを使えば文字化けが起き、ターゲット地域を混同した表現を使えば、ユーザーの信頼を一瞬で失います。<br>
+  このガイドでは、ベンガル語市場で成果を出すために必須となる、技術・デザイン・文化面の重要ポイントを網羅的に解説します。
+</p>
+{% endblock %}
+
+{% block section_1_1 %}
+<p>
+  ベンガル語は話者数で世界第7位規模の言語であり、主に2つの地域で使用されています。ターゲット地域によって、語彙・表現・文体が大きく異なります。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>バングラデシュ（標準ベンガル語）：</strong>国の公用語。アラビア語・ウルドゥー語由来の語彙が多く混在し、イスラム文化の影響を強く受けた表現が一般的です。</li>
+  <li><strong>インド・西ベンガル州（コルカタ方言）：</strong>サンスクリット由来の語彙が多く、ヒンドゥー文化の影響を受けた表現が主流です。コルカタの都市部ではやや異なるスラングや語彙が使われます。</li>
+</ul>
+<p>
+  <strong>注意：</strong>翻訳ツールで生成したベンガル語は、地域差・文体差・宗教文化的なニュアンスを無視した表現になりがちです。バングラデシュ向けであればムスリム文化に配慮した語彙選択が、西ベンガル向けであればヒンドゥー文化に沿った表現が求められます。必ずネイティブによる校正を行いましょう。
+</p>
+{% endblock %}
+
+{% block section_1_2 %}
+<p>
+  ベンガル語は<strong>独自のベンガル文字（Bengali script / বাংলা লিপি）</strong>を使用します。このスクリプトはデーヴァナーガリー文字（ヒンディー語）に近い形状を持ちますが、全くの別体系です。フォント指定を誤ると、ベンガル文字が正常に表示されず、□（豆腐）や文字化けが発生します。
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-family: "Noto Sans Bengali", "Hind Siliguri", "Baloo Da 2", sans-serif;
+</div>
+<p>
+  上記のフォントはGoogle Fontsで無償提供されており、ベンガル文字の表示品質が高く推奨されます。特に<strong>「Noto Sans Bengali」</strong>はUnicode規格に完全準拠しており、あらゆる環境での安定表示が期待できます。
+</p>
+<p>
+  また、HTMLの<code>lang</code>属性も忘れずに設定しましょう。バングラデシュ向けは<code>lang="bn-BD"</code>、インド・西ベンガル向けは<code>lang="bn-IN"</code>が適切です。
+</p>
+{% endblock %}
+
+{% block section_1_3 %}
+<p>
+  バングラデシュのインターネット普及はスマートフォンを中心に急速に拡大しています。PCよりもスマホでWebを閲覧するユーザーが圧倒的多数を占めるため、<strong>モバイルファーストでの設計は絶対条件</strong>です。
+</p>
+<p>
+  また、地方・農村部では4G回線が不安定なエリアも多く、ページの読み込み速度がユーザー体験に直結します。以下の点に注意して実装してください。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>画像の最適化：</strong>WebP形式の採用や、画像の遅延読み込み（lazy loading）を積極的に活用する。</li>
+  <li><strong>軽量なCSSとJS：</strong>不要なライブラリを排除し、初期表示に必要なコードのみを優先読み込みする。</li>
+  <li><strong>AMP対応の検討：</strong>ニュース・ブログ系コンテンツであれば、AMPページの導入でモバイル表示を大幅に高速化できます。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_1 %}
+<p>
+  バングラデシュ・西ベンガルのユーザーは、Webサイトに対して<strong>「親しみやすさ」と「信頼性」</strong>を強く求めます。特にバングラデシュでは、オンライン詐欺への警戒心からフォーム入力を敬遠する傾向があります。安心感を与えるための要素を前面に配置しましょう。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>実在性の明示：</strong>会社の住所・電話番号・担当者の顔写真などを明確に掲載する。</li>
+  <li><strong>第三者からの推薦：</strong>導入企業のロゴ、受賞歴、メディア掲載歴などを目立つ位置に置く。</li>
+  <li><strong>現地語によるサポート案内：</strong>「ベンガル語でサポートします」という一言が、ユーザーの安心感を大幅に高めます。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_2 %}
+<p>
+  バングラデシュ・インド西ベンガル州ともに、検索エンジンは<strong>Google</strong>が圧倒的シェアを誇ります。そのため、SEO対策はGoogle標準の手法が有効ですが、ベンガル語特有の注意点があります。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>キーワードの文字種統一：</strong>ベンガル語のキーワードは必ずベンガル文字で記述する。ローマ字表記（例：「bangla」）では現地ユーザーの検索ニーズに合致しません。</li>
+  <li><strong>ローカルSEO：</strong>Google ビジネスプロフィール（旧Googleマイビジネス）への登録は、特に実店舗や現地サービスを持つ場合に必須です。</li>
+  <li><strong>モバイルフレンドリー評価：</strong>Googleのモバイルファーストインデックスにより、スマホ表示の品質がランキングに直結します。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_3 %}
+<p>
+  バングラデシュ・西ベンガルにおけるSNSは<strong>Facebookが圧倒的な存在感</strong>を持ちます。多くのユーザーが「インターネット＝Facebook」という感覚を持っており、企業の公式ページをWebサイトよりも先に探す行動が見られます。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>Facebook：</strong>最優先のSNSです。HPと連携したFacebook公式ページの運営は事実上必須です。OGP（Open Graph Protocol）の設定を正しく行い、シェア時に適切なサムネイルとテキストが表示されるようにしましょう。</li>
+  <li><strong>YouTube：</strong>動画コンテンツはYouTubeが主流です（中国と異なりYouTubeは問題なく使用できます）。製品紹介や解説動画をHP内に埋め込む活用法は非常に有効です。</li>
+  <li><strong>WhatsApp：</strong>バングラデシュではビジネスチャットとしてWhatsAppが普及しており、お問い合わせ手段として「WhatsAppで連絡する」ボタンを設置することでコンバージョンが高まります。</li>
+</ul>
+{% endblock %}
+
+{% block section_3_1 %}
+<p>
+  色は文化的・宗教的なメッセージを持ちます。バングラデシュ（イスラム文化圏）と西ベンガル（ヒンドゥー文化圏）では好まれる色が異なる場合があります。
+</p>
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px;">🟢 <strong>緑（Green）：</strong>バングラデシュの国旗の色であり、イスラムの聖なる色です。バングラデシュ向けのサイトでは、信頼感・安心感を与える効果があります。</li>
+  <li style="margin-bottom: 12px;">🔴 <strong>赤（Red）：</strong>バングラデシュの国旗にも使われ、活力・情熱の象徴です。セールやCTAボタンに多用されます。西ベンガルでは慶事や祝い事に強く結びついた色です。</li>
+  <li style="margin-bottom: 12px;">⚪ <strong>白（White）：</strong>清潔感・誠実さを表す一方、喪（mourning）を連想させる場合もあるため、使いすぎには注意が必要です。</li>
+  <li style="margin-bottom: 12px;">🟡 <strong>黄・金（Yellow / Gold）：</strong>西ベンガルのヒンドゥー文化では祝い事や繁栄の色として好まれます。ポジティブな印象を与えたい場面で効果的です。</li>
+</ul>
+{% endblock %}
+
+{% block section_3_2 %}
+<p>
+  ベンガル文字はアルファベットと比べて字形が複雑で、文字の上部に<strong>「ハシュタ（মাত্রা）」</strong>と呼ばれる横線が走る特徴があります。そのため、文字サイズが小さすぎると可読性が著しく低下します。
+</p>
+<p>
+  <strong>推奨文字サイズは16px以上</strong>を基準にしてください。特にモバイル表示では18px前後が読みやすいとされています。また、行間（line-height）は1.7〜1.9程度に広めに設定すると、文字の上下が重なりにくく、読みやすいレイアウトになります。
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-size: 16px;<br>
+  line-height: 1.8;<br>
+  font-family: "Noto Sans Bengali", "Hind Siliguri", sans-serif;
+</div>
+{% endblock %}
+
+{% block section_3_3 %}
+<p>
+  バングラデシュ・西ベンガルのユーザーは、視覚的に賑やかで情報量の多いデザインを好む傾向があります。特にバングラデシュでは、Facebookのフィード文化の影響から、縦スクロールで情報を次々に消費するスタイルが定着しています。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>画像・写真の活用：</strong>テキストのみより、人物の写真（現地の人物が映ったもの）を使うとエンゲージメントが高まります。</li>
+  <li><strong>鮮やかな配色：</strong>日本のWebデザインに比べ、明るく彩度の高い色使いが好まれます。</li>
+  <li><strong>セクションごとの区切り：</strong>1ページを複数のカラーブロックで区切るデザインは、情報の整理とビジュアルの両立に効果的です。</li>
+</ul>
+{% endblock %}
+
+{% block section_4_1 %}
+<p>
+  バングラデシュのユーザーは、メールフォームよりも<strong>即時性の高いコミュニケーション手段</strong>を強く好みます。問い合わせのハードルを下げるために、以下の手段を積極的に採用してください。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>WhatsAppボタン：</strong>「WhatsAppで今すぐ相談」ボタンをファーストビューや問い合わせページに設置する。特にスマホユーザーにとっては最もハードルが低い接触手段です。</li>
+  <li><strong>Facebookメッセンジャー：</strong>FacebookページのチャットプラグインをHP内に埋め込むことで、Facebookユーザーがそのままメッセージを送れるようになります。</li>
+  <li><strong>電話番号の明示：</strong>バングラデシュのビジネス文化では、電話による直接連絡が今も根強く信頼される手段です。ヘッダーや問い合わせページに電話番号を目立つ形で掲載しましょう。</li>
+</ul>
+{% endblock %}
+
+{% block section_4_2 %}
+<p>
+  バングラデシュは世界的にも「モバイルファースト」が徹底された市場のひとつです。多くのユーザーはスマートフォンのみでWebを利用しており、PCでの閲覧を想定しないユーザーも珍しくありません。
+</p>
+<p>
+  タップしやすいボタンサイズ（最低44×44px）の確保、片手操作を考慮したレイアウト設計、フォーム入力の最小化（入力項目は必要最低限に絞る）など、モバイルUX全般への配慮が直接的なコンバージョン向上につながります。
+</p>
+{% endblock %}
+
+{% block section_5 %}
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>ターゲットが「バングラデシュ」か「インド西ベンガル州」かを明確に区別し、語彙・表現を使い分けているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>ベンガル文字対応フォント（Noto Sans Bengaliなど）を正しく指定し、文字化けが発生していないか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>モバイルファーストで設計され、低速回線でも快適に表示できる軽量なページになっているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>OGP設定を正しく行い、Facebook上でシェアされた際に適切な表示がされるか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>WhatsAppやFacebookメッセンジャーなど、即時性の高い問い合わせ手段を設置しているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>宗教・文化的に配慮した色使い・画像選定ができているか（バングラデシュ向けはイスラム文化、西ベンガル向けはヒンドゥー文化を考慮）？</span>
+  </li>
+</ul>
+<p>
+  これらを全て自社で対応するには、言語・文化・技術の幅広い専門知識が必要です。しかし、Leapを使えば、これらの「ベンガル語特有の壁」を最初からクリアした状態でWebサイトを作成できます。
+</p>
+{% endblock %}
