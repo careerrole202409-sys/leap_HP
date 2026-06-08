@@ -1001,10 +1001,6 @@
     <lastmod>2026-06-01T00:06:12.965Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/en/ec-guide/</loc>
-    <lastmod>2026-06-01T00:06:13.084Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/en/ec-guide/list/</loc>
     <lastmod>2026-06-01T00:06:13.084Z</lastmod>
   </url>
@@ -1013,16 +1009,8 @@
     <lastmod>2026-06-01T00:06:13.085Z</lastmod>
   </url>
   <url>
-    <loc>https://www.leap.site/ja/ec-guide/</loc>
-    <lastmod>2026-06-01T00:06:13.089Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.leap.site/ja/ec-guide/list/</loc>
     <lastmod>2026-06-01T00:06:13.089Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.leap.site/zh-hans/ec-guide/</loc>
-    <lastmod>2026-06-01T00:06:13.090Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/zh-hans/ec-guide/list/</loc>
@@ -1615,6 +1603,18 @@
   <url>
     <loc>https://www.leap.site/ja/hp-guide/multilingual/nigerian-pidgin-hp/</loc>
     <lastmod>2026-06-08T07:45:56.482Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/ja/ec-guide/</loc>
+    <lastmod>2026-06-08T09:17:15.903Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/en/ec-guide/</loc>
+    <lastmod>2026-06-08T09:17:15.904Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.leap.site/zh-hans/ec-guide/</loc>
+    <lastmod>2026-06-08T09:17:15.905Z</lastmod>
   </url>
   <url>
     <loc>https://www.leap.site/ja/seminar/2026-06-24-btob-digital-marketing-dx/</loc>
