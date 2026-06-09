@@ -1,0 +1,195 @@
+---
+layout: base.njk
+title: 英语网站建设完全指南
+target_lang: 英语
+parent_url: /zh-hans/hp-guide/multilingual/english-hp/
+thumbnail: "/assets/images/guide-english.jpg"
+---
+
+{% extends "guide-caution.njk" %}
+
+{% block section_0 %}
+<p>
+  "我们做了英文网站，但完全没有来自海外的询价。" 这是许多中国企业出海时最常遇到的困惑。<br>
+  问题的根源几乎都是一样的：把中文网站逐字翻译成英文，却没有针对<strong>当地用户的搜索习惯、信任体系和沟通方式</strong>进行本地化调整。<br>
+  即使同是英语市场，美国、英国、澳大利亚和新加坡在用词、表达和商业文化上也存在显著差异。本指南将系统梳理做好英文网站必须掌握的技术、SEO、设计与文化要素。
+</p>
+{% endblock %}
+
+{% block section_1_1 %}
+<p>
+  "英语"并非铁板一块。根据目标市场的不同，你需要在<strong>拼写、表达、单位和货币格式</strong>上做出相应选择。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>美式英语（en-US）：</strong>color / organize / September 5, 2025 / $ —— 北美市场的标准用法。</li>
+  <li><strong>英式英语（en-GB）：</strong>colour / organise / 5 September 2025 / £ —— 适用于欧洲、中东及英联邦国家。</li>
+  <li><strong>澳大利亚英语（en-AU）：</strong>拼写遵循英式，但口语表达受美式影响较大。</li>
+</ul>
+<p>
+  务必在 HTML 元素上设置正确的 <code>lang</code> 属性（如 <code>&lt;html lang="en-US"&gt;</code>）。缺少此属性，浏览器可能触发错误的自动翻译，破坏用户体验。此外，机器翻译的英文通常存在语法生硬的问题，建议发布前由母语人士审校。
+</p>
+{% endblock %}
+
+{% block section_1_2 %}
+<p>
+  英语市场高度依赖 Google、YouTube、Facebook 和 Instagram，这意味着这些平台的算法变化会直接影响你的网站表现。
+</p>
+<div style="background:#fff4f4; padding:16px; border-radius:8px; border:1px solid #f9a8a8; margin-bottom:24px;">
+  <p style="font-weight:bold; color:#c53030; margin-bottom:8px;">❌ 常见技术盲区</p>
+  <ul style="list-style:none; padding:0; margin:0;">
+    <li style="margin-bottom:8px;">· 第三方脚本（聊天工具、统计代码）可能被英语市场普遍使用的广告拦截器屏蔽</li>
+    <li style="margin-bottom:8px;">· Core Web Vitals 不达标（LCP、CLS、INP）会直接拉低 Google 搜索排名</li>
+    <li>· 未启用 HTTPS 的网站在 Chrome 中显示"不安全"警告，导致用户即刻离开</li>
+  </ul>
+</div>
+<p>
+  定期用 Google PageSpeed Insights 检测得分，并确保网站速度和安全性始终保持良好状态 —— 这是英语市场自然搜索流量的基础。
+</p>
+{% endblock %}
+
+{% block section_1_3 %}
+<p>
+  如果你的目标市场包含欧盟、英国或加利福尼亚州，遵守隐私法规并非可选项，而是法律义务。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>GDPR（欧盟《通用数据保护条例》）：</strong>收集或处理欧盟/英国用户个人数据时须遵守。强制要求设置 Cookie 同意横幅并提供清晰的隐私政策。违规可面临高额罚款。</li>
+  <li><strong>CCPA（加州《消费者隐私法》）：</strong>须向加州居民披露数据收集情况，并提供"不出售我的个人信息"的退出选项。</li>
+  <li><strong>ADA / WCAG 无障碍合规：</strong>在美国，《美国残障人士法案》已逐步延伸至网站领域，要求为图片添加替代文字、保证足够的色彩对比度，以及支持键盘导航。</li>
+</ul>
+<p>
+  无论服务器位于何处，只要面向上述地区的用户，相关合规义务均适用。建议在正式上线前咨询法律专业人士或使用合规工具。
+</p>
+{% endblock %}
+
+{% block section_2_1 %}
+<p>
+  英语市场的用户期望网站能迅速、直接地传达价值。以下是最常被忽视的内容问题：
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>以利益为先，而非背景介绍：</strong>不要在首屏就讲公司历史和创立故事。直接回答"你能为我解决什么问题？"才是正确打开方式。</li>
+  <li><strong>主动展示社会证明：</strong>具名客户评价、案例研究和客户Logo至关重要。英语市场用户习惯交叉参考 Google Reviews、G2 或 Trustpilot 等第三方平台。</li>
+  <li><strong>使用明确的行动号召（CTA）：</strong>避免"联系我们"这类模糊措辞，改用"获取免费报价""预约演示""开始免费试用"等具体导向的文案。</li>
+  <li><strong>做好本地关键词研究：</strong>在一种语言中感觉自然的词语，很少能直接对应另一个市场的真实搜索习惯。建议先用 Google Keyword Planner 或 Ahrefs 验证目标关键词的搜索量，再做决策。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_2 %}
+<p>
+  Google 在英语市场占据约 90% 的搜索份额，因此以 Google 为核心的 SEO 策略是流量增长的基础。2024 年的主要排名信号包括：
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>E-E-A-T（经验、专业、权威、可信）：</strong>作者简介、引用来源、可见的发布日期，都有助于提升可信度。对 YMYL（财经、健康、法律类）内容尤为重要。</li>
+  <li><strong>Core Web Vitals：</strong>LCP 须低于 2.5 秒，CLS 低于 0.1，INP 低于 200 毫秒。通过 PageSpeed Insights 进行三项指标的全面检测。</li>
+  <li><strong>结构化数据（Schema Markup）：</strong>对 FAQ、评价、产品信息添加 JSON-LD 标记，可在搜索结果中展示富媒体摘要，显著提升点击率。</li>
+  <li><strong>移动优先索引：</strong>Google 优先抓取移动端版本。确保移动端与桌面端在内容深度和质量上保持一致。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_3 %}
+<p>
+  <strong>服务器的物理位置</strong>直接影响英语受众的页面速度和 SEO 效果。
+</p>
+<p>
+  面向美国市场，推荐使用弗吉尼亚（美东）或俄勒冈（美西）的数据中心。面向欧洲，爱尔兰或法兰克福是常见选择。Google 将页面加载速度纳入排名因素，从日本或亚洲服务器向美国用户提供服务会引入可感知的延迟。
+</p>
+<p>
+  最实用的解决方案是部署<strong>CDN（内容分发网络）</strong>。Cloudflare 或 AWS CloudFront 等服务会将内容缓存到全球边缘节点，确保无论访客身处何地都能快速加载。域名方面，<code>.com</code> 仍是英语网站最受信任、全球认可度最高的后缀。
+</p>
+{% endblock %}
+
+{% block section_3_1 %}
+<p>
+  英语市场的色彩规律存在一些通用认知，但因行业和地区而异：
+</p>
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px;">🔵 <strong>蓝色：</strong>最受信赖的商业色彩，传递可靠、稳定和专业的感觉。科技、金融、医疗和 B2B 领域主导色（如 Facebook、Salesforce、Samsung）。</li>
+  <li style="margin-bottom: 12px;">🟢 <strong>绿色：</strong>代表自然、健康、成长和安全，广泛用于购买按钮和可持续品牌。</li>
+  <li style="margin-bottom: 12px;">🔴 <strong>红色：</strong>传达紧迫感、促销和活力，适合 CTA 按钮和限时活动，但过度使用会显得过于激进。</li>
+  <li style="margin-bottom: 12px;">⚫ <strong>黑色：</strong>传递奢华与精致，常见于高端品牌。白底黑字是标准配色，并非设计风格声明。</li>
+</ul>
+{% endblock %}
+
+{% block section_3_2 %}
+<p>
+  英语使用拉丁字母，标准网页字体可直接应用。英文网站最稳健的字体栈：
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+</div>
+<p>
+  Inter 被大量 Google 产品采用，在易读性与现代感之间取得了极佳平衡，可免费通过 Google Fonts 获取。
+</p>
+<p>
+  正文字号建议 16px 或以上，行高 1.6–1.8，确保舒适阅读。标题使用 font-weight 700（加粗）以建立清晰的视觉层级。文字与背景的对比度须满足 WCAG 2.1 标准（普通文字至少 4.5:1），这同时也有助于提升 SEO 无障碍评分。
+</p>
+{% endblock %}
+
+{% block section_3_3 %}
+<p>
+  英语网站的设计风格高度强调<strong>留白与极简布局</strong> —— 这与部分亚洲市场信息密度较高的风格形成对比，中国企业做英文网站时需要主动调整这一认知。
+</p>
+<p>
+  首屏的黄金公式是：<strong>主标题 + 副标题 + CTA 按钮</strong>。英语用户会在 3 秒内决定是否继续浏览 —— 你的主标题必须用不超过 10 个单词、以主动语态说清楚"你服务谁、如何帮助他们"。
+</p>
+<p>
+  B2B 网站中，<strong>长页面着陆页</strong>依然转化良好，标准结构为：痛点 → 解决方案 → 功能特性 → 案例证明 → FAQ → CTA。B2C 电商则以 Instagram 风格的视觉产品页为主流，产品摄影质量直接影响购买决策。
+</p>
+{% endblock %}
+
+{% block section_4_1 %}
+<p>
+  在英语市场，联系渠道的设计对转化率有显著影响。与邮件占主导的市场不同，许多英语用户更倾向于更快捷、直接的沟通方式。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>在线聊天与聊天机器人：</strong>Intercom 或 HubSpot Chat 是英语 B2B 网站的标配工具。常见方案是：非工作时间由 AI 机器人接待，次个工作日由真人跟进。</li>
+  <li><strong>嵌入式日历预约：</strong>由 Calendly 或 HubSpot Meetings 驱动的"预约会议"按钮，是 B2B 线索获取的高效方式。它省去了邮件来回沟通的麻烦 —— 这对美国和欧洲的决策者尤为受用。</li>
+  <li><strong>LinkedIn 整合：</strong>在网站中链接你的 LinkedIn 公司主页，可为 B2B 服务增加一层可信度和社会证明。</li>
+  <li><strong>本地电话号码：</strong>展示本地号码（如美国 +1 号码）能显著建立信任。Google Voice 或 Twilio 可在无需实体办公室的情况下获取本地号码。</li>
+</ul>
+{% endblock %}
+
+{% block section_4_2 %}
+<p>
+  <strong>移动优先</strong>在英语市场是不可忽视的基本要求。全球超过 60% 的搜索来自移动设备，在美国智能手机已占搜索流量的多数 —— Google 的移动优先索引意味着移动端体验直接决定你的搜索排名。
+</p>
+<p>
+  除响应式设计（CSS 媒体查询）外，还需注意：
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>触控目标尺寸：</strong>按钮和链接至少 44×44px，防止误触。</li>
+  <li><strong>防止 iOS 字体自动放大：</strong>设置 <code>-webkit-text-size-adjust: 100%</code>，阻止 iOS 自动调大字体。</li>
+  <li><strong>图片优化：</strong>使用 WebP 格式，并为 img 标签添加 <code>loading="lazy"</code>，提升移动网络下的加载速度。</li>
+</ul>
+{% endblock %}
+
+{% block section_5 %}
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>是否已确认目标市场（美式/英式英语）并在 HTML 中设置了正确的 <code>lang</code> 属性？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>是否已部署符合 GDPR/CCPA 要求的 Cookie 同意横幅和隐私政策？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Core Web Vitals 三项指标是否全部达到"良好"（绿色）标准？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>服务器或 CDN 节点是否在地理位置上靠近目标受众？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>首屏主标题是否能用 10 个单词以内说清楚你服务谁、如何帮助他们？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>是否配置了高意向联系渠道 —— 在线聊天、日历预约或清晰的联系表单？</span>
+  </li>
+</ul>
+<p>
+  做好以上每一项需要同时具备市场认知和技术执行能力。使用 Leap，你可以直接构建针对英语本地 SEO、设计规范和转化优化的英文网站，无需单独管理每个环节。
+</p>
+{% endblock %}

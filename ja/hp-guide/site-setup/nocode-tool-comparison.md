@@ -1,5 +1,5 @@
 ---
-layout: ec-guide-post.njk
+layout: hp-guide-post.njk
 title: HPを自分で作るためのノーコードツール徹底比較｜Wix・Squarespace・STUDIO・Webflowの特徴と選び方
 description: コードなしでHPを作りたい初心者・個人事業主・中小企業向けの選定ガイド。Wix・Squarespace・STUDIO・Webflowを価格・学習コスト・SEO・日本語サポートの観点で徹底比較し、用途別の選び方と2025年AIトレンドをわかりやすく解説します。
 thumbnail: https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80

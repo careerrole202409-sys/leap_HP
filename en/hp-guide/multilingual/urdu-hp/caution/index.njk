@@ -1,0 +1,192 @@
+---
+layout: base.njk
+title: Complete Guide to Building an Effective Urdu Website
+target_lang: Urdu
+parent_url: /en/hp-guide/multilingual/urdu-hp/
+thumbnail: "/assets/images/guide-urdu.jpg"
+---
+
+{% extends "guide-caution.njk" %}
+
+{% block section_0 %}
+<p>
+  Urdu is the national language of Pakistan and one of the official languages of India, spoken as a native or second language by approximately 170–230 million people across South Asia and diaspora communities globally. As Pakistan's national language, Urdu is the primary digital communication language for over 230 million Pakistanis — the world's fifth most populous country with a rapidly growing digital economy.<br>
+  Urdu presents some of the most distinctive technical challenges in web localization: it uses a right-to-left script (Nastaliq or Naskh), shares spoken vocabulary with Hindi but is entirely incomprehensible in writing, and has a unique calligraphic script tradition that makes standard web fonts challenging to implement well.<br>
+  This guide covers the technical, cultural, and digital ecosystem considerations you need to build Urdu-language websites that work correctly and resonate with Pakistani and Urdu-speaking audiences.
+</p>
+{% endblock %}
+
+{% block section_1_1 %}
+<p>
+  Urdu's linguistic situation is nuanced — it shares spoken grammar and vocabulary with Hindi but is written in a completely different script and has distinct literary and cultural identity:
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>Urdu script (Nastaliq/Naskh):</strong> Urdu is written in a modified form of the Perso-Arabic script, written right-to-left. The traditional calligraphic style is Nastaliq (نستعلیق) — a flowing, diagonal script that is visually beautiful but technically demanding to render on web. Naskh (نسخ) is the more upright Arabic/Urdu script style that renders more cleanly in standard fonts. Most Urdu web content now uses Naskh-style fonts for readability.</li>
+  <li><strong>Pakistani Urdu (standard):</strong> Standard Urdu as used in Pakistani media, government, and education is the appropriate register for business websites. Uses formal Urdu vocabulary with Persian/Arabic loanwords.</li>
+  <li><strong>Difference from Hindi:</strong> Though mutually intelligible in speech, written Urdu (right-to-left Perso-Arabic) and written Hindi (left-to-right Devanagari) are completely different. Never use Hindi content for an Urdu website — the scripts are incompatible, and Urdu speakers cannot read Devanagari.</li>
+  <li><strong>Indian Urdu speakers:</strong> Significant Urdu-speaking populations exist in India (Uttar Pradesh, Bihar, Hyderabad, Karnataka) — particularly among Muslims. Standard Pakistani Urdu is broadly understood across these communities.</li>
+</ul>
+<p>
+  Set <code>&lt;html lang="ur" dir="rtl"&gt;</code> — the <code>dir="rtl"</code> attribute is required for right-to-left Urdu layout. Same RTL considerations as Arabic apply, with Urdu-specific font requirements.
+</p>
+{% endblock %}
+
+{% block section_1_2 %}
+<p>
+  Pakistan operates an open internet environment with some content restrictions. Key technical considerations for Urdu websites:
+</p>
+<div style="background:#fff4f4; padding:16px; border-radius:8px; border:1px solid #f9a8a8; margin-bottom:24px;">
+  <p style="font-weight:bold; color:#c53030; margin-bottom:8px;">❌ Critical technical issues for Urdu websites</p>
+  <ul style="list-style:none; padding:0; margin:0;">
+    <li style="margin-bottom:8px;">· <strong>RTL layout:</strong> Same as Arabic — the entire page layout must be mirrored right-to-left, not just text direction. Use <code>dir="rtl"</code> on the HTML element and CSS logical properties throughout.</li>
+    <li style="margin-bottom:8px;">· <strong>Nastaliq rendering:</strong> Traditional Nastaliq font rendering requires specific font technology (OTF with complex GSUB/GPOS rules) that not all browsers render correctly. Use Naskh-style Urdu fonts for the most reliable cross-browser rendering.</li>
+    <li>· <strong>UTF-8 encoding:</strong> Urdu uses Unicode Arabic/Perso-Arabic code points — ensure UTF-8 is correctly configured throughout your server, database, and CMS stack.</li>
+  </ul>
+</div>
+<p>
+  Pakistan's mobile internet landscape has improved dramatically with cheaper data plans and expanded 4G coverage, but network quality outside major cities (Karachi, Lahore, Islamabad) can be variable.
+</p>
+{% endblock %}
+
+{% block section_1_3 %}
+<p>
+  Pakistan and India have distinct legal frameworks applicable to Urdu-language digital services:
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>Pakistan — Prevention of Electronic Crimes Act (PECA) 2016:</strong> Pakistan's primary cyber law governs digital content, unauthorized access, and online offenses. PECA has broad provisions against content deemed offensive to religious sentiment (blasphemy provisions apply online) or national security. The Pakistan Telecommunication Authority (PTA) actively blocks content it deems violating — including social media platforms temporarily for various reasons.</li>
+  <li><strong>Pakistan — Personal Data Protection Bill:</strong> Pakistan's data protection law is still at the bill/draft stage as of 2024. In the absence of enacted legislation, standard data protection best practices (clear privacy policy, minimal data collection, user consent) are advisable for businesses processing Pakistani user data.</li>
+  <li><strong>Religious sensitivity:</strong> Pakistan is an Islamic Republic — content must respect Islamic values and Pakistani religious law. Blasphemous or irreligious content is not just culturally inappropriate but legally dangerous. All content should be reviewed for Islamic and Pakistani cultural sensitivity.</li>
+  <li><strong>India — DPDPA 2023:</strong> For Urdu-language services targeting Indian Muslims, India's DPDPA applies — same as for Hindi-language services.</li>
+</ul>
+{% endblock %}
+
+{% block section_2_1 %}
+<p>
+  Pakistani digital audiences have specific content expectations shaped by the country's Islamic values, strong social media adoption, and mobile-first internet culture:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Islamic values in content:</strong> Pakistan is a deeply Islamic society — content should reflect respect for Islamic values, halal standards, and religious practice. Avoid imagery or messaging that conflicts with Islamic principles. Halal certification is a significant trust signal for food and pharmaceutical products.</li>
+  <li><strong>WhatsApp as primary channel:</strong> WhatsApp is Pakistan's dominant messaging app — used for personal communication, business orders, and customer service at all levels. A WhatsApp Business button is the most important CTA for any Pakistani consumer website.</li>
+  <li><strong>Urdu content scarcity:</strong> Like many South Asian languages, high-quality Urdu web content is underrepresented. Businesses that publish well-written, genuinely Urdu (not just transliterated) content stand out significantly in an underserved space.</li>
+  <li><strong>Facebook and TikTok:</strong> Facebook remains highly active in Pakistan — particularly for news, business pages, and community groups. TikTok has seen explosive growth among Pakistani youth. Social media presence complements a website for Pakistani audiences.</li>
+</ul>
+{% endblock %}
+
+{% block section_2_2 %}
+<p>
+  <strong>Google holds approximately 95% search market share in Pakistan.</strong> Urdu-specific SEO considerations:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Urdu search volume is growing:</strong> Pakistani internet users are increasingly searching in Urdu script rather than Roman Urdu (Urdu written in Latin letters) or English. Quality Urdu-script content for commercial queries faces limited competition — a significant SEO opportunity.</li>
+  <li><strong>Roman Urdu searches:</strong> Many Pakistani users still type Urdu queries using the Latin alphabet (Roman Urdu) — "kahan milega" rather than "کہاں ملے گا". Covering both Urdu-script and Roman Urdu keyword patterns extends your reach.</li>
+  <li><strong>YouTube in Urdu:</strong> YouTube is extremely popular in Pakistan — Urdu-language YouTube channels build significant audiences and rank in Google Pakistan search results. A YouTube presence with Urdu content is a powerful traffic source.</li>
+  <li><strong>Voice search in Urdu:</strong> Voice search is growing in Pakistan — users who find Urdu typing difficult on mobile use voice input. Google's Urdu voice recognition has improved. Conversational Urdu query patterns are increasingly relevant.</li>
+</ul>
+{% endblock %}
+
+{% block section_2_3 %}
+<p>
+  Server location for Urdu/Pakistan-facing websites:
+</p>
+<p>
+  AWS does not have a data center in Pakistan. The nearest options are AWS Mumbai (ap-south-1) — approximately 40–60ms to Karachi and Lahore — and AWS Bahrain (me-south-1) — approximately 80ms to Pakistan. A CDN with South Asian and Middle Eastern PoPs (Cloudflare has presence in Karachi and Lahore) provides meaningful performance improvement for Pakistani users.
+</p>
+<p>
+  Domain choice: <code>.pk</code> and <code>.com.pk</code> signal Pakistani presence and are preferred for Pakistan-focused businesses. <code>.com</code> is broadly accepted and used by many international businesses in Pakistan. For Indian Urdu audiences, <code>.in</code> or <code>.com</code> are appropriate.
+</p>
+{% endblock %}
+
+{% block section_3_1 %}
+<p>
+  Pakistani color aesthetics blend Islamic tradition, Mughal artistic heritage, and contemporary South Asian visual culture:
+</p>
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px;">🟢 <strong>Green:</strong> The primary color of the Pakistani flag — strongly associated with Islam, national identity, and prosperity. The most universally positive and safe color for Pakistani audiences. Green is the natural choice for trust-building and mainstream business branding.</li>
+  <li style="margin-bottom: 12px;">⚪ <strong>White:</strong> The second color of the Pakistani flag — purity, peace, and minority communities' representation. Used in tandem with green for strong national resonance.</li>
+  <li style="margin-bottom: 12px;">⚫ <strong>Black and gold:</strong> Premium, luxury, and traditional Islamic calligraphy aesthetics. Black background with gold Arabic/Urdu calligraphy is a classic pattern in Islamic art — effective for premium and cultural product contexts.</li>
+  <li style="margin-bottom: 12px;">🔴 <strong>Red:</strong> Energy and boldness — used for CTAs and promotional emphasis. Less culturally charged than in some other contexts.</li>
+</ul>
+{% endblock %}
+
+{% block section_3_2 %}
+<p>
+  Urdu uses the Perso-Arabic script, written right-to-left. Specialized Urdu fonts are required — standard Latin fonts cannot render Urdu.
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-family: "Noto Nastaliq Urdu", "Noto Naskh Arabic", "Jameel Noori Nastaleeq", sans-serif;
+</div>
+<p>
+  "Noto Nastaliq Urdu" is Google's dedicated Urdu font — it renders Urdu in the traditional Nastaliq style and is available via Google Fonts. For simpler, more reliable rendering, "Noto Naskh Arabic" renders Urdu characters in the Naskh style (more upright, similar to Arabic web fonts) with better cross-browser consistency than Nastaliq.
+</p>
+<p>
+  Urdu body text requires <strong>1.8–2.0 line-height</strong> — the stacking vowel marks (zabar, zer, pesh) and Nastaliq diagonal descenders require generous vertical spacing. Body text at <strong>16–18px</strong> minimum. Same RTL CSS requirements as Arabic apply — use CSS logical properties throughout.
+</p>
+{% endblock %}
+
+{% block section_3_3 %}
+<p>
+  Pakistani web design reflects both Islamic aesthetic traditions and the vibrant, mobile-native digital culture of a young country:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>RTL-mirrored layout:</strong> Same fundamental requirement as Arabic — the entire page must flow right-to-left. Navigation, hero sections, card layouts, and icon directions must all be deliberately designed for RTL reading flow, not just text-flipped from an LTR template.</li>
+  <li><strong>Calligraphic and geometric accents:</strong> Islamic geometric patterns and Urdu calligraphy used as design elements signal cultural authenticity and craftsmanship. Used tastefully, these elements distinguish genuine Pakistani localization from generic Arabic-script pages.</li>
+  <li><strong>Mobile-first layout:</strong> Pakistan's internet access is overwhelmingly mobile — single-column RTL layouts with large touch targets are the baseline. The visual flow (right-to-left, top-to-bottom) must feel natural on a smartphone held in portrait orientation.</li>
+  <li><strong>Ramadan and Eid design:</strong> Pakistani commercial design strongly features Ramadan and Eid campaign aesthetics — these are the biggest commercial peaks of the Pakistani calendar. Seasonal design awareness for these periods builds authentic cultural connection.</li>
+</ul>
+{% endblock %}
+
+{% block section_4_1 %}
+<p>
+  Pakistani contact preferences center heavily on WhatsApp and phone communication:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>WhatsApp Business:</strong> Pakistan has over 60 million WhatsApp users — it is the primary digital communication tool across all demographics. A floating WhatsApp button is the most important CTA element for any Pakistani consumer website. WhatsApp Business API supports Urdu-language automated responses.</li>
+  <li><strong>Phone contact:</strong> A Pakistani phone number (+92) is a critical trust signal. Pakistanis are highly phone-comfortable and expect businesses to be reachable by call. Karachi (+92 21), Lahore (+92 42), and Islamabad (+92 51) area codes add specific regional credibility.</li>
+  <li><strong>Facebook Messenger:</strong> Facebook remains active in Pakistan — particularly among older demographics. A Facebook Business Page with active Urdu-language content and Messenger integration is a relevant secondary channel.</li>
+  <li><strong>JazzCash and Easypaisa:</strong> Pakistan's two dominant mobile payment services. For any Pakistani e-commerce or digital service, JazzCash and Easypaisa integration is essential — equivalent to bKash in Bangladesh or UPI in India.</li>
+</ul>
+{% endblock %}
+
+{% block section_4_2 %}
+<p>
+  Pakistan is a mobile-dominant internet market — <strong>over 80% of Pakistani internet access is via smartphone</strong>. The dominant devices are affordable Android smartphones (Samsung A-series, Realme, Tecno, Infinix).
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>RTL on mobile:</strong> Test RTL layout specifically on mobile. All the RTL considerations from desktop (mirrored navigation, correct swipe direction, right-aligned text) must work correctly on mobile screens — and some mobile-specific components (hamburger menus, modals, bottom navigation) have additional RTL implications.</li>
+  <li><strong>Urdu keyboard input on mobile:</strong> Urdu script input on mobile requires a Perso-Arabic keyboard layout — available on both Android and iOS, but not the default keyboard. Many Pakistani users prefer typing in Roman Urdu (Latin letters) for convenience. Consider whether your forms need Urdu script input specifically, or whether Latin keyboard input is acceptable.</li>
+  <li><strong>Data cost sensitivity:</strong> Pakistani mobile data plans are metered and cost-sensitive. Page weight under 1MB is the target for broad accessibility.</li>
+  <li><strong>JazzCash/Easypaisa click-to-pay:</strong> These payment apps support deep links from mobile web — use them for seamless Pakistani mobile checkout experiences.</li>
+</ul>
+{% endblock %}
+
+{% block section_5 %}
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Have you set <code>dir="rtl"</code> on the <code>&lt;html&gt;</code> element and used CSS logical properties for the entire RTL layout?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Are you using an Urdu-specific font (Noto Nastaliq Urdu or Noto Naskh Arabic) with line-height 1.8–2.0?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Is a WhatsApp Business button prominently displayed as the primary contact CTA?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Have all content and images been reviewed for Islamic values and Pakistani cultural sensitivity?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>For e-commerce: does the checkout support JazzCash and/or Easypaisa as payment methods?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Has the full RTL layout been tested on mobile, including interactive components (menus, sliders, forms)?</span>
+  </li>
+</ul>
+<p>
+  Urdu's right-to-left Nastaliq script, Pakistan's mobile-first digital economy, and Islamic cultural requirements make this one of the more demanding localizations to execute correctly. Leap handles RTL configuration and Urdu script rendering automatically — so your Urdu website is technically correct from day one.
+</p>
+{% endblock %}
