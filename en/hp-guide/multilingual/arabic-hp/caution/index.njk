@@ -1,0 +1,197 @@
+---
+layout: base.njk
+title: Complete Guide to Building an Effective Arabic Website
+target_lang: Arabic
+parent_url: /en/hp-guide/multilingual/arabic-hp/
+thumbnail: "/assets/images/guide-arabic.jpg"
+---
+
+{% extends "guide-caution.njk" %}
+
+{% block section_0 %}
+<p>
+  Arabic is spoken by over 400 million people across 22 countries — from Morocco and Egypt to Saudi Arabia, the UAE, and Iraq. It represents one of the most commercially significant language markets on the web, with rapidly growing e-commerce spending and internet penetration across the Middle East and North Africa (MENA) region.<br>
+  But building an Arabic website isn't simply a translation job. Arabic is written right-to-left, which requires fundamentally rethinking your layout, typography, and UI. Cultural expectations around design, trust signals, and communication also differ meaningfully from Western norms.<br>
+  This guide covers the technical, design, and cultural factors that make Arabic websites succeed — or fail.
+</p>
+{% endblock %}
+
+{% block section_1_1 %}
+<p>
+  Arabic has significant variation across regions, and the form you use communicates immediately which audience you're addressing:
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>Modern Standard Arabic (MSA / الفصحى):</strong> The formal, written form used in news media, official documents, and formal publications. Understood across all Arabic-speaking countries. The safest choice for formal business communications and written web content that needs to reach a broad pan-Arab audience.</li>
+  <li><strong>Gulf Arabic (خليجي):</strong> Spoken in Saudi Arabia, UAE, Kuwait, Bahrain, Qatar, and Oman. Important for high-value B2B and luxury markets given the region's purchasing power. Some vocabulary and expressions differ from MSA.</li>
+  <li><strong>Egyptian Arabic (مصري):</strong> The most widely understood dialect due to Egypt's cultural influence through film and television. Often used for conversational content targeting a broad Arab audience.</li>
+  <li><strong>Levantine / Maghrebi:</strong> Used in Syria, Lebanon, Jordan (Levantine) and Morocco, Algeria, Tunisia (Maghrebi/Darija). Maghrebi Arabic in particular has significant differences from Gulf and Egyptian Arabic.</li>
+</ul>
+<p>
+  For most business websites, Modern Standard Arabic (MSA) is the correct choice. Set <code>&lt;html lang="ar" dir="rtl"&gt;</code> — the <code>dir="rtl"</code> attribute is critical and will be discussed in detail below.
+</p>
+{% endblock %}
+
+{% block section_1_2 %}
+<p>
+  The single most significant technical requirement for Arabic websites is <strong>right-to-left (RTL) layout</strong>. Arabic reads from right to left, which means your entire layout — not just text direction — must be mirrored:
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>Text alignment:</strong> Body text aligns right. Headlines align right. This is handled automatically by <code>dir="rtl"</code> on the <code>&lt;html&gt;</code> element.</li>
+  <li><strong>Layout mirroring:</strong> Navigation menus flow right to left. Page structure (sidebars, breadcrumbs, icons) should be mirrored. A "Back" arrow that points left in English should point right in Arabic.</li>
+  <li><strong>CSS logical properties:</strong> Use <code>margin-inline-start</code> instead of <code>margin-left</code>, <code>padding-inline-end</code> instead of <code>padding-right</code>. This ensures spacing flips correctly between LTR and RTL without manual overrides.</li>
+  <li><strong>Icon direction:</strong> Directional icons (arrows, progress indicators, sliders, carousels) must be flipped for RTL. The CSS property <code>transform: scaleX(-1)</code> or the <code>dir</code> attribute handles this for many cases.</li>
+  <li><strong>Mixed content (Arabic + English/numbers):</strong> Arabic text that contains embedded English words or numerals uses the Unicode Bidirectional Algorithm. Test mixed-language strings thoroughly — they can produce unexpected display results.</li>
+</ul>
+<div style="background:#fff4f4; padding:16px; border-radius:8px; border:1px solid #f9a8a8; margin-bottom:24px;">
+  <p style="font-weight:bold; color:#c53030; margin-bottom:8px;">❌ The most common RTL mistake</p>
+  <p style="margin:0;">Simply adding <code>direction: rtl</code> to CSS without using <code>dir="rtl"</code> on the HTML element, and without auditing layout components. This produces partially-mirrored pages where some elements are RTL but layout structure remains LTR — creating a broken visual experience.</p>
+</div>
+{% endblock %}
+
+{% block section_1_3 %}
+<p>
+  Legal requirements for Arabic-language websites vary significantly by country:
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>Saudi Arabia (PDPL):</strong> Saudi Arabia's Personal Data Protection Law (نظام حماية البيانات الشخصية), effective 2023, governs collection and processing of personal data. Consent is required for data collection, and cross-border data transfer has restrictions. The Saudi Data and Artificial Intelligence Authority (SDAIA) oversees enforcement.</li>
+  <li><strong>UAE (PDPL / DIFC / ADGM):</strong> The UAE's Federal Personal Data Protection Law (2021) applies broadly. Free zones (DIFC and ADGM) have their own data protection frameworks modeled on GDPR. E-commerce regulations require clear terms, return policies, and Arabic-language disclosures for consumer-facing sites.</li>
+  <li><strong>Egypt (PDPL):</strong> Egypt's Personal Data Protection Law (2020) requires consent for data collection and imposes breach notification obligations.</li>
+  <li><strong>Localization requirements:</strong> Several Gulf countries have policies encouraging or requiring Arabic-language content for businesses operating locally. For UAE-based businesses in particular, consumer-facing content is expected to be available in Arabic.</li>
+</ul>
+{% endblock %}
+
+{% block section_2_1 %}
+<p>
+  Content strategy for Arabic-language websites requires understanding how MENA audiences evaluate trust and credibility online:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Religious and cultural sensitivity:</strong> Ensure content doesn't inadvertently conflict with Islamic values, which are deeply embedded in daily life across most Arabic-speaking markets. Avoid imagery of alcohol, immodest dress, or contentious political topics. Halal certification is a powerful trust signal in food and pharmaceutical categories.</li>
+  <li><strong>Authority and credentials:</strong> Certifications, professional associations, government approvals, and media mentions are strong credibility signals. List them prominently — Arabic audiences respond well to formal institutional endorsement.</li>
+  <li><strong>WhatsApp as the primary contact channel:</strong> WhatsApp is by far the dominant business communication tool across the Arab world. A WhatsApp Business button is essential — more effective than email forms in most MENA B2C contexts.</li>
+  <li><strong>Arabic keyword research:</strong> Arabic search terms don't always map to direct translations of English equivalents. Saudi, Egyptian, and Levantine users may use different dialect-influenced terms. Use Google Keyword Planner filtered by specific countries, and consider separate keyword strategies per market.</li>
+</ul>
+{% endblock %}
+
+{% block section_2_2 %}
+<p>
+  <strong>Google dominates search across most Arabic-speaking markets</strong> — with roughly 95%+ share in most MENA countries. Standard Google SEO practices apply, with some Arabic-specific nuances:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Arabic content is underrepresented on the web.</strong> Quality Arabic-language content faces less competition than English equivalents for many queries — a significant organic SEO opportunity for businesses willing to invest in well-written Arabic content.</li>
+  <li><strong>Diacritics (tashkeel) and search:</strong> Arabic can be written with or without diacritical marks (harakat). Google handles both, but your content should be consistent — typically diacritics are omitted in most web content (news, business sites) except in educational or Quran-related contexts.</li>
+  <li><strong>Hreflang for Arabic variants:</strong> If you serve both Gulf (<code>ar-SA</code>) and Egyptian (<code>ar-EG</code>) audiences, hreflang tags help Google serve the right version. For a single pan-Arabic page, <code>ar</code> without a country code is the broadest signal.</li>
+  <li><strong>Local SEO for Gulf markets:</strong> Google Business Profile listings in Arabic are important for local search visibility in UAE, Saudi Arabia, and Kuwait. Ensure your listing name and description are in Arabic.</li>
+</ul>
+{% endblock %}
+
+{% block section_2_3 %}
+<p>
+  For Arabic-language websites targeting specific MENA markets, server location matters for both performance and regulatory compliance:
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>UAE / Gulf:</strong> AWS Bahrain (me-south-1) and Google Cloud Dubai are the closest major cloud regions for Gulf audiences. Both have sub-20ms latency to Saudi Arabia, UAE, and Kuwait.</li>
+  <li><strong>Egypt / North Africa:</strong> AWS and Google have no data centers in North Africa, so the nearest options are Europe (Ireland or Frankfurt) or Middle East (Bahrain). A CDN with MENA PoPs (Cloudflare has presence in Cairo and Johannesburg) helps significantly.</li>
+  <li><strong>Data residency requirements:</strong> Saudi Arabia's PDPL has data localization implications — certain categories of sensitive data must be stored within Saudi Arabia. If processing Saudi personal data, consult a legal advisor on whether localized storage is required for your use case.</li>
+</ul>
+<p>
+  Domain choice: <code>.com</code> is widely trusted across the Arab world. Country-specific TLDs like <code>.sa</code> (Saudi Arabia), <code>.ae</code> (UAE), or <code>.eg</code> (Egypt) can boost local credibility and SEO, but typically require a local business registration.
+</p>
+{% endblock %}
+
+{% block section_3_1 %}
+<p>
+  Color symbolism in Arab culture blends Islamic tradition, regional variation, and modern design trends:
+</p>
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px;">🟢 <strong>Green:</strong> The most significant color in Islamic culture — associated with paradise, the Prophet, and spiritual purity. Used in the flags of Saudi Arabia, Pakistan, Libya, and others. Strong positive connotations across the Arab world. Natural choice for trust, wellness, and financial services.</li>
+  <li style="margin-bottom: 12px;">⚫ <strong>Black and gold:</strong> A premium, luxury combination. Widely used for high-end brands targeting Gulf markets where luxury spending is significant. Conveys exclusivity and prestige.</li>
+  <li style="margin-bottom: 12px;">🔵 <strong>Blue:</strong> Trust, technology, and corporate credibility — similar to its role in Western markets. Used across Gulf government and financial sector branding.</li>
+  <li style="margin-bottom: 12px;">🔴 <strong>Red:</strong> Use sparingly in formal business contexts — while not negative, red has a more cautious connotation in some professional Arab settings compared to Chinese or Latin American markets. Effective for promotional emphasis.</li>
+</ul>
+{% endblock %}
+
+{% block section_3_2 %}
+<p>
+  Arabic typography requires dedicated Arabic-supporting fonts — standard Latin fonts do not render Arabic script. The recommended font stack:
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-family: "Noto Sans Arabic", "Cairo", "Tajawal", "Segoe UI", sans-serif;
+</div>
+<p>
+  "Cairo" and "Tajawal" are clean, modern Arabic sans-serif fonts available on Google Fonts and widely used for digital interfaces. "Noto Sans Arabic" is Google's comprehensive Arabic font covering all Unicode Arabic characters. Avoid classical calligraphic fonts for body text — they significantly impair readability on screen.
+</p>
+<p>
+  Arabic body text should be set at <strong>16–18px</strong> (slightly larger than Latin equivalents, as Arabic letters are visually more complex) with a line-height of <strong>1.8–2.0</strong>. Arabic script requires generous line spacing — tight line-height causes ascenders and descenders to collide, making text unreadable. Avoid justified text alignment for Arabic body copy, as it creates irregular spacing between words.
+</p>
+{% endblock %}
+
+{% block section_3_3 %}
+<p>
+  Arabic web design combines RTL structural requirements with aesthetic preferences that have been shaped by the region's modernization and luxury market:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>Mirror, don't just translate:</strong> The entire visual flow of the page should feel naturally right-to-left. A user's eye enters the page from the top-right, moves left, and scans content right-to-left. Navigation, hero layouts, and card components should all be designed with this in mind — not just text-flipped from an LTR template.</li>
+  <li><strong>Photography considerations:</strong> Images of people should reflect the cultural context of the target market. In Gulf markets, dress and presentation standards in imagery matter to local audiences. Use regionally representative imagery where possible.</li>
+  <li><strong>Premium visual quality:</strong> Gulf markets in particular have high expectations for visual quality. Low-resolution images or dated design templates read as low-trust to UAE and Saudi audiences used to global luxury brand standards.</li>
+  <li><strong>Geometric and arabesque design elements:</strong> Traditional geometric patterns (used in Islamic art and architecture) can resonate powerfully as design accents when used tastefully — they signal cultural fluency and intentional localization.</li>
+</ul>
+{% endblock %}
+
+{% block section_4_1 %}
+<p>
+  Contact and communication in Arabic-speaking markets is dominated by a few key platforms that differ from Western norms:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>WhatsApp Business:</strong> The dominant business communication tool across all Arabic-speaking markets. A floating WhatsApp button is the highest-converting CTA for MENA audiences — significantly outperforming contact forms in B2C contexts. WhatsApp Business allows you to set automated replies in Arabic.</li>
+  <li><strong>Phone contact:</strong> A local phone number (e.g. +971 for UAE, +966 for Saudi Arabia) is a major trust signal. Virtual local numbers are available through Twilio and similar providers without requiring physical office presence.</li>
+  <li><strong>Snapchat for Gulf youth marketing:</strong> Snapchat has unusually high penetration in Saudi Arabia, UAE, and Kuwait — particularly among 18–34 year olds. For consumer brands targeting Gulf youth, Snapchat is a more effective channel than Instagram.</li>
+  <li><strong>Contact forms:</strong> Keep them minimal and available in both Arabic and English. Name, phone/WhatsApp number, and message is a reasonable default — email-first forms have lower completion rates in MENA markets where phone contact is preferred.</li>
+</ul>
+{% endblock %}
+
+{% block section_4_2 %}
+<p>
+  Mobile usage in Arabic-speaking markets is extremely high. Saudi Arabia, UAE, and Egypt all rank among the world's highest for smartphone usage time, with mobile accounting for <strong>over 70% of web traffic</strong> in most MENA markets.
+</p>
+<p>
+  RTL-specific mobile considerations beyond standard responsive design:
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>RTL on mobile:</strong> Test your RTL layout specifically on mobile. CSS logical properties and the <code>dir</code> attribute should handle most cases, but mobile-specific components (hamburger menus, carousels, swipe direction) need explicit RTL testing.</li>
+  <li><strong>Swipe direction:</strong> In a carousel or image slider, the "next" swipe direction is left-to-right in RTL (opposite of LTR). Verify that slider components respect RTL direction rather than assuming LTR swipe behavior.</li>
+  <li><strong>Form input direction:</strong> Arabic text input fields should be right-aligned by default. Use <code>dir="auto"</code> on input fields that may accept either Arabic or Latin text — the browser will automatically detect and set the direction based on the first character typed.</li>
+  <li><strong>Tap targets:</strong> Standard minimum 44×44px. WhatsApp and phone call buttons should be prominently visible with a persistent floating position.</li>
+</ul>
+{% endblock %}
+
+{% block section_5 %}
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Have you set <code>dir="rtl"</code> on the <code>&lt;html&gt;</code> element and used CSS logical properties throughout the layout?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Have you audited all directional icons, sliders, and navigation components to confirm they're correctly mirrored for RTL?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Is an Arabic-optimized font (Cairo, Tajawal, or Noto Sans Arabic) applied with appropriate line-height (1.8–2.0)?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Is a WhatsApp Business button prominently displayed as the primary contact CTA?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Have you reviewed content for cultural and religious sensitivity appropriate to your target market?</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>Have you tested the full page — including forms and interactive elements — on mobile in RTL mode?</span>
+  </li>
+</ul>
+<p>
+  RTL layout is one of the most technically demanding localization tasks — it requires rethinking layout assumptions made throughout your entire codebase. Leap handles RTL configuration automatically, so your Arabic site looks and behaves correctly from day one without manual CSS overrides.
+</p>
+{% endblock %}

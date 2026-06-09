@@ -1,0 +1,165 @@
+---
+layout: base.njk
+title: Store Setup Guide | EC Operations Manual
+description: Platform selection, initial configuration, and store design — everything you need to launch your EC store.
+---
+
+<section class="section pt-3xl pb-3xl bg-beige" style="min-height: 80vh;">
+    <div class="container">
+
+        <div class="flex justify-between items-end mb-lg flex-wrap" style="gap: 1rem;">
+            <div class="flex items-center flex-wrap" style="gap: 1.5rem;">
+                <h1 class="font-bold text-primary" style="font-size: 2rem; margin: 0; line-height: 1.2;">Store Setup Guide</h1>
+                <a href="/{{ locale }}/ec-guide/" class="back-to-top">
+                    &larr; Back to EC Operations Manual
+                </a>
+            </div>
+            <div class="flex items-center" style="font-size: 0.9rem;">
+                <span class="text-secondary mr-sm">Sort by:</span>
+                <button onclick="setSortType('date')" class="sort-btn active" id="sort-date">Newest</button>
+                <span class="text-border mx-xs" style="color: var(--color-border);">|</span>
+                <button onclick="setSortType('views')" class="sort-btn" id="sort-views">Popular</button>
+            </div>
+        </div>
+
+        <div id="filter-status" class="mb-lg" style="display: none;">
+            <span class="text-lg font-bold">
+                <span class="text-primary">#<span id="current-tag-name"></span></span> articles
+            </span>
+            <button onclick="resetFilter()" class="ml-sm text-sm text-secondary underline" style="background:none; border:none; cursor:pointer;">
+                Show all
+            </button>
+        </div>
+
+        <div class="grid-3" id="articles-grid">
+            {% set all_posts = collections['ec-guide'] | reverse %}
+            {% set has_posts = false %}
+
+            {% for post in all_posts %}
+                {% if post.data.locale == 'en' and post.data.topic == 'store-setup' %}
+                    {% set has_posts = true %}
+                    <article class="card p-0 blog-item article-card"
+                             data-topic="{{ post.data.topic }}"
+                             data-tags="{{ post.data.tags | join(',') }}"
+                             data-date="{{ post.date.getTime() }}"
+                             style="padding: 0; overflow: hidden; display: none; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
+
+                        <a href="{{ post.url }}" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="{{ post.data.thumbnail | default('https://placehold.co/600x400/f1f5f9/94a3b8?text=No+Image') }}"
+                                 alt="{{ post.data.title }}"
+                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
+                        </a>
+
+                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
+                            <div class="flex justify-between items-center mb-sm">
+                                <span class="text-primary font-bold" style="font-size: 12px; background: rgba(193, 0, 51, 0.1); padding: 4px 8px; border-radius: 4px;">
+                                    {{ post.data.topic_label | default(post.data.topic) }}
+                                </span>
+                                <time style="font-size: 12px; color: var(--color-text-secondary);">
+                                    {{ post.date | date("yyyy.MM.dd") }}
+                                </time>
+                            </div>
+
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
+                                <a href="{{ post.url }}" style="color: inherit; text-decoration: none;">
+                                    {{ post.data.title }}
+                                </a>
+                            </h3>
+
+                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
+                                {{ post.data.description }}
+                            </p>
+
+                            <div class="flex items-center pt-sm" style="border-top: 1px solid #eee;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background: #ccc; margin-right: 8px; overflow: hidden;">
+                                    <img src="{{ post.data.author_image | default('https://placehold.co/100x100/ddd/fff?text=User') }}" alt="author" style="width:100%; height:100%; object-fit:cover;">
+                                </div>
+                                <span style="font-size: 12px; font-weight: bold; color: var(--color-text-primary);">
+                                    {{ post.data.author | default('Leap Editorial') }}
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                {% endif %}
+            {% endfor %}
+
+            <div id="no-results-message" class="text-center w-full flex items-center justify-center" style="grid-column: 1/-1; padding: var(--space-3xl) 0; display: none;">
+                <p class="text-secondary">No articles found.</p>
+            </div>
+        </div>
+
+        <div id="pagination-container" class="flex justify-center mt-xl" style="gap: 8px;"></div>
+
+        {% if not has_posts %}
+            <div class="text-center w-full flex items-center justify-center" style="padding: var(--space-2xl) 0;">
+                <p class="text-secondary">No articles published yet.</p>
+            </div>
+        {% endif %}
+
+    </div>
+</section>
+
+{% include "cta1.njk" %}
+
+<style>
+    .back-to-top { color: var(--color-text-secondary); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s, transform 0.2s; display: flex; align-items: center; }
+    .back-to-top:hover { color: var(--color-primary-start); transform: translateX(-3px); text-decoration: underline; }
+    .sort-btn { background: none; border: none; cursor: pointer; padding: 0; font-family: inherit; font-size: inherit; color: var(--color-text-secondary); font-weight: normal; transition: color 0.3s; }
+    .sort-btn:hover { color: var(--color-primary-start); }
+    .sort-btn.active { color: var(--color-primary-start); font-weight: bold; text-decoration: underline; }
+    .page-btn { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--color-border); background: white; color: var(--color-text-primary); font-weight: bold; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; }
+    .page-btn:hover { border-color: var(--color-primary-start); color: var(--color-primary-start); }
+    .page-btn.active { background: var(--color-primary-start); color: white; border-color: var(--color-primary-start); }
+    .page-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .blog-item:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important; }
+    .blog-item:hover h3 a { color: var(--color-primary-start) !important; }
+</style>
+
+<script>
+    const ITEMS_PER_PAGE = 15;
+    let currentState = { filterType: 'tag', filterValue: null, sortType: 'date', currentPage: 1 };
+    let allArticleElements = [];
+
+    document.addEventListener("DOMContentLoaded", function() {
+        allArticleElements = Array.from(document.querySelectorAll('.article-card'));
+        const tag = new URLSearchParams(window.location.search).get('tag');
+        if (tag) { currentState.filterType = 'tag'; currentState.filterValue = tag; }
+        render();
+    });
+
+    function setSortType(type) { currentState.sortType = type; render(); }
+    function goToPage(page) { currentState.currentPage = page; render(); document.getElementById('articles-grid').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    function resetFilter() { const url = new URL(window.location); url.searchParams.delete('tag'); window.history.pushState({}, '', url); currentState.filterType = null; currentState.filterValue = null; currentState.currentPage = 1; render(); }
+
+    function render() {
+        document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
+        document.getElementById('sort-' + currentState.sortType).classList.add('active');
+        const statusDiv = document.getElementById('filter-status');
+        if (currentState.filterType === 'tag' && currentState.filterValue) { statusDiv.style.display = 'block'; document.getElementById('current-tag-name').textContent = currentState.filterValue; } else { statusDiv.style.display = 'none'; }
+        let filtered = allArticleElements.filter(el => { if (currentState.filterType === 'tag' && currentState.filterValue) { return (el.getAttribute('data-tags') || '').split(',').includes(currentState.filterValue); } return true; });
+        filtered.sort((a, b) => { const da = Number(a.getAttribute('data-date') || 0), db = Number(b.getAttribute('data-date') || 0); return currentState.sortType === 'views' ? da - db : db - da; });
+        const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+        if (currentState.currentPage > totalPages && totalPages > 0) currentState.currentPage = totalPages;
+        const start = (currentState.currentPage - 1) * ITEMS_PER_PAGE;
+        const grid = document.getElementById('articles-grid');
+        allArticleElements.forEach(el => el.style.display = 'none');
+        filtered.slice(start, start + ITEMS_PER_PAGE).forEach(el => { el.style.display = 'flex'; grid.appendChild(el); });
+        document.getElementById('no-results-message').style.display = filtered.length === 0 ? 'flex' : 'none';
+        renderPagination(totalPages);
+    }
+
+    function renderPagination(totalPages) {
+        const container = document.getElementById('pagination-container');
+        container.innerHTML = '';
+        if (totalPages <= 1) return;
+        const prev = document.createElement('button'); prev.className = 'page-btn'; prev.innerHTML = '&lsaquo;'; prev.disabled = currentState.currentPage === 1; prev.onclick = () => goToPage(currentState.currentPage - 1); container.appendChild(prev);
+        let s = Math.max(1, currentState.currentPage - 2), e = Math.min(totalPages, s + 4);
+        if (e - s < 4) s = Math.max(1, e - 4);
+        if (s > 1) { container.appendChild(createPageBtn(1)); if (s > 2) { const d = document.createElement('span'); d.textContent = '...'; d.style.alignSelf = 'center'; container.appendChild(d); } }
+        for (let i = s; i <= e; i++) container.appendChild(createPageBtn(i));
+        if (e < totalPages) { if (e < totalPages - 1) { const d = document.createElement('span'); d.textContent = '...'; d.style.alignSelf = 'center'; container.appendChild(d); } container.appendChild(createPageBtn(totalPages)); }
+        const next = document.createElement('button'); next.className = 'page-btn'; next.innerHTML = '&rsaquo;'; next.disabled = currentState.currentPage === totalPages; next.onclick = () => goToPage(currentState.currentPage + 1); container.appendChild(next);
+    }
+
+    function createPageBtn(n) { const btn = document.createElement('button'); btn.className = 'page-btn' + (n === currentState.currentPage ? ' active' : ''); btn.textContent = n; btn.onclick = () => goToPage(n); return btn; }
+</script>

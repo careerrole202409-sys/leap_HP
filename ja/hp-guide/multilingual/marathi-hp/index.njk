@@ -1,0 +1,168 @@
+---
+layout: base.njk
+title: マラーティー語ホームページ作成の注意点・完全ガイド
+target_lang: マラーティー語
+parent_url: /ja/hp-guide/multilingual/
+thumbnail: "https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/in.svg"
+locale: ja
+tags: ['hp-guide']
+topic: multilingual
+---
+
+{% extends "guide-caution.njk" %}
+
+{% block section_0 %}
+<p>
+  マラーティー語は、インド最大の経済都市ムンバイを擁する「マハラシュトラ州」の公用語であり、約8,300万人のネイティブスピーカーを持つインド第3の言語です。<br>
+  インドは英語が通じる国ですが、急激なスマートフォンの普及により、地方都市（Tier 2、Tier 3）のユーザーを中心に「現地の母語（ローカル言語）」でインターネットを利用する層が爆発的に増加しています。<br>
+  このガイドでは、購買力の高いマハラシュトラ州のユーザーを取り込むために必須となる、デーヴァナーガリー文字特有のデザイン設計、ローカルな信頼構築、インド独自のモバイル・決済事情について網羅的に解説します。
+</p>
+{% endblock %}
+
+{% block section_1_1 %}
+<p>
+  マラーティー語はヒンディー語と同じ<strong>「デーヴァナーガリー文字（Devanagari）」</strong>を使用して表記されます。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>直訳の罠（サンスクリット化）：</strong>翻訳ツールを使うと、日常では使われない硬すぎるサンスクリット語由来の単語に変換されることが多く、現地のユーザーには「不自然で機械的」な印象を与えます。必ず現地のネイティブによる「日常的に使われる自然な表現」への調整が必要です。</li>
+  <li><strong>英語との併記（Hinglish/Marathish）：</strong>インドのWebサイトでは、技術用語やブランド名を無理にマラーティー語に翻訳せず、英語（アルファベット）のまま残すか、英語ベースの造語を使うのが一般的なカルチャーです。</li>
+</ul>
+{% endblock %}
+
+{% block section_1_2 %}
+<p>
+  インドでは中国のような強力なネット検閲はなく、Google、YouTube、Meta（Facebook、Instagram、WhatsApp）などが世界最大規模で利用されています。
+</p>
+<div style="background:#fff4f4; padding:16px; border-radius:8px; border:1px solid #f5c6cb; margin-bottom:24px;">
+  <p style="font-weight:bold; color:#c53030; margin-bottom:8px;">❌ 気をつけるべき技術・UIの落とし穴</p>
+  <ul style="list-style:none; padding:0; margin:0;">
+    <li style="margin-bottom:8px;">・マラーティー語「のみ」のサイトにする（インドのユーザーは英語と母語を頻繁に切り替えるため、言語切り替えボタンがないと不便に感じます）</li>
+    <li>・複雑な入力フォーム（長文の入力を嫌うため、離脱の大きな原因になります）</li>
+  </ul>
+</div>
+<p>
+  GoogleやSNSの埋め込みは全く問題ありません。むしろ、YouTube動画を活用したコンテンツは文字を読むよりも好まれる傾向にあります。
+</p>
+{% endblock %}
+
+{% block section_1_3 %}
+<p>
+  サーバーとドメインの選定は、サイトの表示速度と信頼性に直結します。
+</p>
+<p>
+  <strong>解決策：</strong>ターゲットがマハラシュトラ州（インド国内）である場合、AWSやGoogle Cloudなどの<strong>「ムンバイ（Mumbai）リージョン」のサーバー</strong>を利用するのが最適です。これにより圧倒的な表示速度を実現できます。<br>
+  ドメインについては、インド国内でのビジネス展開をアピールし、ユーザーに安心感を与えるために<strong>「.in」</strong>または<strong>「.co.in」</strong>の取得を強く推奨します。
+</p>
+{% endblock %}
+
+{% block section_2_1 %}
+<p>
+  インドの消費者は「この会社は本当に信用できるか？」を非常に厳しくチェックします。特に決済や個人情報の入力には慎重です。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>UPI決済と代金引換（COD）：</strong>ECサイトやサービスの場合、Google PayやPhonePeなどの「UPI（統合決済インターフェース）」への対応、または「代金引換（Cash on Delivery）」の明記がコンバージョンに直結します。</li>
+  <li><strong>ローカルな連絡先：</strong>マハラシュトラ州内（ムンバイやプネなど）のローカルオフィスの住所や、現地で通じる電話番号を目立つ場所に記載することが最大の信頼材料になります。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_2 %}
+<p>
+  インドにおける検索エンジンのシェアは<strong>Googleが約99%</strong>を占めています。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>音声検索（Voice Search）の最適化：</strong>インドのローカル言語ユーザーは、文字を打ち込むよりもスマートフォンの「音声検索」を多用します。FAQページなどで、ユーザーが口語で質問しそうなフレーズ（自然言語）を見出しに含めるSEO対策が非常に有効です。</li>
+  <li><strong>ローカライズSEO：</strong>「ムンバイ」「プネ」などの具体的な都市名を含めたロングテールキーワードでの対策が、見込み顧客の獲得に繋がります。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_3 %}
+<p>
+  インド人は動画コンテンツやリッチな画像を好みますが、ムンバイなどの大都市を一歩出ると、ネットワーク環境（特に4G/5Gの安定性）にばらつきが出ます。
+</p>
+<p>
+  リッチな表現を取り入れつつも、Core Web Vitals（LCP, FID, CLS）の指標を満たすよう、画像のWebP化、ブラウザキャッシュの活用、不要なJavaScriptの遅延読み込みなど、Googleの推奨する表示速度最適化を徹底してください。
+</p>
+{% endblock %}
+
+{% block section_3_1 %}
+<p>
+  インド、特にマハラシュトラ州におけるWebデザインでは、現地の文化や色彩感覚に寄り添うことが重要です。
+</p>
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px;">🟠 <strong>サフラン（オレンジ）と赤：</strong>ヒンドゥー教やマハラシュトラの歴史的な文脈において、非常に縁起が良く、エネルギーを象徴する色です。アクセントカラーとして好まれます。</li>
+  <li style="margin-bottom: 12px;">🪔 <strong>お祭り（フェスティバル）要素：</strong>ディワリ（Diwali）やガネーシャ・チャトゥルティー（Ganesh Chaturthi）など、現地で重要なお祭りの時期には、バナーやサイトの一部に祝祭感のあるデザインを取り入れるとエンゲージメントが跳ね上がります。</li>
+</ul>
+{% endblock %}
+
+{% block section_3_2 %}
+<p>
+  マラーティー語（デーヴァナーガリー文字）のWebデザインにおいて、<strong>「文字の高さ（Line Height）」の調整は最も重要な技術的ポイント</strong>です。
+</p>
+<p>
+  デーヴァナーガリー文字には、ベースとなる文字の「上部」と「下部」に母音記号（マートラー）が付きます。英語と同じ行間（line-height）のまま設定すると、<strong>上の行の記号と下の行の記号が重なってしまい、文字が読めなくなる</strong>という深刻なデザイン崩れが発生します。欧文よりもゆとりのある行間（1.5〜1.6以上）を確保してください。
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  /* マラーティー語向けフォントと行間の推奨設定 */<br>
+  font-family: 'Mukta', 'Noto Sans Devanagari', sans-serif;<br>
+  line-height: 1.6;
+</div>
+<p>
+  ※「Mukta」はインドネシア語や英語にも対応しつつ、デーヴァナーガリー文字を美しく表示するためにインドで開発された非常に人気の高いGoogle Fontsです。
+</p>
+{% endblock %}
+
+{% block section_3_3 %}
+<p>
+  デザインのレイアウトは、英語からマラーティー語に翻訳した際の<strong>「テキストの膨張（Text Expansion）」</strong>を前提に設計する必要があります。
+</p>
+<p>
+  マラーティー語は英語に比べて文字幅を取るため、ボタンのテキストや見出しが英語の1.5倍ほどの長さになることがよくあります。固定幅のボタンや、高さをガチガチに固めたレイアウトは避け、文字量に合わせて柔軟に広がる流動的（フレキシブル）なUI設計を行ってください。
+</p>
+{% endblock %}
+
+{% block section_4_1 %}
+<p>
+  インドにおけるビジネスコミュニケーションは、メールから完全にチャットへと移行しています。その中心にあるのが<strong>「WhatsApp」</strong>です。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>WhatsApp連携：</strong>サイトの右下に「WhatsAppで問い合わせる」フローティングボタンを配置するのは、インド市場において「必須」と言えます。メールフォームよりも圧倒的にコンバージョン率が高くなります。</li>
+  <li><strong>Click to Call（電話発信）：</strong>インドのユーザーは「直接話して確認したい」という欲求が強いため、スマホサイトでは電話番号をタップしてすぐに発信できる機能（<code>tel:</code>リンク）を目立つ位置に配置しましょう。</li>
+</ul>
+{% endblock %}
+
+{% block section_4_2 %}
+<p>
+  インドは世界最大級の「モバイルファースト」市場です。PCからのアクセスは一部のB2Bビジネスに限られ、B2Cや一般向けのサイトであれば、アクセスの90%以上がスマートフォンからになると想定すべきです。
+</p>
+<p>
+  UIデザインは完全にスマートフォン画面（特にAndroid端末）を基準に行い、親指一つで操作しやすいナビゲーション（ボトムナビゲーションバーなど）の採用を検討してください。
+</p>
+{% endblock %}
+
+{% block section_5 %}
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>デーヴァナーガリー文字の上下の記号が重ならないよう、適切な「行間（line-height）」を設定しているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>マラーティー語特有のテキストの膨張に耐えられる、柔軟なUI設計になっているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>ユーザーが好む言語を選べるよう、英語とマラーティー語の「言語切り替えスイッチ」があるか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>問い合わせのハードルを下げる「WhatsAppボタン」や「電話発信リンク」を設置しているか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>決済にUPIが含まれているか、またはローカルな信頼材料（住所など）が明記されているか？</span>
+  </li>
+</ul>
+<p>
+  これらを一から構築・調整するには、インド特有の技術的・文化的な専門知識が必要です。しかし、Leapを使えば、デーヴァナーガリー文字に最適化されたフォント設定や、モバイルファーストな多言語Webサイトを最初からスムーズに作成できます。
+</p>
+{% endblock %}

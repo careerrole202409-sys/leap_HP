@@ -1,0 +1,193 @@
+---
+layout: base.njk
+title: 葡萄牙语网站建设完全指南
+target_lang: 葡萄牙语
+parent_url: /zh-hans/hp-guide/multilingual/portuguese-hp/
+thumbnail: "/assets/images/guide-portuguese.jpg"
+---
+
+{% extends "guide-caution.njk" %}
+
+{% block section_0 %}
+<p>
+  葡萄牙语是全球约 2.6 亿母语使用者的语言，覆盖巴西、葡萄牙、安哥拉、莫桑比克等共 9 个官方语言国家。对中国企业而言，<strong>巴西是最具战略意义的目标</strong> —— 它是南美洲最大经济体，也是中国在拉丁美洲最大的贸易伙伴，大豆、铁矿石、农业机械和数字服务领域双边往来规模巨大。<br>
+  葡萄牙语网站最大的误区，是将巴西葡萄牙语和欧洲葡萄牙语混为一谈。两者的差异并不亚于美式英语和英式英语，词汇、拼写、非正式用语和文化参照均有显著不同。巴西人看到欧洲葡萄牙语内容，会立刻感受到"这不是给我们写的"。<br>
+  本指南将系统梳理做好葡萄牙语网站（尤其是面向巴西市场）必须掌握的法律、技术、SEO 和文化要素。
+</p>
+{% endblock %}
+
+{% block section_1_1 %}
+<p>
+  巴西葡萄牙语（pt-BR）和欧洲葡萄牙语（pt-PT）的主要差异：
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>巴西葡萄牙语（pt-BR）：</strong>词汇差异显著（"ônibus" vs "autocarro" 表示公共汽车），拼写改革后两者仍保留若干差异，口语化表达更丰富，整体语气更温暖、更随意。在动词变位上，巴西日常用语大量使用 <em>você</em>，而欧洲葡萄牙语更多使用 <em>tu</em>。</li>
+  <li><strong>欧洲葡萄牙语（pt-PT）：</strong>发音差异很大（元音常被省略），句子结构更接近西班牙语，整体语气较巴西更正式。</li>
+  <li><strong>非洲葡萄牙语（安哥拉、莫桑比克）：</strong>欧洲葡萄牙语是书面规范，但这些市场有独特的本地文化背景。对于中国的基础设施和能源业务而言，这两个市场具有一定战略意义。</li>
+</ul>
+<p>
+  面向巴西时设置 <code>&lt;html lang="pt-BR"&gt;</code>，面向葡萄牙时设置 <code>lang="pt-PT"</code>。葡萄牙语使用带重音字符的拉丁字母（ã、ã、ê、é、à、ç 等），标准拉丁 Web 字体均可支持。
+</p>
+{% endblock %}
+
+{% block section_1_2 %}
+<p>
+  巴西及葡萄牙语市场均处于开放的互联网环境，主要技术考量集中在<strong>移动端性能</strong>和<strong>本地支付集成</strong>上：
+</p>
+<div style="background:#fff4f4; padding:16px; border-radius:8px; border:1px solid #f9a8a8; margin-bottom:24px;">
+  <p style="font-weight:bold; color:#c53030; margin-bottom:8px;">❌ 巴西市场常见技术问题</p>
+  <ul style="list-style:none; padding:0; margin:0;">
+    <li style="margin-bottom:8px;">· 未集成 Pix —— 巴西主流即时支付系统，2021 年上线后已成为最常用支付方式之一</li>
+    <li style="margin-bottom:8px;">· 未集成分期付款选项（parcelamento）—— 巴西消费者习惯于分多期（通常 6–12 期）完成大额购买</li>
+    <li>· 页面在安卓中端机+移动网络下加载缓慢 —— 巴西大量用户通过价格亲民的安卓设备上网</li>
+  </ul>
+</div>
+<p>
+  WhatsApp 在巴西的普及程度极高，是与企业沟通的首选方式。WhatsApp Business 集成对面向巴西的消费者和中小企业网站几乎是必备功能。
+</p>
+{% endblock %}
+
+{% block section_1_3 %}
+<p>
+  巴西和葡萄牙的数据保护法律框架各自独立：
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>巴西《通用数据保护法》（LGPD）：</strong>2020 年正式生效，框架与 GDPR 相近。要求提供隐私政策、告知数据处理目的、赋予用户访问和删除权。巴西国家数据保护局（ANPD）执法力度逐步加强。须提供葡萄牙语（pt-BR）隐私政策。</li>
+  <li><strong>葡萄牙（欧盟 GDPR）：</strong>葡萄牙是欧盟成员国，完整的 GDPR 义务均适用，包括 Cookie 同意、隐私政策和数据主体权利。</li>
+  <li><strong>巴西电商规定（《消费者保护法》）：</strong>巴西电商受《消费者保护法典》（CDC）保护，规定 7 天无理由退货权（网购），以及详细的产品描述义务。价格须透明展示，含所有税费。</li>
+  <li><strong>巴西税务注意事项：</strong>巴西税务体系复杂，对数字服务征税（ICMS、ISS）。向巴西消费者提供数字服务涉及特定税务义务，建议与当地顾问确认合规要求。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_1 %}
+<p>
+  巴西是内容消费大国，对温暖、真实和以人为中心的沟通方式反应良好：
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>温暖的对话式语气：</strong>巴西数字内容以亲和力见长。过于正式或企业腔的文案会显得与受众有距离。品牌经常使用幽默和会话式语言。<em>Você</em> 是巴西数字内容的标准称谓，而非较正式的 <em>o senhor/a senhora</em>。</li>
+  <li><strong>WhatsApp 渗透率极高：</strong>巴西是全球 WhatsApp 使用率最高的国家之一，企业与个人之间的大量沟通都在 WhatsApp 上进行。在网站上展示 WhatsApp 联系按钮和响应及时的 WhatsApp Business 主页，是转化率最高的单一 CTA。</li>
+  <li><strong>视频内容主导：</strong>巴西是全球视频消费最活跃的市场之一（YouTube、Instagram Reels、TikTok 均在巴西有极高的日活数据）。落地页嵌入视频，或提供视频版本的产品介绍，能显著提升参与度。</li>
+  <li><strong>本土关键词研究：</strong>巴西葡萄牙语与欧洲葡萄牙语词汇差异明显。在 Google Keyword Planner 中将地区筛选为巴西，而不是笼统地查"葡萄牙语"，否则数据会反映欧洲受众的搜索习惯。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_2 %}
+<p>
+  <strong>Google 在巴西约占 95–97% 的搜索份额</strong>，是几乎垄断性的存在。标准 Google SEO 实践完全适用，附加以下葡萄牙语特有考量：
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>巴西与葡萄牙的 hreflang：</strong>若同时服务 pt-BR 和 pt-PT 受众，hreflang 标签确保 Google 为每个地区推送正确版本，避免两个变体之间的重复内容问题。</li>
+  <li><strong>关键词需区分地区：</strong>巴西和葡萄牙搜索者使用不同词汇。"celular"（手机）在巴西使用，葡萄牙则多用"telemóvel"。务必按目标市场分别研究关键词。</li>
+  <li><strong>本地 SEO 对巴西尤为重要：</strong>巴西 B2C 用户高度重视本地信任信号 —— Google Business Profile、本地电话号码和提及城市/地区的内容，能大幅提升本地搜索可见性。</li>
+  <li><strong>丰富内容格式：</strong>巴西搜索者对视频和视觉内容的搜索比例高于许多市场。YouTube SEO（葡萄牙语视频内容）在巴西市场是独立的流量来源，不可忽视。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_3 %}
+<p>
+  托管位置的选择对延迟和数据合规均有影响：
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>巴西（圣保罗）：</strong>AWS 圣保罗（sa-east-1）、Google Cloud 圣保罗是服务巴西受众的最低延迟选择。圣保罗是巴西互联网基础设施的核心，从那里的服务器访问巴西其他地区，延迟通常在 20–40ms 以内。</li>
+  <li><strong>LGPD 与数据驻留：</strong>LGPD 不要求数据必须存储在巴西境内，但在巴西的服务器能简化合规工作，部分巴西企业客户的合同中可能有本地数据要求。</li>
+  <li><strong>葡萄牙（欧盟）：</strong>AWS 爱尔兰或法兰克福、Google Cloud 欧洲区域，与 GDPR 合规要求保持一致。</li>
+</ul>
+<p>
+  域名方面，<code>.com.br</code> 对面向巴西市场的业务有强烈的本地信任加分，但需要在巴西有法律实体并持有 CNPJ（企业税号）。外国企业通常使用 <code>.com</code>，同样被普遍接受。
+</p>
+{% endblock %}
+
+{% block section_3_1 %}
+<p>
+  巴西设计美学充满活力，偏向鲜明、对比强烈的配色，这与巴西文化中对表达和庆典的热情一脉相承：
+</p>
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px;">🟢 <strong>绿色与黄色：</strong>巴西国旗色，在国内品牌中广泛使用，传递真实性和国家认同。这两种颜色在巴西节日和促销活动中几乎无处不在。</li>
+  <li style="margin-bottom: 12px;">🔵 <strong>蓝色：</strong>信任和专业，是巴西金融服务、科技和 B2B 品牌的主导色。努班克（Nubank）的紫色成为巴西金融科技的代表色，表明巴西市场欢迎突破传统的品牌颜色。</li>
+  <li style="margin-bottom: 12px;">🔴 <strong>红色：</strong>热情与紧迫感，常用于促销 CTA 和零售。在巴西文化中，红色同时具有喜庆联想。</li>
+  <li style="margin-bottom: 12px;">🌈 <strong>大胆的对比色方案：</strong>巴西市场对视觉大胆、对比鲜明的配色方案接受度很高，这在更保守的欧洲市场可能显得过于强烈。</li>
+</ul>
+{% endblock %}
+
+{% block section_3_2 %}
+<p>
+  葡萄牙语使用带重音字符的拉丁字母，标准 Web 字体均可支持。
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-family: "Inter", "Roboto", "Helvetica Neue", Arial, sans-serif;
+</div>
+<p>
+  Inter 和 Roboto 是巴西科技和 SaaS 品牌最常用的字体选择。巴西最大的金融科技公司（努班克、Mercado Pago）使用干净的现代无衬线字体，这已成为巴西数字品牌的视觉参照。对消费品或食品行业，带有温暖感的圆形无衬线字体（如 Nunito）能与受众良好共鸣。
+</p>
+<p>
+  正文字号 16px，行高 1.6–1.8。葡萄牙语句子通常比英语长，需注意响应式布局中的文字溢出问题。
+</p>
+{% endblock %}
+
+{% block section_3_3 %}
+<p>
+  巴西数字设计融合了视觉活力与功能可用性，与其他拉丁美洲市场有一定共性，但巴西科技生态系统的成熟度也带来更高的设计期待：
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>移动优先是基础要求：</strong>巴西大量互联网访问来自智能手机。落地页的移动端体验不能是桌面设计的"降级版" —— 必须作为首要设计目标。</li>
+  <li><strong>真实感高于精致感：</strong>真实人物的摄影（与目标受众形象相近）比精美但缺乏真实感的素材图表现更好。巴西消费者对品牌真实性高度敏感。</li>
+  <li><strong>社会证明至关重要：</strong>来自知名巴西品牌或可识别人物的评价、媒体报道和认证标志，是建立信任的核心要素。</li>
+  <li><strong>简洁的结账/转化流程：</strong>分期付款（parcelamento）集成需要在 UI 上清晰呈现，通常在产品页直接展示分期后的月供金额，这是巴西电商的标准做法。</li>
+</ul>
+{% endblock %}
+
+{% block section_4_1 %}
+<p>
+  巴西的联系偏好强烈偏向即时、对话式的沟通渠道：
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>WhatsApp Business 是核心：</strong>WhatsApp 是巴西与企业沟通的主要渠道，适用于从 B2C 客服到 B2B 销售洽谈的各种场景。如果只能优先实现一个联系渠道，WhatsApp 是毫无疑问的首选。WhatsApp Business API 支持自动回复、产品目录和广播列表。</li>
+  <li><strong>Instagram Direct：</strong>巴西是全球 Instagram 使用率最高的国家之一，尤其在零售和时尚领域，Instagram DM 是一个重要的客服和销售渠道。</li>
+  <li><strong>本地电话号码：</strong>巴西本地号码（+55）能建立信任，特别是对 B2C 受众。可通过 Twilio 等服务商获取虚拟号码。</li>
+  <li><strong>邮件与表单：</strong>在 B2B 场景中仍然有效，但通常不是首选。务必保证快速的电子邮件响应速度 —— 巴西商业文化中，响应迟缓会被解读为对客户不重视。</li>
+</ul>
+{% endblock %}
+
+{% block section_4_2 %}
+<p>
+  巴西是拉丁美洲移动优先程度最高的市场之一 —— <strong>超过 60% 的网络流量来自移动端</strong>，且这一比例仍在持续增长。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>安卓中端机测试：</strong>三星 Galaxy A 系列是巴西主流设备。在这类设备上测试关键流程（结账、表单、WhatsApp 跳转），而不仅仅是在高端 iPhone 上测试。</li>
+  <li><strong>移动网络性能：</strong>巴西的 4G 网络在大城市覆盖良好，但在部分内陆地区和较小城市可能较慢。目标页面控制在 1MB 以内，并使用 WebP 格式压缩图片。</li>
+  <li><strong>WhatsApp 点击聊天：</strong><code>https://wa.me/[号码]</code> 链接从移动端浏览器直接打开 WhatsApp，这是巴西移动端最核心的 CTA 设计模式。</li>
+  <li><strong>Pix 支付集成：</strong>Pix 是巴西中央银行推出的即时支付系统，现在是巴西最常用的支付方式，全天候即时到账、免手续费，对电商结账流程的移动端实现至关重要。</li>
+</ul>
+{% endblock %}
+
+{% block section_5 %}
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>是否为目标市场选择了正确的变体（巴西用 pt-BR，葡萄牙用 pt-PT）并设置了正确的 <code>lang</code> 属性？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>面向巴西受众，是否在网站醒目位置集成了 WhatsApp Business 联系按钮？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>面向巴西消费者销售时，是否已集成 Pix 支付，并在产品页展示分期付款（parcelamento）选项？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>巴西隐私政策是否符合 LGPD 要求，且以 pt-BR 呈现？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>网站是否在安卓中端设备和移动网络环境下完成了性能测试？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>若同时服务巴西和葡萄牙受众，是否已配置 hreflang 标签？</span>
+  </li>
+</ul>
+<p>
+  巴西市场的技术复杂性 —— Pix 集成、LGPD 合规、WhatsApp Business 配置和移动端性能优化 —— 叠加在一起需要相当的前期工作量。Leap 处理本地化基础设施，让你从第一天起就能正确服务巴西受众。
+</p>
+{% endblock %}

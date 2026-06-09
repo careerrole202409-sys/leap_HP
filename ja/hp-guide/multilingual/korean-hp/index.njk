@@ -1,0 +1,216 @@
+---
+layout: base.njk
+title: 韓国語ホームページ作成の注意点・完全ガイド
+target_lang: 韓国語
+parent_url: /ja/hp-guide/multilingual/
+thumbnail: "https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/kr.svg"
+locale: ja
+tags: ['hp-guide']
+topic: multilingual
+---
+
+{% extends "guide-caution.njk" %}
+
+{% block section_0 %}
+<p>
+  「韓国語のホームページを作ったのに、現地のユーザーに全く刺さらない」というケースは珍しくありません。<br>
+  中国と異なり、韓国ではGoogle・YouTube・SNSなどのサービスが自由に使えます。しかし、それゆえに「日本と同じ感覚でそのまま作れば問題ない」と思いがちです。実際には、<strong>「検索エンジンの仕組みが根本的に違う」「問い合わせツールの常識が異なる」「個人情報保護法の網がかかる」</strong>という、日本からは見えにくい壁が存在します。<br>
+  このガイドでは、韓国市場で成果を出すために必須となる、SEO・法律・デザイン・コミュニケーション面の重要ポイントを網羅的に解説します。
+</p>
+{% endblock %}
+
+{% block section_1_1 %}
+<p>
+  韓国語はハングル文字のみで表記されます。中国語の「簡体字・繁体字」のような地域差はなく、<strong>文字体系そのものを使い分ける必要はありません</strong>。ただし、以下の点には注意が必要です。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>スペース（띄어쓰기）のルール：</strong>韓国語は単語の区切りを半角スペースで表します。スペースの入れ方が不自然だと、ネイティブには違和感や信頼感の低下につながります。機械翻訳をそのまま使うと、このスペースが誤っていることが多いため注意が必要です。</li>
+  <li><strong>敬語レベルの選択：</strong>韓国語には日本語と同様に丁寧語と敬語の区別があります。ビジネスサイトでは「합쇼체（ハプショ体）」または「해요체（ヘヨ体）」を使用するのが一般的です。どちらかに統一し、混在させないようにしましょう。</li>
+  <li><strong>語彙の選択：</strong>同じ意味でも韓国語ならではの表現があります（例：「회사（フェサ）」＝会社）。日本語を機械的に韓国語に変換しただけでは、現地で使われない不自然な表現になることがあるため、ネイティブチェックは必須です。</li>
+</ul>
+{% endblock %}
+
+{% block section_1_2 %}
+<p>
+  韓国のインターネット環境は非常にオープンで、GoogleやYouTube・Instagramなど日本と同じサービスが制限なく使えます。そのため、中国サイトのような「規制への対応」は原則不要です。<br>
+  しかし、だからといって日本のサイトをそのまま流用していいわけではありません。以下の点に気をつけましょう。
+</p>
+<div style="background:#fff4f4; padding:16px; border-radius:8px; border:1px solid #f9a8a8; margin-bottom:24px;">
+  <p style="font-weight:bold; color:#c53030; margin-bottom:8px;">⚠️ 見落としがちな注意点</p>
+  <ul style="list-style:none; padding:0; margin:0;">
+    <li style="margin-bottom:8px;">・Google Fontsは原則使用可能ですが、国際回線の品質によっては読み込みが遅くなる場合があります。Webフォントは韓国語対応のものをセルフホストするのが安定します。</li>
+    <li style="margin-bottom:8px;">・韓国のユーザーはセキュリティ意識が高い傾向があります。フォームにはSSL証明書の表示やプライバシーポリシーへのリンクを必ず設置しましょう。</li>
+    <li>・動画はYouTubeをそのまま埋め込めますが、韓国の若年層はInstagramやTikTokでの縦型動画も重視しています。動画施策を考える際は、プラットフォームの選定も重要です。</li>
+  </ul>
+</div>
+<p>
+  地図の埋め込みはGoogle Mapsが問題なく使えますが、韓国現地のユーザーは<strong>Naver Maps（네이버 지도）</strong>や<strong>Kakao Map（카카오맵）</strong>に慣れているため、これらへのリンクを追加するとより利便性が高まります。
+</p>
+{% endblock %}
+
+{% block section_1_3 %}
+<p>
+  韓国には、GDPRと同様の包括的な<strong>「個人情報保護法（PIPA：Personal Information Protection Act）」</strong>が存在します。2023年9月に大幅改正が施行されており、外国企業にも適用される可能性があります。
+</p>
+<p>
+  特に重要なのは<strong>「域外適用」</strong>の問題です。韓国語でサービスを提供するウェブサイトが韓国在住者から問い合わせフォーム等を通じて個人情報を収集する場合、日本の企業であってもPIPAの規制を受ける可能性があります。2024年4月には韓国個人情報保護委員会（PIPC）が外国事業者向けのガイドラインを公表し、域外適用の範囲がより明確化されました。
+</p>
+<div style="background:#f0f9ff; padding:16px; border-radius:8px; border:1px solid #bae6fd; margin-bottom:24px;">
+  <p style="font-weight:bold; color:#0369a1; margin-bottom:8px;">✅ 対応が求められる主な内容</p>
+  <ul style="list-style:none; padding:0; margin:0;">
+    <li style="margin-bottom:8px;">・個人情報の収集・利用目的を事前に明示し、ユーザーの<strong>同意を取得すること</strong></li>
+    <li style="margin-bottom:8px;">・<strong>プライバシーポリシー（개인정보 처리방침）</strong>を韓国語で掲載すること</li>
+    <li>・情報漏洩が発生した場合の<strong>報告・通知義務</strong>への準備（違反時は総売上の最大3%の制裁金が科される可能性があります）</li>
+  </ul>
+</div>
+<p>
+  中国のICPライセンスのような「許認可の取得」は不要ですが、プライバシーポリシーの整備と同意取得の仕組みは必須です。詳細は法律の専門家への確認を推奨します。
+</p>
+{% endblock %}
+
+{% block section_2_1 %}
+<p>
+  韓国のユーザーは、情報収集と比較検討に非常に積極的です。購入や問い合わせに至るまでに、複数のレビューサイトやコミュニティを参照することが一般的です。そのため、ウェブサイトには「信頼できる情報源であること」を示す要素が不可欠です。
+</p>
+<ul style="list-style: disc; margin-left: 20px;">
+  <li><strong>口コミ・レビューの掲載：</strong>韓国ユーザーは商品・サービス選定において口コミを強く重視します。実際の利用者の声を韓国語で掲載することが効果的です。</li>
+  <li><strong>数字による実績の明示：</strong>「〇〇社に導入」「〇〇件の実績」「創業〇〇年」といった具体的な数字による実績を示すことで、信頼感が大きく向上します。</li>
+  <li><strong>FAQ（자주 묻는 질문）の充実：</strong>疑問を解消してから行動する傾向が強いため、よくある質問コーナーを充実させることで離脱率を下げられます。</li>
+  <li><strong>会社情報の透明性：</strong>所在地・電話番号・代表者情報などをきちんと掲載することも、基本的な信頼構築につながります。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_2 %}
+<p>
+  韓国の検索市場において、最も重要なのが<strong>「NAVER（네이버）」</strong>です。NAVERとGoogleのシェアは拮抗しており、いずれか一方だけでは不十分です。両方を意識した戦略が求められます。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 24px;">
+  <li><strong>NAVER Search Advisor（네이버 서치어드바이저）への登録：</strong>NAVERはGoogleのような自動クロールが弱く、サイトマップの手動送信が重要です。Search Advisorから積極的にインデックス登録を行いましょう。</li>
+  <li><strong>NAVERブログの運用：</strong>NAVERの検索結果は、外部サイトよりもNAVER内のコンテンツ（ブログ・カフェ・知識iN）が上位に表示されやすい仕組みになっています。公式NAVERブログを開設して継続的に運用することは、SEO上も非常に有効な戦略です。</li>
+  <li><strong>Google対策も欠かさず：</strong>テクノロジーに精通した若年層や高所得層ほどGoogleを使う傾向があります。Google Search Consoleへの登録と、hreflang（言語タグ）の適切な設定も必須です。</li>
+  <li><strong>ハングルキーワードで最適化：</strong>韓国語の検索はローマ字ではなくハングルで行われます。直訳ではなく、実際にユーザーが検索するハングルの語句を現地目線で調査してキーワードを設定しましょう。</li>
+</ul>
+{% endblock %}
+
+{% block section_2_3 %}
+<p>
+  ドメインとサーバーの選択は、韓国のSEOパフォーマンスに直結します。
+</p>
+<p>
+  ドメインについては、<strong>「.kr」ドメイン</strong>を使用することで、NAVERや他の韓国検索エンジンに対して「韓国市場向けサイトである」という強いシグナルを送れます。ただし、.krドメインの取得には韓国の登録機関（KRNIC）を通じた手続きが必要なため、グローバル展開を重視する場合は<strong>「.com」</strong>のままhreflangタグで言語・地域を明示する方法でも対応できます。
+</p>
+<p>
+  サーバーについては、韓国国内または近隣地域（日本・シンガポール）のサーバーを選択し、物理的な距離からくる表示速度の遅延を最小化することが重要です。韓国のユーザーは表示速度に非常に敏感であり、読み込みが遅いサイトはすぐに離脱されます。CDN（コンテンツ・デリバリ・ネットワーク）の導入も有効な手段です。
+</p>
+{% endblock %}
+
+{% block section_3_1 %}
+<p>
+  韓国のウェブデザインでは、感性的・ビジュアル重視の表現が好まれます。中国の「赤＝縁起物」のような強固な色彩規則は薄く、むしろトレンドへの感度が色彩選択に大きく影響します。
+</p>
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px;">⚪ <strong>白・ベージュ・グレー：</strong>韓国の現代的なWebデザインで最も多用される清潔感のあるカラーです。中国のように葬儀を連想させるようなネガティブなイメージは薄く、洗練されたミニマルデザインの基調色として機能します。</li>
+  <li style="margin-bottom: 12px;">🎨 <strong>ビビッドカラーのアクセント：</strong>K-POPや韓国コスメの影響もあり、鮮やかな色をポイント使いするデザインが好まれます。ブランドカラーとして印象的な一色を設定し、CTAボタンなどに活用すると効果的です。</li>
+  <li style="margin-bottom: 12px;">🌸 <strong>パステル・くすみカラー：</strong>特に若年層・女性向けサービスではパステルトーンやくすみカラーが好まれます。Z世代をターゲットとする場合は、トレンドに合わせた柔らかい配色も有効です。</li>
+  <li style="margin-bottom: 12px;">🔴 <strong>赤の注意点：</strong>一般的に情熱や活力を表す色として使われますが、日韓関係を想起させる文脈では慎重に扱いましょう。「日本の〇〇が韓国でも人気」のような比較表現のページでは特に配慮が必要です。</li>
+</ul>
+{% endblock %}
+
+{% block section_3_2 %}
+<p>
+  ハングルは子音と母音を組み合わせたブロック文字であり、欧文フォントとは構造が根本的に異なります。日本語フォント（メイリオやヒラギノ等）を指定したままにすると、ハングル文字がOSのデフォルトフォントで表示されてしまいます。CSSでは必ず韓国語フォントを明示的に指定しましょう。
+</p>
+<p>
+  現在の韓国Webデザインで広く使われている標準フォントは以下の通りです。
+</p>
+<div style="background:#f1f5f9; padding:12px; border-radius:4px; font-family:monospace; margin-bottom:16px;">
+  font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+</div>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 16px;">
+  <li><strong>Pretendard：</strong>現在の韓国Webデザインで最も人気のゴシック体フォント。シンプルで洗練された印象を与え、商用利用も無料です。デジタルコンテンツ全般に最適です。</li>
+  <li><strong>Noto Sans KR：</strong>Googleが提供する汎用性の高いゴシック体。ただし、パフォーマンスを考慮してサブセットやセルフホストでの使用を推奨します。</li>
+  <li><strong>Nanum（나눔）フォント：</strong>NAVERが提供する無料フォントで、ゴシック体・明朝体など複数の書体があります。本文〜見出しまで幅広く対応できます。</li>
+</ul>
+<p>
+  文字サイズは最低<strong>14px〜16px</strong>を確保してください。ハングルは欧文に比べて視認性が下がりやすく、小さすぎるフォントはユーザー体験を損ないます。
+</p>
+{% endblock %}
+
+{% block section_3_3 %}
+<p>
+  韓国のWebデザインの特徴は、<strong>「洗練されたミニマル」と「大胆なビジュアル」の共存</strong>にあります。日本のサイトが情報量を詰め込む傾向があるのに対し、韓国のサイトは余白を活かしたシンプルな構成でありながら、ファーストビューのビジュアルには高い品質が求められます。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 16px;">
+  <li><strong>高品質なビジュアルファースト：</strong>トップページの第一印象が非常に重視されます。高解像度の写真や動画、スクロールアニメーションを活用したファーストビューはユーザーの興味を引きつける上で有効です。</li>
+  <li><strong>モバイルファーストのレイアウト：</strong>スマートフォン利用率が非常に高いため、PC版よりもスマホ版のデザインを先に考えるアプローチが求められます。</li>
+  <li><strong>SNSとの一体感：</strong>InstagramやTikTokのような縦長コンテンツに慣れたユーザーが多いため、スクロールを前提とした縦型のレイアウト設計が相性よく機能します。</li>
+  <li><strong>インタラクションの豊かさ：</strong>ホバーエフェクトや要素のアニメーションなど、操作に反応する動きを取り入れることで、ユーザーの満足感を高められます。</li>
+</ul>
+{% endblock %}
+
+{% block section_4_1 %}
+<p>
+  韓国では<strong>「カカオトーク（KakaoTalk）」</strong>が日本のLINEに相当する国民的メッセンジャーアプリです。韓国国民の約9割が利用しており、日常生活・ビジネス・行政手続きまでカカオトークで完結する文化が根付いています。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 16px;">
+  <li><strong>카카오톡 채널（カカオトークチャンネル）：</strong>企業が公式アカウントを作成し、ユーザーがチャット形式で問い合わせできる仕組みです。ウェブサイトに「카카오톡으로 문의하기（カカオトークで問い合わせ）」ボタンを設置することで、問い合わせのハードルを大幅に下げられます。</li>
+  <li><strong>即時性の重視：</strong>韓国ユーザーはメールフォームよりも即時応答できるチャットツールを好みます。カカオトークチャンネルでの対応可能時間を明示し、可能であれば自動返信メッセージも設定しましょう。</li>
+  <li><strong>SNS連携：</strong>問い合わせ導線に加え、Instagram・YouTube・NAVERブログのリンクを目立つ場所に設置し、複数チャネルから情報収集できる環境を整えましょう。</li>
+</ul>
+<p>
+  <strong>注意：</strong>日本で一般的なLINEは韓国ではほぼ使われていません。「LINEでお問い合わせ」という導線を韓国向けサイトに設置しても効果はありません。必ずカカオトークに置き換えましょう。
+</p>
+{% endblock %}
+
+{% block section_4_2 %}
+<p>
+  韓国はスマートフォン普及率が世界トップクラスの国です。PCを持たずにスマートフォンだけでほぼすべてのオンライン活動を行うユーザーも多く、<strong>モバイル最適化（レスポンシブデザイン）は必須条件</strong>です。
+</p>
+<p>
+  さらに、韓国のモバイルユーザーは表示速度に非常に敏感です。ページの読み込みが遅いと即座に離脱されます。以下の対策を優先的に実施しましょう。
+</p>
+<ul style="list-style: disc; margin-left: 20px; margin-bottom: 16px;">
+  <li><strong>画像の最適化：</strong>高解像度画像を使いつつも、WebP形式への変換やlazyロードを活用し、ファイルサイズを最小化します。</li>
+  <li><strong>Core Web Vitalsの改善：</strong>GoogleのLCP（最大コンテンツの表示時間）・CLS（レイアウトのズレ）・INP（インタラクションの応答性）のスコアを改善することは、NAVERのSEOにも間接的に影響します。</li>
+  <li><strong>タップしやすいUI：</strong>ボタンサイズは少なくとも44px以上を確保し、指で操作しやすいレイアウトにすることが重要です。</li>
+</ul>
+<p>
+  また、カカオトークチャンネルへのリンクや、Instagram・YouTube・NAVERブログへの誘導など、スマートフォン上でシームレスに動線をたどれるUI設計も忘れずに行いましょう。
+</p>
+{% endblock %}
+
+{% block section_5 %}
+<ul style="list-style: none; padding: 0;">
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>スペース・敬語レベルを統一したネイティブチェック済みのコンテンツを用意したか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>地図リンクにNaver Maps・Kakao Mapも追加したか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>韓国語のプライバシーポリシー（개인정보 처리방침）を掲載し、PIPA対応を行ったか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>NAVER Search Advisorへのサイト登録とサイトマップ送信を行ったか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>フォントにPretendardまたはNoto Sans KRを指定したか？</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>問い合わせ手段としてカカオトークチャンネルを設置したか？（LINEは韓国では不要）</span>
+  </li>
+  <li style="margin-bottom: 12px; display: flex; align-items: start;">
+    <span style="color:#C10033; margin-right: 8px;">✔</span>
+    <span>スマートフォンでの表示速度・タップUI・レスポンシブデザインを確認したか？</span>
+  </li>
+</ul>
+<p>
+  これらをすべて自社で対応するには、韓国語・韓国文化・法律・SEOの横断的な知識が必要です。しかし、Leapを使えば、韓国市場に適したウェブサイトを最初からスムーズに作成できます。
+</p>
+{% endblock %}
