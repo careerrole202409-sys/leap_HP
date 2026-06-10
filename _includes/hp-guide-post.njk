@@ -12,6 +12,7 @@ layout: base.njk
 {% set t_default_author = 'Leap 編集部' %}
 {% set t_default_bio = 'HPビジネスのエキスパートチーム' %}
 {% set date_format = "yyyy年MM月dd日" %}
+{% set t_related = '関連記事' %}
 
 {% if locale == 'en' %}
     {% set t_home = 'Home' %}
@@ -24,6 +25,7 @@ layout: base.njk
     {% set t_default_author = 'Leap Editorial Team' %}
     {% set t_default_bio = 'HP Business Experts' %}
     {% set date_format = "MMM dd, yyyy" %}
+    {% set t_related = 'Related Articles' %}
 {% elif locale == 'zh-hans' %}
     {% set t_home = '首页' %}
     {% set t_hp_guide = 'HP制作手册' %}
@@ -35,6 +37,7 @@ layout: base.njk
     {% set t_default_author = 'Leap 编辑团队' %}
     {% set t_default_bio = 'HP业务专家团队' %}
     {% set date_format = "yyyy年MM月dd日" %}
+    {% set t_related = '相关文章' %}
 {% endif %}
 
 {% set topic_name = topic_label | default(topic) %}
@@ -363,7 +366,7 @@ layout: base.njk
 <!-- ▼ 関連記事 -->
 {% set preCount = 0 %}
 {% for post in collections['hp-guide'] | reverse %}
-    {% if post.url != page.url and preCount < 3 %}
+    {% if post.url != page.url and preCount < 3 and post.data.locale == locale %}
         {% set isRelated = false %}
         {% if tags %}
             {% for t in tags %}
@@ -377,11 +380,11 @@ layout: base.njk
 {% if preCount > 0 %}
 <section class="section py-3xl bg-beige">
     <div class="container">
-        <h2 class="text-center mb-xl" style="font-size: 1.75rem;">関連記事</h2>
+        <h2 class="text-center mb-xl" style="font-size: 1.75rem;">{{ t_related }}</h2>
         <div class="grid-3">
             {% set count = 0 %}
             {% for post in collections['hp-guide'] | reverse %}
-                {% if post.url != page.url and count < 3 %}
+                {% if post.url != page.url and count < 3 and post.data.locale == locale %}
                     {% set isRelated = false %}
                     {% if tags %}
                         {% for t in tags %}
