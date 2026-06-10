@@ -91,7 +91,7 @@ description: From site design and setup to UI/UX, SEO & content strategy, multil
         <div class="grid-3" id="posts-container">
             {% set displayed_count = 0 %}
 
-            {% for post in collections.all %}
+            {% for post in collections.all | reverse %}
                 {% if ('/hp-guide/' in post.url)
                     and (post.data.locale == locale)
                     and (post.url != '/' + locale + '/hp-guide/')
