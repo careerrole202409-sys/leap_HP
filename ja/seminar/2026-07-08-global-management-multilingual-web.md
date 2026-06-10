@@ -5,7 +5,7 @@ locale: ja
 title: "海外拠点管理×現地市場開拓 入門編 〜数字で「守り」を固め、Webで「攻め」に転じる。グローバル経営を両輪で動かす方法〜"
 description: "海外拠点を持つ企業の経営者・役員に向けて、本社からリアルタイムで数字を把握する経営管理の基本と、多言語Webで現地顧客を獲得するマーケティング戦略を両輪で解説。グローバル経営を「守り」と「攻め」の両面から機能させる方法を共同でお届けします。"
 event_date: 2026-07-08
-event_url: "#"
+event_url: "https://us06web.zoom.us/webinar/register/5117806399006/WN_3JB2yNJDTTOAkwDMWrdGuw#/registration"
 thumbnail_url: "https://res.cloudinary.com/duh6rnjba/image/upload/v1780622543/Gemini_Generated_Image_cky9cicky9cicky9_qfwmq7.png"
 speakers_html: |
   <h2 style="font-size:1.4rem; font-weight:700; margin-bottom:1.5rem; color:#1a1a2e;">登壇者</h2>
@@ -34,15 +34,27 @@ bonus: "セミナー当日は、<strong>海外拠点を持つ企業の経営管�
 
 ## こんな方におすすめ
 
-- 海外拠点の数字をリアルタイムで把握できていない経営者・役員
-- 海外子会社のガバナンス強化・管理体制の見直しを検討している方
-- 海外拠点があるのに現地からの問い合わせ・売上が伸び悩んでいる方
-- グローバル経営の「守り（管理）」と「攻め（マーケティング）」を同時に強化したい方
+- 海外拠点を持つ企業の経営者・役員の方
+- 海外子会社の数字管理や内部統制の整備に課題を感じている方
+- 現地市場への発信・Webの現地化が手つかずになっている方
+- 守りの経営管理と攻めの現地展開を同時に進めたい方
+- 海外拠点の設立を検討中、またはグローバル展開の拡大を考えている方
 
 ## タイムライン
 
-- **15:00〜15:05** オープニング：経営管理と現地発信を両輪にすべき理由
-- **15:05〜15:15** マルチブック：海外拠点の経営管理 基礎解説
-- **15:15〜15:35** Leap：多言語Webで現地顧客を獲得する方法
-- **15:35〜15:55** Q&A・ディスカッション
-- **15:55〜16:00** クロージング・個別相談のご案内
+<table style="width:100%; border-collapse:collapse; font-size:0.9rem;">
+  <tbody>
+    <tr style="border:1px solid #d1d5db;">
+      <td style="background:#e8e8f0; font-weight:700; padding:1rem 1.25rem; white-space:nowrap; vertical-align:top; width:7rem;">&lt;第一部&gt;<br>multibook</td>
+      <td style="padding:1rem 1.25rem; border-left:1px solid #d1d5db;">海外拠点の経営管理で「守り」を固める──正確な数字の把握が、現地発信という「攻め」の土台になる理由</td>
+    </tr>
+    <tr style="border:1px solid #d1d5db;">
+      <td style="background:#e8e8f0; font-weight:700; padding:1rem 1.25rem; white-space:nowrap; vertical-align:top;">&lt;第二部&gt;<br>Leap</td>
+      <td style="padding:1rem 1.25rem; border-left:1px solid #d1d5db;">海外拠点がある企業こそ取り組むべき現地市場への発信──多言語Webで現地顧客を獲得する方法</td>
+    </tr>
+    <tr style="border:1px solid #d1d5db;">
+      <td style="background:#e8e8f0; font-weight:700; padding:1rem 1.25rem; white-space:nowrap; vertical-align:top;">&lt;第三部&gt;<br>両社</td>
+      <td style="padding:1rem 1.25rem; border-left:1px solid #d1d5db;">Q&amp;A・ディスカッション：海外拠点での実際の悩みに両社がお答えします</td>
+    </tr>
+  </tbody>
+</table>
