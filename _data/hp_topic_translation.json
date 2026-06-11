@@ -1,0 +1,32 @@
+{
+  "seo-content": {
+    "ja": "SEO・コンテンツ戦略",
+    "en": "SEO & Content Strategy",
+    "zh-hans": "SEO与内容策略"
+  },
+  "multilingual": {
+    "ja": "多言語対応",
+    "en": "Multilingual",
+    "zh-hans": "多语言对应"
+  },
+  "site-setup": {
+    "ja": "サイト設計・構築",
+    "en": "Site Setup",
+    "zh-hans": "网站搭建"
+  },
+  "design-ux": {
+    "ja": "デザイン・UX",
+    "en": "Design & UX",
+    "zh-hans": "设计与用户体验"
+  },
+  "security-maintenance": {
+    "ja": "セキュリティ・保守",
+    "en": "Security & Maintenance",
+    "zh-hans": "安全与维护"
+  },
+  "analytics": {
+    "ja": "アクセス解析",
+    "en": "Analytics",
+    "zh-hans": "访问分析"
+  }
+}
