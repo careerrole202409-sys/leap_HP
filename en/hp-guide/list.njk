@@ -79,7 +79,7 @@ description: Full list of all articles in Leap's HP Creation Guide.
                                     {% if post.data.target_lang %}
                                         {{ post.data.target_lang }}
                                     {% else %}
-                                        {{ post.data.topic_label | default(post.data.topic) }}
+                                        {{ hp_topic_translation[post.data.topic][locale] | default(post.data.topic_label) | default(post.data.topic) }}
                                     {% endif %}
                                 </span>
                                 <time style="font-size: 12px; color: var(--color-text-secondary);">

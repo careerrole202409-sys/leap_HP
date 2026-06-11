@@ -53,7 +53,7 @@ description: アクセスデータを活用してHPのパフォーマンスを�
                         <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
                             <div class="flex justify-between items-center mb-sm">
                                 <span class="text-primary font-bold" style="font-size: 12px; background: rgba(193, 0, 51, 0.1); padding: 4px 8px; border-radius: 4px;">
-                                    {{ post.data.topic_label | default(post.data.topic) }}
+                                    {{ hp_topic_translation[post.data.topic][locale] | default(post.data.topic_label) | default(post.data.topic) }}
                                 </span>
                                 <time style="font-size: 12px; color: var(--color-text-secondary);">
                                     {{ post.date | date("yyyy.MM.dd") }}
