@@ -4,20 +4,20 @@
 
 <link rel="icon" href="/assets/favicon.png">
 
-<title>HP作成マニュアル | Leap</title>
-  <meta name="description" content="サイト設計・構築からデザイン・SEO・多言語化・セキュリティ・アクセス解析まで、成果につながるHP作りのノウハウを体系的に学べます。">
+<title>上位表示を狙うキーワード選定の完全手順｜検索意図の分析からターゲットKW設計まで</title>
+  <meta name="description" content="SEO対策の要となるキーワード選定の完全手順を解説。検索意図の4分類から、無料ツールを活用したペルソナ設定、ミドル・ロングテール戦略まで、初心者が実践できる7ステップを紹介します。">
 
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.leap.site/ja/hp-guide/">
-  <meta property="og:title" content="HP作成マニュアル | Leap">
-  <meta property="og:description" content="サイト設計・構築からデザイン・SEO・多言語化・セキュリティ・アクセス解析まで、成果につながるHP作りのノウハウを体系的に学べます。">
+  <meta property="og:url" content="https://www.leap.site/ja/hp-guide/seo-content/seo-keyword-selection/">
+  <meta property="og:title" content="上位表示を狙うキーワード選定の完全手順｜検索意図の分析からターゲットKW設計まで">
+  <meta property="og:description" content="SEO対策の要となるキーワード選定の完全手順を解説。検索意図の4分類から、無料ツールを活用したペルソナ設定、ミドル・ロングテール戦略まで、初心者が実践できる7ステップを紹介します。">
   <meta property="og:image" content="https://www.leap.site/assets/og-image.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="HP作成マニュアル | Leap">
-  <meta property="twitter:description" content="サイト設計・構築からデザイン・SEO・多言語化・セキュリティ・アクセス解析まで、成果につながるHP作りのノウハウを体系的に学べます。">
+  <meta property="twitter:title" content="上位表示を狙うキーワード選定の完全手順｜検索意図の分析からターゲットKW設計まで">
+  <meta property="twitter:description" content="SEO対策の要となるキーワード選定の完全手順を解説。検索意図の4分類から、無料ツールを活用したペルソナ設定、ミドル・ロングテール戦略まで、初心者が実践できる7ステップを紹介します。">
   <meta property="twitter:image" content="https://www.leap.site/assets/og-image.png">
 
     <!-- Google tag (gtag.js) -->
@@ -40,8 +40,8 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="サイト設計・構築からデザイン・SEO・多言語化・セキュリティ・アクセス解析まで、成果につながるHP作りのノウハウを体系的に学べます。">
-    <title>HP作成マニュアル | Leap</title>
+    <meta name="description" content="SEO対策の要となるキーワード選定の完全手順を解説。検索意図の4分類から、無料ツールを活用したペルソナ設定、ミドル・ロングテール戦略まで、初心者が実践できる7ステップを紹介します。">
+    <title>上位表示を狙うキーワード選定の完全手順｜検索意図の分析からターゲットKW設計まで</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
@@ -476,1141 +476,867 @@ document.addEventListener('DOMContentLoaded', function() {
     <!-- Main Content -->
     <main id="main-content">
         
-<!-- ▼ ヒーローセクション -->
-<section class="section py-3xl" style="background: var(--color-primary-gradient); color: var(--color-white);">
-    <div class="container text-center">
-        <span class="text-white font-bold mb-sm d-block" style="opacity: 0.9; letter-spacing: 0.05em;">Leap Knowledge Base</span>
-        <h1 class="text-white mb-md">HP作成マニュアル</h1>
-        <p class="text-white mb-xl" style="font-size: var(--font-size-lg); max-width: 800px; margin-left: auto; margin-right: auto;">
-            サイト設計・構築からデザイン・UI/UX、SEO・コンテンツ戦略、多言語化、<br>
-            セキュリティ・保守運用、アクセス解析・改善まで。HP担当者が現場で使える実践ノウハウを体系的に学べます。
-        </p>
-    </div>
-</section>
 
-<!-- ▼ カテゴリ一覧 -->
-<section class="section bg-white" style="position: relative; margin-top: -60px; padding-top: var(--space-lg); padding-bottom: var(--space-3xl);">
-    <div class="container">
 
-        <div class="flex justify-end mb-md" style="position: relative; z-index: 10;">
-            <a href="/ja/hp-guide/list/" class="view-all-link">
-                すべての記事一覧を見る &rarr;
-            </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    /* --- 基本レイアウト --- */
+    .blog-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+
+    /* --- パンくずリスト --- */
+    .breadcrumb-nav {
+        font-size: 1rem;
+        color: #64748b;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+    }
+    .breadcrumb-nav a {
+        color: #64748b;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    .breadcrumb-nav a:hover {
+        color: #C10033;
+        text-decoration: underline;
+    }
+    .breadcrumb-separator {
+        font-size: 0.9rem;
+        color: #cbd5e1;
+    }
+    .breadcrumb-current {
+        color: #94a3b8;
+        font-weight: 500;
+    }
+
+    /* --- ヘッダー要素 --- */
+    .topic-badge {
+        display: inline-block;
+        background-color: #C10033;
+        color: white;
+        font-weight: bold;
+        font-size: 0.875rem;
+        padding: 6px 18px;
+        border-radius: 50px;
+        margin-bottom: 1.5rem;
+        letter-spacing: 0.05em;
+    }
+
+    .post-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        line-height: 1.4;
+        color: #1e293b;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.02em;
+    }
+
+    /* タグデザイン */
+    .tag-chip {
+        display: inline-block;
+        background-color: #f1f5f9;
+        color: #475569;
+        padding: 4px 12px;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-decoration: none;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        transition: background 0.2s;
+    }
+    .tag-chip:hover {
+        background-color: #e2e8f0;
+        color: #C10033;
+    }
+
+    /* メタ情報 */
+    .meta-info {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        color: #64748b;
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+        font-family: monospace, serif;
+    }
+    .meta-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .meta-icon {
+        width: 18px; height: 18px; fill: #94a3b8;
+    }
+
+    /* 区切り線 */
+    .header-divider {
+        border: 0;
+        border-top: 1px solid #e2e8f0;
+        margin-bottom: 2rem;
+    }
+
+    /* 著者情報エリア */
+    .author-section {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 3rem;
+    }
+    .author-avatar {
+        width: 56px; height: 56px; border-radius: 50%; object-fit: cover; background-color: #e2e8f0;
+    }
+    .author-text {
+        display: flex; flex-direction: column;
+    }
+    .author-name {
+        font-weight: bold; font-size: 1rem; color: #1e293b; margin-bottom: 2px;
+    }
+    .author-bio {
+        font-size: 0.85rem; color: #64748b;
+    }
+
+    /* --- 記事本文スタイル --- */
+    .blog-content {
+        font-size: 1.125rem;
+        line-height: 1.9;
+        color: #334155;
+    }
+    
+
+    .blog-content h2 {
+        font-size: 1.8rem;
+        margin-top: 4rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #e2e8f0;
+        color: #1e293b;
+        font-weight: bold;
+        scroll-margin-top: 100px;
+    }
+    .blog-content h3 {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        color: #1e293b;
+        position: relative;
+        padding-left: 1rem;
+        scroll-margin-top: 100px;
+    }
+    .blog-content h3::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.3em;
+        bottom: 0.3em;
+        width: 4px;
+        background: #C10033;
+        border-radius: 2px;
+    }
+    .blog-content p { margin-bottom: 2rem; }
+
+    .blog-content img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 3rem auto;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    .blog-content ul, .blog-content ol { margin-bottom: 2rem; padding-left: 1.5rem; }
+    .blog-content li { margin-bottom: 0.5rem; }
+
+    /* シェアボタン */
+    .share-buttons-container {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        margin-top: 1rem;
+    }
+
+    .share-btn {
+        width: 50px; height: 50px;
+        border-radius: 50%; display: flex; align-items: center; justify-content: center;
+        color: white; border: none; cursor: pointer; transition: transform 0.2s, opacity 0.2s;
+    }
+    .share-btn:hover { transform: translateY(-3px); opacity: 0.9; }
+    .bg-x { background-color: #000; }
+    .bg-facebook { background-color: #1877F2; }
+    .bg-linkedin { background-color: #0A66C2; }
+    .bg-copy { background-color: #64748B; }
+
+    /* トースト通知 */
+    #copy-toast {
+        visibility: hidden; min-width: 200px; background-color: #333; color: #fff; text-align: center;
+        border-radius: 4px; padding: 10px; position: fixed; z-index: 50; left: 50%; bottom: 30px;
+        transform: translateX(-50%); opacity: 0; transition: opacity 0.3s, bottom 0.3s;
+    }
+    #copy-toast.show { visibility: visible; opacity: 1; bottom: 50px; }
+
+    @media (max-width: 768px) {
+        .post-title { font-size: 1.75rem; }
+        .meta-info { gap: 12px; font-size: 0.85rem; }
+        .blog-container { padding: 0 20px; }
+    }
+</style>
+
+<!-- ▼ ページ上部エリア -->
+<div class="bg-white pb-md" style="padding-top: 100px;">
+    <div class="blog-container">
+
+        <!-- 1. パンくずリスト -->
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+            <a href="/ja/">ホーム</a>
+            <span class="breadcrumb-separator">›</span>
+            <a href="/ja/hp-guide/">HP作成マニュアル</a>
+            <span class="breadcrumb-separator">›</span>
+            <a href="/ja/hp-guide/seo-content/">seo-content</a>
+            <span class="breadcrumb-separator">›</span>
+            <span class="breadcrumb-current">上位表示を狙うキーワード選定の完全手順｜検索意図の分析からタ......</span>
+        </nav>
+
+        <!-- 2. トピックバッジ -->
+        <div class="mb-md">
+            <span class="topic-badge">
+                seo-content
+            </span>
         </div>
 
-        <!-- 6つのカテゴリカード -->
-        <div class="grid-3" style="gap: 20px;">
+        <!-- 3. 記事タイトル -->
+        <h1 class="post-title">
+            上位表示を狙うキーワード選定の完全手順｜検索意図の分析からターゲットKW設計まで
+        </h1>
 
-            <!-- 1. サイト設計・構築 -->
-            <a href="/ja/hp-guide/site-setup/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0H3" /></svg>
-                </div>
-                <h2 class="manual-title">サイト設計・構築</h2>
-                <p class="manual-desc">プラットフォーム選定・情報設計・ページ構成まで、成果につながるHPを立ち上げるための完全ガイド。</p>
-                <span class="manual-link">一覧を見る &rarr;</span>
-            </a>
+        <!-- 4. タグ一覧 -->
+        
+        <div class="mb-lg">
+            
+                
+            
+                
+                <a href="/ja/hp-guide/list/?tag=SEO" class="tag-chip">#SEO</a>
+                
+            
+                
+                <a href="/ja/hp-guide/list/?tag=コンテンツ戦略" class="tag-chip">#コンテンツ戦略</a>
+                
+            
+                
+                <a href="/ja/hp-guide/list/?tag=キーワード選定" class="tag-chip">#キーワード選定</a>
+                
+            
+                
+                <a href="/ja/hp-guide/list/?tag=Webマーケティング" class="tag-chip">#Webマーケティング</a>
+                
+            
+        </div>
+        
 
-            <!-- 2. デザイン・UI/UX -->
-            <a href="/ja/hp-guide/design-ux/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" /></svg>
-                </div>
-                <h2 class="manual-title">デザイン・UI/UX</h2>
-                <p class="manual-desc">ブランドイメージを高め、訪問者に選ばれるデザインとUI/UXを実現するためのノウハウ。</p>
-                <span class="manual-link">一覧を見る &rarr;</span>
-            </a>
+        <!-- 5. メタ情報 -->
+        <div class="meta-info">
+            <div class="meta-item">
+                <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/></svg>
+                <time datetime="Thu Jun 11 2026 09:00:00 GMT+0900 (Japan Standard Time)">2026年06月11日</time>
+            </div>
+            <div class="meta-item">
+                <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                
+                <span>読了時間: 約 16.254分</span>
+            </div>
+        </div>
 
-            <!-- 3. SEO・コンテンツ戦略 -->
-            <a href="/ja/hp-guide/seo-content/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
-                </div>
-                <h2 class="manual-title">SEO・コンテンツ戦略</h2>
-                <p class="manual-desc">検索で見つかるHPを作るためのSEO設計・キーワード戦略・コンテンツ作成の実践ガイド。</p>
-                <span class="manual-link">一覧を見る &rarr;</span>
-            </a>
+        <!-- 6. 区切り線 -->
+        <hr class="header-divider">
 
-            <!-- 4. 多言語化 -->
-            <a href="/ja/hp-guide/multilingual/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" /></svg>
-                </div>
-                <h2 class="manual-title">多言語化</h2>
-                <p class="manual-desc">英語・中国語・韓国語など、各言語のHP作成に必要な注意点・SEO・文化対応のポイント。</p>
-                <span class="manual-link">一覧を見る &rarr;</span>
-            </a>
+        <!-- 7. 著者情報セクション -->
+        <div class="author-section">
+            <img src="https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap"
+                 alt="Leap 編集部"
+                 class="author-avatar">
 
-            <!-- 5. セキュリティ・保守運用 -->
-            <a href="/ja/hp-guide/security-maintenance/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg>
-                </div>
-                <h2 class="manual-title">セキュリティ・保守運用</h2>
-                <p class="manual-desc">HPの安全性を確保し、継続的に安定運用するためのセキュリティ対策とメンテナンスガイド。</p>
-                <span class="manual-link">一覧を見る &rarr;</span>
-            </a>
+            <div class="author-text">
+                <div class="author-name">Leap 編集部</div>
+                <div class="author-bio">海外ビジネスのエキスパートチーム</div>
+            </div>
+        </div>
 
-            <!-- 6. アクセス解析・改善 -->
-            <a href="/ja/hp-guide/analytics/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" /></svg>
-                </div>
-                <h2 class="manual-title">アクセス解析・改善</h2>
-                <p class="manual-desc">アクセスデータを活用してHPのパフォーマンスを測定・改善するための分析と改善手法。</p>
-                <span class="manual-link">一覧を見る &rarr;</span>
-            </a>
+        <!-- 8. アイキャッチ画像 -->
+        <div style="width: 100%; aspect-ratio: 16/9; overflow: hidden; border-radius: 12px; margin-bottom: 20px;">
+            <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&amp;w=1200&amp;auto=format&amp;fit=crop"
+                 alt="上位表示を狙うキーワード選定の完全手順｜検索意図の分析からターゲットKW設計まで"
+                 style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+
+    </div>
+</div>
+
+<!-- ▼ 本文セクション -->
+<section class="section pt-lg pb-3xl bg-white">
+    <div class="blog-container">
+
+        <!-- ▼ 目次エリア -->
+        <div id="toc-container" style="display: none; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:24px; margin-bottom:48px;">
+            <div style="font-weight:bold; margin-bottom:12px; text-align:center; color:#475569; font-size:1.1rem;">目次</div>
+            <ul id="toc-list" style="list-style:none; padding:0; margin:0;">
+                <!-- JavaScriptで自動生成 -->
+            </ul>
+        </div>
+
+        <!-- 記事本文 -->
+        <div class="blog-content">
+            <h2>【1分で解説！】キーワード選定がSEOの起点である理由と本記事の全体像</h2>
+<p>「記事を書いてもアクセスが増えない」「コンテンツに時間をかけているのに問い合わせが来ない」――Webサイトを運営していると、こうした壁に突き当たることがあります。その原因の多くは、コンテンツの質そのものではなく、その前工程にあるキーワード選定の失敗にあります。</p>
+<p>キーワード選定とは、検索エンジンで上位表示を狙うための「ターゲットとなる検索語句を決めるプロセス」です。適切なキーワードを選べば、ニーズを持つユーザーが自然とサイトへ流入し、問い合わせや購買という成果へとつながります。逆に選定を誤れば、どれだけ質の高い記事を書いても、誰にも読まれないまま埋もれてしまいます。</p>
+<p>本記事では、以下の内容を体系的に解説します。</p>
+<ul>
+<li>検索意図（Know・Go・Do・Buy）の4分類と選定への活かし方</li>
+<li>ペルソナ設定から始まるキーワード選定の7ステップ</li>
+<li>初心者が陥りがちなビッグキーワード狙いの失敗と、ミドル・ロングテールキーワードを優先する戦略</li>
+<li>無料ツール（Googleサーチコンソール・キーワードプランナー・Ubersuggestなど）の具体的な活用法</li>
+<li>選定したキーワードをサイト設計・記事構成に落とし込む方法</li>
+</ul>
+<p>この記事を読み終えた頃には、キーワード選定の全体像を把握し、明日からすぐに実行に移せる状態になっているはずです。</p>
+<h2>なぜキーワード選定がSEOの起点なのか</h2>
+<p>SEO対策の施策は多岐にわたります。内部対策（タイトルタグ・メタディスクリプションの最適化）、外部対策（被リンクの獲得）、テクニカルSEO（サイト速度・構造化データ）など、取り組むべき要素は少なくありません。しかしそれらすべての土台となるのが、コンテンツSEO、その中核を担うキーワード選定です。</p>
+<p>検索エンジンは、ユーザーが入力したキーワードの「意図」を読み取り、最も適切なページを上位表示します。つまり、ユーザーが何を知りたいか・何を求めているかを正確に捉えたページが評価されるのです。キーワードを選定するとは、ユーザーの検索行動を先読みし、その期待に応えるコンテンツを設計することと言い換えることができます。</p>
+<p>キーワードを適切に選定することで得られるメリットは明確です。ターゲット層からの流入が増え、コンバージョン率（CVR）が向上し、長期的な集客の資産となる記事群が育ちます。一度上位表示を獲得すれば、広告費をかけることなく継続的に見込み顧客を集められる点も、オウンドメディアの大きな強みです。</p>
+<h2>検索意図の4分類を理解する｜Know・Go・Do・Buy</h2>
+<p>キーワード選定を始める前に、まず「検索意図」という概念を正しく理解しておく必要があります。Googleはユーザーの検索行動を大きく4つのカテゴリで捉えており、これを意識することが選定の精度を高める第一歩です。</p>
+<h3>Know（知りたい）</h3>
+<p>特定の情報を調べたいというニーズ。「SEO キーワード選定 方法」「クラウドファンディング 仕組み」などがこれに当たります。情報収集・学習目的の検索であり、ブログ記事や解説コンテンツが求められます。</p>
+<h3>Go（行きたい・訪れたい）</h3>
+<p>特定のサイトやページに直接アクセスしたいというニーズ。「Google アナリティクス ログイン」「Amazon」といった検索がこれに該当します。ブランド名や固有名詞が含まれることが多いのが特徴です。</p>
+<h3>Do（やりたい）</h3>
+<p>何らかの行動・作業を実行したいというニーズ。「WordPress プラグイン 設定方法」「Excel 関数 使い方」などが当てはまります。手順・チュートリアル形式のコンテンツが有効です。</p>
+<h3>Buy（買いたい・申し込みたい）</h3>
+<p>商品やサービスを購入・比較・申し込みたいというニーズ。「多言語サイト 制作 料金比較」「WordPress テーマ おすすめ」など、購買・意思決定の段階に近い検索です。</p>
+<p>キーワード選定では、狙うキーワードがどの意図に属するかを明確にしたうえで、それに合致したコンテンツ形式を選ぶことが重要です。意図とコンテンツがずれていると、たとえ上位表示されても直帰率が高くなり、成果につながりません。</p>
+<h2>キーワード選定の7ステップ</h2>
+<h3>ステップ1：ペルソナとニーズを明確にする</h3>
+<p>キーワード選定の出発点は、「誰のために書くか」を定めることです。年齢・職種・課題・行動パターンを具体的に描いたペルソナを設定し、そのペルソナが何を検索するかを想定することで、狙うべきキーワードの輪郭が見えてきます。</p>
+<p>たとえば、自社ECサイトへの多言語対応を検討している中小企業の担当者であれば、「越境EC 始め方」「多言語サイト 費用」「英語サイト 制作 中小企業」といった検索をする可能性が高い。この段階での解像度が、その後のキーワード選定の質を大きく左右します。</p>
+<h3>ステップ2：軸キーワードを抽出する</h3>
+<p>ペルソナの課題・ニーズを言語化したら、それを抽象化した「軸キーワード」を抽出します。軸キーワードとは、自社のサービス・コンテンツの中核となる語句で、「SEO」「ホームページ制作」「越境EC」などがこれに当たります。</p>
+<p>軸キーワードは検索ボリュームが大きい反面、競合も多くすぐに上位表示を狙うのは困難です。ただし、後続のステップで展開する際の起点となるため、まずはこの段階で5〜10個程度を洗い出しておきましょう。</p>
+<h3>ステップ3：サジェストキーワードへ展開する</h3>
+<p>Googleの検索窓に軸キーワードを入力すると、入力途中にサジェスト（予測変換）が表示されます。これはGoogleが実際のユーザーの検索データをもとに提示しているものであり、リアルなニーズを反映した信頼性の高いデータです。</p>
+<p>同様に、検索結果ページの下部に表示される「関連する検索キーワード」も重要な情報源です。これらをすべて書き出し、軸キーワードを起点にしたキーワードマップを作成していきます。</p>
+<h3>ステップ4：関連キーワードへ横展開する</h3>
+<p>軸キーワードとその周辺語句を網羅したら、次はキーワードプランナーやUbersuggestといったツールを活用し、関連キーワードへの横展開を行います。この工程では、自分では気づかなかったニーズや言い換え表現が多数見つかります。</p>
+<p>たとえば「ホームページ 制作」という軸キーワードからは、「ホームページ 作り方 無料」「HP 自作 おすすめツール」「ホームページ CMS 比較」など多様なキーワードが派生します。これらを整理することで、サイト全体のコンテンツ設計にも活用できる体系的なキーワードリストが出来上がります。</p>
+<h3>ステップ5：検索ボリュームと競合性で絞り込む</h3>
+<p>展開したキーワードリストに対して、月間検索ボリュームと競合性の2軸で優先度を判断します。Googleキーワードプランナーやahrefs、Ubersuggestなどを使い、各キーワードのボリュームを確認しましょう。</p>
+<p>基本的な考え方として、新設サイトや立ち上げ初期の段階では、月間100〜500程度のミドル・ロングテールキーワードを優先することが鉄則です。ビッグキーワード（月間数万〜数十万ボリューム）はドメインパワーの強い大手サイトが占拠しており、リソースの限られる中小企業が太刀打ちするのは現実的ではありません。</p>
+<h3>ステップ6：競合記事を分析してコンテンツギャップを見つける</h3>
+<p>絞り込んだキーワードで実際に検索し、上位10記事の構成・内容・深度を確認します。上位記事に共通して含まれている情報は「ユーザーが期待する情報」であり、これを満たすことが最低条件です。</p>
+<p>一方で、上位記事が十分にカバーしていないテーマや切り口こそが差別化のポイントになります。自社の強み・専門性・実体験を盛り込んだ独自性のある記事が、長期的に評価されるコンテンツとなります。</p>
+<h3>ステップ7：カテゴリ設計と記事構成に落とし込む</h3>
+<p>最終的には、選定したキーワードをサイト全体のカテゴリ設計に反映させます。親カテゴリ・子カテゴリの設計においてキーワードの階層関係を意識することで、サイト全体のトピックオーソリティ（テーマに関する専門性）を高めることができます。</p>
+<p>個々の記事構成においては、H2・H3の見出しに対象キーワードや共起語を適切に配置し、メタタイトル・メタディスクリプションにも目標キーワードを盛り込みます。こうした一貫性のある設計が、Googleからの正確な評価につながります。</p>
+<h2>初心者が陥りがちな失敗とミドル・ロングテール戦略</h2>
+<h3>失敗パターン：ビッグキーワードにいきなり挑む</h3>
+<p>SEOを始めたばかりのサイト担当者が最も多く犯すミスは、最初からビッグキーワードを狙うことです。「SEO 対策」「ホームページ 作り方」「越境EC 方法」といった月間数万件規模の検索があるキーワードは、長年の運営実績を持つメディアや専門サイトが上位を占めており、新規サイトが太刀打ちできる土俵ではありません。</p>
+<p>こうした状況で記事を量産しても、上位表示されないため流入はゼロ。時間とコストだけが消費される悪循環に陥ります。</p>
+<h3>ミドル・ロングテールキーワードから攻略する理由</h3>
+<p>月間100〜500件程度のミドルキーワード、さらに複数の語句を組み合わせたロングテールキーワード（例：「越境EC 始め方 中小企業 費用」）には、2つの大きな優位性があります。</p>
+<p>第一に、競合が少なく上位表示を獲得しやすい点です。検索ボリュームが小さい分、強力なドメインのサイトが参入していないケースが多く、コンテンツの質で勝負できます。第二に、検索意図が明確で購買・行動に近いため、コンバージョン率が高い点です。「SEO」で検索するユーザーよりも「SEO キーワード選定 ツール 無料」で検索するユーザーのほうが、具体的な課題を持っており、解決策に対する温度感が高いのです。</p>
+<p>複数のロングテール記事を積み上げ、サイト全体の評価が上がったタイミングでミドル〜ビッグキーワードへ挑戦するというプロセスが、現実的かつ効率的なSEO戦略です。</p>
+<h2>無料ツールを使いこなすキーワード調査の実践</h2>
+<h3>Googleサーチコンソール</h3>
+<p>既存サイトを運営中であれば、最初に確認すべきはGoogleサーチコンソールです。現在サイトに流入しているキーワード・表示回数・クリック率・掲載順位が確認でき、「惜しくも上位を狙えていないキーワード（11〜20位）」を発見して集中的に改善するという戦略が効果的です。</p>
+<h3>Googleキーワードプランナー</h3>
+<p>Google広告の機能として無料で利用でき、キーワードの月間検索ボリュームや競合性の目安を把握できます。複数のキーワードを一括で調べられるため、リストの絞り込みに役立ちます。ただし、広告アカウントを実際に出稿していない場合は数値が幅のある表示になるため、参考値として活用することが前提です。</p>
+<h3>Ubersuggest</h3>
+<p>Neil Patelが提供する無料ツールで、サジェストキーワードの一覧取得・競合サイトのキーワード調査・コンテンツアイデアの提示など、多機能を無料で利用できます。日本語対応も整っており、中小企業のWeb担当者にとって使い勝手のよいツールです。</p>
+<h3>ラッコキーワード（旧・関連キーワードツール）</h3>
+<p>国内の無料ツールの中でも特に利便性が高く、Googleのサジェストを一括で取得できます。競合の上位記事の見出し構成を確認する機能も備えており、キーワード調査から記事設計までを効率的に進めることができます。</p>
+<h2>実例から学ぶキーワード戦略の成功パターン</h2>
+<h3>事例1：freee株式会社</h3>
+<p>クラウド会計ソフトを提供するfreeeは、「確定申告 やり方」「経費 勘定科目」「青色申告 書き方」といった、ターゲット層（個人事業主・フリーランス）が実際に検索する実務的なロングテールキーワードを徹底的に攻略しました。各キーワードに対応した解説記事を多数公開し、サービスへの自然流入を継続的に獲得。コンテンツマーケティングを軸にした成長戦略の好例として広く知られています。</p>
+<h3>事例2：クラウドワークス</h3>
+<p>クラウドソーシングサービスを運営するクラウドワークスは、「在宅ワーク 始め方」「副業 おすすめ」「ライター 仕事 探し方」といった、サービスの利用が始まる手前の段階のキーワードを積極的に攻略しました。直接的なサービス訴求より一歩手前に位置するコンテンツでユーザーを取り込み、サービス登録へとつなげる設計は、中小企業が参考にしやすいモデルです。</p>
+<p>どちらの事例にも共通するのは、自社のユーザー像を精緻に描き、そのユーザーが検索するであろう言葉に対して丁寧にコンテンツを整備したという点です。キーワードは「検索エンジンに評価されるための記号」ではなく、「ユーザーの言葉」です。この認識を持つことが、持続的なSEO成果への近道となります。</p>
+<h2>よくある質問（FAQ）</h2>
+<h3>Q1. キーワードは1記事につき何個設定すればよいですか？</h3>
+<p>基本的にはメインキーワード1つ、サブキーワード2〜3つを目安に設定します。メインキーワードは記事タイトル・h1・メタディスクリプションに必ず含め、サブキーワードはh2・h3見出しや本文中に自然に盛り込みます。キーワードを詰め込みすぎると文章が不自然になり、Googleのアルゴリズムからも低品質なページとして評価されるリスクがあるため注意が必要です。</p>
+<h3>Q2. 競合が強いキーワードでも上位表示を狙える方法はありますか？</h3>
+<p>競合ドメインが強い場合でも、コンテンツの網羅性・独自性・E-E-A-T（経験・専門性・権威性・信頼性）の強化によって差別化を図ることは可能です。上位記事が扱っていない視点や、実際の業務経験・顧客事例に基づいたオリジナルの情報を加えることで、評価を逆転させたケースは多数あります。また、内部リンク設計やサイト全体のテーマ統一も、個別記事の評価向上に寄与します。</p>
+<h3>Q3. 検索ボリュームが少ないキーワードを狙うのは非効率ではないですか？</h3>
+<p>決して非効率ではありません。月間検索数が100〜500程度のキーワードであっても、そのキーワードで検索するユーザーは具体的なニーズを持っているため、1件のアクセスから生まれる成果の確度が高い傾向があります。また、複数のロングテール記事が集まることでサイト全体のドメインパワーが向上し、将来的に競争力の高いキーワードでも上位を狙いやすくなります。ボリュームではなく「意図との一致度」で評価することが、中長期的なSEO戦略の基本です。</p>
+<h2>まとめ：キーワード選定はWebマーケティング全体の設計図</h2>
+<p>SEOにおけるキーワード選定は、「何となく書きたいことを書く」段階から、「ユーザーが求める情報を戦略的に届ける」段階へシフトするための、最も重要な思考プロセスです。</p>
+<p>本記事でお伝えしたポイントを改めて整理します。</p>
+<ul>
+<li>検索意図（Know・Go・Do・Buy）を把握し、意図に合ったコンテンツ形式を選ぶ</li>
+<li>ペルソナ設定→軸KW抽出→サジェスト展開→ボリューム・競合性での絞り込みという7ステップを順に進める</li>
+<li>新設・成長中のサイトでは、月間100〜500のミドル・ロングテールキーワードを優先する</li>
+<li>GoogleサーチコンソールやUbersuggestなどの無料ツールを組み合わせて調査の精度を高める</li>
+<li>選定したキーワードをカテゴリ設計・記事構成に体系的に反映させる</li>
+</ul>
+<p>キーワード選定を適切に行うことで、サイトへの流入量が増え、問い合わせや購買につながる質の高いアクセスが継続的に生まれます。しかし、キーワード設計だけで成果を最大化するには限界もあります。検索流入を獲得した後に、そのユーザーを成果へと導くページ設計・UI/UX・CTAの最適化まで含めて、Webマーケティング全体を一貫して設計することが重要です。</p>
+<p>Leapでは、こうしたSEO設計の考え方を活かしながら、多言語対応・海外市場への展開まで視野に入れたHP構築・コンテンツ戦略をサポートしています。国内向けSEOの知見を海外展開にも応用したい方は、ぜひ他の記事もご覧ください。</p>
+<p>Leapでは、海外ビジネスに役立つ情報を継続的に発信しています。
+多言語HP制作・越境ECの戦略設計・海外市場へのローカライズに関する詳しい情報は、以下のブログもあわせてご参照ください。</p>
+<ul>
+<li><a href="https://www.leap.site/ja/blog">Leapブログ（海外ビジネスマニュアル）</a></li>
+<li><a href="https://www.leap.site/ja/">Leapサービス紹介</a></li>
+</ul>
+<h2>参考資料</h2>
+<ul>
+<li><a href="https://www.pignus.co.jp/column/seo/20217/">SEO対策におけるキーワード選定の考え方</a></li>
+<li><a href="https://media-growth.co.jp/seo-keywords/">SEOキーワード選定の手順とおすすめツール</a></li>
+<li><a href="https://coomil.co.jp/column/seo-keyword/">SEOキーワード選定の方法まとめ</a></li>
+<li><a href="https://stock-sun.com/column/seo-measures-how-to/">SEO対策のやり方・キーワード選定方法</a></li>
+<li><a href="https://zeroxeed.co.jp/seo-contents-marketing/5138/">コンテンツマーケティングにおけるSEOとキーワード設計</a></li>
+<li><a href="https://www.newinfo.press/entry/web-writer/seo">WebライターのためのSEOキーワード選定ガイド</a></li>
+</ul>
 
         </div>
-    </div>
-</section>
 
-<!-- ▼ 新着記事セクション -->
-<section class="section py-xl bg-beige">
-    <div class="container">
-        <h2 class="text-xl font-bold mb-lg" style="border-left: 5px solid var(--color-primary-start); padding-left: 15px;">新着記事</h2>
-
-        <div class="grid-3" id="posts-container">
-            
-
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-
-                    <article class="card p-0 blog-item"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
-
-                        
-                        <a href="/ja/hp-guide/design-ux/first-view-cvr-optimization/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
-                                 alt="ファーストビューで成果が変わる｜CVRを上げるトップページデザインの原則と改善チェックリスト"
-                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
-                        </a>
-                        
-
-                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
-                            
-
-                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
-                                <a href="/ja/hp-guide/design-ux/first-view-cvr-optimization/" style="color: inherit; text-decoration: none;">
-                                    ファーストビューで成果が変わる｜CVRを上げるトップページデザインの原則と改善チェックリスト
-                                </a>
-                            </h3>
-
-                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
-                                トップページを開いた瞬間、ユーザーはわずか数秒で「このサイトに留まるかどうか」を判断します。本記事では、CVRに直結するファーストビュー設計の原則を5つの構成要素から解説し、デバイス別の最適サイズ設計、実例、改善チェックリストまでをまとめています。
-                            </p>
-
-                            <div class="pt-sm" style="border-top: 1px solid #eee;">
-                                <a href="/ja/hp-guide/design-ux/first-view-cvr-optimization/" class="text-primary font-bold" style="font-size: 0.9rem; text-decoration: none;">
-                                    詳しく見る &rarr;
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-
-                    <article class="card p-0 blog-item"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
-
-                        
-                        <a href="/ja/hp-guide/multilingual/urdu-hp/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
-                            <img src="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/pk.svg"
-                                 alt="ウルドゥー語ホームページ作成の注意点・完全ガイド"
-                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
-                        </a>
-                        
-
-                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
-                            
-
-                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
-                                <a href="/ja/hp-guide/multilingual/urdu-hp/" style="color: inherit; text-decoration: none;">
-                                    ウルドゥー語ホームページ作成の注意点・完全ガイド
-                                </a>
-                            </h3>
-
-                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
-                                RTL（右から左）レイアウトの正しい実装・ナスタアリーク書体の設定・PTA規制・WhatsApp Business活用など、パキスタン市場向けウルドゥー語サイトの重要ポイントを解説します。
-                            </p>
-
-                            <div class="pt-sm" style="border-top: 1px solid #eee;">
-                                <a href="/ja/hp-guide/multilingual/urdu-hp/" class="text-primary font-bold" style="font-size: 0.9rem; text-decoration: none;">
-                                    詳しく見る &rarr;
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    
-                
-            
-                
-
-                    <article class="card p-0 blog-item"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
-
-                        
-                        <a href="/ja/hp-guide/multilingual/thailand-hp/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
-                            <img src="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/th.svg"
-                                 alt="タイ語ホームページ作成の注意点・完全ガイド"
-                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
-                        </a>
-                        
-
-                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
-                            
-
-                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
-                                <a href="/ja/hp-guide/multilingual/thailand-hp/" style="color: inherit; text-decoration: none;">
-                                    タイ語ホームページ作成の注意点・完全ガイド
-                                </a>
-                            </h3>
-
-                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
-                                タイ文字の行間設定・王室不敬罪とPDPA対応・LINE公式アカウント活用・曜日カラー文化など、タイ市場で成果を出すための技術・デザイン・文化面の重要ポイントを解説します。
-                            </p>
-
-                            <div class="pt-sm" style="border-top: 1px solid #eee;">
-                                <a href="/ja/hp-guide/multilingual/thailand-hp/" class="text-primary font-bold" style="font-size: 0.9rem; text-decoration: none;">
-                                    詳しく見る &rarr;
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    
-                
-            
-                
-
-                    <article class="card p-0 blog-item"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
-
-                        
-                        <a href="/ja/hp-guide/multilingual/spanish-hp/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
-                            <img src="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/es.svg"
-                                 alt="スペイン語ホームページ作成の注意点・完全ガイド"
-                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
-                        </a>
-                        
-
-                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
-                            
-
-                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
-                                <a href="/ja/hp-guide/multilingual/spanish-hp/" style="color: inherit; text-decoration: none;">
-                                    スペイン語ホームページ作成の注意点・完全ガイド
-                                </a>
-                            </h3>
-
-                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
-                                話者6億人のスペイン語圏（スペイン本国・中南米）で成果を出すための、言語の違い・GDPR・WhatsApp活用・SEO面の重要ポイントを徹底解説します。
-                            </p>
-
-                            <div class="pt-sm" style="border-top: 1px solid #eee;">
-                                <a href="/ja/hp-guide/multilingual/spanish-hp/" class="text-primary font-bold" style="font-size: 0.9rem; text-decoration: none;">
-                                    詳しく見る &rarr;
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    
-                
-            
-                
-
-                    <article class="card p-0 blog-item"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
-
-                        
-                        <a href="/ja/hp-guide/multilingual/russian-hp/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
-                            <img src="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/ru.svg"
-                                 alt="ロシア語ホームページ作成の注意点・完全ガイド"
-                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
-                        </a>
-                        
-
-                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
-                            
-
-                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
-                                <a href="/ja/hp-guide/multilingual/russian-hp/" style="color: inherit; text-decoration: none;">
-                                    ロシア語ホームページ作成の注意点・完全ガイド
-                                </a>
-                            </h3>
-
-                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
-                                YouTubeブロック・Google Fonts制限・Yandex SEO・Telegramでの問い合わせなど、2022年以降のロシア特有のインターネット環境に対応するための重要ポイントを解説します。
-                            </p>
-
-                            <div class="pt-sm" style="border-top: 1px solid #eee;">
-                                <a href="/ja/hp-guide/multilingual/russian-hp/" class="text-primary font-bold" style="font-size: 0.9rem; text-decoration: none;">
-                                    詳しく見る &rarr;
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    
-                
-            
-                
-
-                    <article class="card p-0 blog-item"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
-
-                        
-                        <a href="/ja/hp-guide/multilingual/portuguese-hp/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
-                            <img src="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/pt.svg"
-                                 alt="ポルトガル語ホームページ作成の注意点・完全ガイド"
-                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
-                        </a>
-                        
-
-                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
-                            
-
-                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
-                                <a href="/ja/hp-guide/multilingual/portuguese-hp/" style="color: inherit; text-decoration: none;">
-                                    ポルトガル語ホームページ作成の注意点・完全ガイド
-                                </a>
-                            </h3>
-
-                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
-                                ブラジル（PT-BR）とポルトガル（PT-PT）の違いを理解し、WhatsApp・LGPD・Pix決済まで対応した、ポルトガル語市場で成果を出すための重要ポイントを解説します。
-                            </p>
-
-                            <div class="pt-sm" style="border-top: 1px solid #eee;">
-                                <a href="/ja/hp-guide/multilingual/portuguese-hp/" class="text-primary font-bold" style="font-size: 0.9rem; text-decoration: none;">
-                                    詳しく見る &rarr;
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-
-            
+        <!-- シェアボタン -->
+        <div class="mt-3xl py-xl border-t border-b border-gray-100 text-center">
+            <p class="font-bold mb-md text-lg">この記事をシェアする</p>
+            <div class="share-buttons-container">
+                <a href="https://twitter.com/intent/tweet?url=/ja/hp-guide/seo-content/seo-keyword-selection/&text=上位表示を狙うキーワード選定の完全手順｜検索意図の分析からターゲットKW設計まで" target="_blank" class="share-btn bg-x"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=/ja/hp-guide/seo-content/seo-keyword-selection/" target="_blank" class="share-btn bg-facebook"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.797 1.66-2.797 3.54v1.237h3.354l-.58 3.666h-2.776v7.98H9.102z"></path></svg></a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=/ja/hp-guide/seo-content/seo-keyword-selection/" target="_blank" class="share-btn bg-linkedin"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a>
+                <button onclick="copyToClipboard()" class="share-btn bg-copy"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M14.851 11.923c-.179-.641-.521-1.246-1.025-1.749-1.562-1.562-4.095-1.563-5.657 0l-4.998 4.998c-1.562 1.563-1.563 4.094 0 5.656 1.562 1.563-4.096 1.561 5.656 0l1.339-1.341c.446-.446.446-1.171 0-1.618-.446-.446-1.171-.446-1.618 0l-1.339 1.342c-.668.668-1.755.667-2.422-.002-.668-.669-.668-1.754 0-2.423l4.998-4.999c.668-.668 1.754-.668-2.421.001-.334-.334-.548-.756-.633 1.201.127.658.745 1.077 1.403.951.657-.126 1.078-.745.952-1.403.001-.001-.194-.436-.343-.612zm-3.702-5.465c.446.446 1.171.446 1.618 0l1.339-1.342c.668-.668 1.755-.667 2.423.002.668.669.668 1.754 0 2.423l-4.998 4.999c-.668.668-1.754.668-2.421.001-.334-.334-.548-.756-.633-1.201-.127-.658-.745-1.077-1.403-.951-.657.126-1.078.745-.952 1.403 0 0 .194.436.343.612.179.641.521 1.246 1.025 1.749 1.562 1.562 4.095 1.563 5.657 0l4.998-4.998c1.562-1.563 1.563-4.094 0-5.656-1.562-1.563-4.096-1.561-5.656 0l-1.339 1.341c-.446.446-.446 1.171 0 1.618z"/></svg></button>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- CTA Section Component -->
+<!-- ▼ 関連記事 -->
+
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+        
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+        
+        
+    
+
+    
+
+
+
+
+<div class="bg-white"><!-- CTA Section Component -->
 <style>
     /* ===================================
        CTA Section Styles (Self-contained)
@@ -1774,73 +1500,59 @@ document.addEventListener('DOMContentLoaded', function() {
     // 実行
     document.addEventListener('DOMContentLoaded', updateCtaContent);
 })();
-</script>
+</script></div>
 
-<style>
-    .view-all-link {
-        color: var(--color-primary-start);
-        font-weight: bold;
-        text-decoration: none;
-        font-size: 0.95rem;
-        transition: transform 0.2s, opacity 0.2s;
-        display: inline-block;
+<div id="copy-toast">リンクをコピーしました</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. 目次の自動生成
+    const content = document.querySelector('.blog-content');
+    const tocContainer = document.getElementById('toc-container');
+    const tocList = document.getElementById('toc-list');
+
+    if (content && tocContainer && tocList) {
+        const headers = content.querySelectorAll('h2');
+
+        if (headers.length > 0) {
+            tocContainer.style.display = 'block';
+
+            headers.forEach((header, index) => {
+                if (!header.id) {
+                    header.id = 'section-' + index;
+                }
+
+                const li = document.createElement('li');
+                li.style.borderBottom = '1px dashed #cbd5e1';
+                li.style.paddingBottom = '8px';
+                li.style.marginBottom = '8px';
+                li.style.fontSize = '1rem';
+
+                const a = document.createElement('a');
+                a.href = '#' + header.id;
+                a.textContent = header.textContent;
+                a.style.textDecoration = 'none';
+                a.style.color = '#334155';
+
+                a.onmouseover = function() { this.style.color = '#C10033'; };
+                a.onmouseout = function() { this.style.color = '#334155'; };
+
+                li.appendChild(a);
+                tocList.appendChild(li);
+            });
+        }
     }
-    .view-all-link:hover {
-        transform: translateX(5px);
-        opacity: 0.8;
-        text-decoration: underline;
-    }
-    .manual-card {
-        display: block;
-        background: white;
-        padding: 30px 20px;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        text-decoration: none;
-        color: inherit;
-        transition: transform 0.3s, box-shadow 0.3s;
-        border: 1px solid rgba(0,0,0,0.05);
-        text-align: center;
-        height: 100%;
-    }
-    .manual-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-        border-color: var(--color-primary-start);
-    }
-    .icon-box {
-        background: #fff5f7;
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 20px;
-    }
-    .manual-title {
-        font-size: 1.25rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-        color: var(--color-text-primary);
-    }
-    .manual-desc {
-        font-size: 0.9rem;
-        color: var(--color-text-secondary);
-        line-height: 1.6;
-        margin-bottom: 20px;
-    }
-    .manual-link {
-        font-size: 0.9rem;
-        font-weight: bold;
-        color: var(--color-primary-start);
-    }
-    .blog-item:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
-    }
-    .blog-item:hover h3 a { color: var(--color-primary-start) !important; }
-</style>
+
+    // 2. リンクコピー機能
+    window.copyToClipboard = function() {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+            const toast = document.getElementById("copy-toast");
+            toast.classList.add("show");
+            setTimeout(() => toast.classList.remove("show"), 3000);
+        });
+    };
+});
+</script>
 
     </main>
     

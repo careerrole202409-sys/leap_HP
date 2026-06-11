@@ -4,20 +4,20 @@
 
 <link rel="icon" href="/assets/favicon.png">
 
-<title>建站指南 | Leap</title>
-  <meta name="description" content="从网站设计搭建到UI/UX、SEO与内容策略、多语言建站、安全与运维、访问分析与优化，系统学习可出成果的建站实践知识。">
+<title>图解Shutto翻訳导入全流程！从JavaScript标签安装到上线的完整步骤</title>
+  <meta name="description" content="详解可在最短3分钟内实现网站多语言化的&quot;Shutto翻訳&quot;导入步骤。涵盖账号注册、JavaScript标签安装、WordPress及Shopify等各环境配置、翻译排除设置及上线前验证要点，面向工程师及网站负责人的全面实施指南。">
 
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.leap.site/zh-hans/hp-guide/">
-  <meta property="og:title" content="建站指南 | Leap">
-  <meta property="og:description" content="从网站设计搭建到UI/UX、SEO与内容策略、多语言建站、安全与运维、访问分析与优化，系统学习可出成果的建站实践知识。">
+  <meta property="og:url" content="https://www.leap.site/zh-hans/blog/marketing/shutto-translation-setup-guide/">
+  <meta property="og:title" content="图解Shutto翻訳导入全流程！从JavaScript标签安装到上线的完整步骤">
+  <meta property="og:description" content="详解可在最短3分钟内实现网站多语言化的&quot;Shutto翻訳&quot;导入步骤。涵盖账号注册、JavaScript标签安装、WordPress及Shopify等各环境配置、翻译排除设置及上线前验证要点，面向工程师及网站负责人的全面实施指南。">
   <meta property="og:image" content="https://www.leap.site/assets/og-image.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="建站指南 | Leap">
-  <meta property="twitter:description" content="从网站设计搭建到UI/UX、SEO与内容策略、多语言建站、安全与运维、访问分析与优化，系统学习可出成果的建站实践知识。">
+  <meta property="twitter:title" content="图解Shutto翻訳导入全流程！从JavaScript标签安装到上线的完整步骤">
+  <meta property="twitter:description" content="详解可在最短3分钟内实现网站多语言化的&quot;Shutto翻訳&quot;导入步骤。涵盖账号注册、JavaScript标签安装、WordPress及Shopify等各环境配置、翻译排除设置及上线前验证要点，面向工程师及网站负责人的全面实施指南。">
   <meta property="twitter:image" content="https://www.leap.site/assets/og-image.png">
 
     <!-- Google tag (gtag.js) -->
@@ -40,8 +40,8 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="从网站设计搭建到UI/UX、SEO与内容策略、多语言建站、安全与运维、访问分析与优化，系统学习可出成果的建站实践知识。">
-    <title>建站指南 | Leap</title>
+    <meta name="description" content="详解可在最短3分钟内实现网站多语言化的&quot;Shutto翻訳&quot;导入步骤。涵盖账号注册、JavaScript标签安装、WordPress及Shopify等各环境配置、翻译排除设置及上线前验证要点，面向工程师及网站负责人的全面实施指南。">
+    <title>图解Shutto翻訳导入全流程！从JavaScript标签安装到上线的完整步骤</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
@@ -476,417 +476,584 @@ document.addEventListener('DOMContentLoaded', function() {
     <!-- Main Content -->
     <main id="main-content">
         
-<section class="section py-3xl" style="background: var(--color-primary-gradient); color: var(--color-white);">
-    <div class="container text-center">
-        <span class="text-white font-bold mb-sm d-block" style="opacity: 0.9; letter-spacing: 0.05em;">Leap Knowledge Base</span>
-        <h1 class="text-white mb-md">建站指南</h1>
-        <p class="text-white mb-xl" style="font-size: var(--font-size-lg); max-width: 800px; margin-left: auto; margin-right: auto;">
-            从网站设计搭建、UI/UX设计、SEO与内容策略、多语言建站，<br>
-            到安全与运维、访问分析与优化。面向网站负责人的实战知识体系。
-        </p>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+<!-- ▼ topic_translation から取得 -->
+
+
+
+<style>
+    /* --- 基本レイアウト --- */
+    .blog-container {
+        max-width: 1000px; 
+        margin: 0 auto;   
+        padding: 0 24px;  
+    }
+
+    /* --- パンくずリスト --- */
+    .breadcrumb-nav {
+        font-size: 1rem;
+        color: #64748b;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+    }
+    .breadcrumb-nav a {
+        color: #64748b;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    .breadcrumb-nav a:hover {
+        color: #C10033;
+        text-decoration: underline;
+    }
+    .breadcrumb-separator {
+        font-size: 0.9rem;
+        color: #cbd5e1;
+    }
+    .breadcrumb-current {
+        color: #94a3b8;
+        font-weight: 500;
+    }
+
+    /* --- ヘッダー要素 --- */
+    .topic-badge {
+        display: inline-block;
+        background-color: #C10033;
+        color: white;
+        font-weight: bold;
+        font-size: 0.875rem;
+        padding: 6px 18px;
+        border-radius: 50px;
+        margin-bottom: 1.5rem;
+        letter-spacing: 0.05em;
+    }
+
+    .post-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        line-height: 1.4;
+        color: #1e293b;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.02em;
+    }
+
+    /* タグデザイン */
+    .tag-chip {
+        display: inline-block;
+        background-color: #f1f5f9;
+        color: #475569;
+        padding: 4px 12px;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-decoration: none;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        transition: background 0.2s;
+    }
+    .tag-chip:hover {
+        background-color: #e2e8f0;
+        color: #C10033;
+    }
+
+    /* メタ情報 */
+    .meta-info {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        color: #64748b;
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+        font-family: monospace, serif;
+    }
+    .meta-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .meta-icon {
+        width: 18px; height: 18px; fill: #94a3b8;
+    }
+
+    /* 区切り線 */
+    .header-divider {
+        border: 0;
+        border-top: 1px solid #e2e8f0;
+        margin-bottom: 2rem;
+    }
+
+    /* 著者情報エリア */
+    .author-section {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 3rem;
+    }
+    .author-avatar {
+        width: 56px; height: 56px; border-radius: 50%; object-fit: cover; background-color: #e2e8f0;
+    }
+    .author-text {
+        display: flex; flex-direction: column;
+    }
+    .author-name {
+        font-weight: bold; font-size: 1rem; color: #1e293b; margin-bottom: 2px;
+    }
+    .author-bio {
+        font-size: 0.85rem; color: #64748b;
+    }
+
+    /* --- 記事本文スタイル --- */
+    .blog-content {
+        font-size: 1.125rem;
+        line-height: 1.9;
+        color: #334155;
+    }
+    
+
+    .blog-content h2 {
+        font-size: 1.8rem;
+        margin-top: 4rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #e2e8f0;
+        color: #1e293b;
+        font-weight: bold;
+        scroll-margin-top: 100px;
+    }
+    .blog-content h3 {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        color: #1e293b;
+        position: relative;
+        padding-left: 1rem;
+        scroll-margin-top: 100px;
+    }
+    .blog-content h3::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.3em;
+        bottom: 0.3em;
+        width: 4px;
+        background: #C10033;
+        border-radius: 2px;
+    }
+    .blog-content p { margin-bottom: 2rem; }
+    
+    .blog-content img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 3rem auto;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    .blog-content ul, .blog-content ol { margin-bottom: 2rem; padding-left: 1.5rem; }
+    .blog-content li { margin-bottom: 0.5rem; }
+    
+    /* シェアボタン */
+    .share-buttons-container {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        margin-top: 1rem;
+    }
+
+    .share-btn {
+        width: 50px; height: 50px;
+        border-radius: 50%; display: flex; align-items: center; justify-content: center;
+        color: white; border: none; cursor: pointer; transition: transform 0.2s, opacity 0.2s;
+    }
+    .share-btn:hover { transform: translateY(-3px); opacity: 0.9; }
+    .bg-x { background-color: #000; }
+    .bg-facebook { background-color: #1877F2; }
+    .bg-linkedin { background-color: #0A66C2; }
+    .bg-copy { background-color: #64748B; }
+
+    /* トースト通知 */
+    #copy-toast {
+        visibility: hidden; min-width: 200px; background-color: #333; color: #fff; text-align: center;
+        border-radius: 4px; padding: 10px; position: fixed; z-index: 50; left: 50%; bottom: 30px;
+        transform: translateX(-50%); opacity: 0; transition: opacity 0.3s, bottom 0.3s;
+    }
+    #copy-toast.show { visibility: visible; opacity: 1; bottom: 50px; }
+    
+    @media (max-width: 768px) {
+        .post-title { font-size: 1.75rem; }
+        .meta-info { gap: 12px; font-size: 0.85rem; }
+        .blog-container { padding: 0 20px; }
+    }
+</style>
+
+<!-- ▼ ページ上部エリア -->
+<div class="bg-white pb-md" style="padding-top: 100px;"> 
+    <div class="blog-container">
+        
+        <!-- 1. パンくずリスト -->
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+            <a href="/zh-hans/">首页</a>
+            <span class="breadcrumb-separator">›</span>
+            <a href="/zh-hans/blog/">博客</a>
+            <span class="breadcrumb-separator">›</span>
+            <a href="/zh-hans/blog/marketing/">海外营销</a>
+            <span class="breadcrumb-separator">›</span>
+            <span class="breadcrumb-current">图解Shutto翻訳导入全流程！从JavaScript标签安......</span>
+        </nav>
+
+        <!-- 2. トピックバッジ -->
+        <div class="mb-md">
+            <span class="topic-badge">
+                海外营销
+            </span>
+        </div>
+
+        <!-- 3. 記事タイトル -->
+        <h1 class="post-title">
+            图解Shutto翻訳导入全流程！从JavaScript标签安装到上线的完整步骤
+        </h1>
+
+        <!-- 4. タグ一覧 -->
+        
+        <div class="mb-lg">
+            
+                
+            
+                
+                <a href="/zh-hans/blog/?tag=多语言化" class="tag-chip">#多语言化</a>
+                
+            
+                
+                <a href="/zh-hans/blog/?tag=Shutto翻訳" class="tag-chip">#Shutto翻訳</a>
+                
+            
+                
+                <a href="/zh-hans/blog/?tag=网站建设" class="tag-chip">#网站建设</a>
+                
+            
+                
+                <a href="/zh-hans/blog/?tag=本地化" class="tag-chip">#本地化</a>
+                
+            
+        </div>
+        
+
+        <!-- 5. メタ情報 -->
+        <div class="meta-info">
+            <div class="meta-item">
+                <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/></svg>
+                <time datetime="Thu Jun 11 2026 09:00:00 GMT+0900 (Japan Standard Time)">2026年06月11日</time>
+            </div>
+            <div class="meta-item">
+                <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                
+                <span>阅读时间：约 16.146分钟</span>
+            </div>
+        </div>
+
+        <!-- 6. 区切り線 -->
+        <hr class="header-divider">
+
+        <!-- 7. 著者情報セクション -->
+        <div class="author-section">
+            <img src="https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap" 
+                 alt="Leap 编辑团队" 
+                 class="author-avatar">
+            
+            <div class="author-text">
+                <div class="author-name">Leap 编辑团队</div>
+                <div class="author-bio">全球业务专家团队</div>
+            </div>
+        </div>
+
+        <!-- 8. アイキャッチ画像 -->
+        <div style="width: 100%; aspect-ratio: 16/9; overflow: hidden; border-radius: 12px; margin-bottom: 20px;">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" 
+                 alt="图解Shutto翻訳导入全流程！从JavaScript标签安装到上线的完整步骤" 
+                 style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+
+    </div>
+</div>
+
+<!-- ▼ 本文セクション -->
+<section class="section pt-lg pb-3xl bg-white">
+    <div class="blog-container"> 
+        
+        <!-- ▼ 目次エリア -->
+        <div id="toc-container" style="display: none; background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:24px; margin-bottom:48px;">
+            <div style="font-weight:bold; margin-bottom:12px; text-align:center; color:#475569; font-size:1.1rem;">目录</div>
+            <ul id="toc-list" style="list-style:none; padding:0; margin:0;">
+                <!-- JavaScriptで自動生成 -->
+            </ul>
+        </div>
+
+        <!-- 記事本文 -->
+        <div class="blog-content">
+            <h2>【1分钟速览】Shutto翻訳导入全流程与本文使用方法</h2>
+<p>想让网站支持多语言，但从零开始制作翻译页面成本高、耗时长——面对这一痛点，&quot;Shutto翻訳&quot;深受众多负责人青睐。e-365株式会社（前身为e-Agency）提供的这款SaaS型多语言化工具，只需在<code>&lt;head&gt;</code>标签中插入一行JavaScript，即可在最短3分钟内实现全站多语言化。</p>
+<p>本文面向工程师及网站负责人，汇聚了实际推进导入工作所需的全部信息，作为一份完整的实施指南。具体内容包括：①从账号注册到仪表盘URL登录、安装标签的基本3步骤；②静态网站、WordPress、Shopify、ColorMeShop、futureshop等各环境的安装步骤；③通过Google Tag Manager安装的方法及注意事项；④保护个人信息与机密信息的翻译排除设置；⑤正式上线前的操作验证要点——共五大部分，按序解说。</p>
+<p>无论您正在评估是否导入Shutto翻訳，还是已完成签约但在标签安装环节遇到困难，本文均按照&quot;照着操作即可顺利上线&quot;的结构编写，欢迎通读至结尾。</p>
+<h2>Shutto翻訳是什么——导入前必须掌握的基础知识</h2>
+<p>Shutto翻訳是一款只需在网站HTML的<code>&lt;head&gt;</code>标签内插入一行JavaScript标签（导入标签），即可通过AI自动翻译实现全站多语言化的工具。支持语言超过100种，涵盖英语、中文（简体及繁体）、韩语、泰语、越南语、印度尼西亚语等，几乎覆盖东南亚、东亚及美洲市场所需的全部语言。</p>
+<p>其核心机制在于&quot;标签方式&quot;。对现有网站源代码的改动极少，因此不受CMS类型或网站静态/动态性质的限制，适用范围极广。博客、电商网站、企业官网、会员网站、表单等，所有输出HTML的页面均可作为翻译对象。</p>
+<p>除自动翻译外，管理后台还提供翻译文本自助编辑、防止专有名词误译的词典登录、语言切换栏设计自定义等丰富功能。利用海外搜索引擎对应功能，还可自动生成静态页面，将翻译后的页面收录至海外Google等搜索引擎。</p>
+<p>定价方面（2026年3月调整后），入门套餐起价为8,800日元（含税）/月（100页，50万字符/月）。无需初始费用，提供30天免费试用。</p>
+<h3>导入实例：NTT DATA Intramart株式会社</h3>
+<p>为企业提供IT平台的NTT DATA Intramart，借助Shutto翻訳实现了超过100万字符的大规模页面多语言化，将传统翻译成本压缩至约十分之一。该公司在决定导入时所看重的要点包括：&quot;翻译精度高&quot;&quot;管理界面直观&quot;&quot;即使IT素养较低的负责人也能自主完成翻译操作&quot;&quot;性价比优异&quot;。该方案已被认定为大规模网站运营中多语言化的现实可行解。</p>
+<h2>导入基本3步骤——从账号注册到标签安装与上线</h2>
+<p>Shutto翻訳的导入流程可归纳为3大步骤。按序操作可有效避免不必要的返工。</p>
+<h3>STEP 1：创建账号并在仪表盘注册URL</h3>
+<p>首先，在Shutto翻訳官网（https://www.submit.ne.jp/shutto-translation）申请免费试用。输入邮箱地址及基本信息完成账号创建后，即可访问仪表盘。</p>
+<p>登录仪表盘后，注册需要翻译的页面URL。URL支持通过CSV批量导入，即使是商品页面众多的电商网站也能高效完成设置。URL注册完成后，系统将自动加载页面并提取待翻译文本。此阶段还需选择翻译语言，并配置&quot;自动翻译发布&quot;的启用/禁用状态。</p>
+<h3>STEP 2：获取导入标签（JavaScript标签）并插入<code>&lt;head&gt;</code></h3>
+<p>在仪表盘的&quot;站点设置&quot;菜单中复制&quot;导入标签&quot;。该标签为各账号专属代码，格式如下：
+<code>&lt;script src=&quot;https://xxxxxxxx.shutto-translation.com/st.js&quot;&gt;&lt;/script&gt;</code></p>
+<p>将此标签插入网站所有页面的<code>&lt;head&gt;</code>标签内。安装时请注意以下事项：</p>
+<ul>
+<li>标签需置于<code>&lt;title&gt;</code>标签和canonical标签之后（下方）</li>
+<li>即使持有多个账号，每个站点也只能使用一个导入标签（重复安装多个标签会导致意外故障）</li>
+<li>如无法在<code>&lt;head&gt;</code>内安装，可将其放置在<code>&lt;body&gt;</code>开始标签的紧后方（最上部）</li>
+<li>对于PC版与手机版HTML分开的网站，需在所有设备的源代码中均进行安装</li>
+</ul>
+<p>如果您不自行管理网站，请将上述代码和注意事项告知制作公司或开发商，委托其完成操作。</p>
+<h3>STEP 3：发布翻译并确认语言切换栏</h3>
+<p>若已设置&quot;自动翻译发布：禁用&quot;，则需在仪表盘手动执行发布操作。在仪表盘的页面列表中选择目标页面，点击&quot;发布翻译&quot;即可批量发布。</p>
+<p>发布后，确认语言切换栏的设置。若显示为&quot;不显示&quot;，请勾选&quot;显示语言切换栏&quot;，并配置显示位置和显示语言。同时务必确认&quot;首次显示语言&quot;设置——此设置控制访客首次访问时看到的语言版本。</p>
+<p>最后，访问实际网站，确认语言切换栏正常显示、翻译后的页面呈现无误，即完成上线。</p>
+<h2>各环境安装步骤——WordPress、Shopify、ColorMeShop、futureshop</h2>
+<p>导入标签的安装方式因所使用的CMS或电商平台而异，请参考以下各主要环境的安装步骤。</p>
+<h3>静态网站/HTML网站</h3>
+<p>可直接编辑HTML的环境中，在所有页面的<code>&lt;head&gt;</code>标签内添加导入标签。若存在公共头部文件，只需编辑该文件一处，即可应用至所有页面。</p>
+<h3>WordPress网站</h3>
+<p>在WordPress中，标准做法是编辑主题的<code>header.php</code>文件，在<code>&lt;/head&gt;</code>标签前插入导入标签。若直接编辑主题，主题更新时设置有被覆盖的风险，建议使用子主题。使用&quot;Insert Headers and Footers&quot;等插件，无需编辑代码即可向<code>&lt;head&gt;</code>添加脚本。</p>
+<h3>ColorMeShop</h3>
+<p>自2026年2月起，ColorMeShop已支持直接从应用商店添加Shutto翻訳应用完成导入。在应用商店搜索&quot;shutto翻訳&quot;并添加后，系统将引导您完成Shutto翻訳账号注册，无需直接编辑HTML，多语言化更加简便。30天免费试用结束后，如需正式合同，请在Shutto翻訳管理后台办理手续。</p>
+<p>如需通过ColorMeShop管理后台直接编辑HTML安装，可进入管理后台的&quot;设计&quot;→&quot;模板编辑&quot;，打开公共HTML，在<code>&lt;head&gt;</code>标签内插入导入标签。</p>
+<h3>futureshop</h3>
+<p>futureshop与Shutto翻訳建立了官方合作关系，通过专用申请表提交申请后，将在3个工作日内发放免费试用账号。在futureshop管理后台编辑HTML模板，在<code>&lt;head&gt;</code>标签内插入导入标签。&quot;Commerce Creator&quot;版与标准futureshop的安装位置有所不同，建议参考官方手册（https://www.submit.ne.jp/shutto-translation/hc/manual/futureshop）进行确认。</p>
+<h3>Shopify</h3>
+<p>在Shopify中，通过主题编辑器打开<code>theme.liquid</code>文件，在<code>&lt;/head&gt;</code>标签前添加导入标签。由于<code>theme.liquid</code>是Shopify主题结构中所有页面的公共模板，只需编辑一处即可应用至整个站点。</p>
+<h2>通过Google Tag Manager（GTM）安装及注意事项</h2>
+<p>也可通过Google Tag Manager管理Shutto翻訳的导入标签。已使用GTM的情况下，负责人无需开发资源即可自主配置和变更标签，具有较高的灵活性。</p>
+<p>GTM安装步骤如下：</p>
+<ol>
+<li>进入GTM容器，选择&quot;代码&quot;→&quot;新建&quot;</li>
+<li>代码类型选择&quot;自定义HTML&quot;，粘贴Shutto翻訳的导入标签代码</li>
+<li>触发器设置为&quot;All Pages（所有页面）&quot;</li>
+<li>保存代码，在预览模式下确认运行正常后发布</li>
+</ol>
+<p>但GTM安装方式有一个重要注意事项：部分用户使用的Adblock（广告拦截器）可能会屏蔽GTM本身。若仅通过GTM安装标签，启用了Adblock的用户将无法使用Shutto翻訳功能。如需将Adblock的影响降至最低，可考虑GTM与直接<code>&lt;head&gt;</code>安装并用，或优先采用直接安装方式。此外，GTM触发器配置有误可能导致标签仅在特定页面触发——若希望应用于全站，请务必确认触发器已设置为&quot;All Pages&quot;。官方手册（https://www.submit.ne.jp/shutto-translation/hc/manual/googletagmanager）提供了详细的设置说明。</p>
+<h2>翻译排除设置——保护个人信息与机密信息的必要操作</h2>
+<p>导入Shutto翻訳时容易被忽略、但优先级极高的设置是&quot;翻译排除设置&quot;。网站上可能存在不应通过翻译工具处理的信息。</p>
+<p>需要进行翻译排除设置的典型场景包括：</p>
+<ul>
+<li>显示姓名、地址、电话号码、邮箱等个人信息的页面或区域</li>
+<li>用户填写个人信息的表单，如账号注册表单、订单表单等</li>
+<li>合同书、报价单、发票等高保密性商业文件</li>
+<li>商品型号、价格、库存数量等数值信息（语言转换可能引入误译风险）</li>
+</ul>
+<p>排除设置有两种方法。第一种是在需要排除的HTML元素上添加专用属性：为目标HTML元素添加<code>translate=&quot;no&quot;</code>属性或Shutto翻訳专用class名，该元素内的文本将不再被翻译。第二种是通过仪表盘更改翻译对象页面的设置，将特定页面整体从翻译对象中排除。</p>
+<p>Shutto翻訳官方手册明确指出，含有个人信息的区域&quot;建议进行翻译排除设置或将其从翻译对象页面中移除&quot;。从GDPR及各国个人信息保护法的角度出发，工程师和网站负责人务必不可忽视这一步骤。</p>
+<p>详细设置方法请参考官方手册页面（https://www.submit.ne.jp/shutto-translation/hc/manual/exclusion_setting）。</p>
+<h2>正式上线前的操作验证清单</h2>
+<p>完成标签安装和翻译设置后，正式上线前请务必逐项确认以下内容。若跳过此步骤直接上线，用户可能会在翻译后的页面上看到错误信息。</p>
+<h3>显示确认</h3>
+<ul>
+<li>语言切换栏是否在所有页面正确显示？</li>
+<li>切换至目标全部语言（英语、中文、韩语等）是否正常运作？</li>
+<li>在PC、平板、手机各设备上，翻译显示是否未出现排版错乱？（善用设备预览功能）</li>
+</ul>
+<h3>翻译质量确认</h3>
+<ul>
+<li>自动翻译结果中是否存在明显错译的文本？（重点检查商品说明、CTA按钮、导航）</li>
+<li>公司名、商品名、地名等专有名词是否正确显示？（确认词典登录已生效）</li>
+<li>是否存在因翻译导致页面排版错乱的情况？（通过内容编辑功能调整CSS）</li>
+</ul>
+<h3>排除设置确认</h3>
+<ul>
+<li>个人信息表单是否已从翻译对象中排除？</li>
+<li>已进行排除设置的区域是否实际未被翻译？</li>
+</ul>
+<h3>功能确认</h3>
+<ul>
+<li>自动翻译发布设置的状态（启用/禁用）是否符合预期？</li>
+<li>首次显示语言的设置是否为预期语言？</li>
+<li>通过Google Tag Manager安装的情况下，标签是否在所有页面触发？（通过GTM预览模式确认）</li>
+</ul>
+<p>如在清单检查中发现问题，请使用仪表盘的自助翻译功能修正文本后重新发布。功能的详细说明，请从官方手册首页（https://www.submit.ne.jp/shutto-translation/hc/manual）按分类查阅。</p>
+<h2>常见问题（FAQ）</h2>
+<p><strong>Q1. 不确定能否将标签放入<code>&lt;head&gt;</code>，放在<code>&lt;body&gt;</code>中也能正常工作吗？</strong>
+建议将标签放置在<code>&lt;head&gt;</code>内，但如因某些原因无法实现，将其置于<code>&lt;body&gt;</code>开始标签紧后方（最上部）同样可以正常运行。条件是在页面加载时能读取到标签，因此请避免将其放在<code>&lt;body&gt;</code>标签的末尾。若放置在<code>&lt;head&gt;</code>内，需置于<code>&lt;title&gt;</code>标签和canonical标签之后。</p>
+<p><strong>Q2. 在WordPress上安装后，主题更新导致标签消失了，该怎么办？</strong>
+若直接编辑了主题文件，主题更新时会将其覆盖，导致设置丢失。为防止此情况，请创建子主题并在子主题中安装标签，或使用&quot;Insert Headers and Footers&quot;等插件。通过插件安装则不受主题更新的影响。通过Google Tag Manager统一管理也是一种有效方案，但请综合考虑Adblock的影响后再做选择。</p>
+<p><strong>Q3. 电商网站有数千个商品页面，是否需要在仪表盘逐一登录？</strong>
+Shutto翻訳提供&quot;自动页面登录&quot;功能。在网站上安装导入标签并开启自动页面登录后，访客访问的页面将自动登录至仪表盘。此外，CSV批量导入功能也已就绪——准备好商品页面URL的CSV文件，即可一次性批量导入。即使是拥有数千个页面的电商网站，也无需手动逐一登录。</p>
+<h2>总结——借助Shutto翻訳，为出海之路打开大门</h2>
+<p>导入Shutto翻訳，从插入一行JavaScript标签开始。遵循账号注册→URL登录→标签安装→发布的基本3步骤，根据使用环境选择合适的安装方式，完成翻译排除设置并进行上线前验证，即可以最短时间将现有网站升级为多语言网站。</p>
+<p>NTT DATA Intramart以十分之一的成本实现了超过百万字符规模的多语言化；群马县みどり市役所则通过自动化翻译业务大幅削减了市政旅游网站的工作量。多语言化带来的价值，不受行业和规模的限制。</p>
+<p>然而，将网站送达全球用户只是第一步。下一个课题，是网站到达目标用户后，内容是否真正能够赢得&quot;信任&quot;。即便页面已完成翻译，若与当地用户的关注点和价值观不相符，也难以转化为咨询或购买行为。</p>
+<p>Leap在协助客户利用Shutto翻訳等翻译工具的同时，还提供针对当地市场深度优化的多语言页面原创制作与本地化支持服务。如果您对&quot;不仅仅是翻译，而是为当地用户重新构建内容&quot;的方案感兴趣，欢迎参阅<a href="https://www.leap.site/zh-hans/blog">Leap的博客与案例研究</a>。</p>
+<h2>参考资料</h2>
+<ul>
+<li><a href="https://www.submit.ne.jp/shutto-translation/hc/manual/publishing">shutto翻訳 发布方法手册（STEP3）</a></li>
+<li><a href="https://www.submit.ne.jp/shutto-translation/hc/manual">shutto翻訳 用户手册一览</a></li>
+<li><a href="https://bizly.jp/shuttohonyaku-explanation/">网站多语言化服务&quot;shutto翻訳&quot;深度解析（bizly）</a></li>
+<li><a href="https://techno-door.net/function/shutto-translation/">简易网站翻译工具&quot;shutto翻訳&quot;（CMS Technodoor）</a></li>
+<li><a href="https://www.future-shop.jp/tieup/problem/sales/shuttotranslation/">shutto翻訳 合作服务信息（futureshop）</a></li>
+<li><a href="https://shop-pro.jp/news/20260216-shutto-translation/">最短3分钟实现店铺多语言化！&quot;shutto翻訳&quot;登陆应用商店（ColorMeShop）</a></li>
+<li><a href="https://it-trend.jp/ai_translation_tool/13717">IT trend：shutto翻訳 产品信息</a></li>
+</ul>
+<p>Leap持续面向正在考虑出海的企业负责人及经营者，发布多语言网络营销相关资讯，涵盖各国市场动态、多语言电商运营经验及跨境销售实务，欢迎<a href="https://www.leap.site/zh-hans/blog">浏览其他文章</a>，获取可在实际工作中直接应用的信息。</p>
+
+        </div>
+
+        <!-- シェアボタン -->
+        <div class="mt-3xl py-xl border-t border-b border-gray-100 text-center">
+            <p class="font-bold mb-md text-lg">分享此文章</p>
+            <div class="share-buttons-container">
+                <a href="https://twitter.com/intent/tweet?url=/zh-hans/blog/marketing/shutto-translation-setup-guide/&text=图解Shutto翻訳导入全流程！从JavaScript标签安装到上线的完整步骤" target="_blank" class="share-btn bg-x"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=/zh-hans/blog/marketing/shutto-translation-setup-guide/" target="_blank" class="share-btn bg-facebook"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-2.148 0-2.797 1.66-2.797 3.54v1.237h3.354l-.58 3.666h-2.776v7.98H9.102z"></path></svg></a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=/zh-hans/blog/marketing/shutto-translation-setup-guide/" target="_blank" class="share-btn bg-linkedin"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a>
+                <button onclick="copyToClipboard()" class="share-btn bg-copy"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M14.851 11.923c-.179-.641-.521-1.246-1.025-1.749-1.562-1.562-4.095-1.563-5.657 0l-4.998 4.998c-1.562 1.563-1.563 4.094 0 5.656 1.562 1.563-4.096 1.561 5.656 0l1.339-1.341c.446-.446.446-1.171 0-1.618-.446-.446-1.171-.446-1.618 0l-1.339 1.342c-.668.668-1.755.667-2.422-.002-.668-.669-.668-1.754 0-2.423l4.998-4.999c.668-.668 1.754-.668-2.421.001-.334-.334-.548-.756-.633 1.201.127.658.745 1.077 1.403.951.657-.126 1.078-.745.952-1.403.001-.001-.194-.436-.343-.612zm-3.702-5.465c.446.446 1.171.446 1.618 0l1.339-1.342c.668-.668 1.755-.667 2.423.002.668.669.668 1.754 0 2.423l-4.998 4.999c-.668.668-1.754.668-2.421.001-.334-.334-.548-.756-.633-1.201-.127-.658-.745-1.077-1.403-.951-.657.126-1.078.745-.952 1.403 0 0 .194.436.343.612.179.641.521 1.246 1.025 1.749 1.562 1.562 4.095 1.563 5.657 0l4.998-4.998c1.562-1.563 1.563-4.094 0-5.656-1.562-1.563-4.096-1.561-5.656 0l-1.339 1.341c-.446.446-.446 1.171 0 1.618z"/></svg></button>
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="section bg-white" style="position: relative; margin-top: -60px; padding-top: var(--space-lg); padding-bottom: var(--space-3xl);">
+<!-- 関連記事 (トピック名を翻訳) -->
+<section class="section py-3xl bg-beige">
     <div class="container">
-
-        <div class="flex justify-end mb-md" style="position: relative; z-index: 10;">
-            <a href="/zh-hans/hp-guide/list/" class="view-all-link">
-                查看全部文章 &rarr;
-            </a>
-        </div>
-
-        <div class="grid-3" style="gap: 20px;">
-
-            <a href="/zh-hans/hp-guide/site-setup/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0H3" /></svg>
-                </div>
-                <h2 class="manual-title">网站设计与搭建</h2>
-                <p class="manual-desc">从平台选择、信息架构到页面构成，打造高效能网站的完整指南。</p>
-                <span class="manual-link">查看文章 &rarr;</span>
-            </a>
-
-            <a href="/zh-hans/hp-guide/design-ux/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" /></svg>
-                </div>
-                <h2 class="manual-title">设计与UI/UX</h2>
-                <p class="manual-desc">提升品牌形象、引导访客转化的设计与UI/UX实战知识。</p>
-                <span class="manual-link">查看文章 &rarr;</span>
-            </a>
-
-            <a href="/zh-hans/hp-guide/seo-content/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
-                </div>
-                <h2 class="manual-title">SEO与内容策略</h2>
-                <p class="manual-desc">打造可被搜索发现的网站——SEO设计、关键词策略与内容创作实践指南。</p>
-                <span class="manual-link">查看文章 &rarr;</span>
-            </a>
-
-            <a href="/zh-hans/hp-guide/multilingual/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" /></svg>
-                </div>
-                <h2 class="manual-title">多语言建站</h2>
-                <p class="manual-desc">英语、中文、韩语等各语言网站建设的注意事项、SEO要点与文化适配建议。</p>
-                <span class="manual-link">查看文章 &rarr;</span>
-            </a>
-
-            <a href="/zh-hans/hp-guide/security-maintenance/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg>
-                </div>
-                <h2 class="manual-title">安全与运维</h2>
-                <p class="manual-desc">确保网站安全、持续稳定运营的安全防护与维护指南。</p>
-                <span class="manual-link">查看文章 &rarr;</span>
-            </a>
-
-            <a href="/zh-hans/hp-guide/analytics/" class="manual-card">
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:32px; height:32px; color: var(--color-primary-start);"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" /></svg>
-                </div>
-                <h2 class="manual-title">访问分析与优化</h2>
-                <p class="manual-desc">利用访问数据测量并持续优化网站表现的分析与改善方法。</p>
-                <span class="manual-link">查看文章 &rarr;</span>
-            </a>
-
-        </div>
-    </div>
-</section>
-
-<section class="section py-xl bg-beige">
-    <div class="container">
-        <h2 class="text-xl font-bold mb-lg" style="border-left: 5px solid var(--color-primary-start); padding-left: 15px;">最新文章</h2>
-
-        <div class="grid-3" id="posts-container">
+        <h2 class="text-center mb-xl" style="font-size: 1.75rem;">関連記事</h2>
+        <div class="grid-3">
             
-
             
                 
             
                 
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-
-                    <article class="card p-0 blog-item"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
-
+                    
+                    
                         
-                        <a href="/zh-hans/hp-guide/design-ux/first-view-cvr-optimization/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
-                                 alt="首屏设计决定成败：提升转化率的核心原则与优化检查清单"
-                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
-                        </a>
-                        
-
-                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
                             
-
-                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
-                                <a href="/zh-hans/hp-guide/design-ux/first-view-cvr-optimization/" style="color: inherit; text-decoration: none;">
-                                    首屏设计决定成败：提升转化率的核心原则与优化检查清单
-                                </a>
-                            </h3>
-
-                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
-                                用户打开首页的瞬间，仅需数秒便会决定是否继续浏览。本文从5个核心构成要素解析与转化率直接相关的首屏设计原则，涵盖各设备的最佳尺寸设计、A/B测试与AI个性化实例，以及即学即用的优化检查清单。
-                            </p>
-
-                            <div class="pt-sm" style="border-top: 1px solid #eee;">
-                                <a href="/zh-hans/hp-guide/design-ux/first-view-cvr-optimization/" class="text-primary font-bold" style="font-size: 0.9rem; text-decoration: none;">
-                                    了解更多 &rarr;
-                                </a>
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
+                    
+                        <article class="card p-0 bg-white shadow-sm border border-gray-100 rounded-lg overflow-hidden flex flex-col h-full">
+                             <a href="/ja/blog/marketing/shutto-translation-setup-guide/" class="block aspect-video overflow-hidden"><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Shutto翻訳の導入方法を図解！JavaScriptタグ設置から公開までの全ステップ" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"></a>
+                            <div class="p-lg flex-1 flex flex-col">
+                                <h3 class="text-lg font-bold mb-2 leading-tight"><a href="/ja/blog/marketing/shutto-translation-setup-guide/" class="text-dark hover:text-primary transition-colors" style="text-decoration:none;color:inherit;">Shutto翻訳の導入方法を図解！JavaScriptタグ設置から公開までの全ステップ</a></h3>
+                                <time class="text-xs text-secondary mt-auto block">2026年06月11日</time>
                             </div>
-                        </div>
-                    </article>
+                        </article>
+                        
                     
                 
             
                 
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-
-                    <article class="card p-0 blog-item"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
-
+                    
+                    
                         
-                        <a href="/zh-hans/hp-guide/multilingual/urdu-hp/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
-                            <img src="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/pk.svg"
-                                 alt="乌尔都语网站建设完全指南"
-                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
-                        </a>
-                        
-
-                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
                             
-
-                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
-                                <a href="/zh-hans/hp-guide/multilingual/urdu-hp/" style="color: inherit; text-decoration: none;">
-                                    乌尔都语网站建设完全指南
-                                </a>
-                            </h3>
-
-                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
-                                涵盖乌尔都语RTL布局技术、Nastaliq字体选择、巴基斯坦本地支付集成及面向2亿巴基斯坦用户的网站建设关键要素。
-                            </p>
-
-                            <div class="pt-sm" style="border-top: 1px solid #eee;">
-                                <a href="/zh-hans/hp-guide/multilingual/urdu-hp/" class="text-primary font-bold" style="font-size: 0.9rem; text-decoration: none;">
-                                    了解更多 &rarr;
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
                     
                 
             
                 
-
-                    <article class="card p-0 blog-item"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
-
+                    
+                    
                         
-                        <a href="/zh-hans/hp-guide/multilingual/thailand-hp/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
-                            <img src="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/th.svg"
-                                 alt="泰语网站建设完全指南"
-                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
-                        </a>
-                        
-
-                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
                             
-
-                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
-                                <a href="/zh-hans/hp-guide/multilingual/thailand-hp/" style="color: inherit; text-decoration: none;">
-                                    泰语网站建设完全指南
-                                </a>
-                            </h3>
-
-                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
-                                涵盖泰文无空格换行技术、Line OA集成、PromptPay支付及面向7000万泰国用户的网站建设关键要素。
-                            </p>
-
-                            <div class="pt-sm" style="border-top: 1px solid #eee;">
-                                <a href="/zh-hans/hp-guide/multilingual/thailand-hp/" class="text-primary font-bold" style="font-size: 0.9rem; text-decoration: none;">
-                                    了解更多 &rarr;
-                                </a>
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
+                    
+                        <article class="card p-0 bg-white shadow-sm border border-gray-100 rounded-lg overflow-hidden flex flex-col h-full">
+                             <a href="/zh-hans/blog/marketing/shutto-translation-2026/" class="block aspect-video overflow-hidden"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80" alt="Shutto翻訳停止服务了吗？2026年现状与最新更新" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"></a>
+                            <div class="p-lg flex-1 flex flex-col">
+                                <h3 class="text-lg font-bold mb-2 leading-tight"><a href="/zh-hans/blog/marketing/shutto-translation-2026/" class="text-dark hover:text-primary transition-colors" style="text-decoration:none;color:inherit;">Shutto翻訳停止服务了吗？2026年现状与最新更新</a></h3>
+                                <time class="text-xs text-secondary mt-auto block">2026年06月10日</time>
                             </div>
-                        </div>
-                    </article>
+                        </article>
+                        
                     
                 
             
                 
-
-                    <article class="card p-0 blog-item"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
-
-                        
-                        <a href="/zh-hans/hp-guide/multilingual/spanish-hp/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
-                            <img src="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/es.svg"
-                                 alt="西班牙语网站建设完全指南"
-                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
-                        </a>
-                        
-
-                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
-                            
-
-                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
-                                <a href="/zh-hans/hp-guide/multilingual/spanish-hp/" style="color: inherit; text-decoration: none;">
-                                    西班牙语网站建设完全指南
-                                </a>
-                            </h3>
-
-                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
-                                涵盖拉丁美洲地区变体选择、hreflang多版本配置、WhatsApp转化策略及面向5亿西班牙语用户的网站建设关键要素。
-                            </p>
-
-                            <div class="pt-sm" style="border-top: 1px solid #eee;">
-                                <a href="/zh-hans/hp-guide/multilingual/spanish-hp/" class="text-primary font-bold" style="font-size: 0.9rem; text-decoration: none;">
-                                    了解更多 &rarr;
-                                </a>
-                            </div>
-                        </div>
-                    </article>
                     
-                
-            
-                
-
-                    <article class="card p-0 blog-item"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
-
-                        
-                        <a href="/zh-hans/hp-guide/multilingual/russian-hp/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
-                            <img src="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/ru.svg"
-                                 alt="俄语网站建设完全指南"
-                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
-                        </a>
-                        
-
-                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
-                            
-
-                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
-                                <a href="/zh-hans/hp-guide/multilingual/russian-hp/" style="color: inherit; text-decoration: none;">
-                                    俄语网站建设完全指南
-                                </a>
-                            </h3>
-
-                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
-                                涵盖西里尔字体加载、Yandex SEO专项策略、152-FZ数据本地化合规及面向2.6亿俄语用户的网站建设关键要素。
-                            </p>
-
-                            <div class="pt-sm" style="border-top: 1px solid #eee;">
-                                <a href="/zh-hans/hp-guide/multilingual/russian-hp/" class="text-primary font-bold" style="font-size: 0.9rem; text-decoration: none;">
-                                    了解更多 &rarr;
-                                </a>
-                            </div>
-                        </div>
-                    </article>
                     
-                
-            
-                
-
-                    <article class="card p-0 blog-item"
-                             style="padding: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--color-border); box-shadow: none; background: white; border-radius: 8px; transition: transform 0.2s;">
-
                         
-                        <a href="/zh-hans/hp-guide/multilingual/portuguese-hp/" style="display: block; aspect-ratio: 16/9; overflow: hidden;">
-                            <img src="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/flags/4x3/pt.svg"
-                                 alt="葡萄牙语网站建设完全指南"
-                                 style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;">
-                        </a>
-                        
-
-                        <div class="px-lg py-lg flex-col" style="flex: 1; display: flex;">
                             
-
-                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-sm); line-height: 1.4; font-weight: bold;">
-                                <a href="/zh-hans/hp-guide/multilingual/portuguese-hp/" style="color: inherit; text-decoration: none;">
-                                    葡萄牙语网站建设完全指南
-                                </a>
-                            </h3>
-
-                            <p class="text-secondary mb-lg" style="flex: 1; font-size: 0.9rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;">
-                                涵盖巴西pt-BR本地化、Pix支付集成、LGPD数据保护合规及面向2.6亿葡萄牙语用户的网站建设关键要素。
-                            </p>
-
-                            <div class="pt-sm" style="border-top: 1px solid #eee;">
-                                <a href="/zh-hans/hp-guide/multilingual/portuguese-hp/" class="text-primary font-bold" style="font-size: 0.9rem; text-decoration: none;">
-                                    了解更多 &rarr;
-                                </a>
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                    
+                    
+                        <article class="card p-0 bg-white shadow-sm border border-gray-100 rounded-lg overflow-hidden flex flex-col h-full">
+                             <a href="/ja/blog/marketing/shutto-translation-2026/" class="block aspect-video overflow-hidden"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1170&amp;q=80" alt="Shutto翻訳はサービス終了した？2026年現在の提供状況と最新アップデートを確認" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"></a>
+                            <div class="p-lg flex-1 flex flex-col">
+                                <h3 class="text-lg font-bold mb-2 leading-tight"><a href="/ja/blog/marketing/shutto-translation-2026/" class="text-dark hover:text-primary transition-colors" style="text-decoration:none;color:inherit;">Shutto翻訳はサービス終了した？2026年現在の提供状況と最新アップデートを確認</a></h3>
+                                <time class="text-xs text-secondary mt-auto block">2026年06月10日</time>
                             </div>
-                        </div>
-                    </article>
+                        </article>
+                        
                     
                 
             
@@ -1284,323 +1451,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
                 
             
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-
             
         </div>
     </div>
 </section>
 
-<!-- CTA Section Component -->
+<div class="bg-white"><!-- CTA Section Component -->
 <style>
     /* ===================================
        CTA Section Styles (Self-contained)
@@ -1764,74 +1620,60 @@ document.addEventListener('DOMContentLoaded', function() {
     // 実行
     document.addEventListener('DOMContentLoaded', updateCtaContent);
 })();
+</script></div>
+
+<div id="copy-toast">链接已复制</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. 目次の自動生成
+    const content = document.querySelector('.blog-content');
+    const tocContainer = document.getElementById('toc-container');
+    const tocList = document.getElementById('toc-list');
+    
+    if (content && tocContainer && tocList) {
+        // H2のみ取得
+        const headers = content.querySelectorAll('h2');
+        
+        if (headers.length > 0) {
+            tocContainer.style.display = 'block';
+
+            headers.forEach((header, index) => {
+                if (!header.id) {
+                    header.id = 'section-' + index;
+                }
+
+                const li = document.createElement('li');
+                li.style.borderBottom = '1px dashed #cbd5e1';
+                li.style.paddingBottom = '8px';
+                li.style.marginBottom = '8px';
+                li.style.fontSize = '1rem';
+
+                const a = document.createElement('a');
+                a.href = '#' + header.id;
+                a.textContent = header.textContent;
+                a.style.textDecoration = 'none';
+                a.style.color = '#334155';
+                
+                a.onmouseover = function() { this.style.color = '#C10033'; };
+                a.onmouseout = function() { this.style.color = '#334155'; };
+
+                li.appendChild(a);
+                tocList.appendChild(li);
+            });
+        }
+    }
+
+    // 2. リンクコピー機能
+    window.copyToClipboard = function() {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+            const toast = document.getElementById("copy-toast");
+            toast.classList.add("show");
+            setTimeout(() => toast.classList.remove("show"), 3000);
+        });
+    };
+});
 </script>
-
-<style>
-    .view-all-link {
-        color: var(--color-primary-start);
-        font-weight: bold;
-        text-decoration: none;
-        font-size: 0.95rem;
-        transition: transform 0.2s, opacity 0.2s;
-        display: inline-block;
-    }
-    .view-all-link:hover {
-        transform: translateX(5px);
-        opacity: 0.8;
-        text-decoration: underline;
-    }
-    .manual-card {
-        display: block;
-        background: white;
-        padding: 30px 20px;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        text-decoration: none;
-        color: inherit;
-        transition: transform 0.3s, box-shadow 0.3s;
-        border: 1px solid rgba(0,0,0,0.05);
-        text-align: center;
-        height: 100%;
-    }
-    .manual-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-        border-color: var(--color-primary-start);
-    }
-    .icon-box {
-        background: #fff5f7;
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 20px;
-    }
-    .manual-title {
-        font-size: 1.25rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-        color: var(--color-text-primary);
-    }
-    .manual-desc {
-        font-size: 0.9rem;
-        color: var(--color-text-secondary);
-        line-height: 1.6;
-        margin-bottom: 20px;
-    }
-    .manual-link {
-        font-size: 0.9rem;
-        font-weight: bold;
-        color: var(--color-primary-start);
-    }
-    .blog-item:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
-    }
-    .blog-item:hover h3 a { color: var(--color-primary-start) !important; }
-</style>
-
     </main>
     
     <!-- Footer -->
