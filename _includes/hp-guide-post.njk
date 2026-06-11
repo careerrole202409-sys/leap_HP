@@ -40,7 +40,10 @@ layout: base.njk
     {% set t_related = '相关文章' %}
 {% endif %}
 
-{% set topic_name = topic_label | default(topic) %}
+{% set topic_name = hp_topic_translation[topic][locale] %}
+{% if not topic_name %}
+    {% set topic_name = topic_label | default(topic) %}
+{% endif %}
 
 <style>
     /* --- 基本レイアウト --- */
