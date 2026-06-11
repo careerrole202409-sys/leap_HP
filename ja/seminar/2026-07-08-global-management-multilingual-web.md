@@ -20,7 +20,7 @@ speakers_html: |
     </div>
   </div>
   <div style="display:flex; gap:1.25rem; align-items:flex-start;">
-    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1780530406/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E7%94%A8%E5%86%99%E7%9C%9F_%E5%8E%9F%E5%BA%83%E5%A4%A7_1_t6sqol.png" alt="原広大" style="width:88px; height:88px; border-radius:50%; object-fit:cover; flex-shrink:0; border:2px solid #e5e7eb;">
+    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1781162007/ChatGPT_Image_2026%E5%B9%B46%E6%9C%8811%E6%97%A5_16_03_59_2_pobosu.png" alt="原広大" style="width:88px; height:88px; border-radius:50%; object-fit:cover; flex-shrink:0; border:2px solid #e5e7eb;">
     <div>
       <p style="font-weight:700; font-size:1rem; margin-bottom:0.2rem; color:#1a1a2e;">原 広大</p>
       <p style="font-size:0.8rem; color:#C10033; font-weight:600; margin-bottom:0.5rem;">Leap 代表</p>
