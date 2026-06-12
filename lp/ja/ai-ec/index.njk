@@ -1,0 +1,524 @@
+---
+layout: base.njk
+locale: ja
+title: AIチャットだけでECサイト開設・運営｜Leap EC Agent
+description: Shopify・BASEは不要。AIと話すだけで、ECサイトの構築から商品管理・注文管理まで完結。世界初のAI EC Agentをテスト先行体験。
+---
+
+<style>
+/* ===== ヒーロー ===== */
+.lp-hero {
+  background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 40%, #fff0e8 100%);
+  padding: 5rem 1rem 4rem;
+}
+.lp-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .lp-hero-inner { grid-template-columns: 1fr; }
+}
+.lp-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.05em;
+}
+.lp-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 900;
+  color: #1a1a2e;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+.lp-hero-sub {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.85;
+  margin-bottom: 2rem;
+}
+.lp-btn-primary {
+  display: inline-block;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(193,0,51,0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.lp-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(193,0,51,0.45);
+  color: white;
+  text-decoration: none;
+}
+.lp-btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: #C10033;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 2px solid #C10033;
+  transition: background 0.2s, color 0.2s;
+}
+.lp-btn-outline:hover {
+  background: rgba(193,0,51,0.06);
+  color: #8B0024;
+  border-color: #8B0024;
+  text-decoration: none;
+}
+.lp-pricing-text {
+  font-size: 0.88rem;
+  color: #444;
+  margin-top: 0.9rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+.lp-video-box {
+  aspect-ratio: 16/9;
+  background: #1a1a2e;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== 共通 ===== */
+.lp-section-title {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+.lp-section-sub {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* ===== 競合比較 ===== */
+.lp-comparison {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+}
+.lp-comparison-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+@media (max-width: 768px) {
+  .comparison-grid { grid-template-columns: 1fr; }
+}
+.comparison-box {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  border: 2px solid #e5e7eb;
+}
+.comparison-box.is-good {
+  border-color: #C10033;
+  box-shadow: 0 8px 32px rgba(193,0,51,0.12);
+}
+.comparison-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.comparison-logo-img {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.75;
+}
+.comparison-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+.comparison-label.bad { background: #fee2e2; color: #b91c1c; }
+.comparison-label.good { background: #fef2f2; color: #C10033; }
+.comparison-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.comparison-steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f3f4f6;
+  line-height: 1.5;
+}
+.comparison-steps li:last-child { border-bottom: none; }
+.step-icon-bad { color: #ef4444; flex-shrink: 0; margin-top: 2px; }
+.step-icon-good { color: #C10033; flex-shrink: 0; margin-top: 2px; font-weight: 700; }
+
+/* ===== 機能 ===== */
+.lp-features {
+  padding: 5rem 1rem;
+  background: white;
+}
+.lp-features-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+@media (max-width: 768px) {
+  .features-grid { grid-template-columns: 1fr; }
+}
+.feature-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.feature-card:hover {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+}
+.feature-card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: contain;
+  background: #f4f5f8;
+  display: block;
+}
+.feature-card-body { padding: 1.25rem; }
+.feature-card-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #C10033;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.4rem;
+}
+.feature-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.4rem;
+}
+.feature-card-desc {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ===== デモ動画 ===== */
+.lp-demo-video {
+  padding: 5rem 1rem;
+  background: white;
+}
+.lp-demo-video-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.lp-video-box-large {
+  margin-top: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.18);
+}
+
+/* ===== 世界初 ===== */
+.lp-world-first {
+  padding: 5rem 1rem;
+  background: #1a1a2e;
+  color: white;
+  text-align: center;
+}
+.lp-world-first h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 900;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+/* ===== ステップ ===== */
+.lp-steps {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+}
+.lp-steps-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+@media (max-width: 768px) {
+  .steps-grid { grid-template-columns: 1fr; }
+}
+.step-item { text-align: center; }
+.step-num {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+.step-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.4rem;
+}
+.step-desc { font-size: 0.88rem; color: #666; line-height: 1.7; }
+
+/* ===== フォーム ===== */
+.lp-form {
+  padding: 5rem 1rem;
+  background: white;
+}
+.lp-form-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+.lp-form-inner iframe {
+  width: 100%;
+  min-height: 1300px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+}
+.lp-form-pricing {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fc;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #444;
+  font-weight: 600;
+}
+.lp-form-pricing strong { color: #C10033; font-size: 1.05rem; }
+</style>
+
+<!-- ① ヒーロー -->
+<section class="lp-hero">
+  <div class="lp-hero-inner">
+    <div>
+      <span class="lp-badge">世界初 AI EC Agent</span>
+      <h1>AIと話すだけで、<br>ECを開設・運営。</h1>
+      <p class="lp-hero-sub">
+        Shopify・BASEの複雑な設定は不要。<br>
+        AIチャットだけでECサイトの構築から商品管理・注文管理まで、すべてが完結します。
+      </p>
+      <div style="display:flex; flex-wrap:wrap; gap:0.75rem; align-items:center;">
+        <a href="#form" class="lp-btn-primary">テストユーザーに応募する →</a>
+        <a href="#video" class="lp-btn-outline">デモ動画を見る</a>
+      </div>
+      <p class="lp-pricing-text">初期費用¥0・月額¥0・20名様限定（決済手数料6%のみ）</p>
+    </div>
+    <div>
+      <!-- 動画完成後にYouTube iframeに差し替え -->
+      <div class="lp-video-box">
+        <span style="color:rgba(255,255,255,0.4); font-size:0.9rem;">デモ動画（近日公開）</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ② クライアントロゴ -->
+{% include "client-logos.njk" %}
+
+<!-- ③ 競合比較 -->
+<section class="lp-comparison">
+  <div class="lp-comparison-inner">
+    <h2 class="lp-section-title">ShopifyやBASEは、<br>なぜこんなに大変なのか。</h2>
+    <p class="lp-section-sub">ECを始めるために、こんなにやることがある。</p>
+    <div class="comparison-grid">
+      <div class="comparison-box">
+        <div class="comparison-logos">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_40/v1781221164/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99_8_p5xsfn.jpg" alt="Shopify" class="comparison-logo-img">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_40/v1781221204/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99_1_pute7w.png" alt="BASE" class="comparison-logo-img">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_40/v1781221327/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99_3_mrje3p.png" alt="カラーミーショップ" class="comparison-logo-img">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_40/v1781221365/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99_4_knynrf.png" alt="Stores" class="comparison-logo-img">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_40/v1781221318/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99_2_f9cixb.png" alt="Ecwid" class="comparison-logo-img">
+        </div>
+        <span class="comparison-label bad">従来のECツール</span>
+        <ul class="comparison-steps">
+          <li><span class="step-icon-bad">✕</span>アカウント登録・プラン選択</li>
+          <li><span class="step-icon-bad">✕</span>テーマ選定（有料テーマは数万円〜）</li>
+          <li><span class="step-icon-bad">✕</span>ドメイン取得・DNS設定</li>
+          <li><span class="step-icon-bad">✕</span>SSL証明書の設定</li>
+          <li><span class="step-icon-bad">✕</span>決済（Stripe・PayPay等）の連携</li>
+          <li><span class="step-icon-bad">✕</span>送料・配送方法の設定</li>
+          <li><span class="step-icon-bad">✕</span>消費税・請求書の設定</li>
+          <li><span class="step-icon-bad">✕</span>商品を1点ずつ手動登録</li>
+          <li><span class="step-icon-bad">✕</span>SEO・メタ情報の設定</li>
+          <li><span class="step-icon-bad">✕</span>アクセス解析の導入……</li>
+        </ul>
+      </div>
+      <div class="comparison-box is-good">
+        <div style="margin-bottom:1.5rem;">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_56/v1781222581/%E3%83%AD%E3%82%B3%E3%82%99%E6%A8%AA%E9%95%B7%E5%88%87%E3%82%8A%E6%8A%9C%E3%81%8D2400_1260_1_xmgfe6.png" alt="Leap" style="height:40px; width:auto;">
+        </div>
+        <span class="comparison-label good">Leap AI</span>
+        <ul class="comparison-steps">
+          <li><span class="step-icon-good">✓</span>チャット1回でEC開設完了</li>
+          <li><span class="step-icon-good">✓</span>ドメイン・決済・配送まで自動設定</li>
+          <li><span class="step-icon-good">✓</span>商品の追加・編集もチャットで</li>
+          <li><span class="step-icon-good">✓</span>注文管理・在庫もAIがまとめて対応</li>
+          <li><span class="step-icon-good">✓</span>SEO・アクセス解析も自動設定</li>
+        </ul>
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_600/v1781223541/3d55df78-4733-48bc-9671-78a72141d3f9.png" alt="EC管理ダッシュボード" style="width:100%; border-radius:10px; margin-top:1.5rem; box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ④ 機能紹介 -->
+<section class="lp-features">
+  <div class="lp-features-inner">
+    <h2 class="lp-section-title">ECに必要なすべてが、<br>チャットで完結。</h2>
+    <p class="lp-section-sub">構築・商品管理・注文管理、全部AIが担います。</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_600/v1781223541/3d55df78-4733-48bc-9671-78a72141d3f9.png" alt="EC管理ダッシュボード">
+        <div class="feature-card-body">
+          <div class="feature-card-tag">EC構築</div>
+          <div class="feature-card-title">ECサイトをゼロから生成</div>
+          <div class="feature-card-desc">「○○を売るECサイトを作って」と入力するだけ。デザイン・決済・配送設定まで自動で完成します。</div>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_600/v1781223561/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-06-12_9.19.14_uwbaho.png" alt="商品管理">
+        <div class="feature-card-body">
+          <div class="feature-card-tag">商品管理</div>
+          <div class="feature-card-title">商品の追加・編集もチャットで</div>
+          <div class="feature-card-desc">「新商品を追加して」「価格を変更して」とチャットするだけ。複雑な管理画面は不要です。</div>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_600/v1781223674/69ced1fe-1cc7-49b1-b8c4-486bc8b5b71e.png" alt="注文管理">
+        <div class="feature-card-body">
+          <div class="feature-card-tag">注文管理</div>
+          <div class="feature-card-title">注文・在庫もAIが管理</div>
+          <div class="feature-card-desc">受注確認・在庫更新・顧客連絡まで、AIがまとめて対応。運営の手間を大幅削減。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑤ デモ動画 -->
+<section class="lp-demo-video" id="video">
+  <div class="lp-demo-video-inner">
+    <h2 class="lp-section-title">実際の動作を<br>ご覧ください。</h2>
+    <p class="lp-section-sub">AIとのチャットだけで、ECサイトが完成する瞬間。</p>
+    <!-- 動画完成後にYouTube iframeに差し替え -->
+    <div class="lp-video-box lp-video-box-large">
+      <span style="color:rgba(255,255,255,0.4); font-size:0.9rem;">デモ動画（近日公開）</span>
+    </div>
+  </div>
+</section>
+
+<!-- ⑥ 世界初 -->
+<section class="lp-world-first">
+  <div style="max-width:700px; margin:0 auto;">
+    <p style="font-size:0.85rem; font-weight:700; letter-spacing:0.1em; color:rgba(255,255,255,0.5); margin-bottom:1rem;">WORLD FIRST</p>
+    <h2>「AIチャットだけで<br>ECを完結」は、世界初。</h2>
+    <p style="font-size:1.05rem; color:rgba(255,255,255,0.9); line-height:1.9; margin-top:1.5rem;">
+      Shopify・BASEをはじめ、既存のECツールはすべて「人が操作する」前提で作られています。Leapは違います。AIが主役となってECの構築・運営をすべて担う、世界で初めてのAI EC Agentです。
+    </p>
+  </div>
+</section>
+
+<!-- ⑦ 3ステップ -->
+<section class="lp-steps">
+  <div class="lp-steps-inner">
+    <h2 class="lp-section-title">始め方は、たった3ステップ。</h2>
+    <p class="lp-section-sub">複雑な設定は一切なし。</p>
+    <div class="steps-grid">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-title">テストユーザーに応募</div>
+        <div class="step-desc">下記フォームから申し込み。審査後、招待URLをお送りします。</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-title">AIにチャット</div>
+        <div class="step-desc">「○○を売るECを作って」と入力するだけ。AIが自動でECを構築します。</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-title">そのまま販売開始</div>
+        <div class="step-desc">商品管理・注文管理もすべてチャットで完結。いつでも変更可能。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑧ フォーム -->
+<section class="lp-form" id="form">
+  <div class="lp-form-inner">
+    <span class="lp-badge">20名様限定</span>
+    <h2 class="lp-section-title" style="margin-top:1rem;">テストユーザー募集中</h2>
+    <p class="lp-section-sub">ご応募いただいた方に順次招待URLをお送りします。</p>
+    <div class="lp-form-pricing">
+      <span>初期費用 <strong>¥0</strong></span>
+      <span style="color:#d1d5db;">|</span>
+      <span>月額 <strong>¥0</strong></span>
+      <span style="color:#d1d5db;">|</span>
+      <span>決済手数料 <strong>6%</strong> のみ</span>
+    </div>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclalGRt_JIjbuklZMwSo5hqMibxFqhvro2rq_bgVbTDub-ZQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+  </div>
+</section>
