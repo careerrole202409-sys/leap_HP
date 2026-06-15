@@ -83,3 +83,9 @@ LP制作でも、ターゲットの文化的背景や購買心理を無視して
 ---
 
 今回ご紹介した丸山氏の支援内容や実績について詳しく知りたい方は、[合同会社TMプロジェクトまでお問い合わせください。](https://msk-designlesson.my.canva.site/tmpsapo)
+
+## 関連記事
+
+- [海外向け動画マーケティング── YouTubeを「集客装置」にする戦略設計](/ja/blog/marketing/overseas-video-marketing-youtube/)
+- [文化で変わるCVR── 海外サイトのコンバージョン最適化7つの鉄則](/ja/blog/marketing/cultural-cvr-optimization/)
+- [「翻訳サイト」から脱却する── 売上に直結する多言語サイト設計の全体像](/ja/blog/marketing/multilingual-website-design/)
