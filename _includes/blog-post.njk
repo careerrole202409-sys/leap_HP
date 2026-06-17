@@ -23,6 +23,7 @@ layout: base.njk
     {% set t_toast = 'Link copied' %}
     {% set t_default_author = 'Leap Editorial Team' %}
     {% set t_default_bio = 'Global Business Experts' %}
+    {% set t_related = 'Related Articles' %}
     {% set date_format = "MMM dd, yyyy" %}
 {% elif locale == 'zh-hans' %}
     {% set t_home = '首页' %}
@@ -34,7 +35,10 @@ layout: base.njk
     {% set t_toast = '链接已复制' %}
     {% set t_default_author = 'Leap 编辑团队' %}
     {% set t_default_bio = '海外业务专家团队' %}
+    {% set t_related = '相关文章' %}
     {% set date_format = "yyyy年MM月dd日" %}
+{% else %}
+    {% set t_related = '関連記事' %}
 {% endif %}
 
 <!-- ▼ topic_translation から取得 -->
@@ -380,7 +384,7 @@ layout: base.njk
 {% if relatedCount > 0 %}
 <section class="section py-3xl bg-beige">
     <div class="container">
-        <h2 class="text-center mb-xl" style="font-size: 1.75rem;">関連記事</h2>
+        <h2 class="text-center mb-xl" style="font-size: 1.75rem;">{{ t_related }}</h2>
         <div class="grid-3">
             {% set count = 0 %}
             {% for post in collections.blog | reverse %}
