@@ -23,6 +23,7 @@ layout: base.njk
     {% set t_toast = 'Link copied' %}
     {% set t_default_author = 'Leap Editorial Team' %}
     {% set t_default_bio = 'Global Business Experts' %}
+    {% set t_related = 'Related Articles' %}
     {% set date_format = "MMM dd, yyyy" %}
 {% elif locale == 'zh-hans' %}
     {% set t_home = '首页' %}
@@ -34,7 +35,10 @@ layout: base.njk
     {% set t_toast = '链接已复制' %}
     {% set t_default_author = 'Leap 编辑团队' %}
     {% set t_default_bio = '海外业务专家团队' %}
+    {% set t_related = '相关文章' %}
     {% set date_format = "yyyy年MM月dd日" %}
+{% else %}
+    {% set t_related = '関連記事' %}
 {% endif %}
 
 <!-- ▼ topic_translation から取得 -->
@@ -364,10 +368,23 @@ layout: base.njk
     </div>
 </section>
 
-<!-- 関連記事 (トピック名を翻訳) -->
+<!-- 関連記事 -->
+{% set relatedCount = 0 %}
+{% for post in collections.blog | reverse %}
+    {% if post.url != page.url and relatedCount < 3 %}
+        {% set isRelated = false %}
+        {% if tags %}
+            {% for t in tags %}
+                {% if t != 'blog' and t != 'post' and t in post.data.tags %}{% set isRelated = true %}{% endif %}
+            {% endfor %}
+        {% endif %}
+        {% if isRelated %}{% set relatedCount = relatedCount + 1 %}{% endif %}
+    {% endif %}
+{% endfor %}
+{% if relatedCount > 0 %}
 <section class="section py-3xl bg-beige">
     <div class="container">
-        <h2 class="text-center mb-xl" style="font-size: 1.75rem;">関連記事</h2>
+        <h2 class="text-center mb-xl" style="font-size: 1.75rem;">{{ t_related }}</h2>
         <div class="grid-3">
             {% set count = 0 %}
             {% for post in collections.blog | reverse %}
@@ -390,10 +407,10 @@ layout: base.njk
                     {% endif %}
                 {% endif %}
             {% endfor %}
-            {% if count == 0 %}<p class="text-center w-full text-secondary">現在、関連する記事はありません。</p>{% endif %}
         </div>
     </div>
 </section>
+{% endif %}
 
 <div class="bg-white">{% include "cta1.njk" %}</div>
 
