@@ -6,7 +6,12 @@ thumbnail: https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format
 date: 2026-06-17
 topic: marketing
 locale: ja
-tags: ['ec-guide', 'Shopify', '集客', '売上改善', 'マーケティング']
+tags:
+  - ec-guide
+  - Shopify
+  - 集客
+  - 売上改善
+  - マーケティング
 author: Leap 編集部
 author_image: https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap
 author_bio: 海外ビジネスのエキスパートチーム
