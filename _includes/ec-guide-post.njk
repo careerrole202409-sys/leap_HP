@@ -12,6 +12,7 @@ layout: base.njk
 {% set t_default_author = 'Leap 編集部' %}
 {% set t_default_bio = 'ECビジネスのエキスパートチーム' %}
 {% set date_format = "yyyy年MM月dd日" %}
+{% set t_related = '関連記事' %}
 
 {% if locale == 'en' %}
     {% set t_home = 'Home' %}
@@ -24,6 +25,7 @@ layout: base.njk
     {% set t_default_author = 'Leap Editorial Team' %}
     {% set t_default_bio = 'EC Business Experts' %}
     {% set date_format = "MMM dd, yyyy" %}
+    {% set t_related = 'Related Articles' %}
 {% elif locale == 'zh-hans' %}
     {% set t_home = '首页' %}
     {% set t_ec_guide = 'EC运营手册' %}
@@ -35,6 +37,7 @@ layout: base.njk
     {% set t_default_author = 'Leap 编辑团队' %}
     {% set t_default_bio = 'EC业务专家团队' %}
     {% set date_format = "yyyy年MM月dd日" %}
+    {% set t_related = '相关文章' %}
 {% endif %}
 
 {% set topic_name = ec_topic_translation[topic][locale] %}
@@ -368,7 +371,7 @@ layout: base.njk
 {% for post in collections['ec-guide'] | reverse %}
     {% if post.url != page.url and preCount < 3 %}
         {% set isRelated = false %}
-        {% if tags %}
+        {% if tags and post.data.locale == locale %}
             {% for t in tags %}
                 {% if t != 'ec-guide' and t in post.data.tags %}{% set isRelated = true %}{% endif %}
             {% endfor %}
@@ -380,13 +383,13 @@ layout: base.njk
 {% if preCount > 0 %}
 <section class="section py-3xl bg-beige">
     <div class="container">
-        <h2 class="text-center mb-xl" style="font-size: 1.75rem;">関連記事</h2>
+        <h2 class="text-center mb-xl" style="font-size: 1.75rem;">{{ t_related }}</h2>
         <div class="grid-3">
             {% set count = 0 %}
             {% for post in collections['ec-guide'] | reverse %}
                 {% if post.url != page.url and count < 3 %}
                     {% set isRelated = false %}
-                    {% if tags %}
+                    {% if tags and post.data.locale == locale %}
                         {% for t in tags %}
                             {% if t != 'ec-guide' and t in post.data.tags %}{% set isRelated = true %}{% endif %}
                         {% endfor %}
