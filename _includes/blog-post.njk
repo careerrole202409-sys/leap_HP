@@ -371,7 +371,7 @@ layout: base.njk
 <!-- 関連記事 -->
 {% set relatedCount = 0 %}
 {% for post in collections.blog | reverse %}
-    {% if post.url != page.url and relatedCount < 3 %}
+    {% if post.url != page.url and post.data.locale == locale and relatedCount < 3 %}
         {% set isRelated = false %}
         {% if tags %}
             {% for t in tags %}
@@ -388,7 +388,7 @@ layout: base.njk
         <div class="grid-3">
             {% set count = 0 %}
             {% for post in collections.blog | reverse %}
-                {% if post.url != page.url and count < 3 %}
+                {% if post.url != page.url and post.data.locale == locale and count < 3 %}
                     {% set isRelated = false %}
                     {% if tags %}
                         {% for t in tags %}
