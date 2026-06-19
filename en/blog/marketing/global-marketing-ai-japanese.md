@@ -107,13 +107,14 @@ LinkedIn makes this possible without requiring fluency. The tools to do it well 
 
 <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1.5rem 2rem;margin:2rem 0;">
   <h3 style="margin-top:0;margin-bottom:0.75rem;">KOTOBAAI Pte. Ltd.</h3>
-  <p style="margin:0 0 1.25rem;">KOTOBAAI Pte. Ltd. is developing an AI platform that helps overseas business leaders publish authentic Japanese-language content on LinkedIn. Through a conversational AI that draws out each user's real thoughts and experiences, the platform generates Japanese posts that genuinely resonate with a Japanese audience — designed to scale Japanese-language communication for hiring, business development, and brand building.</p>
+  <p style="margin:0 0 1.25rem;">KOTOBAAI Pte. Ltd. helps overseas business leaders communicate authentically in Japanese. The company's flagship product, "Japanese-Language Post Generation" (beta, invite-only), is a conversational AI platform that draws out each user's real perspective and generates Japanese posts that resonate with a Japanese audience. Alongside the AI platform, KOTOBAAI provides hands-on LinkedIn content support — from personal strategy to post execution — and one-on-one management consulting (executive sounding board and reverse mentoring) for founders in the early stages of building their business.</p>
   <dl style="margin:0;display:grid;grid-template-columns:max-content 1fr;gap:0.5rem 2rem;">
     <dt style="font-weight:600;">Location</dt><dd style="margin:0;">Singapore</dd>
     <dt style="font-weight:600;">Founded</dt><dd style="margin:0;">October 12, 2025</dd>
-    <dt style="font-weight:600;">Services</dt><dd style="margin:0;">Content strategy consulting, Japanese-language content generation platform</dd>
+    <dt style="font-weight:600;">Registration</dt><dd style="margin:0;">UEN: 202545511W</dd>
+    <dt style="font-weight:600;">Services</dt><dd style="margin:0;">"Japanese-Language Post Generation" AI platform, LinkedIn content support, Management consulting (executive coaching &amp; reverse mentoring)</dd>
     <dt style="font-weight:600;">Contact</dt><dd style="margin:0;"><a href="mailto:info@kotobaai.ltd">info@kotobaai.ltd</a></dd>
-    <dt style="font-weight:600;">Website</dt><dd style="margin:0;"><a href="https://kotobaai.ltd" target="_blank" rel="noopener">kotobaai.ltd</a></dd>
+    <dt style="font-weight:600;">Website</dt><dd style="margin:0;"><a href="https://www.kotobaai.ltd/" target="_blank" rel="noopener">kotobaai.ltd</a></dd>
   </dl>
 </div>
 

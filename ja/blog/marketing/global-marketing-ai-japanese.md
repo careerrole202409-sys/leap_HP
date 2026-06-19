@@ -71,13 +71,14 @@ AIの使い方は二極化すると思っています。「早く大量にそれ
 
 <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1.5rem 2rem;margin:2rem 0;">
   <h3 style="margin-top:0;margin-bottom:0.75rem;">KOTOBAAI Pte. Ltd.</h3>
-  <p style="margin:0 0 1.25rem;">海外のビジネスリーダーが「伝わる日本語」でLinkedInに発信するためのAIプラットフォームを開発しています。対話型のAIが使用者の思いや経験を丁寧に引き出し、日本市場に届く自分らしい日本語投稿を生成。採用・営業・ブランディングを目的とした日本語での情報発信を、AIの力でスケールさせることを目指しています。</p>
+  <p style="margin:0 0 1.25rem;">海外のビジネスリーダーに向けた「伝わる日本語」での発信支援を提供。グローバルリーダー向け日本語コンテンツ生成AIプロダクト「Japanese-Language Post Generation」（ベータ版・招待制）の開発・提供を主軸に、個人の戦略設計から投稿実行まで伴走するLinkedIn発信支援、および創業期の経営者向けの壁打ち・リバースメンタリング（経営相談）も手がけています。</p>
   <dl style="margin:0;display:grid;grid-template-columns:max-content 1fr;gap:0.5rem 2rem;">
     <dt style="font-weight:600;">所在地</dt><dd style="margin:0;">Singapore</dd>
     <dt style="font-weight:600;">設立</dt><dd style="margin:0;">2025年10月12日</dd>
-    <dt style="font-weight:600;">事業内容</dt><dd style="margin:0;">コンテンツ戦略支援、コンサルティング、日本語コンテンツ生成サービスの提供</dd>
+    <dt style="font-weight:600;">登記番号</dt><dd style="margin:0;">UEN: 202545511W</dd>
+    <dt style="font-weight:600;">事業内容</dt><dd style="margin:0;">日本語コンテンツ生成AI「Japanese-Language Post Generation」、LinkedIn発信支援、経営相談（壁打ち・リバースメンタリング）</dd>
     <dt style="font-weight:600;">お問い合わせ</dt><dd style="margin:0;"><a href="mailto:info@kotobaai.ltd">info@kotobaai.ltd</a></dd>
-    <dt style="font-weight:600;">公式サイト</dt><dd style="margin:0;"><a href="https://kotobaai.ltd" target="_blank" rel="noopener">kotobaai.ltd</a></dd>
+    <dt style="font-weight:600;">公式サイト</dt><dd style="margin:0;"><a href="https://www.kotobaai.ltd/" target="_blank" rel="noopener">kotobaai.ltd</a></dd>
   </dl>
 </div>
 

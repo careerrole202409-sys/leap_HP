@@ -107,13 +107,14 @@ author_bio: 海外业务专家团队
 
 <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1.5rem 2rem;margin:2rem 0;">
   <h3 style="margin-top:0;margin-bottom:0.75rem;">KOTOBAAI Pte. Ltd.</h3>
-  <p style="margin:0 0 1.25rem;">KOTOBAAI Pte. Ltd. 正在开发一款面向海外商业领袖的AI平台，帮助他们在LinkedIn上以"能真正传达心意的日语"向日本市场发声。平台通过对话式AI深度挖掘用户的真实想法与经历，生成能够打动日本受众的个性化日语帖子，致力于借助AI的力量，让以招聘、业务拓展和品牌建设为目的的日语传播实现规模化。</p>
+  <p style="margin:0 0 1.25rem;">KOTOBAAI Pte. Ltd. 专注于帮助海外商业领袖以"能真正传达心意的日语"对外传播。公司旗舰产品"Japanese-Language Post Generation"（测试版，仅限受邀用户）是一款对话式AI平台，通过深度引导挖掘用户的真实想法，生成能够打动日本受众的个性化日语帖子。此外，公司还提供LinkedIn内容发布支持（从个人策略设计到内容执行的全程伴走），以及面向创业初期经营者的一对一经营咨询（头脑风暴与逆向导师服务）。</p>
   <dl style="margin:0;display:grid;grid-template-columns:max-content 1fr;gap:0.5rem 2rem;">
     <dt style="font-weight:600;">所在地</dt><dd style="margin:0;">新加坡</dd>
     <dt style="font-weight:600;">成立</dt><dd style="margin:0;">2025年10月12日</dd>
-    <dt style="font-weight:600;">业务内容</dt><dd style="margin:0;">内容战略支持、咨询、日语内容生成服务</dd>
+    <dt style="font-weight:600;">注册编号</dt><dd style="margin:0;">UEN: 202545511W</dd>
+    <dt style="font-weight:600;">业务内容</dt><dd style="margin:0;">日语内容生成AI「Japanese-Language Post Generation」、LinkedIn发布支持、经营咨询（头脑风暴·逆向导师）</dd>
     <dt style="font-weight:600;">联系方式</dt><dd style="margin:0;"><a href="mailto:info@kotobaai.ltd">info@kotobaai.ltd</a></dd>
-    <dt style="font-weight:600;">官方网站</dt><dd style="margin:0;"><a href="https://kotobaai.ltd" target="_blank" rel="noopener">kotobaai.ltd</a></dd>
+    <dt style="font-weight:600;">官方网站</dt><dd style="margin:0;"><a href="https://www.kotobaai.ltd/" target="_blank" rel="noopener">kotobaai.ltd</a></dd>
   </dl>
 </div>
 
