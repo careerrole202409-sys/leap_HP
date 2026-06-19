@@ -35,7 +35,7 @@ After the free trial, Shopify frequently offers a promotional rate of ¥150/mont
 
 During the free trial, you get full access to the actual admin dashboard — not a demo or sandbox environment. The following tasks are all available:
 
-**Product registration** is the first thing to tackle. You can add products with names, descriptions, prices, images, and stock levels — exactly as you would in a live store. Bulk importing via CSV is also supported. **Theme customization** is fully available. Browse over 100 free and paid themes, choose one that fits your brand, and adjust logos, colors, and fonts — all without writing a single line of code. You can also configure **shipping rules**, create a **required legal disclosure page**, set up **Shopify Payments**, and **install apps**. All settings, product data, and configurations you build during the trial carry over seamlessly once you upgrade to a paid plan.
+<strong>Product registration</strong> is the first thing to tackle. You can add products with names, descriptions, prices, images, and stock levels — exactly as you would in a live store. Bulk importing via CSV is also supported. <strong>Theme customization</strong> is fully available. Browse over 100 free and paid themes, choose one that fits your brand, and adjust logos, colors, and fonts — all without writing a single line of code. You can also configure <strong>shipping rules</strong>, create a <strong>required legal disclosure page</strong>, set up <strong>Shopify Payments</strong>, and <strong>install apps</strong>. All settings, product data, and configurations you build during the trial carry over seamlessly once you upgrade to a paid plan.
 
 ### What You Can't Do
 
@@ -55,11 +55,11 @@ On extensibility, the gap is even wider. Shopify comes with an ecosystem of over
 
 It's worth understanding where you'll land after the trial. As of 2026, Shopify's main plans are as follows (monthly prices based on annual billing):
 
-The **Basic plan** is ¥3,650/month — the entry-level option for businesses launching their first online store. It supports unlimited products and up to two staff accounts. The Shopify Payments processing fee is 3.55%.
+The <strong>Basic plan</strong> is ¥3,650/month — the entry-level option for businesses launching their first online store. It supports unlimited products and up to two staff accounts. The Shopify Payments processing fee is 3.55%.
 
-The **Grow plan** is ¥10,100/month — recommended once your store has gained traction and monthly sales are growing steadily. It supports up to five staff accounts and includes professional reporting. The processing fee is 3.4%.
+The <strong>Grow plan</strong> is ¥10,100/month — recommended once your store has gained traction and monthly sales are growing steadily. It supports up to five staff accounts and includes professional reporting. The processing fee is 3.4%.
 
-The **Advanced plan** is ¥44,000/month — designed for stores with monthly sales in the tens of millions. It supports 15 staff accounts, custom reports, and automated shipping rate calculation via third-party services. The processing fee is 3.25%.
+The <strong>Advanced plan</strong> is ¥44,000/month — designed for stores with monthly sales in the tens of millions. It supports 15 staff accounts, custom reports, and automated shipping rate calculation via third-party services. The processing fee is 3.25%.
 
 Choosing annual billing saves approximately 25% compared to monthly billing across all plans. A practical approach is to start on monthly billing, let your revenue stabilize over three to six months, then switch to an annual plan.
 
@@ -67,35 +67,35 @@ Choosing annual billing saves approximately 25% compared to monthly billing acro
 
 The trial is only three days. Going in without a plan often means spending the time clicking around without accomplishing much. Follow this sequence to get a genuine feel for the platform in a short time.
 
-**Day 1 — Build the foundation.** After registering, add three to five products. Placeholders are fine. Having products in your store makes it much easier to evaluate how your theme looks in practice. For each product, fill in the name, price, description, images, and stock count — and check the SEO preview while you're at it.
+<strong>Day 1 — Build the foundation.</strong> After registering, add three to five products. Placeholders are fine. Having products in your store makes it much easier to evaluate how your theme looks in practice. For each product, fill in the name, price, description, images, and stock count — and check the SEO preview while you're at it.
 
-**Day 2 — Finalize design and settings.** Pick a theme, adjust the logo and color palette, and organize the homepage layout. Alongside that, configure your shipping rules, set up your required legal disclosure page, and activate Shopify Payments.
+<strong>Day 2 — Finalize design and settings.</strong> Pick a theme, adjust the logo and color palette, and organize the homepage layout. Alongside that, configure your shipping rules, set up your required legal disclosure page, and activate Shopify Payments.
 
-**Day 3 — Review and decide.** Take a broad look at the admin dashboard and determine which plan fits your business scale and team setup. Run a test order to walk through the purchase flow end to end. If everything looks good, select your plan and prepare to go live.
+<strong>Day 3 — Review and decide.</strong> Take a broad look at the admin dashboard and determine which plan fits your business scale and team setup. Run a test order to walk through the purchase flow end to end. If everything looks good, select your plan and prepare to go live.
 
 ## Real Businesses That Grew Using Shopify
 
 Here are a few examples of businesses — domestic and international — that moved from Shopify's free trial to a full launch and achieved real results.
 
-**Kyoto Brewing Co.**, a craft beer brand based in Kyoto, used Shopify to expand online sales and reach craft beer fans both in Japan and abroad. By combining a multilingual app with Shopify, the brand runs parallel Japanese and English storefronts from a single platform.
+<strong>Kyoto Brewing Co.</strong>, a craft beer brand based in Kyoto, used Shopify to expand online sales and reach craft beer fans both in Japan and abroad. By combining a multilingual app with Shopify, the brand runs parallel Japanese and English storefronts from a single platform.
 
-**COHINA**, a Japanese apparel brand focused on petite women, paired Shopify's flexible customization with a sharp SNS-driven customer acquisition strategy. Starting with a small team, the brand scaled efficiently by leveraging Shopify's app ecosystem without sacrificing operational quality.
+<strong>COHINA</strong>, a Japanese apparel brand focused on petite women, paired Shopify's flexible customization with a sharp SNS-driven customer acquisition strategy. Starting with a small team, the brand scaled efficiently by leveraging Shopify's app ecosystem without sacrificing operational quality.
 
-**Francfranc**, a home goods brand, has integrated Shopify as part of its domestic EC operations. The platform's extensibility and reliable payment infrastructure support its broad product catalog and growing online business.
+<strong>Francfranc</strong>, a home goods brand, has integrated Shopify as part of its domestic EC operations. The platform's extensibility and reliable payment infrastructure support its broad product catalog and growing online business.
 
 ## FAQ
 
 ### Q: Is it really true that no credit card is needed for the Shopify free trial? Will I be charged automatically when it ends?
 
-**A:** Yes — no credit card is required to start the free trial. When the three-day period ends, Shopify does not charge you unless you actively select a plan and enter payment information. Your account is automatically paused, but all your store data, products, and settings are preserved. One caveat: if you installed third-party apps during the trial, those apps may have their own billing timelines that are separate from Shopify's trial period. Be sure to check each app's terms individually.
+<strong>A:</strong> Yes — no credit card is required to start the free trial. When the three-day period ends, Shopify does not charge you unless you actively select a plan and enter payment information. Your account is automatically paused, but all your store data, products, and settings are preserved. One caveat: if you installed third-party apps during the trial, those apps may have their own billing timelines that are separate from Shopify's trial period. Be sure to check each app's terms individually.
 
 ### Q: BASE and STORES are free to start — at what monthly sales level should I consider switching to Shopify?
 
-**A:** A good rule of thumb is ¥1 million in monthly sales. BASE's Standard plan has no monthly fee, but its payment fees of 6.6% plus ¥40 per transaction add up to roughly ¥70,000 at that sales volume. Shopify Basic, at ¥4,850/month plus a 3.55% processing fee, works out cheaper at the same scale. If you're also thinking about cross-border sales or multilingual operations in the future, switching to Shopify earlier saves you the effort and cost of migrating platforms later.
+<strong>A:</strong> A good rule of thumb is ¥1 million in monthly sales. BASE's Standard plan has no monthly fee, but its payment fees of 6.6% plus ¥40 per transaction add up to roughly ¥70,000 at that sales volume. Shopify Basic, at ¥4,850/month plus a 3.55% processing fee, works out cheaper at the same scale. If you're also thinking about cross-border sales or multilingual operations in the future, switching to Shopify earlier saves you the effort and cost of migrating platforms later.
 
 ### Q: Will everything I set up during the free trial carry over when I upgrade to a paid plan?
 
-**A:** Yes, it all carries over. As Shopify's official documentation confirms, any work completed during the free trial is preserved when you select a paid plan. Product data, theme settings, payment configuration, and page content are all retained and go live the moment you upgrade. To make the most of your three days, gather your product information and image assets in advance before you start — so you can build productively from day one.
+<strong>A:</strong> Yes, it all carries over. As Shopify's official documentation confirms, any work completed during the free trial is preserved when you select a paid plan. Product data, theme settings, payment configuration, and page content are all retained and go live the moment you upgrade. To make the most of your three days, gather your product information and image assets in advance before you start — so you can build productively from day one.
 
 ## Conclusion
 

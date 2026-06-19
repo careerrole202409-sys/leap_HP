@@ -85,25 +85,25 @@ What all these cases share is that Shopify's extensibility proves effective when
 
 Here's a clear breakdown of which platform to choose based on your current situation and future goals.
 
-**Starting small as a side business, individual seller, or test run**: BASE is the clear choice. Zero setup and monthly fees mean you can start selling today using just your smartphone. For those wanting to validate their e-commerce idea with minimal risk, it's the optimal starting point.
+<strong>Starting small as a side business, individual seller, or test run</strong>: BASE is the clear choice. Zero setup and monthly fees mean you can start selling today using just your smartphone. For those wanting to validate their e-commerce idea with minimal risk, it's the optimal starting point.
 
-**Small business with a physical store, wanting to manage online and offline in one place**: STORES is the right fit. Its seamless integration with POS registers and booking systems makes unified management straightforward.
+<strong>Small business with a physical store, wanting to manage online and offline in one place</strong>: STORES is the right fit. Its seamless integration with POS registers and booking systems makes unified management straightforward.
 
-**Targeting monthly sales in the millions while running a solid domestic operation with reliable support**: ColorMe Shop is a strong candidate. Its phone and email support makes it manageable even for teams new to e-commerce, and the platform is optimized for Japanese payment methods, shipping, and business practices.
+<strong>Targeting monthly sales in the millions while running a solid domestic operation with reliable support</strong>: ColorMe Shop is a strong candidate. Its phone and email support makes it manageable even for teams new to e-commerce, and the platform is optimized for Japanese payment methods, shipping, and business practices.
 
-**Mid-to-large businesses targeting hundreds of millions in annual revenue, with cross-border sales, multi-channel expansion, and data utilization in mind**: Shopify is the right choice. The ability to scale plans as you grow, combined with native multilingual and multi-currency support, a vast app ecosystem, and a proven global track record, sets it clearly apart.
+<strong>Mid-to-large businesses targeting hundreds of millions in annual revenue, with cross-border sales, multi-channel expansion, and data utilization in mind</strong>: Shopify is the right choice. The ability to scale plans as you grow, combined with native multilingual and multi-currency support, a vast app ecosystem, and a proven global track record, sets it clearly apart.
 
 One important factor to consider: the cost of migrating platforms later. Many sellers start on BASE or STORES, see their sales grow, and then move to Shopify — but transferring product data, customer records, and order history takes significant time and money. If you're already targeting monthly sales in the tens of millions, building on Shopify from the start is likely to cost less overall in the long run.
 
 ## FAQ
 
-**Q1. I've heard Shopify and BASE cost about the same monthly — is that true?**
+<strong>Q1. I've heard Shopify and BASE cost about the same monthly — is that true?</strong>
 Looking at fixed monthly fees alone, they may appear similar in some scenarios. But total cost of ownership, including variable fees (transaction fees and service charges), varies significantly depending on sales volume. BASE's Growth plan at ¥16,580/month does reduce fees, but comes at a high fixed cost. With Shopify Payments, there are no additional transaction fees for external payment methods — so as sales grow, Shopify becomes increasingly cost-efficient. If your monthly sales exceed several million yen, we strongly recommend comparing total costs rather than just the monthly base fee.
 
-**Q2. If I want to start domestically but eventually expand overseas, should I start with Shopify from the beginning?**
+<strong>Q2. If I want to start domestically but eventually expand overseas, should I start with Shopify from the beginning?</strong>
 If overseas expansion is even a possibility, we recommend starting with Shopify from day one. Migrating later from BASE or ColorMe Shop to a cross-border-capable platform involves product data migration, customer data transfer, SEO continuity concerns, and new build costs — unexpected effort and expense. With Shopify, you can build for the domestic market now while quietly setting up the multilingual and multi-currency configurations you'll need later — ensuring a smooth transition when the time comes.
 
-**Q3. Shopify seems overwhelming with so many features. Can beginners actually manage it?**
+<strong>Q3. Shopify seems overwhelming with so many features. Can beginners actually manage it?</strong>
 Shopify's admin dashboard is designed to be intuitive, and basic operations — product listings, order management, payment setup — don't require any coding knowledge. That said, advanced SEO work, app integrations, and deeper customization do involve a learning curve, and some teams find it useful to bring in outside expertise. Shopify has a large network of certified partners (Shopify Experts) who can support build, operations, and marketing at every stage. A practical approach is to start simple on a basic plan and add capabilities as your business grows.
 
 ## Conclusion: Choose Your E-Commerce Platform by Working Backward from Your Growth Strategy

@@ -76,19 +76,19 @@ Plans can be upgraded or downgraded at any time. However, if you choose annual b
 
 The real goal of plan selection is minimizing your monthly total cost — subscription fee plus payment processing fees combined. The simulations below assume you are using Shopify Payments.
 
-**At ¥1 million/month in revenue:**
+<strong>At ¥1 million/month in revenue:</strong>
 
-- Basic: ¥3,650 + ¥1,000,000 × 3.55% = ¥3,650 + ¥35,500 = **¥39,150**
-- Grow: ¥10,100 + ¥1,000,000 × 3.40% = ¥10,100 + ¥34,000 = **¥44,100**
+- Basic: ¥3,650 + ¥1,000,000 × 3.55% = ¥3,650 + ¥35,500 = <strong>¥39,150</strong>
+- Grow: ¥10,100 + ¥1,000,000 × 3.40% = ¥10,100 + ¥34,000 = <strong>¥44,100</strong>
 - → At this scale, Basic is more cost-effective.
 
-**At ¥5.77 million/month in revenue (break-even point):**
+<strong>At ¥5.77 million/month in revenue (break-even point):</strong>
 
-- Basic: ¥3,650 + ¥5,770,000 × 3.55% = ¥3,650 + ¥204,835 = **¥208,485**
-- Grow: ¥10,100 + ¥5,770,000 × 3.40% = ¥10,100 + ¥196,180 = **¥206,280**
+- Basic: ¥3,650 + ¥5,770,000 × 3.55% = ¥3,650 + ¥204,835 = <strong>¥208,485</strong>
+- Grow: ¥10,100 + ¥5,770,000 × 3.40% = ¥10,100 + ¥196,180 = <strong>¥206,280</strong>
 - → Once monthly revenue exceeds ¥5.77 million, Grow becomes marginally cheaper.
 
-**Comparing ¥5 million vs. ¥10 million/month:**
+<strong>Comparing ¥5 million vs. ¥10 million/month:</strong>
 
 - ¥5M/month: Basic ¥181,150 vs. Grow ¥180,100 (virtually identical; Grow is slightly cheaper)
 - ¥10M/month: Basic ¥358,650 vs. Grow ¥350,100 (Grow saves roughly ¥8,500/month)
@@ -113,13 +113,13 @@ COHINA, an apparel brand focused on petite women, migrated to Shopify Plus to de
 
 Here are the key factors to evaluate when selecting a plan.
 
-The first is **team structure**. If the store owner is operating solo, Basic is sufficient. If multiple staff members need access to the admin panel, Grow or above is required.
+The first is <strong>team structure</strong>. If the store owner is operating solo, Basic is sufficient. If multiple staff members need access to the admin panel, Grow or above is required.
 
-The second is **projected monthly revenue**. Use the break-even simulations above to calculate your total cost based on current monthly revenue and your 3-to-6-month outlook. For startups, the standard approach is to begin on Basic and move to Grow once revenue stabilizes.
+The second is <strong>projected monthly revenue</strong>. Use the break-even simulations above to calculate your total cost based on current monthly revenue and your 3-to-6-month outlook. For startups, the standard approach is to begin on Basic and move to Grow once revenue stabilizes.
 
-The third factor is **whether you can use Shopify Payments**. Using Shopify Payments eliminates the transaction fee entirely, which significantly changes the cost calculation. In Japan, some merchants may not pass the review depending on their banking setup or business type — verify your eligibility in advance.
+The third factor is <strong>whether you can use Shopify Payments</strong>. Using Shopify Payments eliminates the transaction fee entirely, which significantly changes the cost calculation. In Japan, some merchants may not pass the review depending on their banking setup or business type — verify your eligibility in advance.
 
-The fourth factor is **cross-border and global expansion plans**. If you're scaling up international sales, Advanced's per-market store customization is a powerful asset. Combined with multilingual support and currency switching, it enables a purchase experience optimized for users in each target country.
+The fourth factor is <strong>cross-border and global expansion plans</strong>. If you're scaling up international sales, Advanced's per-market store customization is a powerful asset. Combined with multilingual support and currency switching, it enables a purchase experience optimized for users in each target country.
 
 
 ## Frequently Asked Questions (FAQ)

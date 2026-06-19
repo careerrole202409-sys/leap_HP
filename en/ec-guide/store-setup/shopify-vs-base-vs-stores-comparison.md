@@ -96,22 +96,22 @@ BASE and STORES are both designed primarily for domestic Japanese sales. Serious
 
 Work through the questions in order to identify the right fit for your situation.
 
-**Q1: Do you currently have any sales history from an online store?**
+<strong>Q1: Do you currently have any sales history from an online store?</strong>
 
 - Already generating ¥100,000+ in monthly revenue → Go to Q2
 - Not yet, or monthly revenue is under ¥100,000 → Start with BASE (Standard plan)
 
-**Q2: Is cross-border e-commerce (overseas sales) part of your plan?**
+<strong>Q2: Is cross-border e-commerce (overseas sales) part of your plan?</strong>
 
 - Yes → Shopify (Basic plan or above)
 - Not for now — domestic only → Go to Q3
 
-**Q3: Do you have a physical store, and do you want unified inventory and customer data management?**
+<strong>Q3: Do you have a physical store, and do you want unified inventory and customer data management?</strong>
 
 - Yes → STORES (Standard plan)
 - No physical store — online only → Go to Q4
 
-**Q4: Do you plan to actively use advanced features or marketing tools (email marketing, reviews, subscriptions, etc.) going forward?**
+<strong>Q4: Do you plan to actively use advanced features or marketing tools (email marketing, reviews, subscriptions, etc.) going forward?</strong>
 
 - Yes → Shopify (Basic or Shopify plan)
 - For now, keeping it simple → BASE (Growth plan) or STORES

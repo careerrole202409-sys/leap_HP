@@ -49,7 +49,7 @@ Selling on Rakuten or Amazon and running SEO for your own EC site are not in com
 
 ### Understanding Four Types of Search Queries
 
-Users don't all use search engines for the same reason. Google categorizes search intent into four types: **Know** (I want to learn), **Do** (I want to do something), **Buy** (I want to purchase), and **Go** (I want to visit somewhere). Accurately understanding this framework is the starting point for designing an EC site SEO strategy.
+Users don't all use search engines for the same reason. Google categorizes search intent into four types: <strong>Know</strong> (I want to learn), <strong>Do</strong> (I want to do something), <strong>Buy</strong> (I want to purchase), and <strong>Go</strong> (I want to visit somewhere). Accurately understanding this framework is the starting point for designing an EC site SEO strategy.
 
 Buy queries represent the most direct conversion opportunity for EC sites — but they're also the most competitive, and the territory most likely to be dominated by Rakuten and Amazon at the top. This makes responding to Know and Do queries critically important. By reaching users with queries like "how to choose [product]," "how to use [product]," and "[product] pros and cons" — and designing a pathway from that content into product pages — you can expose your own site in territory where major marketplaces are thin.
 

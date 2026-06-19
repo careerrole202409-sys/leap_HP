@@ -30,9 +30,9 @@ This article breaks down Shopify's costs into three categories — monthly plan 
 
 One of the first points of confusion when getting started with Shopify is the distinction between "payment processing fees" and "transaction fees." These are two separate concepts, and which ones apply depends entirely on which payment service you use.
 
-**Payment processing fees (credit card fees)** are charged whenever a customer pays by credit card. The rate varies by card brand — Visa, Mastercard, JCB, American Express, and so on. These fees are paid to Shopify only when you use Shopify Payments. The rate depends on your plan: approximately 3.55% on the Basic plan, 3.4% on the Grow plan, and 3.25% on the Advanced plan (based on official Japan-market figures as of 2025).
+<strong>Payment processing fees (credit card fees)</strong> are charged whenever a customer pays by credit card. The rate varies by card brand — Visa, Mastercard, JCB, American Express, and so on. These fees are paid to Shopify only when you use Shopify Payments. The rate depends on your plan: approximately 3.55% on the Basic plan, 3.4% on the Grow plan, and 3.25% on the Advanced plan (based on official Japan-market figures as of 2025).
 
-**Transaction fees (third-party transaction fees)** are an additional charge Shopify levies when you process payments through an external payment provider — such as Stripe, PayPal, or SB Payment Service — instead of Shopify Payments. The rate is 2.0% on Basic, 1.0% on Grow, and 0.6% on Advanced. Higher plans mean lower fees.
+<strong>Transaction fees (third-party transaction fees)</strong> are an additional charge Shopify levies when you process payments through an external payment provider — such as Stripe, PayPal, or SB Payment Service — instead of Shopify Payments. The rate is 2.0% on Basic, 1.0% on Grow, and 0.6% on Advanced. Higher plans mean lower fees.
 
 In short: using Shopify Payments eliminates transaction fees entirely, but using an external payment provider means you're paying both the external provider's processing fee and Shopify's transaction fee on top of it. Understanding this double-cost structure is essential before you finalize your payment setup.
 

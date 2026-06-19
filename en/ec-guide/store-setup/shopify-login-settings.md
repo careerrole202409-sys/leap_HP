@@ -40,7 +40,7 @@ You can also access the admin directly by navigating to `(your store domain)/adm
 
 Shopify strongly recommends enabling two-factor authentication (2FA) for admin login. Given that the platform holds sensitive data — customer personal information, payment details, and inventory records — a second layer of protection against password compromise is essential.
 
-To set up 2FA: click your account name in the top right of the admin panel and select **Manage account**, then go to **Security** and click **Turn on two-step authentication**. You can choose between SMS verification or an authenticator app such as Google Authenticator or Authy. From a security standpoint, an authenticator app is the recommended choice over SMS.
+To set up 2FA: click your account name in the top right of the admin panel and select <strong>Manage account</strong>, then go to <strong>Security</strong> and click <strong>Turn on two-step authentication</strong>. You can choose between SMS verification or an authenticator app such as Google Authenticator or Authy. From a security standpoint, an authenticator app is the recommended choice over SMS.
 
 Once enabled, you'll be prompted to enter an authentication code in addition to your password each time you log in. If you're managing the store as a team, establishing a policy that requires all staff members to enable 2FA is an important step.
 
@@ -49,13 +49,13 @@ Once enabled, you'll be prompted to enter an authentication code in addition to 
 
 ### Types of Accounts and When to Use Each
 
-Shopify offers three types of accounts for managing a store. The **store owner** is the top-level administrator with full access — including plan changes, financial information, and the ability to add or remove staff. **Staff accounts** are delegated accounts where the owner controls exactly which permissions are granted, enabling fine-grained restrictions by role — such as order management, product management, customer management, or report viewing. **Collaborator accounts** are designed for external parties like web agencies or freelance designers who need temporary access; these do not count toward your staff account limit.
+Shopify offers three types of accounts for managing a store. The <strong>store owner</strong> is the top-level administrator with full access — including plan changes, financial information, and the ability to add or remove staff. <strong>Staff accounts</strong> are delegated accounts where the owner controls exactly which permissions are granted, enabling fine-grained restrictions by role — such as order management, product management, customer management, or report viewing. <strong>Collaborator accounts</strong> are designed for external parties like web agencies or freelance designers who need temporary access; these do not count toward your staff account limit.
 
 The number of staff accounts available depends on your plan. The Basic and Starter plans do not allow additional staff accounts at all — this is an important limitation to be aware of. Staff accounts become available starting from the Shopify (Grow) plan and above. Sharing the owner account with team members is a significant security risk; always issue individual accounts for each staff member.
 
 ### How to Add a Staff Account
 
-To add a staff account: go to **Settings** in the bottom-left navigation of the admin, then select **Users and permissions**. Under the **Staff** section, click **Add staff**, enter the team member's name and email address, select the permissions you want to grant, then click **Send invite**. An invitation email will be sent to the address you entered.
+To add a staff account: go to <strong>Settings</strong> in the bottom-left navigation of the admin, then select <strong>Users and permissions</strong>. Under the <strong>Staff</strong> section, click <strong>Add staff</strong>, enter the team member's name and email address, select the permissions you want to grant, then click <strong>Send invite</strong>. An invitation email will be sent to the address you entered.
 
 Once the invited staff member follows the link in the email and creates their account, setup is complete. From that point on, they can log in to the store admin using their own email and password.
 
@@ -74,15 +74,15 @@ Shopify currently offers two versions of customer accounts: the classic customer
 
 ### How to Enable Classic Customer Accounts
 
-To set up classic customer accounts: from the admin, go to **Settings** > **Customer accounts**. Under the **Accounts in online store and checkout** section, click **Edit**, then select **Show login link in the header of online store and at checkout**. Next, under **Choose which customer accounts to use**, select **Classic customer accounts** and click **Save**.
+To set up classic customer accounts: from the admin, go to <strong>Settings</strong> > <strong>Customer accounts</strong>. Under the <strong>Accounts in online store and checkout</strong> section, click <strong>Edit</strong>, then select <strong>Show login link in the header of online store and at checkout</strong>. Next, under <strong>Choose which customer accounts to use</strong>, select <strong>Classic customer accounts</strong> and click <strong>Save</strong>.
 
 After saving, a login link will appear in your store's header, and customers will be able to access their account page using their email address and password. Customers can create their own accounts, or you can send invitation emails to them from the admin side.
 
-To disable accounts, simply deselect the login link option in the same settings screen and save. To disable an account for a specific customer only, go to **Customers**, find the customer, and click **Disable account**. Note that disabling an account does not delete the customer profile — their name and purchase history remain intact.
+To disable accounts, simply deselect the login link option in the same settings screen and save. To disable an account for a specific customer only, go to <strong>Customers</strong>, find the customer, and click <strong>Disable account</strong>. Note that disabling an account does not delete the customer profile — their name and purchase history remain intact.
 
 ### What Is "Sign in with Shop"?
 
-**Sign in with Shop** is Shopify's feature that allows customers to log in without a password using a passkey (biometric authentication) or their saved Shop account credentials. Since address and payment information are auto-filled at checkout, the number of steps to complete a purchase is significantly reduced. To enable it, simply toggle on the **Sign in with Shop** option under **Settings** > **Customer accounts**. If improving conversion rates is a priority, this feature is well worth activating.
+<strong>Sign in with Shop</strong> is Shopify's feature that allows customers to log in without a password using a passkey (biometric authentication) or their saved Shop account credentials. Since address and payment information are auto-filled at checkout, the number of steps to complete a purchase is significantly reduced. To enable it, simply toggle on the <strong>Sign in with Shop</strong> option under <strong>Settings</strong> > <strong>Customer accounts</strong>. If improving conversion rates is a priority, this feature is well worth activating.
 
 
 ## Troubleshooting: When Customers Can't Log In and How to Reset Passwords
@@ -95,15 +95,15 @@ The third case is particularly common after migrating customer data from another
 
 ### How Customers Reset Their Own Password
 
-To reset a password: go to the store's login page and click **Forgot your password?**. Enter the registered email address and submit — a password reset email containing a link will be sent. Clicking the link and setting a new password restores access. Passwords can be between 5 and 40 characters and may include special characters.
+To reset a password: go to the store's login page and click <strong>Forgot your password?</strong>. Enter the registered email address and submit — a password reset email containing a link will be sent. Clicking the link and setting a new password restores access. Passwords can be between 5 and 40 characters and may include special characters.
 
-The reset link has an expiration time, so advise customers to act on it promptly. If the link has expired, they'll need to go through the **Forgot your password?** process again.
+The reset link has an expiration time, so advise customers to act on it promptly. If the link has expired, they'll need to go through the <strong>Forgot your password?</strong> process again.
 
 ### How to Send a Password Reset Email from the Admin
 
-Store admins can also send password reset emails directly. Go to **Customers** in the admin, click the relevant customer's name, then click **More actions** and select **Reset password**. A reset link is automatically sent to that customer's email address.
+Store admins can also send password reset emails directly. Go to <strong>Customers</strong> in the admin, click the relevant customer's name, then click <strong>More actions</strong> and select <strong>Reset password</strong>. A reset link is automatically sent to that customer's email address.
 
-We recommend documenting this process as part of your customer support team's manual so they can respond quickly when a customer reports login issues. If you need to send account activation emails in bulk — for example, after a data migration — a third-party app such as **Bulk Account Invite Sender** from the Shopify App Store can handle this efficiently.
+We recommend documenting this process as part of your customer support team's manual so they can respond quickly when a customer reports login issues. If you need to send account activation emails in bulk — for example, after a data migration — a third-party app such as <strong>Bulk Account Invite Sender</strong> from the Shopify App Store can handle this efficiently.
 
 
 ## Real-World Examples: Getting Results Through Shopify Account Management
@@ -121,17 +121,17 @@ As order volume grows, defining "who can access what" in the admin becomes a pre
 
 ## Frequently Asked Questions (FAQ)
 
-**Q: A customer says they can't log in to their Shopify account page. What can I do as a store admin?**
+<strong>Q: A customer says they can't log in to their Shopify account page. What can I do as a store admin?</strong>
 
-First, check the customer's account status under **Customers** in the admin. If the status shows "invited," the account has not been activated yet — click **Resend account invite** to send the activation email again. If the status is "enabled," go to **More actions** > **Reset password** to send a password reset email from the admin side. If the customer has multiple email addresses, ask them to confirm which one was used to create the account.
+First, check the customer's account status under <strong>Customers</strong> in the admin. If the status shows "invited," the account has not been activated yet — click <strong>Resend account invite</strong> to send the activation email again. If the status is "enabled," go to <strong>More actions</strong> > <strong>Reset password</strong> to send a password reset email from the admin side. If the customer has multiple email addresses, ask them to confirm which one was used to create the account.
 
-**Q: How many staff accounts can I add on Shopify?**
+<strong>Q: How many staff accounts can I add on Shopify?</strong>
 
-The number of staff accounts depends on your plan. The Basic and Starter plans do not allow additional staff accounts at all. Staff accounts become available on the Shopify (Grow) plan and above, with the maximum increasing at higher tiers. If you need to give an external web agency or freelancer access to the admin, consider using a **collaborator account**, which does not count toward your staff account limit. We recommend confirming your plan's staff account limit before making your plan selection.
+The number of staff accounts depends on your plan. The Basic and Starter plans do not allow additional staff accounts at all. Staff accounts become available on the Shopify (Grow) plan and above, with the maximum increasing at higher tiers. If you need to give an external web agency or freelancer access to the admin, consider using a <strong>collaborator account</strong>, which does not count toward your staff account limit. We recommend confirming your plan's staff account limit before making your plan selection.
 
-**Q: Can I make login mandatory before checkout — so customers must log in before they can purchase?**
+<strong>Q: Can I make login mandatory before checkout — so customers must log in before they can purchase?</strong>
 
-Requiring customers to log in before checkout is no longer an option in Shopify's standard settings — guest checkout is the default. However, if you want to offer member-exclusive pricing or restrict certain products to logged-in customers only, an app like **Locksmith** can gate specific pages or collections to authenticated users. The new customer accounts feature also supports seamless login via one-time code, which lowers the barrier to account creation and login while keeping account management in place.
+Requiring customers to log in before checkout is no longer an option in Shopify's standard settings — guest checkout is the default. However, if you want to offer member-exclusive pricing or restrict certain products to logged-in customers only, an app like <strong>Locksmith</strong> can gate specific pages or collections to authenticated users. The new customer accounts feature also supports seamless login via one-time code, which lowers the barrier to account creation and login while keeping account management in place.
 
 
 ## In Closing: Shopify Login Settings Work Best as a Pair — Operational Efficiency and Customer UX

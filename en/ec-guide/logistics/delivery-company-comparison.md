@@ -22,7 +22,7 @@ author_bio: A team of experts in international business
 ## [Quick Overview] What Every EC Operator Needs to Know About Choosing a Delivery Carrier
 If you run an e-commerce site in Japan, you've almost certainly wondered at some point: "Is the carrier I'm using still the right fit?" or "Could I be paying less?" These questions come up regardless of business size. Since 2024 in particular, all three major carriers — Yamato Transport, Sagawa Express, and Japan Post — have revised their rate structures. If you're still working from the pricing norms of a few years ago, there's a real chance your logistics costs have quietly ballooned.
 
-This article compares the three carriers across five dimensions: **rates**, **delivery speed**, **compensation coverage**, **tracking features**, and **room to negotiate corporate discounts**. We also go deeper into which carrier is cheapest for small and lightweight items, which is the best fit for heavy and oversized goods, and how they differ in cold-chain delivery capabilities. The goal is to give you a practical framework for identifying the right carrier for your product category and order volume.
+This article compares the three carriers across five dimensions: <strong>rates</strong>, <strong>delivery speed</strong>, <strong>compensation coverage</strong>, <strong>tracking features</strong>, and <strong>room to negotiate corporate discounts</strong>. We also go deeper into which carrier is cheapest for small and lightweight items, which is the best fit for heavy and oversized goods, and how they differ in cold-chain delivery capabilities. The goal is to give you a practical framework for identifying the right carrier for your product category and order volume.
 
 ## Why Your Choice of Carrier Directly Affects Your EC Business's Bottom Line
 Shipping costs are one of the three major cost drivers in EC — alongside product costs and advertising spend. A difference of just ¥100 per shipment adds up to ¥1.2 million per year for a business shipping 1,000 orders per month. Yet many operators continue using the carrier they signed up with at launch, rarely revisiting the decision.
@@ -87,13 +87,13 @@ There are also reports of BASE and ColorMeShop merchants who, once monthly shipm
 A key enabler for this kind of setup is integration with your order management system. Major EC platforms — Shopify, MakeShop, ColorMeShop — support shipping label integration with multiple carriers, so the operational friction of running more than one carrier is lower than it used to be.
 
 ## Frequently Asked Questions (FAQ)
-**Q1. I'm just launching my EC site and shipping volumes are low. Which carrier should I start with?**
+<strong>Q1. I'm just launching my EC site and shipping volumes are low. Which carrier should I start with?</strong>
 In the early stages when you're shipping a few dozen orders per month or fewer, Yamato Takkyubin or Japan Post's Yu-Pack are the most accessible options — both are available without a corporate contract and include tracking and compensation as standard. Use drop-off discounts and member discounts to keep costs down, then revisit corporate contracts or carrier switching as volume grows. If your products are thin or lightweight, building your logistics around Click Post or Yu-Packet from day one is also a rational approach.
 
-**Q2. Rates keep going up. Is there still room to negotiate lower corporate pricing?**
+<strong>Q2. Rates keep going up. Is there still room to negotiate lower corporate pricing?</strong>
 Yes — Sagawa in particular is known to offer flexible negotiations to businesses shipping a meaningful monthly volume (roughly 200–300 shipments per month is often cited as a threshold). Yamato and Japan Post also have volume-based corporate discount programs, and negotiating against your current contracted rate — with competing quotes as leverage — is still an effective strategy.
 
-**Q3. Should I use multiple carriers for different products, or keep everything with one carrier for simplicity?**
+<strong>Q3. Should I use multiple carriers for different products, or keep everything with one carrier for simplicity?</strong>
 At low volume, a single carrier is easier to manage. As scale grows and your product mix diversifies, splitting by product type — Japan Post for small items, Sagawa for standard, Yamato for cold chain — can improve your margin structure. EC platforms like Shopify and ColorMeShop support multi-carrier label integration, so the system-side barrier to running multiple carriers is much lower than it used to be.
 
 ## Conclusion: Carrier Selection Is Not a One-Time Decision

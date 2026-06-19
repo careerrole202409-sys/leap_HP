@@ -107,15 +107,15 @@ Bento&co, a Kyoto-based retailer selling Japanese bento boxes and tableware to c
 
 ## FAQ
 
-**Q: Can I get Japanese-language support from Shopify? What about urgent issues?**
+<strong>Q: Can I get Japanese-language support from Shopify? What about urgent issues?</strong>
 
 Japanese-language support is available via email and AI chat. The Japanese help center resolves many everyday questions and errors. That said, live human chat in Japanese is not always guaranteed in real time, and technical inquiries may take several days. For urgent issues, English chat support or a certified Shopify Expert (Shopify partner) is a more reliable option. For stores with significant annual revenue that need more intensive support, upgrading to Shopify Plus is worth considering.
 
-**Q: Can all typical Japan-market features — scheduled delivery, COD, noshi, etc. — be handled through apps?**
+<strong>Q: Can all typical Japan-market features — scheduled delivery, COD, noshi, etc. — be handled through apps?</strong>
 
 Scheduled delivery, COD, convenience store payment, and qualified invoice generation can all be addressed through Japanese-market apps. Noshi support is more limited — there are fewer dedicated apps for it, and custom development or manual handling may be needed for some cases. We recommend mapping out which features are essential before consulting a Shopify partner. Comparing Shopify with domestic platforms like BASE and ColorMe Shop while evaluating your specific business requirements will help you find the right fit.
 
-**Q: We're planning overseas expansion in the future. Can Shopify support cross-border operations on the same platform?**
+<strong>Q: We're planning overseas expansion in the future. Can Shopify support cross-border operations on the same platform?</strong>
 
 Yes — and this is one of the biggest reasons to choose Shopify. Shopify supports multiple languages, currencies, and regions. A Japan-market store can be extended to international markets by adding language-specific subdomains or language switchers. Automatic customs calculation, international shipment tracking, and local-currency pricing are all available through standard features or apps. BASE FOOD has explicitly stated that future international expansion was a key factor in their choice, and the ability to manage domestic and cross-border e-commerce from a single platform is a major long-term strategic advantage.
 
