@@ -105,12 +105,20 @@ LinkedIn makes this possible without requiring fluency. The tools to do it well 
 
 ---
 
-**KOTOBAAI Pte. Ltd.**
-Location: Singapore
-Founded: October 12, 2025
-Services: Content strategy consulting, Japanese-language content generation platform
-Contact: info@kotobaai.ltd
-Website: https://kotobaai.ltd
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1.5rem 2rem;margin:2rem 0;">
+  <h3 style="margin-top:0;margin-bottom:0.75rem;">KOTOBAAI Pte. Ltd.</h3>
+  <p style="margin:0 0 1.25rem;">KOTOBAAI Pte. Ltd. is developing an AI platform that helps overseas business leaders publish authentic Japanese-language content on LinkedIn. Through a conversational AI that draws out each user's real thoughts and experiences, the platform generates Japanese posts that genuinely resonate with a Japanese audience — designed to scale Japanese-language communication for hiring, business development, and brand building.</p>
+  <dl style="margin:0;display:grid;grid-template-columns:max-content 1fr;gap:0.5rem 2rem;">
+    <dt style="font-weight:600;">Location</dt><dd style="margin:0;">Singapore</dd>
+    <dt style="font-weight:600;">Founded</dt><dd style="margin:0;">October 12, 2025</dd>
+    <dt style="font-weight:600;">Services</dt><dd style="margin:0;">Content strategy consulting, Japanese-language content generation platform</dd>
+    <dt style="font-weight:600;">Contact</dt><dd style="margin:0;"><a href="mailto:info@kotobaai.ltd">info@kotobaai.ltd</a></dd>
+    <dt style="font-weight:600;">Website</dt><dd style="margin:0;"><a href="https://kotobaai.ltd" target="_blank" rel="noopener">kotobaai.ltd</a></dd>
+  </dl>
+</div>
 
-This article was researched and produced by the Leap Editorial Team. Leap provides multilingual website development, EC store construction, and global marketing support for businesses expanding overseas. Learn more:
-[https://www.leap.site/en/](https://www.leap.site/en/)
+<div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:8px;padding:1.5rem 2rem;margin:2rem 0;">
+  <h3 style="margin-top:0;margin-bottom:0.75rem;">About This Article</h3>
+  <p style="margin:0 0 1rem;">This article was researched and produced by the Leap Editorial Team. Leap is a SaaS platform that helps small and medium-sized businesses build locally optimized, multilingual websites and EC stores for overseas expansion — powered by AI agents. We publish ongoing practical resources covering everything from domestic EC operations to cross-border market entry, for business owners and overseas-focused managers taking their first steps into international markets.</p>
+  <p style="margin:0;"><a href="https://www.leap.site/en/" style="font-weight:600;">Learn more about Leap →</a></p>
+</div>

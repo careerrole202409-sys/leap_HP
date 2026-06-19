@@ -67,12 +67,22 @@ AIの使い方は二極化すると思っています。「早く大量にそれ
 日本の中小企業が海外市場にアプローチするとき、最初のハードルは「言葉」と「信頼」です。英語ができないから無理だと感じている方も多いですが、今はツールで補える部分が増えています。問題は言語よりも、「何を伝えたいか」「誰に伝えたいか」が明確かどうかです。
 そして、発信に関していえば、「自分らしい言葉で継続して伝える」ことが、最終的に採用・営業のどちらにも効いてきます。バズることより、信頼を積み上げること。海外でも日本でも、それは変わらないと思っています。
 
-**KOTOBAAI Pte. Ltd.**
-所在地：Singapore
-設立：2025年10月12日
-事業内容：コンテンツ戦略支援、コンサルティング、日本語コンテンツ生成サービスの提供
-お問い合わせ：info@kotobaai.ltd
-公式サイト：https://kotobaai.ltd
+---
 
-この記事はLeap編集部が取材・構成しました。Leapでは、海外展開を検討する日本の中小企業向けに、多言語ウェブサイト制作・ECサイト構築・グローバルマーケティング支援を提供しています。詳しくはこちらからご覧ください。
-https://www.leap.site/ja/
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1.5rem 2rem;margin:2rem 0;">
+  <h3 style="margin-top:0;margin-bottom:0.75rem;">KOTOBAAI Pte. Ltd.</h3>
+  <p style="margin:0 0 1.25rem;">海外のビジネスリーダーが「伝わる日本語」でLinkedInに発信するためのAIプラットフォームを開発しています。対話型のAIが使用者の思いや経験を丁寧に引き出し、日本市場に届く自分らしい日本語投稿を生成。採用・営業・ブランディングを目的とした日本語での情報発信を、AIの力でスケールさせることを目指しています。</p>
+  <dl style="margin:0;display:grid;grid-template-columns:max-content 1fr;gap:0.5rem 2rem;">
+    <dt style="font-weight:600;">所在地</dt><dd style="margin:0;">Singapore</dd>
+    <dt style="font-weight:600;">設立</dt><dd style="margin:0;">2025年10月12日</dd>
+    <dt style="font-weight:600;">事業内容</dt><dd style="margin:0;">コンテンツ戦略支援、コンサルティング、日本語コンテンツ生成サービスの提供</dd>
+    <dt style="font-weight:600;">お問い合わせ</dt><dd style="margin:0;"><a href="mailto:info@kotobaai.ltd">info@kotobaai.ltd</a></dd>
+    <dt style="font-weight:600;">公式サイト</dt><dd style="margin:0;"><a href="https://kotobaai.ltd" target="_blank" rel="noopener">kotobaai.ltd</a></dd>
+  </dl>
+</div>
+
+<div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:8px;padding:1.5rem 2rem;margin:2rem 0;">
+  <h3 style="margin-top:0;margin-bottom:0.75rem;">この記事について</h3>
+  <p style="margin:0 0 1rem;">この記事はLeap編集部が取材・構成しました。Leapは、海外展開を検討する日本の中小企業向けに、AIエージェントを活用した多言語ウェブサイト制作・ECサイト構築・グローバルマーケティング支援を提供するSaaSプラットフォームです。国内での事業基盤を活かしながら、海外市場への最初の一歩を踏み出す経営者・海外担当者向けに、EC運営から越境展開まで幅広い実践的コンテンツを継続発信しています。</p>
+  <p style="margin:0;"><a href="https://www.leap.site/ja/" style="font-weight:600;">Leapのサービス詳細はこちら →</a></p>
+</div>

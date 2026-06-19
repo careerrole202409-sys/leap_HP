@@ -105,12 +105,20 @@ author_bio: 海外业务专家团队
 
 ---
 
-**KOTOBAAI Pte. Ltd.**
-所在地：新加坡
-成立：2025年10月12日
-业务内容：内容战略支持、咨询、日语内容生成服务
-联系方式：info@kotobaai.ltd
-官方网站：https://kotobaai.ltd
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1.5rem 2rem;margin:2rem 0;">
+  <h3 style="margin-top:0;margin-bottom:0.75rem;">KOTOBAAI Pte. Ltd.</h3>
+  <p style="margin:0 0 1.25rem;">KOTOBAAI Pte. Ltd. 正在开发一款面向海外商业领袖的AI平台，帮助他们在LinkedIn上以"能真正传达心意的日语"向日本市场发声。平台通过对话式AI深度挖掘用户的真实想法与经历，生成能够打动日本受众的个性化日语帖子，致力于借助AI的力量，让以招聘、业务拓展和品牌建设为目的的日语传播实现规模化。</p>
+  <dl style="margin:0;display:grid;grid-template-columns:max-content 1fr;gap:0.5rem 2rem;">
+    <dt style="font-weight:600;">所在地</dt><dd style="margin:0;">新加坡</dd>
+    <dt style="font-weight:600;">成立</dt><dd style="margin:0;">2025年10月12日</dd>
+    <dt style="font-weight:600;">业务内容</dt><dd style="margin:0;">内容战略支持、咨询、日语内容生成服务</dd>
+    <dt style="font-weight:600;">联系方式</dt><dd style="margin:0;"><a href="mailto:info@kotobaai.ltd">info@kotobaai.ltd</a></dd>
+    <dt style="font-weight:600;">官方网站</dt><dd style="margin:0;"><a href="https://kotobaai.ltd" target="_blank" rel="noopener">kotobaai.ltd</a></dd>
+  </dl>
+</div>
 
-本文由Leap编辑部采访整理。Leap为有意拓展海外市场的日本中小企业，提供多语言网站建设、跨境电商搭建及海外营销推广支持服务。详情请访问以下链接。
-[https://www.leap.site/zh-hans/](https://www.leap.site/zh-hans/)
+<div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:8px;padding:1.5rem 2rem;margin:2rem 0;">
+  <h3 style="margin-top:0;margin-bottom:0.75rem;">关于本文</h3>
+  <p style="margin:0 0 1rem;">本文由Leap编辑部采访整理。Leap是专为有意拓展海外市场的日本中小企业打造的SaaS平台，借助AI智能体，提供多语言网站建设、跨境电商搭建及海外营销推广支持。我们持续发布覆盖国内电商运营到海外市场拓展的各类实践内容，助力企业和创业者迈出走向全球的第一步。</p>
+  <p style="margin:0;"><a href="https://www.leap.site/zh-hans/" style="font-weight:600;">了解Leap服务详情 →</a></p>
+</div>
