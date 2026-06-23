@@ -18,8 +18,6 @@ author_image: https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap
 author_bio: A team of experts in overseas business
 ---
 
-## Google Shopping Ads Setup and Optimization | Bidding Strategies and Product Feed Creation to Maximize ROAS
-
 ### [Quick Summary] What You Need to Know to Maximize ROAS with Google Shopping Ads
 
 Running an EC site often leads to two recurring frustrations: difficulty driving traffic and inconsistent ROAS despite ongoing ad spend. Google Shopping Ads are one of the most effective tools for addressing both.

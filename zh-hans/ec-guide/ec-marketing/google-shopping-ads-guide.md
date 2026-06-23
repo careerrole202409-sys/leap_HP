@@ -18,8 +18,6 @@ author_image: https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap
 author_bio: 海外业务专家团队
 ---
 
-## Google购物广告的设置与优化｜最大化ROAS的竞价策略与商品数据源创建
-
 ### 【一分钟读懂】用Google购物广告最大化ROAS，这些要点不可不知
 
 运营电商网站时，"引不来流量""广告费花出去了，ROAS却始终不稳定"——这两个难题相信许多卖家都深有体会。此时，Google购物广告正是值得优先考虑的利器之一。
