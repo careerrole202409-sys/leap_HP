@@ -2,7 +2,7 @@
 layout: blog-post.njk
 title: "Why the Silent Umbrella Is Capturing Global Attention — The Story of Maruyasu Umbrella Co., Ltd., Founded in 1966"
 description: A Osaka-based artisan umbrella workshop has spent 18 years developing the Silent Umbrella — a double-layer design that cuts rain noise by 30–35% to protect the safety of visually impaired people. Here's why the world is taking notice.
-thumbnail: https://res.cloudinary.com/duh6rnjba/image/upload/v1782259178/2-10_qsnpzv.jpg
+thumbnail: https://res.cloudinary.com/duh6rnjba/image/upload/v1782263756/2-3_sqobx5.jpg
 date: 2026-06-24
 topic: marketing
 locale: en
@@ -14,33 +14,18 @@ author_bio: A team of experts in overseas business
 
 ### An Osaka Artisan Workshop and an Umbrella Unlike Anything Else in the World
 
+<hr style="border: none; border-top: 1.5px solid #aaa; margin: 0.4em 0;">
+<p style="text-align:center; letter-spacing: 0.2em; color: #555; font-size: 0.95em;">— Silent Umbrella —</p>
+
 An umbrella called the Silent Umbrella, developed by Maruyasu Umbrella Co., Ltd. (丸安洋傘株式会社) — a workshop based in Abeno Ward, Osaka City — is drawing significant attention from both domestic and international audiences. Founded in 1966, this long-established workshop has always completed more than 100 individual production steps entirely by hand. The Silent Umbrella took approximately 18 years to bring to market, sparked by a heartfelt request from a person with a visual impairment. In June 2026, the umbrella was featured on Nippon Television's program "Jounetsu no Shizuku" (Drops of Passion), bringing its story to audiences across the Kanto region and beyond.
 
 At the heart of this umbrella is a breakthrough double-layer design that cuts rain noise by 30–35%. For people with visual impairments, the sound of rain falling on a standard umbrella literally drowns out the surrounding audio cues they rely on as their "eyes" — the sound of traffic signals, approaching vehicles from behind, and the tap of a white cane on the pavement. Every one of these sounds gets masked by the impact of raindrops. The Silent Umbrella faces that problem head-on. This article examines what makes this umbrella genuinely distinctive, and explores why inquiries are now arriving from overseas.
 
-### Maruyasu Umbrella Co., Ltd. — A Workshop Where Craftsmanship Lives On Since 1966
-
-![Maruyasu Umbrella Co., Ltd.](https://res.cloudinary.com/duh6rnjba/image/upload/v1782259186/2-3_xtt9yv.jpg)
-
-Just a two-minute walk from JR Teradacho Station in Abeno Ward, Osaka City, there is a workshop that still carries the atmosphere of mid-20th-century Japan. Umbrella components are neatly arranged on shelves, and skilled craftspeople work steadily and quietly. This is the daily scene at Maruyasu Umbrella.
-
-Since its founding in 1966, the company has consistently produced high-quality, Japanese-made umbrellas. Umbrella manufacturing in Japan was once dominated by a specialized division-of-labor system, but around ten years ago the number of specialist craftspeople began to decline and the model became unsustainable. Maruyasu responded by learning the steps it had never previously handled in-house, building a fully integrated operation that handles everything from cutting fabric to final finishing.
-
-Today the company operates with a team of around ten people, including President Hiroyuki Kawaguchi. Hand-crafted umbrellas that pass through more than 100 individual steps can only be produced in limited quantities each day. The Silent Umbrella, in particular, is constrained to just three umbrellas per day due to the workshop's aging workforce. That limitation means each umbrella carries the full weight of the craftspeople's skill and care.
-
-Japan consumes approximately 120 to 130 million umbrellas per year. Close to 60% of those are disposable vinyl umbrellas, and over 90% of the market is made up of overseas-manufactured products. Within that landscape, Maruyasu has continued producing umbrellas that embody the full depth of Japanese umbrella-making technique — earning consistent recognition as a popular choice in premium gift catalogs. That accumulated craft is the foundation on which something as unprecedented as the Silent Umbrella became possible.
-
-### The Origin of the Idea — One Phone Call and 18 Years of Trial and Error
-
-The Silent Umbrella began with a single phone call received during the previous president's tenure — a visually impaired person asking, "Could you make us an umbrella that makes rain quieter?" At first, the workshop didn't fully understand why such an umbrella would be needed.
-
-When they listened more carefully, the gravity of the situation became clear. For visually impaired people, going outside on a rainy day can be genuinely dangerous. In everyday conditions, the sound of passing cars, the tap of a white cane on the pavement, and the electronic tones of acoustic pedestrian signals all function as "auditory vision." But the moment an umbrella goes up, the sound of raindrops striking the canopy wipes all of those cues out completely. Kenji Marutani, a teacher who is completely blind at the Osaka South School for the Visually Impaired, described his experience in a Kansai Television (Kantele) interview: "On days of heavy rain, I'd think I was walking on the right side of the road, only to find I'd drifted to the far left edge without realizing it."
-
-Confronted with that reality, Maruyasu moved immediately to begin development. But the path to a finished product was long — approximately 18 years of trial and error. The solution they eventually arrived at was a double-layer structure combining an outer mesh fabric with a standard umbrella fabric inner layer. The outer mesh catches and breaks up raindrops before they can hit the inner layer, and the calculated air gap between the two layers transforms the sound of rain into something much gentler. In October 2023, the Silent Umbrella was finally released to the public.
-
 ### What the Silent Umbrella Does — Letting People With Visual Impairments "Read the World With Their Ears"
 
 #### 30–35% Noise Reduction: As Quiet as a Library
+
+![Silent Umbrella](https://res.cloudinary.com/duh6rnjba/image/upload/v1782264251/SU_etc1lv.png)
 
 The sound of rain striking a standard vinyl umbrella registers at around 50 to 60 decibels — roughly equivalent to normal conversation or ordinary indoor ambient noise. The Silent Umbrella reduces that rain sound by 30–35%, bringing it close to the quiet of a library interior (approximately 30–40 decibels).
 
@@ -58,11 +43,17 @@ The double-layer structure also performs on sunny days. The interior temperature
 
 While the vast majority of umbrellas consumed in Japan are treated as disposable, the Silent Umbrella is built to be repaired. That repairability — made possible precisely because it is handmade — means it can be used and loved for years, significantly reducing its environmental footprint. A white label with Maruyasu's contact information is sewn inside every umbrella, giving owners a clear path to request repairs.
 
+### The Origin of the Idea — One Phone Call and 18 Years of Trial and Error
+
+The Silent Umbrella began with a single phone call received during the previous president's tenure — a visually impaired person asking, "Could you make us an umbrella that makes rain quieter?" At first, the workshop didn't fully understand why such an umbrella would be needed.
+
+When they listened more carefully, the gravity of the situation became clear. For visually impaired people, going outside on a rainy day can be genuinely dangerous. In everyday conditions, the sound of passing cars, the tap of a white cane on the pavement, and the electronic tones of acoustic pedestrian signals all function as "auditory vision." But the moment an umbrella goes up, the sound of raindrops striking the canopy wipes all of those cues out completely. Kenji Marutani, a teacher who is completely blind at the Osaka South School for the Visually Impaired, described his experience in a Kansai Television (Kantele) interview: "On days of heavy rain, I'd think I was walking on the right side of the road, only to find I'd drifted to the far left edge without realizing it."
+
+Confronted with that reality, Maruyasu moved immediately to begin development. But the path to a finished product was long — approximately 18 years of trial and error. The solution they eventually arrived at was a double-layer structure combining an outer mesh fabric with a standard umbrella fabric inner layer. The outer mesh catches and breaks up raindrops before they can hit the inner layer, and the calculated air gap between the two layers transforms the sound of rain into something much gentler. In October 2023, the Silent Umbrella was finally released to the public.
+
 ### The Ripple Effect of Television — From NHK and Kantele to NTV's "Jounetsu no Shizuku"
 
 Television media has played a central role in bringing the Silent Umbrella to wider public awareness. In 2023, NHK (Japan's public broadcaster) featured it in a national broadcast under the title "A Quiet Umbrella Born From the Voices of the Visually Impaired," generating a significant response. In July 2024, Kansai Television (Kantele) covered the umbrella in depth through a feature article and video, bringing the real-world experience of user Kenji Marutani to viewers. In June 2026, Nippon Television's ["Jounetsu no Shizuku" (Drops of Passion)](https://www.ntv.co.jp/jonetsunoshizuku/backnumber/24/) ran a dedicated feature, extending the umbrella's reach to audiences across the Kanto region. The [episode backnumber](https://www.ntv.co.jp/jonetsunoshizuku/backnumber/24/) is available on the NTV website (Japanese content).
-
-![Silent Umbrella — media coverage](https://res.cloudinary.com/duh6rnjba/image/upload/v1782259238/3-2_pe1smk.jpg)
 
 This national media exposure drove a sharp increase in orders. Inquiries from overseas media followed as well — a UK outlet requested and received an actual product. Consumer feedback has included responses like "I never knew rain could be a life-or-death issue for someone with a visual impairment" and "This is a genuinely thoughtful umbrella" — and orders have begun arriving from new user groups beyond people with disabilities, including people with auditory sensitivities and professionals in audio, recording, and live broadcasting. The umbrella has also earned recognition from official sources, receiving a Best Product designation from the "Osaka-Made Brand" certification program.
 
@@ -72,9 +63,21 @@ Globally, the development of everyday products designed for people with visual i
 
 It's entirely natural that overseas organizations supporting the visually impaired, importers of assistive devices, and retail buyers have taken notice. Interest in Japanese umbrella culture, artisanal craft, and thoughtful design is already growing through inbound tourism and cross-border e-commerce — and the Silent Umbrella sits squarely at the center of all of those threads.
 
-To respond to this growing international interest, Leap created a global website for Maruyasu Umbrella — enabling buyers and consumers from English-speaking markets and beyond to encounter the brand's story and the Silent Umbrella's value directly. The global site is available [here](https://maruyasu-lp.pages.dev/).
+To respond to this growing international interest, Leap created a global website for Maruyasu Umbrella — enabling buyers and consumers from English-speaking markets and beyond to encounter the brand's story and the Silent Umbrella's value directly. The [Maruyasu Umbrella global site](https://maruyasu-lp.pages.dev/) is now live.
 
 The next challenge is continuing to expand multilingual reach and build a sustained international content presence. Buyers and consumers in English-speaking markets, Europe, and Asia who search independently often can't find sufficient information in their own language. That gap is exactly where multilingual web marketing becomes essential.
+
+### Maruyasu Umbrella Co., Ltd. — A Workshop Where Craftsmanship Lives On Since 1966
+
+![Maruyasu Umbrella Co., Ltd.](https://res.cloudinary.com/duh6rnjba/image/upload/v1782259178/2-10_qsnpzv.jpg)
+
+Just a two-minute walk from JR Teradacho Station in Abeno Ward, Osaka City, there is a workshop that still carries the atmosphere of mid-20th-century Japan. Umbrella components are neatly arranged on shelves, and skilled craftspeople work steadily and quietly. This is the daily scene at Maruyasu Umbrella.
+
+Since its founding in 1966, the company has consistently produced high-quality, Japanese-made umbrellas. Umbrella manufacturing in Japan was once dominated by a specialized division-of-labor system, but around ten years ago the number of specialist craftspeople began to decline and the model became unsustainable. Maruyasu responded by learning the steps it had never previously handled in-house, building a fully integrated operation that handles everything from cutting fabric to final finishing.
+
+Today the company operates with a team of around ten people, including President Hiroyuki Kawaguchi. Hand-crafted umbrellas that pass through more than 100 individual steps can only be produced in limited quantities each day. The Silent Umbrella, in particular, is constrained to just three umbrellas per day due to the workshop's aging workforce. That limitation means each umbrella carries the full weight of the craftspeople's skill and care.
+
+Japan consumes approximately 120 to 130 million umbrellas per year. Close to 60% of those are disposable vinyl umbrellas, and over 90% of the market is made up of overseas-manufactured products. Within that landscape, Maruyasu has continued producing umbrellas that embody the full depth of Japanese umbrella-making technique — earning consistent recognition as a popular choice in premium gift catalogs. That accumulated craft is the foundation on which something as unprecedented as the Silent Umbrella became possible.
 
 ### FAQ
 
