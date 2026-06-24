@@ -2,7 +2,7 @@
 layout: blog-post.njk
 title: サイレントアンブレラが世界から注目される理由――1966年創業・丸安洋傘の「思いやりの傘」が変える雨の日
 description: 大阪の老舗傘工房・丸安洋傘が開発した「サイレントアンブレラ」。雨音をカットし視覚障がい者の安全を守る画期的な二重構造の傘が、なぜ海外からも注目されるのかを解説します。
-thumbnail: https://res.cloudinary.com/duh6rnjba/image/upload/v1782259238/3-2_pe1smk.jpg
+thumbnail: https://res.cloudinary.com/duh6rnjba/image/upload/v1782262471/3-2_ote9pp.jpg
 date: 2026-06-24
 topic: marketing
 locale: ja
