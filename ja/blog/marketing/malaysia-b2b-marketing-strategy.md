@@ -99,6 +99,11 @@ JETROは、マレーシアにおけるビジネスマッチングイベントを
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 * [JETRO「多民族国家マレーシアで東南アジア向けテストマーケティングを」](https://www.jetro.go.jp/biz/areareports/2024/b385175f12c9219f.html)

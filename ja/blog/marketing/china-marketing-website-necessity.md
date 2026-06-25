@@ -100,6 +100,11 @@ Leapでは、グローバルな公式サイトの構築と同時に、中国語�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 *   [Tencent 公式サイト（WeChat製品情報）](https://www.tencent.com/en-us/)

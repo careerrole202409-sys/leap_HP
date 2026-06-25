@@ -137,3 +137,9 @@ Chowon氏の活動や協業の可能性に関心のある方は、以下から�
 Leapは、日本の中小企業の多言語ウェブ展開と海外デジタルマーケティングを支援しています。グローバル市場への最初の一歩を踏み出したい方、または既存のプレゼンスを強化したい方は、ぜひご相談ください。
 
 **Leapへのお問い合わせ：** [https://www.leap.site/ja/about/#contact](https://www.leap.site/ja/about/#contact)
+
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+

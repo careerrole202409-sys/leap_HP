@@ -96,6 +96,11 @@ Leapは、日本語サイトをそのまま翻訳するのではなく、現地�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 * [Booking.com ABテスト文化についての解説（VWO Blog）](https://vwo.com/blog/cro-best-practices-booking/)

@@ -94,6 +94,11 @@ SNS広告の効果を高める上で、クリエイティブのローカライ�
 
 Leapの多言語HP作成ツールは、日本語サイトの翻訳ではなく、現地にローカライズしたページを新たに作成することを前提に設計されています。海外SNS広告の受け皿として機能する、現地ユーザーに伝わるLPを効率よく構築したい方は、ぜひLeapのサービスをご覧ください。
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ## 参考資料・出典一覧
 
 * [Meta for Business「広告ターゲティングについて」](https://www.facebook.com/business/ads/ad-targeting)

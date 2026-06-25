@@ -110,6 +110,11 @@ author_bio: 海外ビジネスのエキスパートチーム
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料
 
 取材協力：[株式会社竹山](https://www.takeyama.co.jp/) 嶋本 哲哉 様（取締役 執行役員 営業本部マーケティング部長）

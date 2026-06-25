@@ -158,6 +158,11 @@ Leapが提供する多言語HP・LP作成サービスは、日本語サイトを
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ## 参考資料・出典一覧
 
 * [CROSS LANGUAGE「ホームページ自動翻訳ツールおすすめ8選！選び方や注意点を徹底解説」](https://www.crosslanguage.co.jp/blog/website-translation-tools-guide/)

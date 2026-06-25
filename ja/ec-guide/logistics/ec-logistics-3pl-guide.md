@@ -164,6 +164,9 @@ Leapでは、EC事業者・越境EC展開を目指す企業向けに、物流・
 
 海外販売・越境ECに関する情報はこちら：https://www.leap.site/ja/blog/
 
+* [Leap ECサイト作製マニュアル 一覧へ](https://www.leap.site/ja/ec-guide)
+* [Leap 海外ビジネスマニュアル 一覧へ](https://www.leap.site/ja/blog)
+
 ### 参考資料・出典URL一覧
 
 ・[EC物流サービスおすすめ5選【2026年版】（STOCKCREW）](https://stockcrew.co.jp/insights/ec-logistics-ranking-comparison)

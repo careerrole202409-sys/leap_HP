@@ -110,6 +110,11 @@ Leapは、日本語のサイトをそのまま翻訳するのではなく、現�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 * [Klarna プレスリリース「Klarna AI assistant handles two-thirds of customer service chats in its first month」](https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/)

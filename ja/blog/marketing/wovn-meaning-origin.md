@@ -98,6 +98,11 @@ Leapでは、WOVN.ioのような翻訳挿入型ツールとは異なるアプロ
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ## 参考資料・出典一覧
 
 * [予約ラボ「世界のサイトを母国語で。WOVN.ioの『ミニマル』で『オープン』な野望とは。」（星野陽介氏によるWOVN.io創業者インタビュー）](https://yoyakulab.net/business/i18n-wovn-interview/)

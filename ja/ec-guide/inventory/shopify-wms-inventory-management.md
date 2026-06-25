@@ -216,3 +216,7 @@ EC運営の効率化から海外展開まで、幅広い実践的な情報を発
 - [WMSとは | 日本通運](https://www.nittsu.co.jp/v-site/85.html)
 - [Shopifyの在庫管理機能とネクストエンジン連携 | ネクストエンジン](https://next-engine.net/ec-blog/shopify-stock-management/)
 - [WMS（倉庫管理システム）選定のポイント | 日本通運](https://www.nipponexpress.com/dcx/jp/blog/questions-help-you-choose-wms/index.html)
+
+* [Leap ECサイト作製マニュアル 一覧へ](https://www.leap.site/ja/ec-guide)
+* [Leap 海外ビジネスマニュアル 一覧へ](https://www.leap.site/ja/blog)
+

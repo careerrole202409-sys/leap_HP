@@ -74,6 +74,11 @@ WOVN.ioの最大の価値は、開発コストと翻訳工数を大幅に削減�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 * [ITトレンド「WOVN.ioとは？価格・機能・使い方を解説」](https://it-trend.jp/website_translation_tool/13761)

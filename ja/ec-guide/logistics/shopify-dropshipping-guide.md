@@ -117,6 +117,9 @@ Shopifyドロップシッピングをさらに越境EC・多言語展開へと�
 - [Leap公式ブログ](https://www.leap.site/ja/blog/)
 - [越境EC・多言語対応マニュアル](https://www.leap.site/ja/ec-guide/)
 
+* [Leap ECサイト作製マニュアル 一覧へ](https://www.leap.site/ja/ec-guide)
+* [Leap 海外ビジネスマニュアル 一覧へ](https://www.leap.site/ja/blog)
+
 ### 参考URL
 
 - [Shopify公式｜ドロップシッピングガイド](https://www.shopify.com/jp/blog/dropshipping-guide)

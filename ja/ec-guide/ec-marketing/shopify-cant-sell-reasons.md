@@ -228,3 +228,7 @@ Leapが提供する多言語HP・ECサイト作成ツールは、日本語サイ
 [Shopifyおすすめのメールマーケティングアプリ](https://www.ec-power.io/ja-jp/blog/shopify-app-email-marketing)
 
 [Shopify広告運用の完全ガイド](https://blog.nb-a.jp/e-commerce/shopify-googleads-metaads-integration-guide/)
+
+* [Leap ECサイト作製マニュアル 一覧へ](https://www.leap.site/ja/ec-guide)
+* [Leap 海外ビジネスマニュアル 一覧へ](https://www.leap.site/ja/blog)
+

@@ -193,6 +193,11 @@ WOVN.ioはあくまで「既存サイトに翻訳を後付けする」ツール�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ## 参考資料・出典一覧
 
 * [WOVN.io公式ブログ「河合楽器製作所、WebマニュアルをWOVN.ioで6言語対応」](https://wovn.io/ja/blog/pressrelease-kawai/)

@@ -83,6 +83,11 @@ A: できます。BOI認可のない通常のタイ法人は、法人税率20%�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料：
 
 *   [外国企業の会社設立手続き・必要書類 | ジェトロ](https://www.jetro.go.jp/world/asia/th/invest_09.html)

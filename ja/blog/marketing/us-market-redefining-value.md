@@ -94,6 +94,11 @@ LinkedInを中心としたデジタルプレゼンスの構築と、業界特化
 [資料ダウンロード](#)
 [お問い合わせ](#)
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料
 *   [シンガポールでの国際特許・商標登録とブランド保護戦略](https://www.leap.site/ja/blog/countries/singapore/singapore-ip-brand-protection/)
 *   [JETRO：米国における日本企業のビジネス概況（2025年）](https://www.jetro.go.jp/world/reports/2025/01/us-biz-survey.html)

@@ -101,6 +101,11 @@ Leapは、日本語サイトをそのまま英語に変換するのではなく�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 * [DIGIMA〜出島〜「シンガポールBtoBマーケティング成功ガイド｜商習慣・集客施策・リード獲得戦略を徹底解説」](https://www.digima-japan.com/knowhow/singapore/d-globalbusiness-250407.php)

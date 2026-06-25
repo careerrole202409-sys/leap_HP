@@ -77,6 +77,11 @@ Leapでは、日本語サイトをそのまま翻訳するのではなく、繁�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 *   [JETRO「台湾のビジネス環境・投資環境」](https://www.jetro.go.jp/world/asia/tw/invest_01.html)

@@ -55,6 +55,11 @@ A3：まず市場調査と現地パートナー選定が不可欠です。タイ
 
 タイ市場は人口規模と経済の底力があり、EECをはじめとする官民連携の投資促進政策で成長が期待されています。特に製造業や健康・美容、デジタル分野で日本企業に有利なニーズが多く、中小企業にも十分なビジネスチャンスがあります。本レポートで示したマクロ経済動向と消費者トレンドを参考に、各種支援制度や効果的なマーケティング手法を検討してください。Leapでは現地パートナーの紹介、多言語サイトや越境ECの構築、SNS自動翻訳投稿などワンストップで支援しています。タイへの販路開拓をお考えの際はぜひLeapのサービスをご活用いただき、海外展開の第一歩を踏み出しましょう。
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料
 
 *   [IMF (2025) “Executive Board Concludes 2024 Article IV Consultation with Thailand”](https://www.imf.org/en/news/articles/2025/02/20/pr25040-thailand-imf-executive-board-concludes-2024-article-iv-consultation-with-thailand)

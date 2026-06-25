@@ -122,6 +122,11 @@ Zoom Webinarなどのツール利用料は月額数万円から始められま�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料
 
 * [シャノン「ウェビナーは「歩留まりが低い」「案件化しない」は本当か？」](https://marketing.itmedia.co.jp/mm/articles/2007/23/news018.html)

@@ -79,6 +79,11 @@ author_bio: 海外ビジネスのエキスパートチーム
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考文献・出典
 
 *   [タイ：税関登録および模倣品差止に関する新しい規則の施行 – Tilleke & Gibbins](https://www.tilleke.com/ja/insights/タイ：税関登録および模倣品差止に関する新しい/3/)

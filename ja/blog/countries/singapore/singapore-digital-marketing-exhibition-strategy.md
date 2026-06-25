@@ -96,6 +96,11 @@ A: JETROや商工会議所が開催する日系企業向けセミナーやビジ
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・情報源
 
 *   [Leap編集部「〖事例〗シンガポールの高付加価値サービス市場で成功した日本の中小企業」（Leap公式ブログ）](https://www.leap.site/ja/blog/countries/singapore/singapore-market-success-cases/)

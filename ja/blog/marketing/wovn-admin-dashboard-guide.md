@@ -115,6 +115,11 @@ WOVN.ioが多くの企業に選ばれる理由は、単に翻訳機能が優れ�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 * [WOVN.io ヘルプセンター「導入準備から本番リリースまでの流れ」](https://support.wovn.io/hc/ja/articles/18464599164953)

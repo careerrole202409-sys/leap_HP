@@ -156,6 +156,9 @@ Leapでは、国内ECの構築・運用にとどまらず、多言語対応や�
 海外展開・越境ECに関する実践的な情報を多数発信しています。
 [Leapのブログ一覧](https://www.leap.site/ja/blog/)
 
+* [Leap ECサイト作製マニュアル 一覧へ](https://www.leap.site/ja/ec-guide)
+* [Leap 海外ビジネスマニュアル 一覧へ](https://www.leap.site/ja/blog)
+
 ## 参考記事
 
 - [EC商品一括登録・CSV活用ガイド](https://bindec.jp/media/555953137422/)

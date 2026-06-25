@@ -111,6 +111,11 @@ PRNewswireやBusinessWireといったグローバルな配信サービスは、S
 
 Leapでは、多言語ウェブサイトの構築において、単なる翻訳ではなく現地市場に最適化されたコンテンツの制作を支援しています。海外PRの効果を最大化したい、またはグローバルなウェブマーケティング基盤を整えたいとお考えの方は、ぜひLeapのサービスをご確認ください。
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 - [Leap「シンガポールでの国際特許・商標登録とブランド保護戦略」](https://www.leap.site/ja/blog/countries/singapore/singapore-ip-brand-protection/)

@@ -136,6 +136,11 @@ Leapでは、海外代理店開拓に特化したSaaSプラットフォームを
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考文献・出典一覧
 
 *   **JETRO（日本貿易振興機構）**: [https://www.jetro.go.jp/](https://www.jetro.go.jp/)

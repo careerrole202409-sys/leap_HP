@@ -73,6 +73,11 @@ A：Leapでは海外代理店マッチング、多言語ホームページやコ
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考文献・情報源
 
 *   [AXIAマーケティング「【シンガポール市場調査】～ビジネス成功事例やメリット～」](https://axiamark.com/knowledge/3307/) (シンガポール市場の特徴解説)

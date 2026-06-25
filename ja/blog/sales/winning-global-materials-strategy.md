@@ -125,3 +125,9 @@ USP（Unique Selling Proposition：独自の売り）は、競合との差別化
 
 海外展開という大きな挑戦の第一歩を、私たちLeapと共に踏み出してみませんか？
 まずは、Leapのサービス紹介資料をご覧いただき、貴社の海外戦略にどのように貢献できるか、ぜひご検討ください！
+
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+

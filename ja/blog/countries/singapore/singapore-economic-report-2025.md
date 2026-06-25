@@ -92,6 +92,11 @@ author_bio: 海外ビジネスのエキスパートチーム
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料
 
 *   [ジェトロ『2025年通年のGDP成長率予測、4.0％前後に上方修正』（ビジネス短信）](https://www.jetro.go.jp/biznews/2025/12/af41595a84650ba6.html)

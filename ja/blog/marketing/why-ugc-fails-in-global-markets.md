@@ -105,6 +105,11 @@ ShopeeやLazadaといった東南アジアのEC大手プラットフォームで
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 *   [Glossier公式サイト – ブランドストーリー](https://www.glossier.com/pages/about)

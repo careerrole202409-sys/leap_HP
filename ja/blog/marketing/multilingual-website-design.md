@@ -138,6 +138,11 @@ YKKやマキタが示すように、グローバルサイト設計において�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ## 参考資料・出典一覧
 
 * [YKK株式会社 グローバルサイト](https://www.ykk.com/)

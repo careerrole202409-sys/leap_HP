@@ -131,6 +131,11 @@ YouTubeを海外向け動画マーケティングの中核に据え、多言語�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 *[YouTube ヘルプ「世界中の視聴者にアプローチするための戦略を選択する」](https://support.google.com/youtube/answer/6070467?hl=ja)

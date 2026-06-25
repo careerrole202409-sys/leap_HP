@@ -113,6 +113,11 @@ Wovn Technologiesは、2014年の設立から10年余りで18,000サイト以上
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ## 参考資料・出典一覧
 
 * [Wovn Technologies株式会社 公式サイト「会社概要」](https://wovn.io/ja/about/)

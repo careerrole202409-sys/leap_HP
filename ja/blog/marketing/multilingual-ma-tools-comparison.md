@@ -93,6 +93,11 @@ HubSpotは中小企業が多言語MAを始めるうえで最もアクセスし�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ## 参考資料・出典一覧
 
 * [HubSpot「多言語コンテンツ - HubSpot docs」](https://developers.hubspot.jp/docs/cms/features/multi-language-content)

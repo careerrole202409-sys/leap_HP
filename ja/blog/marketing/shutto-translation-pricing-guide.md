@@ -117,6 +117,11 @@ Shutto翻訳の料金体系は、月額8,000円（税抜）から始まるペー
 * WOVNのスクリプト方式とは？HTMLへの挿入手順・仕組み・他の導入方式との違いを解説
 * 海外展開を検討する企業担当者向け：ウェブサイト多言語化の基本と戦略
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 * [shutto翻訳 価格ページ（ITreview）](https://www.itreview.jp/products/shuttohonyaku/price)

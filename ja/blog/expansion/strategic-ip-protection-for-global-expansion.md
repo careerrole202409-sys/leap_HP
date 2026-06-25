@@ -110,6 +110,11 @@ A: お勧めしません。代理店名義で登録されてしまうと、契�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典
 
 *   特許庁：[スッキリわかる知的財産権](https://www.jpo.go.jp/system/basic/index.html)

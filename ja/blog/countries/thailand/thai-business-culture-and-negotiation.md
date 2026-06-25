@@ -93,6 +93,11 @@ A. 公の場で厳しく叱るのは避け、個別にフォローするのが�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料（URL一覧）
 
 *   [タイの習慣とビジネス常識｜商談・契約・人間関係で失敗しないための商習慣ガイド（Digima～出島～）](https://www.digima-japan.com/knowhow/thailand/)

@@ -64,6 +64,11 @@ A: ラブアン法人は海外取引のみを行う場合に適用され、所�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考文献
 
 *   [JETRO「外国企業の会社設立手続き・必要書類（マレーシア）」](https://www.jetro.go.jp/world/asia/my/invest_09.html)

@@ -49,6 +49,11 @@ A3. ビジネス言語としては英語が広く使われますが、マレー�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料
 
 *   マイファーム ニュースリリース「[マイファームとPLS plantations Groupが包括連携　共同でマレーシアにおける大規模なドリアン栽培プロジェクトを展開](https://myfarm.co.jp/news/20230119_press-release_durianpj/)」（株式会社マイファーム公式サイト, 2023）

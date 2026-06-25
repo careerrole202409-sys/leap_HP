@@ -107,3 +107,9 @@ JETROをはじめとする公的支援をフル活用し、さらにLeapのプ�
 *   [中小企業の海外展開支援策について - 国土交通省](https://www.mlit.go.jp/common/001156849.pdf)
 *   [海外展開支援事例集 - 東京都中小企業振興公社](https://www.tokyo-kosha.or.jp/topics/h30_jirei_kaigai.pdf)
 *   [2024年版中堅中小企業のための 海外展開ガイドブック（東北版）](https://www.tohoku.meti.go.jp/s_kokusai/pdf/guidebook.pdf)
+
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+

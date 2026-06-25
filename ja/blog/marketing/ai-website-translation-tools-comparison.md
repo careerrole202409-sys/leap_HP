@@ -217,6 +217,11 @@ Leapでは、翻訳を超えた「現地最適化」に特化した多言語Web�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 *   [ホームページ自動翻訳ツールおすすめ8選！選び方や注意点を徹底解説 - CROSS LANGUAGE コラム](https://www.crosslanguage.co.jp/blog/website-translation-tools-guide/)

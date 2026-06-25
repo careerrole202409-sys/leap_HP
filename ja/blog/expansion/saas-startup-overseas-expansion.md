@@ -141,3 +141,9 @@ Spectee 根来さんのインタビューから、SaaSおよびBtoB企業が海�
 Specteeの企業情報： https://spectee.co.jp/history/
 
 2026年4月取材
+
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+

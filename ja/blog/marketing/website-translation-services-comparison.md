@@ -163,6 +163,11 @@ Leapでは、日本語サイトを単に翻訳するのではなく、現地市�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 * [Web幹事「【多言語翻訳】おすすめの翻訳サービス12選を比較【2026年最新版】」](https://web-kanji.com/posts/objects-multi-language)

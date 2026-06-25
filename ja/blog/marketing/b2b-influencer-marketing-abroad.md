@@ -129,6 +129,11 @@ Leapでは、海外展開を目指す日本の中小企業向けに、現地に�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 *[Ogilvy「B2B Influencer Marketing Report」（調査概要参照）](https://www.ogilvy.com/ideas/influencing-business-global-rise-b2b-influencer-marketing)

@@ -86,6 +86,11 @@ author_bio: 海外ビジネスのエキスパートチーム
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 * [フィリピンBtoBマーケティング戦略ガイド｜商習慣の理解からリード獲得戦略まで（Digima）](https://www.digima-japan.com/knowhow/philippines/d-globalbusiness-250409.php)

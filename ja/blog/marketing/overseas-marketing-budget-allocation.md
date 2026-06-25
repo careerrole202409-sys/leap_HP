@@ -109,6 +109,11 @@ Leapは、日本語サイトをそのまま翻訳するのではなく、現地�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 * [電通B2Bi「海外B2Bマーケティング予算の決め方と配分ポイント」](https://b2b.dentsu.jp/column/2024_trend-0)

@@ -125,6 +125,11 @@ Leapは、日本語サイトの単純翻訳ではなく、現地の文化・言�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ## 参考資料・出典一覧
 
 * [資生堂 Annual Report（資生堂公式）](https://corp.shiseido.com/report/en/)

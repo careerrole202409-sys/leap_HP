@@ -114,6 +114,11 @@ Leapでは、こうした現地文化への適応を前提とした多言語サ�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 *[Meltwater and We Are Social「Digital 2025: The United States Of America」](https://www.meltwater.com/en/blog/digital-trends-usa)

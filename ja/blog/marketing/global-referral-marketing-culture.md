@@ -135,6 +135,11 @@ DropboxとAirbnbの事例が示すように、優れたリファラルプログ�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 * [Money, R.B., Gilly, M.C., & Graham, J.L. (1998). "Explorations of National Culture and Word-of-Mouth Referral Behavior in the Purchase of Industrial Services in the United States and Japan." Journal of Marketing, 62(4), 76–87.](https://scholarsarchive.byu.edu/facpub/8630/)

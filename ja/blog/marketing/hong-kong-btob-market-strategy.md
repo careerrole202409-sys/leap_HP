@@ -80,6 +80,11 @@ Leapは、日本の中小企業が海外市場で確かな存在感を示すた�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料
 
 *   [ジェトロ「在香港の域外企業拠点数、過去最多の9,960社に」（2025年）](https://www.jetro.go.jp/biznews/2025/01/b21092e6f40a8e17.html)

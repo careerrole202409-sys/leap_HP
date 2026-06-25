@@ -92,6 +92,11 @@ Googleのアルゴリズムは、ユーザーの検索意図（サーチイン�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 *   [Leap「シンガポールでの国際特許・商標登録とブランド保護戦略」](https://www.leap.site/ja/blog/countries/singapore/singapore-ip-brand-protection/)

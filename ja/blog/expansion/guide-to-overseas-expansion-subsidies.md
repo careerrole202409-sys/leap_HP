@@ -170,3 +170,9 @@ A3: はい、多くの補助金では再申請が可能です。不採択理由�
 *   市場開拓助成事業: [http://www.tokyo-kosha.or.jp/support/josei/jigyo/shijo.html](http://www.tokyo-kosha.or.jp/support/josei/jigyo/shijo.html)
 *   海外販路の開拓支援プログラム: [https://www.tokyo-kosha.or.jp/TTC/matching/sales_channel/index.html](https://www.tokyo-kosha.or.jp/TTC/matching/sales_channel/index.html)
 *   トップページ: [https://www.tokyo-kosha.or.jp/](https://www.tokyo-kosha.or.jp/)
+
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+

@@ -94,6 +94,11 @@ Leapは、単なる翻訳ではなく「現地にローカライズした多言�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ## 参考資料・出典一覧
 
 * [GA4とヒートマップでユーザー行動分析｜AIアナリストブログ](https://wacul-ai.com/blog/access-analysis/ga4-heatmap/)

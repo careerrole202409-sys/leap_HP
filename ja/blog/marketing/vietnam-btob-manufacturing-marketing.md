@@ -101,6 +101,11 @@ JETROの報告では、コスト削減（34.2%）を上回る形で「営業・�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ## 参考資料・出典一覧
 
 * [JETRO「在ベトナム日系企業、『非日系市場』への営業強化」（2024年）](https://www.jetro.go.jp/biz/areareports/2024/2262dc38873bfa80.html)

@@ -95,6 +95,11 @@ Leapでは、インドネシアをはじめとする東南アジア市場向け�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 * [JETRO「インフルエンサー・マーケティング活用の手引（インドネシア）」](https://www.jetro.go.jp/biz/areareports/2021/a3738db2813633b4.html)
