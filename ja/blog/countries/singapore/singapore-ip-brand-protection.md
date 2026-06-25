@@ -70,6 +70,11 @@ IPOS（シンガポール特許庁）のオンライン出願システムを利�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 *   [IPOS（シンガポール知的財産庁）「How to Register Trade Marks」](https://www.ipos.gov.sg/about-ip/trade-marks/how-to-register)

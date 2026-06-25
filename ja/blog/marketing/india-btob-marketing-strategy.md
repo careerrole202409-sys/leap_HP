@@ -89,6 +89,11 @@ Leapでは、日本語サイトの翻訳ではなく、現地の産業・文化�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 *   [キャククル「インド市場のマーケティング戦略｜日本企業がリード獲得を成功させる方法」](https://www.shopowner-support.net/attracting_customers/area/inbound-attract/india-japan-business-strategy-collaboration/)

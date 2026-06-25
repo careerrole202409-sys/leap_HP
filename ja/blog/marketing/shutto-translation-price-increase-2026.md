@@ -158,6 +158,11 @@ Leapは、海外展開を目指す日本の中小企業向けに、多言語ウ�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 *   [【重要なお知らせ】shutto翻訳利用料金改定（値上げ）のお知らせ｜e-365株式会社](https://www.submit.ne.jp/shutto-translation/news/20251201)

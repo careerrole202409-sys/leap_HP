@@ -122,6 +122,11 @@ WOVNでは、運用開始後も専任のカスタマーサクセスチームが�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 * [WOVN.io 導入/運用サポートページ](https://mx.wovn.io/product/sprt)

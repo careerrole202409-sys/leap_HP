@@ -240,3 +240,9 @@ CrossLinkAsiaは、中国進出のアドバイスだけする会社じゃなく�
 ご興味のある方は、ぜひ以下よりお問い合わせ・ご相談ください。
 
 **[CrossLinkAsia 公式サイト / お問い合わせはこちら](https://crosslink.asia/)**
+
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+

@@ -89,6 +89,11 @@ author_bio: 海外ビジネスのエキスパートチーム
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 * [タイのBtoBマーケティング最新トレンド｜企業向け集客と営業手法を徹底解説](https://www.digima-japan.com/knowhow/thailand/expert-southpoint-00008.php)

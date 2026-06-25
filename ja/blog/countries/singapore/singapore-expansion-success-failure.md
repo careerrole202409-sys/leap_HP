@@ -58,6 +58,11 @@ Leapでは、多言語HP作成、海外代理店マッチング、越境EC開設
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考文献
 
 *   [ジェトロ「株式会社オーケーエム：グローバル企業として社内体制の国際化を進める」](https://www.jetro.go.jp/case_study/global/okm.html)

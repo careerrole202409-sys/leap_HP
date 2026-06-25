@@ -166,6 +166,8 @@ Leapでは、越境EC・海外ビジネスに関する実践的な情報を継�
 
 [海外ビジネスマニュアル一覧](https://www.leap.site/ja/blog/)
 
+* [Leap ECサイト作製マニュアル 一覧へ](https://www.leap.site/ja/ec-guide)
+* [Leap 海外ビジネスマニュアル 一覧へ](https://www.leap.site/ja/blog)
 
 ## 参考文献
 

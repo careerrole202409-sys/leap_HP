@@ -153,6 +153,11 @@ shutto翻訳は手軽さとコスト効率を重視する中小EC向け、WOVN.i
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ## 参考記事
 
 - [futureshop「shutto翻訳」提携サービス紹介ページ](https://www.future-shop.jp/tieup/problem/sales/shuttotranslation/)

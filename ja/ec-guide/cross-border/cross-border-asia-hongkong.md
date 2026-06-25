@@ -142,6 +142,8 @@ Shopee Japan経由でアカウント申請を行い、シンガポールまた�
 - [シンガポール進出の知的財産・ブランド保護について](https://www.leap.site/ja/blog/countries/singapore/singapore-ip-brand-protection/)
 - [多言語ECサイト構築について](https://www.leap.site/ja/services/multilingual-ec)
 
+* [Leap ECサイト作製マニュアル 一覧へ](https://www.leap.site/ja/ec-guide)
+* [Leap 海外ビジネスマニュアル 一覧へ](https://www.leap.site/ja/blog)
 
 ## 参考文献
 

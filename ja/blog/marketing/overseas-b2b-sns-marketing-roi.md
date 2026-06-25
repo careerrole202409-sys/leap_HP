@@ -129,6 +129,11 @@ Leapは、日本語サイトの翻訳ではなく、現地市場に合わせて�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 *[LinkedIn Business「The B2B Institute: Why B2B Marketing Matters」](https://business.linkedin.com/marketing-solutions/b2b-institute)

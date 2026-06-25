@@ -204,6 +204,11 @@ Shutto翻訳は、Webサイトの多言語対応を自社内で主体的に運�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考記事
 
 * [shutto翻訳とは？価格・機能・使い方を解説｜ITトレンド](https://it-trend.jp/ai_translation_tool/13717)

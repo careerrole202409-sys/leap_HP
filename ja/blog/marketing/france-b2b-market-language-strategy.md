@@ -88,6 +88,11 @@ Leapでは、日本語サイトの翻訳ではなく、現地の文化・言語�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 * [Creditsafe「フランス進出で知っておきたい商習慣・経済情報」](https://www.creditsafe.com/jp/ja/blog/business/fr.html)

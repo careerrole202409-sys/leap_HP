@@ -89,3 +89,9 @@ LP制作でも、ターゲットの文化的背景や購買心理を無視して
 - [海外向け動画マーケティング── YouTubeを「集客装置」にする戦略設計](/ja/blog/marketing/overseas-video-marketing-youtube/)
 - [文化で変わるCVR── 海外サイトのコンバージョン最適化7つの鉄則](/ja/blog/marketing/cultural-cvr-optimization/)
 - [「翻訳サイト」から脱却する── 売上に直結する多言語サイト設計の全体像](/ja/blog/marketing/multilingual-website-design/)
+
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+

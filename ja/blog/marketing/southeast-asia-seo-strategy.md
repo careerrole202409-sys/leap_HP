@@ -72,6 +72,11 @@ A: ただの翻訳では不十分です。現地の文化や言い回しを無�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考記事・資料：
 
 *   [Leap編集部『シンガポールでの国際特許・商標登録とブランド保護戦略』（Leap）](https://www.leap.site/ja/blog/countries/singapore/singapore-ip-brand-protection/)

@@ -124,6 +124,9 @@ https://www.leap.site/ja/blog/
 
 海外進出戦略、ローカライズの実務、各国市場の最新情報まで、越境EC・海外マーケティングに役立つコンテンツを継続的に発信しています。
 
+* [Leap ECサイト作製マニュアル 一覧へ](https://www.leap.site/ja/ec-guide)
+* [Leap 海外ビジネスマニュアル 一覧へ](https://www.leap.site/ja/blog)
+
 ## 参考記事URL
 
 - [ShopifyとBASE・STORES・カラーミーショップを徹底比較！](https://shopi-lab.com/shopify-information/5589/)

@@ -150,6 +150,9 @@ https://www.leap.site/ja/blog/
 
 ---
 
+* [Leap ECサイト作製マニュアル 一覧へ](https://www.leap.site/ja/ec-guide)
+* [Leap 海外ビジネスマニュアル 一覧へ](https://www.leap.site/ja/blog)
+
 ### 参考記事・出典一覧
 
 - [Shopify公式ブログ「Shopifyのストア例33選：参考にしたいShopifyサイト」](https://www.shopify.com/jp/blog/shopify-stores)

@@ -107,6 +107,11 @@ Leapは、日本語サイトの翻訳ではなく、現地市場向けにコン�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 * [WPBeginner「WordPress サイトを多言語化するおすすめプラグイン9選」](https://www.wpbeginner.com/ja/showcase/9-best-translation-plugins-for-wordpress-websites/)

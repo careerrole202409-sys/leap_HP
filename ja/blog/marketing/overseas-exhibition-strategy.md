@@ -77,6 +77,11 @@ THK株式会社は、Hannover Messe（ハノーバーメッセ）出展に際し
 
 Leapでは、多言語HPの作成から現地語コンテンツの制作まで、海外展開を目指す中小企業のWebマーケティングをワンストップで支援しています。まずはサービス内容をご覧いただき、展示会前後の設計づくりにぜひお役立てください。
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 * [CEIR（Center for Exhibition Industry Research）公式サイト](https://www.ceir.org/)

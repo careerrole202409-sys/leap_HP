@@ -153,6 +153,9 @@ Leapでは、日本語サイトを単純に翻訳するのではなく、現地�
 
 ---
 
+* [Leap ECサイト作製マニュアル 一覧へ](https://www.leap.site/ja/ec-guide)
+* [Leap 海外ビジネスマニュアル 一覧へ](https://www.leap.site/ja/blog)
+
 ## 参考記事・情報源
 
 - https://techgym.jp/column/no-kode/

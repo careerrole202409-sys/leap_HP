@@ -112,6 +112,11 @@ WOVN.ioの3つの導入方式を整理すると、「スクリプト方式 = 最
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 *   [PLAY DEVELOPERS BLOG「多言語翻訳サービスのWOVNについて調べてみた」](https://developers.play.jp/entry/2024/04/12/172605)

@@ -117,6 +117,11 @@ Myサイト翻訳が提供する「for SEO」オプションは、プロキシ�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ## 参考資料・出典一覧
 
 *   [Myサイト翻訳 公式サイト「ご利用の流れ / 料金プラン」](https://mysite-ai.jp/flow-plan/)

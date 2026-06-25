@@ -149,6 +149,11 @@ Leapでは、こうした現地基準に対応した多言語Webサイトの構�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 - S&S Consult「[German B2B Sales Guide: How to Win Your First Business Clients](https://www.sandsconsult.com/knowledge/understanding-german-b2b-decision-making-a-guide-to-winning-your-first-clients)」

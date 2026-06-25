@@ -69,6 +69,11 @@ A3. CTAボタンの配置や表現は国によって異なります。日本や�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ## 参考資料
 
 * [Tim Ash（SiteTuners）「The Wide World of Conversions: Exploring Cultural Differences」（英語）](https://sitetuners.com/blog/the-wide-world-of-conversions-exploring-cultural-differences/)

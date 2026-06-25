@@ -89,6 +89,11 @@ Leapが提供する多言語Webサイト・LP作成ツールは、日本語サ�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ## 参考資料・出典一覧
 
 * [帝国データバンク「海外進出に関する企業の意識調査」（2014年）](https://www.tdb.co.jp/)

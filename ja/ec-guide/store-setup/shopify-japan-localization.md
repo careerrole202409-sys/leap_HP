@@ -131,6 +131,9 @@ https://www.leap.site/ja/blog/
 
 越境ECや海外ウェブマーケティングに取り組む中小企業の皆さんが、現地のユーザーに「違和感なく選ばれる」ブランドを構築するための情報をお届けしています。
 
+* [Leap ECサイト作製マニュアル 一覧へ](https://www.leap.site/ja/ec-guide)
+* [Leap 海外ビジネスマニュアル 一覧へ](https://www.leap.site/ja/blog)
+
 ## 参考資料・出典一覧
 
 - [Shopify Japan 公式サイト](https://www.shopify.com/jp/about)

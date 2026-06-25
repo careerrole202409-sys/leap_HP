@@ -101,6 +101,11 @@ Leapでは、翻訳ではなく「現地にローカライズされたページ�
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 *   [World Business Culture「British Communication Styles」](https://www.worldbusinessculture.com/country-profiles/great-britain/business-communication-style/)

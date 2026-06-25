@@ -155,3 +155,9 @@ Webでの情報発信、採用ブランディング、現地ネットワーク�
 
 **リープの多言語AI Web制作ツールを試してみる：**
 [無料でスタート →](https://www.leap.site/ja/)
+
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+

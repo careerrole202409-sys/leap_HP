@@ -67,6 +67,11 @@ Leapは、こうした海外展開の課題に対し、現地代理店とのマ�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料
 
 *   [タイ発 健闘する日本企業 ケンミン食品の現地生産事例（Mono Que）](https://monoquer.com/archives/1911)

@@ -80,6 +80,11 @@ Leapのサービスについては、まずは無料でお試しいただくこ�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料・出典一覧
 
 *   [テクノポート株式会社「海外BtoB企業がLinkedIn運用に取り組む5つの理由・事例」](https://marketing.techport.co.jp/archives/38606/)

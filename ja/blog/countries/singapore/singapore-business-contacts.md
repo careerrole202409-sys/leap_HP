@@ -134,6 +134,11 @@ EDBと並び立つ産業振興機関で、特に中小企業の成長支援と�
 
 ***
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料
 
 *   [日本貿易振興機構（JETRO）シンガポール事務所 公式サイト](https://www.jetro.go.jp/jetro/overseas/sg_singapore/)

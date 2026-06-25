@@ -102,6 +102,11 @@ A：Leapは多言語サイト制作ツールとマーケティング支援で貴
 
 ---
 
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ### 参考資料
 
 - Leap編集部「[〖ローカライズ〗海外で売れる製品開発の秘訣とは？7つの重要ポイントを徹底解説](https://www.leap.site/ja/blog/strategy/localization-product-development/)」

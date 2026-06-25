@@ -186,6 +186,8 @@ Leapは、海外展開・越境ECを目指す日本の中小企業向けに、�
 
 Leapブログ（海外ビジネスマニュアル）：https://www.leap.site/ja/blog/
 
+* [Leap ECサイト作製マニュアル 一覧へ](https://www.leap.site/ja/ec-guide)
+* [Leap 海外ビジネスマニュアル 一覧へ](https://www.leap.site/ja/blog)
 
 ## 参考記事・参考URL
 

@@ -142,6 +142,12 @@ Leapは、多言語Webサイト・LPの現地化を通じて、コンテンツ�
  
 ---
  
+
+海外ビジネスに役立つ情報を幅広く発信しています。
+
+- [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
+- [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
+
 ## 参考情報
  
 - [Content Marketing Institute「B2B Content Marketing Benchmarks, Budgets, and Trends」](https://contentmarketinginstitute.com/research/)

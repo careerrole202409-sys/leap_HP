@@ -158,6 +158,8 @@ https://www.leap.site/ja/blog/
 EC運用マニュアル（越境EC・多言語対応含む）はこちら：
 https://www.leap.site/ja/ec-guide/
 
+* [Leap ECサイト作製マニュアル 一覧へ](https://www.leap.site/ja/ec-guide)
+* [Leap 海外ビジネスマニュアル 一覧へ](https://www.leap.site/ja/blog)
 
 ## 参考文献
 
