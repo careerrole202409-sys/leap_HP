@@ -2,7 +2,7 @@
 layout: ec-guide-post.njk
 title: Shopify導入で失敗する5つのパターンと後悔しないための対策
 description: Shopify導入でよくある「コスト肥大化」「集客不足」「日本の商習慣への未対応」など5つの失敗パターンと、後悔しないための具体的な対策を解説します。事前の準備と戦略で失敗を防ぎましょう。
-thumbnail: https://images.unsplash.com/photo-1586880244406-556ebe35f282?q=80&w=2070&auto=format&fit=crop
+thumbnail: https://images.unsplash.com/photo-1586880244406-556ebe35f282?q=80&w=1200&h=675&auto=format&fit=crop
 date: 2026-06-26
 topic: store-setup
 locale: ja

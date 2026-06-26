@@ -2,7 +2,7 @@
 layout: ec-guide-post.njk
 title: "Shopify运营常见的5大失败模式及应对策略"
 description: 从应用费用失控到建站后无人问津，本文梳理Shopify商家最常遭遇的5大失败模式，并逐一给出可落地的应对方案，帮助你在上线前就把风险消灭在萌芽状态。
-thumbnail: https://images.unsplash.com/photo-1586880244406-556ebe35f282?q=80&w=2070&auto=format&fit=crop
+thumbnail: https://images.unsplash.com/photo-1586880244406-556ebe35f282?q=80&w=1200&h=675&auto=format&fit=crop
 date: 2026-06-26
 topic: store-setup
 locale: zh-hans
