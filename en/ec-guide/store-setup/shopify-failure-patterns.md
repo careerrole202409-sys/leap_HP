@@ -2,7 +2,7 @@
 layout: ec-guide-post.njk
 title: "5 Common Shopify Failures — and How to Avoid Them"
 description: From runaway app costs to zero traffic after launch, here are the five most common reasons Shopify stores fail to perform — and the concrete steps you can take before you launch to avoid each one.
-thumbnail: https://images.unsplash.com/photo-1586880244406-556ebe35f282?q=80&w=2070&auto=format&fit=crop
+thumbnail: https://images.unsplash.com/photo-1586880244406-556ebe35f282?q=80&w=1200&h=675&auto=format&fit=crop
 date: 2026-06-26
 topic: store-setup
 locale: en
