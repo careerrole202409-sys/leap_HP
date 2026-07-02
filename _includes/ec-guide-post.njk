@@ -367,43 +367,68 @@ layout: base.njk
 </section>
 
 <!-- ▼ 関連記事 -->
-{% set preCount = 0 %}
+{# Pass 1: tag-based matches #}
+{% set relatedUrls = "||" %}
+{% set relCount = 0 %}
 {% for post in collections['ec-guide'] | reverse %}
-    {% if post.url != page.url and preCount < 3 %}
-        {% set isRelated = false %}
+    {% if post.url != page.url and relCount < 3 %}
         {% if tags and post.data.locale == locale %}
+            {% set isTagMatch = false %}
             {% for t in tags %}
-                {% if t != 'ec-guide' and t in post.data.tags %}{% set isRelated = true %}{% endif %}
+                {% if t != 'ec-guide' and t in post.data.tags %}{% set isTagMatch = true %}{% endif %}
             {% endfor %}
+            {% if isTagMatch %}
+                {% set relatedUrls = relatedUrls + post.url + "||" %}
+                {% set relCount = relCount + 1 %}
+            {% endif %}
         {% endif %}
-        {% if isRelated %}{% set preCount = preCount + 1 %}{% endif %}
     {% endif %}
 {% endfor %}
 
-{% if preCount > 0 %}
+{# Pass 2: same-topic fallback #}
+{% if relCount < 3 %}
+    {% for post in collections['ec-guide'] | reverse %}
+        {% if post.url != page.url and relCount < 3 %}
+            {% if post.data.locale == locale and post.data.topic == topic %}
+                {% if (post.url + "||") not in relatedUrls %}
+                    {% set relatedUrls = relatedUrls + post.url + "||" %}
+                    {% set relCount = relCount + 1 %}
+                {% endif %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{# Pass 3: any same-locale fallback #}
+{% if relCount < 3 %}
+    {% for post in collections['ec-guide'] | reverse %}
+        {% if post.url != page.url and relCount < 3 %}
+            {% if post.data.locale == locale %}
+                {% if (post.url + "||") not in relatedUrls %}
+                    {% set relatedUrls = relatedUrls + post.url + "||" %}
+                    {% set relCount = relCount + 1 %}
+                {% endif %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% if relCount > 0 %}
 <section class="section py-3xl bg-beige">
     <div class="container">
         <h2 class="text-center mb-xl" style="font-size: 1.75rem;">{{ t_related }}</h2>
         <div class="grid-3">
-            {% set count = 0 %}
+            {% set renderCount = 0 %}
             {% for post in collections['ec-guide'] | reverse %}
-                {% if post.url != page.url and count < 3 %}
-                    {% set isRelated = false %}
-                    {% if tags and post.data.locale == locale %}
-                        {% for t in tags %}
-                            {% if t != 'ec-guide' and t in post.data.tags %}{% set isRelated = true %}{% endif %}
-                        {% endfor %}
-                    {% endif %}
-                    {% if isRelated %}
-                        <article class="card p-0 bg-white shadow-sm border border-gray-100 rounded-lg overflow-hidden flex flex-col h-full">
-                            <a href="{{ post.url }}" class="block aspect-video overflow-hidden"><img src="{{ post.data.thumbnail | default('https://placehold.co/600x400/f1f5f9/94a3b8?text=Image') }}" alt="{{ post.data.title }}" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"></a>
-                            <div class="p-lg flex-1 flex flex-col">
-                                <h3 class="text-lg font-bold mb-2 leading-tight"><a href="{{ post.url }}" class="text-dark hover:text-primary transition-colors" style="text-decoration:none;color:inherit;">{{ post.data.title }}</a></h3>
-                                <time class="text-xs text-secondary mt-auto block">{{ post.date | date(date_format) }}</time>
-                            </div>
-                        </article>
-                        {% set count = count + 1 %}
-                    {% endif %}
+                {% if (post.url + "||") in relatedUrls and renderCount < 3 %}
+                    <article class="card p-0 bg-white shadow-sm border border-gray-100 rounded-lg overflow-hidden flex flex-col h-full">
+                        <a href="{{ post.url }}" class="block aspect-video overflow-hidden"><img src="{{ post.data.thumbnail | default('https://placehold.co/600x400/f1f5f9/94a3b8?text=Image') }}" alt="{{ post.data.title }}" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"></a>
+                        <div class="p-lg flex-1 flex flex-col">
+                            <h3 class="text-lg font-bold mb-2 leading-tight"><a href="{{ post.url }}" class="text-dark hover:text-primary transition-colors" style="text-decoration:none;color:inherit;">{{ post.data.title }}</a></h3>
+                            <time class="text-xs text-secondary mt-auto block">{{ post.date | date(date_format) }}</time>
+                        </div>
+                    </article>
+                    {% set renderCount = renderCount + 1 %}
                 {% endif %}
             {% endfor %}
         </div>
