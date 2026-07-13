@@ -74,7 +74,6 @@ description: AIとのチャットだけで、ネットショップを開設・�
           </div>
         </div>
         <a href="/ja/" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.8); font-size:0.9rem; text-decoration:none;">会社概要</a>
-        <a href="#video" class="btn btn-demo">デモを見る</a>
         <a href="#form" class="btn btn-start">AIと一緒に販売を始める</a>
       </div>
     </div>
@@ -600,6 +599,62 @@ description: AIとのチャットだけで、ネットショップを開設・�
   line-height: 1.8;
   padding-left: 1.6rem;
 }
+
+/* ===== ヘッダー刷新（このLP限定の上書き） ===== */
+.header-container {
+  background: rgba(15,15,26,0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.08);
+  transition: transform 0.3s ease;
+}
+.header-container.header-hidden {
+  transform: translateY(-100%);
+}
+.header-main {
+  background: transparent;
+  padding: 14px 0;
+}
+.logo-link {
+  width: 120px;
+  height: 40px;
+}
+.nav-right {
+  gap: 1.5rem;
+}
+.nav-right > a[href="/ja/"] {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.65);
+  transition: color 0.2s;
+}
+.nav-right > a[href="/ja/"]:hover {
+  color: white;
+}
+.language-current {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+.language-current:hover {
+  color: white;
+}
+.btn {
+  border-radius: 999px;
+  padding: 9px 22px;
+  font-size: 0.9rem;
+}
+.btn-start {
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 16px rgba(193,0,51,0.35);
+}
+.btn-start:hover {
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(193,0,51,0.45);
+}
 </style>
 
 <!-- ①② ヒーロー＋カルーセル共通背景 -->
@@ -999,6 +1054,19 @@ document.addEventListener('DOMContentLoaded', function () {
       e.stopPropagation();
     });
   }
+
+  // スクロールでヘッダーを非表示、上スクロールで再表示
+  var header = document.getElementById('header');
+  var lastScrollY = window.pageYOffset;
+  window.addEventListener('scroll', function () {
+    var currentScrollY = window.pageYOffset;
+    if (currentScrollY > lastScrollY && currentScrollY > 80) {
+      header.classList.add('header-hidden');
+    } else if (currentScrollY < lastScrollY) {
+      header.classList.remove('header-hidden');
+    }
+    lastScrollY = currentScrollY;
+  }, { passive: true });
 });
 </script>
 </body>
