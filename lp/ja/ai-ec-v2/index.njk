@@ -1,7 +1,7 @@
 ---
 locale: ja
 title: AIと話すだけでネットショップを開設・運営 | Leap EC Agent
-description: AIとのチャットだけで、ネットショップを開設・運営。商品登録・注文管理・多言語対応までAIがサポートする次世代AI EC Agent。現在100社限定でβ版テストユーザー募集中。
+description: AIとのチャットだけで、ネットショップを開設・運営。商品登録・注文管理・多言語対応までAIがサポートする次世代AI EC Agent。現在20名様限定でβ版テストユーザー募集中。
 ---
 
 <!DOCTYPE html>
@@ -68,14 +68,14 @@ description: AIとのチャットだけで、ネットショップを開設・�
             <span>▼</span>
           </div>
           <div class="language-dropdown" id="languageDropdown">
-            <a href="/lp/ja/ai-ec" class="language-option active" data-lang="ja">日本語</a>
-            <a href="/lp/en/ai-ec" class="language-option" data-lang="en">English</a>
-            <a href="/lp/zh-hans/ai-ec" class="language-option" data-lang="zh-hans">简体中文</a>
+            <a href="/lp/ja/ai-ec-v2" class="language-option active" data-lang="ja">日本語</a>
+            <a href="/lp/en/ai-ec-v2" class="language-option" data-lang="en">English</a>
+            <a href="/lp/zh-hant/ai-ec-v2" class="language-option" data-lang="zh-hant">繁體中文</a>
           </div>
         </div>
         <a href="/ja/" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.8); font-size:0.9rem; text-decoration:none;">会社概要</a>
-        <a href="#video" class="btn btn-demo">デモ動画</a>
-        <a href="#form" class="btn btn-start">テストユーザーに応募する</a>
+        <a href="#video" class="btn btn-demo">デモを見る</a>
+        <a href="#form" class="btn btn-start">AIと一緒に販売を始める</a>
       </div>
     </div>
   </div>
@@ -119,12 +119,25 @@ description: AIとのチャットだけで、ネットショップを開設・�
   margin-bottom: 0.75rem;
   letter-spacing: 0.05em;
 }
+.lp-eyebrow {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ff5c7a;
+  letter-spacing: 0.03em;
+  margin-bottom: 1rem;
+}
 .lp-hero h1 {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 900;
   color: white;
   line-height: 1.25;
   margin-bottom: 1.25rem;
+}
+.lp-hero-description {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.8;
+  margin-bottom: 2rem;
 }
 .lp-btn-primary {
   display: inline-block;
@@ -441,6 +454,46 @@ description: AIとのチャットだけで、ネットショップを開設・�
 }
 .step-desc { font-size: 0.88rem; color: #666; line-height: 1.7; }
 
+/* ===== AI自動最適化(Grow) ===== */
+.lp-grow {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+}
+.lp-grow-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.grow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+@media (max-width: 768px) {
+  .grow-grid { grid-template-columns: 1fr; }
+}
+.grow-item { text-align: center; }
+.grow-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+.grow-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.4rem;
+}
+.grow-desc { font-size: 0.88rem; color: #666; line-height: 1.7; }
+
 /* ===== フォーム ===== */
 .lp-form {
   padding: 5rem 1rem;
@@ -475,6 +528,78 @@ description: AIとのチャットだけで、ネットショップを開設・�
   font-weight: 600;
 }
 .lp-form-pricing strong { color: #C10033; font-size: 1.05rem; }
+
+/* ===== Hero Value Points ===== */
+.lp-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 1.5rem;
+  margin-bottom: 2rem;
+}
+.lp-hero-points span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+}
+.lp-hero-points .point-check {
+  color: #ff5c7a;
+  font-weight: 900;
+  margin-right: 0.3rem;
+}
+
+/* ===== World First 補足コピー ===== */
+.lp-world-first-lines {
+  margin-top: 2rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1.9;
+}
+
+/* ===== フォーム直前の安心材料 ===== */
+.lp-form-trust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.25rem;
+  margin-top: 1.25rem;
+  font-size: 0.85rem;
+  color: #444;
+  font-weight: 600;
+}
+.lp-form-trust span { display: inline-flex; align-items: center; gap: 0.3rem; }
+.lp-form-trust .trust-check { color: #C10033; font-weight: 900; }
+
+/* ===== FAQ ===== */
+.lp-faq {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+}
+.lp-faq-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.faq-item {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1.5rem 0;
+}
+.faq-item:last-child { border-bottom: none; }
+.faq-question {
+  display: flex;
+  gap: 0.6rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.6rem;
+}
+.faq-question .faq-mark { color: #C10033; flex-shrink: 0; }
+.faq-answer {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.8;
+  padding-left: 1.6rem;
+}
 </style>
 
 <!-- ①② ヒーロー＋カルーセル共通背景 -->
@@ -483,12 +608,37 @@ description: AIとのチャットだけで、ネットショップを開設・�
 <!-- ① ヒーロー -->
 <section class="lp-hero">
   <div class="lp-hero-inner">
-    <h1>AIと話すだけで、<br>ECを開設・運営。</h1>
-    <div class="lp-hero-cta">
-      <a href="#form" class="lp-btn-primary">テストユーザーに応募する →</a>
-      <a href="#video" class="lp-btn-outline">デモ動画を見る</a>
+
+    <p class="lp-eyebrow">
+      世界初のAI Native Commerce Platform
+    </p>
+
+    <h1>
+      AIと話すだけで、<br>
+      EC運営が始まる。
+    </h1>
+
+    <p class="lp-hero-description">
+      面倒なEC業務は、すべてAIに任せる。<br>
+      サイト構築、商品登録、注文管理、SEO改善、多言語対応まで。
+    </p>
+
+    <div class="lp-hero-points">
+      <span><span class="point-check">✓</span>管理画面不要</span>
+      <span><span class="point-check">✓</span>商品登録もAI</span>
+      <span><span class="point-check">✓</span>注文対応もAI</span>
+      <span><span class="point-check">✓</span>多言語販売対応</span>
     </div>
-    <p class="lp-pricing-text">初期費用¥0・月額¥0・20名様限定（決済手数料6%のみ）</p>
+
+    <div class="lp-hero-cta">
+      <a href="#form" class="lp-btn-primary">AIと一緒に販売を始める →</a>
+      <a href="#video" class="lp-btn-outline">デモを見る</a>
+    </div>
+
+    <p class="lp-pricing-text">
+      β版限定｜初期費用0円・月額利用料0円（決済手数料6%のみ）
+    </p>
+
   </div>
 </section>
 
@@ -508,7 +658,7 @@ description: AIとのチャットだけで、ネットショップを開設・�
       <img src="https://app.leap.site/images/website_images/005.png" alt="海外展開サイト例">
     </div>
     <div class="lp-showcase-item">
-      <img src="https://app.leap.site/images/website_images/001.png" alt="ウェブ制作支援サイト例">
+      <img src="https://app.leap.site/images/website_images/001.png" alt="個人・小規模事業者向けネットショップ例">
     </div>
     <div class="lp-showcase-item" aria-hidden="true">
       <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_960/v1780364885/132dc817-35b8-4325-acb7-58f57ceeb70a.png" alt="">
@@ -583,8 +733,8 @@ description: AIとのチャットだけで、ネットショップを開設・�
 <!-- ④ 競合比較 -->
 <section class="lp-comparison">
   <div class="lp-comparison-inner">
-    <h2 class="lp-section-title">設定項目が多すぎて、<br>本業に集中できない。</h2>
-    <p class="lp-section-sub">機能は豊富。でも使いこなせる人は、ほとんどいない。</p>
+    <h2 class="lp-section-title">結局、誰がECを<br>運営していますか。</h2>
+    <p class="lp-section-sub">Shopify・BASEも、機能は豊富。でも、操作するのはいつも「人」です。</p>
     <div class="comparison-grid">
       <div class="comparison-box">
         <div class="comparison-logos">
@@ -594,27 +744,27 @@ description: AIとのチャットだけで、ネットショップを開設・�
           <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_40/v1781221365/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99_4_knynrf.png" alt="Stores" class="comparison-logo-img">
           <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_40/v1781221318/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99_2_f9cixb.png" alt="Ecwid" class="comparison-logo-img">
         </div>
-        <span class="comparison-label bad">従来のECツール</span>
+        <span class="comparison-label bad">従来のECツール｜人が操作</span>
         <ul class="comparison-steps">
-          <li><span class="step-icon-bad">✕</span>開設前にドメイン・テーマ・決済・送料…と設定が山積み</li>
-          <li><span class="step-icon-bad">✕</span>テーマ選定だけで数時間、有料テーマは数万円〜</li>
-          <li><span class="step-icon-bad">✕</span>使わないタブや機能が多すぎてUIが複雑</li>
-          <li><span class="step-icon-bad">✕</span>商品追加・価格変更も管理画面を毎回開いて手動操作</li>
-          <li><span class="step-icon-bad">✕</span>機能を増やすたびにアプリ課金が積み上がる</li>
-          <li><span class="step-icon-bad">✕</span>結局、制作会社に依頼してコストがかかる</li>
+          <li><span class="step-icon-bad">✕</span>ドメイン・決済・送料は、手動で設定。</li>
+          <li><span class="step-icon-bad">✕</span>商品登録は、管理画面を開いて手動操作。</li>
+          <li><span class="step-icon-bad">✕</span>SEOの調整も、手動で確認。</li>
+          <li><span class="step-icon-bad">✕</span>問い合わせ対応も、手動で返信。</li>
+          <li><span class="step-icon-bad">✕</span>機能追加は、都度アプリ課金。</li>
+          <li><span class="step-icon-bad">✕</span>手に負えなければ、制作会社に依頼。</li>
         </ul>
       </div>
       <div class="comparison-box is-good">
         <div style="margin-bottom:1.5rem;">
           <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_56/v1781222581/%E3%83%AD%E3%82%B3%E3%82%99%E6%A8%AA%E9%95%B7%E5%88%87%E3%82%8A%E6%8A%9C%E3%81%8D2400_1260_1_xmgfe6.png" alt="Leap" style="height:40px; width:auto;">
         </div>
-        <span class="comparison-label good">Leap AI</span>
+        <span class="comparison-label good">Leap AI｜AIが運営</span>
         <ul class="comparison-steps">
-          <li><span class="step-icon-good">✓</span>チャット1回でEC開設完了</li>
-          <li><span class="step-icon-good">✓</span>ドメイン・決済・配送まで自動設定</li>
-          <li><span class="step-icon-good">✓</span>商品の追加・編集もチャットで</li>
-          <li><span class="step-icon-good">✓</span>注文管理・在庫もAIがまとめて対応</li>
-          <li><span class="step-icon-good">✓</span>SEO・アクセス解析も自動設定</li>
+          <li><span class="step-icon-good">✓</span>ドメイン・決済・配送は、AIが設定。</li>
+          <li><span class="step-icon-good">✓</span>商品登録・価格変更も、AIへ。</li>
+          <li><span class="step-icon-good">✓</span>SEO・解析も、自動で改善。</li>
+          <li><span class="step-icon-good">✓</span>問い合わせ対応も、AIが一次対応。</li>
+          <li><span class="step-icon-good">✓</span>注文・在庫管理も、AIにお任せ。</li>
         </ul>
         <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_600/v1781223541/3d55df78-4733-48bc-9671-78a72141d3f9.png" alt="EC管理ダッシュボード" style="width:100%; border-radius:10px; margin-top:1.5rem; box-shadow:0 4px 16px rgba(0,0,0,0.1);">
       </div>
@@ -625,32 +775,57 @@ description: AIとのチャットだけで、ネットショップを開設・�
 <!-- ⑤ 機能紹介 -->
 <section class="lp-features">
   <div class="lp-features-inner">
-    <h2 class="lp-section-title">ECに必要なすべてが、<br>チャットで完結。</h2>
-    <p class="lp-section-sub">構築・商品管理・注文管理、全部AIが担います。</p>
+    <h2 class="lp-section-title">ECに必要なすべてを、<br>AIが担う。</h2>
+    <p class="lp-section-sub">構築も、運営も。あなたは話すだけです。</p>
     <div class="features-grid">
       <div class="feature-card">
         <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_600/v1781223541/3d55df78-4733-48bc-9671-78a72141d3f9.png" alt="EC管理ダッシュボード">
         <div class="feature-card-body">
           <div class="feature-card-tag">EC構築</div>
-          <div class="feature-card-title">ECサイトをゼロから生成</div>
-          <div class="feature-card-desc">「○○を売るECサイトを作って」と入力するだけ。デザイン・決済・配送設定まで自動で完成します。</div>
+          <div class="feature-card-title">管理画面を、開かない。</div>
+          <div class="feature-card-desc">「○○を売るサイトを作って」と伝えるだけ。デザイン・決済・配送の設定は、AIが済ませます。</div>
         </div>
       </div>
       <div class="feature-card">
         <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_600/v1781223561/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-06-12_9.19.14_uwbaho.png" alt="商品管理">
         <div class="feature-card-body">
           <div class="feature-card-tag">商品管理</div>
-          <div class="feature-card-title">商品の追加・編集もチャットで</div>
-          <div class="feature-card-desc">「新商品を追加して」「価格を変更して」とチャットするだけ。複雑な管理画面は不要です。</div>
+          <div class="feature-card-title">商品の更新は、話すだけ。</div>
+          <div class="feature-card-desc">「新商品を追加して」「価格を変更して」。それだけで完了。管理画面を探す必要もありません。</div>
         </div>
       </div>
       <div class="feature-card">
         <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_600/v1781223674/69ced1fe-1cc7-49b1-b8c4-486bc8b5b71e.png" alt="注文管理">
         <div class="feature-card-body">
           <div class="feature-card-tag">注文管理</div>
-          <div class="feature-card-title">注文・在庫もAIが管理</div>
-          <div class="feature-card-desc">受注確認・在庫更新・顧客連絡まで、AIがまとめて対応。運営の手間を大幅削減。</div>
+          <div class="feature-card-title">注文処理も、AIへ。</div>
+          <div class="feature-card-desc">受注確認・在庫更新・顧客対応まで、AIがまとめて代行。あなたが手を動かす作業は、大幅に減ります。</div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑤.5 AI自動最適化(Grow) -->
+<section class="lp-grow">
+  <div class="lp-grow-inner">
+    <h2 class="lp-section-title">公開して終わりじゃない。<br>AIは、休まない。</h2>
+    <p class="lp-section-sub">24時間、分析と改善を止めません。売れるサイトへ、育て続けます。</p>
+    <div class="grow-grid">
+      <div class="grow-item">
+        <div class="grow-icon">✓</div>
+        <div class="grow-title">SEOを自動で最適化</div>
+        <div class="grow-desc">検索順位やアクセス状況を見ながら、SEO設定をAIが自動で更新し続けます。</div>
+      </div>
+      <div class="grow-item">
+        <div class="grow-icon">✓</div>
+        <div class="grow-title">売れる導線を自動改善</div>
+        <div class="grow-desc">アクセス解析をもとに、商品ページや導線の改善をAIが提案・反映します。</div>
+      </div>
+      <div class="grow-item">
+        <div class="grow-icon">✓</div>
+        <div class="grow-title">顧客対応もAIが継続サポート</div>
+        <div class="grow-desc">問い合わせ対応や多言語対応も、運営中ずっとAIが伴走します。</div>
       </div>
     </div>
   </div>
@@ -683,9 +858,14 @@ description: AIとのチャットだけで、ネットショップを開設・�
 <section class="lp-world-first">
   <div style="max-width:700px; margin:0 auto;">
     <p style="font-size:0.85rem; font-weight:700; letter-spacing:0.1em; color:rgba(255,255,255,0.5); margin-bottom:1rem;">WORLD FIRST</p>
-    <h2>「AIチャットだけで<br>ECを完結」は、世界初。</h2>
+    <h2>ECを操作する時代から、<br>AIが運営する時代へ。</h2>
     <p style="font-size:1.05rem; color:rgba(255,255,255,0.9); line-height:1.9; margin-top:1.5rem;">
-      Shopify・BASEをはじめ、既存のECツールはすべて「人が操作する」前提で作られています。Leapは違います。AIが主役となってECの構築・運営をすべて担う、世界で初めてのAI EC Agentです。
+      既存のECツールの多くは、人が操作することを前提に作られています。Leapは、AIが主役となってECの構築から運営まですべてを担う、世界初のAI Native Commerce Platformです。
+    </p>
+    <p class="lp-world-first-lines">
+      操作から、対話へ。<br>
+      管理から、委任へ。<br>
+      ECの、新しいカテゴリへ。
     </p>
   </div>
 </section>
@@ -715,11 +895,39 @@ description: AIとのチャットだけで、ネットショップを開設・�
   </div>
 </section>
 
+<!-- ⑧.5 FAQ -->
+<section class="lp-faq">
+  <div class="lp-faq-inner">
+    <h2 class="lp-section-title">よくあるご質問</h2>
+    <p class="lp-section-sub">応募前の疑問にお答えします。</p>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>誰でも利用できますか？</div>
+      <div class="faq-answer">これからECを始める方、既存のECの運営を楽にしたい方、どちらにも向いています。まずはβ版テストユーザーとしてご応募ください。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>いつ正式リリースですか？</div>
+      <div class="faq-answer">現在はβ版として20名様限定で受付中です。正式リリースは、β版の状況を見ながら順次拡大していく予定です。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>Shopifyから移行できますか？</div>
+      <div class="faq-answer">現在は新規開設のみに対応しています。既存サイトからの移行機能は、今後の対応を予定しています。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>料金は本当に無料ですか？</div>
+      <div class="faq-answer">β版期間中は、初期費用・月額利用料ともに0円です。決済が発生した際の決済手数料6%のみご負担いただきます。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>どんな人に向いていますか？</div>
+      <div class="faq-answer">これからECを始める方、既存ECの運営業務を楽にしたい方に向いています。管理画面の操作やSEO・多言語対応など、EC運営の専門知識がなくてもご利用いただけます。</div>
+    </div>
+  </div>
+</section>
+
 <!-- ⑨ フォーム -->
 <section class="lp-form" id="form">
   <div class="lp-form-inner">
     <span class="lp-badge">20名様限定</span>
-    <h2 class="lp-section-title" style="margin-top:1rem;">テストユーザー募集中</h2>
+    <h2 class="lp-section-title" style="margin-top:1rem;">AIと一緒に、販売を始めよう。</h2>
     <p class="lp-section-sub">ご応募いただいた方に順次招待URLをお送りします。</p>
     <div class="lp-form-pricing">
       <span>初期費用 <strong>¥0</strong></span>
@@ -727,6 +935,12 @@ description: AIとのチャットだけで、ネットショップを開設・�
       <span>月額 <strong>¥0</strong></span>
       <span style="color:#d1d5db;">|</span>
       <span>決済手数料 <strong>6%</strong> のみ</span>
+    </div>
+    <div class="lp-form-trust">
+      <span><span class="trust-check">✓</span>初期費用0円</span>
+      <span><span class="trust-check">✓</span>月額利用料0円</span>
+      <span><span class="trust-check">✓</span>β版20名様限定</span>
+      <span><span class="trust-check">✓</span>チャットだけで開始</span>
     </div>
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclalGRt_JIjbuklZMwSo5hqMibxFqhvro2rq_bgVbTDub-ZQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
   </div>
