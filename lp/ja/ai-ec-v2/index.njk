@@ -493,6 +493,56 @@ description: AIとのチャットだけで、ネットショップを開設・�
 }
 .grow-desc { font-size: 0.88rem; color: #666; line-height: 1.7; }
 
+/* ===== Always Evolving ===== */
+.lp-evolve {
+  padding: 4rem 1rem 5rem;
+  background: #f8f9fc;
+}
+.lp-evolve-inner {
+  max-width: 620px;
+  margin: 0 auto;
+}
+.evolve-card {
+  text-align: center;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+}
+.evolve-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 900;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+}
+.evolve-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C10033;
+  margin-bottom: 0.75rem;
+}
+.evolve-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 0.9rem;
+  line-height: 1.5;
+}
+.evolve-desc {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.8;
+}
+
 /* ===== フォーム ===== */
 .lp-form {
   padding: 5rem 1rem;
@@ -654,6 +704,18 @@ description: AIとのチャットだけで、ネットショップを開設・�
   color: white;
   transform: translateY(-1px);
   box-shadow: 0 6px 20px rgba(193,0,51,0.45);
+}
+
+/* ===== モバイルでも言語切替を表示（このLP限定） ===== */
+@media (max-width: 768px) {
+  .nav-right {
+    display: flex;
+    gap: 0.75rem;
+  }
+  .nav-right > a[href="/ja/"],
+  .nav-right > a.btn-start {
+    display: none;
+  }
 }
 </style>
 
@@ -882,6 +944,18 @@ description: AIとのチャットだけで、ネットショップを開設・�
         <div class="grow-title">顧客対応もAIが継続サポート</div>
         <div class="grow-desc">問い合わせ対応や多言語対応も、運営中ずっとAIが伴走します。</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑤.6 Always Evolving -->
+<section class="lp-evolve">
+  <div class="lp-evolve-inner">
+    <div class="evolve-card">
+      <div class="evolve-icon">↗</div>
+      <div class="evolve-eyebrow">Always Evolving</div>
+      <h3 class="evolve-title">AIとともに、進化し続ける。</h3>
+      <p class="evolve-desc">最新のAI技術やECトレンドを取り入れながら、Leapはこれからも進化を続けます。</p>
     </div>
   </div>
 </section>
