@@ -1,0 +1,990 @@
+---
+locale: zh-hant
+title: 只要與AI對話，就能開店經營 | Leap EC Agent
+description: 只要與AI聊天，就能開店並經營網路商店——商品上架、訂單管理、多語言支援全部涵蓋。β版預計於2026年10月1日正式上線，現正開放預先登錄。
+---
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/favicon.png">
+
+  <title>{{ title }}</title>
+
+  <meta name="description" content="{{ description }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.leap.site{{ page.url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:image" content="https://www.leap.site/assets/og-image.png">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="{{ title }}">
+  <meta property="twitter:description" content="{{ description }}">
+  <meta property="twitter:image" content="https://www.leap.site/assets/og-image.png">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E0BHMWHJNK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E0BHMWHJNK');
+  </script>
+  <!-- Clarity -->
+  <script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "uxpxgpg8ea");
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- LP Header -->
+<header class="header-container" id="header">
+  <div class="header-main">
+    <div class="header-main-content">
+      <div class="nav-left">
+        <a href="/zh-hans/" class="logo-link" target="_blank" rel="noopener noreferrer">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="logo-img">
+        </a>
+      </div>
+      <div class="nav-right">
+        <div class="language-selector">
+          <div class="language-current" id="languageCurrent">
+            <span>🌐</span>
+            <span id="currentLang">繁體中文</span>
+            <span>▼</span>
+          </div>
+          <div class="language-dropdown" id="languageDropdown">
+            <a href="/lp/ja/ai-ec-v3" class="language-option" data-lang="ja">日本語</a>
+            <a href="/lp/en/ai-ec-v3" class="language-option" data-lang="en">English</a>
+            <a href="/lp/zh-hant/ai-ec-v3" class="language-option active" data-lang="zh-hant">繁體中文</a>
+          </div>
+        </div>
+        <a href="/zh-hans/" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.8); font-size:0.9rem; text-decoration:none;">關於我們</a>
+        <a href="#form" class="btn btn-start">立即預先登錄</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+
+<style>
+/* ===== Hero + carousel shared wrapper ===== */
+.lp-dark-wrapper {
+  background:
+    linear-gradient(to bottom, rgba(15,15,26,0.84) 0%, rgba(15,15,26,0.92) 100%),
+    url("https://images.unsplash.com/photo-1733503747506-773e56e4078f?w=2400&auto=format&fit=crop&q=80") center top/cover no-repeat;
+}
+
+/* ===== Hero ===== */
+.lp-hero {
+  background: transparent;
+  padding: 4rem 1rem 0;
+}
+.lp-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.lp-hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+.lp-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+.lp-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: white;
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+}
+.lp-btn-primary {
+  display: inline-block;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(193,0,51,0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.lp-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(193,0,51,0.45);
+  color: white;
+  text-decoration: none;
+}
+.lp-btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 2px solid rgba(255,255,255,0.7);
+  transition: background 0.2s, border-color 0.2s;
+}
+.lp-btn-outline:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: white;
+  color: white;
+  text-decoration: none;
+}
+.lp-pricing-text {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.85);
+  margin-top: 0.9rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+.lp-video-box {
+  aspect-ratio: 16/9;
+  background: #1a1a2e;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Shared ===== */
+.lp-section-title {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+.lp-section-sub {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* ===== Showcase carousel ===== */
+.lp-showcase {
+  padding: 3rem 0 5rem;
+  background: transparent;
+  overflow: hidden;
+  perspective: 1400px;
+}
+.lp-showcase-track {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+.lp-showcase-item {
+  flex-shrink: 0;
+  width: 480px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  transform: scale(0.86) rotateY(0deg);
+  opacity: 0.5;
+  transition: transform 0.7s cubic-bezier(0.4,0,0.2,1), opacity 0.7s ease, box-shadow 0.7s ease;
+}
+.lp-showcase-item.is-prev {
+  transform: scale(0.86) rotateY(14deg);
+}
+.lp-showcase-item.is-next {
+  transform: scale(0.86) rotateY(-14deg);
+}
+.lp-showcase-item.is-active {
+  transform: scale(1.04) rotateY(0deg);
+  opacity: 1;
+  box-shadow: 0 24px 56px rgba(0,0,0,0.16);
+}
+.lp-showcase-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 640px) {
+  .lp-showcase-item { width: 76vw; }
+  .lp-showcase-item img { height: 200px; }
+}
+
+/* ===== Comparison ===== */
+.lp-comparison {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+}
+.lp-comparison-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+@media (max-width: 768px) {
+  .comparison-grid { grid-template-columns: 1fr; }
+}
+.comparison-box {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  border: 2px solid #e5e7eb;
+}
+.comparison-box.is-good {
+  border-color: #C10033;
+  box-shadow: 0 8px 32px rgba(193,0,51,0.12);
+}
+.comparison-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.comparison-logo-img {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.75;
+}
+.comparison-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+.comparison-label.bad { background: #fee2e2; color: #b91c1c; }
+.comparison-label.good { background: #fef2f2; color: #C10033; }
+.comparison-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.comparison-steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f3f4f6;
+  line-height: 1.5;
+}
+.comparison-steps li:last-child { border-bottom: none; }
+.step-icon-bad { color: #ef4444; flex-shrink: 0; margin-top: 2px; }
+.step-icon-good { color: #C10033; flex-shrink: 0; margin-top: 2px; font-weight: 700; }
+
+/* ===== Features ===== */
+.lp-features {
+  padding: 5rem 1rem;
+  background: white;
+}
+.lp-features-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+@media (max-width: 768px) {
+  .features-grid { grid-template-columns: 1fr; }
+}
+.feature-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.feature-card:hover {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+}
+.feature-card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: contain;
+  background: #f4f5f8;
+  display: block;
+}
+.feature-card-body { padding: 1.25rem; }
+.feature-card-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #C10033;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.4rem;
+}
+.feature-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.4rem;
+}
+.feature-card-desc {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ===== Demo video ===== */
+.lp-demo-video {
+  padding: 5rem 1rem;
+  background: white;
+}
+.lp-demo-video-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.lp-video-box-large {
+  margin-top: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.18);
+}
+
+/* ===== World First ===== */
+.lp-world-first {
+  padding: 5rem 1rem;
+  background: #1a1a2e;
+  color: white;
+  text-align: center;
+}
+.lp-world-first h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 900;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+/* ===== Steps ===== */
+.lp-steps {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+}
+.lp-steps-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+@media (max-width: 768px) {
+  .steps-grid { grid-template-columns: 1fr; }
+}
+.step-item { text-align: center; }
+.step-num {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+.step-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.4rem;
+}
+.step-desc { font-size: 0.88rem; color: #666; line-height: 1.7; }
+
+/* ===== Form ===== */
+.lp-form {
+  padding: 5rem 1rem;
+  background: white;
+}
+.lp-form-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+.lp-form-inner iframe {
+  width: 100%;
+  min-height: 1300px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+}
+.lp-form-pricing {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fc;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #444;
+  font-weight: 600;
+}
+.lp-form-pricing strong { color: #C10033; font-size: 1.05rem; }
+
+/* ===== Hero Value Points ===== */
+.lp-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 1.5rem;
+  margin-bottom: 2rem;
+}
+.lp-hero-points span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+}
+.lp-hero-points .point-check {
+  color: #ff5c7a;
+  font-weight: 900;
+  margin-right: 0.3rem;
+}
+
+/* ===== World First supporting lines ===== */
+.lp-world-first-lines {
+  margin-top: 2rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1.9;
+}
+
+/* ===== Pre-form trust bullets ===== */
+.lp-form-trust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.25rem;
+  margin-top: 1.25rem;
+  font-size: 0.85rem;
+  color: #444;
+  font-weight: 600;
+}
+.lp-form-trust span { display: inline-flex; align-items: center; gap: 0.3rem; }
+.lp-form-trust .trust-check { color: #C10033; font-weight: 900; }
+
+/* ===== FAQ ===== */
+.lp-faq {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+}
+.lp-faq-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.faq-item {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1.5rem 0;
+}
+.faq-item:last-child { border-bottom: none; }
+.faq-question {
+  display: flex;
+  gap: 0.6rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.6rem;
+}
+.faq-question .faq-mark { color: #C10033; flex-shrink: 0; }
+.faq-answer {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.8;
+  padding-left: 1.6rem;
+}
+
+/* ===== Header refresh (scoped to this LP only) ===== */
+.header-container {
+  background: rgba(15,15,26,0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.08);
+  transition: transform 0.3s ease;
+}
+.header-container.header-hidden {
+  transform: translateY(-100%);
+}
+.header-main {
+  background: transparent;
+  padding: 14px 0;
+}
+.logo-link {
+  width: 120px;
+  height: 40px;
+}
+.nav-right {
+  gap: 1.5rem;
+}
+.nav-right > a[href="/zh-hans/"] {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.65);
+  transition: color 0.2s;
+}
+.nav-right > a[href="/zh-hans/"]:hover {
+  color: white;
+}
+.language-current {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+.language-current:hover {
+  color: white;
+}
+.btn {
+  border-radius: 999px;
+  padding: 9px 22px;
+  font-size: 0.9rem;
+}
+.btn-start {
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 16px rgba(193,0,51,0.35);
+}
+.btn-start:hover {
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(193,0,51,0.45);
+}
+
+/* ===== モバイルでも言語切替を表示（このLP限定） ===== */
+@media (max-width: 768px) {
+  .nav-right {
+    display: flex;
+    gap: 0.75rem;
+  }
+  .nav-right > a[href="/zh-hans/"],
+  .nav-right > a.btn-start {
+    display: none;
+  }
+}
+</style>
+
+<!-- Hero + carousel shared background -->
+<div class="lp-dark-wrapper">
+
+<!-- Hero -->
+<section class="lp-hero">
+  <div class="lp-hero-inner">
+
+    <h1>
+      只要與AI對話，<br>
+      就能開店、拓展客源。
+    </h1>
+
+    <div class="lp-hero-points">
+      <span><span class="point-check">✓</span>免開後台</span>
+      <span><span class="point-check">✓</span>AI幫你上架商品</span>
+      <span><span class="point-check">✓</span>AI幫你處理訂單</span>
+      <span><span class="point-check">✓</span>支援多語言銷售</span>
+    </div>
+
+    <div class="lp-hero-cta">
+      <a href="#form" class="lp-btn-primary">立即預先登錄 →</a>
+      <a href="#video" class="lp-btn-outline">觀看示範影片</a>
+    </div>
+
+    <p class="lp-pricing-text">
+      β版將於2026年10月1日上線｜開店費用0元・月費0元（僅收6%金流手續費）
+    </p>
+
+  </div>
+</section>
+
+<!-- Site showcase carousel -->
+<section class="lp-showcase" id="showcaseSection">
+  <div class="lp-showcase-track" id="showcaseTrack">
+    <div class="lp-showcase-item" aria-hidden="true">
+      <img src="https://app.leap.site/images/website_images/001.png" alt="">
+    </div>
+    <div class="lp-showcase-item">
+      <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_960/v1780364885/132dc817-35b8-4325-acb7-58f57ceeb70a.png" alt="電商賣家網站範例">
+    </div>
+    <div class="lp-showcase-item">
+      <img src="https://app.leap.site/images/website_images/002.png" alt="D2C品牌網站範例">
+    </div>
+    <div class="lp-showcase-item">
+      <img src="https://app.leap.site/images/website_images/005.png" alt="海外拓展網站範例">
+    </div>
+    <div class="lp-showcase-item">
+      <img src="https://app.leap.site/images/website_images/001.png" alt="個人與小型賣家網路商店範例">
+    </div>
+    <div class="lp-showcase-item" aria-hidden="true">
+      <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_960/v1780364885/132dc817-35b8-4325-acb7-58f57ceeb70a.png" alt="">
+    </div>
+  </div>
+</section>
+
+</div><!-- /.lp-dark-wrapper -->
+<script>
+(function () {
+  var section = document.getElementById('showcaseSection');
+  var track = document.getElementById('showcaseTrack');
+  var items = track.querySelectorAll('.lp-showcase-item');
+  var COUNT = 4;
+  var GAP = 20;
+  var current = 1;
+  var animating = false;
+
+  function cardW() { return items[0].offsetWidth; }
+  function centerOffset() { return (section.offsetWidth - cardW()) / 2; }
+  function posFor(idx) { return centerOffset() - idx * (cardW() + GAP); }
+
+  function applyClasses() {
+    items.forEach(function(item, i) {
+      item.classList.toggle('is-active', i === current);
+      item.classList.toggle('is-prev', i === current - 1);
+      item.classList.toggle('is-next', i === current + 1);
+    });
+  }
+
+  function goTo(idx, animate) {
+    current = idx;
+    track.style.transition = animate ? 'transform 0.7s cubic-bezier(0.4,0,0.2,1)' : 'none';
+    track.style.transform = 'translateX(' + posFor(current) + 'px)';
+    applyClasses();
+  }
+
+  function jumpTo(idx) {
+    track.style.transition = 'none';
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        current = idx;
+        track.style.transform = 'translateX(' + posFor(idx) + 'px)';
+        applyClasses();
+        animating = false;
+      });
+    });
+  }
+
+  track.addEventListener('transitionend', function (e) {
+    if (e.target !== track) return;
+    if (e.propertyName !== 'transform') return;
+    if (current === items.length - 1) jumpTo(1);
+    else if (current === 0) jumpTo(COUNT);
+    else animating = false;
+  });
+
+  window.addEventListener('resize', function () { goTo(current, false); });
+  goTo(1, false);
+
+  setInterval(function () {
+    if (animating) return;
+    animating = true;
+    goTo(current + 1, true);
+  }, 2000);
+})();
+</script>
+
+<!-- Client logos -->
+{% include "client-logos.njk" %}
+
+<!-- Comparison -->
+<section class="lp-comparison">
+  <div class="lp-comparison-inner">
+    <h2 class="lp-section-title">到底是誰在<br>經營你的電商？</h2>
+    <p class="lp-section-sub">Shopify、BASE功能豐富，但操作的，永遠是「人」。</p>
+    <div class="comparison-grid">
+      <div class="comparison-box">
+        <div class="comparison-logos">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_40/v1781221164/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99_8_p5xsfn.jpg" alt="Shopify" class="comparison-logo-img">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_40/v1781221204/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99_1_pute7w.png" alt="BASE" class="comparison-logo-img">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_40/v1781221327/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99_3_mrje3p.png" alt="Color Me Shop" class="comparison-logo-img">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_40/v1781221365/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99_4_knynrf.png" alt="Stores" class="comparison-logo-img">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_40/v1781221318/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99_2_f9cixb.png" alt="Ecwid" class="comparison-logo-img">
+        </div>
+        <span class="comparison-label bad">傳統電商工具｜人工操作</span>
+        <ul class="comparison-steps">
+          <li><span class="step-icon-bad">✕</span>網域、金流、運費，都要手動設定。</li>
+          <li><span class="step-icon-bad">✕</span>新增商品，得打開後台手動操作。</li>
+          <li><span class="step-icon-bad">✕</span>SEO調整，也要自己確認。</li>
+          <li><span class="step-icon-bad">✕</span>客服回覆，同樣要親自處理。</li>
+          <li><span class="step-icon-bad">✕</span>每加一項功能，就多一筆訂閱費。</li>
+          <li><span class="step-icon-bad">✕</span>應付不來，只好外包給網頁公司。</li>
+        </ul>
+      </div>
+      <div class="comparison-box is-good">
+        <div style="margin-bottom:1.5rem;">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_56/v1781222581/%E3%83%AD%E3%82%B3%E3%82%99%E6%A8%AA%E9%95%B7%E5%88%87%E3%82%8A%E6%8A%9C%E3%81%8D2400_1260_1_xmgfe6.png" alt="Leap" style="height:40px; width:auto;">
+        </div>
+        <span class="comparison-label good">Leap AI｜AI經營</span>
+        <ul class="comparison-steps">
+          <li><span class="step-icon-good">✓</span>網域、金流、物流，AI幫你設定。</li>
+          <li><span class="step-icon-good">✓</span>商品上架、改價，交給AI。</li>
+          <li><span class="step-icon-good">✓</span>SEO與數據分析，自動優化。</li>
+          <li><span class="step-icon-good">✓</span>客服回覆，AI優先處理。</li>
+          <li><span class="step-icon-good">✓</span>訂單與庫存，AI一手包辦。</li>
+        </ul>
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_600/v1781223541/3d55df78-4733-48bc-9671-78a72141d3f9.png" alt="電商管理後台" style="width:100%; border-radius:10px; margin-top:1.5rem; box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="lp-features">
+  <div class="lp-features-inner">
+    <h2 class="lp-section-title">電商所需的一切，<br>交給AI。</h2>
+    <p class="lp-section-sub">建站也好，經營也好。你只需要開口。</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_600/v1781223541/3d55df78-4733-48bc-9671-78a72141d3f9.png" alt="電商管理後台">
+        <div class="feature-card-body">
+          <div class="feature-card-tag">電商建站</div>
+          <div class="feature-card-title">後台，不用打開。</div>
+          <div class="feature-card-desc">只要說「幫我做一個賣○○的網站」。設計、金流、物流設定，AI都會完成。</div>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_600/v1781223561/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-06-12_9.19.14_uwbaho.png" alt="商品管理">
+        <div class="feature-card-body">
+          <div class="feature-card-tag">商品管理</div>
+          <div class="feature-card-title">更新商品，說一句就好。</div>
+          <div class="feature-card-desc">「新增商品」「修改價格」，說完就搞定，不用再找後台在哪裡。</div>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_600/v1781223674/69ced1fe-1cc7-49b1-b8c4-486bc8b5b71e.png" alt="訂單管理">
+        <div class="feature-card-body">
+          <div class="feature-card-tag">訂單管理</div>
+          <div class="feature-card-title">訂單處理，交給AI。</div>
+          <div class="feature-card-desc">訂單確認、庫存更新、客戶回覆，AI全部代勞。你需要動手的事，大幅減少。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Demo video -->
+<section class="lp-demo-video" id="video">
+  <div class="lp-demo-video-inner">
+    <h2 class="lp-section-title">眼見為憑。</h2>
+    <p class="lp-section-sub">見證一段AI對話，如何變成一個完整的網路商店。</p>
+    <div class="lp-video-box lp-video-box-large">
+      <iframe id="demo-video" data-src="https://www.youtube.com/embed/-RlEdwB4DEI?autoplay=1&mute=1" src="" width="100%" height="100%" style="border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <script>
+      (function() {
+        var iframe = document.getElementById('demo-video');
+        var observer = new IntersectionObserver(function(entries) {
+          if (entries[0].isIntersecting) {
+            iframe.src = iframe.dataset.src;
+            observer.disconnect();
+          }
+        }, { threshold: 0.5 });
+        observer.observe(iframe);
+      })();
+    </script>
+  </div>
+</section>
+
+<!-- World First -->
+<section class="lp-world-first">
+  <div style="max-width:700px; margin:0 auto;">
+    <p style="font-size:0.85rem; font-weight:700; letter-spacing:0.1em; color:rgba(255,255,255,0.5); margin-bottom:1rem;">WORLD FIRST</p>
+    <h2>從親自操作電商，<br>到交給AI經營。</h2>
+    <p style="font-size:1.05rem; color:rgba(255,255,255,0.9); line-height:1.9; margin-top:1.5rem;">
+      現有的電商工具，大多假設操作者是「人」。Leap不同——這是全球首創的AI原生電商平台，由AI主導建站到經營的每一個環節。
+    </p>
+    <p class="lp-world-first-lines">
+      從操作，到對話。<br>
+      從管理，到託付。<br>
+      邁向電商的全新品類。
+    </p>
+  </div>
+</section>
+
+<!-- 3 Steps -->
+<section class="lp-steps">
+  <div class="lp-steps-inner">
+    <h2 class="lp-section-title">只需3個步驟，即可開始。</h2>
+    <p class="lp-section-sub">無需複雜設定。</p>
+    <div class="steps-grid">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-title">預先登錄</div>
+        <div class="step-desc">透過下方表單登錄，我們將於10月1日上線時通知您。</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-title">與AI對話</div>
+        <div class="step-desc">只要輸入「幫我做一個賣○○的電商」，AI就會自動建站。</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-title">直接開始銷售</div>
+        <div class="step-desc">商品管理、訂單管理全部透過對話完成，隨時可以調整。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="lp-faq">
+  <div class="lp-faq-inner">
+    <h2 class="lp-section-title">常見問題</h2>
+    <p class="lp-section-sub">登錄前，先解答你的疑問。</p>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>什麼時候正式上線？</div>
+      <div class="faq-answer">β版預計於2026年10月1日正式上線，目前開放預先登錄中。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>真的完全免費嗎？</div>
+      <div class="faq-answer">β版期間，開店費用與月費皆為0元。僅在實際交易發生時，收取6%的金流手續費。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>適合什麼樣的人？</div>
+      <div class="faq-answer">適合準備開始經營電商，或想減輕現有電商營運負擔的人。即使不熟悉後台操作、SEO或多語言設定，也能輕鬆使用。</div>
+    </div>
+  </div>
+</section>
+
+<!-- Form -->
+<section class="lp-form" id="form">
+  <div class="lp-form-inner">
+    <span class="lp-badge">開放預先登錄</span>
+    <h2 class="lp-section-title" style="margin-top:1rem;">搶先登錄，10月1日β版準時上線。</h2>
+    <p class="lp-section-sub">登錄後，我們將於上線時第一時間通知您。</p>
+    <div class="lp-form-pricing">
+      <span>開店費用 <strong>¥0</strong></span>
+      <span style="color:#d1d5db;">|</span>
+      <span>月費 <strong>¥0</strong></span>
+      <span style="color:#d1d5db;">|</span>
+      <span>金流手續費 <strong>6%</strong>（僅收）</span>
+    </div>
+    <div class="lp-form-trust">
+      <span><span class="trust-check">✓</span>開店費用0元</span>
+      <span><span class="trust-check">✓</span>月費0元</span>
+      <span><span class="trust-check">✓</span>2026年10月1日β版上線</span>
+      <span><span class="trust-check">✓</span>只要對話就能開始</span>
+    </div>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSde-5qxxo5IYO3s50GryWFw6pNQnn-IKNS8-D-6L5xT227q-Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+  </div>
+</section>
+
+</main>
+
+<!-- LP footer (social + legal only) -->
+<footer>
+  <div class="footer-container">
+    <hr class="footer-divider">
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/company/leap-site-inc" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/leap20240729/" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+      </a>
+      <a href="https://x.com/leap_0729" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+    </div>
+    <div class="footer-brand">
+      <a href="/zh-hans/" class="footer-logo-link">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="footer-logo-img">
+      </a>
+      <div class="footer-copyright" id="footerCopyright">Copyright © 2025 Leap, Inc.</div>
+    </div>
+    <div class="footer-legal">
+      <a href="/zh-hans/privacypolicy">隱私政策</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/zh-hans/terms">使用條款</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/zh-hans/tokushoho">特定商業交易法標示</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/zh-hans/delete-user">退會規定</a>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var languageCurrent = document.getElementById('languageCurrent');
+  var languageDropdown = document.getElementById('languageDropdown');
+  if (languageCurrent && languageDropdown) {
+    languageCurrent.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      languageDropdown.classList.toggle('active');
+    });
+    document.addEventListener('click', function () {
+      languageDropdown.classList.remove('active');
+    });
+    languageDropdown.addEventListener('click', function (e) {
+      e.stopPropagation();
+    });
+  }
+
+  // 向下捲動時隱藏導覽列，向上捲動時重新顯示
+  var header = document.getElementById('header');
+  var lastScrollY = window.pageYOffset;
+  window.addEventListener('scroll', function () {
+    var currentScrollY = window.pageYOffset;
+    if (currentScrollY > lastScrollY && currentScrollY > 80) {
+      header.classList.add('header-hidden');
+    } else if (currentScrollY < lastScrollY) {
+      header.classList.remove('header-hidden');
+    }
+    lastScrollY = currentScrollY;
+  }, { passive: true });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,990 @@
+---
+locale: ja
+title: AIと話すだけでネットショップを開設・運営 | Leap EC Agent
+description: AIとのチャットだけで、ネットショップを開設・運営。商品登録・注文管理・多言語対応までAIがサポートする次世代AI EC Agent。2026年10月1日ベータ版リリース予定、現在事前登録受付中。
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/favicon.png">
+
+  <title>{{ title }}</title>
+
+  <meta name="description" content="{{ description }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.leap.site{{ page.url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:image" content="https://www.leap.site/assets/og-image.png">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="{{ title }}">
+  <meta property="twitter:description" content="{{ description }}">
+  <meta property="twitter:image" content="https://www.leap.site/assets/og-image.png">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E0BHMWHJNK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E0BHMWHJNK');
+  </script>
+  <!-- Clarity -->
+  <script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "uxpxgpg8ea");
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- LP ヘッダー -->
+<header class="header-container" id="header">
+  <div class="header-main">
+    <div class="header-main-content">
+      <div class="nav-left">
+        <a href="/ja/" class="logo-link" target="_blank" rel="noopener noreferrer">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="logo-img">
+        </a>
+      </div>
+      <div class="nav-right">
+        <div class="language-selector">
+          <div class="language-current" id="languageCurrent">
+            <span>🌐</span>
+            <span id="currentLang">日本語</span>
+            <span>▼</span>
+          </div>
+          <div class="language-dropdown" id="languageDropdown">
+            <a href="/lp/ja/ai-ec-v3" class="language-option active" data-lang="ja">日本語</a>
+            <a href="/lp/en/ai-ec-v3" class="language-option" data-lang="en">English</a>
+            <a href="/lp/zh-hant/ai-ec-v3" class="language-option" data-lang="zh-hant">繁體中文</a>
+          </div>
+        </div>
+        <a href="/ja/" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.8); font-size:0.9rem; text-decoration:none;">会社概要</a>
+        <a href="#form" class="btn btn-start">事前登録する</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+
+<style>
+/* ===== ヒーロー＋カルーセル共通ラッパー ===== */
+.lp-dark-wrapper {
+  background:
+    linear-gradient(to bottom, rgba(15,15,26,0.84) 0%, rgba(15,15,26,0.92) 100%),
+    url("https://images.unsplash.com/photo-1733503747506-773e56e4078f?w=2400&auto=format&fit=crop&q=80") center top/cover no-repeat;
+}
+
+/* ===== ヒーロー ===== */
+.lp-hero {
+  background: transparent;
+  padding: 4rem 1rem 0;
+}
+.lp-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.lp-hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+.lp-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+.lp-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: white;
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+}
+.lp-btn-primary {
+  display: inline-block;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(193,0,51,0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.lp-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(193,0,51,0.45);
+  color: white;
+  text-decoration: none;
+}
+.lp-btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 2px solid rgba(255,255,255,0.7);
+  transition: background 0.2s, border-color 0.2s;
+}
+.lp-btn-outline:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: white;
+  color: white;
+  text-decoration: none;
+}
+.lp-pricing-text {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.85);
+  margin-top: 0.9rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+.lp-video-box {
+  aspect-ratio: 16/9;
+  background: #1a1a2e;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== 共通 ===== */
+.lp-section-title {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+.lp-section-sub {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* ===== ショーケースカルーセル ===== */
+.lp-showcase {
+  padding: 3rem 0 5rem;
+  background: transparent;
+  overflow: hidden;
+  perspective: 1400px;
+}
+.lp-showcase-track {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+.lp-showcase-item {
+  flex-shrink: 0;
+  width: 480px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  transform: scale(0.86) rotateY(0deg);
+  opacity: 0.5;
+  transition: transform 0.7s cubic-bezier(0.4,0,0.2,1), opacity 0.7s ease, box-shadow 0.7s ease;
+}
+.lp-showcase-item.is-prev {
+  transform: scale(0.86) rotateY(14deg);
+}
+.lp-showcase-item.is-next {
+  transform: scale(0.86) rotateY(-14deg);
+}
+.lp-showcase-item.is-active {
+  transform: scale(1.04) rotateY(0deg);
+  opacity: 1;
+  box-shadow: 0 24px 56px rgba(0,0,0,0.16);
+}
+.lp-showcase-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 640px) {
+  .lp-showcase-item { width: 76vw; }
+  .lp-showcase-item img { height: 200px; }
+}
+
+/* ===== 競合比較 ===== */
+.lp-comparison {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+}
+.lp-comparison-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+@media (max-width: 768px) {
+  .comparison-grid { grid-template-columns: 1fr; }
+}
+.comparison-box {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  border: 2px solid #e5e7eb;
+}
+.comparison-box.is-good {
+  border-color: #C10033;
+  box-shadow: 0 8px 32px rgba(193,0,51,0.12);
+}
+.comparison-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.comparison-logo-img {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.75;
+}
+.comparison-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+.comparison-label.bad { background: #fee2e2; color: #b91c1c; }
+.comparison-label.good { background: #fef2f2; color: #C10033; }
+.comparison-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.comparison-steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f3f4f6;
+  line-height: 1.5;
+}
+.comparison-steps li:last-child { border-bottom: none; }
+.step-icon-bad { color: #ef4444; flex-shrink: 0; margin-top: 2px; }
+.step-icon-good { color: #C10033; flex-shrink: 0; margin-top: 2px; font-weight: 700; }
+
+/* ===== 機能 ===== */
+.lp-features {
+  padding: 5rem 1rem;
+  background: white;
+}
+.lp-features-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+@media (max-width: 768px) {
+  .features-grid { grid-template-columns: 1fr; }
+}
+.feature-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.feature-card:hover {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+}
+.feature-card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: contain;
+  background: #f4f5f8;
+  display: block;
+}
+.feature-card-body { padding: 1.25rem; }
+.feature-card-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #C10033;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.4rem;
+}
+.feature-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.4rem;
+}
+.feature-card-desc {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ===== デモ動画 ===== */
+.lp-demo-video {
+  padding: 5rem 1rem;
+  background: white;
+}
+.lp-demo-video-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.lp-video-box-large {
+  margin-top: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.18);
+}
+
+/* ===== 世界初 ===== */
+.lp-world-first {
+  padding: 5rem 1rem;
+  background: #1a1a2e;
+  color: white;
+  text-align: center;
+}
+.lp-world-first h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 900;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+/* ===== ステップ ===== */
+.lp-steps {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+}
+.lp-steps-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+@media (max-width: 768px) {
+  .steps-grid { grid-template-columns: 1fr; }
+}
+.step-item { text-align: center; }
+.step-num {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+.step-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.4rem;
+}
+.step-desc { font-size: 0.88rem; color: #666; line-height: 1.7; }
+
+/* ===== フォーム ===== */
+.lp-form {
+  padding: 5rem 1rem;
+  background: white;
+}
+.lp-form-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+.lp-form-inner iframe {
+  width: 100%;
+  min-height: 1300px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+}
+.lp-form-pricing {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fc;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #444;
+  font-weight: 600;
+}
+.lp-form-pricing strong { color: #C10033; font-size: 1.05rem; }
+
+/* ===== Hero Value Points ===== */
+.lp-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 1.5rem;
+  margin-bottom: 2rem;
+}
+.lp-hero-points span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+}
+.lp-hero-points .point-check {
+  color: #ff5c7a;
+  font-weight: 900;
+  margin-right: 0.3rem;
+}
+
+/* ===== World First 補足コピー ===== */
+.lp-world-first-lines {
+  margin-top: 2rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1.9;
+}
+
+/* ===== フォーム直前の安心材料 ===== */
+.lp-form-trust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.25rem;
+  margin-top: 1.25rem;
+  font-size: 0.85rem;
+  color: #444;
+  font-weight: 600;
+}
+.lp-form-trust span { display: inline-flex; align-items: center; gap: 0.3rem; }
+.lp-form-trust .trust-check { color: #C10033; font-weight: 900; }
+
+/* ===== FAQ ===== */
+.lp-faq {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+}
+.lp-faq-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.faq-item {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1.5rem 0;
+}
+.faq-item:last-child { border-bottom: none; }
+.faq-question {
+  display: flex;
+  gap: 0.6rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.6rem;
+}
+.faq-question .faq-mark { color: #C10033; flex-shrink: 0; }
+.faq-answer {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.8;
+  padding-left: 1.6rem;
+}
+
+/* ===== ヘッダー刷新（このLP限定の上書き） ===== */
+.header-container {
+  background: rgba(15,15,26,0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.08);
+  transition: transform 0.3s ease;
+}
+.header-container.header-hidden {
+  transform: translateY(-100%);
+}
+.header-main {
+  background: transparent;
+  padding: 14px 0;
+}
+.logo-link {
+  width: 120px;
+  height: 40px;
+}
+.nav-right {
+  gap: 1.5rem;
+}
+.nav-right > a[href="/ja/"] {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.65);
+  transition: color 0.2s;
+}
+.nav-right > a[href="/ja/"]:hover {
+  color: white;
+}
+.language-current {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+.language-current:hover {
+  color: white;
+}
+.btn {
+  border-radius: 999px;
+  padding: 9px 22px;
+  font-size: 0.9rem;
+}
+.btn-start {
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 16px rgba(193,0,51,0.35);
+}
+.btn-start:hover {
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(193,0,51,0.45);
+}
+
+/* ===== モバイルでも言語切替を表示（このLP限定） ===== */
+@media (max-width: 768px) {
+  .nav-right {
+    display: flex;
+    gap: 0.75rem;
+  }
+  .nav-right > a[href="/ja/"],
+  .nav-right > a.btn-start {
+    display: none;
+  }
+}
+</style>
+
+<!-- ①② ヒーロー＋カルーセル共通背景 -->
+<div class="lp-dark-wrapper">
+
+<!-- ① ヒーロー -->
+<section class="lp-hero">
+  <div class="lp-hero-inner">
+
+    <h1>
+      AIと話すだけで、<br>
+      オンラインショップの開設・集客。
+    </h1>
+
+    <div class="lp-hero-points">
+      <span><span class="point-check">✓</span>管理画面不要</span>
+      <span><span class="point-check">✓</span>商品登録もAI</span>
+      <span><span class="point-check">✓</span>注文対応もAI</span>
+      <span><span class="point-check">✓</span>多言語販売対応</span>
+    </div>
+
+    <div class="lp-hero-cta">
+      <a href="#form" class="lp-btn-primary">事前登録する →</a>
+      <a href="#video" class="lp-btn-outline">デモを見る</a>
+    </div>
+
+    <p class="lp-pricing-text">
+      2026年10月1日ベータ版リリース｜初期費用0円・月額利用料0円（決済手数料6%のみ）
+    </p>
+
+  </div>
+</section>
+
+<!-- ② サイト実例カルーセル -->
+<section class="lp-showcase" id="showcaseSection">
+  <div class="lp-showcase-track" id="showcaseTrack">
+    <div class="lp-showcase-item" aria-hidden="true">
+      <img src="https://app.leap.site/images/website_images/001.png" alt="">
+    </div>
+    <div class="lp-showcase-item">
+      <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_960/v1780364885/132dc817-35b8-4325-acb7-58f57ceeb70a.png" alt="EC事業者向けサイト例">
+    </div>
+    <div class="lp-showcase-item">
+      <img src="https://app.leap.site/images/website_images/002.png" alt="D2Cブランドサイト例">
+    </div>
+    <div class="lp-showcase-item">
+      <img src="https://app.leap.site/images/website_images/005.png" alt="海外展開サイト例">
+    </div>
+    <div class="lp-showcase-item">
+      <img src="https://app.leap.site/images/website_images/001.png" alt="個人・小規模事業者向けネットショップ例">
+    </div>
+    <div class="lp-showcase-item" aria-hidden="true">
+      <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_960/v1780364885/132dc817-35b8-4325-acb7-58f57ceeb70a.png" alt="">
+    </div>
+  </div>
+</section>
+
+</div><!-- /.lp-dark-wrapper -->
+<script>
+(function () {
+  var section = document.getElementById('showcaseSection');
+  var track = document.getElementById('showcaseTrack');
+  var items = track.querySelectorAll('.lp-showcase-item');
+  var COUNT = 4;
+  var GAP = 20;
+  var current = 1;
+  var animating = false;
+
+  function cardW() { return items[0].offsetWidth; }
+  function centerOffset() { return (section.offsetWidth - cardW()) / 2; }
+  function posFor(idx) { return centerOffset() - idx * (cardW() + GAP); }
+
+  function applyClasses() {
+    items.forEach(function(item, i) {
+      item.classList.toggle('is-active', i === current);
+      item.classList.toggle('is-prev', i === current - 1);
+      item.classList.toggle('is-next', i === current + 1);
+    });
+  }
+
+  function goTo(idx, animate) {
+    current = idx;
+    track.style.transition = animate ? 'transform 0.7s cubic-bezier(0.4,0,0.2,1)' : 'none';
+    track.style.transform = 'translateX(' + posFor(current) + 'px)';
+    applyClasses();
+  }
+
+  function jumpTo(idx) {
+    track.style.transition = 'none';
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        current = idx;
+        track.style.transform = 'translateX(' + posFor(idx) + 'px)';
+        applyClasses();
+        animating = false;
+      });
+    });
+  }
+
+  track.addEventListener('transitionend', function (e) {
+    if (e.target !== track) return;
+    if (e.propertyName !== 'transform') return;
+    if (current === items.length - 1) jumpTo(1);
+    else if (current === 0) jumpTo(COUNT);
+    else animating = false;
+  });
+
+  window.addEventListener('resize', function () { goTo(current, false); });
+  goTo(1, false);
+
+  setInterval(function () {
+    if (animating) return;
+    animating = true;
+    goTo(current + 1, true);
+  }, 2000);
+})();
+</script>
+
+<!-- ③ クライアントロゴ -->
+{% include "client-logos.njk" %}
+
+<!-- ④ 競合比較 -->
+<section class="lp-comparison">
+  <div class="lp-comparison-inner">
+    <h2 class="lp-section-title">結局、誰がECを<br>運営していますか。</h2>
+    <p class="lp-section-sub">Shopify・BASEも、機能は豊富。でも、操作するのはいつも「人」です。</p>
+    <div class="comparison-grid">
+      <div class="comparison-box">
+        <div class="comparison-logos">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_40/v1781221164/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99_8_p5xsfn.jpg" alt="Shopify" class="comparison-logo-img">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_40/v1781221204/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99_1_pute7w.png" alt="BASE" class="comparison-logo-img">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_40/v1781221327/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99_3_mrje3p.png" alt="カラーミーショップ" class="comparison-logo-img">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_40/v1781221365/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99_4_knynrf.png" alt="Stores" class="comparison-logo-img">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_40/v1781221318/%E3%82%BF%E3%82%99%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%88%E3%82%99_2_f9cixb.png" alt="Ecwid" class="comparison-logo-img">
+        </div>
+        <span class="comparison-label bad">従来のECツール｜人が操作</span>
+        <ul class="comparison-steps">
+          <li><span class="step-icon-bad">✕</span>ドメイン・決済・送料は、手動で設定。</li>
+          <li><span class="step-icon-bad">✕</span>商品登録は、管理画面を開いて手動操作。</li>
+          <li><span class="step-icon-bad">✕</span>SEOの調整も、手動で確認。</li>
+          <li><span class="step-icon-bad">✕</span>問い合わせ対応も、手動で返信。</li>
+          <li><span class="step-icon-bad">✕</span>機能追加は、都度アプリ課金。</li>
+          <li><span class="step-icon-bad">✕</span>手に負えなければ、制作会社に依頼。</li>
+        </ul>
+      </div>
+      <div class="comparison-box is-good">
+        <div style="margin-bottom:1.5rem;">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_56/v1781222581/%E3%83%AD%E3%82%B3%E3%82%99%E6%A8%AA%E9%95%B7%E5%88%87%E3%82%8A%E6%8A%9C%E3%81%8D2400_1260_1_xmgfe6.png" alt="Leap" style="height:40px; width:auto;">
+        </div>
+        <span class="comparison-label good">Leap AI｜AIが運営</span>
+        <ul class="comparison-steps">
+          <li><span class="step-icon-good">✓</span>ドメイン・決済・配送は、AIが設定。</li>
+          <li><span class="step-icon-good">✓</span>商品登録・価格変更も、AIへ。</li>
+          <li><span class="step-icon-good">✓</span>SEO・解析も、自動で改善。</li>
+          <li><span class="step-icon-good">✓</span>問い合わせ対応も、AIが一次対応。</li>
+          <li><span class="step-icon-good">✓</span>注文・在庫管理も、AIにお任せ。</li>
+        </ul>
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_600/v1781223541/3d55df78-4733-48bc-9671-78a72141d3f9.png" alt="EC管理ダッシュボード" style="width:100%; border-radius:10px; margin-top:1.5rem; box-shadow:0 4px 16px rgba(0,0,0,0.1);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑤ 機能紹介 -->
+<section class="lp-features">
+  <div class="lp-features-inner">
+    <h2 class="lp-section-title">ECに必要なすべてを、<br>AIが担う。</h2>
+    <p class="lp-section-sub">構築も、運営も。あなたは話すだけです。</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_600/v1781223541/3d55df78-4733-48bc-9671-78a72141d3f9.png" alt="EC管理ダッシュボード">
+        <div class="feature-card-body">
+          <div class="feature-card-tag">EC構築</div>
+          <div class="feature-card-title">管理画面を、開かない。</div>
+          <div class="feature-card-desc">「○○を売るサイトを作って」と伝えるだけ。デザイン・決済・配送の設定は、AIが済ませます。</div>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_600/v1781223561/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-06-12_9.19.14_uwbaho.png" alt="商品管理">
+        <div class="feature-card-body">
+          <div class="feature-card-tag">商品管理</div>
+          <div class="feature-card-title">商品の更新は、話すだけ。</div>
+          <div class="feature-card-desc">「新商品を追加して」「価格を変更して」。それだけで完了。管理画面を探す必要もありません。</div>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_600/v1781223674/69ced1fe-1cc7-49b1-b8c4-486bc8b5b71e.png" alt="注文管理">
+        <div class="feature-card-body">
+          <div class="feature-card-tag">注文管理</div>
+          <div class="feature-card-title">注文処理も、AIへ。</div>
+          <div class="feature-card-desc">受注確認・在庫更新・顧客対応まで、AIがまとめて代行。あなたが手を動かす作業は、大幅に減ります。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑥ デモ動画 -->
+<section class="lp-demo-video" id="video">
+  <div class="lp-demo-video-inner">
+    <h2 class="lp-section-title">実際の動作を<br>ご覧ください。</h2>
+    <p class="lp-section-sub">AIとのチャットだけで、ECサイトが完成する瞬間。</p>
+    <div class="lp-video-box lp-video-box-large">
+      <iframe id="demo-video" data-src="https://www.youtube.com/embed/-RlEdwB4DEI?autoplay=1&mute=1" src="" width="100%" height="100%" style="border:none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <script>
+      (function() {
+        var iframe = document.getElementById('demo-video');
+        var observer = new IntersectionObserver(function(entries) {
+          if (entries[0].isIntersecting) {
+            iframe.src = iframe.dataset.src;
+            observer.disconnect();
+          }
+        }, { threshold: 0.5 });
+        observer.observe(iframe);
+      })();
+    </script>
+  </div>
+</section>
+
+<!-- ⑦ 世界初 -->
+<section class="lp-world-first">
+  <div style="max-width:700px; margin:0 auto;">
+    <p style="font-size:0.85rem; font-weight:700; letter-spacing:0.1em; color:rgba(255,255,255,0.5); margin-bottom:1rem;">WORLD FIRST</p>
+    <h2>ECを操作する時代から、<br>AIが運営する時代へ。</h2>
+    <p style="font-size:1.05rem; color:rgba(255,255,255,0.9); line-height:1.9; margin-top:1.5rem;">
+      既存のECツールの多くは、人が操作することを前提に作られています。Leapは、AIが主役となってECの構築から運営まですべてを担う、世界初のAI Native Commerce Platformです。
+    </p>
+    <p class="lp-world-first-lines">
+      操作から、対話へ。<br>
+      管理から、委任へ。<br>
+      ECの、新しいカテゴリへ。
+    </p>
+  </div>
+</section>
+
+<!-- ⑧ 3ステップ -->
+<section class="lp-steps">
+  <div class="lp-steps-inner">
+    <h2 class="lp-section-title">始め方は、たった3ステップ。</h2>
+    <p class="lp-section-sub">複雑な設定は一切なし。</p>
+    <div class="steps-grid">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-title">事前登録する</div>
+        <div class="step-desc">下記フォームからご登録ください。10月1日のリリースに合わせてご案内します。</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-title">AIにチャット</div>
+        <div class="step-desc">「○○を売るECを作って」と入力するだけ。AIが自動でECを構築します。</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-title">そのまま販売開始</div>
+        <div class="step-desc">商品管理・注文管理もすべてチャットで完結。いつでも変更可能。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑧.5 FAQ -->
+<section class="lp-faq">
+  <div class="lp-faq-inner">
+    <h2 class="lp-section-title">よくあるご質問</h2>
+    <p class="lp-section-sub">登録前の疑問にお答えします。</p>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>いつ正式リリースですか？</div>
+      <div class="faq-answer">2026年10月1日にベータ版としてリリース予定です。現在、事前登録を受付中です。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>料金は本当に無料ですか？</div>
+      <div class="faq-answer">ベータ版期間中は、初期費用・月額利用料ともに0円です。決済が発生した際の決済手数料6%のみご負担いただきます。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>どんな人に向いていますか？</div>
+      <div class="faq-answer">これからECを始める方、既存ECの運営業務を楽にしたい方に向いています。管理画面の操作やSEO・多言語対応など、EC運営の専門知識がなくてもご利用いただけます。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑨ フォーム -->
+<section class="lp-form" id="form">
+  <div class="lp-form-inner">
+    <span class="lp-badge">事前登録受付中</span>
+    <h2 class="lp-section-title" style="margin-top:1rem;">10月1日のベータ版リリースに向けて、事前登録受付中。</h2>
+    <p class="lp-section-sub">ご登録いただいた方には、10月1日のリリースに合わせてご案内いたします。</p>
+    <div class="lp-form-pricing">
+      <span>初期費用 <strong>¥0</strong></span>
+      <span style="color:#d1d5db;">|</span>
+      <span>月額 <strong>¥0</strong></span>
+      <span style="color:#d1d5db;">|</span>
+      <span>決済手数料 <strong>6%</strong> のみ</span>
+    </div>
+    <div class="lp-form-trust">
+      <span><span class="trust-check">✓</span>初期費用0円</span>
+      <span><span class="trust-check">✓</span>月額利用料0円</span>
+      <span><span class="trust-check">✓</span>2026年10月1日ベータ版リリース</span>
+      <span><span class="trust-check">✓</span>チャットだけで開始</span>
+    </div>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclalGRt_JIjbuklZMwSo5hqMibxFqhvro2rq_bgVbTDub-ZQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+  </div>
+</section>
+
+</main>
+
+<!-- LP フッター（SNS以下のみ） -->
+<footer>
+  <div class="footer-container">
+    <hr class="footer-divider">
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/company/leap-site-inc" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/leap20240729/" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+      </a>
+      <a href="https://x.com/leap_0729" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+    </div>
+    <div class="footer-brand">
+      <a href="/ja/" class="footer-logo-link">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="footer-logo-img">
+      </a>
+      <div class="footer-copyright" id="footerCopyright">Copyright © 2025 Leap, Inc.</div>
+    </div>
+    <div class="footer-legal">
+      <a href="/ja/privacypolicy">プライバシーポリシー</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/ja/terms">利用規約</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/ja/tokushoho">特定商取引法に基づく表示</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/ja/delete-user">退会規定</a>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var languageCurrent = document.getElementById('languageCurrent');
+  var languageDropdown = document.getElementById('languageDropdown');
+  if (languageCurrent && languageDropdown) {
+    languageCurrent.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      languageDropdown.classList.toggle('active');
+    });
+    document.addEventListener('click', function () {
+      languageDropdown.classList.remove('active');
+    });
+    languageDropdown.addEventListener('click', function (e) {
+      e.stopPropagation();
+    });
+  }
+
+  // スクロールでヘッダーを非表示、上スクロールで再表示
+  var header = document.getElementById('header');
+  var lastScrollY = window.pageYOffset;
+  window.addEventListener('scroll', function () {
+    var currentScrollY = window.pageYOffset;
+    if (currentScrollY > lastScrollY && currentScrollY > 80) {
+      header.classList.add('header-hidden');
+    } else if (currentScrollY < lastScrollY) {
+      header.classList.remove('header-hidden');
+    }
+    lastScrollY = currentScrollY;
+  }, { passive: true });
+});
+</script>
+</body>
+</html>
