@@ -1,0 +1,32 @@
+{
+  "account-setup": {
+    "ja": "ショップ開設・アカウント管理",
+    "en": "Store Setup & Account",
+    "zh-hans": "店铺开设与账户管理"
+  },
+  "products": {
+    "ja": "商品登録・在庫管理",
+    "en": "Products & Inventory",
+    "zh-hans": "商品登记与库存管理"
+  },
+  "payments": {
+    "ja": "決済・振込",
+    "en": "Payments & Payouts",
+    "zh-hans": "支付与提现"
+  },
+  "orders": {
+    "ja": "注文・発送・キャンセル対応",
+    "en": "Orders, Shipping & Cancellations",
+    "zh-hans": "订单、发货与取消处理"
+  },
+  "design-marketing": {
+    "ja": "デザイン・集客・販促",
+    "en": "Design, Marketing & Promotion",
+    "zh-hans": "设计、引流与促销"
+  },
+  "security": {
+    "ja": "セキュリティ・トラブル対応",
+    "en": "Security & Trouble Response",
+    "zh-hans": "安全与纠纷处理"
+  }
+}
