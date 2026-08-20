@@ -1,0 +1,674 @@
+---
+locale: ja
+title: 広告運用もAIにお任せ。Leap AI 広告運用（ベータ）| Leap
+description: Leapでネットショップを開設された方向けに、Google・Instagram・Amazon・楽天の広告運用もAIが担うベータ版をご案内。チャットで相談するだけで、予算配分・実績確認までAIがサポートします。
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/favicon.png">
+
+  <title>{{ title }}</title>
+
+  <meta name="description" content="{{ description }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.leap.site{{ page.url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:image" content="https://www.leap.site/assets/og-image.png">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="{{ title }}">
+  <meta property="twitter:description" content="{{ description }}">
+  <meta property="twitter:image" content="https://www.leap.site/assets/og-image.png">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E0BHMWHJNK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E0BHMWHJNK');
+  </script>
+  <!-- Clarity -->
+  <script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "uxpxgpg8ea");
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- LP ヘッダー -->
+<header class="header-container" id="header">
+  <div class="header-main">
+    <div class="header-main-content">
+      <div class="nav-left">
+        <a href="/ja/" class="logo-link" target="_blank" rel="noopener noreferrer">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="logo-img">
+        </a>
+      </div>
+      <div class="nav-right">
+        <a href="/ja/" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.8); font-size:0.9rem; text-decoration:none;">会社概要</a>
+        <a href="https://www.leap.site/ja/about/#contact" target="_blank" rel="noopener noreferrer" class="btn btn-start">お問い合わせ</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+
+<style>
+/* ===== ヒーロー共通背景 ===== */
+.lp-dark-wrapper {
+  background:
+    linear-gradient(to bottom, rgba(15,15,26,0.84) 0%, rgba(15,15,26,0.92) 100%),
+    url("https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=2400&auto=format&fit=crop&q=80") center top/cover no-repeat;
+}
+
+/* ===== ヒーロー ===== */
+.lp-hero {
+  background: transparent;
+  padding: 4rem 1rem 4.5rem;
+}
+.lp-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.lp-hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+.lp-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+.lp-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: white;
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+}
+.lp-btn-primary {
+  display: inline-block;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(193,0,51,0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.lp-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(193,0,51,0.45);
+  color: white;
+  text-decoration: none;
+}
+.lp-btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 2px solid rgba(255,255,255,0.7);
+  transition: background 0.2s, border-color 0.2s;
+}
+.lp-btn-outline:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: white;
+  color: white;
+  text-decoration: none;
+}
+.lp-pricing-text {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.85);
+  margin-top: 0.9rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* ===== Hero Value Points ===== */
+.lp-hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 1.5rem;
+  margin-bottom: 2rem;
+}
+.lp-hero-points span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+}
+.lp-hero-points .point-check {
+  color: #ff5c7a;
+  font-weight: 900;
+  margin-right: 0.3rem;
+}
+
+/* ===== 共通 ===== */
+.lp-section-title {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+.lp-section-sub {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* ===== 競合比較 ===== */
+.lp-comparison {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+}
+.lp-comparison-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+@media (max-width: 768px) {
+  .comparison-grid { grid-template-columns: 1fr; }
+}
+.comparison-box {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  border: 2px solid #e5e7eb;
+}
+.comparison-box.is-good {
+  border-color: #C10033;
+  box-shadow: 0 8px 32px rgba(193,0,51,0.12);
+}
+.comparison-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+.comparison-label.bad { background: #fee2e2; color: #b91c1c; }
+.comparison-label.good { background: #fef2f2; color: #C10033; }
+.comparison-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.comparison-steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f3f4f6;
+  line-height: 1.5;
+}
+.comparison-steps li:last-child { border-bottom: none; }
+.step-icon-bad { color: #ef4444; flex-shrink: 0; margin-top: 2px; }
+.step-icon-good { color: #C10033; flex-shrink: 0; margin-top: 2px; font-weight: 700; }
+
+/* ===== 実際の管理画面 ===== */
+.lp-dashboard {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+}
+.lp-dashboard-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+@media (max-width: 768px) {
+  .dashboard-grid { grid-template-columns: 1fr; }
+}
+.dashboard-item img {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+  display: block;
+}
+.dashboard-caption {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-top: 1rem;
+}
+.dashboard-note {
+  text-align: center;
+  font-size: 0.78rem;
+  color: #999;
+  margin-top: 1.5rem;
+}
+
+/* ===== 機能 ===== */
+.lp-features {
+  padding: 5rem 1rem;
+  background: white;
+}
+.lp-features-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.ad-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+@media (max-width: 768px) {
+  .ad-features-grid { grid-template-columns: 1fr; }
+}
+.ad-feature-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.ad-feature-card:hover {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+}
+.ad-feature-card-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #C10033;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.6rem;
+}
+.ad-feature-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.6rem;
+}
+.ad-feature-card-desc {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ===== 世界初 ===== */
+.lp-world-first {
+  padding: 5rem 1rem;
+  background: #1a1a2e;
+  color: white;
+  text-align: center;
+}
+.lp-world-first h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 900;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+/* ===== ステップ ===== */
+.lp-steps {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+}
+.lp-steps-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+@media (max-width: 768px) {
+  .steps-grid { grid-template-columns: 1fr; }
+}
+.step-item { text-align: center; }
+.step-num {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+.step-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.4rem;
+}
+.step-desc { font-size: 0.88rem; color: #666; line-height: 1.7; }
+
+/* ===== FAQ ===== */
+.lp-faq {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+}
+.lp-faq-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.faq-item {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1.5rem 0;
+}
+.faq-item:last-child { border-bottom: none; }
+.faq-question {
+  display: flex;
+  gap: 0.6rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.6rem;
+}
+.faq-question .faq-mark { color: #C10033; flex-shrink: 0; }
+.faq-answer {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.8;
+  padding-left: 1.6rem;
+}
+
+/* ===== 最終CTA ===== */
+.lp-final-cta {
+  padding: 5rem 1rem;
+  background: white;
+  text-align: center;
+}
+.lp-final-cta-inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.lp-form-trust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.25rem;
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #444;
+  font-weight: 600;
+}
+.lp-form-trust span { display: inline-flex; align-items: center; gap: 0.3rem; }
+.lp-form-trust .trust-check { color: #C10033; font-weight: 900; }
+.lp-final-cta .lp-btn-primary {
+  color: white;
+  margin-top: 1rem;
+}
+</style>
+
+<!-- ①ヒーロー -->
+<div class="lp-dark-wrapper">
+<section class="lp-hero">
+  <div class="lp-hero-inner">
+
+    <span class="lp-badge">NEW｜ベータ版ご案内</span>
+
+    <h1>
+      集客も、<br>
+      AIで自動化しませんか？
+    </h1>
+
+    <div class="lp-hero-points">
+      <span><span class="point-check">✓</span>Google・Instagram・Amazon・楽天に対応</span>
+      <span><span class="point-check">✓</span>予算配分もAIが自動調整</span>
+      <span><span class="point-check">✓</span>チャットで相談・指示するだけ</span>
+      <span><span class="point-check">✓</span>実績はダッシュボードでいつでも確認</span>
+    </div>
+
+    <div class="lp-hero-cta">
+      <a href="https://www.leap.site/ja/about/#contact" target="_blank" rel="noopener noreferrer" class="lp-btn-primary">お問い合わせする →</a>
+      <a href="#features" class="lp-btn-outline">サービス概要を見る</a>
+    </div>
+
+    <p class="lp-pricing-text">
+      Leapでネットショップを開設済みの方向け｜現在ベータ版としてご案内中
+    </p>
+
+  </div>
+</section>
+</div><!-- /.lp-dark-wrapper -->
+
+<!-- ②比較 -->
+<section class="lp-comparison">
+  <div class="lp-comparison-inner">
+    <h2 class="lp-section-title">結局、誰が広告を<br>運用していますか。</h2>
+    <p class="lp-section-sub">Google広告もInstagram広告も、機能は充実。でも、日々の調整をしているのは、いつも「人」です。</p>
+    <div class="comparison-grid">
+      <div class="comparison-box">
+        <span class="comparison-label bad">自分で広告運用｜人が操作</span>
+        <ul class="comparison-steps">
+          <li><span class="step-icon-bad">✕</span>媒体ごとに管理画面へログインして、手動で入稿。</li>
+          <li><span class="step-icon-bad">✕</span>入札額や予算配分は、勘と経験で調整。</li>
+          <li><span class="step-icon-bad">✕</span>クリエイティブ（バナー・コピー）も、自分で用意。</li>
+          <li><span class="step-icon-bad">✕</span>実績はExcelやスプレッドシートで手集計。</li>
+          <li><span class="step-icon-bad">✕</span>気づけば、広告の調整に手が回らず放置。</li>
+        </ul>
+      </div>
+      <div class="comparison-box is-good">
+        <span class="comparison-label good">Leap AI 広告運用｜AIが運用</span>
+        <ul class="comparison-steps">
+          <li><span class="step-icon-good">✓</span>媒体をまたいで、AIが一元的に入稿・調整。</li>
+          <li><span class="step-icon-good">✓</span>予算配分・入札は、AIが継続的に最適化。</li>
+          <li><span class="step-icon-good">✓</span>クリエイティブ制作も、チャットで相談できる。</li>
+          <li><span class="step-icon-good">✓</span>実績はダッシュボードで、いつでも見える化。</li>
+          <li><span class="step-icon-good">✓</span>「今月の消化ペースは？」と聞くだけで即回答。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ③実際の管理画面 -->
+<section class="lp-dashboard">
+  <div class="lp-dashboard-inner">
+    <h2 class="lp-section-title">AIと話しながら、<br>数字はいつでも見える化。</h2>
+    <p class="lp-section-sub">チャットで相談する。ダッシュボードで確認する。この2つがセットになっています。</p>
+    <div class="dashboard-grid">
+      <div class="dashboard-item">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1787225351/c4fb7259-64de-43b0-8f91-65607350f896.png" alt="今月の運用画面。媒体別の予算消化率とペースを確認できる">
+        <div class="dashboard-caption">今月の運用｜媒体別の消化ペースを確認</div>
+      </div>
+      <div class="dashboard-item">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1787225398/6e2709f3-4b5b-47e2-9083-e9bb3ee9b057.png" alt="実績を見る画面。チャネル別の推移をグラフで確認できる">
+        <div class="dashboard-caption">実績を見る｜チャネル別の推移をグラフで確認</div>
+      </div>
+    </div>
+    <p class="dashboard-note">※画面はサンプルデータです。</p>
+  </div>
+</section>
+
+<!-- ④機能紹介 -->
+<section class="lp-features" id="features">
+  <div class="lp-features-inner">
+    <h2 class="lp-section-title">広告運用に必要なすべてを、<br>AIが担う。</h2>
+    <p class="lp-section-sub">出稿も、改善も。あなたは話すだけです。</p>
+    <div class="ad-features-grid">
+      <div class="ad-feature-card">
+        <div class="ad-feature-card-tag">チャット相談</div>
+        <div class="ad-feature-card-title">話すだけで、運用相談。</div>
+        <div class="ad-feature-card-desc">「今月の予算をもっと使って」「Instagramに寄せて」。チャットで伝えるだけで、AIが対応します。</div>
+      </div>
+      <div class="ad-feature-card">
+        <div class="ad-feature-card-tag">自動最適化</div>
+        <div class="ad-feature-card-title">予算配分も、入札も自動で。</div>
+        <div class="ad-feature-card-desc">Google・Instagram・Amazon・楽天。媒体をまたいで、AIが配分と入札を継続的に調整します。</div>
+      </div>
+      <div class="ad-feature-card">
+        <div class="ad-feature-card-tag">レポーティング</div>
+        <div class="ad-feature-card-title">実績は、いつでも見える化。</div>
+        <div class="ad-feature-card-desc">月次・チャネル別・商品別の実績を自動集計。ダッシュボードでいつでも確認できます。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑤ポジショニング -->
+<section class="lp-world-first">
+  <div style="max-width:700px; margin:0 auto;">
+    <p style="font-size:0.85rem; font-weight:700; letter-spacing:0.1em; color:rgba(255,255,255,0.5); margin-bottom:1rem;">NEXT STEP</p>
+    <h2>ECを作るAIから、<br>売上を作るAIへ。</h2>
+    <p style="font-size:1.05rem; color:rgba(255,255,255,0.9); line-height:1.9; margin-top:1.5rem;">
+      Leapは、チャットだけでネットショップを開設・運営できるAI Native Commerce Platformです。今回のベータでは、その先にある「集客」もAIが担います。サイトを作って終わりではなく、売上をつくるところまで。
+    </p>
+  </div>
+</section>
+
+<!-- ⑥3ステップ -->
+<section class="lp-steps">
+  <div class="lp-steps-inner">
+    <h2 class="lp-section-title">始め方は、たった3ステップ。</h2>
+    <p class="lp-section-sub">現在はベータ版として、個別にご案内しています。</p>
+    <div class="steps-grid">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <div class="step-title">お問い合わせ</div>
+        <div class="step-desc">現在の広告運用状況や予算感について、まずはヒアリングします。</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <div class="step-title">媒体連携</div>
+        <div class="step-desc">Google・Instagram・Amazon・楽天の広告アカウントを連携します。</div>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <div class="step-title">AIチャットで運用開始</div>
+        <div class="step-desc">予算調整も実績確認も、チャットとダッシュボードで完結します。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑦FAQ -->
+<section class="lp-faq">
+  <div class="lp-faq-inner">
+    <h2 class="lp-section-title">よくあるご質問</h2>
+    <p class="lp-section-sub">お問い合わせ前の疑問にお答えします。</p>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>ベータ版はいつまでですか？</div>
+      <div class="faq-answer">現在、既存のLeapご利用者様を対象に、ベータ版として個別にご案内しています。正式なリリース時期は決まり次第お知らせします。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>対応している広告媒体は？</div>
+      <div class="faq-answer">Google広告・Instagram広告・Amazon広告・楽天広告に対応しています（2026年8月時点）。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>広告アカウントを持っていなくても利用できますか？</div>
+      <div class="faq-answer">新規開設のご相談も承っています。まずはお問い合わせください。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>料金はどれくらいかかりますか？</div>
+      <div class="faq-answer">事業規模や広告予算に応じて個別にご案内しています。お問い合わせの際に詳しくご説明します。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>Leapでショップを作っていなくても利用できますか？</div>
+      <div class="faq-answer">現在は、Leapでネットショップを開設済みの方を対象にご案内しています。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑧最終CTA -->
+<section class="lp-final-cta" id="contact">
+  <div class="lp-final-cta-inner">
+    <span class="lp-badge" style="color:white;">お問い合わせ受付中</span>
+    <h2 class="lp-section-title" style="margin-top:1rem; margin-bottom:0.75rem;">広告運用について、<br>まずはお気軽にご相談ください。</h2>
+    <p class="lp-section-sub" style="margin-bottom:0;">現在の状況や目標をお伺いした上で、最適な進め方をご提案します。</p>
+    <a href="https://www.leap.site/ja/about/#contact" target="_blank" rel="noopener noreferrer" class="lp-btn-primary">お問い合わせする →</a>
+    <div class="lp-form-trust">
+      <span><span class="trust-check">✓</span>Leapご利用者様向け</span>
+      <span><span class="trust-check">✓</span>ベータ版として個別にご案内</span>
+      <span><span class="trust-check">✓</span>ご相談は無料</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- LP フッター（SNS以下のみ） -->
+<footer>
+  <div class="footer-container">
+    <hr class="footer-divider">
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/company/leap-site-inc" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/leap20240729/" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+      </a>
+      <a href="https://x.com/leap_0729" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+    </div>
+    <div class="footer-brand">
+      <a href="/ja/" class="footer-logo-link">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="footer-logo-img">
+      </a>
+      <div class="footer-copyright" id="footerCopyright">Copyright © 2025 Leap, Inc.</div>
+    </div>
+    <div class="footer-legal">
+      <a href="/ja/privacypolicy">プライバシーポリシー</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/ja/terms">利用規約</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/ja/tokushoho">特定商取引法に基づく表示</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/ja/delete-user">退会規定</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
