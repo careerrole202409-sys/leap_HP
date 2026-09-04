@@ -51,6 +51,7 @@
                 </a>
                 
                 <nav class="nav-links">
+                    <a href="/{{ locale }}/templates" class="nav-link" id="templatesLink">テンプレート</a>
                     <div class="nav-item">
                         <span class="nav-link" id="servicesLabel">特徴 ▼</span>
                         <div class="dropdown-menu dropdown-menu-wide">
@@ -109,7 +110,11 @@
         <div class="mobile-nav-item">
             <a href="/{{ locale }}/" class="mobile-nav-link" id="mobileHome">ホーム</a>
         </div>
-        
+
+        <div class="mobile-nav-item">
+            <a href="/{{ locale }}/templates" class="mobile-nav-link" id="mobileTemplatesLink">テンプレート</a>
+        </div>
+
         <div class="mobile-nav-item">
             <div class="mobile-dropdown-toggle" onclick="toggleMobileDropdown(this)">
                 <span id="mobileServicesText">特徴</span>
@@ -172,6 +177,7 @@
             langName: "日本語",
             login: "ログイン",
             about: "会社概要",
+            templatesLink: "テンプレート",
             servicesLabel: "特徴 ▼",
             dropdownLabelAgent: "AIエージェント",
             dropdownLabelMarketing: "海外マーケ支援",
@@ -203,6 +209,7 @@
             langName: "English",
             login: "Login",
             about: "About Us",
+            templatesLink: "Templates",
             servicesLabel: "Features ▼",
             dropdownLabelAgent: "AI Agent",
             dropdownLabelMarketing: "Global Marketing",
@@ -234,6 +241,7 @@
             langName: "简体中文",
             login: "登录",
             about: "公司简介",
+            templatesLink: "模板",
             servicesLabel: "特征 ▼",
             dropdownLabelAgent: "AI代理功能",
             dropdownLabelMarketing: "海外营销支援",
@@ -282,6 +290,8 @@
         setText('currentLang', t.langName);
         setText('loginLink', t.login);
         setText('aboutLink', t.about);
+        setText('templatesLink', t.templatesLink);
+        setText('mobileTemplatesLink', t.templatesLink);
         setText('servicesLabel', t.servicesLabel);
         setText('dropdownLabelAgent', t.dropdownLabelAgent);
         setText('dropdownLabelMarketing', t.dropdownLabelMarketing);

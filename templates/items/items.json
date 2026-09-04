@@ -1,0 +1,11 @@
+{
+  "layout": "template-detail.njk",
+  "tags": ["templates"],
+  "pagination": {
+    "data": "locales",
+    "size": 1,
+    "alias": "locale"
+  },
+  "locales": ["ja", "en", "zh-hans"],
+  "permalink": "/{{ locale }}/templates/{{ page.fileSlug }}/index.html"
+}
