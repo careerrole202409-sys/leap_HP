@@ -139,7 +139,7 @@ description: 为您介绍成功导入 Leap，实现多语言化及海外业务�
                     {% set st_label = categories.site_type[st_key][locale] %}
 
                     <article class="case-card" data-industry="{{ ind_key }}" data-site-type="{{ st_key }}">
-                        <a href="{{ post.url }}">
+                        <a href="/{{ locale }}/case-studies/{{ post.fileSlug }}/">
                             <!-- ロゴエリア -->
                             <div class="case-logo-wrapper">
                                 <img

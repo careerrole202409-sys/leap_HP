@@ -1,0 +1,139 @@
+---
+layout: base.njk
+---
+
+{% set current_name = name_ja %}
+{% set current_description = description_ja %}
+{% if locale == 'en' and name_en %}
+    {% set current_name = name_en %}
+    {% set current_description = description_en %}
+{% elif locale == 'zh-hans' and name_zh %}
+    {% set current_name = name_zh %}
+    {% set current_description = description_zh %}
+{% endif %}
+
+{% set current_labels = labels_ja %}
+{% if locale == 'en' and labels_en %}
+    {% set current_labels = labels_en %}
+{% elif locale == 'zh-hans' and labels_zh %}
+    {% set current_labels = labels_zh %}
+{% endif %}
+
+{% set type_labels_all = {
+    ja: { ec: "ECサイト", hp: "HP", lp: "LP" },
+    en: { ec: "E-Commerce", hp: "HP", lp: "LP" },
+    "zh-hans": { ec: "电商网站", hp: "HP", lp: "LP" }
+} %}
+{% set type_labels = type_labels_all[locale] if type_labels_all[locale] else type_labels_all.ja %}
+
+{% set type_paths = { ec: "ec-creation" } %}
+{% set cta_href = "https://app.leap.site/" + type_paths[type] if type_paths[type] else "https://app.leap.site" %}
+
+{% set lang_labels_all = {
+    ja: { ja: "日本語", en: "英語" },
+    en: { ja: "Japanese", en: "English" },
+    "zh-hans": { ja: "日语", en: "英语" }
+} %}
+{% set lang_labels = lang_labels_all[locale] if lang_labels_all[locale] else lang_labels_all.ja %}
+
+{% set ui = {
+    ja: { home: "ホーム", templates: "テンプレート", type_label: "種類", tag_label: "タグ", lang_label: "対応言語", cta_btn: "Leapで作成する" },
+    en: { home: "Home", templates: "Templates", type_label: "Type", tag_label: "Tags", lang_label: "Languages", cta_btn: "Start with Leap" },
+    "zh-hans": { home: "首页", templates: "模板", type_label: "类型", tag_label: "标签", lang_label: "支持语言", cta_btn: "用Leap创建" }
+} %}
+{% set t = ui[locale] if ui[locale] else ui.ja %}
+
+<style>
+.template-detail-container { max-width: 1100px; margin: 0 auto; padding: 100px 24px 0; }
+
+.template-breadcrumb { font-size: 0.9rem; color: #64748b; margin: 0 0 1.5rem; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.template-breadcrumb a { color: #64748b; text-decoration: none; }
+.template-breadcrumb a:hover { color: #C10033; text-decoration: underline; }
+.template-breadcrumb-sep { color: #cbd5e1; }
+.template-breadcrumb-current { color: #94a3b8; }
+
+.template-detail-grid { display: grid; grid-template-columns: 320px 1fr; gap: 3rem; align-items: start; padding-bottom: 5rem; }
+@media (max-width: 900px) {
+    .template-detail-grid { grid-template-columns: 1fr; }
+}
+
+.template-info { position: sticky; top: 100px; }
+@media (max-width: 900px) {
+    .template-info { position: static; }
+}
+
+.template-info-name { font-size: 1.6rem; font-weight: 800; color: #1e293b; margin-bottom: 1.5rem; line-height: 1.4; }
+
+.template-info-row { margin-bottom: 1.25rem; }
+.template-info-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #94a3b8; margin-bottom: 0.5rem; }
+.template-info-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.template-chip { background: #f1f5f9; color: #475569; font-size: 0.85rem; font-weight: 700; padding: 5px 14px; border-radius: 20px; border: 1px solid #e2e8f0; }
+.template-chip.is-type { background: #fef2f2; color: #C10033; border-color: #fecdd3; }
+
+.template-info-desc { font-size: 0.95rem; color: #475569; line-height: 1.8; margin: 1.5rem 0; }
+
+.template-cta-btn { display: block; text-align: center; background: linear-gradient(135deg, #C10033 0%, #8B0024 100%); color: white !important; font-weight: bold; padding: 14px 24px; border-radius: 8px; text-decoration: none; font-size: 1.05rem; box-shadow: 0 6px 12px -2px rgba(193,0,51,0.3); transition: transform 0.2s, box-shadow 0.2s; margin-top: 0.5rem; }
+.template-cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 15px -3px rgba(193,0,51,0.4); color: white !important; }
+
+.template-preview { border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
+.template-preview img { width: 100%; display: block; }
+</style>
+
+<div class="template-detail-container">
+
+    <!-- パンくずリスト -->
+    <nav class="template-breadcrumb">
+        <a href="/{{ locale }}/">{{ t.home }}</a>
+        <span class="template-breadcrumb-sep">›</span>
+        <a href="/{{ locale }}/templates/">{{ t.templates }}</a>
+        <span class="template-breadcrumb-sep">›</span>
+        <span class="template-breadcrumb-current">{{ current_name }}</span>
+    </nav>
+
+    <div class="template-detail-grid">
+
+        <!-- 左：メタ情報 -->
+        <div class="template-info">
+            <h1 class="template-info-name">{{ current_name }}</h1>
+
+            <div class="template-info-row">
+                <div class="template-info-label">{{ t.type_label }}</div>
+                <div class="template-info-chips">
+                    <span class="template-chip is-type">{{ type_labels[type] }}</span>
+                </div>
+            </div>
+
+            {% if current_labels and current_labels.length %}
+            <div class="template-info-row">
+                <div class="template-info-label">{{ t.tag_label }}</div>
+                <div class="template-info-chips">
+                    {% for label in current_labels %}
+                    <span class="template-chip">{{ label }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if languages and languages.length %}
+            <div class="template-info-row">
+                <div class="template-info-label">{{ t.lang_label }}</div>
+                <div class="template-info-chips">
+                    {% for lang in languages %}
+                    <span class="template-chip">{{ lang_labels[lang] }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            <p class="template-info-desc">{{ current_description }}</p>
+
+            <a href="{{ cta_href }}" target="_blank" rel="noopener noreferrer" class="template-cta-btn">{{ t.cta_btn }}</a>
+        </div>
+
+        <!-- 右：プレビュー -->
+        <div class="template-preview">
+            <img src="{{ image }}" alt="{{ current_name }}" loading="eager">
+        </div>
+
+    </div>
+</div>

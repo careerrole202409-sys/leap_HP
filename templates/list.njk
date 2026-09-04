@@ -1,0 +1,212 @@
+---
+layout: base.njk
+pagination:
+  data: locales
+  size: 1
+  alias: locale
+locales: ["ja", "en", "zh-hans"]
+permalink: "/{{ locale }}/templates/index.html"
+
+meta_titles:
+  ja: "ウェブサイトテンプレート一覧 | Leap"
+  en: "Website Templates | Leap"
+  zh-hans: "网站模板一览 | Leap"
+meta_descriptions:
+  ja: "LeapのAIエージェントですぐに使えるウェブサイトテンプレートの一覧です。"
+  en: "Browse website templates you can start using instantly with Leap's AI agent."
+  zh-hans: "浏览可通过Leap AI代理立即使用的网站模板。"
+
+eleventyComputed:
+  title: "{{ meta_titles[locale] }}"
+  description: "{{ meta_descriptions[locale] }}"
+---
+
+{% set ui = {
+    ja: { heading: "ウェブサイトテンプレート一覧", tab_all: "すべて", tab_hp: "HP", tab_lp: "LP", tab_ec: "ECサイト", no_results: "該当するテンプレートは見つかりませんでした。" },
+    en: { heading: "Website Templates", tab_all: "All", tab_hp: "HP", tab_lp: "LP", tab_ec: "E-Commerce", no_results: "No matching templates found." },
+    "zh-hans": { heading: "网站模板一览", tab_all: "全部", tab_hp: "HP", tab_lp: "LP", tab_ec: "电商网站", no_results: "未找到符合条件的模板。" }
+} %}
+{% set t = ui[locale] if ui[locale] else ui.ja %}
+
+{% set type_labels_all = {
+    ja: { ec: "ECサイト", hp: "HP", lp: "LP" },
+    en: { ec: "E-Commerce", hp: "HP", lp: "LP" },
+    "zh-hans": { ec: "电商网站", hp: "HP", lp: "LP" }
+} %}
+{% set type_labels = type_labels_all[locale] if type_labels_all[locale] else type_labels_all.ja %}
+
+<!-- ▼ ヒーローセクション -->
+<section class="section" style="padding-top: 3rem; padding-bottom: 1.5rem;">
+    <div class="container text-center">
+        <h1 style="font-size: 2rem; font-weight: bold;">{{ t.heading }}</h1>
+    </div>
+</section>
+
+<!-- ▼ カテゴリタブ + テンプレート一覧 -->
+<section class="section bg-white" style="padding-top: 0.5rem; padding-bottom: 4rem;">
+    <div class="container">
+
+        <!-- カテゴリタブ -->
+        <div class="template-tabs">
+            <button type="button" class="template-tab active" data-type="all">{{ t.tab_all }}</button>
+            <button type="button" class="template-tab" data-type="hp">{{ t.tab_hp }}</button>
+            <button type="button" class="template-tab" data-type="lp">{{ t.tab_lp }}</button>
+            <button type="button" class="template-tab" data-type="ec">{{ t.tab_ec }}</button>
+        </div>
+
+        <!-- テンプレートカード一覧 -->
+        <div class="grid-3 template-grid" id="templatesContainer">
+            {% for post in collections.templates | reverse %}
+                {% set t_name = post.data.name_ja %}
+                {% if locale == 'en' and post.data.name_en %}
+                    {% set t_name = post.data.name_en %}
+                {% elif locale == 'zh-hans' and post.data.name_zh %}
+                    {% set t_name = post.data.name_zh %}
+                {% endif %}
+
+                {% if t_name %}
+                <a href="/{{ locale }}/templates/{{ post.fileSlug }}/" class="template-card" data-type="{{ post.data.type }}">
+                    <div class="template-card-img">
+                        <img
+                            src="{{ post.data.image }}"
+                            alt="{{ t_name }}"
+                            loading="{{ 'eager' if loop.index <= 6 else 'lazy' }}"
+                            decoding="async">
+                    </div>
+                    <div class="template-card-body">
+                        <span class="template-card-type">{{ type_labels[post.data.type] }}</span>
+                        <div class="template-card-title">{{ t_name }}</div>
+                    </div>
+                </a>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        <!-- 該当なしメッセージ -->
+        <div id="no-results-msg" class="text-center w-full text-secondary" style="display: none; padding: 3rem 0;">
+            {{ t.no_results }}
+        </div>
+
+    </div>
+</section>
+
+{% include "cta1.njk" %}
+
+<!-- ▼ CSS -->
+<style>
+/* カテゴリタブ */
+.template-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+    justify-content: center;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 2.5rem;
+}
+
+.template-tab {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 0.75rem 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.template-tab:hover {
+    color: var(--color-text-primary);
+}
+
+.template-tab.active {
+    color: var(--color-primary-start);
+    border-bottom-color: var(--color-primary-start);
+}
+
+/* テンプレートカード */
+.template-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.template-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.template-card-img {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: #f4f5f8;
+}
+
+.template-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.template-card-body {
+    padding: 1rem 1.25rem;
+}
+
+.template-card-type {
+    display: inline-block;
+    background: #fef2f2;
+    color: #C10033;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid #fecdd3;
+    margin-bottom: 0.5rem;
+}
+
+.template-card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+}
+
+.template-card:hover .template-card-title {
+    color: var(--color-primary-start);
+}
+</style>
+
+<!-- ▼ JavaScript（タブ切り替え） -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.template-tab');
+    const cards = document.querySelectorAll('.template-card');
+    const noResultsMsg = document.getElementById('no-results-msg');
+
+    tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+            tabs.forEach(function (t) { t.classList.remove('active'); });
+            tab.classList.add('active');
+
+            const type = tab.getAttribute('data-type');
+            let visibleCount = 0;
+
+            cards.forEach(function (card) {
+                const match = type === 'all' || card.getAttribute('data-type') === type;
+                card.style.display = match ? 'block' : 'none';
+                if (match) visibleCount++;
+            });
+
+            noResultsMsg.style.display = visibleCount === 0 ? 'block' : 'none';
+        });
+    });
+});
+</script>
