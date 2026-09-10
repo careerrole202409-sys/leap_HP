@@ -1,0 +1,873 @@
+---
+locale: en
+title: Overseas Expansion Starter Kit | Leap
+description: Publish a 3-language website just by chatting with AI. See where your visitors come from with country-level reports. The perfect first step for overseas expansion — free trial now available.
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/favicon.png">
+
+  <title>{{ title }}</title>
+
+  <meta name="description" content="{{ description }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.leap.site{{ page.url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:image" content="https://www.leap.site/assets/og-image.png">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="{{ title }}">
+  <meta property="twitter:description" content="{{ description }}">
+  <meta property="twitter:image" content="https://www.leap.site/assets/og-image.png">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E0BHMWHJNK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E0BHMWHJNK');
+  </script>
+  <!-- Clarity -->
+  <script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "uxpxgpg8ea");
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- LP ヘッダー -->
+<header class="header-container" id="header">
+  <div class="header-main">
+    <div class="header-main-content">
+      <div class="nav-left">
+        <a href="/en/" class="logo-link" target="_blank" rel="noopener noreferrer">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="logo-img">
+        </a>
+        <nav class="nav-links">
+          <a href="#features" class="nav-link">What's in the Starter Kit?</a>
+          <a href="#languages" class="nav-link">Languages</a>
+          <a href="#results" class="nav-link">Results</a>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <div class="language-selector">
+          <div class="language-current" id="languageCurrent">
+            <span>🌐</span>
+            <span id="currentLang">English</span>
+            <span>▼</span>
+          </div>
+          <div class="language-dropdown" id="languageDropdown">
+            <a href="/lp/ja/overseas-starter" class="language-option" data-lang="ja">日本語</a>
+            <a href="/lp/en/overseas-starter" class="language-option active" data-lang="en">English</a>
+            <a href="/lp/zh-hans/overseas-starter" class="language-option" data-lang="zh-hans">简体中文</a>
+          </div>
+        </div>
+        <a href="/en/" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,0.8); font-size:0.9rem; text-decoration:none;">About Us</a>
+        <a href="https://www.leap.site/en/about/#contact" target="_blank" rel="noopener noreferrer" class="btn btn-start">Contact Us</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-content">
+    <div class="mobile-nav-item">
+      <a href="#features" class="mobile-nav-link">What's in the Starter Kit?</a>
+    </div>
+    <div class="mobile-nav-item">
+      <a href="#languages" class="mobile-nav-link">Languages</a>
+    </div>
+    <div class="mobile-nav-item">
+      <a href="#results" class="mobile-nav-link">Results</a>
+    </div>
+    <div class="mobile-nav-item">
+      <a href="/en/" target="_blank" rel="noopener noreferrer" class="mobile-nav-link">About Us</a>
+    </div>
+    <div class="mobile-nav-item">
+      <a href="https://www.leap.site/en/about/#contact" target="_blank" rel="noopener noreferrer" class="mobile-nav-link">Contact Us</a>
+    </div>
+    <div class="mobile-nav-item">
+      <a href="/lp/ja/overseas-starter" class="mobile-nav-link">日本語</a>
+    </div>
+    <div class="mobile-nav-item">
+      <a href="/lp/zh-hans/overseas-starter" class="mobile-nav-link">简体中文</a>
+    </div>
+  </div>
+</div>
+
+<main id="main-content">
+
+<style>
+/* ===== ヒーロー ===== */
+.lp-dark-wrapper {
+  background:
+    linear-gradient(to bottom, rgba(15,15,26,0.84) 0%, rgba(15,15,26,0.92) 100%),
+    url("https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=2400&auto=format&fit=crop&q=80") center top/cover no-repeat;
+}
+.lp-hero {
+  background: transparent;
+  padding: 2.5rem 1rem 1.5rem;
+}
+.lp-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.lp-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+.lp-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: white;
+  line-height: 1.3;
+  margin-bottom: 1.25rem;
+}
+.lp-offer-badge {
+  display: inline-block;
+  background: white;
+  color: #C10033;
+  font-size: 1.05rem;
+  font-weight: 800;
+  padding: 0.9rem 1.75rem;
+  border-radius: 999px;
+  margin: 0.5rem 0 1rem;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+}
+.lp-offer-badge strong {
+  font-weight: 900;
+}
+.lp-btn-primary {
+  display: inline-block;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(193,0,51,0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.lp-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(193,0,51,0.45);
+  color: white;
+  text-decoration: none;
+}
+/* ===== 共通 ===== */
+.lp-section-title {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+.lp-section-sub {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* ===== 実績セクション ===== */
+.lp-results {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+}
+.lp-results-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.lp-results-teaser {
+  text-align: center;
+  font-size: clamp(1.2rem, 2.4vw, 1.5rem);
+  font-weight: 800;
+  color: #1a1a2e;
+}
+.lp-results-showcase {
+  padding: 1rem 0 1rem;
+  overflow: hidden;
+  perspective: 1400px;
+}
+.lp-results-track {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+.result-card {
+  flex-shrink: 0;
+  width: 420px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  transform: scale(0.86) rotateY(0deg);
+  opacity: 0.5;
+  transition: transform 0.7s cubic-bezier(0.4,0,0.2,1), opacity 0.7s ease, box-shadow 0.7s ease;
+}
+.result-card.is-prev { transform: scale(0.86) rotateY(14deg); }
+.result-card.is-next { transform: scale(0.86) rotateY(-14deg); }
+.result-card.is-active {
+  transform: scale(1.04) rotateY(0deg);
+  opacity: 1;
+  box-shadow: 0 24px 56px rgba(0,0,0,0.16);
+}
+@media (max-width: 640px) {
+  .result-card { width: 82vw; }
+}
+.result-card-img {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #f4f5f8;
+}
+.result-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+.result-card-body {
+  padding: 1.5rem;
+}
+.result-card-logo {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 0.6rem;
+}
+.result-card-company {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+.result-card-badge {
+  display: inline-block;
+  background: #fef2f2;
+  color: #C10033;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid #fecdd3;
+  margin-bottom: 0.75rem;
+}
+.result-card-text {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.6;
+}
+
+/* ===== 機能紹介 ===== */
+.lp-features {
+  padding: 5rem 1rem;
+  background: white;
+}
+.lp-features-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+@media (max-width: 900px) {
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .features-grid { grid-template-columns: 1fr; }
+}
+.feature-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+}
+.feature-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+.feature-card-desc {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ===== 対応言語 ===== */
+.lp-languages {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+}
+.lp-languages-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.lang-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+.lang-chip {
+  background: white;
+  border: 1.5px solid #e5e7eb;
+  color: #1a1a2e;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.55rem 1.25rem;
+  border-radius: 999px;
+}
+
+/* ===== テストマーケ訴求 ===== */
+.lp-testmarket {
+  padding: 5rem 1rem;
+  background: #1a1a2e;
+  color: white;
+}
+.lp-testmarket-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .lp-testmarket-inner { grid-template-columns: 1fr; }
+}
+.lp-testmarket-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 1rem;
+}
+.lp-testmarket h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 900;
+  line-height: 1.4;
+  margin-bottom: 1.25rem;
+  color: white;
+}
+.lp-testmarket p {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.9;
+}
+.lp-testmarket-img {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.lp-testmarket-img img {
+  width: 100%;
+  display: block;
+}
+
+/* ===== 料金・オファー ===== */
+.lp-pricing {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+}
+.lp-pricing-inner {
+  max-width: 480px;
+  margin: 0 auto;
+}
+.pricing-card {
+  background: white;
+  border: 2px solid #C10033;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(193,0,51,0.12);
+}
+.pricing-card-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 1.25rem;
+}
+.pricing-card-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+.pricing-card-price {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #1a1a2e;
+  margin-bottom: 0.25rem;
+}
+.pricing-card-price span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666;
+}
+.pricing-card-note {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 1.75rem;
+}
+.pricing-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  text-align: left;
+}
+.pricing-card-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.92rem;
+  color: #444;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+.pricing-card-list li:last-child { border-bottom: none; }
+.pricing-card-list .check { color: #C10033; font-weight: 900; flex-shrink: 0; }
+.pricing-card .lp-btn-primary {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ===== FAQ ===== */
+.lp-faq {
+  padding: 5rem 1rem;
+  background: white;
+}
+.lp-faq-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.faq-item {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1.5rem 0;
+}
+.faq-item:last-child { border-bottom: none; }
+.faq-question {
+  display: flex;
+  gap: 0.6rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 0.6rem;
+}
+.faq-question .faq-mark { color: #C10033; flex-shrink: 0; }
+.faq-answer {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.8;
+  padding-left: 1.6rem;
+}
+
+/* ===== 最終CTA ===== */
+.lp-final-cta {
+  padding: 5rem 1rem;
+  background: #f8f9fc;
+  text-align: center;
+}
+.lp-final-cta-inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.lp-final-cta .lp-btn-primary {
+  color: white;
+  margin-top: 1rem;
+}
+</style>
+
+<!-- ①ヒーロー -->
+<div class="lp-dark-wrapper">
+<section class="lp-hero">
+  <div class="lp-hero-inner">
+
+    <span class="lp-badge">Overseas Expansion Starter Kit</span>
+
+    <h1>
+      Want to see how the world<br>
+      reacts to your global site?
+    </h1>
+
+    <div class="lp-offer-badge"><strong>Free Trial Now Available</strong></div>
+
+  </div>
+</section>
+</div><!-- /.lp-dark-wrapper -->
+
+<!-- ②実績 -->
+<section class="lp-results" id="results">
+  <div class="lp-results-inner">
+    <p class="lp-results-teaser">Inquiries are coming in from overseas</p>
+  </div>
+  <div class="lp-results-showcase" id="resultsShowcaseSection">
+    <div class="lp-results-track" id="resultsShowcaseTrack">
+      <div class="result-card" aria-hidden="true">
+        <div class="result-card-img">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_800/v1788932481/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-09-09_14.41.09_ku9oe6.png" alt="">
+        </div>
+        <div class="result-card-body">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_28/v1767492098/logo_hd_sw2wdr.jpg" alt="" class="result-card-logo">
+          <div class="result-card-company">Maruyasu Yogasa Co., Ltd.</div>
+          <span class="result-card-badge">5 months after launch</span>
+          <div class="result-card-text">Received a distributor inquiry from the US</div>
+        </div>
+      </div>
+      <div class="result-card">
+        <div class="result-card-img">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_800/v1788932510/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-09-09_14.41.36_jptoap.png" alt="Purely Co., Ltd. website">
+        </div>
+        <div class="result-card-body">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_28/v1778720803/PureBio_logo_rkawik.png" alt="PureBio" class="result-card-logo">
+          <div class="result-card-company">Purely Co., Ltd.</div>
+          <span class="result-card-badge">4 months after launch</span>
+          <div class="result-card-text">Gained buyer leads from Taiwan and Sweden</div>
+        </div>
+      </div>
+      <div class="result-card">
+        <div class="result-card-img">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_800/v1788932571/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-09-09_14.42.40_s1ps9v.png" alt="LAP Inc. website">
+        </div>
+        <div class="result-card-body">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_28/v1776392890/LAP_%E5%8D%98%E7%8B%AC%E3%83%AD%E3%82%B3%E3%82%99_xkoi6g.jpg" alt="LAP" class="result-card-logo">
+          <div class="result-card-company">LAP Inc.</div>
+          <span class="result-card-badge">3 months after launch</span>
+          <div class="result-card-text">Received a quote request from an overseas company</div>
+        </div>
+      </div>
+      <div class="result-card">
+        <div class="result-card-img">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_800/v1788932481/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-09-09_14.41.09_ku9oe6.png" alt="Maruyasu Yogasa Co., Ltd. website">
+        </div>
+        <div class="result-card-body">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_28/v1767492098/logo_hd_sw2wdr.jpg" alt="Maruyasu Yogasa" class="result-card-logo">
+          <div class="result-card-company">Maruyasu Yogasa Co., Ltd.</div>
+          <span class="result-card-badge">5 months after launch</span>
+          <div class="result-card-text">Received a distributor inquiry from the US</div>
+        </div>
+      </div>
+      <div class="result-card" aria-hidden="true">
+        <div class="result-card-img">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_800/v1788932510/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-09-09_14.41.36_jptoap.png" alt="">
+        </div>
+        <div class="result-card-body">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,h_28/v1778720803/PureBio_logo_rkawik.png" alt="" class="result-card-logo">
+          <div class="result-card-company">Purely Co., Ltd.</div>
+          <span class="result-card-badge">4 months after launch</span>
+          <div class="result-card-text">Gained buyer leads from Taiwan and Sweden</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lp-results-inner" style="margin-top: 3rem;">
+    <h2 class="lp-section-title">We've seen real reactions<br>from overseas after launch.</h2>
+    <p class="lp-section-sub" style="margin-bottom: 0;">Results from companies who built their overseas site with Leap.</p>
+  </div>
+</section>
+<script>
+(function () {
+  var section = document.getElementById('resultsShowcaseSection');
+  var track = document.getElementById('resultsShowcaseTrack');
+  var items = track.querySelectorAll('.result-card');
+  var COUNT = 3;
+  var GAP = 20;
+  var current = 1;
+  var animating = false;
+
+  function cardW() { return items[0].offsetWidth; }
+  function centerOffset() { return (section.offsetWidth - cardW()) / 2; }
+  function posFor(idx) { return centerOffset() - idx * (cardW() + GAP); }
+
+  function applyClasses() {
+    items.forEach(function(item, i) {
+      item.classList.toggle('is-active', i === current);
+      item.classList.toggle('is-prev', i === current - 1);
+      item.classList.toggle('is-next', i === current + 1);
+    });
+  }
+
+  function goTo(idx, animate) {
+    current = idx;
+    track.style.transition = animate ? 'transform 0.7s cubic-bezier(0.4,0,0.2,1)' : 'none';
+    track.style.transform = 'translateX(' + posFor(current) + 'px)';
+    applyClasses();
+  }
+
+  function jumpTo(idx) {
+    track.style.transition = 'none';
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        current = idx;
+        track.style.transform = 'translateX(' + posFor(idx) + 'px)';
+        applyClasses();
+        animating = false;
+      });
+    });
+  }
+
+  track.addEventListener('transitionend', function (e) {
+    if (e.target !== track) return;
+    if (e.propertyName !== 'transform') return;
+    if (current === items.length - 1) jumpTo(1);
+    else if (current === 0) jumpTo(COUNT);
+    else animating = false;
+  });
+
+  window.addEventListener('resize', function () { goTo(current, false); });
+  goTo(1, false);
+
+  setInterval(function () {
+    if (animating) return;
+    animating = true;
+    goTo(current + 1, true);
+  }, 3000);
+})();
+</script>
+
+<!-- ③機能紹介 -->
+<section class="lp-features" id="features">
+  <div class="lp-features-inner">
+    <h2 class="lp-section-title">What's in the Starter Kit.</h2>
+    <p class="lp-section-sub">Just by chatting with AI, you get all of this.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-card-title">3-Language Support</div>
+        <div class="feature-card-desc">Just chat in your own language — a multilingual site is generated automatically.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-title">Traffic Analytics</div>
+        <div class="feature-card-desc">See which countries are viewing your site, right in the report.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-title">Custom Domain</div>
+        <div class="feature-card-desc">Publish directly on your own domain.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-title">AI Chat Support</div>
+        <div class="feature-card-desc">Whenever you're stuck, just ask the AI chat.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ④対応言語 -->
+<section class="lp-languages" id="languages">
+  <div class="lp-languages-inner">
+    <h2 class="lp-section-title">Choose from 16 major languages.</h2>
+    <p class="lp-section-sub">Supports 16 major languages, including English and Chinese (Simplified &amp; Traditional). With the Starter plan, pick any 3 languages to publish.</p>
+    <div class="lang-chips">
+      <span class="lang-chip">English</span>
+      <span class="lang-chip">Chinese (Simplified &amp; Traditional)</span>
+      <span class="lang-chip">Hindi</span>
+      <span class="lang-chip">Spanish</span>
+      <span class="lang-chip">French</span>
+      <span class="lang-chip">Arabic</span>
+      <span class="lang-chip">Bengali</span>
+      <span class="lang-chip">Portuguese</span>
+      <span class="lang-chip">Russian</span>
+      <span class="lang-chip">Urdu</span>
+      <span class="lang-chip">Indonesian</span>
+      <span class="lang-chip">German</span>
+      <span class="lang-chip">Korean</span>
+      <span class="lang-chip">Thai</span>
+      <span class="lang-chip">Marathi</span>
+      <span class="lang-chip">Nigerian Pidgin</span>
+    </div>
+  </div>
+</section>
+
+<!-- ⑤テストマーケ訴求 -->
+<section class="lp-testmarket">
+  <div class="lp-testmarket-inner">
+    <div>
+      <p class="lp-testmarket-label">TEST MARKETING</p>
+      <h2>Just by publishing, you<br>can see the reaction.</h2>
+      <p>
+        After launch, you can check how much traffic you're getting from which country, anytime, in the report screen. See whether you're resonating with your target market — without hiring a dedicated overseas team first.
+      </p>
+    </div>
+    <div class="lp-testmarket-img">
+      <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_1000/v1780396709/424a013d-81c9-412d-86ea-5dd63bb63738.png" alt="Report screen showing access counts by country">
+    </div>
+  </div>
+</section>
+
+<!-- ⑥料金・オファー -->
+<section class="lp-pricing">
+  <div class="lp-pricing-inner">
+    <h2 class="lp-section-title">Pricing</h2>
+    <p class="lp-section-sub">Try overseas expansion first with the Starter plan.</p>
+    <div class="pricing-card">
+      <span class="pricing-card-badge">Limited Time: First Month Free</span>
+      <div class="pricing-card-name">Starter Plan</div>
+      <div class="pricing-card-price">¥9,800<span>/mo</span></div>
+      <div class="pricing-card-note">Plus 6% payment processing fee (offer valid for sign-ups by end of October 2026)</div>
+      <ul class="pricing-card-list">
+        <li><span class="check">✓</span>3-language support</li>
+        <li><span class="check">✓</span>Up to 50 pages</li>
+        <li><span class="check">✓</span>Custom domain</li>
+        <li><span class="check">✓</span>Access reports by country</li>
+        <li><span class="check">✓</span>AI chat support</li>
+      </ul>
+      <a href="https://www.leap.site/en/about/#contact" target="_blank" rel="noopener noreferrer" class="lp-btn-primary">Contact Us →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ⑦FAQ -->
+<section class="lp-faq">
+  <div class="lp-faq-inner">
+    <h2 class="lp-section-title">Frequently Asked Questions</h2>
+    <p class="lp-section-sub">Answers to common questions before you reach out.</p>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>How long does it take to publish?</div>
+      <div class="faq-answer">Once your chat with the AI is complete, your site is generated and published on the spot. Fine-tuning can also be done afterward through AI chat.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>Do I need to speak Japanese, English, or Chinese?</div>
+      <div class="faq-answer">No — you can chat with the AI in whichever language you're comfortable with, and a multilingual site is created automatically.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>Until when is the free first month offer valid?</div>
+      <div class="faq-answer">It applies to sign-ups by the end of October 2026. Your first month's subscription fee is waived (the 6% payment processing fee still applies).</div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑧最終CTA -->
+<section class="lp-final-cta">
+  <div class="lp-final-cta-inner">
+    <span class="lp-badge">Now Accepting Inquiries</span>
+    <h2 class="lp-section-title" style="margin-top:1rem; margin-bottom:0.75rem;">Ready to take the first step<br>into overseas expansion?</h2>
+    <p class="lp-section-sub" style="margin-bottom:0;">Sign up by the end of October 2026 for your first month free.</p>
+    <a href="https://www.leap.site/en/about/#contact" target="_blank" rel="noopener noreferrer" class="lp-btn-primary">Contact Us →</a>
+  </div>
+</section>
+
+</main>
+
+<!-- LP フッター（SNS以下のみ） -->
+<footer>
+  <div class="footer-container">
+    <hr class="footer-divider">
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/company/leap-site-inc" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/leap20240729/" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+      </a>
+      <a href="https://x.com/leap_0729" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+    </div>
+    <div class="footer-brand">
+      <a href="/en/" class="footer-logo-link">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="footer-logo-img">
+      </a>
+      <div class="footer-copyright" id="footerCopyright">Copyright © 2025 Leap, Inc.</div>
+    </div>
+    <div class="footer-legal">
+      <a href="/en/privacypolicy">Privacy Policy</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/en/terms">Terms of Service</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/en/tokushoho">Legal Notice</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/en/delete-user">Account Deletion Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var languageCurrent = document.getElementById('languageCurrent');
+  var languageDropdown = document.getElementById('languageDropdown');
+  if (languageCurrent && languageDropdown) {
+    languageCurrent.addEventListener('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      languageDropdown.classList.toggle('active');
+    });
+    document.addEventListener('click', function () {
+      languageDropdown.classList.remove('active');
+    });
+    languageDropdown.addEventListener('click', function (e) {
+      e.stopPropagation();
+    });
+  }
+
+  var hamburger = document.getElementById('hamburger');
+  var mobileMenu = document.getElementById('mobileMenu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', function () {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+      document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+    });
+    mobileMenu.addEventListener('click', function (e) {
+      if (e.target === mobileMenu) {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+    mobileMenu.querySelectorAll('.mobile-nav-link').forEach(function (link) {
+      link.addEventListener('click', function () {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+});
+</script>
+</body>
+</html>
