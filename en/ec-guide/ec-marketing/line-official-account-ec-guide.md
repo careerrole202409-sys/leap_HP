@@ -2,7 +2,7 @@
 layout: ec-guide-post.njk
 title: "Growing E-Commerce Repeat Customers With a LINE Official Account | Segmented Messaging and Rich Message Tactics"
 description: LINE has one of the highest open rates of any messaging app in Japan. This guide covers how to grow your friend base, implement segmented messaging, and use rich messages and coupons to drive repeat purchases — with real company examples.
-thumbnail: https://images.unsplash.com/photo-1611262588024-d12430b98920?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
+thumbnail: https://images.unsplash.com/photo-1526045612212-70caf35c14df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
 date: 2026-09-11
 topic: marketing
 locale: en

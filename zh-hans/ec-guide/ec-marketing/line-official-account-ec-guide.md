@@ -2,7 +2,7 @@
 layout: ec-guide-post.njk
 title: 用LINE官方账号提升电商复购率｜分群营销与富媒体消息活用术
 description: LINE是日本开封率最高的消息应用之一。本文将从好友获取策略讲到分群营销的实现方法，以及富媒体消息、优惠券的活用技巧，并结合实际案例展开讲解。
-thumbnail: https://images.unsplash.com/photo-1611262588024-d12430b98920?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
+thumbnail: https://images.unsplash.com/photo-1526045612212-70caf35c14df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
 date: 2026-09-11
 topic: marketing
 locale: zh-hans

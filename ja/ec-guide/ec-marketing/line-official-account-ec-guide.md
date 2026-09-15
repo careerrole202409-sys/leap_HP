@@ -2,7 +2,7 @@
 layout: ec-guide-post.njk
 title: LINE公式アカウントでECリピーターを増やす方法｜セグメント配信とリッチメッセージ活用術
 description: LINEは日本で最も開封率の高いメッセージングアプリのひとつです。友だち獲得施策からセグメント配信の実装、リッチメッセージ・クーポン活用まで、実例を交えて解説します。
-thumbnail: https://images.unsplash.com/photo-1611262588024-d12430b98920?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
+thumbnail: https://images.unsplash.com/photo-1526045612212-70caf35c14df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
 date: 2026-09-11
 topic: marketing
 locale: ja
