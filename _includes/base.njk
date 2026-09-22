@@ -69,15 +69,15 @@
 
     <!-- ▼ 固定CTA -->
     {% if locale == 'en' %}
-        {% set cta_subtitle = 'Website Generation<br>AI Agent' %}
+        {% set cta_subtitle = 'Global Marketing<br>AI Agent' %}
         {% set cta_btn = 'Start for Free →' %}
         {% set cta_btn_mini = 'Start for Free' %}
     {% elif locale == 'zh-hans' %}
-        {% set cta_subtitle = '网站生成<br>AI代理' %}
+        {% set cta_subtitle = '全球营销<br>AI代理' %}
         {% set cta_btn = '免费开始 →' %}
         {% set cta_btn_mini = '免费开始' %}
     {% else %}
-        {% set cta_subtitle = 'Webサイト生成<br>AIエージェント' %}
+        {% set cta_subtitle = 'グローバルマーケティング<br>AIエージェント' %}
         {% set cta_btn = '無料ではじめる →' %}
         {% set cta_btn_mini = '無料ではじめる' %}
     {% endif %}
@@ -164,9 +164,26 @@
     </div>
 
     <script>
+    var FIXED_CTA_STORAGE_KEY = 'leapFixedCtaMinimized';
+
+    function setFixedCtaMinimizedState(minimized) {
+        try {
+            localStorage.setItem(FIXED_CTA_STORAGE_KEY, minimized ? '1' : '0');
+        } catch (e) {}
+    }
+
+    function isFixedCtaMinimized() {
+        try {
+            return localStorage.getItem(FIXED_CTA_STORAGE_KEY) === '1';
+        } catch (e) {
+            return false;
+        }
+    }
+
     function minimizeFixedCta() {
         var card = document.getElementById('fixed-cta-card');
         var tab  = document.getElementById('fixed-cta-tab');
+        setFixedCtaMinimizedState(true);
         card.style.opacity = '0';
         card.style.transform = 'translateY(12px)';
         setTimeout(function() {
@@ -182,6 +199,7 @@
     function expandFixedCta() {
         var card = document.getElementById('fixed-cta-card');
         var tab  = document.getElementById('fixed-cta-tab');
+        setFixedCtaMinimizedState(false);
         tab.style.display = 'none';
         card.style.display = 'block';
         card.style.opacity = '0';
@@ -190,6 +208,16 @@
             card.style.opacity = '1';
             card.style.transform = 'translateY(0)';
         });
+    }
+
+    // ページ読み込み時に、前回閉じていた状態を復元（アニメーションなし）
+    if (isFixedCtaMinimized()) {
+        var initCard = document.getElementById('fixed-cta-card');
+        var initTab  = document.getElementById('fixed-cta-tab');
+        initCard.style.display = 'none';
+        initTab.style.display = 'flex';
+        initTab.style.opacity = '1';
+        initTab.style.transform = 'translateY(0)';
     }
     </script>
 </body>

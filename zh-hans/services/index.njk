@@ -1,0 +1,269 @@
+---
+layout: base.njk
+title: 业务 | 全球营销AI代理 Leap
+description: 了解Leap全球营销AI代理提供的全部服务——从全球网站建设、跨境电商制作、多语言邮件营销、访问分析，到海外广告运营、多语言本地化、博客创作，以及专属咨询服务。
+---
+
+<style>
+/* ===== 页面标题 ===== */
+.svc-page-head {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 0.5rem;
+}
+.svc-page-head h1 {
+    font-size: clamp(1.6rem, 3vw, 2.1rem);
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+.svc-page-head p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* ===== 通用区块 ===== */
+.svc-section {
+    padding: 4.5rem 1.5rem;
+}
+.svc-section.bg-soft { background: #f8f9fc; }
+.svc-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.svc-section-label {
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #C10033;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+}
+.svc-section-title {
+    text-align: center;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 0.6rem;
+    line-height: 1.4;
+}
+.svc-section-sub {
+    text-align: center;
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 3rem;
+}
+
+/* ===== 功能卡片 ===== */
+.svc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+@media (max-width: 900px) {
+    .svc-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+    .svc-grid { grid-template-columns: 1fr; }
+}
+.svc-card {
+    display: block;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 1.75rem 1.5rem;
+    text-decoration: none;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.svc-card:hover {
+    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+}
+.svc-card-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.svc-card-icon svg { color: #fff; }
+.svc-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+.svc-card p {
+    font-size: 0.88rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 0.9rem;
+}
+.svc-card-link {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #C10033;
+}
+
+/* ===== 咨询服务（强调区块） ===== */
+.svc-consulting-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid #C10033;
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    text-decoration: none;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.svc-consulting-card:hover {
+    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+}
+@media (max-width: 640px) {
+    .svc-consulting-card { flex-direction: column; text-align: center; gap: 1.25rem; }
+}
+.svc-consulting-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.svc-consulting-icon svg { color: #fff; width: 26px; height: 26px; }
+.svc-consulting-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+.svc-consulting-card p {
+    font-size: 0.88rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+}
+.svc-consulting-link {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #C10033;
+}
+</style>
+
+<!-- ① 页面标题 -->
+<div class="svc-page-head">
+    <h1>业务</h1>
+    <p>全球营销AI代理Leap提供的全部服务——从网站建设到营销推广、运营管理，再到专属咨询。</p>
+</div>
+
+<!-- ② AI代理能做什么 -->
+<section class="svc-section">
+    <div class="svc-inner">
+        <span class="svc-section-label">AI 代理</span>
+        <h2 class="svc-section-title">AI代理能做什么</h2>
+        <p class="svc-section-sub">从建站到营销推广、运营管理，全部通过对话完成。</p>
+        <div class="svc-grid">
+            <a href="/{{ locale }}/services/multilingual-website/" class="svc-card">
+                <div class="svc-card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <h3>全球网站建设</h3>
+                <p>只需与AI对话，即可自动生成多语言网站或落地页——从设计到文案一站搞定。</p>
+                <span class="svc-card-link">了解详情 →</span>
+            </a>
+            <a href="/{{ locale }}/services/multilingual-ec/" class="svc-card">
+                <div class="svc-card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </div>
+                <h3>跨境电商制作</h3>
+                <p>从商品上架、支付设置到库存管理，网店的搭建与运营全部通过聊天完成。</p>
+                <span class="svc-card-link">了解详情 →</span>
+            </a>
+            <a href="/{{ locale }}/services/multilingual-newsletter/" class="svc-card">
+                <div class="svc-card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                </div>
+                <h3>多语言邮件营销</h3>
+                <p>客户名单管理、多语言邮件发送，只需在AI聊天中说出需求即可。</p>
+                <span class="svc-card-link">了解详情 →</span>
+            </a>
+            <a href="/{{ locale }}/services/access-analytics/" class="svc-card">
+                <div class="svc-card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                </div>
+                <h3>访问分析</h3>
+                <p>清楚掌握网站访客来自哪些国家，随时确认是否触达目标市场。</p>
+                <span class="svc-card-link">了解详情 →</span>
+            </a>
+            <a href="/{{ locale }}/services/ad-management/" class="svc-card">
+                <div class="svc-card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </div>
+                <h3>海外广告运营</h3>
+                <p>从预算分配到广告投放与效果分析，海外广告运营通过对话即可完成。</p>
+                <span class="svc-card-link">了解详情 →</span>
+            </a>
+            <a href="/{{ locale }}/services/localization/" class="svc-card">
+                <div class="svc-card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+                </div>
+                <h3>多语言化・本地化</h3>
+                <p>不只是翻译，设计与内容也会针对当地市场优化。一键即可拓展多语言版本。</p>
+                <span class="svc-card-link">了解详情 →</span>
+            </a>
+            <a href="/{{ locale }}/services/multilingual-blog/" class="svc-card">
+                <div class="svc-card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                </div>
+                <h3>多语言博客</h3>
+                <p>AI分析当地关键词，自动撰写并发布SEO博客文章，持续带来流量。</p>
+                <span class="svc-card-link">了解详情 →</span>
+            </a>
+            <a href="/{{ locale }}/services/ai-localize/" class="svc-card">
+                <div class="svc-card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <h3>AI聊天编辑</h3>
+                <p>只需说一句"把这个按钮改成红色"，页面即刻更新。已发布的网站也能随时调整。</p>
+                <span class="svc-card-link">了解详情 →</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ③ 咨询服务 -->
+<section class="svc-section bg-soft">
+    <div class="svc-inner">
+        <span class="svc-section-label">咨询服务</span>
+        <h2 class="svc-section-title">咨询服务</h2>
+        <p class="svc-section-sub">AI难以独立完成的部分，由专业团队为您提供支持。</p>
+        <a href="/{{ locale }}/services/global-marketing/" class="svc-consulting-card">
+            <div class="svc-consulting-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+                <h3>跨境电商平台・LinkedIn运营</h3>
+                <p>从入驻和运营跨境电商平台，到通过LinkedIn开拓海外B2B客户，专业团队全程为您提供支持。</p>
+                <span class="svc-consulting-link">了解详情 →</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- ④ 价格表 -->
+{% include "pricing.njk" %}
+
+<!-- ⑤ CTA -->
+{% include "cta1.njk" %}

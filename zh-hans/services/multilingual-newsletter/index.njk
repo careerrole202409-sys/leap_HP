@@ -1,0 +1,66 @@
+---
+layout: base.njk
+title: 多语言邮件营销 | Leap
+description: 多语言邮件营销功能目前正向部分客户先行开放，计划于2026年10月底正式上线。
+---
+
+<style>
+.notice-section {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    text-align: center;
+}
+.notice-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.03em;
+}
+.notice-section h1 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 1.25rem;
+}
+.notice-section p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+.notice-cta {
+    display: inline-block;
+    background: linear-gradient(135deg, #C10033, #8B0024);
+    color: #fff;
+    font-weight: 700;
+    padding: 0.9rem 2.25rem;
+    border-radius: 999px;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+}
+.notice-cta:hover { color: #fff; opacity: 0.9; }
+.notice-back {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    text-decoration: none;
+}
+.notice-back:hover { color: #C10033; }
+</style>
+
+<section class="notice-section">
+    <span class="notice-badge">先行体验中（预计2026年10月底正式上线）</span>
+    <h1>多语言邮件营销</h1>
+    <p>该功能目前正处于实验阶段，仅向部分客户先行开放。<br>我们正在加紧开发，计划于2026年10月底正式上线。<br>如您对先行体验感兴趣，欢迎随时联系我们。</p>
+    <a href="/{{ locale }}/about/#contact" class="notice-cta">联系我们 →</a>
+    <a href="/{{ locale }}/services/" class="notice-back">← 返回业务列表</a>
+</section>
+
+{% include "pricing.njk" %}
+{% include "cta1.njk" %}

@@ -12,9 +12,19 @@ footer {
 
 .footer-columns {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 40px;
     margin-bottom: 60px;
+}
+
+.footer-column-wide {
+    grid-column: span 2;
+}
+
+.footer-column-wide ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
 }
 
 .footer-column h3 {

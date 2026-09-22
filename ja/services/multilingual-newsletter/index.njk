@@ -1,0 +1,66 @@
+---
+layout: base.njk
+title: 多言語メルマガ | Leap (リープ)
+description: 多言語メルマガ機能は現在、一部のお客様向けに先行公開中です。2026年10月末の一般公開を予定しています。
+---
+
+<style>
+.notice-section {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    text-align: center;
+}
+.notice-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.03em;
+}
+.notice-section h1 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 1.25rem;
+}
+.notice-section p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+.notice-cta {
+    display: inline-block;
+    background: linear-gradient(135deg, #C10033, #8B0024);
+    color: #fff;
+    font-weight: 700;
+    padding: 0.9rem 2.25rem;
+    border-radius: 999px;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+}
+.notice-cta:hover { color: #fff; opacity: 0.9; }
+.notice-back {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    text-decoration: none;
+}
+.notice-back:hover { color: #C10033; }
+</style>
+
+<section class="notice-section">
+    <span class="notice-badge">先行公開中（一般公開：2026年10月末予定）</span>
+    <h1>多言語メルマガ</h1>
+    <p>現在、一部のお客様に先行してご利用いただいている実験的な機能です。<br>2026年10月末の一般公開に向けて、開発を進めています。<br>先行利用にご興味のある方は、お気軽にお問い合わせください。</p>
+    <a href="/{{ locale }}/about/#contact" class="notice-cta">お問い合わせする →</a>
+    <a href="/{{ locale }}/services/" class="notice-back">← 事業内容の一覧に戻る</a>
+</section>
+
+{% include "pricing.njk" %}
+{% include "cta1.njk" %}

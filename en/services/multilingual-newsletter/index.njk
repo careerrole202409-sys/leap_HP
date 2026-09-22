@@ -1,0 +1,66 @@
+---
+layout: base.njk
+title: Multilingual Newsletter | Leap
+description: Our multilingual newsletter feature is currently in early access for select customers. General availability is planned for the end of October 2026.
+---
+
+<style>
+.notice-section {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 4rem;
+    text-align: center;
+}
+.notice-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.03em;
+}
+.notice-section h1 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 1.25rem;
+}
+.notice-section p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+.notice-cta {
+    display: inline-block;
+    background: linear-gradient(135deg, #C10033, #8B0024);
+    color: #fff;
+    font-weight: 700;
+    padding: 0.9rem 2.25rem;
+    border-radius: 999px;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+}
+.notice-cta:hover { color: #fff; opacity: 0.9; }
+.notice-back {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    text-decoration: none;
+}
+.notice-back:hover { color: #C10033; }
+</style>
+
+<section class="notice-section">
+    <span class="notice-badge">Early Access (General Release: End of October 2026)</span>
+    <h1>Multilingual Newsletter</h1>
+    <p>This is an experimental feature currently available to a limited group of customers.<br>We're continuing development toward a general release by the end of October 2026.<br>If you're interested in early access, please feel free to reach out.</p>
+    <a href="/{{ locale }}/about/#contact" class="notice-cta">Contact Us →</a>
+    <a href="/{{ locale }}/services/" class="notice-back">← Back to all services</a>
+</section>
+
+{% include "pricing.njk" %}
+{% include "cta1.njk" %}

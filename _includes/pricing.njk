@@ -11,7 +11,7 @@
     }
     .pricing-table {
         width: 100%;
-        min-width: 680px;
+        min-width: 840px;
         border-collapse: collapse;
         background: #fff;
         border-radius: 16px;
@@ -91,8 +91,14 @@
         font-size: 1.3rem;
         font-weight: bold;
         color: var(--color-text-primary);
-        margin-bottom: 24px;
+        margin-bottom: 8px;
         text-align: center;
+    }
+    .payment-desc {
+        font-size: 0.85rem;
+        color: var(--color-text-secondary);
+        text-align: center;
+        margin-bottom: 24px;
     }
     .payment-methods {
         display: flex;
@@ -227,6 +233,7 @@
                         <th data-i18n="name_starter"></th>
                         <th data-i18n="name_basic"></th>
                         <th data-i18n="name_std"></th>
+                        <th data-i18n="name_ent"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -236,6 +243,7 @@
                         <td class="price-cell" data-i18n="price_starter"></td>
                         <td class="price-cell" data-i18n="price_basic"></td>
                         <td class="price-cell" data-i18n="price_std"></td>
+                        <td class="price-cell" data-i18n="price_ent"></td>
                     </tr>
                     <tr>
                         <th data-i18n="label_lang"></th>
@@ -243,6 +251,7 @@
                         <td data-i18n="lang_starter"></td>
                         <td data-i18n="lang_basic"></td>
                         <td data-i18n="lang_std"></td>
+                        <td data-i18n="lang_ent"></td>
                     </tr>
                     <tr>
                         <th data-i18n="label_pages"></th>
@@ -250,6 +259,7 @@
                         <td data-i18n="pages_starter"></td>
                         <td data-i18n="pages_basic"></td>
                         <td data-i18n="pages_std"></td>
+                        <td data-i18n="pages_ent"></td>
                     </tr>
                     <tr>
                         <th data-i18n="label_domain"></th>
@@ -257,6 +267,7 @@
                         <td data-i18n="domain_starter"></td>
                         <td data-i18n="domain_basic"></td>
                         <td data-i18n="domain_std"></td>
+                        <td data-i18n="domain_ent"></td>
                     </tr>
                     <tr>
                         <th data-i18n="label_marketing"></th>
@@ -264,9 +275,27 @@
                         <td data-i18n="marketing_starter"></td>
                         <td data-i18n="marketing_basic"></td>
                         <td data-i18n="marketing_std"></td>
+                        <td data-i18n="marketing_ent"></td>
+                    </tr>
+                    <tr>
+                        <th data-i18n="label_newsletter"></th>
+                        <td data-i18n="newsletter_free"></td>
+                        <td data-i18n="newsletter_starter"></td>
+                        <td data-i18n="newsletter_basic"></td>
+                        <td data-i18n="newsletter_std"></td>
+                        <td data-i18n="newsletter_ent"></td>
+                    </tr>
+                    <tr>
+                        <th data-i18n="label_ads"></th>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>○</td>
+                        <td>○</td>
                     </tr>
                     <tr>
                         <th data-i18n="label_report"></th>
+                        <td>–</td>
                         <td>○</td>
                         <td>○</td>
                         <td>○</td>
@@ -278,6 +307,7 @@
                         <td data-i18n="support_starter"></td>
                         <td data-i18n="support_basic"></td>
                         <td data-i18n="support_std"></td>
+                        <td data-i18n="support_ent"></td>
                     </tr>
                     <tr>
                         <th data-i18n="label_fee"></th>
@@ -285,6 +315,7 @@
                         <td>6%</td>
                         <td>6%</td>
                         <td>6%</td>
+                        <td data-i18n="fee_ent"></td>
                     </tr>
                     <tr>
                         <th></th>
@@ -292,6 +323,7 @@
                         <td class="cta-cell"><a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" data-i18n="btn_try"></a></td>
                         <td class="cta-cell"><a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" data-i18n="btn_try"></a></td>
                         <td class="cta-cell"><a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" data-i18n="btn_try"></a></td>
+                        <td class="cta-cell"><a href="/{{ locale }}/about/#contact" data-i18n="btn_contact"></a></td>
                     </tr>
                 </tbody>
             </table>
@@ -305,7 +337,9 @@
                 <div class="spec-row"><span class="spec-label" data-i18n="label_pages"></span><span class="spec-value" data-i18n="pages_free"></span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_domain"></span><span class="spec-value" data-i18n="domain_free"></span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_marketing"></span><span class="spec-value" data-i18n="marketing_free"></span></div>
-                <div class="spec-row"><span class="spec-label" data-i18n="label_report"></span><span class="spec-value">○</span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_newsletter"></span><span class="spec-value" data-i18n="newsletter_free"></span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_ads"></span><span class="spec-value">–</span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_report"></span><span class="spec-value">–</span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_support"></span><span class="spec-value" data-i18n="support_free"></span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_fee"></span><span class="spec-value">6%</span></div>
                 <div class="cta-cell"><a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" data-i18n="btn_try"></a></div>
@@ -317,6 +351,8 @@
                 <div class="spec-row"><span class="spec-label" data-i18n="label_pages"></span><span class="spec-value" data-i18n="pages_starter"></span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_domain"></span><span class="spec-value" data-i18n="domain_starter"></span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_marketing"></span><span class="spec-value" data-i18n="marketing_starter"></span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_newsletter"></span><span class="spec-value" data-i18n="newsletter_starter"></span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_ads"></span><span class="spec-value">–</span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_report"></span><span class="spec-value">○</span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_support"></span><span class="spec-value" data-i18n="support_starter"></span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_fee"></span><span class="spec-value">6%</span></div>
@@ -329,6 +365,8 @@
                 <div class="spec-row"><span class="spec-label" data-i18n="label_pages"></span><span class="spec-value" data-i18n="pages_basic"></span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_domain"></span><span class="spec-value" data-i18n="domain_basic"></span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_marketing"></span><span class="spec-value" data-i18n="marketing_basic"></span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_newsletter"></span><span class="spec-value" data-i18n="newsletter_basic"></span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_ads"></span><span class="spec-value">–</span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_report"></span><span class="spec-value">○</span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_support"></span><span class="spec-value" data-i18n="support_basic"></span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_fee"></span><span class="spec-value">6%</span></div>
@@ -341,10 +379,26 @@
                 <div class="spec-row"><span class="spec-label" data-i18n="label_pages"></span><span class="spec-value" data-i18n="pages_std"></span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_domain"></span><span class="spec-value" data-i18n="domain_std"></span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_marketing"></span><span class="spec-value" data-i18n="marketing_std"></span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_newsletter"></span><span class="spec-value" data-i18n="newsletter_std"></span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_ads"></span><span class="spec-value">○</span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_report"></span><span class="spec-value">○</span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_support"></span><span class="spec-value" data-i18n="support_std"></span></div>
                 <div class="spec-row"><span class="spec-label" data-i18n="label_fee"></span><span class="spec-value">6%</span></div>
                 <div class="cta-cell"><a href="https://app.leap.site" target="_blank" rel="noopener noreferrer" data-i18n="btn_try"></a></div>
+            </div>
+            <div class="plan-card-mobile">
+                <div class="plan-card-name" data-i18n="name_ent"></div>
+                <div class="plan-card-price"><span data-i18n="price_ent"></span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_lang"></span><span class="spec-value" data-i18n="lang_ent"></span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_pages"></span><span class="spec-value" data-i18n="pages_ent"></span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_domain"></span><span class="spec-value" data-i18n="domain_ent"></span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_marketing"></span><span class="spec-value" data-i18n="marketing_ent"></span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_newsletter"></span><span class="spec-value" data-i18n="newsletter_ent"></span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_ads"></span><span class="spec-value">○</span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_report"></span><span class="spec-value">○</span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_support"></span><span class="spec-value" data-i18n="support_ent"></span></div>
+                <div class="spec-row"><span class="spec-label" data-i18n="label_fee"></span><span class="spec-value" data-i18n="fee_ent"></span></div>
+                <div class="cta-cell"><a href="/{{ locale }}/about/#contact" data-i18n="btn_contact"></a></div>
             </div>
         </div>
 
@@ -352,10 +406,12 @@
             <p data-i18n="note1"></p>
             <p data-i18n="note2"></p>
             <p data-i18n="note3"></p>
+            <p data-i18n="note4"></p>
         </div>
 
         <div class="payment-box">
             <div class="payment-title" data-i18n="payment_title"></div>
+            <p class="payment-desc" data-i18n="payment_desc"></p>
             <div class="payment-methods">
                 <div class="payment-method">
                     <span data-i18n="payment_cc"></span>
@@ -390,54 +446,74 @@
             name_starter: "スターター",
             name_basic: "ベーシック",
             name_std: "スタンダード",
+            name_ent: "エンタープライズ",
 
             price_free: "0円",
             price_starter: "9,800円",
             price_basic: "39,000円",
             price_std: "98,000円",
+            price_ent: "お問い合わせ",
             price_unit: "/月（税抜）",
 
             lang_free: "1言語",
             lang_starter: "3言語",
             lang_basic: "5言語",
             lang_std: "10言語",
+            lang_ent: "無制限",
 
-            pages_free: "EC機能のみ（LP作成・ページ追加不可）",
+            pages_free: "30ページ",
             pages_starter: "50ページ",
             pages_basic: "150ページ",
             pages_std: "500ページ",
+            pages_ent: "無制限",
 
             domain_free: "不可",
-            domain_starter: "公開可",
-            domain_basic: "公開可",
-            domain_std: "公開可",
+            domain_starter: "可",
+            domain_basic: "可",
+            domain_std: "可",
+            domain_ent: "可",
 
             marketing_free: "–",
             marketing_starter: "–",
             marketing_basic: "AIブログ自動作成によるAIO/SEO最適化",
             marketing_std: "AIブログ自動作成によるAIO/SEO最適化",
+            marketing_ent: "AIブログ自動作成によるAIO/SEO最適化",
+
+            newsletter_free: "利用不可",
+            newsletter_starter: "月間1,000件",
+            newsletter_basic: "月間5,000件",
+            newsletter_std: "月間10,000件",
+            newsletter_ent: "無制限",
 
             support_free: "AIチャットサポート",
             support_starter: "AIチャットサポート",
             support_basic: "AIチャットサポート＋チャットサポート",
             support_std: "AIチャットサポート＋月1回の打ち合わせ",
+            support_ent: "専任担当の運用代行",
+
+            fee_ent: "要相談",
 
             label_price: "月額（税抜）",
             label_lang: "対応言語数",
             label_pages: "ページ",
-            label_domain: "独自ドメイン",
-            label_marketing: "集客",
+            label_domain: "公開",
+            label_marketing: "ブログ/SEO・AIO",
+            label_newsletter: "メルマガ配信",
+            label_ads: "広告運用",
             label_report: "レポート",
             label_support: "サポート",
             label_fee: "EC決済手数料",
 
             btn_try: "無料でお試し",
+            btn_contact: "お問い合わせ",
 
             note1: "※オリジナルデザインでの制作をご希望の場合、別途初期費用がかかります（ウェブサイト：298,000円／EC込み：598,000円、税抜）",
             note2: "※表示価格はすべて税抜です",
             note3: "※契約期間の縛りはなく、月単位での変更・解約が可能です",
+            note4: "※年間プランでお申し込みの場合、1ヶ月分の料金が割引になります(月額×11ヶ月分でご利用いただけます)",
 
-            payment_title: "対応決済方法",
+            payment_title: "越境ECの対応決済方法",
+            payment_desc: "Leapで構築する越境ECサイトで、お客様がご利用いただける決済手段です",
             payment_cc: "クレジットカード（VISA・マスターカード）",
             payment_status_live: "対応中",
             payment_status_soon: "近日対応",
@@ -452,54 +528,74 @@
             name_starter: "Starter",
             name_basic: "Basic",
             name_std: "Standard",
+            name_ent: "Enterprise",
 
             price_free: "¥0",
             price_starter: "¥9,800",
             price_basic: "¥39,000",
             price_std: "¥98,000",
+            price_ent: "Contact us",
             price_unit: "/mo (excl. tax)",
 
             lang_free: "1 language",
             lang_starter: "3 languages",
             lang_basic: "5 languages",
             lang_std: "10 languages",
+            lang_ent: "Unlimited",
 
-            pages_free: "E-commerce only (no landing page / page creation)",
+            pages_free: "30 pages",
             pages_starter: "50 pages",
             pages_basic: "150 pages",
             pages_std: "500 pages",
+            pages_ent: "Unlimited",
 
             domain_free: "Not available",
             domain_starter: "Available",
             domain_basic: "Available",
             domain_std: "Available",
+            domain_ent: "Available",
 
             marketing_free: "–",
             marketing_starter: "–",
             marketing_basic: "AI-generated blog for AIO/SEO optimization",
             marketing_std: "AI-generated blog for AIO/SEO optimization",
+            marketing_ent: "AI-generated blog for AIO/SEO optimization",
+
+            newsletter_free: "Not available",
+            newsletter_starter: "1,000/month",
+            newsletter_basic: "5,000/month",
+            newsletter_std: "10,000/month",
+            newsletter_ent: "Unlimited",
 
             support_free: "AI chat support",
             support_starter: "AI chat support",
             support_basic: "AI chat support + live chat support",
             support_std: "AI chat support + monthly consultation",
+            support_ent: "Dedicated account manager",
+
+            fee_ent: "Custom",
 
             label_price: "Monthly fee (excl. tax)",
             label_lang: "Supported languages",
             label_pages: "Pages",
-            label_domain: "Custom domain",
-            label_marketing: "Marketing",
+            label_domain: "Publishing",
+            label_marketing: "Blog / SEO & AIO",
+            label_newsletter: "Email newsletters",
+            label_ads: "Ad management",
             label_report: "Reports",
             label_support: "Support",
             label_fee: "EC payment fee",
 
             btn_try: "Try for Free",
+            btn_contact: "Contact Us",
 
             note1: "*If you'd like an original design, an additional setup fee applies (Website: ¥298,000 / With e-commerce: ¥598,000, excl. tax)",
             note2: "*All prices shown are excl. tax",
             note3: "*No contract lock-in — change or cancel your plan monthly",
+            note4: "*With an annual plan, you get 1 month free (pay for 11 months, use it for 12)",
 
-            payment_title: "Payment Methods",
+            payment_title: "Cross-Border EC Payment Methods",
+            payment_desc: "Payment methods your customers can use on the cross-border e-commerce site built with Leap",
             payment_cc: "Credit Card (VISA / Mastercard)",
             payment_status_live: "Available",
             payment_status_soon: "Coming soon",
@@ -514,54 +610,74 @@
             name_starter: "入门版",
             name_basic: "基础版",
             name_std: "标准版",
+            name_ent: "企业版",
 
             price_free: "0日元",
             price_starter: "9,800日元",
             price_basic: "39,000日元",
             price_std: "98,000日元",
+            price_ent: "请咨询",
             price_unit: "/月（不含税）",
 
             lang_free: "1种语言",
             lang_starter: "3种语言",
             lang_basic: "5种语言",
             lang_std: "10种语言",
+            lang_ent: "无限制",
 
-            pages_free: "仅电商功能（无法制作落地页/新增页面）",
+            pages_free: "30个页面",
             pages_starter: "50个页面",
             pages_basic: "150个页面",
             pages_std: "500个页面",
+            pages_ent: "无限制",
 
             domain_free: "不可用",
             domain_starter: "可发布",
             domain_basic: "可发布",
             domain_std: "可发布",
+            domain_ent: "可发布",
 
             marketing_free: "–",
             marketing_starter: "–",
             marketing_basic: "AI自动生成博客，实现AIO/SEO优化",
             marketing_std: "AI自动生成博客，实现AIO/SEO优化",
+            marketing_ent: "AI自动生成博客，实现AIO/SEO优化",
+
+            newsletter_free: "不可用",
+            newsletter_starter: "每月1,000封",
+            newsletter_basic: "每月5,000封",
+            newsletter_std: "每月10,000封",
+            newsletter_ent: "无限制",
 
             support_free: "AI聊天支持",
             support_starter: "AI聊天支持",
             support_basic: "AI聊天支持＋在线聊天支持",
             support_std: "AI聊天支持＋每月1次会议",
+            support_ent: "专属客户经理运营代管",
+
+            fee_ent: "面议",
 
             label_price: "月费（不含税）",
             label_lang: "支持语言数",
             label_pages: "页面数",
-            label_domain: "独立域名",
-            label_marketing: "获客",
+            label_domain: "公开发布",
+            label_marketing: "博客/SEO・AIO",
+            label_newsletter: "邮件营销",
+            label_ads: "广告投放",
             label_report: "数据报告",
             label_support: "支持",
             label_fee: "电商手续费",
 
             btn_try: "免费试用",
+            btn_contact: "联系我们",
 
             note1: "※如希望定制原创设计，需另付初始费用（网站：298,000日元／含电商：598,000日元，不含税）",
             note2: "※显示价格均不含税",
             note3: "※无合约期限限制，可按月变更或解约",
+            note4: "※选择年付方案，可享1个月费用优惠(支付11个月费用即可使用12个月)",
 
-            payment_title: "支持的支付方式",
+            payment_title: "跨境电商支持的支付方式",
+            payment_desc: "使用Leap构建的跨境电商网站中，顾客可使用的支付方式",
             payment_cc: "信用卡（VISA・万事达卡）",
             payment_status_live: "已支持",
             payment_status_soon: "即将支持",
