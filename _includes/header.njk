@@ -2,21 +2,75 @@
 .dropdown-menu-wide {
     display: flex !important;
     gap: 0;
-    min-width: 380px;
+    min-width: 440px;
 }
 .dropdown-col { flex: 1; }
 .dropdown-col-title {
-    font-size: 0.72rem;
+    font-size: 0.8rem;
     font-weight: 700;
     color: #9ca3af;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    padding: 0.6rem 1rem 0.3rem;
+    padding: 0.7rem 1.25rem 0.4rem;
     border-bottom: 1px solid #f3f4f6;
     margin-bottom: 0.25rem;
 }
 .dropdown-col + .dropdown-col {
     border-left: 1px solid #f3f4f6;
+}
+
+/* ===== 事業ドロップダウン（アイコン付きグリッド） ===== */
+.dropdown-menu-services {
+    display: block !important;
+    min-width: 520px;
+    padding: 0.85rem 0;
+}
+.dropdown-services-top {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.25rem;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #1a1a2e;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f4f6;
+    margin-bottom: 0.6rem;
+}
+.dropdown-services-top:hover { color: #C10033; }
+.dropdown-services-section-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.5rem 1.25rem 0.6rem;
+}
+.dropdown-services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 0.75rem;
+    padding: 0 0.75rem;
+}
+.dropdown-item-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.7rem 0.75rem;
+    border-radius: 8px;
+    color: #374151;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+.dropdown-item-icon:hover { background: #f9fafb; color: #C10033; }
+.dropdown-item-icon svg { flex-shrink: 0; width: 22px; height: 22px; color: #C10033; }
+.dropdown-services-divider {
+    border-top: 1px solid #f3f4f6;
+    margin: 0.6rem 0;
+}
+.dropdown-services-single {
+    padding: 0 0.75rem 0.5rem;
 }
 </style>
 <header class="header-container" id="header">
@@ -54,18 +108,52 @@
                     <a href="/{{ locale }}/templates" class="nav-link" id="templatesLink">テンプレート</a>
                     <div class="nav-item">
                         <span class="nav-link" id="servicesLabel">特徴 ▼</span>
-                        <div class="dropdown-menu dropdown-menu-wide">
-                            <div class="dropdown-col">
-                                <div class="dropdown-col-title" id="dropdownLabelAgent">AIエージェント</div>
-                                <a href="/{{ locale }}/services/multilingual-website" class="dropdown-item" id="serviceWebsite">HP/LP作成</a>
-                                <a href="/{{ locale }}/services/multilingual-blog" class="dropdown-item" id="serviceBlog">ブログ作成</a>
-                                <a href="/{{ locale }}/services/multilingual-ec" class="dropdown-item" id="serviceEc">EC作成</a>
-                                <a href="/{{ locale }}/services/ai-localize" class="dropdown-item" id="serviceAiLocalize">AIチャット編集</a>
+                        <div class="dropdown-menu dropdown-menu-services">
+                            <a href="/{{ locale }}/services/" class="dropdown-services-top">
+                                <span id="serviceTopLink">Leapでできること</span><span aria-hidden="true">→</span>
+                            </a>
+                            <div class="dropdown-services-section-title" id="dropdownLabelAgent">AIエージェント</div>
+                            <div class="dropdown-services-grid">
+                                <a href="/{{ locale }}/services/multilingual-website" class="dropdown-item-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                    <span id="serviceWebsite">グローバルサイト作成</span>
+                                </a>
+                                <a href="/{{ locale }}/services/multilingual-ec" class="dropdown-item-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                                    <span id="serviceEc">越境EC作成</span>
+                                </a>
+                                <a href="/{{ locale }}/services/multilingual-newsletter" class="dropdown-item-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                                    <span id="serviceNewsletter">多言語メルマガ</span>
+                                </a>
+                                <a href="/{{ locale }}/services/access-analytics" class="dropdown-item-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                                    <span id="serviceAnalytics">アクセス解析</span>
+                                </a>
+                                <a href="/{{ locale }}/services/ad-management" class="dropdown-item-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                                    <span id="serviceAds">海外向け広告運用</span>
+                                </a>
+                                <a href="/{{ locale }}/services/localization" class="dropdown-item-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+                                    <span id="serviceLocalization">多言語化・ローカライズ</span>
+                                </a>
+                                <a href="/{{ locale }}/services/multilingual-blog" class="dropdown-item-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                                    <span id="serviceBlog">ブログ作成</span>
+                                </a>
+                                <a href="/{{ locale }}/services/ai-localize" class="dropdown-item-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                                    <span id="serviceAiLocalize">AIチャット編集</span>
+                                </a>
                             </div>
-                            <div class="dropdown-col">
-                                <div class="dropdown-col-title" id="dropdownLabelMarketing">海外マーケ支援</div>
-                                <a href="/{{ locale }}/services/localization" class="dropdown-item" id="serviceLocalization">多言語化・ローカライズ</a>
-                                <a href="/{{ locale }}/services/global-marketing" class="dropdown-item" id="serviceGlobalMarketing">LinkedIn・ECモール運用</a>
+                            <div class="dropdown-services-divider"></div>
+                            <div class="dropdown-services-section-title" id="dropdownLabelConsulting">コンサルティング</div>
+                            <div class="dropdown-services-single">
+                                <a href="/{{ locale }}/services/global-marketing" class="dropdown-item-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                    <span id="serviceConsulting">越境ECモール・LinkedIn運用</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -121,15 +209,19 @@
                 <span>▼</span>
             </div>
             <div class="mobile-dropdown-content">
+                <a href="/{{ locale }}/services/" class="mobile-dropdown-item" style="font-weight:700;" id="mobileServiceTopLink">Leapでできること →</a>
                 <div style="font-size:0.72rem; font-weight:700; color:#9ca3af; letter-spacing:0.08em; text-transform:uppercase; padding:0.5rem 0 0.25rem;" id="mobileDropdownLabelAgent">AIエージェント</div>
-                <a href="/{{ locale }}/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">HP/LP作成</a>
+                <a href="/{{ locale }}/services/multilingual-website" class="mobile-dropdown-item" id="mobileServiceWebsite">グローバルサイト作成</a>
+                <a href="/{{ locale }}/services/multilingual-ec" class="mobile-dropdown-item" id="mobileServiceEc">越境EC作成</a>
+                <a href="/{{ locale }}/services/multilingual-newsletter" class="mobile-dropdown-item" id="mobileServiceNewsletter">多言語メルマガ</a>
+                <a href="/{{ locale }}/services/access-analytics" class="mobile-dropdown-item" id="mobileServiceAnalytics">アクセス解析</a>
+                <a href="/{{ locale }}/services/ad-management" class="mobile-dropdown-item" id="mobileServiceAds">海外向け広告運用</a>
+                <a href="/{{ locale }}/services/localization" class="mobile-dropdown-item" id="mobileServiceLocalization">多言語化・ローカライズ</a>
                 <a href="/{{ locale }}/services/multilingual-blog" class="mobile-dropdown-item" id="mobileServiceBlog">ブログ作成</a>
-                <a href="/{{ locale }}/services/multilingual-ec" class="mobile-dropdown-item" id="mobileServiceEc">EC作成</a>
                 <a href="/{{ locale }}/services/ai-localize" class="mobile-dropdown-item" id="mobileServiceAiLocalize">AIチャット編集</a>
                 <div style="border-top:1px solid #f3f4f6; margin: 0.25rem 0;"></div>
-                <div style="font-size:0.72rem; font-weight:700; color:#9ca3af; letter-spacing:0.08em; text-transform:uppercase; padding:0.25rem 0;" id="mobileDropdownLabelMarketing">海外マーケ支援</div>
-                <a href="/{{ locale }}/services/localization" class="mobile-dropdown-item" id="mobileServiceLocalization">多言語化・ローカライズ</a>
-                <a href="/{{ locale }}/services/global-marketing" class="mobile-dropdown-item" id="mobileServiceGlobalMarketing">LinkedIn・ECモール運用</a>
+                <div style="font-size:0.72rem; font-weight:700; color:#9ca3af; letter-spacing:0.08em; text-transform:uppercase; padding:0.25rem 0;" id="mobileDropdownLabelConsulting">コンサルティング</div>
+                <a href="/{{ locale }}/services/global-marketing" class="mobile-dropdown-item" id="mobileServiceConsulting">越境ECモール・LinkedIn運用</a>
             </div>
         </div>
 
@@ -179,14 +271,18 @@
             about: "会社概要",
             templatesLink: "テンプレート",
             servicesLabel: "特徴 ▼",
+            serviceTop: "Leapでできること",
             dropdownLabelAgent: "AIエージェント",
-            dropdownLabelMarketing: "海外マーケ支援",
-            serviceWebsite: "HP/LP作成",
-            serviceBlog: "ブログ作成",
-            serviceEc: "EC作成",
-            serviceAiLocalize: "AIチャット編集",
+            dropdownLabelConsulting: "コンサルティング",
+            serviceWebsite: "グローバルサイト作成",
+            serviceEc: "越境EC作成",
+            serviceNewsletter: "多言語メルマガ",
+            serviceAnalytics: "アクセス解析",
+            serviceAds: "海外向け広告運用",
             serviceLocalization: "多言語化・ローカライズ",
-            serviceGlobalMarketing: "LinkedIn・ECモール運用",
+            serviceBlog: "ブログ作成",
+            serviceAiLocalize: "AIチャット編集",
+            serviceConsulting: "越境ECモール・LinkedIn運用",
             cases: "導入事例",
             pricing: "価格",
             resourcesLabel: "資料 ▼",
@@ -211,14 +307,18 @@
             about: "About Us",
             templatesLink: "Templates",
             servicesLabel: "Features ▼",
+            serviceTop: "What Leap Can Do",
             dropdownLabelAgent: "AI Agent",
-            dropdownLabelMarketing: "Global Marketing",
-            serviceWebsite: "Multilingual Website & LP",
-            serviceBlog: "Multilingual Blog",
-            serviceEc: "Cross-border EC",
-            serviceAiLocalize: "AI Chat Editing",
+            dropdownLabelConsulting: "Consulting",
+            serviceWebsite: "Global Website Creation",
+            serviceEc: "Cross-border EC Creation",
+            serviceNewsletter: "Multilingual Newsletter",
+            serviceAnalytics: "Traffic Analytics",
+            serviceAds: "Overseas Ad Management",
             serviceLocalization: "Multilingual & Localization",
-            serviceGlobalMarketing: "LinkedIn & EC Mall",
+            serviceBlog: "Multilingual Blog",
+            serviceAiLocalize: "AI Chat Editing",
+            serviceConsulting: "EC Mall & LinkedIn Management",
             cases: "Case Studies",
             pricing: "Pricing",
             resourcesLabel: "Resources ▼",
@@ -243,14 +343,18 @@
             about: "公司简介",
             templatesLink: "模板",
             servicesLabel: "特征 ▼",
-            dropdownLabelAgent: "AI代理功能",
-            dropdownLabelMarketing: "海外营销支援",
-            serviceWebsite: "多语言建站・LP制作",
-            serviceBlog: "多语言博客",
+            serviceTop: "Leap能做什么",
+            dropdownLabelAgent: "AI代理",
+            dropdownLabelConsulting: "咨询服务",
+            serviceWebsite: "全球网站建设",
             serviceEc: "跨境电商制作",
-            serviceAiLocalize: "AI聊天编辑",
+            serviceNewsletter: "多语言邮件营销",
+            serviceAnalytics: "访问分析",
+            serviceAds: "海外广告运营",
             serviceLocalization: "多语言化・本地化",
-            serviceGlobalMarketing: "LinkedIn・电商平台运营",
+            serviceBlog: "多语言博客",
+            serviceAiLocalize: "AI聊天编辑",
+            serviceConsulting: "跨境电商平台・LinkedIn运营",
             cases: "客户案例",
             pricing: "价格方案",
             resourcesLabel: "资料 ▼",
@@ -293,14 +397,19 @@
         setText('templatesLink', t.templatesLink);
         setText('mobileTemplatesLink', t.templatesLink);
         setText('servicesLabel', t.servicesLabel);
+        setText('serviceTop', t.serviceTop);
+        setText('mobileServiceTopLink', t.serviceTop + ' →');
         setText('dropdownLabelAgent', t.dropdownLabelAgent);
-        setText('dropdownLabelMarketing', t.dropdownLabelMarketing);
+        setText('dropdownLabelConsulting', t.dropdownLabelConsulting);
         setText('serviceWebsite', t.serviceWebsite);
-        setText('serviceBlog', t.serviceBlog);
         setText('serviceEc', t.serviceEc);
-        setText('serviceAiLocalize', t.serviceAiLocalize);
+        setText('serviceNewsletter', t.serviceNewsletter);
+        setText('serviceAnalytics', t.serviceAnalytics);
+        setText('serviceAds', t.serviceAds);
         setText('serviceLocalization', t.serviceLocalization);
-        setText('serviceGlobalMarketing', t.serviceGlobalMarketing);
+        setText('serviceBlog', t.serviceBlog);
+        setText('serviceAiLocalize', t.serviceAiLocalize);
+        setText('serviceConsulting', t.serviceConsulting);
         setText('casesLink', t.cases);
         setText('pricingLink', t.pricing);
         setText('resourcesLabel', t.resourcesLabel);
@@ -317,13 +426,16 @@
         setText('mobileHome', t.mobileHome);
         setText('mobileServicesText', t.mobileServicesText);
         setText('mobileDropdownLabelAgent', t.dropdownLabelAgent);
-        setText('mobileDropdownLabelMarketing', t.dropdownLabelMarketing);
+        setText('mobileDropdownLabelConsulting', t.dropdownLabelConsulting);
         setText('mobileServiceWebsite', t.serviceWebsite);
-        setText('mobileServiceBlog', t.serviceBlog);
         setText('mobileServiceEc', t.serviceEc);
-        setText('mobileServiceAiLocalize', t.serviceAiLocalize);
+        setText('mobileServiceNewsletter', t.serviceNewsletter);
+        setText('mobileServiceAnalytics', t.serviceAnalytics);
+        setText('mobileServiceAds', t.serviceAds);
         setText('mobileServiceLocalization', t.serviceLocalization);
-        setText('mobileServiceGlobalMarketing', t.serviceGlobalMarketing);
+        setText('mobileServiceBlog', t.serviceBlog);
+        setText('mobileServiceAiLocalize', t.serviceAiLocalize);
+        setText('mobileServiceConsulting', t.serviceConsulting);
         setText('mobileCases', t.cases);
         setText('mobilePricing', t.pricing);
         setText('mobileResourcesText', t.mobileResourcesText);

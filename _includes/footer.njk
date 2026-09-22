@@ -2,15 +2,18 @@
     <div class="footer-container">
         <!-- Desktop View -->
         <div class="footer-columns">
-            <div class="footer-column">
+            <div class="footer-column footer-column-wide">
                 <h3 id="footerFeaturesTitle">特徴</h3>
                 <ul>
-                    <li><a href="/{{ locale }}/services/multilingual-website" id="footerWebsite">HP/LP作成</a></li>
-                    <li><a href="/{{ locale }}/services/multilingual-blog" id="footerBlogService">ブログ作成</a></li>
-                    <li><a href="/{{ locale }}/services/multilingual-ec" id="footerEc">EC作成</a></li>
-                    <li><a href="/{{ locale }}/services/ai-localize" id="footerAiLocalize">AIチャット編集</a></li>
+                    <li><a href="/{{ locale }}/services/multilingual-website" id="footerWebsite">グローバルサイト作成</a></li>
+                    <li><a href="/{{ locale }}/services/multilingual-ec" id="footerEc">越境EC作成</a></li>
+                    <li><a href="/{{ locale }}/services/multilingual-newsletter" id="footerNewsletter">多言語メルマガ</a></li>
+                    <li><a href="/{{ locale }}/services/access-analytics" id="footerAnalytics">アクセス解析</a></li>
+                    <li><a href="/{{ locale }}/services/ad-management" id="footerAds">海外向け広告運用</a></li>
                     <li><a href="/{{ locale }}/services/localization" id="footerLocalization">多言語化・ローカライズ</a></li>
-                    <li><a href="/{{ locale }}/services/global-marketing" id="footerGlobalMarketing">LinkedIn・ECモール運用</a></li>
+                    <li><a href="/{{ locale }}/services/multilingual-blog" id="footerBlogService">ブログ作成</a></li>
+                    <li><a href="/{{ locale }}/services/ai-localize" id="footerAiLocalize">AIチャット編集</a></li>
+                    <li><a href="/{{ locale }}/services/global-marketing" id="footerGlobalMarketing">越境ECモール・LinkedIn運用</a></li>
                 </ul>
             </div>
 
@@ -51,12 +54,15 @@
                 </button>
                 <div class="mobile-accordion-content">
                     <ul>
-                        <li><a href="/{{ locale }}/services/multilingual-website" id="footerMobileWebsite">HP/LP作成</a></li>
-                        <li><a href="/{{ locale }}/services/multilingual-blog" id="footerMobileBlogService">ブログ作成</a></li>
-                        <li><a href="/{{ locale }}/services/multilingual-ec" id="footerMobileEc">EC作成</a></li>
-                        <li><a href="/{{ locale }}/services/ai-localize" id="footerMobileAiLocalize">AIチャット編集</a></li>
+                        <li><a href="/{{ locale }}/services/multilingual-website" id="footerMobileWebsite">グローバルサイト作成</a></li>
+                        <li><a href="/{{ locale }}/services/multilingual-ec" id="footerMobileEc">越境EC作成</a></li>
+                        <li><a href="/{{ locale }}/services/multilingual-newsletter" id="footerMobileNewsletter">多言語メルマガ</a></li>
+                        <li><a href="/{{ locale }}/services/access-analytics" id="footerMobileAnalytics">アクセス解析</a></li>
+                        <li><a href="/{{ locale }}/services/ad-management" id="footerMobileAds">海外向け広告運用</a></li>
                         <li><a href="/{{ locale }}/services/localization" id="footerMobileLocalization">多言語化・ローカライズ</a></li>
-                        <li><a href="/{{ locale }}/services/global-marketing" id="footerMobileGlobalMarketing">LinkedIn・ECモール運用</a></li>
+                        <li><a href="/{{ locale }}/services/multilingual-blog" id="footerMobileBlogService">ブログ作成</a></li>
+                        <li><a href="/{{ locale }}/services/ai-localize" id="footerMobileAiLocalize">AIチャット編集</a></li>
+                        <li><a href="/{{ locale }}/services/global-marketing" id="footerMobileGlobalMarketing">越境ECモール・LinkedIn運用</a></li>
                     </ul>
                 </div>
             </div>
@@ -148,13 +154,16 @@
     const footerTranslations = {
         ja: {
             featuresTitle: "特徴",
-            website: "HP/LP作成",
+            website: "グローバルサイト作成",
             blogService: "ブログ作成",
-            ec: "EC作成",
+            ec: "越境EC作成",
+            newsletter: "多言語メルマガ",
+            analytics: "アクセス解析",
+            ads: "海外向け広告運用",
             resourcesTitle: "リソース",
             aiLocalize: "AIチャット編集",
             localization: "多言語化・ローカライズ",
-            globalMarketing: "LinkedIn・ECモール運用",
+            globalMarketing: "越境ECモール・LinkedIn運用",
             toolsTitle: "マニュアル",
             resources: "資料ダウンロード",
             seminar: "セミナー・イベント",
@@ -173,12 +182,15 @@
         },
         en: {
             featuresTitle: "Features",
-            website: "Multilingual Website & LP",
+            website: "Global Website Creation",
             blogService: "Multilingual Blog",
-            ec: "Cross-border EC",
-            aiLocalize: "AI Localization",
+            ec: "Cross-border EC Creation",
+            newsletter: "Multilingual Newsletter",
+            analytics: "Traffic Analytics",
+            ads: "Overseas Ad Management",
+            aiLocalize: "AI Chat Editing",
             localization: "Multilingual & Localization",
-            globalMarketing: "LinkedIn & EC Mall",
+            globalMarketing: "EC Mall & LinkedIn Management",
             toolsTitle: "Manuals",
             resourcesTitle: "Resources",
             blog: "Global Business Manual",
@@ -198,12 +210,15 @@
         },
         'zh-hans': {
             featuresTitle: "特征",
-            website: "多语言建站・LP制作",
+            website: "全球网站建设",
             blogService: "多语言博客",
             ec: "跨境电商制作",
-            aiLocalize: "AI本地化",
+            newsletter: "多语言邮件营销",
+            analytics: "访问分析",
+            ads: "海外广告运营",
+            aiLocalize: "AI聊天编辑",
             localization: "多语言化・本地化",
-            globalMarketing: "LinkedIn・电商平台运营",
+            globalMarketing: "跨境电商平台・LinkedIn运营",
             toolsTitle: "手册",
             resourcesTitle: "资源",
             blog: "海外商务手册",
@@ -244,6 +259,9 @@
         setText('footerWebsite', t.website);
         setText('footerBlogService', t.blogService);
         setText('footerEc', t.ec);
+        setText('footerNewsletter', t.newsletter);
+        setText('footerAnalytics', t.analytics);
+        setText('footerAds', t.ads);
         setText('footerAiLocalize', t.aiLocalize);
         setText('footerLocalization', t.localization);
         setText('footerGlobalMarketing', t.globalMarketing);
@@ -265,6 +283,9 @@
         setText('footerMobileWebsite', t.website);
         setText('footerMobileBlogService', t.blogService);
         setText('footerMobileEc', t.ec);
+        setText('footerMobileNewsletter', t.newsletter);
+        setText('footerMobileAnalytics', t.analytics);
+        setText('footerMobileAds', t.ads);
         setText('footerMobileAiLocalize', t.aiLocalize);
         setText('footerMobileLocalization', t.localization);
         setText('footerMobileGlobalMarketing', t.globalMarketing);
