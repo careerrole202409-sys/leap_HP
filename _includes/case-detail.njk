@@ -44,7 +44,7 @@ layout: base.njk
 {% endif %}
 
 {% set ind_label = categories.industry[industry][current_lang] %}
-{% set st_label = categories.site_type[site_type][current_lang] %}
+{% set st_keys = [].concat(site_type or []) %}
 
 <style>
     .blog-container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
@@ -97,7 +97,10 @@ layout: base.njk
         <!-- タグ -->
         <div class="meta-tags">
             {% if ind_label %}<span class="meta-tag">#{{ ind_label }}</span>{% endif %}
-            {% if st_label %}<span class="meta-tag">#{{ st_label }}</span>{% endif %}
+            {% for st_key in st_keys %}
+                {% set st_label = categories.site_type[st_key][current_lang] %}
+                {% if st_label %}<span class="meta-tag">#{{ st_label }}</span>{% endif %}
+            {% endfor %}
         </div>
         <hr class="header-divider">
     </div>

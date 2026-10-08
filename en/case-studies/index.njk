@@ -132,13 +132,12 @@ description: Explore case studies of companies that have successfully achieved m
                 {% if card_title %}
                     
                     {% set ind_key = post.data.industry %}
-                    {% set st_key = post.data.site_type %}
+                    {% set st_keys = [].concat(post.data.site_type or []) %}
                     
                     <!-- 辞書からラベルを取得 -->
                     {% set ind_label = categories.industry[ind_key][locale] %}
-                    {% set st_label = categories.site_type[st_key][locale] %}
 
-                    <article class="case-card" data-industry="{{ ind_key }}" data-site-type="{{ st_key }}">
+                    <article class="case-card" data-industry="{{ ind_key }}" data-site-type="{{ st_keys | join(' ') }}">
                         <a href="/{{ locale }}/case-studies/{{ post.fileSlug }}/">
                             <!-- ロゴエリア -->
                             <div class="case-logo-wrapper">
@@ -157,7 +156,10 @@ description: Explore case studies of companies that have successfully achieved m
                                 <div class="case-company">{{ card_company }}</div>
                                 <div class="case-tags">
                                     {% if ind_label %}<span>#{{ ind_label }}</span>{% endif %}
-                                    {% if st_label %}<span>#{{ st_label }}</span>{% endif %}
+                                    {% for st_key in st_keys %}
+                                        {% set st_label = categories.site_type[st_key][locale] %}
+                                        {% if st_label %}<span>#{{ st_label }}</span>{% endif %}
+                                    {% endfor %}
                                 </div>
                                 <h3 class="case-title">{{ card_title }}</h3>
                             </div>
