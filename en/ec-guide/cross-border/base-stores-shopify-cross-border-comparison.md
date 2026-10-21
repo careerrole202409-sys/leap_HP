@@ -21,11 +21,11 @@ author_bio: A team of international business experts
 
 Plenty of comparisons of BASE, STORES, and Shopify already exist, built around pricing and basic features. But for a business with its eye on eventually going global, what actually matters is a single question: how seriously can each platform handle cross-border e-commerce? This guide deliberately narrows the comparison to that one axis — looking at what BASE's and STORES' international shipping apps can actually do, versus Shopify's built-in multi-language, multi-currency, and duty-calculation features. Use it to decide how to approach things differently depending on whether you're starting small domestically or planning a serious overseas expansion.
 
-## BASE's Approach: Convenience Through Outsourced Services
+## BASE's Approach: "Easy Overseas Sales" Is Now a Standard Feature
 
-BASE doesn't build full cross-border functionality into the platform itself — instead, it handles overseas support through partnerships with external services. The flagship option is the "International Sales Agent App," which costs ¥980/month (free for the first 90 days) and lets you hand off shipping and overseas customer inquiries entirely to a domestic agent, reportedly supporting cross-border sales to over 190 countries. Separately, a partnership with the logistics service NEOlogi supports shipping to over 150 countries.
+BASE's approach to cross-border e-commerce changed significantly in 2026. "Easy Overseas Sales," which rolled out to an early-access group of shops starting January 2026, became a standard feature across all BASE shops on March 18, 2026. Under this feature, the system detects access from overseas and shows a dedicated overseas cart, letting international buyers complete checkout right there. On the seller's side, want.jp — a BASE group company — handles the domestic proxy purchase, so sellers just ship to want.jp's warehouse the same way they handle a domestic order. The fee is 5% of the payment amount, charged only when an overseas sale actually happens, with no setup fee or fixed monthly cost. BASE's older "International Sales Agent App" and its integration with the logistics service NEOlogi still exist, but "Easy Overseas Sales" is now the central feature.
 
-BASE's strength in cross-border e-commerce is the convenience of being able to outsource the actual work of international shipping entirely. On the language side, though, the "English/Currency Support" App only switches fixed interface text to English and shows approximate prices across 34 currencies — it doesn't auto-translate content you've written yourself, like product descriptions. Running a genuinely multilingual shop still requires separate translation work.
+BASE's strength in cross-border e-commerce is the convenience of being able to outsource the actual work of international shipping entirely. On the language side, though, while a dedicated cart is shown to overseas buyers, content you've written yourself — like product descriptions — isn't auto-translated. Running a genuinely multilingual shop still requires separate translation work.
 
 ## STORES' Approach: Partnering With WorldShopping BIZ
 
@@ -47,7 +47,7 @@ Where BASE and STORES take the "let a partner service handle it" approach, Shopi
 
 Putting the comparison together, here's a practical way to decide:
 
-- **Starting small domestically, with overseas sales as a future possibility**: Launching on BASE or STORES for the domestic market, then layering on an outsourced service like the International Sales Agent App or WorldShopping BIZ once overseas orders actually start coming in, is a practical staged approach. It lets you take a small first step into cross-border sales while keeping upfront costs low.
+- **Starting small domestically, with overseas sales as a future possibility**: Launching on BASE or STORES for the domestic market already gets you a standard feature or integrated service — "Easy Overseas Sales" or WorldShopping BIZ — that lets you accept overseas orders with almost no extra setup work. It lets you take a small first step into cross-border sales while keeping upfront costs low.
 - **Planning a serious, deliberate push into overseas markets**: If you want to build out multilingual product pages, accurate local-currency pricing, and transparent duty/tax display as part of the experience itself, a platform with built-in functionality like Shopify Markets is likely to offer more room to grow over the long term.
 
 Neither approach is objectively "better" — the right choice comes down to what phase your business is actually in, and whether you want to outsource overseas sales or build it as part of your own store experience.
@@ -56,7 +56,7 @@ Neither approach is objectively "better" — the right choice comes down to what
 
 **Q. Can BASE or STORES handle cross-border e-commerce well enough?**
 
-A. Using an outsourced service like the International Sales Agent App or WorldShopping BIZ, you can genuinely get cross-border sales up and running, with shipping and inquiry handling taken off your plate. That said, there's a ceiling on how far you can customize the shop experience itself — multilingual product pages, detailed local-currency pricing, and so on. These options are a good fit if you want an easy first step into cross-border sales.
+A. Using a standard feature or outsourced service like BASE's "Easy Overseas Sales" or STORES's WorldShopping BIZ, you can genuinely get cross-border sales up and running, with shipping and inquiry handling taken off your plate. That said, there's a ceiling on how far you can customize the shop experience itself — multilingual product pages, detailed local-currency pricing, and so on. These options are a good fit if you want an easy first step into cross-border sales.
 
 **Q. Are Shopify's multi-language and multi-currency features free to use?**
 
@@ -79,9 +79,9 @@ We publish a wide range of practical guides on international business and e-comm
 
 ## References
 
+- ["BASE" Makes "Easy Overseas Sales" a Standard Feature Starting March 18 - Impress Netshop](https://netshop.impress.co.jp/r/prtimes/items/000000288.000030814)
 - [BASE Launches the "International Sales Agent App" - BASE U](https://baseu.jp/information/20240125)
 - [Easing Cross-Border E-Commerce Concerns on BASE: Leave International Shipping to "NEOlogi" - BASE U](https://baseu.jp/15427)
-- [English/Currency Support App: Can I Sell Overseas and Set International Shipping? - Help | BASE](https://help.thebase.in/hc/ja/articles/206417601-%E6%B5%B7%E5%A4%96%E5%90%91%E3%81%91%E3%81%AE%E8%B2%A9%E5%A3%B2%E3%82%84%E9%80%81%E6%96%99%E8%A8%AD%E5%AE%9A%E3%81%AF%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%81%8B)
 - [STORES Lowers the Cross-Border Barrier Through Domestic Shipping - LOGI-today](https://www.logi-today.com/974123)
 - [Shopify Markets - Shopify](https://www.shopify.com/jp/markets)
 - [Charging Duties and Import Taxes - Shopify Help Center](https://help.shopify.com/en/manual/international/duties-and-import-taxes/charging-duties)
