@@ -26,8 +26,7 @@ layout: base.njk
 } %}
 {% set type_labels = type_labels_all[locale] if type_labels_all[locale] else type_labels_all.ja %}
 
-{% set type_paths = { ec: "ec-creation" } %}
-{% set cta_href = "https://app.leap.site/" + type_paths[type] if type_paths[type] else "https://app.leap.site" %}
+{% set cta_href = appLinks.template[type] or appLinks.signup %}
 
 {% set lang_labels_all = {
     ja: { ja: "日本語", en: "英語" },
