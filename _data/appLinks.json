@@ -1,0 +1,8 @@
+{
+  "signup": "https://app.leap.site/?ch=hp",
+  "template": {
+    "ec": "https://app.leap.site/ec-creation?start=ec&ch=hp",
+    "hp": "https://app.leap.site/?ch=hp",
+    "lp": "https://app.leap.site/?ch=hp"
+  }
+}

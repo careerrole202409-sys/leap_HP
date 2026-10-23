@@ -18,7 +18,7 @@ author_bio: ECサイト運営のサポートチーム
 
 ## ログインの手順
 
-1. [app.leap.site](https://app.leap.site) にアクセスします
+1. [app.leap.site]({{ appLinks.signup }}) にアクセスします
 2. 画面右上の「ログイン」をクリックします
 3. 表示された「ログイン」画面で、以下を入力します
    - メールアドレス
