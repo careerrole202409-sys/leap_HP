@@ -22,9 +22,9 @@ eleventyComputed:
 ---
 
 {% set ui = {
-    ja: { heading: "ウェブサイトテンプレート一覧", tab_all: "すべて", tab_hp: "HP", tab_lp: "LP", tab_ec: "ECサイト", no_results: "該当するテンプレートは見つかりませんでした。" },
-    en: { heading: "Website Templates", tab_all: "All", tab_hp: "HP", tab_lp: "LP", tab_ec: "E-Commerce", no_results: "No matching templates found." },
-    "zh-hans": { heading: "网站模板一览", tab_all: "全部", tab_hp: "HP", tab_lp: "LP", tab_ec: "电商网站", no_results: "未找到符合条件的模板。" }
+    ja: { heading: "ウェブサイトテンプレート一覧", tab_all: "すべて", tab_hp: "HP", tab_lp: "LP", tab_ec: "ECサイト", no_results: "該当するテンプレートは見つかりませんでした。", lang_label: "言語", lang_all: "すべて", tag_label: "タグ", tag_all_btn: "すべてのタグ", tag_dialog_title: "タグを選ぶ", close: "閉じる" },
+    en: { heading: "Website Templates", tab_all: "All", tab_hp: "HP", tab_lp: "LP", tab_ec: "E-Commerce", no_results: "No matching templates found.", lang_label: "Language", lang_all: "All", tag_label: "Tags", tag_all_btn: "All tags", tag_dialog_title: "Choose a tag", close: "Close" },
+    "zh-hans": { heading: "网站模板一览", tab_all: "全部", tab_hp: "HP", tab_lp: "LP", tab_ec: "电商网站", no_results: "未找到符合条件的模板。", lang_label: "语言", lang_all: "全部", tag_label: "标签", tag_all_btn: "全部标签", tag_dialog_title: "选择标签", close: "关闭" }
 } %}
 {% set t = ui[locale] if ui[locale] else ui.ja %}
 
@@ -34,6 +34,7 @@ eleventyComputed:
     "zh-hans": { ec: "电商网站", hp: "HP", lp: "LP" }
 } %}
 {% set type_labels = type_labels_all[locale] if type_labels_all[locale] else type_labels_all.ja %}
+{% set lang_labels = templateLanguages[locale] if templateLanguages[locale] else templateLanguages.ja %}
 
 <!-- ▼ ヒーローセクション -->
 <section class="section" style="padding-top: 3rem; padding-bottom: 1.5rem;">
@@ -54,9 +55,43 @@ eleventyComputed:
             <button type="button" class="template-tab" data-type="ec">{{ t.tab_ec }}</button>
         </div>
 
+        <!-- 言語・タグの絞り込み -->
+        <div class="template-filters">
+            <div class="template-filter-row">
+                <label for="langFilter" class="template-filter-label">{{ t.lang_label }}</label>
+                <select id="langFilter" class="template-filter-select">
+                    <option value="">{{ t.lang_all }}</option>
+                    {% for code, label in lang_labels %}
+                    <option value="{{ code }}">{{ label }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="template-filter-row">
+                <span class="template-filter-label">{{ t.tag_label }}</span>
+                <div class="template-tag-list" id="tagQuickList"></div>
+                <button type="button" class="template-tag-all-btn" id="tagAllBtn">{{ t.tag_all_btn }}</button>
+            </div>
+        </div>
+
+        <!-- タグ選択ダイアログ -->
+        <dialog id="tagDialog" class="template-tag-dialog">
+            <div class="template-tag-dialog-body">
+                <div class="template-tag-dialog-header">
+                    <span class="template-tag-dialog-title">{{ t.tag_dialog_title }}</span>
+                    <button type="button" class="template-tag-dialog-close" id="tagDialogClose" aria-label="{{ t.close }}">&times;</button>
+                </div>
+                <div class="template-tag-list" id="tagDialogList"></div>
+            </div>
+        </dialog>
+
+        <!-- タグの表示名（JSで使用） -->
+        <script type="application/json" id="tagLabels">
+            { {% for key, labels in templateTags %}"{{ key }}": {{ labels[locale] | dump | safe }}{% if not loop.last %}, {% endif %}{% endfor %} }
+        </script>
+
         <!-- テンプレートカード一覧 -->
         <div class="grid-3 template-grid" id="templatesContainer">
-            {% for post in collections.templates | reverse %}
+            {% for post in collections.templates | sortTemplates %}
                 {% set t_name = post.data.name_ja %}
                 {% if locale == 'en' and post.data.name_en %}
                     {% set t_name = post.data.name_en %}
@@ -65,7 +100,7 @@ eleventyComputed:
                 {% endif %}
 
                 {% if t_name %}
-                <a href="/{{ locale }}/templates/{{ post.fileSlug }}/" class="template-card" data-type="{{ post.data.type }}">
+                <a href="/{{ locale }}/templates/{{ post.fileSlug }}/" class="template-card" data-type="{{ post.data.type }}" data-languages="{{ (post.data.languages or []) | join(' ') }}" data-labels="{{ (post.data.labels or []) | join(' ') }}">
                     <div class="template-card-img">
                         <img
                             src="{{ post.data.image }}"
@@ -76,6 +111,13 @@ eleventyComputed:
                     <div class="template-card-body">
                         <span class="template-card-type">{{ type_labels[post.data.type] }}</span>
                         <div class="template-card-title">{{ t_name }}</div>
+                        {% if post.data.languages and post.data.languages.length %}
+                        <div class="template-card-langs">
+                            {% for lang in post.data.languages %}
+                            <span class="template-card-lang">{{ lang_labels[lang] }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
                     </div>
                 </a>
                 {% endif %}
@@ -123,6 +165,119 @@ eleventyComputed:
 .template-tab.active {
     color: var(--color-primary-start);
     border-bottom-color: var(--color-primary-start);
+}
+
+/* 言語・タグの絞り込み */
+.template-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: -1rem 0 2rem;
+}
+
+.template-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.template-filter-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    min-width: 4rem;
+}
+
+.template-filter-select {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    background: #fff;
+    color: var(--color-text-primary);
+}
+
+.template-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.template-tag-btn,
+.template-tag-all-btn {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    background: #f8fafc;
+    color: #475569;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.template-tag-btn:hover,
+.template-tag-all-btn:hover {
+    border-color: var(--color-primary-start);
+    color: var(--color-primary-start);
+}
+
+.template-tag-btn .template-tag-count {
+    margin-left: 4px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.template-tag-btn.is-active {
+    background: var(--color-primary-start);
+    border-color: var(--color-primary-start);
+    color: #fff;
+}
+
+.template-tag-all-btn {
+    background: #fff;
+    text-decoration: underline;
+}
+
+/* タグ選択ダイアログ */
+.template-tag-dialog {
+    width: min(640px, calc(100% - 32px));
+    max-height: 80vh;
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    margin: auto; /* base.css の * { margin: 0 } で中央寄せが消えるため戻す */
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.template-tag-dialog-body {
+    padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.template-tag-dialog::backdrop {
+    background: rgba(15, 23, 42, 0.45);
+}
+
+.template-tag-dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.template-tag-dialog-title {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.template-tag-dialog-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #64748b;
+    cursor: pointer;
 }
 
 /* テンプレートカード */
@@ -179,6 +334,23 @@ eleventyComputed:
     color: var(--color-text-primary);
 }
 
+.template-card-langs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 0.6rem;
+}
+
+.template-card-lang {
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+}
+
 .template-card:hover .template-card-title {
     color: var(--color-primary-start);
 }
@@ -187,26 +359,114 @@ eleventyComputed:
 <!-- ▼ JavaScript（タブ切り替え） -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+    // ページ上に並べるタグの数（残りはダイアログで選ぶ）。スマホは5個、PCは10個
+    const mobileQuery = window.matchMedia('(max-width: 768px)');
+    function quickTagCount() { return mobileQuery.matches ? 5 : 10; }
+
     const tabs = document.querySelectorAll('.template-tab');
-    const cards = document.querySelectorAll('.template-card');
+    const cards = Array.from(document.querySelectorAll('.template-card'));
     const noResultsMsg = document.getElementById('no-results-msg');
+    const langFilter = document.getElementById('langFilter');
+    const tagQuickList = document.getElementById('tagQuickList');
+    const tagDialogList = document.getElementById('tagDialogList');
+    const tagAllBtn = document.getElementById('tagAllBtn');
+    const tagDialog = document.getElementById('tagDialog');
+    const tagLabels = JSON.parse(document.getElementById('tagLabels').textContent);
+    const tagOrder = Object.keys(tagLabels);
+
+    const state = { type: 'all', lang: '', tag: '' };
+
+    function cardValues(card, attr) {
+        return (card.getAttribute(attr) || '').split(' ').filter(Boolean);
+    }
+
+    // 種類・言語の条件に合うか（タグは見ない）
+    function matchesTypeAndLang(card) {
+        const typeOk = state.type === 'all' || card.getAttribute('data-type') === state.type;
+        const langOk = !state.lang || cardValues(card, 'data-languages').includes(state.lang);
+        return typeOk && langOk;
+    }
+
+    function tagButton(tag, count) {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'template-tag-btn' + (tag === state.tag ? ' is-active' : '');
+        btn.dataset.tag = tag;
+        btn.textContent = tagLabels[tag];
+        const countEl = document.createElement('span');
+        countEl.className = 'template-tag-count';
+        countEl.textContent = count;
+        btn.appendChild(countEl);
+        return btn;
+    }
+
+    function render() {
+        // 種類・言語で残るテンプレートのタグを数える（0件になるタグは出さない）
+        const counts = {};
+        cards.filter(matchesTypeAndLang).forEach(function (card) {
+            cardValues(card, 'data-labels').forEach(function (tag) {
+                if (tagLabels[tag]) counts[tag] = (counts[tag] || 0) + 1;
+            });
+        });
+        if (state.tag && !counts[state.tag]) state.tag = '';
+
+        // 件数の多い順。同数なら対応表の順
+        const sortedTags = Object.keys(counts).sort(function (a, b) {
+            return counts[b] - counts[a] || tagOrder.indexOf(a) - tagOrder.indexOf(b);
+        });
+
+        // ページ上：上位のタグ。選択中のタグが上位にない場合は先頭に出す
+        let quickTags = sortedTags.slice(0, quickTagCount());
+        if (state.tag && !quickTags.includes(state.tag)) quickTags = [state.tag].concat(quickTags);
+        tagQuickList.replaceChildren.apply(tagQuickList, quickTags.map(function (tag) { return tagButton(tag, counts[tag]); }));
+        tagDialogList.replaceChildren.apply(tagDialogList, sortedTags.map(function (tag) { return tagButton(tag, counts[tag]); }));
+        tagAllBtn.style.display = sortedTags.length > quickTagCount() ? '' : 'none';
+
+        // カードの表示
+        let visibleCount = 0;
+        cards.forEach(function (card) {
+            const match = matchesTypeAndLang(card) && (!state.tag || cardValues(card, 'data-labels').includes(state.tag));
+            card.style.display = match ? 'block' : 'none';
+            if (match) visibleCount++;
+        });
+        noResultsMsg.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
 
     tabs.forEach(function (tab) {
         tab.addEventListener('click', function () {
             tabs.forEach(function (t) { t.classList.remove('active'); });
             tab.classList.add('active');
-
-            const type = tab.getAttribute('data-type');
-            let visibleCount = 0;
-
-            cards.forEach(function (card) {
-                const match = type === 'all' || card.getAttribute('data-type') === type;
-                card.style.display = match ? 'block' : 'none';
-                if (match) visibleCount++;
-            });
-
-            noResultsMsg.style.display = visibleCount === 0 ? 'block' : 'none';
+            state.type = tab.getAttribute('data-type');
+            render();
         });
     });
+
+    langFilter.addEventListener('change', function () {
+        state.lang = langFilter.value;
+        render();
+    });
+
+    // タグを押すと絞り込み。選択中のタグをもう一度押すと解除
+    function onTagClick(event) {
+        const btn = event.target.closest('.template-tag-btn');
+        if (!btn) return;
+        state.tag = state.tag === btn.dataset.tag ? '' : btn.dataset.tag;
+        if (tagDialog.open) tagDialog.close();
+        render();
+    }
+    tagQuickList.addEventListener('click', onTagClick);
+    tagDialogList.addEventListener('click', onTagClick);
+
+    tagAllBtn.addEventListener('click', function () { tagDialog.showModal(); });
+    document.getElementById('tagDialogClose').addEventListener('click', function () { tagDialog.close(); });
+    // 背景（ダイアログの外側）をクリックしたら閉じる
+    tagDialog.addEventListener('click', function (event) {
+        if (event.target === tagDialog) tagDialog.close();
+    });
+
+    // 画面幅がスマホ⇔PCで切り替わったら並べ直す
+    mobileQuery.addEventListener('change', render);
+
+    render();
 });
 </script>

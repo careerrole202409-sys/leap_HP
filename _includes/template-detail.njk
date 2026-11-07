@@ -12,13 +12,6 @@ layout: base.njk
     {% set current_description = description_zh %}
 {% endif %}
 
-{% set current_labels = labels_ja %}
-{% if locale == 'en' and labels_en %}
-    {% set current_labels = labels_en %}
-{% elif locale == 'zh-hans' and labels_zh %}
-    {% set current_labels = labels_zh %}
-{% endif %}
-
 {% set type_labels_all = {
     ja: { ec: "ECサイト", hp: "HP", lp: "LP" },
     en: { ec: "E-Commerce", hp: "HP", lp: "LP" },
@@ -26,14 +19,9 @@ layout: base.njk
 } %}
 {% set type_labels = type_labels_all[locale] if type_labels_all[locale] else type_labels_all.ja %}
 
-{% set cta_href = appLinks.template[type] or appLinks.signup %}
+{% set cta_href = (appLinks.template[type] or appLinks.signup) + "&template=" + page.fileSlug %}
 
-{% set lang_labels_all = {
-    ja: { ja: "日本語", en: "英語" },
-    en: { ja: "Japanese", en: "English" },
-    "zh-hans": { ja: "日语", en: "英语" }
-} %}
-{% set lang_labels = lang_labels_all[locale] if lang_labels_all[locale] else lang_labels_all.ja %}
+{% set lang_labels = templateLanguages[locale] if templateLanguages[locale] else templateLanguages.ja %}
 
 {% set ui = {
     ja: { home: "ホーム", templates: "テンプレート", type_label: "種類", tag_label: "タグ", lang_label: "対応言語", cta_btn: "Leapで作成する" },
@@ -102,12 +90,12 @@ layout: base.njk
                 </div>
             </div>
 
-            {% if current_labels and current_labels.length %}
+            {% if labels and labels.length %}
             <div class="template-info-row">
                 <div class="template-info-label">{{ t.tag_label }}</div>
                 <div class="template-info-chips">
-                    {% for label in current_labels %}
-                    <span class="template-chip">{{ label }}</span>
+                    {% for label in labels %}
+                    <span class="template-chip">{{ templateTags[label][locale] }}</span>
                     {% endfor %}
                 </div>
             </div>
