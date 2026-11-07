@@ -1,8 +1,16 @@
 <style>
+/* 閉じているドロップダウンが画面右端からはみ出し、横スクロールが出るのを防ぐ */
+html {
+    overflow-x: clip;
+}
+
 .dropdown-menu-wide {
     display: flex !important;
     gap: 0;
     min-width: 440px;
+    /* ヘッダー右寄りの項目なので、右端を揃えて左向きに開く */
+    left: auto;
+    right: 0;
 }
 .dropdown-col { flex: 1; }
 .dropdown-col-title {
