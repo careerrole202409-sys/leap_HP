@@ -1,0 +1,100 @@
+{#
+  記事の著者欄。blog-post / ec-guide-post / hp-guide-post から読み込む。
+  著者が Leap 編集部の記事は、Leap の紹介を兼ねた編集部紹介を表示する。
+  （編集部紹介の文言を定義していない言語、編集部以外の著者は従来どおり）
+#}
+{% set editorial_texts = {
+    ja: {
+        label: "この記事を書いた人",
+        bio1: "集客までAIに任せられる越境ECツール「Leap」の編集部です。",
+        bio2: "シンプルな使い勝手で、BtoB専用ECにも対応しています。",
+        templates: "テンプレートを見る",
+        free: "無料で始める"
+    },
+    en: {
+        label: "About the author",
+        bio1: "The editorial team behind Leap, the cross-border e-commerce platform that lets AI handle your marketing.",
+        bio2: "Simple to use, with built-in support for B2B commerce.",
+        templates: "View Templates",
+        free: "Get Started Free"
+    },
+    "zh-hans": {
+        label: "本文作者",
+        bio1: "我们是跨境电商工具「Leap」的编辑团队，Leap连获客都能交给AI。",
+        bio2: "操作简单，还支持B2B专用电商。",
+        templates: "查看模板",
+        free: "免费开始"
+    }
+} %}
+{% set editorial = editorial_texts[locale] %}
+{% set author_name = author | default(t_default_author) %}
+{# 著者名が編集部（日本語: 編集部 / 英語: Editorial / 中国語: 编辑部・编辑团队）なら編集部紹介を出す #}
+{% set is_editorial = ('編集部' in author_name) or ('Editorial' in author_name) or ('编辑' in author_name) %}
+{% if editorial and is_editorial %}
+<style>
+.author-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.1rem 1.5rem 1.25rem;
+    margin-bottom: 3rem;
+}
+.author-card-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #64748b;
+    padding-bottom: 0.6rem;
+    margin-bottom: 0.9rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+.author-card .author-section { margin-bottom: 0; align-items: center; }
+.author-card .author-avatar { object-fit: contain; background-color: #fff; border: 1px solid #e2e8f0; padding: 6px; flex-shrink: 0; }
+.author-card .author-text { flex: 1; min-width: 0; }
+.author-card .author-bio { line-height: 1.7; }
+.author-card-actions { display: flex; flex-direction: column; gap: 0.5rem; flex-shrink: 0; }
+.author-card-btn {
+    display: block;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0.55rem 1.1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: opacity 0.2s;
+}
+.author-card-btn:hover { opacity: 0.85; }
+.author-card-btn.is-outline { background: #fff; color: #C10033; border: 1px solid #C10033; }
+.author-card-btn.is-primary { background: linear-gradient(135deg, #C10033 0%, #8B0024 100%); color: #fff; border: 1px solid transparent; }
+@media (max-width: 768px) {
+    .author-card .author-section { flex-wrap: wrap; }
+    .author-card-actions { flex-direction: row; width: 100%; }
+    .author-card-btn { flex: 1; }
+}
+</style>
+<div class="author-card">
+    <div class="author-card-label">{{ editorial.label }}</div>
+    <div class="author-section">
+        <img src="/assets/favicon.png" alt="Leap" class="author-avatar">
+        <div class="author-text">
+            <div class="author-name">{{ author_name }}</div>
+            <div class="author-bio">{{ editorial.bio1 }}<br>{{ editorial.bio2 }}</div>
+        </div>
+        <div class="author-card-actions">
+            <a href="/{{ locale }}/templates/" class="author-card-btn is-outline">{{ editorial.templates }} &rarr;</a>
+            <a href="{{ appLinks.signup }}" target="_blank" rel="noopener noreferrer" class="author-card-btn is-primary">{{ editorial.free }}</a>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="author-section">
+    <img src="{{ author_image | default('https://placehold.co/100x100/e2e8f0/94a3b8?text=User') }}"
+         alt="{{ author }}"
+         class="author-avatar">
+
+    <div class="author-text">
+        <div class="author-name">{{ author_name }}</div>
+        <div class="author-bio">{{ author_bio | default(t_default_bio) }}</div>
+    </div>
+</div>
+{% endif %}

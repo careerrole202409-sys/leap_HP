@@ -7,7 +7,7 @@ site_type: "web_service"
 
 title: "マレーシア向けの多言語Webサービスの開発 | Leap導入事例"
 
-company_name_ja: "国際農林水産業センター"
+company_name_ja: "国際農林水産業研究センター"
 company_name_en: "Japan International Research Center for Agricultural Sciences"
 company_name_zh: "国际农林水产业研究中心"
 
@@ -15,7 +15,7 @@ case_title_ja: "マレーシア向けの多言語Webサービスの開発"
 case_title_en: "Development of a Multilingual Web Service for Malaysia"
 case_title_zh: "面向马来西亚的多语言Web服务开发"
 
-description_ja: "国際農林水産業センターにおける、マレーシア現地のユーザーに向けたWebサービスの多言語対応および開発事例をご紹介します。"
+description_ja: "国際農林水産業研究センターにおける、マレーシア現地のユーザーに向けたWebサービスの多言語対応および開発事例をご紹介します。"
 description_en: "A case study on the development and multilingual localization of a web service for local users in Malaysia."
 description_zh: "介绍面向马来西亚本地用户的Web服务多语言化及开发案例。"
 ---

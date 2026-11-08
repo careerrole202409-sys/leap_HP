@@ -4,8 +4,8 @@
 
 <link rel="icon" href="/assets/favicon.png">
 
-<title>{{ title }}</title>
-  <meta name="description" content="{{ description }}">
+<title>{{ title or 'Leap | 集客までAIに任せられる、越境ECツール' }}</title>
+  <meta name="description" content="{{ description or 'Leapは、越境ECの立ち上げから集客までAIに任せられる越境ECツールです。チャットで話しかけるだけのシンプルな使い勝手で、BtoB専用ECにも対応しています。' }}">
 
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
@@ -40,8 +40,6 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ description or 'Leap - 海外進出をサポート' }}">
-    <title>{{ title or 'Leap - 海外進出をサポート' }}</title>
     
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/base.css">
@@ -69,15 +67,15 @@
 
     <!-- ▼ 固定CTA -->
     {% if locale == 'en' %}
-        {% set cta_subtitle = 'Global Marketing<br>AI Agent' %}
+        {% set cta_subtitle = 'Cross-border e-commerce,<br>marketing handled by AI' %}
         {% set cta_btn = 'Start for Free →' %}
         {% set cta_btn_mini = 'Start for Free' %}
     {% elif locale == 'zh-hans' %}
-        {% set cta_subtitle = '全球营销<br>AI代理' %}
+        {% set cta_subtitle = '连获客都能交给AI的<br>跨境电商工具' %}
         {% set cta_btn = '免费开始 →' %}
         {% set cta_btn_mini = '免费开始' %}
     {% else %}
-        {% set cta_subtitle = 'グローバルマーケティング<br>AIエージェント' %}
+        {% set cta_subtitle = '集客までAIに任せられる<br>越境ECツール' %}
         {% set cta_btn = '無料ではじめる →' %}
         {% set cta_btn_mini = '無料ではじめる' %}
     {% endif %}

@@ -317,16 +317,7 @@ layout: base.njk
         <hr class="header-divider">
 
         <!-- 7. 著者情報セクション -->
-        <div class="author-section">
-            <img src="{{ author_image | default('https://placehold.co/100x100/e2e8f0/94a3b8?text=User') }}" 
-                 alt="{{ author }}" 
-                 class="author-avatar">
-            
-            <div class="author-text">
-                <div class="author-name">{{ author | default(t_default_author) }}</div>
-                <div class="author-bio">{{ author_bio | default(t_default_bio) }}</div>
-            </div>
-        </div>
+        {% include "author-box.njk" %}
 
         <!-- 8. アイキャッチ画像 -->
         <div style="width: 100%; aspect-ratio: 16/9; overflow: hidden; border-radius: 12px; margin-bottom: 20px;">

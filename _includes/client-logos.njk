@@ -38,31 +38,35 @@
             transition: opacity 0.2s;
         }
         .client-logo-img:hover { opacity: 1; }
+        /* 余白のない横長ロゴは、ほかのロゴと見た目の大きさを揃えるため小さめに */
+        .client-logo-img.is-wide { height: 30px; }
         @keyframes logos-scroll {
             0%   { transform: translateX(0); }
             100% { transform: translateX(-50%); }
         }
         @media (max-width: 768px) {
             .client-logo-img { height: 40px; }
+            .client-logo-img.is-wide { height: 24px; }
             .client-logos-track { gap: 3rem; }
         }
     </style>
 
     <p class="client-logos-title">
         {% if locale == 'en' %}
-            Businesses around the world are building websites and stores with Leap.
+            Trusted by businesses of all sizes, including companies listed on the TSE Prime Market.
         {% elif locale == 'zh-hans' %}
-            众多企业正在使用 Leap 创建网站与电商。
+            包括东京证券交易所Prime市场上市企业在内，众多企业都在使用 Leap。
         {% elif locale == 'zh-hant' %}
             眾多企業正在使用 Leap 建立網站與電商。
         {% else %}
-            Leapを使って、多くの企業がWebサイト・ECなどを制作しています。
+            東証プライム上場企業をはじめ、多くの企業にご利用いただいています。
         {% endif %}
     </p>
 
     <div class="client-logos-marquee-wrapper">
         <div class="client-logos-track">
             <!-- オリジナル -->
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1791437959/0001-C110-02-19_mark_shamei2_bo0k0o.jpg" alt="大倉工業" class="client-logo-img is-wide">
             <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767491868/logo_ja_qjjpkp.png" alt="JIRCAS" class="client-logo-img">
             <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767492098/logo_hd_sw2wdr.jpg" alt="Client Logo" class="client-logo-img">
             <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767492043/2026-01-04_11.00%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_wpugxv.jpg" alt="小松ばね工業" class="client-logo-img">
@@ -75,6 +79,7 @@
             <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1776392890/LAP_%E5%8D%98%E7%8B%AC%E3%83%AD%E3%82%B3%E3%82%99_xkoi6g.jpg" alt="LAP" class="client-logo-img">
             <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1776408660/IMG_6201_xqubsz.jpg" alt="Client Logo" class="client-logo-img">
             <!-- 複製（シームレスループ用） -->
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1791437959/0001-C110-02-19_mark_shamei2_bo0k0o.jpg" alt="大倉工業" class="client-logo-img is-wide">
             <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767491868/logo_ja_qjjpkp.png" alt="JIRCAS" class="client-logo-img">
             <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767492098/logo_hd_sw2wdr.jpg" alt="Client Logo" class="client-logo-img">
             <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767492043/2026-01-04_11.00%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_wpugxv.jpg" alt="小松ばね工業" class="client-logo-img">
