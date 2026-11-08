@@ -1,7 +1,7 @@
 ---
 layout: base.njk
-title: Leap | グローバルマーケティングAIエージェント
-description: Leapは海外向けサイト制作・多言語化・広告運用・CRM・ブログ運用まで、AIチャットだけで一気通貫に実行するグローバルマーケティングAIエージェントです。
+title: Leap | 集客までAIに任せられる、越境ECツール
+description: Leapは、越境ECの立ち上げから集客までAIに任せられる越境ECツールです。チャットで話しかけるだけのシンプルな使い勝手で、BtoB専用ECにも対応しています。
 ---
 
 <style>
@@ -36,7 +36,8 @@ description: Leapは海外向けサイト制作・多言語化・広告運用・
     font-size: clamp(0.95rem, 1.8vw, 1.05rem);
     color: #555;
     line-height: 1.8;
-    margin-bottom: 0;
+    max-width: none;
+    margin: 0; /* 見出しと左端を揃える */
 }
 .hero-btns {
     text-align: center;
@@ -157,6 +158,7 @@ description: Leapは海外向けサイト制作・多言語化・広告運用・
 
 /* ===== bg variants ===== */
 .bg-soft { background: #fafafa; }
+.bg-gray { background: #f1f3f6; }
 .bg-pink { background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 60%, #fff0e8 100%); }
 
 /* ===== 3 Pillars ===== */
@@ -181,6 +183,8 @@ description: Leapは海外向けサイト制作・多言語化・広告運用・
     box-shadow: 0 8px 24px rgba(193,0,51,0.1);
     border-color: #C10033;
 }
+/* リンクではないカードは、クリックできるように見せない */
+div.pillar-card:hover { box-shadow: none; border-color: #e5e7eb; }
 .pillar-icon {
     width: 44px;
     height: 44px;
@@ -208,61 +212,6 @@ description: Leapは海外向けサイト制作・多言語化・広告運用・
     font-weight: 700;
     color: #C10033;
 }
-
-/* ===== 全機能グリッド ===== */
-.all-features-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-@media (max-width: 992px) { .all-features-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 768px) { .all-features-grid { grid-template-columns: 1fr; } }
-.feature-card {
-    background: #fff;
-    border: 1px solid #e5e7eb;
-    border-radius: 16px;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-}
-.feature-card-icon {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, #C10033, #8B0024);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0.75rem;
-    flex-shrink: 0;
-}
-.feature-card h3 {
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: #1a1a2e;
-    margin-bottom: 0.4rem;
-}
-.feature-card p {
-    font-size: 0.875rem;
-    color: #666;
-    line-height: 1.65;
-    flex: 1;
-    margin-bottom: 1rem;
-}
-.btn-feature-link {
-    display: inline-block;
-    font-size: 0.82rem;
-    font-weight: 700;
-    color: #C10033;
-    border: 1.5px solid #C10033;
-    border-radius: 100px;
-    padding: 0.4rem 1rem;
-    text-decoration: none;
-    align-self: flex-start;
-    transition: background 0.15s, color 0.15s;
-}
-.btn-feature-link:hover { background: #C10033; color: #fff; }
 
 /* ===== Feature sections ===== */
 .feature-row {
@@ -316,107 +265,325 @@ details[open] .accordion-trigger .acc-icon { transform: rotate(45deg); }
     line-height: 1.7;
 }
 
-/* ===== Consulting (light-touch) ===== */
-.consulting-block {
-    max-width: 680px;
-    margin: 0 auto;
-    text-align: center;
-}
-.consulting-block h2 {
-    font-size: clamp(1.3rem, 2.5vw, 1.75rem);
-}
-.consulting-block .section-desc {
-    max-width: 100%;
-    margin: 0 auto 1.25rem;
-}
-
-/* ===== How it works ===== */
-.steps {
+/* ===== テンプレート ===== */
+.top-tpl-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.75rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
     margin-top: 2rem;
 }
-@media (max-width: 768px) { .steps { grid-template-columns: 1fr 1fr; } }
-.step { text-align: center; }
-.step-num {
-    width: 52px;
-    height: 52px;
-    background: linear-gradient(135deg, #C10033, #8B0024);
-    color: #fff;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    font-weight: 800;
+@media (max-width: 900px) { .top-tpl-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) {
+    .top-tpl-grid { gap: 0.75rem; }
+    .top-tpl-body { flex-direction: column; align-items: flex-start; gap: 0.35rem; padding: 0.6rem 0.75rem 0.75rem; }
+    .top-tpl-name { font-size: 0.85rem; }
+}
+.top-tpl-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.top-tpl-card:hover { transform: translateY(-4px); box-shadow: 0 12px 26px rgba(0,0,0,0.1); }
+.top-tpl-img { aspect-ratio: 16 / 10; overflow: hidden; background: #f4f5f8; }
+.top-tpl-img img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.top-tpl-body { padding: 0.85rem 1.1rem 1rem; display: flex; align-items: center; gap: 0.6rem; }
+.top-tpl-type {
+    flex-shrink: 0;
+    background: #fef2f2;
+    color: #C10033;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 20px;
+    border: 1px solid #fecdd3;
+}
+.top-tpl-name { font-size: 0.95rem; font-weight: 700; color: #1a1a2e; }
+.top-tpl-card:hover .top-tpl-name { color: #C10033; }
+.top-more { text-align: center; margin-top: 2rem; }
+.top-more a {
+    display: inline-block;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #C10033;
+    border: 1.5px solid #C10033;
+    border-radius: 100px;
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    background: #fff;
+    transition: background 0.15s, color 0.15s;
+}
+.top-more a:hover { background: #C10033; color: #fff; }
+
+/* ===== 導入事例 ===== */
+.top-case-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+@media (max-width: 900px) { .top-case-grid { grid-template-columns: 1fr; max-width: 520px; margin-left: auto; margin-right: auto; } }
+.top-case-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.top-case-card:hover { transform: translateY(-4px); box-shadow: 0 12px 26px rgba(0,0,0,0.08); }
+.top-case-logo {
+    height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 0.75rem;
+    padding: 1.5rem;
+    border-bottom: 3px solid #C10033;
 }
-.step h3 {
+.top-case-logo img { max-width: 70%; max-height: 80px; object-fit: contain; }
+.top-case-body { padding: 1.1rem 1.25rem 1.3rem; }
+.top-case-company { font-size: 0.85rem; color: #64748b; margin-bottom: 0.35rem; }
+.top-case-title { font-size: 1rem; font-weight: 700; line-height: 1.55; color: #1a1a2e; margin: 0; }
+.top-case-card:hover .top-case-title { color: #C10033; }
+
+/* ===== よくある質問 ===== */
+.top-faq { max-width: 820px; margin: 2rem auto 0; display: flex; flex-direction: column; gap: 0.75rem; }
+.top-faq details {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.1rem 1.4rem;
+}
+.top-faq summary {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+.top-faq summary::-webkit-details-marker { display: none; }
+.top-faq summary::before { content: "Q"; flex-shrink: 0; font-weight: 800; color: #C10033; font-size: 1.1rem; }
+.top-faq summary .acc-icon { margin-left: auto; }
+.top-faq details[open] summary .acc-icon { transform: rotate(45deg); }
+.top-faq-answer { padding: 0.85rem 0 0 1.85rem; font-size: 0.95rem; color: #475569; line-height: 1.8; }
+.top-faq-answer dl { display: grid; grid-template-columns: auto 1fr; gap: 0.35rem 1rem; margin: 0.6rem 0 0; }
+.top-faq-answer dt { font-weight: 700; color: #1a1a2e; white-space: nowrap; }
+.top-faq-answer dd { margin: 0; }
+@media (max-width: 560px) {
+    .top-faq-answer { padding-left: 0; }
+    .top-faq-answer dl { grid-template-columns: 1fr; gap: 0 0; }
+    .top-faq-answer dd { margin-bottom: 0.5rem; }
+}
+
+/* ===== お悩み（課題提起） ===== */
+.pain-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+@media (max-width: 900px) { .pain-grid { grid-template-columns: repeat(2, 1fr); } }
+.pain-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+}
+.pain-icon {
+    width: 44px;
+    height: 44px;
+    margin: 0 auto 0.85rem;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pain-card p {
     font-size: 0.95rem;
     font-weight: 700;
     color: #1a1a2e;
-    margin-bottom: 0.4rem;
+    line-height: 1.6;
+    margin: 0;
 }
-.step p { font-size: 0.85rem; color: #666; line-height: 1.6; }
-
-/* ===== Use cases tabs ===== */
-.usecase-tabs {
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
+@media (max-width: 600px) {
+    .pain-card { padding: 1.25rem 0.75rem; }
+    .pain-card p { font-size: 0.85rem; }
+    .pain-card p br { display: none; }
 }
-.usecase-tab {
-    padding: 0.45rem 1.1rem;
-    border-radius: 100px;
-    border: 1px solid #e5e7eb;
-    font-size: 0.875rem;
-    font-weight: 600;
-    cursor: pointer;
+/* ===== 機能の全体像（制作 → 集客 → 管理 → BtoBで拡大する成長曲線） ===== */
+.section-growth { padding: 2.75rem 1.5rem 3rem; }
+.section-growth h2 { margin-bottom: 0; }
+/* Leapの枠：図全体を包み、左上の線にロゴを載せる */
+.growth-frame {
+    position: relative;
+    margin-top: 1.75rem;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
     background: #fff;
-    color: #555;
-    transition: all 0.15s;
+    border: 1.5px solid #e9a8b8;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(193, 0, 51, 0.08);
 }
-.usecase-tab.active { background: #1a1a2e; color: #fff; border-color: #1a1a2e; }
-.usecase-content { display: none; }
-.usecase-content.active {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
+.growth-badge {
+    position: absolute;
+    top: 0;
+    left: 24px;
+    transform: translateY(-50%);
+    display: inline-flex;
     align-items: center;
+    gap: 7px;
+    padding: 5px 14px 5px 8px;
+    background: #fff;
+    border: 1.5px solid #e9a8b8;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #C10033;
+    letter-spacing: 0.02em;
+    line-height: 1;
 }
-@media (max-width: 768px) { .usecase-content.active { grid-template-columns: 1fr; } }
-.usecase-content h3 {
-    font-size: 1.35rem;
+.growth-badge img { width: 22px; height: 22px; object-fit: contain; }
+.growth {
+    position: relative;
+    aspect-ratio: 1000 / 380;
+    max-height: 380px;
+    min-height: 340px;
+    background-image:
+        linear-gradient(#eceff4 1px, transparent 1px),
+        linear-gradient(90deg, #eceff4 1px, transparent 1px);
+    background-size: 100% 25%, 12.5% 100%;
+    border-left: 2px solid #475569;
+    border-bottom: 2px solid #475569;
+}
+/* 軸の矢印 */
+.growth::before,
+.growth::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+}
+.growth::before { left: -7px; top: -10px; border-bottom: 9px solid #475569; border-top: 0; }
+.growth::after  { right: -10px; bottom: -7px; border-left: 9px solid #475569; border-right: 0; }
+.growth-axis {
+    position: absolute;
+    font-size: 0.95rem;
     font-weight: 700;
-    color: #1a1a2e;
-    margin-bottom: 0.6rem;
+    color: #334155;
+    white-space: nowrap;
 }
-.usecase-content p {
-    font-size: 0.9rem;
-    color: #555;
-    line-height: 1.75;
-    margin-bottom: 1rem;
+.growth-axis.is-y { left: 12px; top: -6px; }
+.growth-axis.is-x { right: 6px; bottom: 6px; }
+.growth-line { position: absolute; inset: 0; width: 100%; height: 100%; }
+.growth-node { position: absolute; width: 0; height: 0; }
+.growth-node.is-create { left: 10%; top: 86%; --len: 96px; }
+.growth-node.is-grow   { left: 36%; top: 76%; --len: 56px; }
+.growth-node.is-manage { left: 62%; top: 58%; --len: 20px; }
+.growth-node.is-btob   { left: 88%; top: 36%; --len: 30px; }
+.growth-dot {
+    position: absolute;
+    left: -7px;
+    top: -7px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #C10033;
+    box-shadow: 0 0 0 4px #fff, 0 2px 8px rgba(193, 0, 51, 0.35);
+    z-index: 2;
 }
-.usecase-list { list-style: none; padding: 0; }
-.usecase-list li {
+/* 点から引き出す線 */
+.growth-node::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: var(--len);
+    border-left: 2px dashed #b6bfcc;
+    transform: translateX(-1px);
+}
+.growth-node.is-up::before   { bottom: 0; }
+.growth-node.is-down::before { top: 0; }
+.growth-callout {
+    position: absolute;
+    left: -14px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 0.6rem 0.75rem 0.7rem;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+    white-space: nowrap;
+}
+.growth-node.is-up .growth-callout   { bottom: var(--len); }
+.growth-node.is-down .growth-callout { top: var(--len); }
+/* 右端は左向きに開く */
+.growth-node.is-left .growth-callout { left: auto; right: -14px; }
+.growth-callout.is-inline { display: flex; align-items: center; gap: 6px; }
+.growth-callout.is-inline .growth-callout-title { margin-bottom: 0; }
+.growth-callout-title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #C10033;
+    margin: 0 0 0.45rem 2px;
+}
+.growth-chips { display: flex; flex-direction: column; align-items: stretch; gap: 5px; }
+/* 機能ページへのリンク（押せるチップ） */
+.growth-chip {
     display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
-    font-size: 0.875rem;
-    color: #333;
-    margin-bottom: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 3px 10px 3px 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #1a1a2e;
+    background: #f8fafc;
+    border: 1px solid #dfe4eb;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: color 0.15s, border-color 0.15s, background 0.15s;
 }
-.usecase-list li::before { content: "✓"; color: #C10033; font-weight: 700; flex-shrink: 0; }
-
-@media (max-width: 768px) {
-    .btn-hero-primary,
-    .btn-hero-secondary {
-        font-size: 1rem;
-        padding: 0.85rem 2rem;
+a.growth-chip::after { content: "\203A"; font-size: 1.05rem; line-height: 1; color: #94a3b8; transition: color 0.15s; }
+a.growth-chip:hover { color: #C10033; border-color: #C10033; background: #fff; }
+a.growth-chip:hover::after { color: #C10033; }
+/* ページがない項目はチップにしない */
+span.growth-chip { background: none; border-color: transparent; color: #64748b; font-weight: 500; padding-left: 2px; }
+/* タブレット・スマホ：曲線と軸を外し、縦の流れに */
+@media (max-width: 1023px) {
+    .growth-frame { padding: 1.8rem 1.1rem 1.1rem; }
+    .growth {
+        aspect-ratio: auto;
+        max-height: none;
+        background: none;
+        border-bottom: 0;
+        border-left: 2px solid #C10033;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        padding-left: 20px;
+        margin-left: 7px;
     }
+    .growth::before, .growth::after, .growth-axis, .growth-line { display: none; }
+    .growth-node { position: relative; left: auto !important; top: auto !important; width: auto; height: auto; }
+    .growth-node::before { display: none; }
+    .growth-dot { left: -28px; top: 15px; }
+    .growth-callout,
+    .growth-node.is-left .growth-callout { position: static; white-space: normal; }
+    .growth-chips { display: flex; flex-direction: row; flex-wrap: wrap; }
 }
 </style>
 
@@ -427,10 +594,10 @@ details[open] .accordion-trigger .acc-icon { transform: rotate(45deg); }
     <div class="hero-grid">
         <!-- 左：テキスト -->
         <div class="hero-left">
-            <span class="section-label">グローバルマーケティングAIエージェント</span>
-            <h1>海外マーケティングを、<br>AIが一気通貫で実行。</h1>
+            <span class="section-label">集客までAIに任せられる越境ECツール</span>
+            <h1>越境ECの制作も集客も、<br>チャットひとつで。</h1>
             <p class="hero-sub">
-                サイト制作・多言語化・広告運用・メルマガ配信まで、<br>海外向けマーケティング業務を、チャットひとつで完結。
+                サイト制作・ローカライズ・SEO/AIO・メルマガまでAIが実行。<br>シンプルな使い勝手で、BtoB専用ECにも対応。
             </p>
         </div>
 
@@ -455,155 +622,147 @@ details[open] .accordion-trigger .acc-icon { transform: rotate(45deg); }
 {% include "client-logos.njk" %}
 
 <!-- ==============================
-     3. Leapの特徴（価値訴求3つ）
+     2.5 お悩み（課題提起）
 ============================== -->
-<section class="section-new bg-soft">
+<section class="section-new bg-gray">
+    <div class="container">
+        <span class="section-label text-center">越境ECの課題</span>
+        <h2 class="text-center">越境ECで、こんなお悩みはありませんか？</h2>
+        <div class="pain-grid">
+            <div class="pain-card">
+                <div class="pain-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+                <p>越境ECを始めたいが、<br>何から手をつければ<br>いいかわからない</p>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="17" y1="8" x2="22" y2="13"/><line x1="22" y1="8" x2="17" y2="13"/></svg></div>
+                <p>海外向けの業務を<br>任せられる人が<br>社内にいない</p>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg></div>
+                <p>サイトを作っても、<br>海外からの集客の<br>仕方がわからない</p>
+            </div>
+            <div class="pain-card">
+                <div class="pain-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div>
+                <p>制作・翻訳・集客を<br>外注すると、<br>コストがかさむ</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     3. Leapの特徴（選ばれる3つの理由）
+============================== -->
+<section class="section-new">
     <div class="container">
         <span class="section-label text-center">Leapの特徴</span>
-        <h2 class="text-center">Leapだけの3つの強み</h2>
+        <h2 class="text-center">Leapが選ばれる3つの理由</h2>
         <div class="pillars">
-            <a href="#feature-create" class="pillar-card">
+            <div class="pillar-card">
+                <div class="pillar-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                </div>
+                <h3>集客まで<br>AIが実行</h3>
+                <p>作って終わりではありません。SEO/AIOに強い多言語ブログ、メルマガ、ローカライズまで、公開後の集客もAIが実行します。</p>
+            </div>
+            <div class="pillar-card">
                 <div class="pillar-icon">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                 </div>
-                <h3>AIとのチャットだけで<br>完結するシンプルさ</h3>
-                <p>コードも専門知識も不要。チャットで話しかけるだけで、サイト制作から日々の運用まですべて完結します。</p>
-                <span class="pillar-link">詳しく見る →</span>
-            </a>
-            <a href="#feature-acquire" class="pillar-card">
+                <h3>シンプルで<br>誰でも使える</h3>
+                <p>チャットで話しかけるだけ。専門知識がなくても、制作から集客・運用まで、ひとつのツールで完結します。</p>
+            </div>
+            <div class="pillar-card">
                 <div class="pillar-icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="9" y1="22" x2="9" y2="18"/><line x1="15" y1="22" x2="15" y2="18"/><line x1="8" y1="6" x2="8.01" y2="6"/><line x1="12" y1="6" x2="12.01" y2="6"/><line x1="16" y1="6" x2="16.01" y2="6"/><line x1="8" y1="10" x2="8.01" y2="10"/><line x1="12" y1="10" x2="12.01" y2="10"/><line x1="16" y1="10" x2="16.01" y2="10"/><line x1="8" y1="14" x2="8.01" y2="14"/><line x1="12" y1="14" x2="12.01" y2="14"/><line x1="16" y1="14" x2="16.01" y2="14"/></svg>
                 </div>
-                <h3>制作から集客まで<br>一気通貫の利便性</h3>
-                <p>これまで別々に依頼していたサイト制作・多言語化・広告運用・メルマガ配信を、ひとつのAIエージェントで完結できます。</p>
-                <span class="pillar-link">詳しく見る →</span>
-            </a>
-            <a href="#feature-create" class="pillar-card">
-                <div class="pillar-icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                </div>
-                <h3>翻訳だけでなく<br>現地仕様にローカライズ</h3>
-                <p>単なる直訳ではなく、現地の競合分析やCTA・デザインの最適化まで行い、本当に刺さるサイトに仕上げます。</p>
-                <span class="pillar-link">詳しく見る →</span>
-            </a>
+                <h3>BtoB専用ECにも<br>対応</h3>
+                <p>企業ごとの価格設定や数量割引、見積依頼、請求書払いなど、海外バイヤーとの取引に必要な機能をそろえています。</p>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- ==============================
-     4. 全機能グリッド
+     3.5 機能（全体像の図）
 ============================== -->
-<section class="section-new bg-pink">
+<section class="section-new section-growth bg-pink">
     <div class="container">
-        <span class="section-label text-center">全機能</span>
-        <h2 class="text-center">Leapでできること</h2>
-        <div class="all-features-grid">
-            <div class="feature-card">
-                <div class="feature-card-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span class="section-label text-center">Leapの機能</span>
+        <h2 class="text-center">越境ECの制作から、集客・管理まで</h2>
+        <div class="growth-frame">
+            <div class="growth-badge"><img src="/assets/favicon.png" alt="">Leap</div>
+            <div class="growth">
+                <span class="growth-axis is-y">海外売上</span>
+                <span class="growth-axis is-x">時間</span>
+                <svg class="growth-line" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M30 356 Q65 347 100 344 C180 338 290 322 360 304 S540 254 620 232 S800 172 880 144 L950 116" fill="none" stroke="#334155" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+                </svg>
+                <div class="growth-node is-create is-up">
+                    <span class="growth-dot"></span>
+                    <div class="growth-callout">
+                        <div class="growth-callout-title">制作</div>
+                        <div class="growth-chips">
+                            <a class="growth-chip" href="/{{ locale }}/services/multilingual-website/">グローバルサイト作成</a>
+                            <a class="growth-chip" href="/{{ locale }}/services/multilingual-ec/">越境EC作成</a>
+                        </div>
+                    </div>
                 </div>
-                <h3>グローバルサイト作成</h3>
-                <p>業種・目的をチャットで伝えるだけで、多言語対応のグローバルサイトをAIが自動生成します。</p>
-                <a href="/{{ locale }}/services/multilingual-website/" class="btn-feature-link">詳しく見る →</a>
-            </div>
-            <div class="feature-card">
-                <div class="feature-card-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                <div class="growth-node is-grow is-up">
+                    <span class="growth-dot"></span>
+                    <div class="growth-callout">
+                        <div class="growth-callout-title">集客</div>
+                        <div class="growth-chips">
+                            <a class="growth-chip" href="/{{ locale }}/services/localization/">ローカライズ</a>
+                            <a class="growth-chip" href="/{{ locale }}/services/multilingual-blog/">多言語ブログ</a>
+                            <a class="growth-chip" href="/{{ locale }}/services/multilingual-newsletter/">メルマガ・CRM</a>
+                            <a class="growth-chip" href="/{{ locale }}/services/access-analytics/">国別アクセス解析</a>
+                        </div>
+                    </div>
                 </div>
-                <h3>越境EC作成</h3>
-                <p>商品登録・決済設定・在庫管理まで、越境ECの構築と運用をAIチャットだけで完結できます。</p>
-                <a href="/{{ locale }}/services/multilingual-ec/" class="btn-feature-link">詳しく見る →</a>
-            </div>
-            <div class="feature-card">
-                <div class="feature-card-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                <div class="growth-node is-manage is-down">
+                    <span class="growth-dot"></span>
+                    <div class="growth-callout">
+                        <div class="growth-callout-title">管理</div>
+                        <div class="growth-chips">
+                            <a class="growth-chip" href="/{{ locale }}/services/ai-localize/">デザイン編集</a>
+                            <span class="growth-chip">商品・注文管理</span>
+                        </div>
+                    </div>
                 </div>
-                <h3>多言語メルマガ</h3>
-                <p>顧客情報をCRMで一元管理し、多言語のメルマガ配信もチャットで指示するだけです。</p>
-                <a href="/{{ locale }}/services/multilingual-newsletter/" class="btn-feature-link">詳しく見る →</a>
-            </div>
-            <div class="feature-card">
-                <div class="feature-card-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                <div class="growth-node is-btob is-up is-left">
+                    <span class="growth-dot"></span>
+                    <div class="growth-callout is-inline">
+                        <div class="growth-callout-title">BtoB専用EC</div>
+                        <span class="growth-chip">さらに拡大</span>
+                    </div>
                 </div>
-                <h3>アクセス解析</h3>
-                <p>HP・ブログのアクセス状況を国別に可視化。市場調査やテストマーケティングにも活用できます。</p>
-                <a href="/{{ locale }}/services/access-analytics/" class="btn-feature-link">詳しく見る →</a>
-            </div>
-            <div class="feature-card">
-                <div class="feature-card-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-                </div>
-                <h3>海外向け広告運用</h3>
-                <p>予算の割り振りから施策実行、実績分析まで、海外向け広告運用をAIとのチャットで完結できます。</p>
-                <a href="/{{ locale }}/services/ad-management/" class="btn-feature-link">詳しく見る →</a>
-            </div>
-            <div class="feature-card">
-                <div class="feature-card-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
-                </div>
-                <h3>多言語化・ローカライズ</h3>
-                <p>翻訳だけでなく、現地の競合分析をもとにCTAやデザインまで最適化してローカライズします。</p>
-                <a href="/{{ locale }}/services/localization/" class="btn-feature-link">詳しく見る →</a>
-            </div>
-            <div class="feature-card">
-                <div class="feature-card-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-                </div>
-                <h3>ブログ作成</h3>
-                <p>現地語のSEOキーワードを分析し、タイトルから本文まで記事をAIが自動で構成・生成します。</p>
-                <a href="/{{ locale }}/services/multilingual-blog/" class="btn-feature-link">詳しく見る →</a>
-            </div>
-            <div class="feature-card">
-                <div class="feature-card-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                </div>
-                <h3>越境ECモール・LinkedIn運用</h3>
-                <p>越境ECモールへの出店支援やLinkedIn運用など、専任担当によるコンサルティングも可能です。</p>
-                <a href="/{{ locale }}/services/global-marketing/" class="btn-feature-link">詳しく見る →</a>
-            </div>
-            <div class="feature-card">
-                <div class="feature-card-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                </div>
-                <h3>AIチャット編集</h3>
-                <p>変えたい要素をクリックしてチャットで伝えるだけで、公開中のサイトデザインを自由に編集できます。</p>
-                <a href="/{{ locale }}/services/ai-localize/" class="btn-feature-link">詳しく見る →</a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- ==============================
-     5. コア機能① サイト作成
+     主な機能：制作
 ============================== -->
 <section class="section-new" id="feature-create">
     <div class="container">
         <div class="feature-row">
             <div>
-                <span class="section-label">サイト作成</span>
-                <h2>サイトもECも、<br>チャットだけでまるごと作成</h2>
-                <p class="section-desc">業種や目的を伝えるだけで、AIがHP・LP・越境ECをまとめて生成。単なる翻訳ではなく、現地の競合分析をもとにデザインやCTAまで最適化します。</p>
+                <span class="section-label">制作</span>
+                <h2>話しかけるだけで、<br>サイトも越境ECも完成</h2>
+                <p class="section-desc">業種や売りたい商品を伝えるだけで、AIがサイトと越境ECをまとめて作成します。</p>
                 <div class="accordion">
                     <details>
-                        <summary class="accordion-trigger">グローバルサイト・LP作成<span class="acc-icon">+</span></summary>
-                        <p class="accordion-body">業種・目的をチャットで伝えるだけで、デザインテンプレートから選んでHP・LPを自動生成。コードもデザインツールも不要です。</p>
+                        <summary class="accordion-trigger">グローバルサイト作成<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">業種・目的をチャットで伝えるだけで、多言語対応のグローバルサイトをAIが作成します。コードもデザインツールも不要です。</p>
                     </details>
                     <details>
-                        <summary class="accordion-trigger">越境ECも同時に構築<span class="acc-icon">+</span></summary>
-                        <p class="accordion-body">商品登録、決済設定、在庫管理まで、EC機能もチャットに話しかけるだけで完結します。CSVインポートにも対応。</p>
+                        <summary class="accordion-trigger">越境EC作成<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">商品登録から決済設定まで、越境ECの構築もチャットで話しかけるだけ。多言語・多通貨にも対応しています。</p>
                     </details>
                     <details>
-                        <summary class="accordion-trigger">多言語ブログもAIが自動生成<span class="acc-icon">+</span></summary>
-                        <p class="accordion-body">現地語のSEOキーワードを分析し、タイトルから本文まで記事をAIが自動で構成・生成します。</p>
-                    </details>
-                    <details>
-                        <summary class="accordion-trigger">翻訳ではなく、ローカライズ<span class="acc-icon">+</span></summary>
-                        <p class="accordion-body">現地でSEOが強いベンチマークサイトを分析し、デザインやCTA配置まで現地仕様に最適化。単なる直訳では届かない、現地のお客様に刺さるサイトに仕上げます。</p>
-                    </details>
-                    <details>
-                        <summary class="accordion-trigger">公開後もAIチャットで編集<span class="acc-icon">+</span></summary>
-                        <p class="accordion-body">「このボタンを赤にして」「ここのテキストを変えて」と話しかけるだけでページを即編集。バージョン管理で安心して試せます。</p>
+                        <summary class="accordion-trigger">テンプレートから選んですぐ作成<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">業種や目的に合わせたデザインテンプレートを選ぶだけで、すぐにサイトづくりを始められます。</p>
                     </details>
                 </div>
             </div>
@@ -613,27 +772,31 @@ details[open] .accordion-trigger .acc-icon { transform: rotate(45deg); }
 </section>
 
 <!-- ==============================
-     6. コア機能② 集客
+     主な機能：集客
 ============================== -->
-<section class="section-new bg-soft" id="feature-acquire">
+<section class="section-new" id="feature-acquire">
     <div class="container">
         <div class="feature-row reverse">
             <div>
                 <span class="section-label">集客</span>
-                <h2>メルマガも広告運用も、<br>AIが実行・分析まで担当</h2>
-                <p class="section-desc">顧客管理やメール配信、海外向け広告の運用まで、集客に関わる業務をAIチャットにまとめて任せられます。</p>
+                <h2>公開したあとの集客も、<br>AIが実行</h2>
+                <p class="section-desc">ローカライズ、ブログ、メルマガまで、海外からお客様を呼び込む施策をAIが実行します。</p>
                 <div class="accordion">
                     <details>
-                        <summary class="accordion-trigger">CRM・多言語メルマガ配信<span class="acc-icon">+</span></summary>
-                        <p class="accordion-body">顧客情報を一元管理し、CSVインポートにも対応。メルマガ配信もチャットで指示するだけです。</p>
+                        <summary class="accordion-trigger">翻訳ではなく、ローカライズ<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">言語と進出国を選ぶだけで、現地の競合分析をもとにAIがローカライズを提案し、そのまま自動で修正します。</p>
                     </details>
                     <details>
-                        <summary class="accordion-trigger">海外向け広告運用<span class="acc-icon">+</span></summary>
-                        <p class="accordion-body">予算の割り振り、広告運用施策の実行、過去のデータ分析まで、すべてAIとのチャットで完結します。</p>
+                        <summary class="accordion-trigger">SEO/AIOに強い多言語ブログ<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">現地語のキーワードで上位表示を狙った記事を自動で作成。公開後も流入データをもとに改善を続けます。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">多言語メルマガ・CRM<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">顧客情報を一元管理し、CSVインポートにも対応。多言語のメルマガ配信もチャットで指示するだけです。</p>
                     </details>
                     <details>
                         <summary class="accordion-trigger">国別アクセス解析<span class="acc-icon">+</span></summary>
-                        <p class="accordion-body">HP・ブログのアクセス状況を国別に可視化。市場調査やテストマーケティングにも活用できます。</p>
+                        <p class="accordion-body">サイト・ブログのアクセス状況を国別に可視化。市場調査やテストマーケティングにも活用できます。</p>
                     </details>
                 </div>
             </div>
@@ -643,151 +806,150 @@ details[open] .accordion-trigger .acc-icon { transform: rotate(45deg); }
 </section>
 
 <!-- ==============================
-     7. コア機能③ 専任のコンサルも可能（軽め）
+     主な機能：管理
 ============================== -->
-<section class="section-new" id="feature-consulting">
-    <div class="container consulting-block">
-        <span class="section-label">コンサルティング</span>
-        <h2>専任のコンサルも可能</h2>
-        <p class="section-desc">越境ECモールへの出店支援やLinkedIn運用など、専任担当によるコンサルティングにも対応しています。ご興味があれば、お気軽にご相談ください。</p>
-        <a href="/{{ locale }}/services/global-marketing/" class="pillar-link">詳しく見る →</a>
-    </div>
-</section>
-
-<!-- ==============================
-     8. Leapのホームページ作り方
-============================== -->
-<section class="section-new bg-pink">
-    <div class="container text-center">
-        <span class="section-label">Leapのホームページ作り方</span>
-        <h2>チャットで話しかけるだけ</h2>
-        <p style="color:#666; font-size:0.95rem; max-width:480px; margin:0.4rem auto 0;">URLから始めることも、ゼロから作ることも可能。すべてチャットで完結します。</p>
-        <div class="steps">
-            <div class="step">
-                <div class="step-num">1</div>
-                <h3>目的を伝える</h3>
-                <p>業種・目的・欲しいページをチャットで入力。参考サイトやURLを貼ってもOK。</p>
+<section class="section-new" id="feature-manage">
+    <div class="container">
+        <div class="feature-row">
+            <div>
+                <span class="section-label">管理</span>
+                <h2>公開後の運用も、<br>チャットで伝えるだけ</h2>
+                <p class="section-desc">デザインの修正から商品・注文の管理まで、日々の運用もシンプルです。</p>
+                <div class="accordion">
+                    <details>
+                        <summary class="accordion-trigger">AIチャットでデザイン編集<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">変えたい要素をクリックしてチャットで伝えるだけで、公開中のサイトデザインを自由に編集できます。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">商品管理<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">商品の追加・編集・在庫管理も、チャットとフォームだけで簡単に行えます。国別の価格設定や多通貨にも対応しています。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">注文管理<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">注文状況の確認や発送・キャンセル対応も、チャットで相談しながら管理できます。</p>
+                    </details>
+                </div>
             </div>
-            <div class="step">
-                <div class="step-num">2</div>
-                <h3>AIがサイトを生成</h3>
-                <p>デザイン・コピー・EC設定まで、AIが自動で構築。数分で完成形が出てくる。</p>
-            </div>
-            <div class="step">
-                <div class="step-num">3</div>
-                <h3>チャットで調整</h3>
-                <p>気になるところはチャットで即修正。多言語化・最適化もここで指示するだけ。</p>
-            </div>
-            <div class="step">
-                <div class="step-num">4</div>
-                <h3>公開・運用開始</h3>
-                <p>ワンクリックで公開。その後もAIが最適化を自動継続。</p>
-            </div>
+            <img class="feature-img" loading="lazy" src="/assets/images/top-product-management.jpg" alt="商品管理画面">
         </div>
     </div>
 </section>
 
 <!-- ==============================
-     9. ユースケース
+     主な機能：BtoB専用EC
 ============================== -->
+<section class="section-new" id="feature-btob">
+    <div class="container">
+        <div class="feature-row reverse">
+            <div>
+                <span class="section-label">BtoB専用EC</span>
+                <h2>BtoB専用カートで、<br>大口注文・見積にも対応</h2>
+                <p class="section-desc">海外の取引先向けに、企業ごとの価格設定や見積もり依頼など、卸売りに必要な機能をそろえています。</p>
+                <div class="accordion">
+                    <details>
+                        <summary class="accordion-trigger">取引先ごとの価格設定<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">企業ごとに価格を変更できるほか、数量に応じた値引きも自動で設定できます。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">見積もり依頼から注文まで<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">まずは見積もり依頼として受け付けることもできます。注文データはCSVで出力できます。</p>
+                    </details>
+                    <details>
+                        <summary class="accordion-trigger">銀行振込・請求書払いに対応<span class="acc-icon">+</span></summary>
+                        <p class="accordion-body">BtoBの取引で一般的な、銀行振込や請求書払いでの決済に対応しています。</p>
+                    </details>
+                </div>
+            </div>
+            <img class="feature-img" loading="lazy" src="/assets/images/top-btob-price.jpg" alt="BtoB価格管理画面">
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     テンプレート
+============================== -->
+{% set top_tpl_slugs = ["ec_template_1", "ec_template_2", "ec_template_3", "ec_template_4", "hp_template_1", "lp_template_1"] %}
+{% set top_tpl_types = { ec: "ECサイト", hp: "HP", lp: "LP" } %}
+<section class="section-new bg-gray">
+    <div class="container">
+        <span class="section-label text-center">テンプレート</span>
+        <h2 class="text-center">テンプレートから、すぐに始められる</h2>
+        <div class="top-tpl-grid">
+            {% for slug in top_tpl_slugs %}
+            {% for post in collections.templates %}{% if post.fileSlug == slug %}
+            <a href="/{{ locale }}/templates/{{ post.fileSlug }}/" class="top-tpl-card">
+                <div class="top-tpl-img"><img src="{{ post.data.image }}" alt="{{ post.data.name_ja }}" loading="lazy" decoding="async"></div>
+                <div class="top-tpl-body">
+                    <span class="top-tpl-type">{{ top_tpl_types[post.data.type] }}</span>
+                    <span class="top-tpl-name">{{ post.data.name_ja }}</span>
+                </div>
+            </a>
+            {% endif %}{% endfor %}
+            {% endfor %}
+        </div>
+        <div class="top-more"><a href="/{{ locale }}/templates/">すべてのテンプレートを見る &rarr;</a></div>
+    </div>
+</section>
+
+<!-- ==============================
+     導入事例
+============================== -->
+{% set top_case_slugs = ["jircas", "okura-industrial", "vertebra"] %}
 <section class="section-new">
     <div class="container">
-        <span class="section-label">ユースケース</span>
-        <h2>あらゆるビジネスに、<br>LeapのAIサイト作成を</h2>
-        <div class="usecase-tabs">
-            <button class="usecase-tab active" onclick="switchTab('ec')">EC事業者</button>
-            <button class="usecase-tab" onclick="switchTab('d2c')">D2Cブランド</button>
-            <button class="usecase-tab" onclick="switchTab('global')">海外進出企業</button>
-            <button class="usecase-tab" onclick="switchTab('agency')">ウェブ制作会社</button>
+        <span class="section-label text-center">導入事例</span>
+        <h2 class="text-center">Leapの導入事例</h2>
+        <div class="top-case-grid">
+            {% for slug in top_case_slugs %}
+            {% for post in collections.cases %}{% if post.fileSlug == slug %}
+            <a href="/{{ locale }}/case-studies/{{ post.fileSlug }}/" class="top-case-card">
+                <div class="top-case-logo"><img src="{{ post.data.logo | replace('/upload/', '/upload/f_auto,q_auto,w_300/') }}" alt="{{ post.data.company_name_ja }}" loading="lazy" decoding="async"></div>
+                <div class="top-case-body">
+                    <div class="top-case-company">{{ post.data.company_name_ja }}様</div>
+                    <h3 class="top-case-title">{{ post.data.case_title_ja }}</h3>
+                </div>
+            </a>
+            {% endif %}{% endfor %}
+            {% endfor %}
         </div>
-
-        <div id="tab-ec" class="usecase-content active">
-            <div>
-                <h3>EC事業者</h3>
-                <p>ECの立ち上げから日々の運用まで、AIチャットだけで回せる。専任のエンジニアやデザイナーは不要。</p>
-                <ul class="usecase-list">
-                    <li>商品登録・在庫管理・価格変更をチャットで</li>
-                    <li>セール・クーポン設定も一言で完了</li>
-                    <li>多言語ECで海外販売にも即対応</li>
-                    <li>AIが売上データを分析して改善を提案</li>
-                </ul>
-            </div>
-            <img class="feature-img" loading="lazy" src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1780364885/132dc817-35b8-4325-acb7-58f57ceeb70a.png" alt="ECサイト例">
-        </div>
-
-        <div id="tab-d2c" class="usecase-content">
-            <div>
-                <h3>D2Cブランド</h3>
-                <p>ブランドの世界観をAIが再現。ストーリーページからEC、ブログまでブランドに統一感のあるサイトを構築。</p>
-                <ul class="usecase-list">
-                    <li>ブランドトーンを学習し、コピーを自動生成</li>
-                    <li>LP・ECサイト・ブログを一元管理</li>
-                    <li>SNS連携・メール配信もAIが設定</li>
-                    <li>購買データから次の施策を自動提案</li>
-                </ul>
-            </div>
-            <img class="feature-img" loading="lazy" src="https://app.leap.site/images/website_images/002.png" alt="D2Cブランドサイト例">
-        </div>
-
-        <div id="tab-global" class="usecase-content">
-            <div>
-                <h3>海外進出企業</h3>
-                <p>日本語サイトをURLで入力するだけで、10言語以上の現地仕様サイトを自動生成。グローバル展開のコストを大幅削減。</p>
-                <ul class="usecase-list">
-                    <li>既存サイトのURLから多言語版を自動生成</li>
-                    <li>現地のデザイン・文化・CTAに最適化</li>
-                    <li>海外向けECも多通貨・多言語で対応</li>
-                    <li>現地語SEOブログを自動生成・公開</li>
-                </ul>
-            </div>
-            <img class="feature-img" loading="lazy" src="https://app.leap.site/images/website_images/005.png" alt="海外展開サイト例">
-        </div>
-
-        <div id="tab-agency" class="usecase-content">
-            <div>
-                <h3>ウェブ制作会社</h3>
-                <p>クライアントのサイト制作をAIが大幅に効率化。提案から納品まで、工数を従来の数分の1に圧縮。</p>
-                <ul class="usecase-list">
-                    <li>ヒアリング内容をチャットで入力するだけで初稿が完成</li>
-                    <li>修正指示もチャットで即反映。往復コスト削減</li>
-                    <li>多言語対応の案件にも追加コストなしで対応</li>
-                    <li>クライアントが自分で運用できる状態で納品</li>
-                </ul>
-            </div>
-            <img class="feature-img" loading="lazy" src="https://app.leap.site/images/website_images/001.png" alt="ウェブ制作支援サイト例">
-        </div>
+        <div class="top-more"><a href="/{{ locale }}/case-studies/">すべての導入事例を見る &rarr;</a></div>
     </div>
 </section>
 
 <!-- ==============================
-     10. 導入事例
+     よくある質問（越境EC）
 ============================== -->
-<section class="section-new bg-soft">
+<section class="section-new bg-gray">
     <div class="container">
-        <span class="section-label text-center">CASE STUDIES</span>
-        <h2 class="text-center">導入事例</h2>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:2rem;">
-            <div style="background:#fff; border:1px solid #e5e7eb; border-radius:16px; overflow:hidden;">
-                <div style="background:#f9fafb; padding:2rem 2rem; display:flex; justify-content:center; align-items:center; border-bottom:1px solid #e5e7eb; min-height:140px;">
-                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767491868/logo_ja_qjjpkp.png" alt="国際農林水産業研究センター" style="max-height:60px; width:auto; object-fit:contain;" loading="lazy">
+        <span class="section-label text-center">よくある質問</span>
+        <h2 class="text-center">越境ECで気になる5つの疑問</h2>
+        <div class="top-faq">
+            <details>
+                <summary>どの決済手段に対応していますか？<span class="acc-icon">+</span></summary>
+                <div class="top-faq-answer">クレジットカード（Visa・Mastercard）に対応しています。BtoB専用ECでは、銀行振込・請求書払いにも対応しています。</div>
+            </details>
+            <details>
+                <summary>どの国に販売できますか？<span class="acc-icon">+</span></summary>
+                <div class="top-faq-answer">主要22カ国に対応しています。
+                    <dl>
+                        <dt>北米・南米（4）</dt><dd>アメリカ、カナダ、メキシコ、ブラジル</dd>
+                        <dt>ヨーロッパ（6）</dt><dd>イギリス、ドイツ、フランス、イタリア、スペイン、オランダ</dd>
+                        <dt>アジア・オセアニア（12）</dt><dd>日本、オーストラリア、シンガポール、中国本土、台湾、香港、韓国、ベトナム、フィリピン、マレーシア、インドネシア、インド</dd>
+                    </dl>
                 </div>
-                <div style="padding:1.5rem;">
-                    <h3 style="font-size:1rem; font-weight:700; color:#1a1a2e; margin-bottom:0.5rem;">国際農林水産業研究センター様</h3>
-                    <p style="font-size:0.85rem; color:#666; line-height:1.65;">マレーシアでの国プロジェクトにおいて、現地の方でも読めるウェブアプリ開発をLeapが要件定義から参加し実現。</p>
-                </div>
-            </div>
-            <div style="background:#fff; border:1px solid #e5e7eb; border-radius:16px; overflow:hidden;">
-                <div style="background:#f9fafb; padding:2rem 2rem; display:flex; justify-content:center; align-items:center; border-bottom:1px solid #e5e7eb; min-height:140px;">
-                    <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_200/v1767492043/2026-01-04_11.00%E3%81%AE%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B7%E3%82%99_wpugxv.jpg" alt="小松ばね工業" style="max-height:60px; width:auto; object-fit:contain;" loading="lazy">
-                </div>
-                <div style="padding:1.5rem;">
-                    <h3 style="font-size:1rem; font-weight:700; color:#1a1a2e; margin-bottom:0.5rem;">小松ばね工業株式会社様</h3>
-                    <p style="font-size:0.85rem; color:#666; line-height:1.65;">英語・中国語の多言語HPとブログを制作・公開。現地語キーワードでのSEO対策を実施し、海外案件の獲得につなげた。</p>
-                </div>
-            </div>
-        </div>
-        <div style="text-align:center; margin-top:1.5rem;">
-            <a href="/{{ locale }}/case-studies/" style="font-size:0.875rem; font-weight:600; color:#C10033; text-decoration:underline;">すべての導入事例を見る →</a>
+            </details>
+            <details>
+                <summary>どの通貨に対応していますか？<span class="acc-icon">+</span></summary>
+                <div class="top-faq-answer">米ドル・ユーロ・日本円に対応しています。</div>
+            </details>
+            <details>
+                <summary>国ごとに販売する商品を変えられますか？<span class="acc-icon">+</span></summary>
+                <div class="top-faq-answer">はい。商品ごとに販売国を設定でき、それ以外の国では商品が表示されません。</div>
+            </details>
+            <details>
+                <summary>為替レートはどう反映されますか？<span class="acc-icon">+</span></summary>
+                <div class="top-faq-answer">商品ごとに基軸通貨を1つ選ぶと、前日の為替レートで自動換算し、ほかの通貨でも毎日自動で表示します。</div>
+            </details>
         </div>
     </div>
 </section>
@@ -796,12 +958,3 @@ details[open] .accordion-trigger .acc-icon { transform: rotate(45deg); }
      11. CTA
 ============================== -->
 {% include "cta1.njk" %}
-
-<script>
-function switchTab(id) {
-    document.querySelectorAll('.usecase-tab').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.usecase-content').forEach(c => c.classList.remove('active'));
-    document.querySelector('[onclick="switchTab(\'' + id + '\')"]').classList.add('active');
-    document.getElementById('tab-' + id).classList.add('active');
-}
-</script>
