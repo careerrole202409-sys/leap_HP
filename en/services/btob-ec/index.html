@@ -1,0 +1,198 @@
+---
+layout: base.njk
+title: "B2B Commerce | Leap"
+description: "A dedicated B2B cart with everything you need to sell to overseas buyers — customer-specific pricing, volume discounts, quote requests, and invoice payments. Start easily with a buyer recruitment landing page."
+---
+
+<style>
+/* Reason cards */
+.btob-reasons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+@media (max-width: 860px) { .btob-reasons { grid-template-columns: 1fr; max-width: 560px; } }
+.btob-reason { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 1.75rem 1.5rem; }
+.btob-reason-num { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #C10033 0%, #8B0024 100%); color: #fff; font-weight: 800; margin-bottom: 0.9rem; }
+.btob-reason h3 { font-size: 1.08rem; font-weight: 700; color: #1a1a2e; line-height: 1.6; margin: 0; }
+
+/* B2B cart features */
+.btob-panel { background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; box-shadow: 0 6px 24px rgba(0,0,0,0.07); padding: 1.25rem 1.25rem 1.1rem; }
+.btob-panel-title { font-size: 1rem; font-weight: 800; color: #1a1a2e; padding-bottom: 0.75rem; margin-bottom: 0.5rem; border-bottom: 1px solid #e5e7eb; }
+.btob-row { display: grid; grid-template-columns: 9.5rem 1fr; gap: 1rem; align-items: center; padding: 0.6rem 0; border-bottom: 1px solid #f1f3f6; }
+.btob-row:last-child { border-bottom: 0; padding-bottom: 0; }
+.btob-row-name { display: flex; align-items: center; gap: 0.5rem; font-size: 0.95rem; font-weight: 700; color: #1a1a2e; }
+.btob-row-name::before {
+    content: "";
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #C10033 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center / 11px no-repeat;
+}
+.btob-row ul { list-style: none; margin: 0; padding: 0; }
+.btob-row li { font-size: 0.9rem; color: #475569; line-height: 1.7; }
+@media (max-width: 480px) {
+    .btob-row { grid-template-columns: 1fr; gap: 0.25rem; }
+    .btob-row ul { padding-left: 1.6rem; }
+}
+
+/* Buyer recruitment LP steps */
+.btob-steps { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; align-items: stretch; gap: 0.75rem; max-width: 1000px; margin: 0 auto; }
+.btob-step { background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 1.5rem 1.25rem; text-align: center; }
+.btob-step-num { font-size: 0.8rem; font-weight: 800; color: #C10033; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+.btob-step h3 { font-size: 1.02rem; font-weight: 700; color: #1a1a2e; line-height: 1.6; margin: 0; }
+.btob-step-arrow { display: flex; align-items: center; color: #C10033; font-weight: 800; font-size: 1.3rem; }
+@media (max-width: 860px) {
+    .btob-steps { grid-template-columns: 1fr; max-width: 560px; }
+    .btob-step-arrow { justify-content: center; transform: rotate(90deg); }
+}
+
+/* Case study */
+.btob-case { display: flex; align-items: center; gap: 1.75rem; max-width: 760px; margin: 2.5rem auto 0; background: #fff; border: 1px solid #e5e7eb; border-left: 4px solid #C10033; border-radius: 14px; padding: 1.5rem 1.75rem; text-decoration: none; color: inherit; transition: box-shadow 0.2s, transform 0.2s; }
+.btob-case:hover { box-shadow: 0 12px 28px rgba(0,0,0,0.08); transform: translateY(-3px); }
+.btob-case img { width: 140px; height: 70px; object-fit: contain; flex-shrink: 0; }
+.btob-case-company { font-size: 0.85rem; color: #64748b; margin-bottom: 0.25rem; }
+.btob-case-result { font-size: 1.1rem; font-weight: 800; color: #1a1a2e; line-height: 1.5; }
+.btob-case-link { display: inline-block; margin-top: 0.4rem; font-size: 0.85rem; font-weight: 700; color: #C10033; }
+@media (max-width: 600px) { .btob-case { flex-direction: column; text-align: center; gap: 1rem; } }
+
+/* Templates */
+.btob-tpl-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 860px; margin: 0 auto; }
+@media (max-width: 600px) { .btob-tpl-grid { grid-template-columns: 1fr; } }
+.btob-tpl-card { display: block; text-decoration: none; color: inherit; background: #fff; border-radius: 10px; overflow: hidden; border: 1px solid #e5e7eb; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.25s, box-shadow 0.25s; }
+.btob-tpl-card:hover { transform: translateY(-4px); box-shadow: 0 12px 26px rgba(0,0,0,0.1); }
+.btob-tpl-img { aspect-ratio: 16 / 10; overflow: hidden; background: #f4f5f8; }
+.btob-tpl-img img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.btob-tpl-body { padding: 0.85rem 1.1rem 1rem; display: flex; align-items: center; gap: 0.6rem; }
+.btob-tpl-type { flex-shrink: 0; background: #fef2f2; color: #C10033; font-size: 0.75rem; font-weight: 700; padding: 2px 10px; border-radius: 20px; border: 1px solid #fecdd3; }
+.btob-tpl-name { font-size: 0.95rem; font-weight: 700; color: #1a1a2e; }
+.btob-tpl-card:hover .btob-tpl-name { color: #C10033; }
+</style>
+
+<!-- Section 1: Hero -->
+<section class="section pt-xl pb-xl bg-white" style="overflow: hidden;">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; align-items: center; gap: 40px;" class="grid-1-mobile mb-2xl">
+            <div>
+                <p class="font-bold mb-sm" style="color: var(--color-primary-start); letter-spacing: 0.1em; font-size: 0.9rem;">
+                    B2B Commerce
+                </p>
+                <h1 class="mb-lg" style="font-size: clamp(1.8rem, 3.5vw, 3rem); line-height: 1.3; letter-spacing: -0.02em;">
+                    <span style="display: inline-block;">Sell to overseas businesses</span><br>
+                    <span style="display: inline-block;">with a dedicated B2B store</span>
+                </h1>
+                <p class="text-lg text-secondary mb-xl" style="line-height: 1.8;">
+                    From customer-specific pricing and volume discounts to quote requests and invoice payments, our dedicated B2B cart has everything you need to sell to overseas buyers.
+                </p>
+            </div>
+            <div style="position: relative;">
+                <img src="/assets/images/top-btob-price.jpg" alt="B2B pricing screen" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid var(--color-border);">
+            </div>
+        </div>
+        <div class="text-center mt-xl pt-lg">
+            <div style="display: flex; gap: 24px; flex-wrap: wrap; justify-content: center;">
+                <a href="{{ appLinks.signup }}" target="_blank" rel="noopener" class="btn font-bold" style="font-size: 1.2rem; padding: 1.2rem 4rem; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); color: white; border: none; border-radius: 50px; box-shadow: 0 8px 16px rgba(200, 16, 46, 0.2);">Get Started Free &rarr;</a>
+                <a href="/{{ locale }}/templates/" class="btn font-bold" style="font-size: 1.2rem; padding: 1.2rem 4rem; background-color: white; color: var(--color-primary-start, #C8102E); border: 2px solid var(--color-primary-start, #C8102E); border-radius: 50px;">View Templates &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 2: Why B2B -->
+<section class="section bg-beige">
+    <div class="container">
+        <h2 class="text-center mb-2xl">Why B2B businesses should sell cross-border online</h2>
+        <div class="btob-reasons">
+            <div class="btob-reason">
+                <div class="btob-reason-num">1</div>
+                <h3>Prepayment eliminates<br>credit risk</h3>
+            </div>
+            <div class="btob-reason">
+                <div class="btob-reason-num">2</div>
+                <h3>Orders are handled online,<br>saving time and effort</h3>
+            </div>
+            <div class="btob-reason">
+                <div class="btob-reason-num">3</div>
+                <h3>Buyers can order samples without a quote,<br>making it easier to win new accounts</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 3: B2B cart -->
+<section class="section bg-white">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <div>
+                <div class="text-primary font-bold mb-sm">B2B cart</div>
+                <h2 class="mb-md">A dedicated B2B cart<br>for bulk orders and quotes</h2>
+                <p class="mb-lg text-secondary" style="line-height: 1.8;">
+                    From pricing by customer to quote requests, bank transfers, and invoice payments — everything you need to trade with overseas businesses, all in one cart.
+                </p>
+            </div>
+            <div class="btob-panel">
+                <div class="btob-panel-title">B2B cart features</div>
+                <div class="btob-row"><div class="btob-row-name">Accounts</div><ul><li>Customer login</li><li>List prices shown by default</li></ul></div>
+                <div class="btob-row"><div class="btob-row-name">Pricing</div><ul><li>Custom prices for each company</li><li>Automatic volume discounts</li></ul></div>
+                <div class="btob-row"><div class="btob-row-name">Quotes &amp; orders</div><ul><li>Quote requests</li><li>CSV export of order data</li></ul></div>
+                <div class="btob-row"><div class="btob-row-name">Product info</div><ul><li>Pack size, weight, and other details</li></ul></div>
+                <div class="btob-row"><div class="btob-row-name">Payments</div><ul><li>Bank transfer and invoice payment</li></ul></div>
+                <div class="btob-row"><div class="btob-row-name">Cross-border</div><ul><li>Multiple languages and currencies</li><li>Products shown by country</li></ul></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 4: Start with a buyer recruitment LP -->
+<section class="section bg-beige">
+    <div class="container">
+        <h2 class="text-center mb-md">Start small with a<br>buyer recruitment landing page</h2>
+        <p class="text-center text-secondary mb-2xl" style="line-height: 1.8; max-width: 640px; margin-left: auto; margin-right: auto;">
+            You don’t need a full B2B store from day one. Just create a multilingual landing page to recruit buyers, and start finding overseas business partners.
+        </p>
+        <div class="btob-steps">
+            <div class="btob-step">
+                <div class="btob-step-num">STEP 1</div>
+                <h3>Create a multilingual<br>buyer recruitment page</h3>
+            </div>
+            <div class="btob-step-arrow">&rarr;</div>
+            <div class="btob-step">
+                <div class="btob-step-num">STEP 2</div>
+                <h3>Drive traffic with blogs, SEO/AIO,<br>email, and localization</h3>
+            </div>
+            <div class="btob-step-arrow">&rarr;</div>
+            <div class="btob-step">
+                <div class="btob-step-num">STEP 3</div>
+                <h3>Get more inquiries<br>from overseas buyers</h3>
+            </div>
+        </div>
+        <a href="/{{ locale }}/case-studies/purely/" class="btob-case">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_300/v1778720803/PureBio_logo_rkawik.png" alt="Purely Co., Ltd." loading="lazy">
+            <div>
+                <div class="btob-case-company">Purely Co., Ltd.</div>
+                <div class="btob-case-result">Qualified leads from overseas buyers within 3 months</div>
+                <span class="btob-case-link">Read the case study →</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- Section 5: Templates -->
+<section class="section bg-white">
+    <div class="container">
+        <h2 class="text-center mb-2xl">Templates for B2B</h2>
+        <div class="btob-tpl-grid">
+            <a href="/{{ locale }}/templates/ec_template_2/" class="btob-tpl-card">
+                <div class="btob-tpl-img"><img src="/assets/images/templates/ec_template_2.jpg" alt="EC: B2B" loading="lazy"></div>
+                <div class="btob-tpl-body"><span class="btob-tpl-type">E-Commerce</span><span class="btob-tpl-name">EC: B2B</span></div>
+            </a>
+            <a href="/{{ locale }}/templates/lp_template_1/" class="btob-tpl-card">
+                <div class="btob-tpl-img"><img src="/assets/images/templates/lp_template_1.jpg" alt="LP: B2B SaaS" loading="lazy"></div>
+                <div class="btob-tpl-body"><span class="btob-tpl-type">LP</span><span class="btob-tpl-name">LP: B2B SaaS</span></div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Section 6: Pricing -->
+{% include "pricing.njk" %}
+
+<!-- Section 7: CTA -->
+{% include "cta1.njk" %}

@@ -1,0 +1,97 @@
+---
+layout: base.njk
+title: "商品与订单管理 | Leap"
+description: "从添加商品、管理库存，到查看订单、处理发货和取消，Leap让日常电商运营通过对话和表单即可轻松完成。"
+---
+
+<style>
+.pom-list { list-style: none; margin: 0 0 1.5rem; padding: 0; display: flex; flex-direction: column; gap: 0.7rem; }
+.pom-list li { display: flex; align-items: flex-start; gap: 0.65rem; color: #475569; line-height: 1.7; }
+.pom-list li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 0.2rem;
+    border-radius: 50%;
+    background: #C10033 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center / 12px no-repeat;
+}
+</style>
+
+<!-- 第一部分：Hero -->
+<section class="section pt-xl pb-xl bg-white" style="overflow: hidden;">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; align-items: center; gap: 40px;" class="grid-1-mobile mb-2xl">
+            <div>
+                <p class="font-bold mb-sm" style="color: var(--color-primary-start); letter-spacing: 0.1em; font-size: 0.9rem;">
+                    商品与订单管理
+                </p>
+                <h1 class="mb-lg" style="font-size: clamp(1.8rem, 3.5vw, 3rem); line-height: 1.3; letter-spacing: -0.02em;">
+                    <span style="display: inline-block; white-space: nowrap;">商品和订单，</span><br>
+                    <span style="display: inline-block;">边和AI对话边管理</span>
+                </h1>
+                <p class="text-lg text-secondary mb-xl" style="line-height: 1.8;">
+                    从添加商品、管理库存，到查看订单、处理发货和取消。通过对话和表单，让日常电商运营更简单。
+                </p>
+            </div>
+            <div style="position: relative;">
+                <img src="/assets/images/top-product-management.jpg" alt="商品管理界面" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid var(--color-border);">
+            </div>
+        </div>
+        <div class="text-center mt-xl pt-lg">
+            <div style="display: flex; gap: 24px; flex-wrap: wrap; justify-content: center;">
+                <a href="{{ appLinks.signup }}" target="_blank" rel="noopener" class="btn font-bold" style="font-size: 1.2rem; padding: 1.2rem 4rem; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); color: white; border: none; border-radius: 50px; box-shadow: 0 8px 16px rgba(200, 16, 46, 0.2);">免费开始 &rarr;</a>
+                <a href="/{{ locale }}/templates/" class="btn font-bold" style="font-size: 1.2rem; padding: 1.2rem 4rem; background-color: white; color: var(--color-primary-start, #C8102E); border: 2px solid var(--color-primary-start, #C8102E); border-radius: 50px;">查看模板 &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第二部分：商品管理 -->
+<section class="section bg-beige">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <div>
+                <div class="text-primary font-bold mb-sm">商品管理</div>
+                <h2 class="mb-md">商品上架和库存管理，<br>对话和表单轻松搞定</h2>
+                <ul class="pom-list">
+                    <li>添加、编辑商品及管理库存</li>
+                    <li>通过CSV导入迁移现有商品数据</li>
+                    <li>按国家定价，支持多币种</li>
+                    <li>为每件商品设置销售国家</li>
+                    <li>面向B2B，可先以询价形式接收订单</li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <img src="/assets/images/top-product-management.jpg" alt="商品管理界面" loading="lazy" class="img-cover shadow-md rounded" style="border: 1px solid var(--color-border);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第三部分：订单管理 -->
+<section class="section bg-white">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <div class="order-1-mobile mb-xl">
+                <img src="/assets/images/order-management.jpg" alt="订单管理界面" loading="lazy" class="img-cover shadow-md rounded" style="border: 1px solid var(--color-border);">
+            </div>
+            <div class="order-2-mobile">
+                <div class="text-primary font-bold mb-sm">订单管理</div>
+                <h2 class="mb-md">从确认订单到发货、取消，<br>都能随时咨询AI</h2>
+                <ul class="pom-list">
+                    <li>查看订单状态，处理发货和取消</li>
+                    <li>不确定如何处理时，可以咨询AI</li>
+                    <li>按7天、30天、90天查看销售趋势</li>
+                    <li>按状态筛选（未处理、处理中、已发货、已取消）</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 第四部分：价格 -->
+{% include "pricing.njk" %}
+
+<!-- 第五部分：CTA -->
+{% include "cta1.njk" %}

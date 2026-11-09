@@ -1,0 +1,97 @@
+---
+layout: base.njk
+title: "Product & Order Management | Leap"
+description: "From adding products and tracking inventory to checking orders and handling shipping and cancellations — Leap keeps day-to-day store operations simple with chat and easy forms."
+---
+
+<style>
+.pom-list { list-style: none; margin: 0 0 1.5rem; padding: 0; display: flex; flex-direction: column; gap: 0.7rem; }
+.pom-list li { display: flex; align-items: flex-start; gap: 0.65rem; color: #475569; line-height: 1.7; }
+.pom-list li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 0.2rem;
+    border-radius: 50%;
+    background: #C10033 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center / 12px no-repeat;
+}
+</style>
+
+<!-- Section 1: Hero -->
+<section class="section pt-xl pb-xl bg-white" style="overflow: hidden;">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; align-items: center; gap: 40px;" class="grid-1-mobile mb-2xl">
+            <div>
+                <p class="font-bold mb-sm" style="color: var(--color-primary-start); letter-spacing: 0.1em; font-size: 0.9rem;">
+                    Product &amp; Order Management
+                </p>
+                <h1 class="mb-lg" style="font-size: clamp(1.8rem, 3.5vw, 3rem); line-height: 1.3; letter-spacing: -0.02em;">
+                    <span style="display: inline-block;">Manage products and orders,</span><br>
+                    <span style="display: inline-block;">with AI chat by your side</span>
+                </h1>
+                <p class="text-lg text-secondary mb-xl" style="line-height: 1.8;">
+                    From adding products and tracking inventory to checking orders and handling shipping and cancellations — keep day-to-day store operations simple with chat and easy forms.
+                </p>
+            </div>
+            <div style="position: relative;">
+                <img src="/assets/images/top-product-management.jpg" alt="Product management screen" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid var(--color-border);">
+            </div>
+        </div>
+        <div class="text-center mt-xl pt-lg">
+            <div style="display: flex; gap: 24px; flex-wrap: wrap; justify-content: center;">
+                <a href="{{ appLinks.signup }}" target="_blank" rel="noopener" class="btn font-bold" style="font-size: 1.2rem; padding: 1.2rem 4rem; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); color: white; border: none; border-radius: 50px; box-shadow: 0 8px 16px rgba(200, 16, 46, 0.2);">Get Started Free &rarr;</a>
+                <a href="/{{ locale }}/templates/" class="btn font-bold" style="font-size: 1.2rem; padding: 1.2rem 4rem; background-color: white; color: var(--color-primary-start, #C8102E); border: 2px solid var(--color-primary-start, #C8102E); border-radius: 50px;">View Templates &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 2: Products -->
+<section class="section bg-beige">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <div>
+                <div class="text-primary font-bold mb-sm">Products</div>
+                <h2 class="mb-md">Add products and manage inventory<br>with chat and simple forms</h2>
+                <ul class="pom-list">
+                    <li>Add and edit products, and manage inventory</li>
+                    <li>Import existing product data via CSV</li>
+                    <li>Country-specific pricing and multiple currencies</li>
+                    <li>Choose which countries each product is sold in</li>
+                    <li>For B2B, accept orders as quote requests first</li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <img src="/assets/images/top-product-management.jpg" alt="Product management screen" loading="lazy" class="img-cover shadow-md rounded" style="border: 1px solid var(--color-border);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 3: Orders -->
+<section class="section bg-white">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <div class="order-1-mobile mb-xl">
+                <img src="/assets/images/order-management.jpg" alt="Order management screen" loading="lazy" class="img-cover shadow-md rounded" style="border: 1px solid var(--color-border);">
+            </div>
+            <div class="order-2-mobile">
+                <div class="text-primary font-bold mb-sm">Orders</div>
+                <h2 class="mb-md">From checking orders to shipping<br>and cancellations, with AI’s help</h2>
+                <ul class="pom-list">
+                    <li>Check order status and handle shipping and cancellations</li>
+                    <li>Not sure what to do? Just ask AI chat</li>
+                    <li>Sales trends over 7, 30, or 90 days</li>
+                    <li>Filter by status: new, in progress, shipped, or canceled</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 4: Pricing -->
+{% include "pricing.njk" %}
+
+<!-- Section 5: CTA -->
+{% include "cta1.njk" %}

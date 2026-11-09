@@ -30,9 +30,22 @@ html {
 /* ===== 事業ドロップダウン（アイコン付きグリッド） ===== */
 .dropdown-menu-services {
     display: block !important;
-    min-width: 520px;
+    width: 800px;
+    max-width: calc(100vw - 48px);
+    /* 3列にして横に広くなったので、左にずらして開く（画面からはみ出す場合は下のスクリプトで位置を調整） */
+    left: -160px;
     padding: 0.85rem 0;
+    /* 横の位置はアニメーションさせない（開く動きは表示・上下だけ） */
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
 }
+/* 分類を3列に並べ、縦に長くなりすぎないようにする */
+.dropdown-services-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 0.5rem;
+}
+.dropdown-services-col + .dropdown-services-col { border-left: 1px solid #f3f4f6; }
+.dropdown-services-col .dropdown-services-grid + .dropdown-services-section-title { margin-top: 0.6rem; }
 .dropdown-services-top {
     display: flex;
     align-items: center;
@@ -52,19 +65,19 @@ html {
     color: #9ca3af;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    padding: 0.5rem 1.25rem 0.6rem;
+    padding: 0.4rem 1rem 0.4rem;
 }
 .dropdown-services-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem 0.75rem;
-    padding: 0 0.75rem;
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+    padding: 0 0.5rem;
 }
 .dropdown-item-icon {
     display: flex;
     align-items: center;
     gap: 0.65rem;
-    padding: 0.7rem 0.75rem;
+    padding: 0.55rem 0.6rem;
     border-radius: 8px;
     color: #374151;
     text-decoration: none;
@@ -73,10 +86,6 @@ html {
 }
 .dropdown-item-icon:hover { background: #f9fafb; color: #C10033; }
 .dropdown-item-icon svg { flex-shrink: 0; width: 22px; height: 22px; color: #C10033; }
-.dropdown-services-divider {
-    border-top: 1px solid #f3f4f6;
-    margin: 0.6rem 0;
-}
 .dropdown-services-single {
     padding: 0 0.75rem 0.5rem;
 }
@@ -120,54 +129,72 @@ html {
                             <a href="/{{ locale }}/services/" class="dropdown-services-top">
                                 <span id="serviceTopLink">Leapでできること</span><span aria-hidden="true">→</span>
                             </a>
-                            <div class="dropdown-services-section-title" id="dropdownLabelCreate">制作</div>
-                            <div class="dropdown-services-grid">
-                                <a href="/{{ locale }}/services/multilingual-website" class="dropdown-item-icon">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                                    <span id="serviceWebsite">グローバルサイト作成</span>
-                                </a>
-                                <a href="/{{ locale }}/services/multilingual-ec" class="dropdown-item-icon">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-                                    <span id="serviceEc">越境EC作成</span>
-                                </a>
+                            <div class="dropdown-services-cols">
+                            <div class="dropdown-services-col">
+                                <div class="dropdown-services-section-title" id="dropdownLabelCreate">制作</div>
+                                <div class="dropdown-services-grid">
+                                    <a href="/{{ locale }}/services/multilingual-website" class="dropdown-item-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                        <span id="serviceWebsite">グローバルサイト作成</span>
+                                    </a>
+                                    <a href="/{{ locale }}/services/multilingual-ec" class="dropdown-item-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                                        <span id="serviceEc">越境EC作成</span>
+                                    </a>
+                                </div>
+                                <div class="dropdown-services-section-title" id="dropdownLabelManage">管理</div>
+                                <div class="dropdown-services-grid">
+                                    <a href="/{{ locale }}/services/ai-localize" class="dropdown-item-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                                        <span id="serviceAiLocalize">AIチャット編集</span>
+                                    </a>
+                                    <a href="/{{ locale }}/services/product-order-management" class="dropdown-item-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                                        <span id="serviceProductOrder">商品・注文管理</span>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="dropdown-services-section-title" id="dropdownLabelGrow">集客</div>
-                            <div class="dropdown-services-grid">
-                                <a href="/{{ locale }}/services/localization" class="dropdown-item-icon">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
-                                    <span id="serviceLocalization">多言語化・ローカライズ</span>
-                                </a>
-                                <a href="/{{ locale }}/services/multilingual-blog" class="dropdown-item-icon">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-                                    <span id="serviceBlog">ブログ作成</span>
-                                </a>
-                                <a href="/{{ locale }}/services/multilingual-newsletter" class="dropdown-item-icon">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
-                                    <span id="serviceNewsletter">多言語メルマガ</span>
-                                </a>
-                                <a href="/{{ locale }}/services/access-analytics" class="dropdown-item-icon">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-                                    <span id="serviceAnalytics">アクセス解析</span>
-                                </a>
+                            <div class="dropdown-services-col">
+                                <div class="dropdown-services-section-title" id="dropdownLabelGrow">集客</div>
+                                <div class="dropdown-services-grid">
+                                    <a href="/{{ locale }}/services/localization" class="dropdown-item-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+                                        <span id="serviceLocalization">多言語化・ローカライズ</span>
+                                    </a>
+                                    <a href="/{{ locale }}/services/multilingual-blog" class="dropdown-item-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                                        <span id="serviceBlog">ブログ作成</span>
+                                    </a>
+                                    <a href="/{{ locale }}/services/multilingual-newsletter" class="dropdown-item-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                                        <span id="serviceNewsletter">多言語メルマガ</span>
+                                    </a>
+                                    <a href="/{{ locale }}/services/access-analytics" class="dropdown-item-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                                        <span id="serviceAnalytics">アクセス解析</span>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="dropdown-services-section-title" id="dropdownLabelManage">管理</div>
-                            <div class="dropdown-services-grid">
-                                <a href="/{{ locale }}/services/ai-localize" class="dropdown-item-icon">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                                    <span id="serviceAiLocalize">AIチャット編集</span>
-                                </a>
+                            <div class="dropdown-services-col">
+                                <div class="dropdown-services-section-title" id="dropdownLabelBtob">BtoB</div>
+                                <div class="dropdown-services-grid">
+                                    <a href="/{{ locale }}/services/btob-ec" class="dropdown-item-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="9" y1="22" x2="9" y2="18"/><line x1="15" y1="22" x2="15" y2="18"/><line x1="8" y1="6" x2="8.01" y2="6"/><line x1="12" y1="6" x2="12.01" y2="6"/><line x1="16" y1="6" x2="16.01" y2="6"/><line x1="8" y1="10" x2="8.01" y2="10"/><line x1="12" y1="10" x2="12.01" y2="10"/><line x1="16" y1="10" x2="16.01" y2="10"/></svg>
+                                        <span id="serviceBtob">BtoB専用EC</span>
+                                    </a>
+                                </div>
+                                <div class="dropdown-services-section-title" id="dropdownLabelOptions">オプション</div>
+                                <div class="dropdown-services-grid">
+                                    <a href="/{{ locale }}/services/ad-management" class="dropdown-item-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                                        <span id="serviceAds">海外向け広告運用</span>
+                                    </a>
+                                    <a href="/{{ locale }}/services/global-marketing" class="dropdown-item-icon">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                                        <span id="serviceConsulting">越境ECモール・LinkedIn運用</span>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="dropdown-services-divider"></div>
-                            <div class="dropdown-services-section-title" id="dropdownLabelOptions">オプション</div>
-                            <div class="dropdown-services-grid">
-                                <a href="/{{ locale }}/services/ad-management" class="dropdown-item-icon">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-                                    <span id="serviceAds">海外向け広告運用</span>
-                                </a>
-                                <a href="/{{ locale }}/services/global-marketing" class="dropdown-item-icon">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                                    <span id="serviceConsulting">越境ECモール・LinkedIn運用</span>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -206,6 +233,29 @@ html {
         </div>
     </div>
 </header>
+<script>
+/* 特徴メニューが画面の左右からはみ出さないよう、開くときに位置を調整する */
+(function () {
+    const menu = document.querySelector('.dropdown-menu-services');
+    if (!menu) return;
+    const item = menu.closest('.nav-item');
+    const BASE_LEFT = -160; // CSSの left と同じ値
+    const MARGIN = 16;
+    const place = () => {
+        // 開くアニメーション中のメニューではなく、「特徴」の位置とメニューの幅から計算する
+        const itemLeft = item.getBoundingClientRect().left;
+        const vw = document.documentElement.clientWidth;
+        const width = menu.offsetWidth;
+        let left = itemLeft + BASE_LEFT;
+        if (left + width > vw - MARGIN) left = vw - MARGIN - width;
+        if (left < MARGIN) left = MARGIN;
+        menu.style.left = (left - itemLeft) + 'px';
+    };
+    item.addEventListener('mouseenter', place);
+    window.addEventListener('resize', place);
+    place();
+})();
+</script>
 
 <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-content">
@@ -234,6 +284,9 @@ html {
                 <a href="/{{ locale }}/services/access-analytics" class="mobile-dropdown-item" id="mobileServiceAnalytics">アクセス解析</a>
                 <div style="font-size:0.72rem; font-weight:700; color:#9ca3af; letter-spacing:0.08em; text-transform:uppercase; padding:0.5rem 0 0.25rem;" id="mobileDropdownLabelManage">管理</div>
                 <a href="/{{ locale }}/services/ai-localize" class="mobile-dropdown-item" id="mobileServiceAiLocalize">AIチャット編集</a>
+                <a href="/{{ locale }}/services/product-order-management" class="mobile-dropdown-item" id="mobileServiceProductOrder">商品・注文管理</a>
+                <div style="font-size:0.72rem; font-weight:700; color:#9ca3af; letter-spacing:0.08em; text-transform:uppercase; padding:0.5rem 0 0.25rem;" id="mobileDropdownLabelBtob">BtoB</div>
+                <a href="/{{ locale }}/services/btob-ec" class="mobile-dropdown-item" id="mobileServiceBtob">BtoB専用EC</a>
                 <div style="border-top:1px solid #f3f4f6; margin: 0.25rem 0;"></div>
                 <div style="font-size:0.72rem; font-weight:700; color:#9ca3af; letter-spacing:0.08em; text-transform:uppercase; padding:0.5rem 0 0.25rem;" id="mobileDropdownLabelOptions">オプション</div>
                 <a href="/{{ locale }}/services/ad-management" class="mobile-dropdown-item" id="mobileServiceAds">海外向け広告運用</a>
@@ -292,6 +345,8 @@ html {
             dropdownLabelGrow: "集客",
             dropdownLabelManage: "管理",
             dropdownLabelOptions: "オプション",
+            dropdownLabelBtob: "BtoB",
+            serviceBtob: "BtoB専用EC",
             serviceWebsite: "グローバルサイト作成",
             serviceEc: "越境EC作成",
             serviceNewsletter: "多言語メルマガ",
@@ -300,6 +355,7 @@ html {
             serviceLocalization: "多言語化・ローカライズ",
             serviceBlog: "ブログ作成",
             serviceAiLocalize: "AIチャット編集",
+            serviceProductOrder: "商品・注文管理",
             serviceConsulting: "越境ECモール・LinkedIn運用",
             cases: "導入事例",
             pricing: "価格",
@@ -330,15 +386,18 @@ html {
             dropdownLabelGrow: "Grow",
             dropdownLabelManage: "Manage",
             dropdownLabelOptions: "Add-ons",
-            serviceWebsite: "Global Website Creation",
-            serviceEc: "Cross-border EC Creation",
-            serviceNewsletter: "Multilingual Newsletter",
+            dropdownLabelBtob: "B2B",
+            serviceBtob: "B2B Commerce",
+            serviceWebsite: "Global Websites",
+            serviceEc: "Cross-border Stores",
+            serviceNewsletter: "Multilingual Newsletters",
             serviceAnalytics: "Traffic Analytics",
             serviceAds: "Overseas Ad Management",
-            serviceLocalization: "Multilingual & Localization",
+            serviceLocalization: "Localization",
             serviceBlog: "Multilingual Blog",
             serviceAiLocalize: "AI Chat Editing",
-            serviceConsulting: "EC Mall & LinkedIn Management",
+            serviceProductOrder: "Product & Order Management",
+            serviceConsulting: "Marketplaces & LinkedIn",
             cases: "Case Studies",
             pricing: "Pricing",
             resourcesLabel: "Resources ▼",
@@ -362,21 +421,24 @@ html {
             login: "登录",
             about: "公司简介",
             templatesLink: "模板",
-            servicesLabel: "特征 ▼",
+            servicesLabel: "功能 ▼",
             serviceTop: "Leap能做什么",
             dropdownLabelCreate: "建站",
             dropdownLabelGrow: "获客",
             dropdownLabelManage: "管理",
             dropdownLabelOptions: "增值服务",
-            serviceWebsite: "全球网站建设",
-            serviceEc: "跨境电商制作",
+            dropdownLabelBtob: "B2B",
+            serviceBtob: "B2B专用电商",
+            serviceWebsite: "全球网站搭建",
+            serviceEc: "跨境电商搭建",
             serviceNewsletter: "多语言邮件营销",
             serviceAnalytics: "访问分析",
             serviceAds: "海外广告运营",
-            serviceLocalization: "多语言化・本地化",
+            serviceLocalization: "多语言本地化",
             serviceBlog: "多语言博客",
-            serviceAiLocalize: "AI聊天编辑",
-            serviceConsulting: "跨境电商平台・LinkedIn运营",
+            serviceAiLocalize: "AI对话编辑",
+            serviceProductOrder: "商品与订单管理",
+            serviceConsulting: "跨境电商平台与LinkedIn运营",
             cases: "客户案例",
             pricing: "价格方案",
             resourcesLabel: "资料 ▼",
@@ -391,7 +453,7 @@ html {
             demo: "申请演示",
             start: "免费开始",
             mobileHome: "首页",
-            mobileServicesText: "特征",
+            mobileServicesText: "功能",
             mobileResourcesText: "资料",
             mobileStart: "免费开始"
         }
@@ -425,6 +487,8 @@ html {
         setText('dropdownLabelGrow', t.dropdownLabelGrow);
         setText('dropdownLabelManage', t.dropdownLabelManage);
         setText('dropdownLabelOptions', t.dropdownLabelOptions);
+        setText('dropdownLabelBtob', t.dropdownLabelBtob);
+        setText('serviceBtob', t.serviceBtob);
         setText('serviceWebsite', t.serviceWebsite);
         setText('serviceEc', t.serviceEc);
         setText('serviceNewsletter', t.serviceNewsletter);
@@ -433,6 +497,7 @@ html {
         setText('serviceLocalization', t.serviceLocalization);
         setText('serviceBlog', t.serviceBlog);
         setText('serviceAiLocalize', t.serviceAiLocalize);
+        setText('serviceProductOrder', t.serviceProductOrder);
         setText('serviceConsulting', t.serviceConsulting);
         setText('casesLink', t.cases);
         setText('pricingLink', t.pricing);
@@ -453,6 +518,8 @@ html {
         setText('mobileDropdownLabelGrow', t.dropdownLabelGrow);
         setText('mobileDropdownLabelManage', t.dropdownLabelManage);
         setText('mobileDropdownLabelOptions', t.dropdownLabelOptions);
+        setText('mobileDropdownLabelBtob', t.dropdownLabelBtob);
+        setText('mobileServiceBtob', t.serviceBtob);
         setText('mobileServiceWebsite', t.serviceWebsite);
         setText('mobileServiceEc', t.serviceEc);
         setText('mobileServiceNewsletter', t.serviceNewsletter);
@@ -461,6 +528,7 @@ html {
         setText('mobileServiceLocalization', t.serviceLocalization);
         setText('mobileServiceBlog', t.serviceBlog);
         setText('mobileServiceAiLocalize', t.serviceAiLocalize);
+        setText('mobileServiceProductOrder', t.serviceProductOrder);
         setText('mobileServiceConsulting', t.serviceConsulting);
         setText('mobileCases', t.cases);
         setText('mobilePricing', t.pricing);
