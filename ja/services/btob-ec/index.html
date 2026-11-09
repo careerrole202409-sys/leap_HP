@@ -1,0 +1,198 @@
+---
+layout: base.njk
+title: BtoB専用EC | Leap (リープ)
+description: 企業ごとの価格設定や数量割引、見積もり依頼、請求書払いまで。海外バイヤーとの取引に必要な機能をそろえたBtoB専用カートです。まずはバイヤー募集LPから手軽に始められます。
+---
+
+<style>
+/* 理由カード */
+.btob-reasons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+@media (max-width: 860px) { .btob-reasons { grid-template-columns: 1fr; max-width: 560px; } }
+.btob-reason { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 1.75rem 1.5rem; }
+.btob-reason-num { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #C10033 0%, #8B0024 100%); color: #fff; font-weight: 800; margin-bottom: 0.9rem; }
+.btob-reason h3 { font-size: 1.08rem; font-weight: 700; color: #1a1a2e; line-height: 1.6; margin: 0; }
+
+/* BtoB専用カートの機能表 */
+.btob-panel { background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; box-shadow: 0 6px 24px rgba(0,0,0,0.07); padding: 1.25rem 1.25rem 1.1rem; }
+.btob-panel-title { font-size: 1rem; font-weight: 800; color: #1a1a2e; padding-bottom: 0.75rem; margin-bottom: 0.5rem; border-bottom: 1px solid #e5e7eb; }
+.btob-row { display: grid; grid-template-columns: 9.5rem 1fr; gap: 1rem; align-items: center; padding: 0.6rem 0; border-bottom: 1px solid #f1f3f6; }
+.btob-row:last-child { border-bottom: 0; padding-bottom: 0; }
+.btob-row-name { display: flex; align-items: center; gap: 0.5rem; font-size: 0.95rem; font-weight: 700; color: #1a1a2e; }
+.btob-row-name::before {
+    content: "";
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #C10033 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center / 11px no-repeat;
+}
+.btob-row ul { list-style: none; margin: 0; padding: 0; }
+.btob-row li { font-size: 0.9rem; color: #475569; line-height: 1.7; }
+@media (max-width: 480px) {
+    .btob-row { grid-template-columns: 1fr; gap: 0.25rem; }
+    .btob-row ul { padding-left: 1.6rem; }
+}
+
+/* バイヤー募集LPの流れ */
+.btob-steps { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; align-items: stretch; gap: 0.75rem; max-width: 1000px; margin: 0 auto; }
+.btob-step { background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 1.5rem 1.25rem; text-align: center; }
+.btob-step-num { font-size: 0.8rem; font-weight: 800; color: #C10033; letter-spacing: 0.08em; margin-bottom: 0.5rem; }
+.btob-step h3 { font-size: 1.02rem; font-weight: 700; color: #1a1a2e; line-height: 1.6; margin: 0; }
+.btob-step-arrow { display: flex; align-items: center; color: #C10033; font-weight: 800; font-size: 1.3rem; }
+@media (max-width: 860px) {
+    .btob-steps { grid-template-columns: 1fr; max-width: 560px; }
+    .btob-step-arrow { justify-content: center; transform: rotate(90deg); }
+}
+
+/* 実績 */
+.btob-case { display: flex; align-items: center; gap: 1.75rem; max-width: 760px; margin: 2.5rem auto 0; background: #fff; border: 1px solid #e5e7eb; border-left: 4px solid #C10033; border-radius: 14px; padding: 1.5rem 1.75rem; text-decoration: none; color: inherit; transition: box-shadow 0.2s, transform 0.2s; }
+.btob-case:hover { box-shadow: 0 12px 28px rgba(0,0,0,0.08); transform: translateY(-3px); }
+.btob-case img { width: 140px; height: 70px; object-fit: contain; flex-shrink: 0; }
+.btob-case-company { font-size: 0.85rem; color: #64748b; margin-bottom: 0.25rem; }
+.btob-case-result { font-size: 1.1rem; font-weight: 800; color: #1a1a2e; line-height: 1.5; }
+.btob-case-link { display: inline-block; margin-top: 0.4rem; font-size: 0.85rem; font-weight: 700; color: #C10033; }
+@media (max-width: 600px) { .btob-case { flex-direction: column; text-align: center; gap: 1rem; } }
+
+/* テンプレート */
+.btob-tpl-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 860px; margin: 0 auto; }
+@media (max-width: 600px) { .btob-tpl-grid { grid-template-columns: 1fr; } }
+.btob-tpl-card { display: block; text-decoration: none; color: inherit; background: #fff; border-radius: 10px; overflow: hidden; border: 1px solid #e5e7eb; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.25s, box-shadow 0.25s; }
+.btob-tpl-card:hover { transform: translateY(-4px); box-shadow: 0 12px 26px rgba(0,0,0,0.1); }
+.btob-tpl-img { aspect-ratio: 16 / 10; overflow: hidden; background: #f4f5f8; }
+.btob-tpl-img img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.btob-tpl-body { padding: 0.85rem 1.1rem 1rem; display: flex; align-items: center; gap: 0.6rem; }
+.btob-tpl-type { flex-shrink: 0; background: #fef2f2; color: #C10033; font-size: 0.75rem; font-weight: 700; padding: 2px 10px; border-radius: 20px; border: 1px solid #fecdd3; }
+.btob-tpl-name { font-size: 0.95rem; font-weight: 700; color: #1a1a2e; }
+.btob-tpl-card:hover .btob-tpl-name { color: #C10033; }
+</style>
+
+<!-- セクション1：ヒーロー -->
+<section class="section pt-xl pb-xl bg-white" style="overflow: hidden;">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; align-items: center; gap: 40px;" class="grid-1-mobile mb-2xl">
+            <div>
+                <p class="font-bold mb-sm" style="color: var(--color-primary-start); letter-spacing: 0.1em; font-size: 0.9rem;">
+                    BtoB専用EC
+                </p>
+                <h1 class="mb-lg" style="font-size: clamp(1.8rem, 3.5vw, 3rem); line-height: 1.3; letter-spacing: -0.02em;">
+                    <span style="display: inline-block; white-space: nowrap;">海外の取引先との取引も、</span><br>
+                    <span style="display: inline-block; white-space: nowrap;">BtoB専用ECで</span>
+                </h1>
+                <p class="text-lg text-secondary mb-xl" style="line-height: 1.8;">
+                    企業ごとの価格設定や数量割引、見積もり依頼、請求書払いまで。海外バイヤーとの取引に必要な機能をそろえたBtoB専用カートです。
+                </p>
+            </div>
+            <div style="position: relative;">
+                <img src="/assets/images/top-btob-price.jpg" alt="BtoB価格管理画面" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid var(--color-border);">
+            </div>
+        </div>
+        <div class="text-center mt-xl pt-lg">
+            <div style="display: flex; gap: 24px; flex-wrap: wrap; justify-content: center;">
+                <a href="{{ appLinks.signup }}" target="_blank" rel="noopener" class="btn font-bold" style="font-size: 1.2rem; padding: 1.2rem 4rem; background: linear-gradient(90deg, var(--color-primary-start, #C8102E), var(--color-primary-end, #8A0C20)); color: white; border: none; border-radius: 50px; box-shadow: 0 8px 16px rgba(200, 16, 46, 0.2);">無料で始める &rarr;</a>
+                <a href="/{{ locale }}/templates/" class="btn font-bold" style="font-size: 1.2rem; padding: 1.2rem 4rem; background-color: white; color: var(--color-primary-start, #C8102E); border: 2px solid var(--color-primary-start, #C8102E); border-radius: 50px;">テンプレートを見る &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- セクション2：BtoBこそ越境ECを始めるべき理由 -->
+<section class="section bg-beige">
+    <div class="container">
+        <h2 class="text-center mb-2xl">BtoBこそ、越境ECを始めるべき理由</h2>
+        <div class="btob-reasons">
+            <div class="btob-reason">
+                <div class="btob-reason-num">1</div>
+                <h3>前払い決済で、<br>与信リスクを避けられる</h3>
+            </div>
+            <div class="btob-reason">
+                <div class="btob-reason-num">2</div>
+                <h3>ネットで受発注が完結し、<br>工数を削減できる</h3>
+            </div>
+            <div class="btob-reason">
+                <div class="btob-reason-num">3</div>
+                <h3>見積もりなしでサンプルを発注でき、<br>新規の取引先を獲得しやすい</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- セクション3：BtoB専用カートの機能 -->
+<section class="section bg-white">
+    <div class="container">
+        <div class="grid-2 items-center">
+            <div>
+                <div class="text-primary font-bold mb-sm">BtoB専用カート</div>
+                <h2 class="mb-md">大口注文・見積にも対応する<br>BtoB専用カート</h2>
+                <p class="mb-lg text-secondary" style="line-height: 1.8;">
+                    取引先ごとの価格設定から、見積もり依頼、銀行振込・請求書払いまで。海外の企業との取引に必要な機能を、ひとつのカートにそろえています。
+                </p>
+            </div>
+            <div class="btob-panel">
+                <div class="btob-panel-title">BtoB専用カートの機能</div>
+                <div class="btob-row"><div class="btob-row-name">会員・ログイン</div><ul><li>ログイン機能</li><li>定価をデフォルトで表示</li></ul></div>
+                <div class="btob-row"><div class="btob-row-name">価格設定</div><ul><li>企業ごとに価格を変更</li><li>数量による値引きの自動設定</li></ul></div>
+                <div class="btob-row"><div class="btob-row-name">見積・注文</div><ul><li>見積もり依頼</li><li>注文データのCSV出力</li></ul></div>
+                <div class="btob-row"><div class="btob-row-name">商品情報</div><ul><li>入数・重量などの商品情報の登録</li></ul></div>
+                <div class="btob-row"><div class="btob-row-name">決済</div><ul><li>銀行振込・請求書払い</li></ul></div>
+                <div class="btob-row"><div class="btob-row-name">越境対応</div><ul><li>多言語・多通貨対応</li><li>国ごとの商品表示</li></ul></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- セクション4：まずはバイヤー募集LPから -->
+<section class="section bg-beige">
+    <div class="container">
+        <h2 class="text-center mb-md">まずは、バイヤー募集LPから<br>手軽に始められます</h2>
+        <p class="text-center text-secondary mb-2xl" style="line-height: 1.8; max-width: 640px; margin-left: auto; margin-right: auto;">
+            いきなりBtoB専用ECを作らなくても大丈夫です。多言語のバイヤー募集LPを作るだけで、海外の取引先探しを始められます。
+        </p>
+        <div class="btob-steps">
+            <div class="btob-step">
+                <div class="btob-step-num">STEP 1</div>
+                <h3>多言語の<br>バイヤー募集LPを制作</h3>
+            </div>
+            <div class="btob-step-arrow">&rarr;</div>
+            <div class="btob-step">
+                <div class="btob-step-num">STEP 2</div>
+                <h3>ブログ・SEO/AIO、メルマガ、<br>ローカライズで集客を強化</h3>
+            </div>
+            <div class="btob-step-arrow">&rarr;</div>
+            <div class="btob-step">
+                <div class="btob-step-num">STEP 3</div>
+                <h3>海外バイヤーからの<br>問い合わせが増加</h3>
+            </div>
+        </div>
+        <a href="/{{ locale }}/case-studies/purely/" class="btob-case">
+            <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_300/v1778720803/PureBio_logo_rkawik.png" alt="株式会社ピュアリー" loading="lazy">
+            <div>
+                <div class="btob-case-company">株式会社ピュアリー様</div>
+                <div class="btob-case-result">導入3ヶ月で、海外バイヤーから有効リードを獲得</div>
+                <span class="btob-case-link">事例を見る →</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- セクション5：テンプレート -->
+<section class="section bg-white">
+    <div class="container">
+        <h2 class="text-center mb-2xl">BtoB向けのテンプレート</h2>
+        <div class="btob-tpl-grid">
+            <a href="/{{ locale }}/templates/ec_template_2/" class="btob-tpl-card">
+                <div class="btob-tpl-img"><img src="/assets/images/templates/ec_template_2.jpg" alt="EC：BtoB" loading="lazy"></div>
+                <div class="btob-tpl-body"><span class="btob-tpl-type">ECサイト</span><span class="btob-tpl-name">EC：BtoB</span></div>
+            </a>
+            <a href="/{{ locale }}/templates/lp_template_1/" class="btob-tpl-card">
+                <div class="btob-tpl-img"><img src="/assets/images/templates/lp_template_1.jpg" alt="LP：BtoB SaaS" loading="lazy"></div>
+                <div class="btob-tpl-body"><span class="btob-tpl-type">LP</span><span class="btob-tpl-name">LP：BtoB SaaS</span></div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- セクション6：料金表 -->
+{% include "pricing.njk" %}
+
+<!-- セクション7：CTA -->
+{% include "cta1.njk" %}
