@@ -65,19 +65,53 @@
     
     {% block scripts %}{% endblock %}
 
-    <!-- ▼ 固定CTA -->
+    <!-- ▼ 固定CTA（資料ダウンロード） -->
+    {% set guide_pdf = '/assets/pdf/leap-service-guide.pdf' %}
     {% if locale == 'en' %}
-        {% set cta_subtitle = 'Cross-border e-commerce,<br>marketing handled by AI' %}
-        {% set cta_btn = 'Start for Free →' %}
-        {% set cta_btn_mini = 'Start for Free' %}
+        {% set g = {
+            heading: 'Leap Overview (Free)',
+            subtitle: 'Features, pricing & case studies',
+            btn: 'Download the Deck →',
+            mini: 'Get the Deck',
+            title: 'Download the Leap Overview',
+            lead: 'Get instant access after you submit. The deck is currently available in Japanese only.',
+            company: 'Company', name: 'Name', email: 'Email', phone: 'Phone',
+            required: 'Required', optional: 'Optional',
+            privacy: 'I agree to the <a href="/en/privacypolicy/" target="_blank" rel="noopener">Privacy Policy</a>',
+            submit: 'Submit and View the Deck',
+            thanks: 'Thank you!', thanksText: 'The deck has opened in a new tab.', open: 'Not opened? Click here',
+            close: 'Close'
+        } %}
     {% elif locale == 'zh-hans' %}
-        {% set cta_subtitle = '连获客都能交给AI的<br>跨境电商工具' %}
-        {% set cta_btn = '免费开始 →' %}
-        {% set cta_btn_mini = '免费开始' %}
+        {% set g = {
+            heading: 'Leap产品资料（免费）',
+            subtitle: '功能、价格与客户案例一览',
+            btn: '下载资料 →',
+            mini: '下载资料',
+            title: '下载Leap产品资料',
+            lead: '提交后即可查看资料。资料目前仅提供日文版。',
+            company: '公司名称', name: '姓名', email: '电子邮箱', phone: '电话',
+            required: '必填', optional: '选填',
+            privacy: '我已阅读并同意<a href="/zh-hans/privacypolicy/" target="_blank" rel="noopener">隐私政策</a>',
+            submit: '提交并查看资料',
+            thanks: '感谢您的提交', thanksText: '资料已在新标签页中打开。', open: '未能打开？请点击这里',
+            close: '关闭'
+        } %}
     {% else %}
-        {% set cta_subtitle = '集客までAIに任せられる<br>越境ECツール' %}
-        {% set cta_btn = '無料ではじめる →' %}
-        {% set cta_btn_mini = '無料ではじめる' %}
+        {% set g = {
+            heading: 'Leapの紹介資料（無料）',
+            subtitle: '機能・料金・導入事例をまとめました',
+            btn: '資料をダウンロード →',
+            mini: '資料ダウンロード',
+            title: 'Leapの紹介資料',
+            lead: 'ご入力後、すぐにご覧いただけます。',
+            company: '会社名', name: 'お名前', email: 'メールアドレス', phone: '電話番号',
+            required: '必須', optional: '任意',
+            privacy: '<a href="/ja/privacypolicy/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する',
+            submit: '送信して資料を見る',
+            thanks: 'ありがとうございます', thanksText: '資料を新しいタブで開きました。', open: '資料が開かない場合はこちら',
+            close: '閉じる'
+        } %}
     {% endif %}
     <style>
         #fixed-cta-card {
@@ -87,7 +121,8 @@
             width: 290px;
             background: white;
             border-radius: 16px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+            border: 1px solid #E2E8F0;
+            box-shadow: 0 12px 36px rgba(15,23,42,0.18);
             overflow: hidden;
             z-index: 9999;
             transition: opacity 0.28s, transform 0.28s;
@@ -96,72 +131,287 @@
             position: fixed;
             bottom: 24px;
             right: 24px;
-            background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
-            border-radius: 40px;
-            box-shadow: 0 4px 18px rgba(193,0,51,0.35);
             z-index: 9999;
             display: none;
             align-items: center;
-            gap: 10px;
-            padding: 10px 14px;
+            gap: 8px;
             transition: opacity 0.28s, transform 0.28s;
         }
+        .guide-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 13px 22px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: inherit;
+            white-space: nowrap;
+            cursor: pointer;
+            box-shadow: 0 6px 20px rgba(193,0,51,0.35);
+        }
+        .guide-pill svg { width: 16px; height: 16px; flex-shrink: 0; }
+        #fixed-cta-expand-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 1px solid #E2E8F0;
+            background: white;
+            color: #334155;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(15,23,42,0.15);
+        }
+
+        /* 数秒おきに光が横切るエフェクト */
+        .cta-shine { position: relative; overflow: hidden; }
+        .cta-shine::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -60%;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(100deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.45) 50%, rgba(255,255,255,0) 100%);
+            transform: skewX(-20deg);
+            animation: cta-shine 5s ease-in-out infinite;
+            pointer-events: none;
+        }
+        @keyframes cta-shine {
+            0% { left: -60%; }
+            20% { left: 130%; }
+            100% { left: 130%; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .cta-shine::after { display: none; }
+        }
+
         @media (max-width: 768px) {
             #fixed-cta-card { display: none !important; }
-            #fixed-cta-tab { display: flex !important; }
+            #fixed-cta-tab { display: flex !important; bottom: 16px; right: 16px; }
             #fixed-cta-expand-btn { display: none !important; }
         }
+
+        /* 資料ダウンロードフォーム */
+        #guide-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 10000;
+            background: rgba(15,23,42,0.55);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+        #guide-modal.is-open { display: flex; }
+        .guide-box {
+            position: relative;
+            width: 100%;
+            max-width: 440px;
+            max-height: calc(100vh - 32px);
+            overflow-y: auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+            padding: 28px 24px 24px;
+        }
+        .guide-close {
+            position: absolute;
+            font-weight: 700;
+            top: 12px;
+            right: 12px;
+            width: 32px;
+            height: 32px;
+            border: none;
+            border-radius: 50%;
+            background: #E2E8F0;
+            color: #334155;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .guide-head { display: flex; gap: 14px; align-items: center; margin-bottom: 18px; padding-right: 28px; }
+        .guide-head img { width: 112px; flex-shrink: 0; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+        .guide-title { font-size: 1.05rem; font-weight: 700; color: #1E293B; line-height: 1.45; margin: 0 0 4px; }
+        .guide-lead { font-size: 0.8rem; color: #475569; line-height: 1.6; margin: 0; }
+        .guide-field { margin-bottom: 12px; }
+        .guide-field label { display: flex; align-items: center; gap: 6px; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 5px; }
+        .guide-tag { font-size: 0.68rem; font-weight: 700; padding: 1px 6px; border-radius: 4px; background: #C10033; color: white; }
+        .guide-tag.is-optional { background: #E2E8F0; color: #64748B; }
+        .guide-field input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 12px;
+            border: 1px solid #CBD5E1;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: inherit;
+        }
+        .guide-field input:focus { outline: none; border-color: #C10033; box-shadow: 0 0 0 3px rgba(193,0,51,0.12); }
+        .guide-agree { display: flex; align-items: flex-start; gap: 8px; font-size: 0.8rem; color: #475569; margin: 4px 0 16px; line-height: 1.5; }
+        .guide-agree input { margin-top: 3px; accent-color: #C10033; }
+        .guide-agree a { color: #C10033; text-decoration: underline; }
+        .guide-submit {
+            display: block;
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+        .guide-done { display: none; text-align: center; padding: 8px 0 4px; }
+        .guide-done img { width: 220px; max-width: 100%; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.15); margin-bottom: 18px; }
+        .guide-done p { color: #475569; font-size: 0.88rem; margin: 0 0 14px; }
+        .guide-done a { color: #C10033; font-size: 0.82rem; text-decoration: underline; }
+        #guide-modal.is-done .guide-form { display: none; }
+        #guide-modal.is-done .guide-done { display: block; }
     </style>
 
     <!-- 大カード -->
     <div id="fixed-cta-card">
         <!-- ✕ ボタン -->
-        <button onclick="minimizeFixedCta()" style="position:absolute;top:9px;right:9px;width:24px;height:24px;border-radius:50%;border:none;background:rgba(255,255,255,0.25);color:white;font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:1;">✕</button>
+        <button onclick="minimizeFixedCta()" aria-label="{{ g.close }}" style="position:absolute;top:10px;right:10px;width:24px;height:24px;border-radius:50%;border:none;background:#E2E8F0;color:#334155;font-size:12px;font-weight:bold;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:1;">✕</button>
 
-        <!-- 赤グラデヘッダー -->
-        <div style="background:linear-gradient(135deg,#C10033 0%,#8B0024 100%);padding:16px;">
-            <div style="display:flex;align-items:center;gap:12px;">
-                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png"
-                     alt="Leap" style="height:64px;display:block;flex-shrink:0;">
-                <p style="color:white;font-size:13px;font-weight:bold;margin:0;line-height:1.4;">{{ cta_subtitle | safe }}</p>
-            </div>
+        <!-- 見出し -->
+        <div style="padding:16px 40px 0 16px;">
+            <p style="color:#1E293B;font-size:16px;font-weight:bold;margin:0 0 4px;line-height:1.4;">{{ g.heading }}</p>
+            <p style="color:#475569;font-size:12px;margin:0;line-height:1.5;white-space:nowrap;">{{ g.subtitle }}</p>
         </div>
 
-        <!-- スクショ -->
+        <!-- 資料の表紙 -->
         <div style="padding:12px 12px 0;">
-            <a href="{{ appLinks.signup }}" target="_blank" rel="noopener noreferrer">
-                <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1780199379/f2e65838-a2f4-4a3c-8bc4-0666632aad0b.png"
-                     alt="Leap アプリ画面" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover;border-radius:8px;">
-            </a>
+            <button type="button" onclick="openGuide()" style="display:block;width:100%;padding:0;border:none;background:none;cursor:pointer;">
+                <img src="/assets/images/leap-guide-cover.jpg" alt="{{ g.heading }}" style="width:100%;display:block;aspect-ratio:16/9;object-fit:cover;border-radius:8px;border:1px solid #E2E8F0;">
+            </button>
         </div>
 
         <!-- CTAボタン -->
         <div style="padding:12px 14px 14px;">
-            <a href="{{ appLinks.signup }}" target="_blank" rel="noopener noreferrer"
-               style="display:block;background:linear-gradient(135deg,#C10033 0%,#8B0024 100%);color:white;text-align:center;padding:10px;border-radius:8px;font-size:13px;font-weight:bold;text-decoration:none;transition:opacity 0.2s;"
+            <button type="button" onclick="openGuide()" class="cta-shine"
+               style="display:block;width:100%;background:linear-gradient(135deg,#C10033 0%,#8B0024 100%);color:white;text-align:center;padding:10px;border:none;border-radius:8px;font-size:13px;font-weight:bold;cursor:pointer;transition:opacity 0.2s;"
                onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
-                {{ cta_btn }}
-            </a>
+                {{ g.btn }}
+            </button>
         </div>
     </div>
 
-    <!-- ミニタブ -->
+    <!-- ミニタブ（スマホ・縮めたとき） -->
     <div id="fixed-cta-tab">
-        <!-- Leapロゴ -->
-        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png"
-             alt="Leap" style="height:60px;display:block;flex-shrink:0;margin:-15px 0;">
-        <!-- 無料ではじめるリンク -->
-        <a href="{{ appLinks.signup }}" target="_blank" rel="noopener noreferrer"
-           style="color:#C10033;background:white;font-size:12px;font-weight:bold;text-decoration:none;white-space:nowrap;border-radius:20px;padding:6px 14px;transition:opacity 0.2s;"
-           onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
-            {{ cta_btn_mini }}
-        </a>
-        <!-- 展開ボタン -->
-        <button id="fixed-cta-expand-btn" onclick="expandFixedCta()" style="background:rgba(255,255,255,0.2);border:none;color:white;width:26px;height:26px;border-radius:50%;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background 0.2s;"
-                onmouseover="this.style.background='rgba(255,255,255,0.35)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'">↑</button>
+        <button type="button" class="guide-pill cta-shine" onclick="openGuide()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg>
+            {{ g.mini }}
+        </button>
+        <button type="button" id="fixed-cta-expand-btn" onclick="expandFixedCta()" aria-label="{{ g.heading }}">↑</button>
+    </div>
+
+    <!-- 資料ダウンロードフォーム -->
+    <div id="guide-modal" role="dialog" aria-modal="true" aria-labelledby="guide-title" onclick="if(event.target===this)closeGuide()">
+        <div class="guide-box">
+            <button type="button" class="guide-close" onclick="closeGuide()" aria-label="{{ g.close }}">✕</button>
+
+            <form class="guide-form" id="guide-form" novalidate>
+                <div class="guide-head">
+                    <img src="/assets/images/leap-guide-cover.jpg" alt="">
+                    <div>
+                        <p class="guide-title" id="guide-title">{{ g.title }}</p>
+                        <p class="guide-lead">{{ g.lead }}</p>
+                    </div>
+                </div>
+                <div class="guide-field">
+                    <label for="guide-company">{{ g.company }}<span class="guide-tag">{{ g.required }}</span></label>
+                    <input id="guide-company" name="company" type="text" autocomplete="organization" required>
+                </div>
+                <div class="guide-field">
+                    <label for="guide-name">{{ g.name }}<span class="guide-tag">{{ g.required }}</span></label>
+                    <input id="guide-name" name="name" type="text" autocomplete="name" required>
+                </div>
+                <div class="guide-field">
+                    <label for="guide-email">{{ g.email }}<span class="guide-tag">{{ g.required }}</span></label>
+                    <input id="guide-email" name="email" type="email" autocomplete="email" required>
+                </div>
+                <div class="guide-field">
+                    <label for="guide-phone">{{ g.phone }}<span class="guide-tag is-optional">{{ g.optional }}</span></label>
+                    <input id="guide-phone" name="phone" type="tel" autocomplete="tel">
+                </div>
+                <label class="guide-agree">
+                    <input type="checkbox" name="agree" required>
+                    <span>{{ g.privacy | safe }}</span>
+                </label>
+                <button type="submit" class="guide-submit" id="guide-submit">{{ g.submit }}</button>
+            </form>
+
+            <div class="guide-done">
+                <img src="/assets/images/leap-guide-cover.jpg" alt="">
+                <p class="guide-title">{{ g.thanks }}</p>
+                <p>{{ g.thanksText }}</p>
+                <a href="{{ guide_pdf }}" target="_blank" rel="noopener">{{ g.open }}</a>
+            </div>
+        </div>
     </div>
 
     <script>
+    // 送信先のGoogleフォーム（回答はスプレッドシートにたまる）
+    var GUIDE_FORM = {
+        action: 'https://docs.google.com/forms/d/e/1FAIpQLSd9F1Ri30ukE6WdcOZqfTBOTw-sWqtNq79NXBMPV55zYloOIw/formResponse',
+        entries: { company: 'entry.1572083987', name: 'entry.2063658746', email: 'entry.214400044', phone: 'entry.430313254' }
+    };
+    var GUIDE_PDF = '{{ guide_pdf }}';
+    var GUIDE_STORAGE_KEY = 'leapGuideRequested';
+
+    function openGuide() {
+        var requested = false;
+        try { requested = localStorage.getItem(GUIDE_STORAGE_KEY) === '1'; } catch (e) {}
+        if (requested) {
+            window.open(GUIDE_PDF, '_blank', 'noopener');
+            return;
+        }
+        document.getElementById('guide-modal').classList.add('is-open');
+        document.getElementById('guide-company').focus();
+    }
+
+    function closeGuide() {
+        document.getElementById('guide-modal').classList.remove('is-open');
+    }
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeGuide();
+    });
+
+    document.getElementById('guide-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var form = e.target;
+        if (!form.reportValidity()) return;
+
+        // 送信ボタンを押した流れの中で開くので、ポップアップブロックされない
+        window.open(GUIDE_PDF, '_blank', 'noopener');
+
+        var data = new FormData();
+        Object.keys(GUIDE_FORM.entries).forEach(function(key) {
+            data.append(GUIDE_FORM.entries[key], form.elements[key].value.trim());
+        });
+
+        // Googleフォームは応答を返さないので、裏側で送るだけにする
+        fetch(GUIDE_FORM.action, { method: 'POST', mode: 'no-cors', body: data, keepalive: true }).catch(function() {});
+
+        try { localStorage.setItem(GUIDE_STORAGE_KEY, '1'); } catch (err) {}
+        if (typeof gtag === 'function') gtag('event', 'generate_lead', { lead_source: 'service_guide' });
+        document.getElementById('guide-modal').classList.add('is-done');
+    });
+
     var FIXED_CTA_STORAGE_KEY = 'leapFixedCtaMinimized';
 
     function setFixedCtaMinimizedState(minimized) {

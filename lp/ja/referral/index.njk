@@ -1,0 +1,448 @@
+---
+locale: ja
+title: ご紹介キャンペーン | Leap
+description: 海外に挑戦する仲間を、一緒に増やしませんか。Leapをご紹介いただくと、紹介された方は初月無料、紹介した方にも紹介先のご契約プラン1ヶ月分を割引します。
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 既存のお客様向けのページなので、検索結果には出さない -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="/assets/favicon.png">
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.leap.site{{ page.url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:image" content="https://www.leap.site/assets/og-image.png">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E0BHMWHJNK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E0BHMWHJNK');
+  </script>
+  <!-- Clarity -->
+  <script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "uxpxgpg8ea");
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- LP ヘッダー -->
+<header class="header-container" id="header">
+  <div class="header-main">
+    <div class="header-main-content">
+      <div class="nav-left">
+        <a href="/ja/" class="logo-link" target="_blank" rel="noopener noreferrer">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="logo-img">
+        </a>
+        <nav class="nav-links">
+          <a href="#reward" class="nav-link">特典</a>
+          <a href="#friends" class="nav-link">紹介先の例</a>
+          <a href="#features" class="nav-link">Leapの機能</a>
+          <a href="#faq" class="nav-link">よくあるご質問</a>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <a href="mailto:corporate@leap.site" class="btn btn-start js-mail">メールで紹介する</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-content">
+    <div class="mobile-nav-item"><a href="#reward" class="mobile-nav-link">特典</a></div>
+    <div class="mobile-nav-item"><a href="#friends" class="mobile-nav-link">紹介先の例</a></div>
+    <div class="mobile-nav-item"><a href="#features" class="mobile-nav-link">Leapの機能</a></div>
+    <div class="mobile-nav-item"><a href="#faq" class="mobile-nav-link">よくあるご質問</a></div>
+    <div class="mobile-nav-item"><a href="mailto:corporate@leap.site" class="mobile-nav-link js-mail">メールで紹介する</a></div>
+  </div>
+</div>
+
+<main id="main-content">
+
+<style>
+/* ===== ヒーロー ===== */
+.lp-dark-wrapper {
+  background:
+    linear-gradient(to bottom, rgba(15,15,26,0.84) 0%, rgba(15,15,26,0.92) 100%),
+    url("https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=2400&auto=format&fit=crop&q=80") center top/cover no-repeat;
+}
+.lp-hero { padding: 3.5rem 1rem 3.5rem; }
+.lp-hero-inner { max-width: 760px; margin: 0 auto; text-align: center; }
+.lp-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 0.9rem;
+  letter-spacing: 0.05em;
+}
+.lp-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: white;
+  line-height: 1.35;
+  margin-bottom: 1.25rem;
+}
+.lp-hero-label { color: rgba(255,255,255,0.7); font-size: 0.95rem; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 0.9rem; }
+.lp-hero-lead { color: rgba(255,255,255,0.88); font-size: 1.1rem; line-height: 1.9; margin-bottom: 2rem; }
+.lp-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(193,0,51,0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.lp-btn-primary svg { width: 20px; height: 20px; }
+.lp-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(193,0,51,0.45); color: white; text-decoration: none; }
+.lp-btn-note { font-size: 0.85rem; color: rgba(255,255,255,0.65); margin-top: 0.75rem; }
+
+/* ===== 共通 ===== */
+.lp-section { padding: 5rem 1rem; background: white; }
+.lp-section.is-soft { background: #f8f9fc; }
+.lp-inner { max-width: 1000px; margin: 0 auto; }
+.lp-section-title {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+.lp-section-sub { text-align: center; color: #666; font-size: 1rem; margin-bottom: 3rem; line-height: 1.8; }
+
+/* ===== 特典 ===== */
+.rf-rewards { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; max-width: 860px; margin: 0 auto; }
+@media (max-width: 700px) { .rf-rewards { grid-template-columns: 1fr; } }
+.rf-reward { background: white; border: 1px solid #e5e7eb; border-radius: 16px; padding: 2rem 1.75rem; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.04); }
+.rf-reward-icon { width: 56px; height: 56px; margin: 0 auto 1rem; border-radius: 50%; background: #fef2f2; border: 1px solid #fecdd3; display: flex; align-items: center; justify-content: center; color: #C10033; }
+.rf-reward-who { display: inline-block; font-size: 0.8rem; font-weight: 700; color: #C10033; background: #fef2f2; border: 1px solid #fecdd3; border-radius: 20px; padding: 3px 12px; margin-bottom: 0.75rem; }
+.rf-reward-what { font-size: 1.6rem; font-weight: 900; color: #1a1a2e; line-height: 1.4; }
+.rf-reward-what small { display: block; font-size: 0.95rem; color: #666; font-weight: 700; margin-bottom: 0.2rem; }
+.rf-table { max-width: 560px; margin: 2.5rem auto 0; width: 100%; border-collapse: separate; border-spacing: 0; background: white; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; }
+.rf-table caption { caption-side: top; font-size: 0.9rem; font-weight: 700; color: #666; padding-bottom: 0.6rem; }
+.rf-table th, .rf-table td { padding: 0.85rem 1.25rem; text-align: left; border-top: 1px solid #e5e7eb; font-size: 0.95rem; color: #1a1a2e; }
+.rf-table thead th { border-top: 0; background: #f8f9fc; font-size: 0.85rem; color: #666; }
+.rf-table td:last-child { font-weight: 800; color: #C10033; }
+
+/* ===== こんな仲間を ===== */
+.rf-friends { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+@media (max-width: 860px) { .rf-friends { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; } }
+.rf-friend { border: 1px solid #e5e7eb; border-radius: 16px; padding: 1.75rem 1.5rem; text-align: center; }
+.rf-friend-icon { color: #C10033; margin-bottom: 0.9rem; }
+.rf-friend p { font-size: 1rem; font-weight: 700; color: #1a1a2e; line-height: 1.6; }
+
+/* ===== Leapの機能 ===== */
+section[id] { scroll-margin-top: 90px; }
+.rf-feature { display: grid; grid-template-columns: 1fr 1.1fr; gap: 3rem; align-items: center; padding: 2.5rem 0; border-top: 1px solid #e5e7eb; }
+.rf-feature:first-of-type { border-top: 0; padding-top: 0; }
+.rf-feature.is-reverse .rf-feature-text { order: 2; }
+.rf-feature-label { display: inline-block; font-size: 0.8rem; font-weight: 700; color: #C10033; background: #fef2f2; border: 1px solid #fecdd3; border-radius: 20px; padding: 3px 12px; margin-bottom: 0.75rem; }
+.rf-feature h3 { font-size: clamp(1.3rem, 2.4vw, 1.7rem); font-weight: 800; color: #1a1a2e; line-height: 1.45; margin-bottom: 0.75rem; }
+.rf-feature p { color: #666; line-height: 1.8; margin-bottom: 1rem; }
+.rf-feature-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.rf-feature-list li { display: flex; align-items: flex-start; gap: 0.6rem; font-weight: 700; color: #1a1a2e; line-height: 1.6; }
+.rf-feature-list li::before {
+  content: "";
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: 0.15rem;
+  border-radius: 50%;
+  background: #C10033 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center / 12px no-repeat;
+}
+.rf-feature-img { width: 100%; border-radius: 14px; border: 1px solid #e5e7eb; box-shadow: 0 6px 24px rgba(0,0,0,0.07); background: white; }
+@media (max-width: 860px) {
+  .rf-feature { grid-template-columns: 1fr; gap: 1.5rem; }
+  .rf-feature.is-reverse .rf-feature-text { order: 0; }
+}
+.rf-merit-link { text-align: center; margin-top: 2.5rem; }
+.rf-merit-link a { color: #C10033; font-weight: 700; text-decoration: none; }
+.rf-merit-link a:hover { text-decoration: underline; }
+
+/* ===== FAQ ===== */
+.lp-faq-inner { max-width: 760px; margin: 0 auto; }
+.faq-item { border-bottom: 1px solid #e5e7eb; padding: 1.5rem 0; }
+.faq-item:last-child { border-bottom: none; }
+.faq-question { display: flex; gap: 0.6rem; font-size: 1rem; font-weight: 700; color: #1a1a2e; margin-bottom: 0.6rem; }
+.faq-question .faq-mark { color: #C10033; flex-shrink: 0; }
+.faq-answer { font-size: 0.9rem; color: #666; line-height: 1.8; padding-left: 1.6rem; }
+.faq-note { font-size: 0.85rem; color: #94a3b8; text-align: center; margin-top: 1.5rem; }
+
+/* ===== 最終CTA ===== */
+.lp-final-cta { padding: 5rem 1rem; background: #1a1a2e; text-align: center; }
+.lp-final-cta-inner { max-width: 640px; margin: 0 auto; }
+.lp-final-cta .lp-section-title { color: white; margin-top: 1rem; }
+.lp-final-cta .lp-section-sub { color: rgba(255,255,255,0.8); margin-bottom: 2rem; }
+</style>
+
+<!-- ① ヒーロー -->
+<div class="lp-dark-wrapper">
+<section class="lp-hero">
+  <div class="lp-hero-inner">
+    <p class="lp-hero-label">Leapをご利用中のお客様へ</p>
+    <h1>海外に挑戦する仲間を、<br>一緒に増やしませんか</h1>
+    <p class="lp-hero-lead">紹介された方は初月無料。紹介した方にも、紹介先のプラン1ヶ月分を割引します。</p>
+    <a href="mailto:corporate@leap.site" class="lp-btn-primary js-mail">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+      メールで紹介する &rarr;
+    </a>
+  </div>
+</section>
+</div><!-- /.lp-dark-wrapper -->
+
+<!-- 導入企業のロゴ帯 -->
+{% include "client-logos.njk" %}
+
+<!-- ② 特典 -->
+<section class="lp-section is-soft" id="reward">
+  <div class="lp-inner">
+    <h2 class="lp-section-title">仲間を紹介してくれた方へのお礼</h2>
+    <p class="lp-section-sub">紹介した方にも、紹介された方にも、それぞれ特典をお贈りします。</p>
+    <div class="rf-rewards">
+      <div class="rf-reward">
+        <div class="rf-reward-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div>
+        <div class="rf-reward-who">紹介された方</div>
+        <div class="rf-reward-what"><small>ご契約プランの</small>初月無料</div>
+      </div>
+      <div class="rf-reward">
+        <div class="rf-reward-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+        <div class="rf-reward-who">紹介した方</div>
+        <div class="rf-reward-what"><small>紹介先のご契約プラン</small>1ヶ月分を割引</div>
+      </div>
+    </div>
+    <table class="rf-table">
+      <caption>特典の例</caption>
+      <thead><tr><th>紹介先のプラン</th><th>双方の特典</th></tr></thead>
+      <tbody>
+        <tr><td>スターター</td><td>9,800円分</td></tr>
+        <tr><td>ベーシック</td><td>39,000円分</td></tr>
+        <tr><td>スタンダード</td><td>98,000円分</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ③ こんな仲間をご紹介ください -->
+<section class="lp-section" id="friends">
+  <div class="lp-inner">
+    <h2 class="lp-section-title" style="margin-bottom: 2.5rem;">取引先や同業の方で、<br>こんな企業はいませんか？</h2>
+    <div class="rf-friends">
+      <div class="rf-friend">
+        <div class="rf-friend-icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
+        <p>越境ECを始めたいと<br>考えている</p>
+      </div>
+      <div class="rf-friend">
+        <div class="rf-friend-icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <p>海外向けのサイトを<br>多言語化したい</p>
+      </div>
+      <div class="rf-friend">
+        <div class="rf-friend-icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="9" y1="22" x2="9" y2="18"/><line x1="15" y1="22" x2="15" y2="18"/><line x1="8" y1="6" x2="8.01" y2="6"/><line x1="12" y1="6" x2="12.01" y2="6"/><line x1="16" y1="6" x2="16.01" y2="6"/><line x1="8" y1="10" x2="8.01" y2="10"/><line x1="12" y1="10" x2="12.01" y2="10"/><line x1="16" y1="10" x2="16.01" y2="10"/></svg></div>
+        <p>海外の取引先を<br>増やしたいBtoB企業</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ④ 紹介先に伝えられるLeapの機能 -->
+<section class="lp-section is-soft" id="features">
+  <div class="lp-inner">
+    <h2 class="lp-section-title">紹介先にお伝えいただきたい、<br>Leapの機能</h2>
+    <p class="lp-section-sub">ご紹介の際は、こんなふうにお伝えください。</p>
+    <div class="rf-feature">
+      <div class="rf-feature-text">
+        <span class="rf-feature-label">制作</span>
+        <h3>話しかけるだけで、<br>サイトも越境ECも完成</h3>
+        <p>業種や売りたい商品を伝えるだけで、AIがサイトと越境ECをまとめて作成します。</p>
+        <ul class="rf-feature-list"><li>グローバルサイト作成</li><li>越境EC作成（多言語・多通貨に対応）</li><li>テンプレートから選んですぐ作成</li></ul>
+      </div>
+      <img class="rf-feature-img" src="https://res.cloudinary.com/duh6rnjba/image/upload/v1771680639/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-02-21_22.30.16_q5g9qq.png" alt="サイト作成画面" loading="lazy">
+    </div>
+    <div class="rf-feature is-reverse">
+      <div class="rf-feature-text">
+        <span class="rf-feature-label">集客</span>
+        <h3>公開したあとの集客も、<br>AIが実行</h3>
+        <p>ローカライズ、ブログ、メルマガまで、海外からお客様を呼び込む施策をAIが実行します。</p>
+        <ul class="rf-feature-list"><li>翻訳ではなく、ローカライズ</li><li>SEO/AIOに強い多言語ブログ</li><li>多言語メルマガ・国別アクセス解析</li></ul>
+      </div>
+      <img class="rf-feature-img" src="https://res.cloudinary.com/duh6rnjba/image/upload/v1780396709/424a013d-81c9-412d-86ea-5dd63bb63738.png" alt="アクセス解析画面" loading="lazy">
+    </div>
+    <div class="rf-feature">
+      <div class="rf-feature-text">
+        <span class="rf-feature-label">管理</span>
+        <h3>公開後の運用も、<br>チャットで伝えるだけ</h3>
+        <p>デザインの修正から商品・注文の管理まで、日々の運用もシンプルです。</p>
+        <ul class="rf-feature-list"><li>AIチャットでデザイン編集</li><li>商品管理（国別の価格設定・多通貨）</li><li>注文管理（発送・キャンセル対応）</li></ul>
+      </div>
+      <img class="rf-feature-img" src="/assets/images/top-product-management.jpg" alt="商品管理画面" loading="lazy">
+    </div>
+    <div class="rf-feature is-reverse">
+      <div class="rf-feature-text">
+        <span class="rf-feature-label">BtoB専用EC</span>
+        <h3>BtoB専用カートで、<br>大口注文・見積にも対応</h3>
+        <p>海外の取引先向けに、企業ごとの価格設定や見積もり依頼など、卸売りに必要な機能をそろえています。</p>
+        <ul class="rf-feature-list"><li>取引先ごとの価格設定・数量割引</li><li>見積もり依頼から注文まで</li><li>銀行振込・請求書払い</li></ul>
+      </div>
+      <img class="rf-feature-img" src="/assets/images/top-btob-price.jpg" alt="BtoB価格管理画面" loading="lazy">
+    </div>
+    <p class="rf-merit-link"><a href="/ja/" target="_blank" rel="noopener noreferrer">紹介先には、Leapのサイトもあわせてご案内ください &rarr;</a></p>
+  </div>
+</section>
+
+<!-- ⑤ よくあるご質問（特典の条件） -->
+<section class="lp-section" id="faq">
+  <div class="lp-faq-inner">
+    <h2 class="lp-section-title">よくあるご質問</h2>
+    <p class="lp-section-sub">ご紹介の前にご確認ください。</p>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>特典の対象になるのは、どんな場合ですか？</div>
+      <div class="faq-answer">紹介先が、有料プランに新しくお申し込みいただいた場合が対象です。フリープランは対象外です。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>何社まで紹介できますか？</div>
+      <div class="faq-answer">上限はありません。何社でもご紹介いただけます。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>特典はいつ適用されますか？</div>
+      <div class="faq-answer">紹介先の初月のお支払いが済んだあと、双方に適用します。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>割引額が自分の月額を上回る場合はどうなりますか？</div>
+      <div class="faq-answer">翌月以降に繰り越して割引します。</div>
+    </div>
+    <p class="faq-note">本キャンペーンは、予告なく変更・終了する場合があります。</p>
+  </div>
+</section>
+
+<!-- ⑥ 最終CTA -->
+<section class="lp-final-cta">
+  <div class="lp-final-cta-inner">
+    <span class="lp-badge">ご紹介受付中</span>
+    <h2 class="lp-section-title">一緒に、海外展開の輪を広げましょう</h2>
+    <p class="lp-section-sub">海外に挑戦したい企業がいたら、ぜひご紹介ください。</p>
+    <a href="mailto:corporate@leap.site" class="lp-btn-primary js-mail">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+      メールで紹介する &rarr;
+    </a>
+    <p class="lp-btn-note">宛先：corporate@leap.site</p>
+  </div>
+</section>
+
+</main>
+
+<!-- LP フッター（SNS以下のみ） -->
+<footer>
+  <div class="footer-container">
+    <hr class="footer-divider">
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/company/leap-site-inc" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/leap20240729/" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+      </a>
+      <a href="https://x.com/leap_0729" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+    </div>
+    <div class="footer-brand">
+      <a href="/ja/" class="footer-logo-link">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="footer-logo-img">
+      </a>
+      <div class="footer-copyright" id="footerCopyright">Copyright © 2025 Leap, Inc.</div>
+    </div>
+    <div class="footer-legal">
+      <a href="/ja/privacypolicy">プライバシーポリシー</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/ja/terms">利用規約</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/ja/tokushoho">特定商取引法に基づく表示</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/ja/delete-user">退会規定</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// 「メールで紹介する」ボタンに、件名と本文のひな形が入ったメールのリンクを設定する
+(function () {
+  var subject = '【Leapご紹介】';
+  var body = [
+    'Leap ご担当者様',
+    '',
+    '以下の企業をご紹介します。',
+    '',
+    '【ご紹介者】',
+    '会社名：',
+    'お名前：',
+    '',
+    '【ご紹介先】',
+    '会社名：',
+    'ご担当者名：',
+    '連絡先（メール・電話）：',
+    '',
+    '【補足（任意）】',
+    ''
+  ].join('\n');
+  var href = 'mailto:corporate@leap.site?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  document.querySelectorAll('.js-mail').forEach(function (a) { a.href = href; });
+})();
+</script>
+<script>
+// スマホのメニュー（既存のLPと同じ動き）
+document.addEventListener('DOMContentLoaded', function () {
+  var hamburger = document.getElementById('hamburger');
+  var mobileMenu = document.getElementById('mobileMenu');
+  if (!hamburger || !mobileMenu) return;
+  var close = function () {
+    hamburger.classList.remove('active');
+    mobileMenu.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+  hamburger.addEventListener('click', function () {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+    document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+  });
+  mobileMenu.addEventListener('click', function (e) { if (e.target === mobileMenu) close(); });
+  mobileMenu.querySelectorAll('.mobile-nav-link').forEach(function (link) { link.addEventListener('click', close); });
+});
+</script>
+</body>
+</html>
