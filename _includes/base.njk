@@ -400,7 +400,7 @@
         ['company', 'name', 'email', 'phone'].forEach(function(key) {
             data.append(GUIDE_FORM.entries[key], form.elements[key].value.trim());
         });
-        if (GUIDE_FORM.entries.source) data.append(GUIDE_FORM.entries.source, 'HP右下CTA ' + location.pathname);
+        data.append(GUIDE_FORM.entries.source, location.origin + location.pathname);   // 流入元：送信したページのURL
 
         // Googleフォームは応答を返さないので、裏側で送るだけにする
         fetch(GUIDE_FORM.action, { method: 'POST', mode: 'no-cors', body: data, keepalive: true }).catch(function() {});

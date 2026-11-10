@@ -910,7 +910,7 @@ section[id] { scroll-margin-top: 100px; }
     ['company', 'name', 'email', 'phone'].forEach(function (key) {
       data.append(GUIDE_FORM.entries[key], form.elements[key].value.trim());
     });
-    if (GUIDE_FORM.entries.source) data.append(GUIDE_FORM.entries.source, 'Google広告LP');
+    data.append(GUIDE_FORM.entries.source, location.origin + location.pathname);   // 流入元：このLPのURL
     fetch(GUIDE_FORM.action, { method: 'POST', mode: 'no-cors', body: data, keepalive: true }).catch(function () {});
 
     try { localStorage.setItem('leapGuideRequested', '1'); } catch (err) {}
