@@ -1,0 +1,1097 @@
+---
+locale: ja
+title: 越境ECサイトの構築を、チャットだけで | Leap
+description: 多言語・多通貨に対応した越境ECサイトが、AIと話すだけで完成。主要22カ国への販売から集客まで、まとめてLeapに任せられます。
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 広告用のページなので、検索結果には出さない -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="/assets/favicon.png">
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.leap.site{{ page.url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:image" content="https://www.leap.site/assets/og-image.png">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E0BHMWHJNK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E0BHMWHJNK');
+  </script>
+  <!-- Clarity -->
+  <script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "uxpxgpg8ea");
+  </script>
+
+  <script>
+    // 「動きを減らす」設定でなければ、スクロール時の表示アニメーションを有効にする
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('js-motion');
+  </script>
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- LP ヘッダー -->
+<header class="header-container" id="header">
+  <div class="header-main">
+    <div class="header-main-content">
+      <div class="nav-left">
+        <a href="#top" class="logo-link js-top">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="logo-img">
+        </a>
+        <nav class="nav-links">
+          <a href="#features" class="nav-link">特徴</a>
+          <a href="#cases" class="nav-link">導入事例</a>
+          <a href="#pricing" class="nav-link">料金</a>
+          <a href="#company" class="nav-link">会社概要</a>
+        </nav>
+      </div>
+      <div class="nav-right cb-nav-right">
+        <a href="#download" class="btn btn-start">資料ダウンロード</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-content">
+    <div class="mobile-nav-item"><a href="#features" class="mobile-nav-link">特徴</a></div>
+    <div class="mobile-nav-item"><a href="#cases" class="mobile-nav-link">導入事例</a></div>
+    <div class="mobile-nav-item"><a href="#pricing" class="mobile-nav-link">料金</a></div>
+    <div class="mobile-nav-item"><a href="#company" class="mobile-nav-link">会社概要</a></div>
+    <div class="mobile-nav-item"><a href="#download" class="mobile-nav-link">資料ダウンロード</a></div>
+  </div>
+</div>
+
+<main id="main-content">
+
+<style>
+/* ===== 共通 ===== */
+.cb-nav-right { display: flex !important; }
+.lp-section { padding: 4.5rem 1rem; background: white; }
+.lp-section.is-soft { background: #f8f9fc; }
+.lp-inner { max-width: 1040px; margin: 0 auto; }
+.lp-section-title {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 2.5rem;
+  line-height: 1.4;
+}
+.cb-btn {
+  display: inline-block; padding: 1rem 2.75rem; border: none; border-radius: 50px;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white; font-size: 1.05rem; font-weight: 700; font-family: inherit; text-decoration: none; cursor: pointer;
+  box-shadow: 0 6px 18px rgba(193,0,51,0.3);
+}
+.cb-btn:hover { color: white; text-decoration: none; }
+
+/* 数秒おきに光が横切るエフェクト */
+.cta-shine { position: relative; overflow: hidden; }
+.cta-shine::after {
+  content: ""; position: absolute; top: 0; left: -60%; width: 40%; height: 100%;
+  background: linear-gradient(100deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.45) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-20deg); animation: cta-shine 5s ease-in-out infinite; pointer-events: none;
+}
+@keyframes cta-shine { 0% { left: -60%; } 20% { left: 130%; } 100% { left: 130%; } }
+@media (prefers-reduced-motion: reduce) { .cta-shine::after { display: none; } }
+
+/* ===== ヒーロー ===== */
+.cb-hero { background: linear-gradient(180deg, #fdf1f4 0%, #fff7f9 100%); padding: 3rem 1rem 3.5rem; }
+.cb-hero-inner { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3rem; align-items: center; }
+.cb-hero-label { color: #C10033; font-weight: 700; letter-spacing: 0.08em; font-size: 0.9rem; margin-bottom: 0.8rem; }
+.cb-hero h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; color: #1a1a2e; line-height: 1.3; letter-spacing: -0.01em; margin-bottom: 1rem; }
+.cb-hero h1 span { display: inline-block; }
+.cb-hero-lead { color: #475569; font-size: 1.05rem; line-height: 1.8; margin: 0; }
+
+/* チャットで3分で作る様子のデモ */
+.cb-demo { position: relative; margin-top: 1.75rem; max-width: 620px; background: white; border: 1px solid #ecd9de; border-radius: 16px; box-shadow: 0 24px 60px rgba(193,0,51,0.14), 0 6px 18px rgba(15,23,42,0.08); overflow: hidden; }
+.cb-demo-bar { display: flex; align-items: center; gap: 6px; padding: 9px 12px; border-bottom: 1px solid #eef0f3; background: #fafbfc; }
+.cb-demo-bar > i { width: 9px; height: 9px; border-radius: 50%; background: #e2e8f0; flex-shrink: 0; }
+.cb-demo-url { flex: 1; min-width: 0; margin-left: 8px; display: flex; align-items: center; gap: 6px; background: white; border: 1px solid #e5e7eb; border-radius: 20px; padding: 3px 10px; font-size: 0.72rem; color: #64748b; white-space: nowrap; overflow: hidden; }
+.cb-demo-url svg { width: 11px; height: 11px; flex-shrink: 0; }
+.cb-demo-live { font-size: 0.66rem; font-weight: 800; color: white; background: #16a34a; border-radius: 20px; padding: 1px 8px; opacity: 0; transform: scale(0.6); transition: opacity 0.3s, transform 0.3s; }
+.cb-demo.is-live .cb-demo-live { opacity: 1; transform: none; }
+
+/* 今の段階 */
+.cb-demo-caption { display: flex; align-items: center; gap: 0.75rem; padding: 10px 14px; border-bottom: 1px solid #f3e3e7; background: linear-gradient(90deg, #fff5f7, #ffffff); }
+.cb-demo-caption-text { flex: 1; min-width: 0; font-size: 0.9rem; font-weight: 800; color: #1a1a2e; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transition: opacity 0.25s; }
+.cb-demo-caption-text b { color: #C10033; margin-right: 0.5rem; letter-spacing: 0.05em; }
+.cb-demo-caption-text.is-fade { opacity: 0; }
+.cb-demo-bars { display: flex; gap: 4px; flex-shrink: 0; }
+.cb-demo-bars i { width: 22px; height: 4px; border-radius: 2px; background: #f1d5dc; transition: background 0.3s; }
+.cb-demo-bars i.is-done { background: #C10033; }
+
+.cb-demo-body { display: grid; grid-template-columns: 0.82fr 1.18fr; height: 290px; }
+
+/* チャット */
+.cb-demo-chat { display: flex; flex-direction: column; border-right: 1px solid #eef0f3; min-width: 0; min-height: 0; overflow: hidden; }
+/* 新しい吹き出しが下に出て、古いものは上に押し出される */
+.cb-demo-msgs { flex: 1; min-height: 0; padding: 12px 10px; display: flex; flex-direction: column; justify-content: flex-end; gap: 8px; overflow: hidden; }
+.cb-msg { display: none; flex-shrink: 0; }
+.cb-msg.is-show { display: block; }
+.cb-msg { max-width: 92%; font-size: 0.78rem; line-height: 1.5; padding: 7px 10px; border-radius: 12px; opacity: 0; transform: translateY(8px); transition: opacity 0.35s, transform 0.35s; }
+.cb-msg.is-on { opacity: 1; transform: none; }
+.cb-typing { display: inline-flex; gap: 4px; padding: 3px 2px; }
+.cb-typing i { width: 6px; height: 6px; border-radius: 50%; background: #94a3b8; animation: cb-dot 1s ease-in-out infinite; }
+.cb-typing i:nth-child(2) { animation-delay: 0.15s; }
+.cb-typing i:nth-child(3) { animation-delay: 0.3s; }
+.cb-msg.is-ai { background: #f1f5f9; color: #1a1a2e; border-bottom-left-radius: 3px; }
+.cb-msg.is-me { align-self: flex-end; background: #C10033; color: white; border-bottom-right-radius: 3px; }
+.cb-demo-input { flex-shrink: 0; margin: 0 8px 8px; display: flex; align-items: center; gap: 6px; border: 1px solid #e5e7eb; border-radius: 10px; padding: 6px 8px; min-height: 32px; transition: border-color 0.2s, box-shadow 0.2s; }
+.cb-demo-input.is-focus { border-color: #C10033; box-shadow: 0 0 0 3px rgba(193,0,51,0.10); }
+.cb-demo-typed { flex: 1; font-size: 0.76rem; color: #1a1a2e; white-space: nowrap; overflow: hidden; }
+.cb-demo-typed:empty::before { content: "メッセージを入力"; color: #cbd5e1; }
+.cb-demo-typed.is-typing::after { content: ""; display: inline-block; width: 1px; height: 0.95em; margin-left: 1px; background: #C10033; vertical-align: -1px; animation: cb-caret 0.8s steps(1) infinite; }
+@keyframes cb-caret { 50% { opacity: 0; } }
+.cb-demo-send { width: 22px; height: 22px; border-radius: 6px; background: #C10033; color: white; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.cb-demo-send svg { width: 12px; height: 12px; }
+
+/* 右側 */
+.cb-demo-stage { position: relative; background: #f8fafc; overflow: hidden; }
+.cb-demo-layer { position: absolute; inset: 0; padding: 12px; opacity: 0; transition: opacity 0.45s; }
+.cb-demo-layer.is-on { opacity: 1; }
+.cb-demo-idle { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center; }
+.cb-demo-idle p { margin: 0; font-size: 0.78rem; font-weight: 700; color: #94a3b8; line-height: 1.6; }
+.cb-demo-dots { display: flex; gap: 6px; }
+.cb-demo-dots i { width: 7px; height: 7px; border-radius: 50%; background: #e7b8c4; animation: cb-dot 1.2s ease-in-out infinite; }
+.cb-demo-dots i:nth-child(2) { animation-delay: 0.15s; }
+.cb-demo-dots i:nth-child(3) { animation-delay: 0.3s; }
+@keyframes cb-dot { 0%, 100% { transform: translateY(0); opacity: 0.5; } 50% { transform: translateY(-5px); opacity: 1; } }
+
+.cb-demo-tpls { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; height: 100%; align-items: center; }
+.cb-demo-tpl { border: 2px solid transparent; border-radius: 9px; overflow: hidden; background: white; box-shadow: 0 4px 12px rgba(15,23,42,0.08); opacity: 0; transform: translateY(10px) scale(0.96); transition: opacity 0.35s, transform 0.35s, border-color 0.2s, box-shadow 0.2s; }
+.cb-demo-tpl.is-on { opacity: 1; transform: none; }
+.cb-demo-tpl.is-picked { border-color: #C10033; transform: scale(1.06); box-shadow: 0 10px 24px rgba(193,0,51,0.25); }
+/* テンプレートのミニ見本（HTML） */
+.cb-mini { aspect-ratio: 3 / 4.2; display: flex; flex-direction: column; gap: 5px; padding: 6px; background: white; font-family: Georgia, "Times New Roman", serif; }
+.cb-mini b { font-size: 0.5rem; letter-spacing: 0.2em; color: #1a1a2e; }
+.cb-mini-hero { display: block; flex: 1.2; border-radius: 2px; }
+.cb-mini span { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
+.cb-mini span img, .cb-mini span em { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 2px; }
+.cb-mini.is-maison .cb-mini-hero { background: linear-gradient(90deg, rgba(20,16,12,0.6), rgba(20,16,12,0.1)), url("/assets/images/lp-demo/hero.jpg") center 40% / cover; }
+.cb-mini.is-light { background: #faf7f2; }
+.cb-mini.is-light .cb-mini-hero { background: linear-gradient(180deg, #efe7dc 0 55%, #e2d6c6 55%); }
+.cb-mini.is-light span em { background: #ebe3d8; }
+.cb-mini.is-green .cb-mini-hero { background: linear-gradient(135deg, #3f5b4c, #6f8f7a); }
+.cb-mini.is-green span em { background: #dfe8e1; }
+.cb-demo-cursor { position: absolute; left: 86%; top: 86%; width: 22px; height: 22px; z-index: 2; transition: left 0.65s cubic-bezier(.4,0,.2,1), top 0.65s cubic-bezier(.4,0,.2,1), transform 0.15s; filter: drop-shadow(0 2px 3px rgba(0,0,0,0.25)); }
+.cb-demo-cursor.is-moved { left: 19%; top: 55%; }
+.cb-demo-cursor.is-click { transform: scale(0.8); }
+
+.cb-demo-progress { position: absolute; left: 12px; right: 12px; top: 12px; z-index: 2; display: flex; align-items: center; gap: 8px; font-size: 0.7rem; font-weight: 700; color: #64748b; background: rgba(255,255,255,0.92); border: 1px solid #e5e7eb; border-radius: 8px; padding: 6px 9px; transition: opacity 0.3s; }
+.cb-demo-progress span { flex: 1; height: 5px; background: #e2e8f0; border-radius: 3px; overflow: hidden; }
+.cb-demo-progress span i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #C10033, #ff5a7a); border-radius: 3px; }
+.cb-demo-progress.is-run span i { width: 100%; transition: width 2.2s cubic-bezier(.3,.1,.3,1); }
+.cb-demo-progress.is-hide { opacity: 0; }
+
+/* 組み上がるECサイト（文字はすべてHTML） */
+.cb-site { background: white; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; box-shadow: 0 6px 18px rgba(15,23,42,0.08); font-family: Georgia, "Times New Roman", serif; }
+.cb-site > * { opacity: 0; transform: translateY(12px); transition: opacity 0.45s, transform 0.45s; }
+.cb-site > .is-on { opacity: 1; transform: none; }
+.cb-site-head { display: flex; align-items: center; gap: 10px; padding: 7px 10px; border-bottom: 1px solid #f1f5f9; }
+.cb-site-head b { font-size: 0.74rem; color: #1a1a2e; letter-spacing: 0.22em; font-weight: 700; }
+.cb-site-head i { flex: 1; }
+.cb-site-head em { font-style: normal; font-size: 0.58rem; color: #64748b; letter-spacing: 0.06em; }
+.cb-site-lang { font-family: -apple-system, sans-serif; font-style: normal; font-size: 0.6rem; font-weight: 800; color: #C10033; border: 1px solid #f3c4cf; border-radius: 10px; padding: 0 6px; }
+.cb-site-hero { position: relative; height: 96px; background: #d9d4cc url("/assets/images/lp-demo/hero.jpg") center 40% / cover no-repeat; display: flex; flex-direction: column; justify-content: center; padding: 0 14px; }
+.cb-site-hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20,16,12,0.62) 0%, rgba(20,16,12,0.15) 75%); }
+.cb-site-hero strong { position: relative; color: white; font-size: 0.95rem; font-weight: 400; line-height: 1.25; max-width: 62%; }
+.cb-site-hero span { position: relative; align-self: flex-start; margin-top: 6px; font-size: 0.56rem; letter-spacing: 0.12em; color: #1a1a2e; background: white; padding: 3px 9px; text-transform: uppercase; }
+.cb-site-title { font-size: 0.72rem; color: #1a1a2e; letter-spacing: 0.08em; padding: 8px 10px 5px; }
+.cb-site-items { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 0 10px 10px; }
+.cb-site-item img { width: 100%; height: 44px; object-fit: cover; display: block; background: #f1f5f9; }
+.cb-site-item span { display: flex; justify-content: space-between; font-size: 0.62rem; color: #64748b; margin-top: 4px; }
+.cb-site-item b { color: #1a1a2e; font-weight: 700; }
+.cb-swap { transition: opacity 0.25s; }
+.cb-swap.is-fade { opacity: 0; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .cb-demo { animation: cb-float 7s ease-in-out infinite; }
+}
+@keyframes cb-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+
+/* フォーム上の資料 */
+.cb-form-head { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.1rem; }
+.cb-form-deck { position: relative; flex-shrink: 0; width: 116px; height: 78px; }
+.cb-form-deck img { position: absolute; width: 100px; border-radius: 5px; border: 1px solid #e5e7eb; box-shadow: 0 6px 14px rgba(15,23,42,0.15); }
+.cb-form-deck img:first-child { right: 0; top: 0; transform: rotate(6deg); }
+.cb-form-deck img:last-child { left: 0; bottom: 0; }
+.cb-form-head .cb-form-title, .cb-form-head .cb-form-sub { text-align: left; }
+.cb-form-head .cb-form-sub { margin: 0; }
+
+/* フォーム */
+.cb-form-card { background: white; border-radius: 18px; border: 1px solid #f1d5dc; box-shadow: 0 16px 40px rgba(193,0,51,0.10); padding: 1.75rem 1.5rem 1.5rem; scroll-margin-top: 110px; }
+.cb-form-title { font-size: 1.2rem; font-weight: 800; color: #1a1a2e; margin: 0 0 0.25rem; text-align: center; }
+.cb-form-sub { font-size: 0.85rem; color: #475569; text-align: center; margin: 0 0 1.1rem; }
+.cb-field { margin-bottom: 0.75rem; }
+.cb-field label { display: flex; align-items: center; gap: 6px; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 4px; }
+.cb-tag { font-size: 0.68rem; font-weight: 700; padding: 1px 6px; border-radius: 4px; background: #C10033; color: white; }
+.cb-tag.is-optional { background: #E2E8F0; color: #64748B; }
+.cb-field input { width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 16px; font-family: inherit; }
+.cb-field input:focus { outline: none; border-color: #C10033; box-shadow: 0 0 0 3px rgba(193,0,51,0.12); }
+.cb-agree { display: flex; align-items: flex-start; gap: 8px; font-size: 0.8rem; color: #475569; margin: 0.4rem 0 1rem; line-height: 1.5; }
+.cb-agree input { margin-top: 3px; accent-color: #C10033; }
+.cb-agree a { color: #C10033; text-decoration: underline; }
+.cb-form-card .cb-btn { display: block; width: 100%; padding: 14px; font-size: 1rem; }
+.cb-done { display: none; text-align: center; padding: 1.5rem 0.5rem; }
+.cb-done p { color: #475569; font-size: 0.9rem; margin: 0 0 0.9rem; }
+.cb-done a { color: #C10033; font-size: 0.85rem; text-decoration: underline; }
+.cb-form-card.is-done form { display: none; }
+.cb-form-card.is-done .cb-done { display: block; }
+
+@media (max-width: 900px) {
+  .cb-hero { padding: 2rem 1rem 2.5rem; }
+  .cb-hero-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+  .cb-demo { max-width: none; }
+  .cb-demo-body { height: 270px; }
+}
+
+/* ===== 特徴（課題への答え） ===== */
+.cb-answer { display: grid; grid-template-columns: 1fr 1.05fr; gap: 3rem; align-items: center; padding: 2.75rem 0; border-top: 1px solid #e5e7eb; }
+.cb-answer:first-of-type { border-top: 0; padding-top: 0; }
+.cb-answer.is-reverse .cb-answer-text { order: 2; }
+.cb-answer-q { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.82rem; font-weight: 700; color: #64748b; background: #f1f5f9; border-radius: 20px; padding: 4px 12px; margin-bottom: 0.9rem; }
+.cb-answer-q b { color: #C10033; }
+.cb-answer h3 { font-size: clamp(1.3rem, 2.4vw, 1.7rem); font-weight: 800; color: #1a1a2e; line-height: 1.45; margin-bottom: 0.75rem; }
+.cb-answer p { color: #475569; line-height: 1.8; margin-bottom: 1rem; }
+.cb-answer .cb-check { margin-top: 0.25rem; }
+.cb-answer-img { width: 100%; border-radius: 14px; border: 1px solid #e5e7eb; box-shadow: 0 8px 26px rgba(15,23,42,0.08); background: white; display: block; }
+.cb-answer-tpls { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+.cb-answer-tpls img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-radius: 10px; border: 1px solid #e5e7eb; box-shadow: 0 6px 18px rgba(15,23,42,0.08); display: block; }
+.cb-nums { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+.cb-num { background: #fff5f7; border: 1px solid #f3c4cf; border-radius: 12px; padding: 0.8rem 0.5rem; text-align: center; }
+.cb-num-value { font-size: clamp(1.5rem, 2.8vw, 1.9rem); font-weight: 900; color: #C10033; line-height: 1.15; }
+.cb-num-value small { font-size: 0.55em; margin-left: 0.1em; }
+.cb-num-label { font-size: 0.75rem; font-weight: 700; color: #64748b; margin-top: 0.2rem; }
+.cb-fx { background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 16px; padding: 1.5rem; display: flex; flex-direction: column; gap: 1.1rem; }
+.cb-fx-card { background: white; border: 1px solid #e5e7eb; border-radius: 14px; padding: 1.1rem 1.25rem; box-shadow: 0 8px 22px rgba(15,23,42,0.07); }
+.cb-fx-name { font-size: 0.85rem; font-weight: 700; color: #64748b; margin-bottom: 0.3rem; }
+.cb-fx-price { display: flex; align-items: center; gap: 0.6rem; }
+.cb-fx-price strong { font-size: 2rem; font-weight: 900; color: #1a1a2e; transition: opacity 0.3s; }
+.cb-fx-cur { font-size: 0.75rem; font-weight: 800; color: #C10033; background: #fff5f7; border: 1px solid #f3c4cf; border-radius: 20px; padding: 2px 10px; transition: opacity 0.3s; }
+.cb-fx-price.is-fade strong, .cb-fx-price.is-fade .cb-fx-cur { opacity: 0; }
+.cb-fx-rate { font-size: 0.78rem; color: #64748b; margin-top: 0.3rem; }
+.cb-fx-label { font-size: 0.78rem; font-weight: 700; color: #64748b; margin-bottom: 0.45rem; }
+.cb-fx-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.cb-fx-chips span { background: white; border: 1px solid #e5e7eb; border-radius: 10px; padding: 0.45rem 0.8rem; font-size: 0.85rem; font-weight: 700; color: #1a1a2e; }
+.cb-fx-chips span b { color: #C10033; margin-left: 0.3rem; }
+@media (max-width: 860px) {
+  .cb-answer { grid-template-columns: 1fr; gap: 1.5rem; padding: 2.25rem 0; }
+  .cb-answer.is-reverse .cb-answer-text { order: 0; }
+}
+.cb-spec-toggle { max-width: 900px; margin: 2.5rem auto 0; text-align: center; }
+.cb-spec-toggle summary {
+  list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 0.6rem;
+  font-weight: 700; color: #C10033; padding: 0.95rem 2rem; border: 2px solid #C10033; border-radius: 50px; background: white;
+  box-shadow: 0 6px 16px rgba(193,0,51,0.12); transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.cb-spec-toggle summary::-webkit-details-marker { display: none; }
+.cb-spec-toggle summary:hover { background: #fff5f7; transform: translateY(-2px); box-shadow: 0 10px 22px rgba(193,0,51,0.18); }
+.cb-spec-toggle summary svg { width: 18px; height: 18px; transition: transform 0.25s; }
+.cb-spec-toggle[open] summary svg { transform: rotate(180deg); }
+.cb-spec-toggle summary.cta-shine::after { background: linear-gradient(100deg, rgba(193,0,51,0) 0%, rgba(193,0,51,0.12) 50%, rgba(193,0,51,0) 100%); }
+.cb-spec-toggle[open] summary { margin-bottom: 1.25rem; }
+.cb-spec-toggle .ec-spec { text-align: left; }
+@media (max-width: 520px) { .cb-spec-toggle summary { font-size: 0.88rem; padding: 0.85rem 1.1rem; gap: 0.4rem; } }
+
+/* 仕様表 */
+.ec-spec { border: 1px solid #e5e7eb; border-radius: 14px; overflow: hidden; background: #fff; }
+.ec-spec-row { display: grid; grid-template-columns: 180px 1fr; border-top: 1px solid #e5e7eb; }
+.ec-spec-row:first-child { border-top: 0; }
+.ec-spec-name { background: #f8fafc; padding: 1rem 1.25rem; font-weight: 700; color: #1a1a2e; display: flex; align-items: center; }
+.ec-spec-body { padding: 1rem 1.5rem; color: #475569; line-height: 1.8; font-size: 0.93rem; }
+.ec-spec-body strong { color: #1a1a2e; }
+.ec-spec-sub { font-size: 0.85rem; color: #64748b; }
+.ec-spec-regions { display: grid; grid-template-columns: auto 1fr; gap: 0.3rem 1rem; margin-top: 0.4rem; }
+.ec-spec-regions dt { font-weight: 700; color: #1a1a2e; white-space: nowrap; }
+.ec-spec-regions dd { margin: 0; }
+@media (max-width: 640px) {
+  .ec-spec-row { grid-template-columns: 1fr; }
+  .ec-spec-name { padding: 0.75rem 1rem; }
+  .ec-spec-body { padding: 0.8rem 1rem 1rem; }
+  .ec-spec-regions { grid-template-columns: 1fr; gap: 0; }
+  .ec-spec-regions dd { margin-bottom: 0.4rem; }
+}
+
+/* ===== 3ステップ ===== */
+.cb-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+@media (max-width: 860px) { .cb-steps { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; } }
+.cb-step { background: white; border: 1px solid #e5e7eb; border-radius: 16px; overflow: hidden; }
+.cb-step img { width: 100%; aspect-ratio: 16 / 9.5; object-fit: cover; object-position: top left; display: block; border-bottom: 1px solid #e5e7eb; }
+.cb-step-body { padding: 1rem 1.25rem 1.2rem; }
+.cb-step-num { display: block; font-size: 0.75rem; font-weight: 800; color: #C10033; letter-spacing: 0.08em; margin-bottom: 0.25rem; }
+.cb-step h3 { font-size: 1.1rem; font-weight: 800; color: #1a1a2e; margin: 0; line-height: 1.5; }
+
+/* ===== 途中のCTA ===== */
+.cb-mid { background: #fff5f7; border-top: 1px solid #f3c4cf; border-bottom: 1px solid #f3c4cf; padding: 2.5rem 1rem; text-align: center; }
+.cb-mid p { font-size: 1.05rem; font-weight: 700; color: #1a1a2e; margin: 0 0 1.1rem; }
+
+/* ===== 導入事例 ===== */
+.cb-case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+@media (max-width: 860px) { .cb-case-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; } }
+.cb-case { background: white; border: 1px solid #e5e7eb; border-radius: 14px; overflow: hidden; }
+.cb-case-shot { position: relative; aspect-ratio: 16 / 10; background: #f4f5f8; border-bottom: 1px solid #e5e7eb; }
+.cb-case-shot > img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.cb-case-logo { position: absolute; left: 1rem; bottom: -22px; width: 96px; height: 44px; background: white; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 4px 12px rgba(15,23,42,0.1); display: flex; align-items: center; justify-content: center; padding: 4px 8px; }
+.cb-case-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.cb-case-body { padding: 1.9rem 1.25rem 1.2rem; }
+
+/* ===== 料金（短い版） ===== */
+.cb-plans { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.9rem; }
+@media (max-width: 960px) { .cb-plans { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .cb-plans { grid-template-columns: 1fr; } }
+.cb-plan { position: relative; background: white; border: 1px solid #e5e7eb; border-radius: 16px; padding: 1.4rem 1rem 1.2rem; text-align: center; display: flex; flex-direction: column; }
+.cb-plan.is-pick { border: 2px solid #C10033; box-shadow: 0 10px 26px rgba(193,0,51,0.12); }
+.cb-plan-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 0.72rem; font-weight: 700; color: white; background: #C10033; border-radius: 20px; padding: 3px 12px; }
+.cb-plan-name { font-weight: 800; color: #1a1a2e; margin-bottom: 0.4rem; }
+.cb-plan-price { font-size: 1.6rem; font-weight: 900; color: #1a1a2e; line-height: 1.2; }
+.cb-plan-price small { font-size: 0.75rem; font-weight: 700; color: #64748b; margin-left: 0.15rem; }
+.cb-plan-spec { font-size: 0.82rem; font-weight: 700; color: #C10033; margin: 0.6rem 0 0.4rem; }
+.cb-plan-desc { font-size: 0.82rem; color: #475569; line-height: 1.6; margin: 0; }
+.cb-plan-notes { margin-top: 1.5rem; text-align: center; font-size: 0.85rem; color: #64748b; line-height: 1.8; }
+.cb-plan-notes strong { color: #1a1a2e; }
+.cb-plan-notes a { color: #C10033; font-weight: 700; }
+.cb-case-company { font-size: 0.85rem; color: #64748b; margin-bottom: 0.3rem; }
+.cb-case-title { font-size: 0.98rem; font-weight: 700; line-height: 1.55; color: #1a1a2e; margin: 0; }
+
+/* ===== FAQ ===== */
+.cb-faq { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem; }
+.cb-faq details { background: white; border: 1px solid #e5e7eb; border-radius: 12px; }
+.cb-faq summary { list-style: none; cursor: pointer; display: flex; gap: 0.6rem; align-items: center; padding: 1.1rem 1.25rem; font-weight: 700; color: #1a1a2e; }
+.cb-faq summary::-webkit-details-marker { display: none; }
+.cb-faq summary::before { content: "Q."; color: #C10033; flex-shrink: 0; }
+.cb-faq summary::after { content: "+"; margin-left: auto; color: #94a3b8; font-size: 1.3rem; font-weight: 400; }
+.cb-faq details[open] summary::after { content: "−"; }
+.cb-faq details p { margin: 0; padding: 0 1.25rem 1.2rem 2.85rem; color: #475569; line-height: 1.8; font-size: 0.92rem; }
+
+/* ===== ヘッダー（スマホ） ===== */
+section[id] { scroll-margin-top: 100px; }
+@media (max-width: 768px) {
+  .cb-nav-right { margin-left: auto; margin-right: 12px; }
+  .cb-nav-right .btn { padding: 8px 14px; font-size: 13px; }
+}
+
+/* ===== 実績企業のロゴ（2段で流れる） ===== */
+.cb-logos { padding: 3.25rem 0 3.5rem; background: white; overflow: hidden; }
+.cb-logos-title { text-align: center; font-size: clamp(1.15rem, 2.2vw, 1.5rem); font-weight: 800; color: #1a1a2e; line-height: 1.5; margin: 0 1rem 1.75rem; }
+.cb-marquee { display: flex; flex-direction: column; gap: 0.75rem; }
+.cb-marquee-row { display: flex; width: max-content; gap: 0.75rem; animation: cb-marquee 40s linear infinite; }
+.cb-marquee-row.is-reverse { animation-direction: reverse; }
+.cb-marquee:hover .cb-marquee-row { animation-play-state: paused; }
+@keyframes cb-marquee { from { transform: translateX(0); } to { transform: translateX(calc(-50% - 0.375rem)); } }
+.cb-logo { flex-shrink: 0; width: 170px; height: 64px; background: white; border: 1px solid #e5e7eb; border-radius: 10px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.cb-logo img { width: 100%; height: 100%; object-fit: contain; }
+.cb-logos-more { text-align: center; font-size: 0.85rem; font-weight: 700; color: #64748b; margin: 1rem 0 0; }
+@media (max-width: 768px) { .cb-logo { width: 120px; height: 46px; } .cb-marquee-row { gap: 0.5rem; } }
+/* 「動きを減らす」設定では、止まった一覧で見せる */
+@media (prefers-reduced-motion: reduce) {
+  .cb-marquee-row { animation: none; width: auto; flex-wrap: wrap; justify-content: center; padding: 0 1rem; }
+  .cb-logo.is-dup { display: none; }
+}
+
+/* ===== 課題 ===== */
+.cb-issues-sec { background: linear-gradient(180deg, #fdf1f4 0%, #fff7f9 100%); }
+.cb-issues { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; max-width: 900px; margin: 0 auto; }
+@media (max-width: 760px) { .cb-issues { grid-template-columns: 1fr; } }
+.cb-issue { position: relative; display: flex; gap: 1.1rem; align-items: center; background: white; border: 1px solid #f1d5dc; border-radius: 16px; padding: 1.5rem 1.4rem; box-shadow: 0 8px 24px rgba(193,0,51,0.06); }
+.cb-issue-num { position: absolute; top: 0.9rem; right: 1.1rem; font-size: 0.8rem; font-weight: 800; color: #f3c4cf; letter-spacing: 0.05em; }
+.cb-issue-icon { flex-shrink: 0; width: 56px; height: 56px; border-radius: 50%; background: #fff1f3; color: #C10033; display: flex; align-items: center; justify-content: center; }
+.cb-issue-icon svg { width: 26px; height: 26px; }
+.cb-issue h3 { margin: 0; font-size: 1.25rem; font-weight: 800; color: #1a1a2e; line-height: 1.5; }
+.cb-solve { max-width: 900px; margin: 2rem auto 0; text-align: center; background: white; border: 2px solid #C10033; border-radius: 18px; padding: 1.5rem 1rem; box-shadow: 0 10px 28px rgba(193,0,51,0.12); }
+.cb-solve-arrow { width: 44px; height: 44px; margin: -2.9rem auto 0.75rem; border-radius: 50%; background: #C10033; color: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 16px rgba(193,0,51,0.3); }
+.cb-solve p { font-size: clamp(1.25rem, 2.6vw, 1.75rem); font-weight: 900; color: #1a1a2e; margin: 0; line-height: 1.45; }
+.cb-solve p strong { color: #C10033; }
+
+/* ===== 3ステップの矢印 ===== */
+.cb-step { position: relative; overflow: visible; }
+.cb-step img { border-radius: 16px 16px 0 0; }
+.cb-step:not(:last-child)::after {
+  content: ""; position: absolute; top: 32%; right: calc(-0.75rem - 15px); z-index: 1;
+  width: 30px; height: 30px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C10033' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='9 6 15 12 9 18'/%3E%3C/svg%3E") center / 16px no-repeat;
+}
+@media (max-width: 860px) {
+  .cb-steps { gap: 2rem; }
+  .cb-step:not(:last-child)::after { top: auto; right: auto; bottom: calc(-1rem - 15px); left: calc(50% - 15px); transform: rotate(90deg); }
+}
+
+/* ===== 導入事例のタグ ===== */
+.cb-case-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.7rem; }
+.cb-case-tags span { font-size: 0.72rem; font-weight: 700; color: #C10033; background: #fff5f7; border: 1px solid #f3c4cf; border-radius: 20px; padding: 2px 10px; }
+
+/* ===== 会社概要 ===== */
+.cb-company { background: #f8f9fc; padding: 2.5rem 1rem; }
+.cb-company-inner { max-width: 760px; margin: 0 auto; }
+.cb-company h2 { font-size: 1.05rem; font-weight: 800; color: #1a1a2e; margin: 0 0 0.9rem; }
+.cb-company dl { display: grid; grid-template-columns: 7rem 1fr; margin: 0; border-top: 1px solid #e5e7eb; font-size: 0.88rem; }
+.cb-company dt, .cb-company dd { margin: 0; padding: 0.65rem 0; border-bottom: 1px solid #e5e7eb; }
+.cb-company dt { font-weight: 700; color: #64748b; }
+.cb-company dd { color: #1a1a2e; line-height: 1.6; }
+
+/* ===== 最後のCTA ===== */
+.cb-mid h2 { font-size: clamp(1.3rem, 2.6vw, 1.7rem); font-weight: 800; color: #1a1a2e; margin: 0 0 0.5rem; line-height: 1.45; }
+.cb-mid .cb-mid-link { display: inline-block; margin-top: 1rem; color: #C10033; font-size: 0.9rem; font-weight: 700; text-decoration: underline; }
+
+/* ===== 動き ===== */
+.js-motion .rv { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; transition-delay: calc(var(--d, 0) * 90ms); }
+.js-motion .rv.is-in { opacity: 1; transform: none; }
+</style>
+
+<!-- ① ヒーロー -->
+<section class="cb-hero">
+  <div class="cb-hero-inner">
+    <div>
+      <p class="cb-hero-label">集客までAIに任せられる、越境ECツール</p>
+      <h1><span>越境ECサイトを、</span><br><span>チャットで3分で構築。</span></h1>
+      <p class="cb-hero-lead">質問に答えるだけで、22カ国に売れる越境ECが完成。</p>
+      <div class="cb-demo" id="cb-demo" aria-hidden="true">
+        <div class="cb-demo-bar">
+          <i></i><i></i><i></i>
+          <div class="cb-demo-url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span class="cb-demo-urltext">app.leap.site</span><span class="cb-demo-live">公開中</span></div>
+        </div>
+        <div class="cb-demo-caption">
+          <div class="cb-demo-caption-text"><b>STEP 1</b>チャットの質問に答える</div>
+          <div class="cb-demo-bars"><i></i><i></i><i></i></div>
+        </div>
+        <div class="cb-demo-body">
+          <div class="cb-demo-chat">
+            <div class="cb-demo-msgs">
+              <div class="cb-msg is-ai" data-msg="1">何を販売しますか？</div>
+              <div class="cb-msg is-me" data-msg="2">インテリア雑貨です</div>
+              <div class="cb-msg is-ai" data-msg="3">どの国に販売しますか？</div>
+              <div class="cb-msg is-me" data-msg="4">アメリカとフランスです</div>
+              <div class="cb-msg is-ai" data-msg="5">サイトができました。公開しますか？</div>
+              <div class="cb-msg is-me" data-msg="6">公開します</div>
+            </div>
+            <div class="cb-demo-input"><span class="cb-demo-typed"></span><span class="cb-demo-send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></span></div>
+          </div>
+          <div class="cb-demo-stage">
+            <div class="cb-demo-layer cb-demo-idle">
+              <div class="cb-demo-dots"><i></i><i></i><i></i></div>
+              <p>回答をもとに、<br>サイトを準備しています</p>
+            </div>
+            <div class="cb-demo-layer cb-demo-pick">
+              <div class="cb-demo-tpls">
+                <!-- 1つ目が、このあと組み上がるサイトと同じデザイン -->
+                <div class="cb-demo-tpl"><div class="cb-mini is-maison"><b>MAISON</b><i class="cb-mini-hero"></i><span><img src="/assets/images/lp-demo/lamp.jpg" alt=""><img src="/assets/images/lp-demo/vase.jpg" alt=""></span></div></div>
+                <div class="cb-demo-tpl"><div class="cb-mini is-light"><b>STUDIO</b><i class="cb-mini-hero"></i><span><em></em><em></em></span></div></div>
+                <div class="cb-demo-tpl"><div class="cb-mini is-green"><b>NATURE</b><i class="cb-mini-hero"></i><span><em></em><em></em></span></div></div>
+              </div>
+              <svg class="cb-demo-cursor" viewBox="0 0 24 24"><path d="M5 3l14 8-6 1.5L10 19z" fill="#1a1a2e" stroke="white" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="cb-demo-layer cb-demo-build">
+              <div class="cb-demo-progress">サイトを作成中<span><i></i></span></div>
+              <div class="cb-site">
+                <div class="cb-site-head"><b>MAISON</b><i></i><em class="cb-swap" data-en="Shop" data-fr="Boutique">Shop</em><em class="cb-swap" data-en="About" data-fr="À propos">About</em><span class="cb-site-lang cb-swap" data-en="EN" data-fr="FR">EN</span></div>
+                <div class="cb-site-hero"><strong class="cb-swap" data-en="Crafted for Everyday Living" data-fr="Conçu pour le quotidien">Crafted for Everyday Living</strong><span class="cb-swap" data-en="Shop now" data-fr="Acheter">Shop now</span></div>
+                <div class="cb-site-title cb-swap" data-en="New Arrivals" data-fr="Nouveautés">New Arrivals</div>
+                <div class="cb-site-items">
+                  <div class="cb-site-item"><img src="/assets/images/lp-demo/lamp.jpg" alt=""><span><em class="cb-swap" style="font-style:normal" data-en="Floor Lamp" data-fr="Lampadaire">Floor Lamp</em><b class="cb-swap" data-en="$80" data-fr="€74">$80</b></span></div>
+                  <div class="cb-site-item"><img src="/assets/images/lp-demo/vase.jpg" alt=""><span><em class="cb-swap" style="font-style:normal" data-en="Ceramic Vase" data-fr="Vase en céramique">Ceramic Vase</em><b class="cb-swap" data-en="$45" data-fr="€42">$45</b></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cb-form-card" id="download">
+      <form id="cb-form" novalidate>
+        <div class="cb-form-head">
+          <div class="cb-form-deck" aria-hidden="true">
+            <img src="/assets/images/lp-deck-p13.jpg" alt="">
+            <img src="/assets/images/lp-deck-p1.jpg" alt="">
+          </div>
+          <div>
+            <p class="cb-form-title">Leapの紹介資料（無料）</p>
+            <p class="cb-form-sub">機能・料金・導入事例をまとめました</p>
+          </div>
+        </div>
+        <div class="cb-field">
+          <label for="cb-company">会社名<span class="cb-tag">必須</span></label>
+          <input id="cb-company" name="company" type="text" autocomplete="organization" required>
+        </div>
+        <div class="cb-field">
+          <label for="cb-name">お名前<span class="cb-tag">必須</span></label>
+          <input id="cb-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="cb-field">
+          <label for="cb-email">メールアドレス<span class="cb-tag">必須</span></label>
+          <input id="cb-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="cb-field">
+          <label for="cb-phone">電話番号<span class="cb-tag is-optional">任意</span></label>
+          <input id="cb-phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+        <label class="cb-agree">
+          <input type="checkbox" name="agree" required>
+          <span><a href="/ja/privacypolicy/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する</span>
+        </label>
+        <button type="submit" class="cb-btn cta-shine">資料をダウンロード</button>
+      </form>
+      <div class="cb-done">
+        <p class="cb-form-title">ありがとうございます</p>
+        <p>資料を新しいタブで開きました。</p>
+        <a href="{{ guideForm.pdf }}" target="_blank" rel="noopener">資料が開かない場合はこちら</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ② 実績企業 -->
+<section class="cb-logos">
+  <h2 class="cb-logos-title">東証プライム上場企業から国の研究機関まで、<br>幅広い企業に導入されています</h2>
+  <div class="cb-marquee">
+    <div class="cb-marquee-row">
+      <div class="cb-logo"><img src="/assets/images/lp-logos/okura.jpg" alt="大倉工業" loading="lazy"></div>
+      <div class="cb-logo"><img src="/assets/images/lp-logos/jircas.jpg" alt="国際農研" loading="lazy"></div>
+      <div class="cb-logo"><img src="/assets/images/lp-logos/komatsu.jpg" alt="小松ばね工業" loading="lazy"></div>
+      <div class="cb-logo"><img src="/assets/images/lp-logos/maruyasu.jpg" alt="丸安洋傘" loading="lazy"></div>
+      <div class="cb-logo"><img src="/assets/images/lp-logos/lap.jpg" alt="LAP" loading="lazy"></div>
+      <div class="cb-logo"><img src="/assets/images/lp-logos/nanokaya.jpg" alt="七日屋" loading="lazy"></div>
+      <div class="cb-logo"><img src="/assets/images/lp-logos/purely.jpg" alt="ピュアリー" loading="lazy"></div>
+      <div class="cb-logo"><img src="/assets/images/lp-logos/toubo.jpg" alt="蘇州東伯商貿" loading="lazy"></div>
+      <div class="cb-logo is-dup" aria-hidden="true"><img src="/assets/images/lp-logos/okura.jpg" alt="" loading="lazy"></div>
+      <div class="cb-logo is-dup" aria-hidden="true"><img src="/assets/images/lp-logos/jircas.jpg" alt="" loading="lazy"></div>
+      <div class="cb-logo is-dup" aria-hidden="true"><img src="/assets/images/lp-logos/komatsu.jpg" alt="" loading="lazy"></div>
+      <div class="cb-logo is-dup" aria-hidden="true"><img src="/assets/images/lp-logos/maruyasu.jpg" alt="" loading="lazy"></div>
+      <div class="cb-logo is-dup" aria-hidden="true"><img src="/assets/images/lp-logos/lap.jpg" alt="" loading="lazy"></div>
+      <div class="cb-logo is-dup" aria-hidden="true"><img src="/assets/images/lp-logos/nanokaya.jpg" alt="" loading="lazy"></div>
+      <div class="cb-logo is-dup" aria-hidden="true"><img src="/assets/images/lp-logos/purely.jpg" alt="" loading="lazy"></div>
+      <div class="cb-logo is-dup" aria-hidden="true"><img src="/assets/images/lp-logos/toubo.jpg" alt="" loading="lazy"></div>
+    </div>
+    <div class="cb-marquee-row is-reverse">
+      <div class="cb-logo"><img src="/assets/images/lp-logos/purebio.jpg" alt="PureBio" loading="lazy"></div>
+      <div class="cb-logo"><img src="/assets/images/lp-logos/nc.jpg" alt="N・C" loading="lazy"></div>
+      <div class="cb-logo"><img src="/assets/images/lp-logos/nakashima.jpg" alt="畳のなかしま" loading="lazy"></div>
+      <div class="cb-logo"><img src="/assets/images/lp-logos/yamazaki.jpg" alt="ヤマザキ" loading="lazy"></div>
+      <div class="cb-logo"><img src="/assets/images/lp-logos/eptfe.jpg" alt="ePTFE" loading="lazy"></div>
+      <div class="cb-logo"><img src="/assets/images/lp-logos/licox.jpg" alt="LICOX" loading="lazy"></div>
+      <div class="cb-logo"><img src="/assets/images/lp-logos/vertebra.jpg" alt="VERTEBRA" loading="lazy"></div>
+      <div class="cb-logo"><img src="/assets/images/lp-logos/leaders.jpg" alt="leaders" loading="lazy"></div>
+      <div class="cb-logo is-dup" aria-hidden="true"><img src="/assets/images/lp-logos/purebio.jpg" alt="" loading="lazy"></div>
+      <div class="cb-logo is-dup" aria-hidden="true"><img src="/assets/images/lp-logos/nc.jpg" alt="" loading="lazy"></div>
+      <div class="cb-logo is-dup" aria-hidden="true"><img src="/assets/images/lp-logos/nakashima.jpg" alt="" loading="lazy"></div>
+      <div class="cb-logo is-dup" aria-hidden="true"><img src="/assets/images/lp-logos/yamazaki.jpg" alt="" loading="lazy"></div>
+      <div class="cb-logo is-dup" aria-hidden="true"><img src="/assets/images/lp-logos/eptfe.jpg" alt="" loading="lazy"></div>
+      <div class="cb-logo is-dup" aria-hidden="true"><img src="/assets/images/lp-logos/licox.jpg" alt="" loading="lazy"></div>
+      <div class="cb-logo is-dup" aria-hidden="true"><img src="/assets/images/lp-logos/vertebra.jpg" alt="" loading="lazy"></div>
+      <div class="cb-logo is-dup" aria-hidden="true"><img src="/assets/images/lp-logos/leaders.jpg" alt="" loading="lazy"></div>
+    </div>
+  </div>
+  <p class="cb-logos-more">他にも多数</p>
+</section>
+
+<!-- ③ 課題 -->
+<section class="lp-section cb-issues-sec" id="issues">
+  <div class="lp-inner">
+    <h2 class="lp-section-title rv">越境EC、こんなところで<br>止まっていませんか？</h2>
+    <div class="cb-issues">
+      <div class="cb-issue rv" style="--d:0">
+        <span class="cb-issue-num">01</span>
+        <div class="cb-issue-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg></div>
+        <h3>制作を外注すると、費用が高い</h3>
+      </div>
+      <div class="cb-issue rv" style="--d:1">
+        <span class="cb-issue-num">02</span>
+        <div class="cb-issue-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <h3>翻訳・通貨・決済の対応が分からない</h3>
+      </div>
+      <div class="cb-issue rv" style="--d:2">
+        <span class="cb-issue-num">03</span>
+        <div class="cb-issue-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <h3>作っても、海外からお客様が来ない</h3>
+      </div>
+      <div class="cb-issue rv" style="--d:3">
+        <span class="cb-issue-num">04</span>
+        <div class="cb-issue-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>運用に割ける人手がない</h3>
+      </div>
+    </div>
+    <div class="cb-solve rv">
+      <div class="cb-solve-arrow"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <p><strong>Leap</strong>なら、この4つをまとめて解決できます</p>
+    </div>
+  </div>
+</section>
+
+<!-- ④ 特徴：4つの課題への答え -->
+{% set cb_tpl_slugs = ["ec_template_1", "ec_template_2", "ec_template_3", "ec_template_4"] %}
+<section class="lp-section" id="features">
+  <div class="lp-inner">
+    <h2 class="lp-section-title rv">Leapが選ばれる、4つの理由</h2>
+
+    <div class="cb-answer rv">
+      <div class="cb-answer-text">
+        <span class="cb-answer-q"><b>01</b>制作の費用が高い →</span>
+        <h3>外注せずに、<br>チャットだけで構築</h3>
+        <ul class="cb-check"><li>テンプレートから選ぶだけ</li><li>修正もチャットで</li><li>無料プランあり</li></ul>
+      </div>
+      <div class="cb-answer-tpls">
+        {% for slug in cb_tpl_slugs %}{% for post in collections.templates %}{% if post.fileSlug == slug %}<img src="{{ post.data.image }}" alt="{{ post.data.name_ja }}" loading="lazy">{% endif %}{% endfor %}{% endfor %}
+      </div>
+    </div>
+
+    <div class="cb-answer is-reverse rv">
+      <div class="cb-answer-text">
+        <span class="cb-answer-q"><b>02</b>翻訳・通貨・決済が分からない →</span>
+        <h3>多言語・多通貨・決済に、<br>最初から対応</h3>
+        <div class="cb-nums">
+          <div class="cb-num"><div class="cb-num-value"><span class="js-count" data-count="22">22</span><small>カ国</small></div><div class="cb-num-label">販売できる国</div></div>
+          <div class="cb-num"><div class="cb-num-value"><span class="js-count" data-count="3">3</span><small>通貨</small></div><div class="cb-num-label">米ドル・ユーロ・円</div></div>
+          <div class="cb-num"><div class="cb-num-value"><span class="js-count" data-count="6">6</span><small>%</small></div><div class="cb-num-label">手数料（カード込み）</div></div>
+        </div>
+      </div>
+      <div class="cb-fx" aria-hidden="true">
+        <div class="cb-fx-card">
+          <div class="cb-fx-name">Handmade Table Lamp</div>
+          <div class="cb-fx-price" id="cb-fx-price"><strong>¥12,000</strong><span class="cb-fx-cur">JPY</span></div>
+          <div class="cb-fx-rate">前日の為替レートで、各国の通貨に自動換算</div>
+        </div>
+        <div>
+          <div class="cb-fx-label">販売できる地域</div>
+          <div class="cb-fx-chips"><span>北米・南米<b>4</b></span><span>ヨーロッパ<b>6</b></span><span>アジア・オセアニア<b>12</b></span></div>
+        </div>
+        <div>
+          <div class="cb-fx-label">決済</div>
+          <div class="cb-fx-chips"><span>Visa</span><span>Mastercard</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cb-answer rv">
+      <div class="cb-answer-text">
+        <span class="cb-answer-q"><b>03</b>海外からお客様が来ない →</span>
+        <h3>公開したあとの集客も、<br>AIが実行</h3>
+        <ul class="cb-check"><li>ローカライズ</li><li>多言語SEOブログ</li><li>多言語メルマガ</li></ul>
+      </div>
+      <img class="cb-answer-img" src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_1000/v1780396709/424a013d-81c9-412d-86ea-5dd63bb63738.png" alt="アクセス解析画面" loading="lazy">
+    </div>
+
+    <div class="cb-answer is-reverse rv">
+      <div class="cb-answer-text">
+        <span class="cb-answer-q"><b>04</b>運用の人手がない →</span>
+        <h3>商品・注文の管理も、<br>チャットで</h3>
+        <ul class="cb-check"><li>商品・在庫管理</li><li>発送・キャンセル対応</li><li>困ったらAIに相談</li></ul>
+      </div>
+      <img class="cb-answer-img" src="/assets/images/order-management.jpg" alt="注文管理画面" loading="lazy">
+    </div>
+
+    <details class="cb-spec-toggle">
+      <summary class="cta-shine">決済・対応国・通貨の詳しい仕様を見る<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></summary>
+      <div class="ec-spec">
+        <div class="ec-spec-row"><div class="ec-spec-name">決済手段</div><div class="ec-spec-body">クレジットカード（Visa・Mastercard）<br><span class="ec-spec-sub">BtoB専用ECでは、銀行振込・請求書払いにも対応しています。</span></div></div>
+        <div class="ec-spec-row"><div class="ec-spec-name">手数料</div><div class="ec-spec-body"><strong>売上の6%</strong> <span class="ec-spec-sub">（クレジットカード決済手数料を含む）</span></div></div>
+        <div class="ec-spec-row"><div class="ec-spec-name">対応国</div><div class="ec-spec-body"><strong>主要22カ国</strong>
+          <dl class="ec-spec-regions">
+            <dt>北米・南米（4）</dt><dd>アメリカ、カナダ、メキシコ、ブラジル</dd>
+            <dt>ヨーロッパ（6）</dt><dd>イギリス、ドイツ、フランス、イタリア、スペイン、オランダ</dd>
+            <dt>アジア・オセアニア（12）</dt><dd>日本、オーストラリア、シンガポール、中国本土、台湾、香港、韓国、ベトナム、フィリピン、マレーシア、インドネシア、インド</dd>
+          </dl></div></div>
+        <div class="ec-spec-row"><div class="ec-spec-name">対応通貨</div><div class="ec-spec-body">米ドル・ユーロ・日本円</div></div>
+        <div class="ec-spec-row"><div class="ec-spec-name">国ごとの商品設定</div><div class="ec-spec-body">商品ごとに販売国を設定できます。それ以外の国では商品が表示されません。</div></div>
+        <div class="ec-spec-row"><div class="ec-spec-name">為替対応</div><div class="ec-spec-body">商品ごとに基軸通貨を1つ選ぶと、前日の為替レートで自動換算し、ほかの通貨でも毎日自動で表示します。</div></div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ⑤ 構築は3ステップ -->
+<section class="lp-section is-soft" id="steps">
+  <div class="lp-inner">
+    <h2 class="lp-section-title rv">越境ECの構築は、3ステップ</h2>
+    <div class="cb-steps">
+      <div class="cb-step rv" style="--d:0">
+        <img src="/assets/images/lp-step-template.jpg" alt="チャットでテンプレートを選ぶ画面" loading="lazy">
+        <div class="cb-step-body">
+          <span class="cb-step-num">STEP 1</span>
+          <h3>チャットに答えて、<br>デザインを選ぶ</h3>
+        </div>
+      </div>
+      <div class="cb-step rv" style="--d:2">
+        <img src="/assets/images/top-product-management.jpg" alt="商品管理画面" loading="lazy">
+        <div class="cb-step-body">
+          <span class="cb-step-num">STEP 2</span>
+          <h3>商品を登録する<br>（CSVで一括登録も可能）</h3>
+        </div>
+      </div>
+      <div class="cb-step rv" style="--d:4">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/f_auto,q_auto,w_900/v1771680639/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-02-21_22.30.16_q5g9qq.png" alt="AIチャットでの編集画面" loading="lazy">
+        <div class="cb-step-body">
+          <span class="cb-step-num">STEP 3</span>
+          <h3>AIチャットで仕上げて、<br>公開する</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑥ 途中のCTA -->
+<div class="cb-mid">
+  <p>料金プランや導入事例は、資料でまとめてご確認いただけます。</p>
+  <a href="#download" class="cb-btn cta-shine">資料をダウンロード（無料）</a>
+</div>
+
+<!-- ⑦ 導入事例 -->
+{% set cb_site_types = { global: "多言語サイト", ec: "越境EC", blog: "ブログ" } %}
+{% set cb_case_slugs = ["vertebra", "zaisu-yamazaki", "greensphere-technology"] %}
+<section class="lp-section" id="cases">
+  <div class="lp-inner">
+    <h2 class="lp-section-title rv">越境ECの導入事例</h2>
+    <div class="cb-case-grid">
+      {% for slug in cb_case_slugs %}
+      {% for post in collections.cases %}{% if post.fileSlug == slug %}
+      <div class="cb-case rv" style="--d:{{ loop.index0 }}">
+        <div class="cb-case-shot">
+          <img src="/assets/images/lp-cases/{{ post.fileSlug }}.jpg" alt="{{ post.data.company_name_ja }}様のサイト" loading="lazy">
+          <div class="cb-case-logo"><img src="{{ post.data.logo | replace('/upload/', '/upload/f_auto,q_auto,w_300/') }}" alt="" loading="lazy" decoding="async"></div>
+        </div>
+        <div class="cb-case-body">
+          <div class="cb-case-company">{{ post.data.company_name_ja }}様</div>
+          <h3 class="cb-case-title">{{ post.data.case_title_ja }}</h3>
+          <div class="cb-case-tags">{% for t in post.data.site_type %}{% if cb_site_types[t] %}<span>{{ cb_site_types[t] }}</span>{% endif %}{% endfor %}</div>
+        </div>
+      </div>
+      {% endif %}{% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ⑧ 料金（短い版。金額を変えたら、サイトの料金表 _includes/pricing.njk と合わせて直す） -->
+<section class="lp-section is-soft" id="pricing">
+  <div class="lp-inner">
+    <h2 class="lp-section-title rv">料金プラン</h2>
+    <div class="cb-plans">
+      <div class="cb-plan rv" style="--d:0">
+        
+        <div class="cb-plan-name">フリー</div>
+        <div class="cb-plan-price">0円<small>/月</small></div>
+        <div class="cb-plan-spec">1言語・30ページ</div>
+        <p class="cb-plan-desc">まずは無料でお試し</p>
+      </div>
+      <div class="cb-plan rv" style="--d:1">
+        
+        <div class="cb-plan-name">スターター</div>
+        <div class="cb-plan-price">9,800円<small>/月</small></div>
+        <div class="cb-plan-spec">3言語・50ページ</div>
+        <p class="cb-plan-desc">独自ドメインで公開<br>メルマガ月1,000件</p>
+      </div>
+      <div class="cb-plan is-pick rv" style="--d:2">
+        <span class="cb-plan-badge">集客もAIにおまかせ</span>
+        <div class="cb-plan-name">ベーシック</div>
+        <div class="cb-plan-price">39,000円<small>/月</small></div>
+        <div class="cb-plan-spec">5言語・150ページ</div>
+        <p class="cb-plan-desc">AIブログでSEO/AIO対策<br>メルマガ月5,000件</p>
+      </div>
+      <div class="cb-plan rv" style="--d:3">
+        
+        <div class="cb-plan-name">スタンダード</div>
+        <div class="cb-plan-price">98,000円<small>/月</small></div>
+        <div class="cb-plan-spec">10言語・500ページ</div>
+        <p class="cb-plan-desc">AIブログ・メルマガ月10,000件<br>月1回の打ち合わせ</p>
+      </div>
+      <div class="cb-plan rv" style="--d:4">
+        
+        <div class="cb-plan-name">エンタープライズ</div>
+        <div class="cb-plan-price">お問い合わせ</div>
+        <div class="cb-plan-spec">言語・ページ無制限</div>
+        <p class="cb-plan-desc">専任担当による運用代行</p>
+      </div>
+    </div>
+    <p class="cb-plan-notes">越境ECの手数料は<strong>売上の6%</strong>（クレジットカード決済手数料込み）</p>
+  </div>
+</section>
+
+<!-- ⑨ よくある質問 -->
+<section class="lp-section" id="faq">
+  <div class="lp-inner">
+    <h2 class="lp-section-title rv">よくある質問</h2>
+    <div class="cb-faq">
+      <details>
+        <summary>費用はいくらかかりますか？</summary>
+        <p>無料のフリープランから始められます。有料プランは月額9,800円からです。越境ECの手数料は売上の6%で、クレジットカード決済手数料も含まれています。</p>
+      </details>
+      <details>
+        <summary>専門知識や英語力がなくても使えますか？</summary>
+        <p>はい。日本語のチャットで質問に答えるだけで、多言語の越境ECサイトを構築できます。</p>
+      </details>
+      <details>
+        <summary>既存の商品データは移せますか？</summary>
+        <p>はい。CSVで商品データを一括で取り込めます。</p>
+      </details>
+      <details>
+        <summary>契約期間の縛りはありますか？</summary>
+        <p>ありません。プランの変更や解約は、月単位でいつでも可能です。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ⑩ 最後のCTA -->
+<div class="cb-mid">
+  <h2>越境ECの構築、もう悩まなくて大丈夫です。</h2>
+  <p>まずは資料で、Leapでできることをご確認ください。</p>
+  <a href="#download" class="cb-btn cta-shine">資料をダウンロード（無料）</a><br>
+  <a href="{{ appLinks.template.ec }}" target="_blank" rel="noopener" class="cb-mid-link js-signup">無料で構築を始める &rarr;</a>
+</div>
+
+<!-- ⑪ 会社概要 -->
+<section class="cb-company" id="company">
+  <div class="cb-company-inner">
+    <h2>会社概要</h2>
+    <dl>
+      <dt>会社名</dt><dd>株式会社Leap</dd>
+      <dt>設立</dt><dd>2024年7月</dd>
+      <dt>所在地</dt><dd>〒221-0056 神奈川県横浜市神奈川区金港町5-14 クアドリフォリオ8階</dd>
+      <dt>事業内容</dt><dd>越境ECツール「Leap」の提供、海外向けWebマーケティングの支援</dd>
+    </dl>
+  </div>
+</section>
+
+</main>
+
+<!-- LP フッター（ロゴとコピーライトのみ） -->
+<footer>
+  <div class="footer-container">
+    <div class="footer-brand">
+      <a href="#top" class="footer-logo-link js-top">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="footer-logo-img">
+      </a>
+      <div class="footer-copyright">Copyright © 2025 Leap, Inc.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// 資料ダウンロード：送信先はHP右下のCTAと同じGoogleフォーム（_data/guideForm.json）
+(function () {
+  var GUIDE_FORM = {{ guideForm | dump | safe }};
+  var card = document.getElementById('cb-form-card');
+
+  document.getElementById('cb-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var form = e.target;
+    if (!form.reportValidity()) return;
+
+    // 送信ボタンを押した流れの中で開くので、ポップアップブロックされない
+    window.open(GUIDE_FORM.pdf, '_blank', 'noopener');
+
+    var data = new FormData();
+    ['company', 'name', 'email', 'phone'].forEach(function (key) {
+      data.append(GUIDE_FORM.entries[key], form.elements[key].value.trim());
+    });
+    if (GUIDE_FORM.entries.source) data.append(GUIDE_FORM.entries.source, 'Google広告LP');
+    fetch(GUIDE_FORM.action, { method: 'POST', mode: 'no-cors', body: data, keepalive: true }).catch(function () {});
+
+    try { localStorage.setItem('leapGuideRequested', '1'); } catch (err) {}
+    if (typeof gtag === 'function') gtag('event', 'generate_lead', { lead_source: 'lp_google' });
+    card.classList.add('is-done');
+  });
+
+  // スクロールで画面に入った要素を表示し、数字をカウントアップする
+  var countUp = function (el) {
+    var end = Number(el.getAttribute('data-count'));
+    var start = null;
+    var step = function (ts) {
+      if (start === null) start = ts;
+      var t = Math.min((ts - start) / 1000, 1);
+      el.textContent = Math.round(end * (1 - Math.pow(1 - t, 3)));
+      if (t < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+  if (document.documentElement.classList.contains('js-motion') && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (items) {
+      items.forEach(function (item) {
+        if (!item.isIntersecting) return;
+        item.target.classList.add('is-in');
+        item.target.querySelectorAll('.js-count').forEach(countUp);
+        io.unobserve(item.target);
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.rv').forEach(function (el) { io.observe(el); });
+  } else {
+    document.querySelectorAll('.rv').forEach(function (el) { el.classList.add('is-in'); });
+  }
+
+  // ヒーローのデモ：チャットに答えて、デザインを選び、サイトが公開されるまでを見せる
+  var motion = document.documentElement.classList.contains('js-motion');
+  var demo = document.getElementById('cb-demo');
+  if (demo) {
+    var q = function (sel) { return demo.querySelector(sel); };
+    var qa = function (sel) { return demo.querySelectorAll(sel); };
+    var typed = q('.cb-demo-typed');
+    var caption = q('.cb-demo-caption-text');
+    var captions = ['', 'チャットの質問に答える', 'デザインを選ぶ', 'サイトが完成して、公開'];
+    var timers = [];
+    var at = function (ms, fn) { timers.push(setTimeout(fn, ms)); };
+    var layer = function (name) { qa('.cb-demo-layer').forEach(function (el) { el.classList.toggle('is-on', el.classList.contains('cb-demo-' + name)); }); };
+
+    var setStep = function (n, animate) {
+      var apply = function () { caption.innerHTML = '<b>STEP ' + n + '</b>' + captions[n]; caption.classList.remove('is-fade'); };
+      qa('.cb-demo-bars i').forEach(function (b, i) { b.classList.toggle('is-done', i < n); });
+      if (!animate) { apply(); return; }
+      caption.classList.add('is-fade');
+      setTimeout(apply, 250);
+    };
+    // AIの返事：点が跳ねる「考えている表示」のあと、1文字ずつ流れるように出す
+    var aiText = {};
+    qa('.cb-msg.is-ai').forEach(function (el) { aiText[el.getAttribute('data-msg')] = el.textContent; });
+    var showAi = function (start, n) {
+      var el = q('[data-msg="' + n + '"]');
+      var text = aiText[n];
+      at(start, function () { el.innerHTML = '<span class="cb-typing"><i></i><i></i><i></i></span>'; showMsg(n); });
+      for (var i = 1; i <= text.length; i++) {
+        (function (i) { at(start + 600 + i * 30, function () { el.textContent = text.slice(0, i); }); })(i);
+      }
+    };
+    var showMsg = function (n) {
+      var el = q('[data-msg="' + n + '"]');
+      el.classList.add('is-show');
+      requestAnimationFrame(function () { requestAnimationFrame(function () { el.classList.add('is-on'); }); });
+    };
+    var setLang = function (lang, animate) {
+      qa('[data-' + lang + ']').forEach(function (el) {
+        if (!animate) { el.textContent = el.getAttribute('data-' + lang); return; }
+        el.classList.add('is-fade');
+        setTimeout(function () { el.textContent = el.getAttribute('data-' + lang); el.classList.remove('is-fade'); }, 250);
+      });
+    };
+    var type = function (start, text, msgNo) {
+      var input = q('.cb-demo-input');
+      at(start, function () { input.classList.add('is-focus'); typed.classList.add('is-typing'); });
+      for (var i = 1; i <= text.length; i++) {
+        (function (i) { at(start + i * 50, function () { typed.textContent = text.slice(0, i); }); })(i);
+      }
+      at(start + text.length * 50 + 250, function () { typed.textContent = ''; typed.classList.remove('is-typing'); input.classList.remove('is-focus'); showMsg(msgNo); });
+    };
+    var showFinal = function () {
+      qa('.cb-msg').forEach(function (m) { m.classList.add('is-show', 'is-on'); });
+      Object.keys(aiText).forEach(function (n) { q('[data-msg="' + n + '"]').textContent = aiText[n]; });
+      layer('build');
+      q('.cb-demo-progress').classList.add('is-hide');
+      qa('.cb-site > *').forEach(function (el) { el.classList.add('is-on'); });
+      setLang('fr', false);
+      setStep(3, false);
+      q('.cb-demo-urltext').textContent = 'your-store.leap.site';
+      demo.classList.add('is-live');
+    };
+    var reset = function () {
+      timers.forEach(clearTimeout); timers = [];
+      demo.classList.remove('is-live');
+      qa('.is-on, .is-show, .is-picked, .is-moved, .is-click, .is-run, .is-hide').forEach(function (el) { el.classList.remove('is-on', 'is-show', 'is-picked', 'is-moved', 'is-click', 'is-run', 'is-hide'); });
+      setLang('en', false);
+      q('.cb-demo-urltext').textContent = 'app.leap.site';
+      typed.textContent = '';
+    };
+    var play = function () {
+      reset();
+      // STEP 1：チャットの質問に答える（約4.5秒）
+      setStep(1, false);
+      layer('idle');
+      showAi(200, 1);
+      type(1300, 'インテリア雑貨です', 2);
+      showAi(2300, 3);
+      type(3450, 'アメリカとフランスです', 4);
+      // STEP 2：デザインを選ぶ（約2秒）
+      at(4500, function () { setStep(2, true); layer('pick'); });
+      qa('.cb-demo-tpl').forEach(function (el, i) { at(4650 + i * 120, function () { el.classList.add('is-on'); }); });
+      at(5000, function () { q('.cb-demo-cursor').classList.add('is-moved'); });
+      at(5800, function () { q('.cb-demo-cursor').classList.add('is-click'); q('.cb-demo-tpl').classList.add('is-picked'); });
+      at(5950, function () { q('.cb-demo-cursor').classList.remove('is-click'); });
+      // STEP 3：サイトが完成して、公開 → 英語からフランス語、ドルからユーロへ
+      at(6600, function () { setStep(3, true); layer('build'); q('.cb-demo-progress').classList.add('is-run'); });
+      qa('.cb-site > *').forEach(function (el, i) { at(6900 + i * 500, function () { el.classList.add('is-on'); }); });
+      at(9200, function () { q('.cb-demo-progress').classList.add('is-hide'); });
+      showAi(10000, 5);
+      type(11400, '公開します', 6);
+      at(12300, function () { q('.cb-demo-urltext').textContent = 'your-store.leap.site'; demo.classList.add('is-live'); });
+      at(13300, function () { setLang('fr', true); });
+      at(20000, play);
+    };
+
+    if (motion) { play(); } else { showFinal(); }
+  }
+
+  // 特徴02：価格の通貨を順番に切り替える
+  var fx = document.getElementById('cb-fx-price');
+  if (motion && fx) {
+    var prices = [['¥12,000', 'JPY'], ['$80.00', 'USD'], ['€74.00', 'EUR']];
+    var fxIndex = 0;
+    setInterval(function () {
+      fx.classList.add('is-fade');
+      setTimeout(function () {
+        fxIndex = (fxIndex + 1) % prices.length;
+        fx.querySelector('strong').textContent = prices[fxIndex][0];
+        fx.querySelector('.cb-fx-cur').textContent = prices[fxIndex][1];
+        fx.classList.remove('is-fade');
+      }, 300);
+    }, 2000);
+  }
+
+  // ロゴを押したら、このLPの一番上に戻る
+  document.querySelectorAll('.js-top').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // URLの「#〜」も消す（戻るの履歴は増やさない）
+      history.replaceState(null, '', location.pathname + location.search);
+    });
+  });
+
+  // スマホのメニュー
+  var hamburger = document.getElementById('hamburger');
+  var mobileMenu = document.getElementById('mobileMenu');
+  var closeMenu = function () {
+    hamburger.classList.remove('active');
+    mobileMenu.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+  hamburger.addEventListener('click', function () {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+    document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+  });
+  mobileMenu.addEventListener('click', function (e) { if (e.target === mobileMenu) closeMenu(); });
+  mobileMenu.querySelectorAll('.mobile-nav-link').forEach(function (link) { link.addEventListener('click', closeMenu); });
+
+  // 「無料で始める」のクリックを、資料請求とは別のイベントで計測する
+  document.querySelectorAll('.js-signup').forEach(function (a) {
+    a.addEventListener('click', function () {
+      if (typeof gtag === 'function') gtag('event', 'sign_up_click', { lead_source: 'lp_google' });
+    });
+  });
+})();
+</script>
+</body>
+</html>
