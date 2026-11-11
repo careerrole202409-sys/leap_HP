@@ -41,7 +41,28 @@ If you want to split product registration and inventory updates across multiple 
 
 The most common causes of login trouble are a mistyped password or forgetting the email address you registered. As with most web services, the login screen typically includes a way to reset your password. Try resetting with the email address you think you used, and if that doesn't resolve it, reach out to STORES's official support. Sometimes the issue comes down to cached browser data or old login information — trying a different browser or an incognito/private window is one thing worth trying.
 
-The daily grind of logging in, confirming orders, and reconciling stock is unglamorous, repetitive work — but getting it right is what determines customer trust and whether sold-out mishaps happen. Leap's AI E-Commerce Agent is built around the idea of supporting a wide range of day-to-day e-commerce operations through conversation with AI, including this kind of efficiency gain in daily inventory management.
+The daily grind of logging in, confirming orders, and reconciling stock is unglamorous, repetitive work — but getting it right is what determines customer trust and whether sold-out mishaps happen. Leap, a cross-border ecommerce tool that lets AI handle marketing too, is built around the idea of supporting a wide range of day-to-day e-commerce operations through conversation with AI, including this kind of efficiency gain in daily inventory management.
+
+## How to Sell Internationally With STORES
+
+To sell overseas from a STORES online shop, you can use the "Overseas Sales Integration" (海外販売連携) feature that launched on July 7, 2026. According to STORES, Inc.'s announcement, the feature connects your shop to WorldShopping BIZ (WSB), a cross-border proxy purchasing service run by ZIGZAG Inc., and lets you sell to 228 countries and regions.
+
+Here's how the integration works (as of the July 2026 announcement):
+
+1. ZIGZAG completes the purchase on behalf of the overseas buyer
+2. Your shop ships the item to a designated warehouse in Japan
+3. WSB handles international shipping, overseas payments and fraud prevention, collection and payment of foreign consumption taxes, and multilingual customer inquiries
+
+Thanks to the partnership between STORES and ZIGZAG, WSB's usual setup fee of ¥33,000 (tax included) and monthly fee of ¥5,500 (tax included) are waived. You still pay your regular STORES online shop fees, and overseas buyers are charged a proxy purchasing fee of 10% of the item price plus domestic shipping.
+
+Setup takes four steps:
+
+1. Apply through the WSB application form
+2. Receive the token issued by WSB
+3. Paste the token into the "Overseas Sales Integration" settings page in your STORES admin and save
+4. Let WSB know you've finished setup, and start selling once they've confirmed everything works
+
+Once overseas orders come in on top of domestic ones, confirming orders and reconciling stock accurately matters even more. If you'd rather sell directly to overseas customers through your own multilingual, multi-currency store instead of a proxy service, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option. Leap lets you choose which countries each product is sold in, and you can manage products and inventory through chat and forms.
 
 ## FAQ
 
@@ -57,16 +78,20 @@ A. Yes. Even with just an online store, you can manage stock counts manually fro
 
 A. If resetting your password doesn't resolve it, it's worth contacting STORES's official support. Having your registered email address and shop details on hand makes the inquiry go more smoothly.
 
+**Q. If I sell overseas through my STORES online shop, do I have to ship internationally myself?**
+
+A. Not if you use the Overseas Sales Integration. Your shop ships the item to a designated warehouse in Japan, and WorldShopping BIZ arranges the international shipping (as of the July 2026 announcement).
+
 ## Summary and Key Takeaway
 
 Behind a search for "STORES owner login" is often less a question about the login steps themselves, and more a concern about how to make the daily operational work after logging in more efficient. Reconciling orders and stock accurately, and making use of STORES Register's inventory-linking feature if you run a physical location, is what actually cuts down on day-to-day workload. Logging in is just the door to the real work — daily inventory management — that happens after it.
 
 For more on this, see our guide to managing product registration and inventory on the go with the STORES app.
 
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
 - ["STORES Register" Sees 15x Growth in Adopting Stores in One Year; 76.4% Use Inventory-Linking Between Physical and Online Channels - EC no Mikata](https://ecnomikata.com/ecnews/35406/)
 - [STORES Online Store Features - STORES official](https://stores.fun/ec)
+- [STORES Online Shop Launches "Overseas Sales Integration," Enabling Sales to 228 Countries and Regions With No Setup or Monthly Fees (Japanese) - PR TIMES](https://prtimes.jp/main/html/rd/p/000000277.000031375.html)

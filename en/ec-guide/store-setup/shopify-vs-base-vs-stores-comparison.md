@@ -76,7 +76,7 @@ Once monthly revenue exceeds ¥100,000, BASE's 3% service fee starts to add up n
 | Custom domain | Supported | Supported | Supported |
 | SEO capabilities | High | Standard | Standard |
 | Multilingual support | Built-in | Not supported (partial via apps) | Not supported |
-| Multi-currency support | Built-in | Not supported | Not supported |
+| Multi-currency support | Built-in | Not supported (foreign-currency display via app) | Not supported |
 | Physical store POS integration | Via app | Not supported | Built-in |
 | Inventory management | Advanced | Standard | Physical-store integrated |
 | Analytics | Advanced | Basic | Basic |
@@ -89,7 +89,7 @@ For small and mid-sized businesses exploring overseas expansion through e-commer
 
 Shopify natively supports multiple languages and currencies, along with international shipping configuration, customs duty calculation, and international SEO. Displaying product pages in English, Chinese, Korean, and other languages — and accepting payment in local currencies — can all be done without custom development.
 
-BASE and STORES are both designed primarily for domestic Japanese sales. Serious cross-border e-commerce on either platform requires integration with additional external tools. If overseas sales are part of the plan from day one, Shopify is essentially the only viable choice.
+BASE and STORES are built mainly around domestic Japanese stores, but as of November 2026 both can sell overseas through proxy-purchase services: BASE with "Kantan Kaigai Hanbai" (Easy Overseas Sales), a standard feature since March 2026, and STORES with "Overseas Sales Integration," launched in July 2026. If you want a multilingual, multi-currency store of your own that sells directly to overseas customers, Shopify is the strongest candidate.
 
 
 ## Decision Flowchart: Finding Your Platform
@@ -134,6 +134,17 @@ Sanrio Co., Ltd., the globally recognized character brand, also builds its e-com
 BASE has been particularly well-suited to handmade artisans, artists, and independent creators launching small-scale online stores. Zero upfront investment, full store management from a smartphone, and a genuinely simple interface are what have driven its growth to over 1.8 million stores. For sellers with monthly revenue in the range of tens of thousands to a few hundred thousand yen, the fee structure stays within acceptable bounds — making BASE a high-value-for-money choice at that scale.
 
 
+## How to Sell Overseas with Shopify, BASE, and STORES
+
+As of November 2026, Shopify lets you configure your own store for overseas customers and sell to them directly, while BASE and STORES accept overseas orders through proxy-purchase services.
+
+1. **Shopify**: Add the countries and regions you want to sell in with Shopify Markets, then set the language and currency for each market. To translate product descriptions and other content, you can use Translate & Adapt, a free app from Shopify (translations by Shopify cover up to two languages, or eight in select countries). Only stores using Shopify Payments with access to one-page checkout can use every local-currency feature, including showing prices, accepting payment, and issuing refunds in local currencies.
+2. **BASE**: Since March 18, 2026, "Kantan Kaigai Hanbai" (Easy Overseas Sales) has been a standard feature for all shops (shops using certain features are being switched over in stages). When someone visits from overseas, AI detects their country and shows a dedicated overseas cart, automatically checking whether each product can be sold to that country and calculating overseas shipping. Because BASE subsidiary want.jp buys the order at the domestic price, the shop simply ships to a warehouse in Japan. BASE also offers a free English & Foreign Currency App that switches shop text to English and displays prices in the currencies of 34 countries, but text you write yourself, such as product descriptions, isn't translated.
+3. **STORES**: "Overseas Sales Integration," launched on July 7, 2026, lets you sell to 228 countries and regions through WorldShopping BIZ, a cross-border proxy-purchase service. STORES users pay no initial or monthly fee for WorldShopping BIZ, and overseas buyers pay a proxy fee of 10% of the product price and domestic shipping.
+
+Some products can't be sold overseas, so check each service's list of restricted items first. If you want to sell directly through your own cross-border store and take your overseas marketing further, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option.
+
+
 ## FAQ: Common Questions About Choosing an E-Commerce Platform
 
 ### Q: Long-term, which is cheaper — Shopify or BASE?
@@ -148,6 +159,10 @@ Technically yes — but migration involves real cost and effort. You'll need to 
 
 STORES handles this most smoothly. The integration with STORES Payment means physical POS data and online sales and inventory can all be managed on a single dashboard. It eliminates the double management of inventory and the fragmentation of customer data across systems, reducing the operational burden on staff. That said, if you're looking ahead to cross-border e-commerce or advanced marketing automation, also consider comparing against Shopify's POS app combination.
 
+**Q. How much does BASE's Easy Overseas Sales feature cost?**
+
+A. A fee of 5% of the payment amount applies only when a product sells overseas (as of November 2026). The payment amount includes shipping to the domestic warehouse, and the fees for your BASE plan apply separately. There are no initial or fixed fees to start selling overseas.
+
 
 ## Summary: Choose a Platform That Fits Both Today and Tomorrow
 
@@ -157,14 +172,7 @@ The final decision comes down to three axes: business scale, goals, and budget. 
 
 Choosing a platform is not the finish line — it's the starting point for building a successful e-commerce business. After the store is live, the real challenge is creating content that reaches your target customers, driving traffic, and converting visits into purchases. For overseas markets especially, simple translation is not enough — localizing to match local culture, business norms, and search behavior is what creates a genuine competitive advantage.
 
-Leap provides a SaaS platform built around that kind of localization for multilingual web marketing. Rather than translating an existing Japanese site, we build locally optimized pages from the ground up — improving reach and conversion with international audiences. If you've finished building your store and are thinking seriously about expanding into overseas markets, explore the resources in Leap's overseas business guide.
-
-
-## From Leap
-
-Leap publishes practical, ongoing insights on cross-border e-commerce and overseas business. From e-commerce market trends by country and region to step-by-step localization guidance and international marketing strategy, we cover what you need at every stage of overseas expansion. Explore our other articles:
-
-[Overseas Business Blog](https://www.leap.site/en/blog/)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 
 ## References
@@ -176,3 +184,9 @@ Leap publishes practical, ongoing insights on cross-border e-commerce and overse
 - [Shopify vs. BASE: Fees and Feature Differences Explained (Japanese)](https://squareup.com/jp/ja/townsquare/shopify-vs-base)
 - [Shopify vs. BASE: A Thorough Comparison of Differences and How to Choose (Japanese)](https://shopify-guide.net/shopify-vs-base/)
 - [E-Commerce Store Design Fundamentals: Building a Store That Sells (Japanese)](https://www.shopify.com/jp/blog/ecommerce-design-fundamentals)
+- [Setting up localization for markets - Shopify Help Center](https://help.shopify.com/en/manual/markets/getting-started/localization)
+- [Pricing in local currencies - Shopify Help Center](https://help.shopify.com/en/manual/international/pricing)
+- [Shopify Translate & Adapt - Shopify App Store](https://apps.shopify.com/translate-and-adapt)
+- [BASE Makes "Kantan Kaigai Hanbai" a Standard Feature from March 18 (Japanese) - PR TIMES](https://prtimes.jp/main/html/rd/p/000000288.000030814.html)
+- [English & Foreign Currency App (Japanese) - BASE Apps](https://apps.thebase.com/detail/33)
+- [STORES Launches "Overseas Sales Integration" for Selling to 228 Countries and Regions with No Initial or Monthly Fees (Japanese) - PR TIMES](https://prtimes.jp/main/html/rd/p/000000277.000031375.html)

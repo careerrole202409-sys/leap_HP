@@ -1,7 +1,7 @@
 ---
 layout: ec-guide-post.njk
-title: "Shopify登录设置全解析｜客户账户页面与管理后台访问指南"
-description: 全面讲解Shopify登录设置——从管理后台访问步骤、客户账户页面（我的页面）的启用方法，到密码找回流程与员工权限管理，一文掌握。
+title: "Shopify登录与Shopify后台登录指南｜后台入口、客户账户设置与无法登录的解决方法"
+description: 详解Shopify登录方法：Shopify后台登录的入口与步骤、双重验证和员工账户权限，以及客户账户（我的页面）的启用设置、无法登录时的密码重置方法，一文掌握Shopify登录相关设置。
 thumbnail: https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80
 date: 2026-06-15
 topic: store-setup
@@ -119,6 +119,19 @@ Shopify提供的<strong>使用Shop登录</strong>功能，允许客户通过通�
 随着订单量的增长，"谁能访问管理后台的哪些功能"这一权限划分问题会逐渐凸显。AO株式会社的做法是：分别为物流、客服和营销岗位的员工仅授予其职责所需的权限，并将财务信息和客户数据的访问权限严格限定于店铺所有者。这一举措大幅降低了人为失误和信息泄露的风险。年营收规模越大，越需要严格落实"最小权限原则"——这是保护店铺核心资产的关键所在。
 
 
+## 面向海外销售时的Shopify登录设置
+
+如果要通过Shopify店铺向海外客户销售，基本做法是：客户账户的登录方式采用"免密码登录"和"社交账号登录"，并在店铺中发布目标市场的语言。这样既能减少重置密码的咨询，也能让不懂日语的客户顺利登录和下单。
+
+根据Shopify帮助中心的说明（截至2026年11月），需要重点关注以下3项设置：
+
+1. **使用免密码登录**：新版客户账户的默认登录方式是，客户输入邮箱地址后会收到6位验证码，无需密码即可登录。可以减少海外客户因忘记密码而发来的咨询。
+2. **开启社交账号登录**：除默认登录方式外，还可以让客户使用Google、Facebook、Apple或Shop账户登录，并可同时开启多个服务。如需接入自有的身份提供商（支持OpenID Connect的认证服务），则仅限Shopify Plus方案。
+3. **发布目标市场的语言**：在店铺中发布某种语言后，结账页面和邮件通知会以客户的语言显示。没有翻译的内容会以店铺的默认语言显示，因此需要借助Translate & Adapt应用（支持手动翻译和Shopify的AI翻译）等工具补充翻译。
+
+登录设置只是海外销售准备工作的一部分。如果希望把多语言、多币种网站的搭建到海外获客一并推进，连获客都能交给AI的跨境电商工具Leap也是一个选择。
+
+
 ## 常见问题（FAQ）
 
 <strong>Q：客户反映无法登录Shopify的我的页面，管理员能做什么？</strong>
@@ -133,6 +146,10 @@ Shopify提供的<strong>使用Shop登录</strong>功能，允许客户通过通�
 
 在Shopify的标准设置中，要求结账前必须登录的选项已被移除（目前默认支持访客结账）。但若需设置会员专属价格或仅向登录会员展示特定商品，可借助<strong>Locksmith</strong>等应用，将特定页面或商品集限定为仅登录用户可见。此外，新版客户账户支持通过一次性验证码实现无缝登录，在降低注册与登录门槛的同时，也有助于推动账户管理的普及。
 
+<strong>Q：如何减少海外客户"忘记密码、无法登录"的咨询？</strong>
+
+建议使用新版客户账户中"邮箱地址＋6位验证码"的登录方式。这种方式无需密码，从源头上减少了重置密码的需求。同时开启Google、Facebook、Apple、Shop账户的社交登录，并在店铺中发布目标市场的语言，海外客户就能用自己的语言查看结账页面和邮件通知。
+
 
 ## 总结｜Shopify登录设置需从"运营效率"与"客户体验"两个维度综合考量
 
@@ -144,13 +161,7 @@ Shopify提供的<strong>使用Shop登录</strong>功能，允许客户通过通�
 
 做好上述设置，是实现店铺稳定运营和提升客户体验（UX）的第一步。如果您正在考虑布局跨境电商或面向海外市场，多语言支持与本地化运营将是下一个关键环节，也是推动海外销售额持续增长的核心所在。
 
-
-## 【Leap官方博客介绍】
-
-Leap持续为有意开展跨境电商和海外拓展的日本中小企业发布实战信息，内容涵盖电商网站搭建、多语言本地化到海外营销推广等各个环节。对于已熟悉国内电商运营、准备向海外市场迈出下一步的电商运营者，我们提供了丰富的参考文章，欢迎参阅。
-
-Leap电商运营手册：[https://www.leap.site/zh-hans/ec-guide](https://www.leap.site/zh-hans/ec-guide)
-Leap海外业务博客：[https://www.leap.site/zh-hans/blog](https://www.leap.site/zh-hans/blog)
+Leap是一款连获客都能交给AI的跨境电商工具。只需通过对话，即可完成多语言、多币种跨境电商网站的搭建，以及SEO、邮件营销等海外获客工作。
 
 
 ## 参考资料
@@ -165,3 +176,5 @@ Leap海外业务博客：[https://www.leap.site/zh-hans/blog](https://www.leap.s
 - [重置密码（管理员与员工）（flagship.cc支持文档，日语）](https://support.flagship.cc/hc/ja/articles/900000516026)
 - [Shopify账户权限详解：添加、删除与编辑方法（playbit.co.jp，日语）](https://playbit.co.jp/magazine/article/4190/)
 - [Shopify登录方法汇总：无法登录时的处理方式（aoco.jp，日语）](https://aoco.jp/ec-shopify-102/)
+- [Shopify帮助中心：客户账户的登录选项](https://help.shopify.com/en/manual/customers/customer-accounts/sign-in-options)
+- [Shopify帮助中心：本地化与翻译](https://help.shopify.com/en/manual/international/localization-and-translation)

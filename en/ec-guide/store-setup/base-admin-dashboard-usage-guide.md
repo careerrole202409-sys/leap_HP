@@ -23,7 +23,7 @@ Getting your BASE shop published is one thing, but once your first order actuall
 
 ## Reading Your Dashboard
 
-The page that loads when you log into BASE is your dashboard. It gives you an at-a-glance view of your shop's current status — new order counts, revenue trends, and other information worth checking first thing each day. The left-hand menu gives you access to sections like Orders, Products, Design, Apps, and Sales — getting comfortable with that menu structure is the first step toward running your shop smoothly.
+The page that loads when you log into BASE is your dashboard. It gives you an at-a-glance view of your shop's current status — new order counts, revenue trends, and other information worth checking first thing each day. The left-hand menu gives you access to sections like Orders, Products, Design, Apps, and Money (お金) — getting comfortable with that menu structure is the first step toward running your shop smoothly.
 
 ## From Order Management to Marking Orders as Shipped
 
@@ -35,7 +35,7 @@ If you want to include a message with your shipment, you can pre-register up to 
 
 ## How to Request a Payout
 
-Once you've shipped an order and its status becomes "Completed," the amount — after processing fees are deducted — is credited as sales revenue on your "Sales" screen. Note that this happens when the order status changes after shipping, not the moment the order comes in. To actually get that money into your bank account, you need to submit a "payout request." The amount you receive is the order total minus BASE Easy Payment's processing fee and service usage fee.
+Once you've shipped an order and its status becomes "Completed," the amount — after processing fees are deducted — is credited as sales revenue on your "Money" (お金) screen (as of November 2026). Note that this happens when the order status changes after shipping, not the moment the order comes in. To actually get that money into your bank account, you need to submit a "payout request." The amount you receive is the order total minus BASE Easy Payment's processing fee and service usage fee.
 
 Once you submit a payout request, funds are typically transferred to your designated account within 10 business days (excluding weekends and holidays). If you need funds sooner, there's an "express transfer" option that gets funds to you as early as the next business day for a 1.5% fee on the requested amount — though it isn't available for your very first payout request, or for a bank account you haven't used for a payout before. For shops meeting certain conditions, there's also a "fastest transfer" option that gets funds to you in as little as 10 minutes, available 365 days a year including weekends and holidays, for a 3% fee on the requested amount. Keep in mind that a flat ¥250 transfer fee applies to any payout, and a separate ¥500 administrative fee applies if the payout amount is under ¥20,000 (no administrative fee applies at or above ¥20,000).
 
@@ -46,6 +46,22 @@ Payout requests have a clearly defined deadline: the cutoff is the end of the mo
 If you're often out during the day with limited time in front of a computer, the dedicated shop-management mobile app called "BASE" is worth using (formerly known as "BASE Creator"). Available for both iPhone and Android, it lets you handle the main operational tasks — registering and editing products, checking orders and sending shipping updates, and checking how your shop is selling — entirely from your phone.
 
 One feature unique to this app is a push notification to the shop owner's phone whenever a new order comes in. That means you can catch new orders immediately even while you're out, which helps avoid the situation where you don't notice an order until you're already behind on responding to it. The actual shipping work still needs to happen at home or wherever your inventory is, but for checking order status or making minor product edits, the app alone often gets the job done from anywhere — which makes it a genuinely useful tool for anyone running BASE as a side business or a small operation.
+
+## How to Sell Internationally on BASE
+
+The easiest way to sell internationally on BASE is to go to Settings > Shop Information (設定 > ショップ情報) in your shop admin, check "Use" (利用する) for Easy International Sales (かんたん海外販売), and save. Overseas orders show up on the same Orders screen as domestic ones, and all you do is ship to the warehouse of the forwarding company, want.jp Inc., in Japan (as of November 2026).
+
+Here's how to set it up and ship from the admin dashboard:
+
+1. From "Home" in your shop admin, open Settings > Shop Information
+2. Check "Use" for Easy International Sales and save (credit card payments must be enabled in BASE Easy Payment, and you must not be using the Age Restriction App)
+3. When an order comes in, go to the Orders screen, open "Refine further" (さらに絞り込む), and check "Easy International Sales" under "Order type" (注文の種類)
+4. Copy the want.jp warehouse address and recipient name shown on the order details page exactly onto your shipping label and send the parcel
+5. Change the order status to shipped within 20 days of the order date (otherwise the order is cancelled automatically)
+
+The fee is an Easy International Sales usage fee of 5% of the order total (product price plus domestic shipping). It's deducted from your sales, together with your plan's processing fee and service fee, when you set the order status to "Completed." You can check the amount under "Easy International Sales usage fee" on the Money (お金) screen, reached from "Home." The forwarding company handles communication with overseas buyers, as well as cancellations and returns, so you can't contact those buyers directly from your shop.
+
+If you'd like to manage overseas orders and inquiries in one place on your own cross-border store, another option is a tool that lets you handle order and inquiry management while chatting with AI, such as Leap, a cross-border ecommerce tool that lets AI handle marketing too.
 
 ## FAQ
 
@@ -61,16 +77,17 @@ A. Payout requests have a deadline — the end of the month six months after the
 
 A. The main tasks — editing products, checking orders, sending shipping updates, checking sales — can all be done from the app alone. That said, some tasks, like fine-tuning your page design, can be easier to handle from the full dashboard on a computer. A practical approach is using the app for on-the-go checks and quick responses, and the computer for deeper work.
 
+**Q. What should I do if an overseas buyer contacts me directly about an Easy International Sales order?**
+
+A. Point them to the forwarding company's (want.jp Inc.) support desk. The forwarding company handles inquiries, cancellations, and returns for Easy International Sales orders, and BASE Help even provides an English reply template that directs overseas buyers to the forwarding company's help page (as of November 2026).
+
 ## Summary and Key Takeaway
 
 Day-to-day operations on BASE come down to a simple cycle: check your dashboard, handle shipping when orders come in, and request a payout once revenue builds up. That said, not knowing the finer details — how the shipping status flow actually works, when payout requests expire — is an easy way to trip up unexpectedly. Getting comfortable with the "BASE" app means you can keep a hand on the wheel even while you're out, which makes running a shop as a side business or a small operation much more sustainable.
 
-That said, handling day-to-day orders, inventory, and customer support all on your own gets heavier as your shop grows. Leap offers an AI E-Commerce Agent that supports building and running an e-commerce site entirely through conversation with AI. If you'd like to lighten the day-to-day operational load, take a look at what Leap offers.
+That said, handling day-to-day orders, inventory, and customer support all on your own gets heavier as your shop grows.
 
-We publish a wide range of practical guides on running an e-commerce business.
-
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -83,3 +100,7 @@ We publish a wide range of practical guides on running an e-commerce business.
 - [Can I Use the Fastest Transfer Option? - Help | BASE](https://help.thebase.in/hc/ja/articles/45597900284825-%E6%9C%80%E9%80%9F%E6%8C%AF%E8%BE%BC%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AF%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%81%8B)
 - [Are There Fees for Payout Requests? - Help | BASE](https://help.thebase.in/hc/ja/articles/206341302-%E6%8C%AF%E8%BE%BC%E7%94%B3%E8%AB%8B%E6%99%82%E3%81%AB%E6%89%8B%E6%95%B0%E6%96%99%E3%81%AF%E3%81%8B%E3%81%8B%E3%82%8A%E3%81%BE%E3%81%99%E3%81%8B)
 - [What Is the "BASE" Smartphone App? - Help | BASE](https://help.thebase.in/hc/ja/articles/206417201-%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%B3%E3%82%A2%E3%83%97%E3%83%AA-BASE-%E3%81%A8%E3%81%AF%E3%81%AA%E3%82%93%E3%81%A7%E3%81%99%E3%81%8B)
+- [About Easy International Sales - Help | BASE (Japanese)](https://help.thebase.in/hc/ja/articles/52804478331929)
+- [How to Check and Ship Easy International Sales Orders - Help | BASE (Japanese)](https://help.thebase.in/hc/ja/articles/52804505173657)
+- [What to Watch Out for When Shipping Easy International Sales Orders - Help | BASE (Japanese)](https://help.thebase.in/hc/ja/articles/52804547252121)
+- [What Should I Do If an Overseas Buyer Contacts Me Directly? - Help | BASE (Japanese)](https://help.thebase.in/hc/ja/articles/53137239496217)

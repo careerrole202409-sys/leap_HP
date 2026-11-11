@@ -19,8 +19,6 @@ author_image: https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap
 author_bio: A team of experts in overseas business
 ---
 
-# Shopify vs. Japan's Major E-Commerce Platforms: BASE, STORES & ColorMe Compared
-
 ## [Quick Summary] Shopify, BASE, STORES, or ColorMe — Which Should You Choose?
 
 Anyone considering building an online store inevitably faces the same question: which platform should I use? Shopify is often compared to BASE, STORES, and ColorMe Shop, but each platform is designed for a completely different type of user.
@@ -59,7 +57,7 @@ In summary: BASE and STORES work well for small businesses that want to minimize
 
 Equally important to pricing is the question of whether the platform can support what you want to do in the future. The difference becomes especially significant when you're planning business growth, overseas expansion, or multi-channel operations.
 
-BASE and STORES offer limited customization — primarily template-based with restricted or no direct HTML/CSS editing. The features available are confined to the apps and plugins each platform provides, making it difficult to handle advanced CRM campaigns, multi-channel integrations, or centralized inventory management. For cross-border e-commerce, BASE does support overseas sales and multi-currency display, but content not in English requires manual input. STORES has no foreign currency display support at all.
+BASE and STORES offer limited customization — primarily template-based with restricted or no direct HTML/CSS editing. The features available are confined to the apps and plugins each platform provides, making it difficult to handle advanced CRM campaigns, multi-channel integrations, or centralized inventory management. For cross-border e-commerce, BASE does support overseas sales and multi-currency display, but content not in English requires manual input. STORES, meanwhile, has offered "Overseas Sales Integration" since July 2026, which lets shops sell to 228 countries and regions through the proxy-purchase service WorldShopping BIZ (as of November 2026).
 
 ColorMe Shop allows HTML/CSS editing and offers a range of extensions for domestic merchants, including WordPress integration. However, multilingual support is not included as standard — a paid app is required — so full cross-border operations can be constrained.
 
@@ -95,6 +93,21 @@ Here's a clear breakdown of which platform to choose based on your current situa
 
 One important factor to consider: the cost of migrating platforms later. Many sellers start on BASE or STORES, see their sales grow, and then move to Shopify — but transferring product data, customer records, and order history takes significant time and money. If you're already targeting monthly sales in the tens of millions, building on Shopify from the start is likely to cost less overall in the long run.
 
+## How to Choose a Platform If You Also Want to Sell Overseas
+
+If you also plan to sell overseas, start by choosing between two models: making your own store multilingual and multi-currency so you can sell to overseas customers directly, or keeping a domestic store and letting a proxy-purchase service handle overseas orders for you. As of November 2026, Shopify supports the first model natively, while BASE, STORES, and ColorMe Shop mainly offer the second.
+
+| Platform | How overseas selling works (as of November 2026) | Cost |
+| :--- | :--- | :--- |
+| Shopify | Set languages and currencies by country or region with Shopify Markets, and sell directly from your own store | Your plan's monthly fee. The Translate & Adapt app is free |
+| BASE | Built-in "Kantan Kaigai Hanbai" (Easy Overseas Sales). BASE subsidiary want.jp buys the item and handles international shipping | 5% of the payment amount (including shipping to the domestic warehouse), charged only on overseas sales. Plan fees apply separately |
+| STORES | "Overseas Sales Integration." WorldShopping BIZ buys on behalf of overseas customers | No initial or monthly fee for WorldShopping BIZ. STORES fees apply separately |
+| ColorMe Shop | "Overseas Sales Agency" feature. ZenLink buys on the customer's behalf and shows a guidance banner in 19 languages | No additional fees or sales-based commissions |
+
+The main advantage of the proxy model is that you only ship to a designated warehouse in Japan, while international shipping, customs, and multilingual customer inquiries are handled for you. The trade-off is that orders arrive as domestic orders from the proxy company, so this model isn't built for dealing with overseas customers directly or for tailoring prices and pages by country. A proxy service works well for testing overseas demand without changing your domestic operations; Shopify is the stronger candidate if you want to sell under your own brand in local languages, currencies, and prices.
+
+If you want to sell directly from your own store and also hand off overseas marketing, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option.
+
 ## FAQ
 
 <strong>Q1. I've heard Shopify and BASE cost about the same monthly — is that true?</strong>
@@ -106,6 +119,10 @@ If overseas expansion is even a possibility, we recommend starting with Shopify 
 <strong>Q3. Shopify seems overwhelming with so many features. Can beginners actually manage it?</strong>
 Shopify's admin dashboard is designed to be intuitive, and basic operations — product listings, order management, payment setup — don't require any coding knowledge. That said, advanced SEO work, app integrations, and deeper customization do involve a learning curve, and some teams find it useful to bring in outside expertise. Shopify has a large network of certified partners (Shopify Experts) who can support build, operations, and marketing at every stage. A practical approach is to start simple on a basic plan and add capabilities as your business grows.
 
+**Q. Can I start on a Japanese domestic platform and add overseas sales later?**
+
+A. Yes. As of November 2026, BASE (Easy Overseas Sales), STORES (Overseas Sales Integration), and ColorMe Shop (Overseas Sales Agency feature) all work with proxy-purchase services to accept overseas orders, so you can start selling abroad without switching platforms. If you want to fine-tune languages, currencies, and prices for overseas customers in your own store, a platform with multilingual and multi-currency support, such as Shopify, is a better fit.
+
 ## Conclusion: Choose Your E-Commerce Platform by Working Backward from Your Growth Strategy
 
 Shopify, BASE, STORES, and ColorMe Shop are each built with a distinct user in mind. The question isn't which platform is "better" — it's which one is right for where your business is now and where it's going.
@@ -116,8 +133,14 @@ For EC managers and business owners targeting hundreds of millions in annual rev
 
 That said, even choosing Shopify isn't enough on its own to succeed in cross-border e-commerce. You'll still need a localized site designed for each target market, region-specific content, and marketing strategies tailored to local audiences.
 
-At Leap, we support not just building your EC store on platforms like Shopify, but creating fully localized sites for each market and executing international marketing end-to-end. For more insights on overseas expansion and cross-border e-commerce, explore our blog:
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
-Leap's blog on global business and e-commerce:
+## References
 
-https://www.leap.site/en/blog/
+- [International sales tools - Shopify Help Center](https://help.shopify.com/en/manual/international)
+- [Setting up localization for markets - Shopify Help Center](https://help.shopify.com/en/manual/markets/getting-started/localization)
+- [Pricing in local currencies - Shopify Help Center](https://help.shopify.com/en/manual/international/pricing)
+- [Shopify Translate & Adapt - Shopify App Store](https://apps.shopify.com/translate-and-adapt)
+- [BASE Makes "Kantan Kaigai Hanbai" a Standard Feature from March 18 (Japanese) - PR TIMES](https://prtimes.jp/main/html/rd/p/000000288.000030814.html)
+- [STORES Launches "Overseas Sales Integration" for Selling to 228 Countries and Regions with No Initial or Monthly Fees (Japanese) - PR TIMES](https://prtimes.jp/main/html/rd/p/000000277.000031375.html)
+- [ColorMe Shop by GMO Pepabo Makes Its Overseas Sales Agency Feature Free for All Users (Japanese) - PR TIMES](https://prtimes.jp/main/html/rd/p/000004935.000000136.html)

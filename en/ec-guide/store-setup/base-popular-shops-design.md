@@ -50,6 +50,19 @@ Another theme running through all these cases: design is used as a competitive d
 For shops thinking about international customers, how you present information matters as much as how the design looks. As the apollonstore example shows, providing product descriptions in both Japanese and English and clearly explaining customs duties and shipping conditions in English significantly reduces the uncertainty that first-time overseas shoppers feel. Brand consistency and information transparency together are what separate shops that get chosen from shops that don't, regardless of category.
 
 
+## How to Sell Internationally on BASE
+
+To sell internationally on BASE, the basic approach is to turn on the built-in Easy International Sales feature (かんたん海外販売) and add English versions of your design text and product descriptions yourself. You don't need to change your theme to start selling abroad, but both the look and the information on your shop need to work for overseas shoppers (as of November 2026).
+
+With Easy International Sales, visitors from overseas see an international-cart version of each product page, and your product listing and product pages show a reference price in US dollars alongside the yen price. The forwarding company want.jp Inc. handles international shipping, so you only ship to its warehouse in Japan. On the design side, watch out for three things:
+
+1. Text you edit on the Design screen is not translated into English automatically. Even with the English & Foreign Currency App, only part of the interface, such as fixed text, switches to English. Write headings and banner copy on your top page in both Japanese and English
+2. Gift wrapping and decorations don't reach overseas customers. Parcels are repacked for international shipping at the forwarder's warehouse and the outer boxes are discarded. The product's own box, brand tags, and paper items such as thank-you notes and shop cards are delivered whenever possible
+3. Items whose description doesn't make clear what the product is, what it's used for, and what's included are excluded from international sales. Even if your design is photo-led, spell out specific details in text in each product description
+
+Since packaging can't carry your brand story abroad, photos and product pages have to do that work for overseas shoppers. If you want to go beyond English or localize for each target market, another option is a tool that handles everything from building a multilingual site to suggesting localization changes, such as Leap, a cross-border ecommerce tool that lets AI handle marketing too.
+
+
 ## FAQ
 
 ### Do I need a paid theme to create an attractive shop on BASE?
@@ -64,17 +77,18 @@ In addition to a cohesive visual identity, clearly presenting product descriptio
 
 Find shops in a similar genre or targeting a similar customer. Then examine four things: how the top page is structured, how product photos are presented, how categories are organized, and how the shop looks on mobile. Don't just copy the aesthetic — think through why the layout is designed the way it is and how it functions as a customer journey. That's where the transferable insights live.
 
+### How do I start letting overseas customers buy from my BASE shop?
+
+The easiest way is to go to Settings > Shop Information (設定 > ショップ情報) in your shop admin, check "Use" (利用する) for Easy International Sales, and save. To use it, credit card payments must be enabled in BASE Easy Payment, and you must not be using the Age Restriction App. There's no base fee; you pay a usage fee of 5% of the order total (product price plus domestic shipping) on orders sold abroad, plus the standard fees for your BASE plan (as of November 2026).
+
 
 ## Summary: Learn from Examples, Then Build Something That's Yours
 
 What popular BASE shops have in common isn't elaborate visual effects — it's a coherent brand identity matched to their genre and customer, and a navigation design that never makes visitors hesitate. La Corte and Suzuwa Shouten demonstrate the power of restrained, specialist design. SALLY'S demonstrates the power of bold, visually-driven energy. The style differs, but the commitment to communicating their brand clearly does not.
 
-For shops with international ambitions, design polish needs to be matched by multilingual information from the start — the two can't be treated as separate projects. Leap helps businesses go international not by translating an existing Japanese site, but by building new, locally-adapted pages from scratch for each target market, addressing both design and language as a single integrated build. If you're ready to take your BASE shop global, explore how Leap can support that next step.
+For shops with international ambitions, design polish needs to be matched by multilingual information from the start — the two can't be treated as separate projects.
 
-We publish a wide range of practical guides on overseas business and e-commerce. Browse our other articles for more.
-
-[Leap Overseas Business Blog](https://www.leap.site/en/blog)
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 
 ## References
@@ -86,3 +100,8 @@ We publish a wide range of practical guides on overseas business and e-commerce.
 - [BASE Implementation Case Studies Roundup](https://baseu.jp/19092)
 - [BASE Shop Case Study: 3 Tips for Increasing Orders from Overseas](https://baseu.jp/39624)
 - ["19 BASE Case Studies: Recommended Sites in Food, Apparel, and Lifestyle"](https://web-kanji.com/posts/base-case)
+- [BASE Help | About Easy International Sales (Japanese)](https://help.thebase.in/hc/ja/articles/52804478331929)
+- [BASE Help | What to Watch Out for When Shipping Easy International Sales Orders (Japanese)](https://help.thebase.in/hc/ja/articles/52804547252121)
+- [BASE Help | Items That Can't Be Sold with Easy International Sales (Japanese)](https://help.thebase.in/hc/ja/articles/52804551625881)
+- [BASE Help | Is Text Edited on the Design Screen Shown in English? (English & Foreign Currency App) (Japanese)](https://help.thebase.in/hc/ja/articles/900002957123)
+- [BASE Help | English & Foreign Currency App: English Display, Foreign Currency, and International Sales (Japanese)](https://help.thebase.in/hc/ja/articles/206417601)

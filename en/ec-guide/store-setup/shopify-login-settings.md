@@ -119,6 +119,19 @@ A well-known benchmark in the EC industry is that stores with higher customer ac
 As order volume grows, defining "who can access what" in the admin becomes a pressing operational need. At AO Co., Ltd., logistics, customer support, and marketing staff were each given only the permissions needed for their specific role, with financial information and customer data access restricted to the store owner. This approach significantly reduced the risk of human error and data exposure. The larger your annual revenue, the more important it is to strictly apply the principle of least privilege — it's a key part of protecting the assets your store depends on.
 
 
+## Shopify Login Settings When You Sell Internationally
+
+If you sell to overseas customers on Shopify, the basics are to offer passwordless sign-in and social sign-in for customer accounts, and to publish your target market's language on your store. This cuts down on password-reset requests and lets customers who don't read Japanese sign in and check out without getting stuck.
+
+According to the Shopify Help Center (as of November 2026), three settings matter most:
+
+1. **Use passwordless sign-in**: With the default sign-in method for new customer accounts, customers enter their email address and receive a one-time 6-digit verification code, so no password is needed. That means fewer "I forgot my password" emails from overseas.
+2. **Turn on social sign-in**: Customers can sign in with Google, Facebook, Apple, or Shop alongside the default method, and you can activate several providers at once. Connecting your own identity provider (an OpenID Connect-compliant service) is available only on the Shopify Plus plan.
+3. **Publish your customers' languages**: Once you publish a language, your checkout and email notifications are displayed in the customer's language. Anything without a translation falls back to your store's default language, so add translations with the Translate & Adapt app (which supports manual translation and AI translation from Shopify) or a similar tool.
+
+Login settings are just one part of preparing to sell abroad. If you'd rather handle everything from building a multilingual, multi-currency store to overseas marketing in one place, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option.
+
+
 ## Frequently Asked Questions (FAQ)
 
 <strong>Q: A customer says they can't log in to their Shopify account page. What can I do as a store admin?</strong>
@@ -133,6 +146,10 @@ The number of staff accounts depends on your plan. The Basic and Starter plans d
 
 Requiring customers to log in before checkout is no longer an option in Shopify's standard settings — guest checkout is the default. However, if you want to offer member-exclusive pricing or restrict certain products to logged-in customers only, an app like <strong>Locksmith</strong> can gate specific pages or collections to authenticated users. The new customer accounts feature also supports seamless login via one-time code, which lowers the barrier to account creation and login while keeping account management in place.
 
+<strong>Q: How can I reduce "I forgot my password and can't log in" requests from overseas customers?</strong>
+
+Use the new customer accounts sign-in method, where customers log in with their email address and a 6-digit verification code. Because no password is involved, password resets largely stop being an issue. On top of that, turn on social sign-in with Google, Facebook, Apple, or Shop, and publish your target languages on your store so overseas customers can read checkout pages and email notifications in their own language.
+
 
 ## In Closing: Shopify Login Settings Work Best as a Pair — Operational Efficiency and Customer UX
 
@@ -144,13 +161,7 @@ On the customer side: getting the My Page setup right — and having a clear pro
 
 Getting these settings right is the first step toward stable store operations and a strong customer experience. If you're also considering cross-border e-commerce or selling to international markets, multilingual support and local market localization are the next layer to address — and they're what will drive continued revenue growth from overseas.
 
-
-## A Note from Leap
-
-Leap publishes practical, up-to-date information for Japanese small and mid-sized businesses exploring cross-border e-commerce and overseas expansion — covering everything from EC site setup and multilingual localization to international web marketing. If you're an EC manager who has gotten comfortable with domestic operations and is ready to take the next step into overseas markets, our blog has a wide range of articles to help you get there.
-
-Leap EC Operations Manual: [https://www.leap.site/en/ec-guide](https://www.leap.site/en/ec-guide)
-Leap Overseas Business Blog: [https://www.leap.site/en/blog](https://www.leap.site/en/blog)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 
 ## References
@@ -165,3 +176,5 @@ Leap Overseas Business Blog: [https://www.leap.site/en/blog](https://www.leap.si
 - [Reset Password (Admin and Staff) (flagship.cc support, in Japanese)](https://support.flagship.cc/hc/ja/articles/900000516026)
 - [Shopify Account Permissions Explained: How to Add, Remove, and Edit (playbit.co.jp, in Japanese)](https://playbit.co.jp/magazine/article/4190/)
 - [Shopify Login Methods: A Complete Guide Including Troubleshooting (aoco.jp, in Japanese)](https://aoco.jp/ec-shopify-102/)
+- [Shopify Help Center: Sign-in options for customer accounts](https://help.shopify.com/en/manual/customers/customer-accounts/sign-in-options)
+- [Shopify Help Center: Localization and translation](https://help.shopify.com/en/manual/international/localization-and-translation)
