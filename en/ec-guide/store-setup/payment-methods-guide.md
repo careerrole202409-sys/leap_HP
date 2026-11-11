@@ -68,6 +68,19 @@ If your customer base skews older or includes business buyers, leading with fami
 Fee ranges by payment type: credit cards typically start around 3% of the transaction amount; convenience store payments start at around ¥143 per transaction; BNPL services range from approximately 3.5% to 6.5% of the sale amount. Each payment method you add brings incremental fee costs, so the practical approach is to anchor on credit cards first — the highest-usage method — then layer in digital wallets, convenience store payments, and BNPL in an order that matches your customer profile. When evaluating payment services, also check three things: compatibility with your e-commerce platform, security standards and support quality, and a realistic long-term cost projection based on your expected transaction volume.
 
 
+## Payment Methods When You Also Sell Overseas
+
+For overseas shoppers, the basic setup is to center on credit card payments from international card brands and let buyers see prices and pay in their own currency. Convenience store payments, covered earlier in this article, require paying at a convenience store in Japan, so they don't suit buyers outside Japan.
+
+Set up payments for overseas customers in this order:
+
+1. Decide which countries you'll sell to, and offer credit card payments that buyers in those countries can use
+2. Support local-currency pricing and checkout. On Shopify, using Shopify Payments with Markets (its international selling settings) lets customers see prices in their local currency and pay in that currency at checkout. By default, prices are converted automatically at current market exchange rates, and you can also set prices by country or region (as of November 2026)
+3. Add a country selector so buyers can choose their country or region (Shopify requires one when you sell in local currencies)
+4. Check your payment provider's fee page for any extra charges on currency conversion or internationally issued cards
+
+With Leap, a cross-border ecommerce tool that lets AI handle marketing too, you can accept credit card payments (Visa and Mastercard), and when you choose one base currency per product, prices are converted automatically into US dollars, euros, and Japanese yen using the previous day's exchange rate. The fee is 6% of sales, including credit card processing fees (as of November 2026).
+
 ## FAQ
 
 ### I'm just launching my store — which payment method should I set up first?
@@ -83,15 +96,16 @@ Most BNPL services like Paidy and NP Atobarai handle their own shopper credit as
 More options mean more reach, but yes, fees accumulate across each payment method you add. Rather than enabling everything at once, a more practical approach is to prioritize the methods that best fit your customers and product type, then expand gradually as you see results.
 
 
+### If I also sell to overseas customers, which payment methods should I offer?
+
+Start with credit card payments from international card brands, and let buyers see prices and pay in their own currency. Methods that assume payment inside Japan, such as convenience store payments, don't suit overseas buyers. On Shopify, using Shopify Payments with Markets lets you display prices and accept payment in local currencies (as of November 2026).
+
+
 ## Summary
 
-Payment setup may seem like an unglamorous task compared to design or marketing, but it has a direct impact on cart abandonment prevention and revenue growth. Start by anchoring on credit card payments — the most widely used method — then build out your payment mix with digital wallets, convenience store payments, and BNPL in an order suited to your customer base and product type. As you add more options, the design and localization decisions that come with them — especially for international customers — grow more complex as well. Leap supports multilingual e-commerce builds that create an intuitive payment experience for both domestic and overseas shoppers. If you're working through payment design for a cross-border or multilingual EC site, Leap's services are worth exploring.
+Payment setup may seem like an unglamorous task compared to design or marketing, but it has a direct impact on cart abandonment prevention and revenue growth. Start by anchoring on credit card payments — the most widely used method — then build out your payment mix with digital wallets, convenience store payments, and BNPL in an order suited to your customer base and product type. As you add more options, the design and localization decisions that come with them — especially for international customers — grow more complex as well.
 
-We publish a wide range of practical guides on overseas business and e-commerce. Browse our other articles for more.
-
-[Leap Overseas Business Blog](https://www.leap.site/en/blog)
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
-
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -101,10 +115,10 @@ We publish a wide range of practical guides on overseas business and e-commerce.
 - [Epsilon "How to choose payment methods"](https://www.epsilon.jp/uriagekoujoiinkai/sellfield/kessai_conv2.html)
 - [Hands Inc. "How to add payment methods to your EC site"](https://www.hands-inc.co.jp/column/how-to-add-payment-to-ec-site/)
 - [CloudEC "Payment service information"](https://www.cloudec.jp/ecnews/payment_service/)
-- [Shopinavi "Complete Shopify Setup Guide: 7 initial settings before going live"](https://dtnavi.tcdigital.jp/shopify/start-onlinestore/)
 - [SB Payment Service "What is Paidy? Payment methods, fees, and how it works"](https://www.sbpayment.jp/support/ec/paidy/)
 - [futureshop "How to make the most of Paidy and what it adds to your EC site"](https://www.future-shop.jp/magazine/paidy-seminar)
 - [futureshop "The case for adding BNPL to your EC site: usage rates, order flow, and setup tips"](https://www.future-shop.jp/magazine/deferred-payment-atobarai-column)
-- [Paymaster Guide "What is BNPL? A complete breakdown of how deferred payment works"](https://pay-route.co.jp/article/2026/03/24/understanding-postpaid-payment-system-pros-cons-and-introduction-methods/)
 - [Japan MIC "2023 Survey on Telecommunications Usage Trends (Household Edition)"](https://www.soumu.go.jp/johotsusintokei/statistics/pdf/HR202300_001.pdf)
 - [Baymard Institute "Cart Abandonment Rate Statistics"](https://baymard.com/lists/cart-abandonment-rate)
+- [Shopify Help Center "Pricing in local currencies"](https://help.shopify.com/en/manual/international/pricing)
+- [Shopify Help Center "Multi-currency"](https://help.shopify.com/en/manual/payments/shopify-payments/store-currency/multi-currency)

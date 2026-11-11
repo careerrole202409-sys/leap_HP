@@ -1,7 +1,7 @@
 ---
 layout: blog-post.njk
-title: "Unlock Overseas Expansion: The Complete Guide to Grants and Subsidies for Japanese SMEs"
-description: Want to go global but worried about the costs? Japan's government and local authorities offer a wide range of subsidies and grants to support SME overseas expansion. This guide covers key programs, application tips, and real success stories — everything you need to maximize public funding for your global ambitions.
+title: "Japan Overseas Expansion Subsidies 2026: Grants for SMEs and Support for Cross-Border Ecommerce"
+description: A 2026 guide to the subsidies and grants Japanese SMEs can use to expand overseas, checked against official application guidelines. Covers the Global Track of the New Business Expansion and Monozukuri Subsidy, the Small Business Sustainability Subsidy, INPIT's foreign filing subsidy, cross-border ecommerce support, and application tips.
 thumbnail: https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
 date: 2026-01-06
 topic: expansion
@@ -12,149 +12,197 @@ author_image: https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap
 author_bio: A team of experts in international business
 ---
 
-## In 60 Seconds: Turn Your Global Dreams into Reality with Subsidies
+## Quick Overview: In 2026, the Global Track and the Sustainability Subsidy Are the Core Options
 
-"We want to enter overseas markets, but the financial burden is daunting…" If you're an SME owner or international business manager wrestling with this concern, you're not alone — and there's good news. Japan's government and local authorities offer generous subsidy and grant programs that can dramatically lower the bar.
+In 2026, the two core subsidies for Japanese SMEs expanding overseas are the Global Track of the New Business Expansion and Monozukuri/Commerce/Service Subsidy, which supports capital investment for exporting, and the Small Business Sustainability Subsidy, which supports sales channel development such as overseas trade shows and websites. As of November 2026, the Global Track is in its second application round (applications accepted November 30 to December 25, 2026), and the Sustainability Subsidy is in its 20th round (applications accepted November 5 to December 15, 2026).
 
-This article gives a comprehensive overview of the diverse public support programs that SMEs targeting overseas expansion simply cannot afford to miss — from program summaries and application tips to the secrets behind higher adoption rates. Read it, and you'll be able to find the right subsidy for your company.
+This guide also covers intellectual property and local government programs, listing each program's eligibility, cap, subsidy rate, and application period as confirmed in the official guidelines. It then explains which subsidies work for cross-border ecommerce and how to improve your chances of approval.
 
----
+## Why Subsidies Matter for Overseas Expansion Right Now
 
-## Why Leveraging Subsidies Is Now Essential for SME Global Expansion
+Subsidies are worth using for overseas expansion because the upfront costs are high, and non-repayable funding lowers both your out-of-pocket spending and your risk.
 
-### The Limits of the Domestic Market — and the Allure of Overseas Markets
-In Japan, where a declining birthrate, aging population, and maturing domestic market are ongoing trends, tapping into new markets is indispensable for SMEs seeking sustainable growth. Overseas markets offer high regard for Japanese products and services, and the strong economic growth of emerging Asian economies in particular makes them an attractive target for Japanese SMEs. Developing a global perspective has become one of the most important keys to corporate management.
+### The Limits of the Domestic Market — and the Appeal of Overseas Markets
+
+With Japan's domestic market maturing, overseas markets are a strong option for SMEs that want to keep growing. Overseas markets offer high regard for Japanese products and services, along with new needs you won't find at home — and real business opportunities.
 
 ### The Hurdles and Financial Challenges of Going Global
-That said, overseas expansion involves many hurdles — language barriers, differences in business customs, regulatory research, and finding local partners. In particular, large upfront costs are common: market research, incorporation of a local entity, product localization, and promotional expenses can add up quickly, placing a heavy burden on SMEs. It would be a real shame to give up on a promising product or service simply because of capital constraints.
+
+The biggest hurdle in overseas expansion is that a lot of money goes out before results come in. Market research, setting up a local entity, product localization, and promotion often require significant funding at the early stage, which can weigh heavily on an SME.
 
 ### What Public Support Can Do for You
-This is where government and local authority subsidy and grant programs come in. Designed to reduce the financial burden of going global and strengthen SMEs' international competitiveness, these programs allow companies to take on overseas markets while keeping risk in check — through non-repayable subsidies or low-interest grants. Beyond just financial assistance, many programs also offer business plan development support and specialist advice, making them a powerful tool for raising the odds of success.
 
----
+Public support lets you cover part of your overseas expansion costs with non-repayable funds and get expert advice along the way. Non-repayable subsidies and grants let you take on overseas markets while keeping risk in check. JETRO and the Organization for Small & Medium Enterprises and Regional Innovation (SMRJ) also offer free consultations on overseas expansion.
 
-## The Key Programs You Need to Know
+## Overseas Expansion Subsidies and Grants in Japan: 2026 List
 
-SME overseas expansion is supported by a wide range of programs. Here are the most important ones to consider. Find the one that best fits your company's stage and goals.
+As of November 2026, these are the six main subsidies and grants available for overseas expansion. Caps and application periods change with each round, so always check the latest guidelines before applying.
 
-### The National Government's Major Programs (METI / Small and Medium Enterprise Agency)
+| Program | Administered by | Main purpose | Cap | Subsidy rate | Status (as of November 2026) |
+|---|---|---|---|---|---|
+| New Business Expansion and Monozukuri/Commerce/Service Subsidy (Global Track) | SME Agency / SMRJ | Strengthening domestic production bases to export to new overseas markets | ¥25M–¥70M (up to ¥90M with the wage-increase special provision); minimum ¥7.5M | 2/3 | Round 2: applications November 30 – December 25, 2026, 15:00 |
+| Small Business Sustainability Subsidy (General Type, Standard Track) | SMRJ (with support from local chambers of commerce) | Sales channel development such as overseas trade shows and websites | ¥500,000 (up to ¥2.5M with special provisions) | 2/3 (3/4 for loss-making businesses using the wage-increase provision) | Round 20: applications November 5 – December 15, 2026, 17:00 |
+| INPIT Foreign Filing Subsidy | National Center for Industrial Property Information and Training (INPIT) | Filing patents, utility models, designs, and trademarks abroad | ¥3M per company | 1/2 | FY2027 Round 1: November 30 – December 21, 2026 (planned) |
+| Overseas Infringement Countermeasures Support | JETRO (a Japan Patent Office subsidy program) | Anti-counterfeiting, cancelling pre-emptively filed trademarks, overseas disputes | ¥4M or ¥5M | 2/3 | Trademark cancellation and defensive programs: until November 30, 2026, 17:00 |
+| Market Development Grant (Tokyo) | Tokyo Metropolitan Small and Medium Enterprise Support Center | Trade shows and sales promotion | ¥3M | Up to 1/2 | FY2026 applications closed (May 15–29, 2026) |
+| Digitalization and AI Adoption Subsidy (Standard Track) | SMRJ | Adopting registered IT tools | ¥4.5M | 1/2 (2/3 if conditions are met) | Published deadline: December 1, 2026, 17:00 |
 
-**JAPAN Brand Promotion Program** *(now partially integrated into the Monodukuri Subsidy's Global Market Development category)*
-Supports the development of new products and services, branding, and channel development for Japanese goods in overseas markets. Past programs have offered a subsidy cap of ¥5 million (up to ¥20 million for joint applications) at a subsidy rate of 2/3. A key feature is the use of specialist support partners who provide expertise throughout the project.
+### Flagship National Programs (METI / SME Agency)
 
-**Monodukuri, Commerce & Service Productivity Improvement Subsidy (Global Market Development Category)**
-Supports product/service development and production process improvement for companies aiming to expand overseas. The subsidy cap is ¥30 million (increased for wage hikes), with a base subsidy rate of 1/2 for SMEs and 2/3 for small businesses. Four categories are available — "Overseas Direct Investment," "Overseas Market Development (including JAPAN Brand)," "Inbound Market Development," and "Joint Projects with Overseas Businesses" — allowing applications tailored to your strategy. Check the official Monodukuri Subsidy portal for details.
+The national program that supports capital investment for exporting is the Global Track of the New Business Expansion and Monozukuri/Commerce/Service Subsidy, which opened for applications in June 2026. The former "Monozukuri Subsidy" has stopped accepting applications, and new applications are now directed to this successor program.
 
-### IP Strategy: INPIT Foreign Patent Application Subsidy and Anti-Infringement Support
+**New Business Expansion and Monozukuri/Commerce/Service Subsidy (Global Track)**
 
-**INPIT Foreign Patent Application Subsidy**
-Administered by the National Center for Industrial Property Information and Training (INPIT). Subsidizes the cost of filing patents, utility models, designs, and trademarks overseas. Up to ¥3 million per company per year (per-case caps apply: e.g., ¥1.5 million for patents), at a subsidy rate of 1/2. A critical first step in combating counterfeiting.
+The Global Track supports strengthening your domestic export capabilities in order to develop overseas markets (exports). It covers projects in which an SME, on its own initiative, strengthens its domestic production bases to open new overseas sales channels using its own products; projects driven by business partners are not eligible. A "new overseas market" means a country or region your existing business has not targeted before (per the Round 2 guidelines).
 
-**SME Overseas IP Infringement Support Program**
-A joint program by the Japan Patent Office and JETRO that covers the cost of challenging unauthorized trademark registrations abroad and defending against infringement lawsuits. Subsidy cap of ¥5 million at a rate of 2/3 — substantial support.
+| Employees | Cap (with wage-increase special provision) |
+|---|---|
+| 1–20 | ¥25M (¥30M) |
+| 21–50 | ¥40M (¥50M) |
+| 51–100 | ¥55M (¥70M) |
+| 101 or more | ¥70M (¥90M) |
+
+- Subsidy rate: 2/3 (including small businesses and businesses under revitalization). Minimum subsidy: ¥7.5M
+- Eligible expenses: machinery and system development, buildings, advertising and sales promotion, overseas travel, interpretation and translation, and more. Either machinery/system development or building costs must be included
+- Round 2: applications accepted November 30, 2026, 15:00 to December 25, 2026, 15:00
+
+### IP Strategy: INPIT Foreign Filing Subsidy and Infringement Support
+
+To secure patents and trademarks before selling abroad, you can use INPIT's Foreign Filing Subsidy, which covers half of filing costs, and JETRO's Overseas Infringement Countermeasures Support, which covers two-thirds of anti-counterfeiting and dispute costs.
+
+**INPIT Foreign Filing Subsidy**
+
+The INPIT Foreign Filing Subsidy covers part of the cost for SMEs to file for patents, utility models, designs, and trademarks abroad. Eligible filings include those made abroad claiming Paris Convention priority based on an application already filed with the Japan Patent Office. Here are the FY2027 terms INPIT has published as planned as of September 2026:
+
+- Subsidy rate: 1/2
+- Cap: up to ¥3M per company (shared across all rounds in the same fiscal year)
+- Cap per filing: up to ¥2M for patents, ¥800,000 each for utility models, designs, and trademarks, and ¥400,000 for filings to counter pre-emptive trademark registrations
+- Eligible expenses: filing fees paid to foreign patent offices, attorney fees, translation costs, etc. (only costs incurred after the grant decision)
+- Planned schedule: Round 1 November 30 – December 21, 2026; Round 2 March 1 – March 19, 2027
+
+The Japan Patent Office also subsidizes half of foreign filing costs through prefectural SME support centers. Check the calls from the support center in your area as well.
+
+**Overseas Infringement Countermeasures Support (JETRO)**
+
+As a Japan Patent Office subsidy program, JETRO supports SMEs in dealing with IP infringement abroad (as of November 2026).
+
+| Program | What it covers | Rate and cap | Application window |
+|---|---|---|---|
+| Anti-Counterfeiting Support | Investigation, warnings, and other costs when your industrial property rights are infringed abroad | 2/3, ¥4M | Closed October 30, 2026, 17:00 |
+| Trademark Invalidation and Cancellation Dispute Support | Dispute costs to cancel a trademark filed pre-emptively by a local company abroad | 2/3, ¥5M | Until November 30, 2026, 17:00 (approved on a rolling basis within budget) |
+| Defensive Infringement Countermeasures Support | Costs when a foreign company accuses you of infringement and you become involved in a dispute | 2/3, ¥5M | Until November 30, 2026, 17:00 (approved on a rolling basis within budget) |
 
 ### Local Government Programs: The Tokyo Example
 
-The national government isn't the only source — your local authority may offer its own programs. Here's what Tokyo provides:
+On top of national programs, your prefecture may offer its own. Here's what Tokyo provides:
 
-**Tokyo Metropolitan Government Overseas Expansion Support (JETRO partnership)**
-Companies in Tokyo can use JETRO paid services at effectively no cost, up to ¥1 million — a groundbreaking program. Details available at the JETRO Tokyo office website.
+**Overseas Expansion Support in Partnership With Financial Institutions (Tokyo)**
 
-**Tokyo Metropolitan Small Business Promotion Corporation Programs**
-The "Overseas Sales Channel Development Support Program" offers free hands-on specialist support for two years; the "Market Development Grant" covers trade show and exhibition costs (cap: ¥3 million, rate: 1/2). Check the Tokyo Metropolitan Small Business Promotion Corporation website for the latest information.
+For SMEs planning to use the Tokyo Metropolitan Government's SME financing system, among others, this program lets you use some of JETRO's and Shinkin Central Bank's paid services free of charge, up to a cumulative ¥1M. From FY2026, SMEs currently using the financing system are also eligible (Tokyo Metropolitan Government announcement, March 27, 2026). Applications go through a designated financial institution.
 
-### Starting Small: The Small Business Sustainability Grant
+**Market Development Grant and Overseas Sales Channel Development Support Program (Tokyo)**
 
-For smaller businesses not ready for a full overseas push, this grant is a great starting point.
+The Market Development Grant covers trade show participation and sales promotion costs, with a cap of ¥3M at a rate of up to 1/2. FY2026 applications (May 15–29, 2026) have closed, so watch for next year's call. Separately, the "Overseas Sales Channel Development Support Program" assigns a dedicated Global Navigator to accompany Tokyo-based SMEs that pass screening for two years. The support is basically free of charge.
 
-It supports small businesses in implementing sales channel development activities based on a management plan. Eligible costs can include multilingual website creation and translation fees for overseas markets, and overseas trade show attendance. The standard category cap is ¥500,000 (with special provisions), at a subsidy rate of 2/3 in principle. Applications are prepared with support from your local Chamber of Commerce or Commerce and Industry Association.
+### Starting Small: The Small Business Sustainability Subsidy
 
----
+If you want to start developing overseas sales channels on a small scale, the Small Business Sustainability Subsidy is an accessible option. It supports sales channel development based on a management plan. Beyond overseas trade show fees, related interpretation and translation fees are also eligible (per the Round 20 guidelines).
 
-## 3 Secrets to Boosting Your Adoption Rate
+- Cap: ¥500,000. An extra ¥500,000 with the invoice special provision, ¥1.5M with the wage-increase special provision, or ¥2M with both (up to ¥2.5M)
+- Subsidy rate: up to 2/3 (up to 3/4 for loss-making businesses under the wage-increase provision)
+- Round 20: applications accepted November 5 – December 15, 2026, 17:00. The deadline to request the business support plan (Form 4) from your chamber of commerce is December 4, 2026
+- The subsidy is paid after the project, and Round 20 results are expected around March 2027
 
-Even the most attractive subsidies are useless if your application is rejected. Here are three proven strategies for improving your chances.
+Applications are handled through separate offices for areas covered by chambers of commerce and industry (shoko kaigisho) and those covered by commerce and industry associations (shokokai).
 
-### Secret 1: Write a Business Plan That Communicates Both Passion and Feasibility
+## Subsidies and Support for Cross-Border Ecommerce
 
-The business plan is the single most important document in any subsidy application. Here's how to make reviewers think "I want to support this!"
+The easiest subsidy to use for building a cross-border ecommerce site is the "website-related expenses" category of the Small Business Sustainability Subsidy. However, you can't apply for website-related expenses alone, and the requested amount for them is capped at ¥300,000. Other programs come with conditions too (as of November 2026).
 
-- **Clarity and specificity:** Don't write "we want to grow overseas." Write "we plan to sell our product X in the [specific market] of [specific country], targeting ¥10 million in annual sales within three years." Spell out numerical targets and action plans.
-- **Market analysis and competitive advantage:** Thoroughly analyze the target market's size, growth trajectory, customer needs, and competitive landscape — then clearly demonstrate, with objective data, how your company's strengths (technology, quality, design) give you an edge. Tell the story of why customers will choose you.
-- **Speak to the reviewers:** Understand the subsidy program's stated objectives, and articulate how your project contributes to them (e.g., enhancing Japan's brand value, contributing to regional economies). Emphasize innovation, growth potential, and above all, *feasibility*.
+| Program | Eligible cross-border ecommerce costs | Notes |
+|---|---|---|
+| Small Business Sustainability Subsidy | Developing, building, updating, modifying, and running websites and online stores for sales channel development (website-related expenses) | Can't apply for website-related expenses alone. The requested amount for website-related expenses is capped at ¥300,000 |
+| Market Development Grant (Tokyo) | Under sales promotion: initial marketplace registration fees, site creation and modification, advertising, etc. | Trade show participation costs must be included; sales promotion alone is not eligible. FY2026 applications have closed |
+| New Business Expansion and Monozukuri Subsidy (Global Track) | Building websites to promote the subsidized project (advertising and sales promotion), interpretation and translation | Aimed at strengthening domestic bases for exporting; machinery/system development or building costs are required. Advertising and sales promotion costs are capped based on projected sales |
+| Digitalization and AI Adoption Subsidy (formerly IT Introduction Subsidy) | Software purchase and cloud fees (up to two years) for registered IT tools, etc. | Limited to IT tools screened and registered in advance that include at least one business process. You must apply in partnership with a registered IT support provider |
 
-### Secret 2: Use Information Sources and Specialist Consultations Strategically
+Beyond subsidies, JETRO's "JAPAN MALL" project is another entry point to cross-border ecommerce. JAPAN MALL introduces Japanese consumer products to JETRO's partner ecommerce buyers overseas, leading to sales on overseas ecommerce sites and elsewhere. Participation is free (some partners offer optional paid add-ons). Registering for JETRO's "New Export 10,000 Companies Support Program" (free) also gets you introductions to support measures, including cross-border ecommerce.
 
-Subsidy information has a short shelf life. And there's no need to struggle alone — getting specialist support is key.
+## 3 Secrets to Improving Your Approval Odds
 
-- **Use JETRO and SMRJ:** JETRO and the Organization for Small & Medium Enterprises and Regional Innovation (SMRJ) offer free specialist consultations, overseas market information, and seminars. Actively use these to refine your business plan and stay current.
-- **Get your GBizID early and prepare for jGrants:** Most subsidy applications are filed through the electronic system "jGrants," which requires a "GBizID Prime" account. Account registration can take 2–3 weeks, so start early. Don't get caught scrambling after an application period opens.
+The keys to approval are a concrete business plan, early preparation, and making sure you don't miss bonus points.
 
-### Secret 3: Maximize Scoring Criteria and Bonus Points
+### Secret 1: Write a Business Plan That Shows Both Passion and Feasibility
 
-Knowing what reviewers are looking for — and how to earn bonus points — is the fastest path to adoption.
+In your business plan, it's important to spell out numerical targets and the basis for them. Here's what to focus on:
 
-- **What reviewers prioritize:** Innovation and uniqueness, feasibility, growth potential, and alignment with government or local authority policy objectives. Financial health and a clear risk management plan for overseas operations also matter.
-- **Bonus point items (wage hikes, certifications, etc.):** Many programs award bonus points for wage increase plans, recognition as a "Health & Productivity Management Outstanding Organization," and the Kurumin certification (work-life balance for parents). Proactively addressing these items can make the difference. Read the application guidelines carefully and don't leave any bonus points on the table.
+- **Clarity and specificity:** Describe what you'll do, where, for whom, how, and what results you're aiming for. Instead of "we want to grow overseas sales," write something like "we plan to sell our product X in the [specific market] of [specific country], targeting ¥10M in annual sales within three years."
+- **Market analysis and competitive advantage:** Analyze the target market's size, growth, customer needs, and competition, then show with objective data how your strengths (technology, quality, design) give you an edge. The Global Track guidelines also call for careful consideration of risks specific to the export destination and differences in culture, regulations, and business practices.
 
----
+### Secret 2: Use Information Sources and Expert Consultations Strategically
 
-## Real Stories: Companies That Opened Overseas Doors with Subsidies
+Subsidy details change with every round, so the shortcut is to check the latest guidelines on official sites and use free expert consultations.
 
-**Monodukuri Subsidy example: Nit-chuu Bussan Shiranuka Factory's Ezo Deer Extract in China**
-Hokkaido's Nit-chuu Bussan Shiranuka Factory used the Monodukuri Subsidy to develop a product from Ezo deer meat extract for the Chinese market. By developing a product adapted to local needs and building a distribution channel, the company successfully entered a new market — a great example of how local resources can go global with the right support.
+- **Use JETRO and SMRJ:** SMRJ's "Overseas Expansion Hands-On Support" offers free consultations on overseas business with experienced experts.
+- **Get your GBizID early:** You need a "GBizID Prime" account to apply electronically for the New Business Expansion and Monozukuri Subsidy and the Small Business Sustainability Subsidy. Online applications by a company's representative are reviewed promptly, while paper applications can take up to a month (as of November 2026). Get yours early so you're not scrambling once a call opens.
 
-**JAPAN Brand example: Yamakami Lumber's International Brand Development**
-Hokkaido furniture maker Yamakami Lumber Co., Ltd. used the JAPAN Brand Promotion Program to develop its own brand products leveraging its wood processing expertise for overseas markets. The combination of high-design products and the spirit of Japanese craftsmanship was recognized internationally, drawing attention at trade shows abroad.
+### Secret 3: Master the Review Criteria and Bonus Points
 
-**Foreign patent subsidy example: SME Company E's Patent Strategy**
-A small manufacturer with proprietary technology used the INPIT foreign patent subsidy to file patents in the US, China, and the EU — its top export target markets. This deterred local counterfeiting and laid the groundwork for confident market development, while also opening a path to future technology licensing.
+Bonus point items must be met as of the application deadline, so check them early in the guidelines and prepare whatever you can in advance.
 
----
+- **Follow the review criteria:** Review criteria are published in the guidelines. The New Business Expansion and Monozukuri Subsidy guidelines ask applicants to write a business plan that covers everything listed in the review criteria.
+- **Use bonus point items:** In Round 2 of the New Business Expansion and Monozukuri Subsidy, bonus points are available for items such as the Partnership Building Declaration, Kurumin certification, Eruboshi certification, Health & Productivity Management Outstanding Organization 2026 certification, and an approved management innovation plan. If you're applying for the Global Track, completing registration on the "New Export 10,000 Companies Support Program" portal also earns bonus points.
 
-## Overseas Expansion Subsidy FAQ
+## FAQ
 
-**Q1. Can I apply for multiple subsidies at the same time?**
-A: In principle, receiving multiple government or local subsidies for the exact same project purpose is generally difficult. However, if the project content or expense breakdowns are clearly different — or if a program explicitly allows it — stacking may be possible. Always check each program's application guidelines carefully, and when in doubt, contact the program office directly.
+**Q. Can I combine multiple subsidies?**
 
-**Q2. How long does it take from application to receiving funds?**
-A: It varies widely by program and application period, but generally: from application deadline to adoption announcement takes 1–3 months, after which you complete the project, submit a performance report, and pass an inspection — meaning the total timeline is often 6 months to a year or more. Build plenty of buffer into your cash flow planning.
+A. As a rule, you can't receive more than one national subsidy for the same expenses. For example, the New Business Expansion and Monozukuri Subsidy excludes projects whose eligible expenses overlap with another national subsidy (including those from independent administrative agencies). If you're considering combining programs, check each program's guidelines and contact the program office with any questions.
 
-**Q3. Can I reapply if I'm rejected?**
-A: Yes, reapplication is possible for most programs. If the rejection reasons are disclosed, take them seriously and strengthen your plan before reapplying. Review the evaluators' perspective and study examples of successful applicants to improve the specificity and feasibility of your proposal. Persistence pays off.
+**Q. How long does it take from application to receiving funds?**
 
----
+A. It can take close to a year or longer from application to payment. In Round 20 of the Small Business Sustainability Subsidy, the deadline is December 15, 2026, results are expected around March 2027, and the grant decision can take roughly another one to two months after approval. Because the subsidy is paid only after you carry out the project and submit a performance report, build plenty of buffer into your cash flow plan.
 
-## Conclusion: Use Subsidies as Leverage — and Take Flight Globally
+**Q. Can I reapply if I'm rejected?**
 
-Overseas expansion presents enormous growth opportunities, but also real financial and operational challenges. As this article has shown, Japan's government and local authorities have prepared a wide range of programs to powerfully support your ambitions. These public resources are like a lighthouse on the path to overseas success — illuminating the way and reducing the risk.
+A. Yes, many subsidies allow reapplication. Under the New Business Expansion and Monozukuri Subsidy, businesses that were not selected can apply again after revising their business plan.
 
-The key is to clearly define your management strategy and overseas expansion goals, then strategically select and apply for programs that align with them. That means writing high-quality business plans, staying up to date on available programs, and continuously refining your approach.
+**Q. Are there grants for overseas expansion?**
 
-If you're asking yourself, "Which subsidy is right for us?", "The application paperwork seems overwhelming," or "How do we find and manage overseas distributors?" — Leap was built for exactly these challenges. Our SaaS platform supports every stage of overseas distributor development — from prospect lists and negotiations to contract management and post-contract performance tracking — so you can focus on growth, not paperwork.
+A. Yes, local governments offer them. For example, the Tokyo Metropolitan Small and Medium Enterprise Support Center's Market Development Grant covers trade show participation and sales promotion costs, with a cap of ¥3M at a rate of up to 1/2 (FY2026 applications have closed). Other prefectures and municipalities have their own programs, so check the websites of the local government and support organizations where your company is based.
 
-Take your first step overseas with the right subsidy, and let Leap power the sustainable growth that follows.
+**Q. Can I use a subsidy to pay for building a cross-border ecommerce site?**
 
----
+A. Yes, with conditions. Under the Small Business Sustainability Subsidy, costs such as developing, building, and updating websites and online stores for sales channel development count as website-related expenses. However, you can't apply for website-related expenses alone, and the requested amount is capped at ¥300,000 (per the Round 20 guidelines).
 
-### Useful Reference Links
+## Summary and Key Takeaway
 
-*(Always confirm the latest information before applying.)*
+In 2026, the basic approach to overseas expansion subsidies is: the Global Track of the New Business Expansion and Monozukuri Subsidy for large capital investments, the Small Business Sustainability Subsidy for starting small, and INPIT's Foreign Filing Subsidy plus JETRO's infringement support for protecting your IP. As the end of the Monozukuri Subsidy shows, program names and tracks change every year, so always check the latest guidelines rather than older articles.
 
-**Small and Medium Enterprise Agency**
-- JAPAN Brand Promotion Program: [https://www.chusho.meti.go.jp/shogyo/chiiki/japan_brand/](https://www.chusho.meti.go.jp/shogyo/chiiki/japan_brand/)
-- Monodukuri Subsidy Portal: [https://portal.monodukuri-hojo.jp/](https://portal.monodukuri-hojo.jp/)
-- Small Business Sustainability Grant: [https://www.chusho.meti.go.jp/keiei/shokibo/jizoku/](https://www.chusho.meti.go.jp/keiei/shokibo/jizoku/)
+The other takeaway is that subsidies fund the activities in your plan — they don't bring in overseas customers on their own. If you use a subsidy to build a cross-border ecommerce site, writing your marketing plan into the business plan, covering which customers in which countries you'll reach after launch and how, also sets you up for results after approval.
 
-**INPIT (National Center for Industrial Property Information and Training)**
-- Foreign Patent Application Subsidy: [https://www.inpit.go.jp/](https://www.inpit.go.jp/)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
-**JETRO (Japan External Trade Organization)**
-- Overseas IP Infringement Support: [https://www.jpo.go.jp/support/chusho/shien_kaigaishingai.html](https://www.jpo.go.jp/support/chusho/shien_kaigaishingai.html)
-- SME Overseas Expansion Local Support Platform: [https://www.jetro.go.jp/services/platform/](https://www.jetro.go.jp/services/platform/)
+## References
 
-**SMRJ (Organization for Small & Medium Enterprises and Regional Innovation)**
-- Overseas Expansion Hands-On Support: [https://www.smrj.go.jp/sme/overseas/consulting/advice/index.html](https://www.smrj.go.jp/sme/overseas/consulting/advice/index.html)
-
-**Tokyo Metropolitan Small Business Promotion Corporation**
-- Market Development Grant: [http://www.tokyo-kosha.or.jp/support/josei/jigyo/shijo.html](http://www.tokyo-kosha.or.jp/support/josei/jigyo/shijo.html)
+- [New Business Expansion and Monozukuri/Commerce/Service Subsidy (Japanese) - SMRJ](https://shinjigyou-monodukuri.smrj.go.jp/)
+- [New Business Expansion and Monozukuri/Commerce/Service Subsidy Round 2 Application Guidelines (Japanese) - SMRJ](https://shinjigyou-monodukuri.smrj.go.jp/assets/documents/shinmono_application_guidelines_02.pdf)
+- [Round 2 Application Guidelines Published for the New Business Expansion and Monozukuri/Commerce/Service Subsidy (Japanese) - Mirasapo Plus](https://mirasapo-plus.go.jp/infomation/34119/)
+- [Monozukuri Subsidy Portal (Japanese) - Monozukuri Subsidy Office](https://portal.monodukuri-hojo.jp/)
+- [Small Business Sustainability Subsidy, General Type, Standard Track (Japanese) - Subsidy Office for Chamber of Commerce Areas](https://r6.jizokukahojokin.info/)
+- [Small Business Sustainability Subsidy Round 20 Application Guidelines (Japanese) - Subsidy Office for Chamber of Commerce Areas](https://r6.jizokukahojokin.info/doc/r6_koubover9_ip20.pdf)
+- [INPIT Foreign Filing Subsidy (Japanese) - INPIT](https://www.inpit.go.jp/shien/gaikoku/index.html)
+- [INPIT Foreign Filing Subsidy FY2027 Planned Schedule (Japanese) - INPIT](https://www.inpit.go.jp/content/100888820.pdf)
+- [Anti-Counterfeiting Support (Japanese) - JETRO](https://www.jetro.go.jp/services/ip_service.html)
+- [Trademark Invalidation and Cancellation Dispute Support (Japanese) - JETRO](https://www.jetro.go.jp/services/ip_service_overseas_trademark.html)
+- [Defensive Infringement Countermeasures Support (Japanese) - JETRO](https://www.jetro.go.jp/services/ip_service_overseas.html)
+- [Expanded Eligibility for Overseas Expansion Support in Partnership With Financial Institutions From FY2026 (Japanese) - Tokyo Metropolitan Government](https://www.metro.tokyo.lg.jp/information/press/2026/03/2026032707)
+- [Market Development Grant (Japanese) - Tokyo Metropolitan Small and Medium Enterprise Support Center](https://www.tokyo-kosha.or.jp/support/josei/jigyo/shijo.html)
+- [Overseas Sales Channel Development Support Program (Japanese) - Tokyo Metropolitan Small and Medium Enterprise Support Center](https://www.tokyo-kosha.or.jp/TTC/matching/sales_channel/index.html)
+- [How the Digitalization and AI Adoption Subsidy Works (Japanese) - SMRJ](https://it-shien.smrj.go.jp/about/)
+- [Digitalization and AI Adoption Subsidy 2026, Standard Track (Japanese) - SMRJ](https://it-shien.smrj.go.jp/applicant/subsidy/normal/)
+- [Digitalization and AI Adoption Subsidy 2026 Schedule (Japanese) - SMRJ](https://it-shien.smrj.go.jp/schedule/)
+- [JAPAN MALL Project (Japanese) - JETRO](https://www.jetro.go.jp/services/japan_mall.html)
+- [New Export 10,000 Companies Support Program (Japanese) - JETRO](https://www.jetro.go.jp/ichiman-export.html)
+- [Overseas Expansion Hands-On Support (Japanese) - SMRJ](https://www.smrj.go.jp/sme/overseas/consulting/advice/index.html)
+- [GBizID (Japanese) - Digital Agency](https://gbiz-id.go.jp/top/)

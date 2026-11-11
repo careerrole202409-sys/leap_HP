@@ -17,8 +17,6 @@ author_image: https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap
 author_bio: A team of experts in overseas business
 ---
 
-# Does Shopify Have a Free Plan? How to Make the Most of the Free Trial
-
 ## [Quick Summary] The Truth About Shopify's Free Plan
 
 Shopify does not offer a permanently free plan. What it does offer is a 3-day free trial that lets you explore all the core features without entering a credit card. After the trial ends, you can continue on a special promotional rate of ¥150/month for up to three months. Shopify is often compared to BASE — which has no monthly fee at all — but the two are fundamentally different in cost structure and scalability. This article clarifies exactly what you can and can't do during Shopify's free trial, and walks you through a practical roadmap for making the most of those three days.
@@ -55,7 +53,7 @@ On extensibility, the gap is even wider. Shopify comes with an ecosystem of over
 
 It's worth understanding where you'll land after the trial. As of 2026, Shopify's main plans are as follows (monthly prices based on annual billing):
 
-The <strong>Basic plan</strong> is ¥3,650/month — the entry-level option for businesses launching their first online store. It supports unlimited products and up to two staff accounts. The Shopify Payments processing fee is 3.55%.
+The <strong>Basic plan</strong> is ¥3,650/month — the entry-level option for businesses launching their first online store. It supports unlimited products, but you can't add staff accounts (as of November 2026). The Shopify Payments processing fee is 3.55%.
 
 The <strong>Grow plan</strong> is ¥10,100/month — recommended once your store has gained traction and monthly sales are growing steadily. It supports up to five staff accounts and includes professional reporting. The processing fee is 3.4%.
 
@@ -83,6 +81,18 @@ Here are a few examples of businesses — domestic and international — that mo
 
 <strong>Francfranc</strong>, a home goods brand, has integrated Shopify as part of its domestic EC operations. The platform's extensibility and reliable payment infrastructure support its broad product catalog and growing online business.
 
+## How to Use the Shopify Free Trial If You Plan to Sell Internationally
+
+If you plan to sell overseas, the most efficient approach is to set up Shopify Payments and review your shipping and tax settings for the countries you want to sell to while you're still on the free trial. Checking the settings that affect international pricing and payments before you pick a plan lets you keep moving as soon as you upgrade. Note that the free trial can't be extended.
+
+Here are three things to prepare for international sales during the trial (based on the Shopify Help Center and pricing page as of November 2026):
+
+1. **Set up Shopify Payments**: During the trial, you can set up Shopify Payments or check whether the payment provider you want to use works with Shopify. Displaying prices in local currencies and supporting local payment methods require Shopify Payments.
+2. **Review shipping and tax settings**: On the trial, you can review shipping and tax settings in your admin. Confirm that you can ship to your target countries and decide how you'll set shipping rates.
+3. **Choose a plan with international fees in mind**: Storefront translation, localized selling with Shopify Markets, local domains, and duty and tax estimation and collection are included on every plan. On the other hand, Shopify Payments charges more for internationally issued cards than for standard domestic cards in Japan: 3.9% on Basic, 3.85% on Grow, and 3.8% on Advanced.
+
+Once you're comfortable with the admin, start thinking early about how you'll attract overseas customers. If you'd like to handle everything from building your store to overseas marketing in one place, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option.
+
 ## FAQ
 
 ### Q: Is it really true that no credit card is needed for the Shopify free trial? Will I be charged automatically when it ends?
@@ -97,18 +107,19 @@ Here are a few examples of businesses — domestic and international — that mo
 
 <strong>A:</strong> Yes, it all carries over. As Shopify's official documentation confirms, any work completed during the free trial is preserved when you select a paid plan. Product data, theme settings, payment configuration, and page content are all retained and go live the moment you upgrade. To make the most of your three days, gather your product information and image assets in advance before you start — so you can build productively from day one.
 
+### Q: Can I sell to overseas customers during the Shopify free trial?
+
+<strong>A:</strong> It's safest to assume you'll start selling to overseas customers after you choose a paid plan. According to the Shopify Help Center, new stores start in private mode or with checkout disabled, and to sell to customers you need to either turn off private mode or choose a paid plan to enable checkout. Use the trial to prepare for international sales instead, such as setting up Shopify Payments and reviewing your shipping and tax settings.
+
 ## Conclusion
 
 Shopify doesn't offer a permanently free plan, but its three-day free trial — followed by a low-cost promotional period — gives you ample time to evaluate the platform with virtually no financial risk. If you complete the core setup (product listings, theme, payments, and shipping) before the trial ends, your store can go live the moment you select a plan.
 
 If cross-border sales or multilingual expansion are on your roadmap, Shopify's extensibility is a significant asset. Building your domestic foundation and preparing for overseas markets on the same platform from the start is one of the most effective ways to stay competitive over the long term.
 
-At Leap, we support the full journey — from building multilingual Shopify stores to creating locally adapted content and running international marketing campaigns. Once your domestic store is up and running, consider overseas expansion as your next step.
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
-### From Leap
+## References
 
-Leap publishes practical resources on global business — covering cross-border e-commerce, multilingual strategy, and localization for businesses ready to go international.
-
-- [EC Operations Guide](https://www.leap.site/en/ec-guide)
-- [Global Business Blog](https://www.leap.site/en/blog)
-- [Leap Services & Demo Inquiry](https://www.leap.site/en/about/#contact)
+- [Shopify Help Center: Trying Shopify with a free trial](https://help.shopify.com/en/manual/intro-to-shopify/pricing-plans/free-trial)
+- [Shopify Pricing (Japan)](https://www.shopify.com/jp/pricing)

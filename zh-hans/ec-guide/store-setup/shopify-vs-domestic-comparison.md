@@ -19,8 +19,6 @@ author_image: https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap
 author_bio: 海外业务专家团队
 ---
 
-# Shopify与日本主流电商平台深度对比：BASE、STORES与ColorMe，如何选择最适合的平台
-
 ## 【一分钟读懂】Shopify、BASE、STORES、ColorMe，到底选哪个？
 
 凡是考虑搭建电商网站的人，都绕不开同一个问题：该用哪个平台？Shopify经常被拿来与BASE、STORES、ColorMe对比，但这四个平台面向的用户群体和擅长的领域截然不同。
@@ -59,7 +57,7 @@ Shopify与其他三者最大的区别在于需要支付月费。基础套餐月�
 
 与费用同等重要的，是这个平台能否支撑您未来想做的事。在规划业务增长、海外拓展或多渠道运营时，各平台之间的差距会变得格外明显。
 
-BASE和STORES的自定义空间有限，主要依赖模板，直接编辑HTML/CSS的功能受限甚至不支持。可添加的功能也局限于平台提供的应用和插件范围，难以应对高级CRM策略、多渠道整合或集中库存管理等需求。跨境电商方面，BASE支持海外销售和多货币显示，但非英语内容需手动输入；STORES则完全不支持外币显示。
+BASE和STORES的自定义空间有限，主要依赖模板，直接编辑HTML/CSS的功能受限甚至不支持。可添加的功能也局限于平台提供的应用和插件范围，难以应对高级CRM策略、多渠道整合或集中库存管理等需求。跨境电商方面，BASE支持海外销售和多货币显示，但非英语内容需手动输入；STORES则自2026年7月起推出"海外销售联动"（海外販売連携），可通过代购服务WorldShopping BIZ向228个国家和地区销售（截至2026年11月）。
 
 ColorMe支持HTML/CSS编辑，并提供丰富的国内商户扩展功能（包括与WordPress的集成）。但多语言支持并非标准功能，需要付费应用才能实现，因此正式开展跨境电商时会遇到一定限制。
 
@@ -95,6 +93,21 @@ Shopify的扩展性远超其他平台。数千款应用覆盖SEO、广告投放�
 
 值得特别注意的是"平台迁移成本"问题。许多商户从BASE或STORES起步，销售额增长后再迁移到Shopify，但商品数据、客户数据和订单历史的迁移需要相当的时间和费用。如果从一开始就瞄准月销售额数千万日元的规模，直接在Shopify上搭建，总体成本往往更低。
 
+## 同时面向海外销售时，如何选择电商平台
+
+如果还打算面向海外销售，建议先决定采用哪种模式：一种是把自家店铺做成多语言、多币种，直接向海外顾客销售；另一种是保留面向日本国内的店铺，把海外订单交给代购服务处理。截至2026年11月，Shopify原生支持前一种模式，而BASE、STORES和ColorMe主要提供后一种模式。
+
+| 平台 | 海外销售方式（截至2026年11月） | 费用 |
+| :--- | :--- | :--- |
+| Shopify | 通过Shopify Markets按国家或地区设置语言和币种，从自家店铺直接销售 | 各套餐月费。翻译应用"Translate & Adapt"免费 |
+| BASE | 标准功能"简单海外销售"（かんたん海外販売）。由BASE旗下子公司want.jp代为购买并负责国际配送 | 仅在海外售出时收取支付金额的5%（含寄往日本国内仓库的运费），套餐手续费另计 |
+| STORES | "海外销售联动"（海外販売連携）。由WorldShopping BIZ代海外顾客购买 | WorldShopping BIZ的初始费用和月费全免，STORES使用费另计 |
+| ColorMe | "海外销售代购功能"（海外販売代行機能）。由ZenLink代为购买，并以19种语言显示引导横幅 | 无额外费用，也不按销售额收取手续费 |
+
+代购模式的优势在于：商家只需把商品寄到日本国内的指定仓库，国际配送、清关手续和多语言咨询都可以交给对方处理。另一方面，订单是以代购公司的国内订单形式送达的，因此不适合直接与海外顾客沟通，也不适合按国家精细调整价格和页面。如果想在不改变国内运营的前提下试探海外需求，代购模式更合适；如果想以自有品牌、用当地语言、币种和价格销售，Shopify是更好的选择。
+
+如果希望从自家店铺直接面向海外销售，同时把海外获客也一并交出去，连获客都能交给AI的跨境电商工具Leap也是一个选择。
+
 ## 常见问题解答
 
 <strong>Q1. 听说Shopify和BASE的月费差不多，真的吗？</strong>
@@ -106,6 +119,10 @@ Shopify的扩展性远超其他平台。数千款应用覆盖SEO、广告投放�
 <strong>Q3. Shopify功能太多，担心用不来。初学者能驾驭吗？</strong>
 Shopify的后台界面设计直观，商品上架、订单管理、支付配置等基本操作无需任何编程知识。但如果要深入做SEO优化、应用整合或个性化定制，则需要一定的学习成本，部分团队会选择借助外部专业人士的支持。Shopify拥有庞大的认证合作伙伴网络（Shopify Experts），可在搭建、运营和营销各阶段提供专业协助。实际操作中，建议先从基础套餐的简单功能入手，再随业务发展逐步添加所需功能。
 
+**Q. 可以先用日本国内平台起步，之后再增加海外销售吗？**
+
+A. 可以。截至2026年11月，BASE的"简单海外销售"、STORES的"海外销售联动"和ColorMe的"海外销售代购功能"都通过与代购服务联动来接收海外订单，无需更换平台即可开始海外销售。如果想在自家店铺中针对海外顾客细致设置语言、币种和价格，则更适合选择Shopify等支持多语言、多币种的平台。
+
 ## 总结：从业务增长战略出发，反推平台选择
 
 Shopify、BASE、STORES和ColorMe各有其明确面向的用户群体。问题的关键不是哪个平台"更好"，而是哪个平台最适合您企业的现状与未来发展方向。
@@ -116,8 +133,14 @@ Shopify、BASE、STORES和ColorMe各有其明确面向的用户群体。问题�
 
 当然，即便选择了Shopify，仅靠"导入平台"本身并不足以在跨境电商中取得成果。还需要针对目标海外市场设计本地化网站、创作本地化内容，并制定适合各市场的营销策略。
 
-Leap不仅支持在Shopify等平台上搭建电商网站，还提供各国市场的本地化网站制作和海外营销一站式服务。如需深入了解海外拓展和跨境电商的相关内容，欢迎访问我们的博客：
+Leap是一款连获客都能交给AI的跨境电商工具。只需通过对话，即可完成多语言、多币种跨境电商网站的搭建，以及SEO、邮件营销等海外获客工作。
 
-Leap海外业务与电商实用博客：
+## 参考资料
 
-https://www.leap.site/zh-hans/blog/
+- [International sales tools - Shopify Help Center](https://help.shopify.com/en/manual/international)
+- [Setting up localization for markets - Shopify Help Center](https://help.shopify.com/en/manual/markets/getting-started/localization)
+- [Pricing in local currencies - Shopify Help Center](https://help.shopify.com/en/manual/international/pricing)
+- [Shopify Translate & Adapt - Shopify 应用商店](https://apps.shopify.com/translate-and-adapt?locale=zh-CN)
+- [BASE自3月18日起将"简单海外销售"设为标准功能（日语） - PR TIMES](https://prtimes.jp/main/html/rd/p/000000288.000030814.html)
+- [STORES网店推出"海外销售联动"，无初始费用和月费即可向228个国家和地区销售（日语） - PR TIMES](https://prtimes.jp/main/html/rd/p/000000277.000031375.html)
+- [ColorMe Shop by GMO Pepabo向所有用户免费提供"海外销售代购功能"（日语） - PR TIMES](https://prtimes.jp/main/html/rd/p/000004935.000000136.html)

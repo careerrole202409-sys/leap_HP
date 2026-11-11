@@ -113,11 +113,11 @@ Basic is the most cost-efficient starting point. It includes all core EC functio
 
 #### Small Teams in a Growth Phase (Monthly Revenue ¥4.3M–¥22.6M)
 
-This is when the Grow plan becomes worth a serious look. The additional cost over Basic (¥6,450/month on annual billing) is offset by the drop in third-party payment fees from 2.0% to 1.0% — the break-even point falls around ¥5.77M in monthly revenue. Beyond that, fee savings alone justify the upgrade. Professional reporting and five staff accounts also give a growing team the operational infrastructure it needs.
+This is when the Grow plan becomes worth a serious look. The additional cost over Basic (¥6,450/month on annual billing) is offset by the drop in the Shopify Payments card rate from 3.55% to 3.4% — the break-even point falls around ¥4.3M in monthly revenue (as of November 2026). Beyond that, fee savings alone justify the upgrade. Professional reporting and five staff accounts also give a growing team the operational infrastructure it needs.
 
 #### Scaling EC and International Expansion (Monthly Revenue Over ¥22.6M)
 
-Advanced is the right fit. With 15 staff accounts, custom reporting, real-time third-party carrier shipping rates, and localized storefront capabilities, it covers everything needed for serious data operations and cross-border growth. Above ¥22.6M in monthly revenue, the 0.4% fee difference between Grow (3.40%) and Advanced (3.25%) accumulates to more than cover the plan cost difference.
+Advanced is the right fit. With 15 staff accounts, custom reporting, real-time third-party carrier shipping rates, and localized storefront capabilities, it covers everything needed for serious data operations and cross-border growth. Above ¥22.6M in monthly revenue, the 0.15-percentage-point fee difference between Grow (3.40%) and Advanced (3.25%, as of November 2026) accumulates to more than cover the plan cost difference.
 
 #### Wholesale, Multi-Brand, and Enterprise Operations (Monthly Revenue Around ¥100M+)
 
@@ -137,6 +137,78 @@ For businesses operating multiple D2C (direct-to-consumer) brands internationall
 
 ---
 
+### Choosing a Shopify Plan When You Sell Internationally
+
+Even if you sell overseas, core international features like translation and Shopify Markets are included on every plan, so the main questions are whether you need to tailor your store by country or region, and how large your overseas sales are. Shopify's Japanese pricing page breaks down the international features and fees as follows (as of November 2026):
+
+<div class="table-wrapper">
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Feature / fee</th>
+        <th>Basic</th>
+        <th>Grow</th>
+        <th>Advanced</th>
+        <th>Plus</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="table-label">Storefront translation</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td class="table-label">Localized selling with Shopify Markets</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td class="table-label">Local currency pricing and local payment methods (requires Shopify Payments)</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td class="table-label">Duty and tax estimation and collection</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td class="table-label">Store customization by region</td>
+        <td>No</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td class="table-label">Internationally issued card processing fee</td>
+        <td>3.9%</td>
+        <td>3.85%</td>
+        <td>3.8%</td>
+        <td>3.75%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+As a rule of thumb:
+
+1. **Testing international sales**: Basic or Grow is enough to get started. You can use translation, local currency pricing, and duty and tax estimation and collection.
+2. **Tailoring the experience by country or region**: Store customization by region is listed among the Advanced plan's features (Plus includes everything in Advanced).
+3. **Deciding whether fee savings justify an upgrade**: The fee for internationally issued cards differs by only 0.1 percentage points between Basic and Advanced (3.9% vs. 3.8%). To recover the ¥40,350 monthly difference on annual billing (¥44,000 − ¥3,650) through that fee gap alone, you'd need ¥40.35 million a month in sales on internationally issued cards. Choosing a plan based on the features you need is more realistic than upgrading just for international sales.
+
+Once you've chosen a plan, how you attract overseas customers is what drives revenue. If you'd like to handle everything from building your store to overseas marketing in one place, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option.
+
+---
+
 ### FAQ
 
 #### Can I start on Basic and upgrade later?
@@ -151,23 +223,19 @@ Using external payment services — PayPal, buy-now-pay-later, or convenience st
 
 Core international features — multi-language, multi-currency, Shopify Markets-based localized selling, and duty calculation — are included on all plans, including Basic. However, deep per-market customization of page layouts and content (local storefronts) and real-time third-party carrier shipping rates require Advanced. A reasonable approach: use Grow to begin international selling, then move to Advanced when you're ready to optimize market by market.
 
+#### Which Shopify plan should I choose if I want to sell internationally?
+
+If you're testing international sales, you can start on Basic or Grow. Storefront translation, localized selling with Shopify Markets, and duty and tax estimation and collection are included on every plan, Basic included (as of November 2026; local currency pricing and local payment methods require Shopify Payments). When you want to tailor your storefront by country or region, Advanced, which includes store customization by region, is the realistic next step.
+
 ---
 
 ### Conclusion: Know the Thresholds, Choose by Business Stage
 
 The most important factor in Shopify plan selection is not which plan is cheapest — it's identifying which functional threshold your current business stage requires you to clear. Basic works well at the start, but once your team reaches three or more people and data-driven operations become a priority, Grow is the natural next step. Once monthly revenue exceeds ¥10M and cross-border expansion or detailed analytics become pressing, Advanced is the right level. And for B2B, multi-brand, or enterprise-scale operations, Plus is the designed fit.
 
-Plan selection is step one in building a Shopify store. But customer acquisition, international expansion, and multilingual content are where revenue is actually won. Leap supports EC businesses across that journey — from Shopify store setup through multilingual content production and cross-border marketing. For practical resources on international expansion strategy, explore the links below.
+Plan selection is step one in building a Shopify store. But customer acquisition, international expansion, and multilingual content are where revenue is actually won.
 
----
-
-### From Leap
-
-Leap publishes ongoing content on cross-border e-commerce, multilingual web strategy, platform selection, and international SEO — topics that directly inform overseas business growth.
-
-- [EC Operations Guide](https://www.leap.site/en/ec-guide)
-- [Global Business Blog](https://www.leap.site/en/blog)
-- [Leap Services & Demo Inquiry](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ---
 
@@ -175,3 +243,4 @@ Leap publishes ongoing content on cross-border e-commerce, multilingual web stra
 
 - [Shopify Official Pricing (Japan)](https://www.shopify.com/jp/pricing)
 - [Shopify Help Center | Choosing a plan](https://help.shopify.com/en/manual/intro-to-shopify/pricing-plans/plans-features/choosing-a-plan)
+- [Shopify Help Center | Fees and costs](https://help.shopify.com/en/manual/international/pricing/fees)

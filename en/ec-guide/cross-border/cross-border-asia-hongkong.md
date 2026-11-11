@@ -107,6 +107,18 @@ Once you've achieved consistent sales in your first market, consider expanding o
 Use the sales data, customer insights, and bestselling product knowledge you gathered from marketplace selling to build a full cross-border store on Shopify. At this stage, invest in rich content in local languages (English, Traditional Chinese), and integrate with social media marketing and SEO to build your brand as a long-term asset. Think of the split as: "marketplaces for acquiring new customers, your own site for cultivating repeat buyers."
 
 
+## Selling Overseas Through Your Own Online Store: Getting Found with Multilingual SEO
+
+To attract overseas shoppers to your own online store, start by creating a separate page for each language and making sure search engines understand each version correctly. Unlike marketplaces such as Shopee and Lazada, your own store has no built-in traffic, so you have to build search traffic yourself. Google's official documentation (Google Search Central) recommends the following for multilingual sites:
+
+1. Use a different URL for each language version (for example, /en/ and /zh-tw/). Google does not recommend switching the language of the same URL based on cookies or browser settings
+2. Use hreflang (markup that tells search engines the language and region of a page) to show how the language versions relate. Write the language in ISO 639-1 format and, optionally, the region in ISO 3166-1 Alpha 2 format; specifying "zh-TW" for Taiwan is treated as Traditional Chinese
+3. Don't automatically change content based on the visitor's IP address. Google usually crawls from the United States, so it may not find every language version. Instead, put links on every page that let visitors choose their language or region
+
+For Singapore, Taiwan, and Hong Kong, that means preparing English and Traditional Chinese versions and writing product descriptions and blog posts around the terms people actually search for in each market, so products that sold well on marketplaces can also draw search traffic to your own store. After launch, check visits by country and add more content first in the language versions for the markets that respond best.
+
+With Leap, a cross-border ecommerce tool that lets AI handle marketing too, you choose your languages and target countries, AI suggests localization changes, and you can create multilingual blog posts for SEO and AIO and check visits by country — all through chat.
+
 ## FAQ: Common Questions from Cross-Border E-Commerce Teams
 
 ### Q1. Should I Start with Singapore or Taiwan?
@@ -121,6 +133,10 @@ The most in-demand Japanese product categories in Southeast Asia, Taiwan, and Ho
 
 For a small-scale start, Japan Post's international mail services — small parcel, SAL (surface air lifted), and EMS (Express Mail Service) — offer the best cost-performance balance. When selling through Shopee, the platform's built-in logistics service is also available, and delivery to Taiwan and Singapore tends to be relatively reliable. As sales grow, move to a third-party logistics (3PL) provider for warehousing and fulfillment to reduce delivery times and costs. Always verify each country's import regulations and ingredient restrictions for food and cosmetics before shipping.
 
+### Q4. How Do I Start Attracting Overseas Search Traffic to My Own Store?
+
+Start by creating a separate URL for each market's language and using hreflang to tell search engines how the language versions relate. Google recommends putting links on every page that let visitors choose their language or region, rather than switching content automatically by IP address (per Google Search Central guidance as of November 2026). From there, keep adding product descriptions and blog posts built around the terms people search for in each market.
+
 
 ## Summary: Starting Cross-Border E-Commerce Means Choosing One Market and One Platform
 
@@ -130,16 +146,7 @@ In parallel, building a multilingual Shopify store reduces your marketplace depe
 
 The next step after reading this article is simple: open the Shopee Japan account registration page. That's where it all begins.
 
-
-## From Leap
-
-Leap continuously publishes practical insights for small and mid-sized businesses taking on cross-border e-commerce and international marketing. From market entry know-how for Singapore, Taiwan, and Hong Kong to multilingual website building and localization strategy, we cover every step of your overseas expansion.
-
-Browse our other articles for more:
-
-- [Overseas Business Blog](https://www.leap.site/en/blog/)
-- [Intellectual Property & Brand Protection for Expanding into Singapore](https://www.leap.site/en/blog/countries/singapore/singapore-ip-brand-protection/)
-- [Multilingual E-Commerce Website Building](https://www.leap.site/en/services/multilingual-ec)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 
 ## References
@@ -152,3 +159,5 @@ Browse our other articles for more:
 - [Southeast Asia's Major Platform "Lazada" Explained (Japanese)](https://note.com/mul_connect/n/nbf37bc24328e)
 - [What Is Lazada? Features, Sales Strategy, and Differences from Shopee (Japanese)](https://www.gmo-globalec.co.jp/trend/what_is_lazada_features_sales_strategies_differences_from_shopee_cross-border-ec/)
 - [Benefits of Cross-Border E-Commerce on Southeast Asia's Largest Platform "Shopee" — ebiz (Japanese)](https://ec.smrj.go.jp/blog/overseas/20211203-1.html)
+- [Managing Multi-Regional and Multilingual Sites - Google Search Central](https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites)
+- [Localized Versions of your Pages - Google Search Central](https://developers.google.com/search/docs/specialty/international/localized-versions)

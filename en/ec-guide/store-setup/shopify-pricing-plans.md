@@ -48,7 +48,7 @@ Credit card processing fees via Shopify Payments start at 3.55%, and using a thi
 
 Grow is the mid-tier plan at ¥13,500/month on monthly billing, or ¥10,100/month on annual billing. Compared to Basic, the credit card processing fee drops to 3.4%, and the transaction fee on third-party payments falls to 1.0%. You can add up to 5 staff accounts, making it suitable for team-managed stores. Professional reporting features become available, improving the depth of your sales analytics.
 
-Once your monthly revenue exceeds ¥5.77 million, switching from Basic to Grow means the reduction in processing fees outweighs the higher monthly fee — lowering your total cost (see the simulation below). Consider moving to Grow when you start managing the store with multiple staff members, or when monthly revenue consistently exceeds ¥5 million.
+Once your monthly revenue exceeds ¥4.3 million (based on pricing as of November 2026), switching from Basic to Grow means the reduction in processing fees outweighs the higher monthly fee — lowering your total cost (see the simulation below). Consider moving to Grow when you start managing the store with multiple staff members, or when monthly revenue consistently exceeds ¥5 million.
 
 ### Advanced Plan (¥44,000/month, billed annually)
 
@@ -60,7 +60,7 @@ Custom reporting is also available, making Advanced a strong fit for mid-sized a
 
 Plus is Shopify's enterprise plan for large-scale EC operators, D2C brands, and businesses running serious cross-border commerce. It starts at ¥368,000/month (USD contracts are also available). Credit card processing fees start at 2.9% — the lowest across all plans — and transaction fees on third-party payments are compressed to just 0.20%. Unlimited staff accounts, full checkout customization, unlimited B2B catalog access, and 24/7 enhanced support are among the features that set Plus apart qualitatively from the standard tiers.
 
-Adopted by global brands including ZARA, Red Bull, and Allbirds, Shopify Plus becomes a serious option for businesses with monthly revenues in the tens of millions of yen that need flexibility in system customization and are ready to invest in premium support.
+Shopify Plus becomes a serious option for businesses with monthly revenues in the tens of millions of yen that need flexibility in system customization and are ready to invest in premium support.
 
 
 ## Zero Setup Costs and How to Make the Most of the Free Period
@@ -82,11 +82,11 @@ The real goal of plan selection is minimizing your monthly total cost — subscr
 - Grow: ¥10,100 + ¥1,000,000 × 3.40% = ¥10,100 + ¥34,000 = <strong>¥44,100</strong>
 - → At this scale, Basic is more cost-effective.
 
-<strong>At ¥5.77 million/month in revenue (break-even point):</strong>
+<strong>At ¥4.3 million/month in revenue (break-even point, based on pricing as of November 2026):</strong>
 
-- Basic: ¥3,650 + ¥5,770,000 × 3.55% = ¥3,650 + ¥204,835 = <strong>¥208,485</strong>
-- Grow: ¥10,100 + ¥5,770,000 × 3.40% = ¥10,100 + ¥196,180 = <strong>¥206,280</strong>
-- → Once monthly revenue exceeds ¥5.77 million, Grow becomes marginally cheaper.
+- Basic: ¥3,650 + ¥4,300,000 × 3.55% = ¥3,650 + ¥152,650 = <strong>¥156,300</strong>
+- Grow: ¥10,100 + ¥4,300,000 × 3.40% = ¥10,100 + ¥146,200 = <strong>¥156,300</strong>
+- → Once monthly revenue exceeds ¥4.3 million, Grow becomes cheaper.
 
 <strong>Comparing ¥5 million vs. ¥10 million/month:</strong>
 
@@ -122,6 +122,27 @@ The third factor is <strong>whether you can use Shopify Payments</strong>. Using
 The fourth factor is <strong>cross-border and global expansion plans</strong>. If you're scaling up international sales, Advanced's per-market store customization is a powerful asset. Combined with multilingual support and currency switching, it enables a purchase experience optimized for users in each target country.
 
 
+## Shopify Pricing When You Sell Internationally
+
+When you sell to overseas customers, your Shopify monthly fee stays the same as for domestic sales, but cross-border card processing fees and currency conversion fees are added on top. International selling features such as translation and Shopify Markets are included on every plan, Basic included (as of November 2026).
+
+The main fees for accepting payments from overseas customers through Shopify Payments are as follows (Japan, as of November 2026):
+
+| Fee | Basic | Grow | Advanced | Plus |
+|---|---|---|---|---|
+| Domestic card (standard) processing | 3.55% | 3.4% | 3.25% | 2.9% |
+| Internationally issued card processing | 3.9% | 3.85% | 3.8% | 3.75% |
+| Currency conversion | 2% | 2% | 2% | 2% |
+
+The currency conversion fee applies when the currency a customer pays in differs from your payout currency. The rate depends on your store's primary country: the Help Center lists 1.5% for the United States and 2% for France and all other Shopify Payments regions.
+
+As a worked example, suppose an overseas customer pays the equivalent of ¥100,000 in US dollars with an internationally issued card on the Basic plan. You'd pay ¥3,900 in processing fees (3.9%) plus ¥2,000 in currency conversion fees (2%), for ¥5,900 in total. That's ¥2,350 more than the ¥3,550 (3.55%) you'd pay when a domestic customer pays ¥100,000 with a domestic card.
+
+If you also calculate and collect duties and import taxes at checkout, a separate fee applies to those orders (0.85% with Shopify Payments, 1.5% with other payment providers; temporarily lowered to 0.5% from February 2, 2025).
+
+To judge whether overseas sales are profitable, factor in shipping and marketing costs alongside these fees. If you'd like to handle everything from building your store to overseas marketing in one place, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option.
+
+
 ## Frequently Asked Questions (FAQ)
 
 ### Q1. Can I use Shopify's free trial without a credit card?
@@ -136,28 +157,20 @@ There's no need to commit to annual billing from day one. The practical approach
 
 Yes. When you use a third-party payment provider — PayPal, convenience store payments, or buy-now-pay-later services — Shopify charges an additional transaction fee on top of the provider's own fees. The rates are 2.0% on Basic, 1.0% on Grow, 0.6% on Advanced, and 0.20% on Plus. Stores with a high proportion of third-party payments — for example, cross-border stores using PayPal, or domestic stores offering convenience store or deferred payment options — will feel this additional cost more significantly. Always include this fee in your total cost calculations.
 
+### Q4. Are Shopify fees higher when I sell to overseas customers?
+
+Yes, payments from overseas customers generally cost more than domestic ones. With Shopify Payments in Japan, the processing fee for internationally issued cards is 3.9% on Basic, compared with 3.55% for standard domestic cards (as of November 2026). If the customer pays in a currency other than Japanese yen, a currency conversion fee also applies (2% for stores outside the United States and France, including Japan). Your monthly plan fee doesn't change.
+
 
 ## In Closing: Choose Your Plan Based on Current Revenue and 3-Month Projections
 
 The most important principle when choosing a Shopify pricing plan is not to decide based on the monthly fee alone. Comparing total cost — including payment processing and transaction fees — is what reveals the right plan for your business.
 
-Start on Basic if monthly revenue is below ¥5.77 million, then move to Grow once it crosses that threshold. Keep the Advanced break-even point in mind as you approach ¥25 million/month. If you're scaling cross-border e-commerce or expanding into multiple markets, Advanced or above unlocks the per-market customization features you'll need. Keeping these decision criteria in mind makes budgeting before you build your store significantly more straightforward.
+Start on Basic if monthly revenue is below ¥4.3 million, then move to Grow once it crosses that threshold (based on pricing as of November 2026). Keep the Advanced break-even point in mind as you approach ¥25 million/month. If you're scaling cross-border e-commerce or expanding into multiple markets, Advanced or above unlocks the per-market customization features you'll need. Keeping these decision criteria in mind makes budgeting before you build your store significantly more straightforward.
 
 Shopify is a platform that requires zero upfront costs — making it an accessible entry point not just for launching a domestic EC store, but for multilingual, cross-border commerce as well. Start with the free trial and see what it can do.
 
-
-## A Note from Leap
-
-Leap continuously publishes practical information on cross-border e-commerce and overseas expansion using Shopify and other EC platforms. Our EC Operations Manual covers everything from platform selection to payments, logistics, traffic acquisition, and SEO in a structured, step-by-step format.
-
-Leap's multilingual web marketing platform goes beyond translation — we create locally localized pages from scratch for each target market, delivering store pages and traffic acquisition strategies optimized for each country. If you're serious about growing your cross-border EC revenue, explore our other blog articles as well.
-
-Latest insights and practical know-how on international business:
-https://www.leap.site/en/blog/
-
-EC Operations Manual (including cross-border EC and multilingual support):
-https://www.leap.site/en/ec-guide/
-
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -167,3 +180,5 @@ https://www.leap.site/en/ec-guide/
 - [knowledge.binc.jp | In-Depth Guide to Shopify Pricing Plans](https://knowledge.binc.jp/shopify-pricing)
 - [commerce-media.info | Shopify Plans and Payment Fees](https://commerce-media.info/blogs/ec/shopify-plan)
 - [rabo.co.jp | How to Choose a Shopify Plan by Monthly Revenue](https://rabo.co.jp/blog/shopify/shopify-plan-guide)
+- [Shopify Help Center | Fees and costs](https://help.shopify.com/en/manual/international/pricing/fees)
+- [Shopify Help Center | Collecting international duties and import taxes at checkout](https://help.shopify.com/en/manual/international/duties-and-import-taxes/charging-duties)

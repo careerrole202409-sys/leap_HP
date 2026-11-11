@@ -20,6 +20,8 @@ author_bio: A team of experts in overseas business
 
 ### [Quick Summary] Your Product Listing Page Design Is Directly Affecting Your Sales
 
+On BASE, the product listing consists of the "ALL ITEM" page, which shows every published product, and the category-specific "CATEGORY" pages you create with the Category Management App. You change the display order with "Sort" (並び替え) on the Products screen of the admin panel, and the look by selecting "Product list page" (商品一覧ページ) on the Design screen.
+
 BASE (pronounced "bah-zeh") is a Japan-based all-in-one e-commerce platform widely used by small-to-mid-sized Japanese businesses. If you're running a store on BASE and finding that your purchase rate isn't improving despite a growing product catalog — or that visitors are leaving quickly — the product listing page is often the culprit.
 
 This article walks through four areas of optimization for your BASE product listing page, with the goal of making it easy for customers to find exactly what they're looking for: layout design (including column count), using the Category Management App to organize your catalog, sorting bestsellers and new arrivals to the top, and handling sold-out products appropriately.
@@ -75,6 +77,39 @@ For apparel, a three-tier hierarchy — Women's → Outerwear → Coats — lets
 
 Keep category names short and intuitive. Heavy use of an "Other" category tends to reduce browsing depth. Also worth knowing: a single product can belong to multiple categories. Creating a "New Arrivals" category and tagging products for a set period after their release date is a useful ongoing practice.
 
+### How to Create and Edit Categories for Your BASE Product Listing
+
+To organize your BASE product listing into categories, register categories in the Category Management App, then check the relevant category boxes on each product's registration or edit screen. There is no limit on the number of categories, and you can nest them up to three levels deep (per BASE Help as of November 2026).
+
+#### Steps to Set Up Categories
+
+1. From the global navigation in the admin panel, select "Apps," click "Add App," search for "Category Management," and install it
+2. On the category page, click "+ Add Primary Category" (＋ 大カテゴリ追加), type a name, and press Enter to confirm (emoji and platform-specific characters may not save)
+3. To add secondary or tertiary categories, click the "+" next to the parent category and enter a name the same way
+4. On the Products screen, register or edit a product, switch on the checkbox for each category you want, and save
+
+A single product can belong to multiple categories, so you can assign both a type-based category like "Tops" and a feature-based one like "New Arrivals" at the same time.
+
+#### Steps to Change a Product's Categories
+
+1. For one product at a time: edit the product on the Products screen, change the category checkboxes, and save
+2. For many products at once: import a CSV from the "Bulk Category Registration" (一括カテゴリ登録) page in the Category Management App
+
+#### Steps to Edit the Design of Category Pages
+
+1. Open the Design screen in the admin panel
+2. Under "Page being edited" (編集中のページ), select "Product list page" (商品一覧ページ) and edit the layout
+
+Changes made to the product list page apply to every listing page: the ALL ITEM page, CATEGORY pages, and the search results page of the Product Search App. You can't give individual categories their own design.
+
+#### Steps to Change the Sort Order of Your Product Listing
+
+1. In the admin panel on a computer, open the Products screen and click "Sort" (並び替え) in the top-left of the product list
+2. Drag and drop products, or click a product's order number, enter the position you want, and click "Apply sort" (並び替える)
+3. Click "Finish sorting" (並び替えを終了) at the bottom of the screen
+
+The new order is reflected on your shop page. Note that the "Sort by" (並び順) option in the top-right of the Products screen only changes how products are displayed inside the admin panel; it doesn't change the order on your shop page.
+
 ### Sorting Bestsellers and New Products to the Top
 
 #### BASE's Built-In Sort Functionality
@@ -121,6 +156,18 @@ A BASE shop selling sporting goods established a rule to move sold-out products 
 
 What these cases share is the same two principles: customer-first design, and consistent, ongoing review. Setting up your listing page isn't a one-time task — regularly updating it in response to catalog growth, seasonal changes, and sales data is what sustains improvement over time.
 
+### Your BASE Product Listing When You Also Sell Internationally
+
+If you also sell internationally, BASE's built-in Easy International Sales feature (かんたん海外販売) automatically shows a reference price in US dollars alongside the yen price on your product listing and product pages. However, anything you type yourself, such as product names and category names, is not translated automatically, so you need to prepare English text on your own (as of November 2026).
+
+Easy International Sales shows an international-only shopping cart to visitors from overseas, and the forwarding company want.jp Inc. handles international shipping. When preparing your listing for overseas shoppers, keep these three points in mind:
+
+1. The English & Foreign Currency App only switches part of the interface, such as fixed text on your shop pages, to English. Product names, product descriptions, and text entered on the Design screen stay in Japanese, so write them in both Japanese and English
+2. Out-of-stock items, pre-orders, lottery sales, subscription items, and digital content, among others, are excluded from Easy International Sales. Overseas shoppers may see items in your listing that they can't buy, so moving sold-out items to the bottom helps your international customers too
+3. AI automatically decides whether each item can be sold abroad, and items whose product name or description doesn't make clear what the item is (for example, a necklace or a T-shirt), what it's used for, and what's included are excluded. Writing specific product descriptions increases the number of items overseas customers can buy
+
+Also note that Easy International Sales doesn't let you choose which products or countries to sell to. If you want to show different products in different countries, or present your catalog in languages other than English, another option is a tool that supports multiple languages, multiple currencies, and country-specific product settings, such as Leap, a cross-border ecommerce tool that lets AI handle marketing too.
+
 ### FAQ
 
 **Q1. Will installing the Category Management App affect how my existing products are displayed?**
@@ -135,23 +182,17 @@ Yes — the number input field in BASE's product management panel is significant
 
 It depends on your shop's approach. For products with no restock planned, setting them to private keeps the listing clean and improves the browsing experience for visitors. On the other hand, SOLD OUT labels on popular products can reinforce shop credibility, and combined with a restock notification feature, they can serve as a way to capture email addresses from interested customers. The right answer is product-by-product: weigh inventory status, restock prospects, and your brand direction for each item.
 
+**Q4. Can I display my BASE product listing in English for overseas customers?**
+
+Only partly. With the English & Foreign Currency App, part of the interface, such as fixed text on your shop pages, switches to English, and shoppers can see approximate prices in the currencies you've enabled (payment is still in Japanese yen). Product names, descriptions, category names, and other text you enter yourself are not translated automatically, so you need to add the English versions yourself.
+
 ### Conclusion: Optimizing Your Product Listing Page Raises the Floor of Your Entire Shop
 
 There are many levers to pull when growing sales on BASE, but product listing page optimization is one of the most immediately actionable — and one of the most reliably effective. Implementing the four areas covered in this article — layout design, the Category Management App, sort order strategy, and sold-out product management — builds a shop where customers reach the right product without friction.
 
 A well-structured listing page improves browsing depth, add-to-cart rates, and purchase completion rates. The setup effort is modest. Start with two things: install the Category Management App, and update your sort order based on the past month of sales data.
 
-### From Leap | Resources for Cross-Border and Overseas Business
-
-For EC operators considering overseas sales and cross-border expansion: the principles behind an effective product listing page apply equally to international storefronts — and the complexity compounds when multilingual design and localization are involved.
-
-Leap supports small-to-mid-sized businesses building multilingual websites and EC stores for international markets. Our focus is on localization over translation: building pages designed around how buyers in each target market actually browse and buy.
-
-We publish practical resources for cross-border EC and international business on an ongoing basis.
-
-- [EC Operations Guide](https://www.leap.site/en/ec-guide)
-- [Global Business Blog](https://www.leap.site/en/blog)
-- [Leap Services & Demo Inquiry](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ### References
 
@@ -163,3 +204,13 @@ We publish practical resources for cross-border EC and international business on
 - [BASE Help | Admin Panel (Product Management)](https://help.thebase.in/hc/ja/sections/202008882)
 - [BASE Design Theme UNIVERSE User Guide](https://basedesign.info/universe/)
 - [BASE Design Theme DEPARTMENT User Guide](https://department.mulberry-web.com/)
+- [BASE Help | Can I Change the Display Order of Registered Products? (Japanese)](https://help.thebase.in/hc/ja/articles/206417921)
+- [BASE Help | Can I Register Categories in Bulk? (Japanese)](https://help.thebase.in/hc/ja/articles/13765921905817)
+- [BASE Help | Can One Product Belong to Multiple Categories? (Japanese)](https://help.thebase.in/hc/ja/articles/13765871889817)
+- [BASE Help | How Many Categories Can I Register? (Japanese)](https://help.thebase.in/hc/ja/articles/13765910501913)
+- [BASE Help | Can I Design the CATEGORY Page? (Japanese)](https://help.thebase.in/hc/ja/articles/19789393346073)
+- [BASE Help | Can I Design the ALL ITEM Page? (Japanese)](https://help.thebase.in/hc/ja/articles/19789425693721)
+- [BASE Help | How to Install and Uninstall Apps (Japanese)](https://help.thebase.in/hc/ja/articles/206341562)
+- [BASE Help | About Easy International Sales (Japanese)](https://help.thebase.in/hc/ja/articles/52804478331929)
+- [BASE Help | Items That Can't Be Sold with Easy International Sales (Japanese)](https://help.thebase.in/hc/ja/articles/52804551625881)
+- [BASE Help | English & Foreign Currency App: English Display, Foreign Currency, and International Sales (Japanese)](https://help.thebase.in/hc/ja/articles/206417601)

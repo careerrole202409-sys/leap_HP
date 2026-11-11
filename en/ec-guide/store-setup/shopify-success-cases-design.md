@@ -34,7 +34,7 @@ One reason businesses choose Shopify is that this combination of design quality 
 
 #### How to Actually Analyze a Store's UI/UX
 
-When looking at store examples, it's easy to stop at "that looks great." Go further. Four specific questions to ask: ① What is the first thing the above-the-fold section communicates? ② How is the product page structured — what's the information hierarchy? ③ Where is the purchase path (add-to-cart) placed? ④ How does the store perform on mobile? Applying this analytical lens to each case transforms observation into something you can actually act on.
+When looking at store examples, it's easy to stop at "that looks great." Go further. Four specific questions to ask: 1. What is the first thing the above-the-fold section communicates? 2. How is the product page structured — what's the information hierarchy? 3. Where is the purchase path (add-to-cart) placed? 4. How does the store perform on mobile? Applying this analytical lens to each case transforms observation into something you can actually act on.
 
 ---
 
@@ -122,7 +122,19 @@ Prestige is a refined, high-end theme popular among fashion, cosmetics, and jewe
 
 #### Three Criteria for Theme Selection
 
-When you're stuck between themes, three axes help clarify the decision: ① Product catalog depth (if you're managing hundreds of SKUs, prioritize themes with robust filtering capabilities); ② Visual-led vs. text-led communication (match the theme's strength to your brand's communication style); ③ Cross-border plans (confirm whether multi-language and multi-currency support is built in natively).
+When you're stuck between themes, three axes help clarify the decision: 1. Product catalog depth (if you're managing hundreds of SKUs, prioritize themes with robust filtering capabilities); 2. Visual-led vs. text-led communication (match the theme's strength to your brand's communication style); 3. Cross-border plans (confirm whether multi-language and multi-currency support is built in natively).
+
+---
+
+### Shopify Store Design When You Also Sell Overseas
+
+When you also sell overseas, the first priority for a Shopify store isn't visual polish. It's building country, language, and currency switching into your theme and making sure your pages still communicate once translated. Based on Shopify's official Help Center and App Store, here are the three main settings as of November 2026.
+
+1. **Show country and language selectors**: Most Shopify themes include built-in country/region and language selectors, typically in the header or footer. After setting up the countries, regions, and languages you sell in with Shopify Markets, turn on the selectors in the header or footer section of the theme editor.
+2. **Translate your content**: Shopify's free Translate & Adapt app lets you translate content manually or with AI translations from Shopify. Translations by Shopify are available for up to two languages (eight in select countries), and you can localize directly from the theme editor. Copy embedded in images can't be translated as text, so on an international store, put headlines and descriptions in actual text rather than images to make them easy to swap for each language.
+3. **Show prices in local currencies**: For each market, customers can see prices, pay, and receive refunds in their local currency. By default, prices are converted automatically at the current market exchange rate, and you can set price rounding for each market. However, only stores using Shopify Payments with access to one-page checkout can use every part of this feature.
+
+Design that conveys a brand through color and product photography, like the stores featured in this article, carries over no matter the language. If you want to handle store building, localization, and overseas marketing in a single chat, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is also an option.
 
 ---
 
@@ -138,7 +150,11 @@ A. Design and UX are more directly connected to short-term conversion (purchase 
 
 #### Q3. What's different about building a Shopify store with cross-border selling in mind?
 
-A. Three things to address first: ① Multilingual capability (product descriptions, navigation, customer support across languages); ② Multi-currency and local payment method support; ③ International shipping configuration and compliance with import regulations and duties. Shopify Markets makes it possible to serve multiple countries from a single store — customizing price, language, and currency per market. The important caveat: translation alone rarely converts well with international audiences. Localization — adapting value propositions, cultural tone, and SEO keywords to each target market — is what actually drives sales.
+A. Three things to address first: 1. Multilingual capability (product descriptions, navigation, customer support across languages); 2. Multi-currency and local payment method support; 3. International shipping configuration and compliance with import regulations and duties. Shopify Markets makes it possible to serve multiple countries from a single store — customizing price, language, and currency per market. The important caveat: translation alone rarely converts well with international audiences. Localization — adapting value propositions, cultural tone, and SEO keywords to each target market — is what actually drives sales.
+
+**Q. Do I need a separate Shopify store for each country?**
+
+A. Not necessarily. With Shopify Markets, a single store can create markets for different countries and regions and serve each one its own language and currency. That said, businesses with separate local teams in each country can also sell cross-border through multiple stores.
 
 ---
 
@@ -150,9 +166,7 @@ Every successful store in this list applies five principles: brand color consist
 
 For businesses with cross-border expansion on the roadmap, localization becomes the critical additional layer. Translating a Japanese-language site into English doesn't reliably produce results with international customers. Rebuilding content to match the cultural context, values, and buying behavior of each target market — localization rather than translation — is what drives revenue in international EC.
 
-Leap supports cross-border EC expansion end to end, from multilingual site builds to market-specific content production. Our approach centers on localization, not translation — building the conditions for genuine acquisition and sales in overseas markets. We also publish practical guidance for international business on an ongoing basis.
-
-https://www.leap.site/en/blog/
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ---
 
@@ -169,3 +183,7 @@ https://www.leap.site/en/blog/
 - [Anker Japan Official Online Store](https://www.ankerjapan.com/)
 - [Nissin Foods Group Online Store](https://store.nissin.com/)
 - [Seisuke Knife Official Online Store](https://seisukeknifekappabashi.com/)
+- [Setting up localization for markets - Shopify Help Center](https://help.shopify.com/en/manual/markets/getting-started/localization)
+- [Pricing in local currencies - Shopify Help Center](https://help.shopify.com/en/manual/international/pricing)
+- [International sales tools - Shopify Help Center](https://help.shopify.com/en/manual/international)
+- [Shopify Translate & Adapt - Shopify App Store](https://apps.shopify.com/translate-and-adapt)
