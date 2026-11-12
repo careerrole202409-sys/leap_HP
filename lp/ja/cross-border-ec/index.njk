@@ -2,6 +2,7 @@
 locale: ja
 title: 越境ECサイトの構築を、チャットだけで | Leap
 description: 多言語・多通貨に対応した越境ECサイトが、AIと話すだけで完成。主要22カ国への販売から集客まで、まとめてLeapに任せられます。
+openai_pixel_id: 9CxzcYKfjP4xqTj5c6q4JE
 ---
 
 <!DOCTYPE html>
@@ -9,6 +10,28 @@ description: 多言語・多通貨に対応した越境ECサイトが、AIと話
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if openai_pixel_id %}
+  <!-- OpenAI広告の計測（Measurement Pixel）。1ページに1つだけ。https://developers.openai.com/ads/measurement-pixel -->
+  <script>
+    (function (w, d, s, u) {
+      if (w.oaiq) return;
+      var q = function () {
+        q.q.push(arguments);
+      };
+      q.q = [];
+      w.oaiq = q;
+      var js = d.createElement(s);
+      js.async = true;
+      js.src = u;
+      var f = d.getElementsByTagName(s)[0];
+      f.parentNode.insertBefore(js, f);
+    })(window, document, "script", "https://bzrcdn.openai.com/sdk/oaiq.min.js");
+
+    oaiq("init", {
+      pixelId: "{{ openai_pixel_id }}",
+    });
+  </script>
+  {% endif %}
   <!-- 広告用のページなので、検索結果には出さない -->
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="/assets/favicon.png">
@@ -896,7 +919,8 @@ section[id] { scroll-margin-top: 100px; }
 // 資料ダウンロード：送信先はHP右下のCTAと同じGoogleフォーム（_data/guideForm.json）
 (function () {
   var GUIDE_FORM = {{ guideForm | dump | safe }};
-  var card = document.getElementById('cb-form-card');
+  var card = document.getElementById('download');
+  var leadMeasured = false;   // OpenAI広告のコンバージョンは、送信1回につき1度だけ送る
 
   document.getElementById('cb-form').addEventListener('submit', function (e) {
     e.preventDefault();
@@ -915,6 +939,11 @@ section[id] { scroll-margin-top: 100px; }
 
     try { localStorage.setItem('leapGuideRequested', '1'); } catch (err) {}
     if (typeof gtag === 'function') gtag('event', 'generate_lead', { lead_source: 'lp_google' });
+    // OpenAI広告のコンバージョン（標準イベント lead_created）。送信が完了したこのタイミングでだけ呼ぶ
+    if (!leadMeasured && typeof oaiq === 'function') {
+      oaiq('measure', 'lead_created', { type: 'customer_action' });
+      leadMeasured = true;
+    }
     card.classList.add('is-done');
   });
 
