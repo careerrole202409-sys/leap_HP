@@ -1,0 +1,43 @@
+---
+title: LP一覧（社内用） | Leap
+permalink: /lp/
+---
+{#- 社内の管理用。lp/ 配下のLPを自動で一覧にする（データは _data/lpPages.js。LPを足しても、このページを直す必要はない）。
+    非表示にするLPは、ファイルの先頭に hidden: true・permalink: false・eleventyExcludeFromCollections: true を書く -#}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>{{ title }}</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif; margin: 24px 16px; color: #1a1a2e; background: #fff; }
+    h1 { font-size: 1.3rem; }
+    table { border-collapse: collapse; width: 100%; max-width: 1100px; }
+    th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; font-size: 0.9rem; vertical-align: top; }
+    th { background: #f5f5f5; }
+    td a { word-break: break-all; }
+    tr.is-hidden td { color: #999; background: #fafafa; }
+  </style>
+</head>
+<body>
+  <h1>LP一覧（社内用）</h1>
+  <p>サイトからリンクしていないLPの一覧です。このページも、LPもすべて検索結果には出ない設定です。非表示のLPは、URLを開いても表示されません。</p>
+  <table>
+    <thead>
+      <tr><th>状態</th><th>言語</th><th>タイトル</th><th>URL</th></tr>
+    </thead>
+    <tbody>
+      {%- for p in lpPages %}
+      <tr{% if p.hidden %} class="is-hidden"{% endif %}>
+        <td>{{ '非表示' if p.hidden else '公開中' }}</td>
+        <td>{{ p.lang }}</td>
+        <td>{{ p.title or '（タイトル未設定）' }}</td>
+        <td>{% if p.hidden %}https://www.leap.site{{ p.path }}{% else %}<a href="{{ p.path }}" target="_blank" rel="noopener">https://www.leap.site{{ p.path }}</a>{% endif %}</td>
+      </tr>
+      {%- endfor %}
+    </tbody>
+  </table>
+</body>
+</html>

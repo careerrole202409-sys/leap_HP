@@ -1,4 +1,7 @@
 ---
+hidden: true        # 非表示（ページを出力しない）。表示に戻すときはこの行と下の permalink の行を消す
+permalink: false
+eleventyExcludeFromCollections: true
 locale: zh-hans
 title: 只需与AI对话，即可开设并运营电商网站｜Leap EC Agent
 description: 无需Shopify、BASE。只需与AI对话，即可完成电商网站搭建、商品管理、订单管理。抢先体验全球首个AI电商代理（AI EC Agent）。
@@ -8,6 +11,7 @@ description: 无需Shopify、BASE。只需与AI对话，即可完成电商网站
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="/assets/favicon.png">
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">

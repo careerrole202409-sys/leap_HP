@@ -1,4 +1,7 @@
 ---
+hidden: true        # 非表示（ページを出力しない）。表示に戻すときはこの行と下の permalink の行を消す
+permalink: false
+eleventyExcludeFromCollections: true
 locale: en
 title: Launch and Run an EC Store with Just an AI Chat | Leap EC Agent
 description: No Shopify or BASE needed. Just chat with AI to build, manage, and run your online store — products, orders, everything. Be an early tester of the world's first AI EC Agent.
@@ -8,6 +11,7 @@ description: No Shopify or BASE needed. Just chat with AI to build, manage, and 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="/assets/favicon.png">
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">

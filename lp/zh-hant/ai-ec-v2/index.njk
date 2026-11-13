@@ -1,4 +1,7 @@
 ---
+hidden: true        # 非表示（ページを出力しない）。表示に戻すときはこの行と下の permalink の行を消す
+permalink: false
+eleventyExcludeFromCollections: true
 locale: zh-hant
 title: 只要與AI對話，就能開店經營 | Leap EC Agent
 description: 只要與AI聊天，就能開店並經營網路商店——商品上架、訂單管理、多語言支援全部涵蓋。全球首創AI原生電商平台，目前開放20個名額的β版測試申請。
@@ -9,6 +12,7 @@ description: 只要與AI聊天，就能開店並經營網路商店——商品�
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="/assets/favicon.png">
 
   <title>{{ title }}</title>

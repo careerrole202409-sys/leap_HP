@@ -1,4 +1,7 @@
 ---
+hidden: true        # 非表示（ページを出力しない）。表示に戻すときはこの行と下の permalink の行を消す
+permalink: false
+eleventyExcludeFromCollections: true
 locale: ja
 title: AIと話すだけでネットショップを開設・運営 | Leap EC Agent
 description: AIとのチャットだけで、ネットショップを開設・運営。商品登録・注文管理・多言語対応までAIがサポートする次世代AI EC Agent。現在20名様限定でβ版テストユーザー募集中。
@@ -9,6 +12,7 @@ description: AIとのチャットだけで、ネットショップを開設・�
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="/assets/favicon.png">
 
   <title>{{ title }}</title>
