@@ -120,3 +120,7 @@ Leapでは、翻訳ではなく現地向けにゼロから設計する多言語�
 *[AXIA Marketing「海外マーケティング支援企業9選｜各社の強みや選び方も解説」](https://axiamark.com/knowledge/5052/)
 * [WOVN「グローバルマーケティングとは？成功させる方法を解説」](https://mx.wovn.io/blog/0171)
 *[Leap ブログ「シンガポールでの国際特許・商標登録とブランド保護戦略」](https://www.leap.site/ja/blog/countries/singapore/singapore-ip-brand-protection/)
+
+### あわせて読みたい
+
+* 海外向けのMA（マーケティングオートメーション）ツールに必要な機能を考えたい方へ：[OFFCOMPANY「マーケティングオートメーション、そこまで機能が必要か？（欧米と日本ニーズの違い）」](https://off.company/matool)

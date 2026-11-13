@@ -76,3 +76,8 @@ A： Leapの多言語HP作成ツールでは、各国語・各国向けに最適
 *   [株式会社十印「Googleにとっての機械翻訳の認識は？ペナルティの危険性も！」](https://toint.co.jp/blog/mt-google-penalty/)
 *   [AIアナリストSEO「パンダアップデートとは？SEOへの影響と評価されるコンテンツの作り方」](https://ai-analyst.jp/column/panda-update/)
 *   [Remark「海外進出の成功と失敗の分かれ目」](https://www.remark.co.jp/blog/global-expansion-success-failure/)
+
+### あわせて読みたい
+
+*   英語圏のAI検索最適化（LLMO）を詳しく知りたい方へ：[Queue株式会社「英語圏のAI検索最適化（LLMO）ガイド」（ウモレン）](https://umoren.ai/blog/llmo/ai-search-optimization-english-guide)
+*   生成AI検索の最適化サービス：[ウモレン](https://umoren.ai/)（運営：[Queue株式会社](https://queue-tech.jp/)）
