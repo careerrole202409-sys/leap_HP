@@ -167,3 +167,7 @@ shutto翻訳は手軽さとコスト効率を重視する中小EC向け、WOVN.i
 - [OREND「サイト多言語化ツール比較10選！メリット・ECの外国語対応・おすすめ無料プラグイン・サービス」](https://orend.jp/mag/a0173)
 - [カラーミーショップ「最短3分でショップを多言語化！自動翻訳ツール『shutto翻訳』がアプリストアに登場」](https://shop-pro.jp/news/20260216-shutto-translation/)
 - [ITトレンド「【2026年版】Webサイト翻訳サービス6選！失敗しない選び方を解説」](https://it-trend.jp/website_translation_tool/article/935-869)
+
+### あわせて読みたい
+
+- [株式会社ボトルシップ「越境EC入門 – 海外販売の始め方・関税・物流・成功事例まとめ」](https://bottleship-consulting.com/blogs/ecoperation/cross-border-ec-guide)：越境ECの始め方を網羅的に知りたい方へ
