@@ -1,4 +1,7 @@
 ---
+hidden: true        # 非表示（ページを出力しない）。表示に戻すときはこの行と下の permalink の行を消す
+permalink: false
+eleventyExcludeFromCollections: true
 locale: ja
 title: 広告運用もAIにお任せ。Leap AI 広告運用（ベータ）| Leap
 description: Leapでネットショップを開設された方向けに、Google・Instagram・Amazon・楽天の広告運用もAIが担うベータ版をご案内。チャットで相談するだけで、予算配分・実績確認までAIがサポートします。
@@ -9,6 +12,7 @@ description: Leapでネットショップを開設された方向けに、Google
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="/assets/favicon.png">
 
   <title>{{ title }}</title>

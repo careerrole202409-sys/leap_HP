@@ -1,4 +1,7 @@
 ---
+hidden: true        # 非表示（ページを出力しない）。表示に戻すときはこの行と下の permalink の行を消す
+permalink: false
+eleventyExcludeFromCollections: true
 locale: ja
 title: ECサイトを作るだけでは、売上は生まれない。｜Leap AI EC
 description: LeapはAIを活用し、EC事業の立ち上げから運用・改善まで伴走します。市場分析・EC構築・商品ページ作成・SEO・越境EC対応まで、ワンストップでサポート。
@@ -8,6 +11,7 @@ description: LeapはAIを活用し、EC事業の立ち上げから運用・改�
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="/assets/favicon.png">
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">

@@ -1,4 +1,7 @@
 ---
+hidden: true        # 非表示（ページを出力しない）。表示に戻すときはこの行と下の permalink の行を消す
+permalink: false
+eleventyExcludeFromCollections: true
 locale: en
 title: Chat with AI. Run Your Online Store. | Leap EC Agent
 description: Just chat with AI to launch and run your online store — product listings, order management, and multilingual support included. Beta launches October 1, 2026 — pre-registration now open.
@@ -9,6 +12,7 @@ description: Just chat with AI to launch and run your online store — product l
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="/assets/favicon.png">
 
   <title>{{ title }}</title>
