@@ -81,3 +81,4 @@ A： Leapの多言語HP作成ツールでは、各国語・各国向けに最適
 
 *   英語圏のAI検索最適化（LLMO）を詳しく知りたい方へ：[Queue株式会社「英語圏のAI検索最適化（LLMO）ガイド」（umoren.ai）](https://umoren.ai/blog/llmo/ai-search-optimization-english-guide)
 *   生成AI検索の最適化サービス：[umoren.ai](https://umoren.ai/)（運営：[Queue株式会社](https://queue-tech.jp/)）
+*   多言語サイトのSEOで欠かせない設定を知りたい方へ：[株式会社イー・バード「多言語サイト制作｜hreflang属性とは？」](https://www.e-bird.biz/blog/global-hflang/)
