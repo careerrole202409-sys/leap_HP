@@ -1,0 +1,591 @@
+---
+locale: ja
+title: パートナー募集（ウェブ制作会社・制作者の方へ） | Leap
+description: 日本語サイトを納品したお客様に、Leapでの越境ECを提案しませんか。契約が続く限り、お客様の月額費用の50％を毎月お支払いします。
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- パートナー候補に直接案内するページなので、検索結果には出さない -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="/assets/favicon.png">
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.leap.site{{ page.url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:image" content="https://www.leap.site/assets/og-image.png">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E0BHMWHJNK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E0BHMWHJNK');
+  </script>
+  <!-- Clarity -->
+  <script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "uxpxgpg8ea");
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- LP ヘッダー -->
+<header class="header-container" id="header">
+  <div class="header-main">
+    <div class="header-main-content">
+      <div class="nav-left">
+        <a href="/ja/" class="logo-link" target="_blank" rel="noopener noreferrer">
+          <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="logo-img">
+        </a>
+        <nav class="nav-links">
+          <a href="#flow" class="nav-link">流れ</a>
+          <a href="#reward" class="nav-link">報酬</a>
+          <a href="#features" class="nav-link">Leapの機能</a>
+          <a href="#faq" class="nav-link">よくあるご質問</a>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <a href="mailto:corporate@leap.site" class="btn btn-start js-mail">メールで申し込む</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-content">
+    <div class="mobile-nav-item"><a href="#flow" class="mobile-nav-link">流れ</a></div>
+    <div class="mobile-nav-item"><a href="#reward" class="mobile-nav-link">報酬</a></div>
+    <div class="mobile-nav-item"><a href="#features" class="mobile-nav-link">Leapの機能</a></div>
+    <div class="mobile-nav-item"><a href="#faq" class="mobile-nav-link">よくあるご質問</a></div>
+    <div class="mobile-nav-item"><a href="mailto:corporate@leap.site" class="mobile-nav-link js-mail">メールで申し込む</a></div>
+  </div>
+</div>
+
+<main id="main-content">
+
+<style>
+/* ===== ヒーロー ===== */
+.lp-dark-wrapper {
+  background:
+    linear-gradient(to bottom, rgba(15,15,26,0.84) 0%, rgba(15,15,26,0.92) 100%),
+    url("https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=2400&auto=format&fit=crop&q=80") center top/cover no-repeat;
+}
+.lp-hero { padding: 3.5rem 1rem 3.5rem; }
+.lp-hero-inner { max-width: 760px; margin: 0 auto; text-align: center; }
+.lp-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 0.9rem;
+  letter-spacing: 0.05em;
+}
+.lp-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: white;
+  line-height: 1.35;
+  margin-bottom: 1.25rem;
+}
+.lp-hero-label { color: rgba(255,255,255,0.7); font-size: 0.95rem; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 0.9rem; }
+.lp-hero-lead { color: rgba(255,255,255,0.88); font-size: 1.1rem; line-height: 1.9; margin-bottom: 2rem; }
+.lp-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #C10033 0%, #8B0024 100%);
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(193,0,51,0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.lp-btn-primary svg { width: 20px; height: 20px; }
+.lp-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(193,0,51,0.45); color: white; text-decoration: none; }
+.lp-btn-note { font-size: 0.85rem; color: rgba(255,255,255,0.65); margin-top: 0.75rem; }
+
+/* ===== 共通 ===== */
+.lp-section { padding: 5rem 1rem; background: white; }
+.lp-section.is-soft { background: #f8f9fc; }
+.lp-inner { max-width: 1000px; margin: 0 auto; }
+.lp-section-title {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+.lp-section-sub { text-align: center; color: #666; font-size: 1rem; margin-bottom: 3rem; line-height: 1.8; }
+
+/* ===== 特典 ===== */
+.rf-rewards { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; max-width: 860px; margin: 0 auto; }
+@media (max-width: 700px) { .rf-rewards { grid-template-columns: 1fr; } }
+.rf-reward { background: white; border: 1px solid #e5e7eb; border-radius: 16px; padding: 2rem 1.75rem; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.04); }
+.rf-reward-icon { width: 56px; height: 56px; margin: 0 auto 1rem; border-radius: 50%; background: #fef2f2; border: 1px solid #fecdd3; display: flex; align-items: center; justify-content: center; color: #C10033; }
+.rf-reward-who { display: inline-block; font-size: 0.8rem; font-weight: 700; color: #C10033; background: #fef2f2; border: 1px solid #fecdd3; border-radius: 20px; padding: 3px 12px; margin-bottom: 0.75rem; }
+.rf-reward-what { font-size: 1.6rem; font-weight: 900; color: #1a1a2e; line-height: 1.4; }
+.rf-reward-what small { display: block; font-size: 0.95rem; color: #666; font-weight: 700; margin-bottom: 0.2rem; }
+.rf-table { max-width: 560px; margin: 2.5rem auto 0; width: 100%; border-collapse: separate; border-spacing: 0; background: white; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; }
+.rf-table caption { caption-side: top; font-size: 0.9rem; font-weight: 700; color: #666; padding-bottom: 0.6rem; }
+.rf-table th, .rf-table td { padding: 0.85rem 1.25rem; text-align: left; border-top: 1px solid #e5e7eb; font-size: 0.95rem; color: #1a1a2e; }
+.rf-table thead th { border-top: 0; background: #f8f9fc; font-size: 0.85rem; color: #666; }
+.rf-table td:last-child { font-weight: 800; color: #C10033; }
+
+/* ===== こんな仲間を ===== */
+.rf-friends { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+@media (max-width: 860px) { .rf-friends { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; } }
+.rf-friend { border: 1px solid #e5e7eb; border-radius: 16px; padding: 1.75rem 1.5rem; text-align: center; }
+.rf-friend-icon { color: #C10033; margin-bottom: 0.9rem; }
+.rf-friend p { font-size: 1rem; font-weight: 700; color: #1a1a2e; line-height: 1.6; }
+
+/* ===== Leapの機能 ===== */
+section[id] { scroll-margin-top: 90px; }
+.rf-feature { display: grid; grid-template-columns: 1fr 1.1fr; gap: 3rem; align-items: center; padding: 2.5rem 0; border-top: 1px solid #e5e7eb; }
+.rf-feature:first-of-type { border-top: 0; padding-top: 0; }
+.rf-feature.is-reverse .rf-feature-text { order: 2; }
+.rf-feature-label { display: inline-block; font-size: 0.8rem; font-weight: 700; color: #C10033; background: #fef2f2; border: 1px solid #fecdd3; border-radius: 20px; padding: 3px 12px; margin-bottom: 0.75rem; }
+.rf-feature h3 { font-size: clamp(1.3rem, 2.4vw, 1.7rem); font-weight: 800; color: #1a1a2e; line-height: 1.45; margin-bottom: 0.75rem; }
+.rf-feature p { color: #666; line-height: 1.8; margin-bottom: 1rem; }
+.rf-feature-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.rf-feature-list li { display: flex; align-items: flex-start; gap: 0.6rem; font-weight: 700; color: #1a1a2e; line-height: 1.6; }
+.rf-feature-list li::before {
+  content: "";
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: 0.15rem;
+  border-radius: 50%;
+  background: #C10033 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center / 12px no-repeat;
+}
+.rf-feature-img { width: 100%; border-radius: 14px; border: 1px solid #e5e7eb; box-shadow: 0 6px 24px rgba(0,0,0,0.07); background: white; }
+@media (max-width: 860px) {
+  .rf-feature { grid-template-columns: 1fr; gap: 1.5rem; }
+  .rf-feature.is-reverse .rf-feature-text { order: 0; }
+}
+.rf-merit-link { text-align: center; margin-top: 2.5rem; }
+.rf-merit-link a { color: #C10033; font-weight: 700; text-decoration: none; }
+.rf-merit-link a:hover { text-decoration: underline; }
+
+/* ===== FAQ ===== */
+.lp-faq-inner { max-width: 760px; margin: 0 auto; }
+.faq-item { border-bottom: 1px solid #e5e7eb; padding: 1.5rem 0; }
+.faq-item:last-child { border-bottom: none; }
+.faq-question { display: flex; gap: 0.6rem; font-size: 1rem; font-weight: 700; color: #1a1a2e; margin-bottom: 0.6rem; }
+.faq-question .faq-mark { color: #C10033; flex-shrink: 0; }
+.faq-answer { font-size: 0.9rem; color: #666; line-height: 1.8; padding-left: 1.6rem; }
+.faq-note { font-size: 0.85rem; color: #94a3b8; text-align: center; margin-top: 1.5rem; }
+
+/* ===== 最終CTA ===== */
+.lp-final-cta { padding: 5rem 1rem; background: #1a1a2e; text-align: center; }
+.lp-final-cta-inner { max-width: 640px; margin: 0 auto; }
+.lp-final-cta .lp-section-title { color: white; margin-top: 1rem; }
+.lp-final-cta .lp-section-sub { color: rgba(255,255,255,0.8); margin-bottom: 2rem; }
+
+/* ===== パートナー：流れ ===== */
+.pt-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; counter-reset: step; }
+@media (max-width: 900px) { .pt-steps { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .pt-steps { grid-template-columns: 1fr; } }
+.pt-step { position: relative; background: white; border: 1px solid #e5e7eb; border-radius: 16px; padding: 1.75rem 1.25rem 1.5rem; }
+.pt-step-num { width: 40px; height: 40px; border-radius: 50%; background: #C10033; color: white; font-weight: 800; display: flex; align-items: center; justify-content: center; margin-bottom: 0.9rem; }
+.pt-step-who { font-size: 0.78rem; font-weight: 700; color: #C10033; margin-bottom: 0.35rem; }
+.pt-step p { margin: 0; font-weight: 700; color: #1a1a2e; line-height: 1.6; }
+.pt-step small { display: block; margin-top: 0.4rem; font-size: 0.82rem; color: #666; font-weight: 400; line-height: 1.6; }
+
+/* ===== パートナー：報酬 ===== */
+.pt-reward { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1.25rem; max-width: 860px; margin: 0 auto; }
+@media (max-width: 700px) { .pt-reward { grid-template-columns: 1fr; } .pt-reward-arrow { transform: rotate(90deg); justify-self: center; } }
+.pt-reward-card { background: white; border: 1px solid #e5e7eb; border-radius: 18px; padding: 2rem 1.5rem; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,0.04); }
+.pt-reward-card.is-result { border: 2px solid #C10033; background: #fff5f7; box-shadow: 0 10px 28px rgba(193,0,51,0.12); }
+.pt-reward-label { font-size: 0.85rem; font-weight: 700; color: #666; margin-bottom: 0.6rem; }
+.pt-reward-main { font-size: 1.35rem; font-weight: 900; color: #1a1a2e; line-height: 1.45; }
+.pt-reward-main small { display: block; font-size: 0.9rem; color: #666; font-weight: 700; margin-top: 0.3rem; }
+.pt-reward-big { font-size: clamp(2.2rem, 5vw, 3rem); font-weight: 900; color: #C10033; line-height: 1.1; }
+.pt-reward-big span { font-size: 0.45em; margin-left: 0.1em; }
+.pt-reward-calc { margin-top: 0.6rem; font-size: 0.85rem; color: #666; font-weight: 700; }
+.pt-reward-arrow { width: 48px; height: 48px; border-radius: 50%; background: #C10033; color: white; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 16px rgba(193,0,51,0.3); }
+.pt-conditions { max-width: 860px; margin: 2rem auto 0; background: white; border: 1px solid #e5e7eb; border-radius: 14px; padding: 1.25rem 1.5rem; }
+.pt-conditions p { margin: 0 0 0.6rem; font-weight: 800; color: #1a1a2e; }
+.pt-conditions ul { margin: 0; padding-left: 1.2rem; color: #475569; line-height: 1.9; font-size: 0.95rem; }
+
+/* ===== パートナー：アンバサダー ===== */
+.pt-amb { max-width: 860px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+@media (max-width: 700px) { .pt-amb { grid-template-columns: 1fr; } }
+.pt-amb-item { background: white; border: 1px solid #e5e7eb; border-radius: 16px; padding: 1.5rem 1.25rem; display: flex; gap: 0.9rem; align-items: flex-start; }
+.pt-amb-icon { flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: #fef2f2; border: 1px solid #fecdd3; color: #C10033; display: flex; align-items: center; justify-content: center; }
+.pt-amb-item p { margin: 0; font-weight: 700; color: #1a1a2e; line-height: 1.6; }
+
+/* ===== パートナー：Leapなら ===== */
+.pt-can { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+@media (max-width: 900px) { .pt-can { grid-template-columns: 1fr 1fr; } }
+.pt-can-item { background: #fff5f7; border: 1px solid #f3c4cf; border-radius: 14px; padding: 1.1rem 0.9rem; text-align: center; font-weight: 800; color: #1a1a2e; line-height: 1.5; }
+.pt-can-item small { display: block; font-size: 0.78rem; font-weight: 700; color: #C10033; margin-bottom: 0.25rem; }
+
+/* ===== パートナー：料金（Google広告LPと同じカード） ===== */
+.cb-plans { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.9rem; }
+@media (max-width: 960px) { .cb-plans { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .cb-plans { grid-template-columns: 1fr; } }
+.cb-plan { position: relative; background: white; border: 1px solid #e5e7eb; border-radius: 16px; padding: 1.4rem 1rem 1.2rem; text-align: center; display: flex; flex-direction: column; }
+.cb-plan.is-pick { border: 2px solid #C10033; box-shadow: 0 10px 26px rgba(193,0,51,0.12); }
+.cb-plan-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 0.72rem; font-weight: 700; color: white; background: #C10033; border-radius: 20px; padding: 3px 12px; }
+.cb-plan-name { font-weight: 800; color: #1a1a2e; margin-bottom: 0.4rem; }
+.cb-plan-price { font-size: 1.6rem; font-weight: 900; color: #1a1a2e; line-height: 1.2; }
+.cb-plan-price small { font-size: 0.75rem; font-weight: 700; color: #64748b; margin-left: 0.15rem; }
+.cb-plan-spec { font-size: 0.82rem; font-weight: 700; color: #C10033; margin: 0.6rem 0 0.4rem; }
+.cb-plan-desc { font-size: 0.82rem; color: #475569; line-height: 1.6; margin: 0; }
+.cb-plan-notes { margin-top: 1.5rem; text-align: center; font-size: 0.85rem; color: #64748b; line-height: 1.8; }
+.cb-plan-notes strong { color: #1a1a2e; }
+.cb-plan-notes a { color: #C10033; font-weight: 700; }
+
+/* ===== パートナー：メッセージ ===== */
+.pt-message { max-width: 760px; margin: 0 auto; text-align: center; background: #fff5f7; border: 2px solid #C10033; border-radius: 18px; padding: 2.25rem 1.5rem; }
+.pt-message h2 { font-size: clamp(1.35rem, 2.8vw, 1.8rem); font-weight: 900; color: #1a1a2e; line-height: 1.45; margin: 0 0 0.6rem; }
+.pt-message p { margin: 0; color: #475569; line-height: 1.8; }
+.pt-message-sec { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+.pt-targets { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.5rem; margin-top: 1.1rem; }
+.pt-targets-label { font-size: 0.85rem; font-weight: 700; color: #64748b; margin-right: 0.25rem; }
+.pt-target { font-size: 0.88rem; font-weight: 700; color: #1a1a2e; background: white; border: 1px solid #f3c4cf; border-radius: 20px; padding: 0.35rem 0.9rem; }
+.pt-friends-label { text-align: center; font-weight: 800; color: #1a1a2e; margin: 2.5rem 0 1.25rem; }
+.rf-friends.is-two { grid-template-columns: 1fr 1fr; max-width: 760px; margin: 0 auto; }
+@media (max-width: 700px) { .rf-friends.is-two { grid-template-columns: 1fr; } }
+</style>
+
+<!-- ① ヒーロー -->
+<div class="lp-dark-wrapper">
+<section class="lp-hero">
+  <div class="lp-hero-inner">
+    <p class="lp-hero-label">ウェブ制作会社・ウェブ制作者の方へ</p>
+    <h1>Leapを使って、<br>お客様に越境ECを提案しませんか</h1>
+    <p class="lp-hero-lead">お客様の月額費用の50％を、毎月キックバックします。</p>
+    <a href="mailto:corporate@leap.site" class="lp-btn-primary js-mail">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+      メールで申し込む &rarr;
+    </a>
+  </div>
+</section>
+</div><!-- /.lp-dark-wrapper -->
+
+<!-- 導入企業のロゴ帯 -->
+{% include "client-logos.njk" %}
+
+<!-- ② Leapでできること -->
+<section class="lp-section is-soft">
+  <div class="lp-inner">
+    <h2 class="lp-section-title">Leapなら、越境ECをすぐに構築できます</h2>
+    <p class="lp-section-sub">月額19,000円〜で、多言語・多通貨に対応し、集客やBtoBまでそろった越境ECを、すぐに構築できます。</p>
+    <div class="pt-can">
+      <div class="pt-can-item"><small>越境対応</small>多言語・多通貨</div>
+      <div class="pt-can-item"><small>販売先</small>主要22カ国に販売</div>
+      <div class="pt-can-item"><small>集客</small>SEO・メルマガもAIが実行</div>
+      <div class="pt-can-item"><small>BtoB</small>BtoB専用ECにも対応</div>
+    </div>
+  </div>
+</section>
+
+<!-- ③ 流れ -->
+<section class="lp-section" id="flow">
+  <div class="lp-inner">
+    <h2 class="lp-section-title">パートナー様の流れは、4ステップ</h2>
+    <p class="lp-section-sub">お客様がLeapで行うのは、クレジットカードの登録だけです。</p>
+    <div class="pt-steps">
+      <div class="pt-step"><div class="pt-step-num">1</div><div class="pt-step-who">パートナー様</div><p>お客様に、Leapでの越境EC制作を提案</p></div>
+      <div class="pt-step"><div class="pt-step-num">2</div><div class="pt-step-who">お客様</div><p>お客様がLeapにクレジットカードを登録</p></div>
+      <div class="pt-step"><div class="pt-step-num">3</div><div class="pt-step-who">パートナー様</div><p>Leap上で越境ECを制作し、お客様に納品</p></div>
+      <div class="pt-step"><div class="pt-step-num">4</div><div class="pt-step-who">Leap</div><p>お客様の月額費用の50％を、毎月パートナー様に振り込み</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ④ 料金 -->
+<section class="lp-section is-soft" id="pricing">
+  <div class="lp-inner">
+    <h2 class="lp-section-title">料金プラン</h2>
+    <div class="cb-plans">
+      <div class="cb-plan">
+        
+        <div class="cb-plan-name">フリー</div>
+        <div class="cb-plan-price">0円<small>/月</small></div>
+        <div class="cb-plan-spec">1言語・30ページ</div>
+        <p class="cb-plan-desc">まずは無料でお試し</p>
+      </div>
+      <div class="cb-plan">
+        
+        <div class="cb-plan-name">スターター</div>
+        <div class="cb-plan-price">19,000円<small>/月</small></div>
+        <div class="cb-plan-spec">3言語・50ページ</div>
+        <p class="cb-plan-desc">独自ドメインで公開<br>メルマガ月1,000件</p>
+      </div>
+      <div class="cb-plan is-pick">
+        <span class="cb-plan-badge">集客もAIにおまかせ</span>
+        <div class="cb-plan-name">ベーシック</div>
+        <div class="cb-plan-price">39,000円<small>/月</small></div>
+        <div class="cb-plan-spec">5言語・150ページ</div>
+        <p class="cb-plan-desc">AIブログでSEO/AIO対策<br>メルマガ月5,000件</p>
+      </div>
+      <div class="cb-plan">
+        
+        <div class="cb-plan-name">スタンダード</div>
+        <div class="cb-plan-price">98,000円<small>/月</small></div>
+        <div class="cb-plan-spec">10言語・500ページ</div>
+        <p class="cb-plan-desc">AIブログ・メルマガ月10,000件<br>月1回の打ち合わせ</p>
+      </div>
+      <div class="cb-plan">
+        
+        <div class="cb-plan-name">エンタープライズ</div>
+        <div class="cb-plan-price">お問い合わせ</div>
+        <div class="cb-plan-spec">言語・ページ無制限</div>
+        <p class="cb-plan-desc">専任担当による運用代行</p>
+      </div>
+    </div>
+    <p class="cb-plan-notes">越境ECの手数料は<strong>売上の6%</strong>（クレジットカード決済手数料込み）</p>
+  </div>
+</section>
+
+<!-- ⑤ 報酬 -->
+<section class="lp-section" id="reward">
+  <div class="lp-inner">
+    <h2 class="lp-section-title">お客様1社で、年間234,000円をキックバック</h2>
+    <p class="lp-section-sub">お客様の月額費用の50％を、契約が続く限り毎月お支払いします。</p>
+    <div class="pt-reward">
+      <div class="pt-reward-card">
+        <div class="pt-reward-label">紹介するお客様</div>
+        <div class="pt-reward-main">ベーシックプランのお客様を1社<small>月額39,000円</small></div>
+      </div>
+      <div class="pt-reward-arrow" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg></div>
+      <div class="pt-reward-card is-result">
+        <div class="pt-reward-label">パートナー様への報酬</div>
+        <div class="pt-reward-big">234,000<span>円／年</span></div>
+        <div class="pt-reward-calc">月19,500円 × 12か月</div>
+      </div>
+    </div>
+    <div class="pt-conditions">
+      <p>報酬の条件</p>
+      <ul>
+        <li>契約が続く限り、毎月お客様の月額費用の50％をお支払いします。</li>
+        <li>決済手数料と広告費の実費は、対象外です。</li>
+        <li>お客様の入金後、翌月末にお支払いします。</li>
+        <li>制作費は、パートナー様がお客様から別途受け取れます。Leapは関与しません。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ⑥ アンバサダー -->
+<section class="lp-section is-soft" id="ambassador">
+  <div class="lp-inner">
+    <h2 class="lp-section-title">紹介3社で、アンバサダーに</h2>
+    <p class="lp-section-sub">契約に至った紹介が3社以上になったパートナー様を、アンバサダーとして登録します。</p>
+    <div class="pt-amb">
+      <div class="pt-amb-item">
+        <div class="pt-amb-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+        <p>Leapに届いたオリジナル制作の依頼を、優先的に紹介します。</p>
+      </div>
+      <div class="pt-amb-item">
+        <div class="pt-amb-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div>
+        <p>Leap公式サイトに、パートナーとして掲載します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑦ 窓口はパートナー様のまま・提案先 -->
+<section class="lp-section pt-message-sec" id="friends">
+  <div class="lp-inner">
+    <div class="pt-message">
+      <h2>お客様の窓口は、パートナー様のまま。</h2>
+      <p>Leapがお客様に営業することはありません。</p>
+      <div class="pt-targets"><span class="pt-targets-label">こんなお客様に</span><span class="pt-target">越境ECを始めたい企業</span><span class="pt-target">サイトを多言語化したい企業</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑧ お客様に提案できるLeapの機能 -->
+<section class="lp-section is-soft" id="features">
+  <div class="lp-inner">
+    <h2 class="lp-section-title">お客様に提案できる、<br>Leapの機能</h2>
+    <p class="lp-section-sub">提案の際は、こう伝えてください。</p>
+    <div class="rf-feature">
+      <div class="rf-feature-text">
+        <span class="rf-feature-label">制作</span>
+        <h3>話しかけるだけで、<br>サイトも越境ECも完成</h3>
+        <p>業種や売りたい商品を伝えるだけで、AIがサイトと越境ECをまとめて作成します。</p>
+        <ul class="rf-feature-list"><li>グローバルサイト作成</li><li>越境EC作成（多言語・多通貨に対応）</li><li>テンプレートから選んですぐ作成</li></ul>
+      </div>
+      <img class="rf-feature-img" src="https://res.cloudinary.com/duh6rnjba/image/upload/v1771680639/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2026-02-21_22.30.16_q5g9qq.png" alt="サイト作成画面" loading="lazy">
+    </div>
+    <div class="rf-feature is-reverse">
+      <div class="rf-feature-text">
+        <span class="rf-feature-label">集客</span>
+        <h3>公開したあとの集客も、<br>AIが実行</h3>
+        <p>ローカライズ、ブログ、メルマガまで、海外からお客様を呼び込む施策をAIが実行します。</p>
+        <ul class="rf-feature-list"><li>翻訳ではなく、ローカライズ</li><li>SEO/AIOに強い多言語ブログ</li><li>多言語メルマガ・国別アクセス解析</li></ul>
+      </div>
+      <img class="rf-feature-img" src="https://res.cloudinary.com/duh6rnjba/image/upload/v1780396709/424a013d-81c9-412d-86ea-5dd63bb63738.png" alt="アクセス解析画面" loading="lazy">
+    </div>
+    <div class="rf-feature">
+      <div class="rf-feature-text">
+        <span class="rf-feature-label">管理</span>
+        <h3>公開後の運用も、<br>チャットで伝えるだけ</h3>
+        <p>デザインの修正から商品・注文の管理まで、日々の運用もシンプルです。</p>
+        <ul class="rf-feature-list"><li>AIチャットでデザイン編集</li><li>商品管理（国別の価格設定・多通貨）</li><li>注文管理（発送・キャンセル対応）</li></ul>
+      </div>
+      <img class="rf-feature-img" src="/assets/images/top-product-management.jpg" alt="商品管理画面" loading="lazy">
+    </div>
+    <div class="rf-feature is-reverse">
+      <div class="rf-feature-text">
+        <span class="rf-feature-label">BtoB専用EC</span>
+        <h3>BtoB専用カートで、<br>大口注文・見積にも対応</h3>
+        <p>海外の取引先向けに、企業ごとの価格設定や見積もり依頼など、卸売りに必要な機能をそろえています。</p>
+        <ul class="rf-feature-list"><li>取引先ごとの価格設定・数量割引</li><li>見積もり依頼から注文まで</li><li>銀行振込・請求書払い</li></ul>
+      </div>
+      <img class="rf-feature-img" src="/assets/images/top-btob-price.jpg" alt="BtoB価格管理画面" loading="lazy">
+    </div>
+    <p class="rf-merit-link"><a href="/ja/" target="_blank" rel="noopener noreferrer">お客様には、Leapのサイトもあわせてご案内ください &rarr;</a></p>
+  </div>
+</section>
+
+<!-- ⑨ よくあるご質問 -->
+<section class="lp-section" id="faq">
+  <div class="lp-faq-inner">
+    <h2 class="lp-section-title">よくあるご質問</h2>
+    <p class="lp-section-sub">お申し込みの前にご確認ください。</p>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>誰でもパートナーになれますか？</div>
+      <div class="faq-answer">ウェブ制作を行う法人・個人の方であれば、パートナーになれます。メールでお申し込みください。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>報酬はいつ支払われますか？</div>
+      <div class="faq-answer">お客様の入金を確認した月の、翌月末にお支払いします。契約が続く限り、毎月お支払いします。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>同じお客様を、複数のパートナー様が紹介した場合はどうなりますか？</div>
+      <div class="faq-answer">先にLeapへご連絡いただいたパートナー様の紹介として扱います。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question"><span class="faq-mark">Q.</span>個人事業主の場合、税務はどうなりますか？</div>
+      <div class="faq-answer">報酬は、パートナー様ご自身の所得として申告が必要です。申告の方法は、税理士または税務署にご確認ください。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑩ 最終CTA -->
+<section class="lp-final-cta">
+  <div class="lp-final-cta-inner">
+    <span class="lp-badge">パートナー募集中</span>
+    <h2 class="lp-section-title">お客様の海外展開を、一緒に支えましょう</h2>
+    <p class="lp-section-sub">お申し込みは、メール1通で完了します。</p>
+    <a href="mailto:corporate@leap.site" class="lp-btn-primary js-mail">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+      メールで申し込む &rarr;
+    </a>
+    <p class="lp-btn-note">宛先：corporate@leap.site</p>
+  </div>
+</section>
+
+</main>
+
+<!-- LP フッター（SNS以下のみ） -->
+<footer>
+  <div class="footer-container">
+    <hr class="footer-divider">
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/company/leap-site-inc" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/leap20240729/" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+      </a>
+      <a href="https://x.com/leap_0729" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+    </div>
+    <div class="footer-brand">
+      <a href="/ja/" class="footer-logo-link">
+        <img src="https://res.cloudinary.com/duh6rnjba/image/upload/v1767489330/CareerRole%E6%A7%98_%E6%A8%AAwhite_RGB_4_vfmrzc.png" alt="Leap" class="footer-logo-img">
+      </a>
+      <div class="footer-copyright" id="footerCopyright">Copyright © 2025 Leap, Inc.</div>
+    </div>
+    <div class="footer-legal">
+      <a href="/ja/privacypolicy">プライバシーポリシー</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/ja/terms">利用規約</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/ja/tokushoho">特定商取引法に基づく表示</a>
+      <span class="footer-legal-divider">|</span>
+      <a href="/ja/delete-user">退会規定</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// 「メールで申し込む」ボタンに、件名と本文のひな形が入ったメールのリンクを設定する
+(function () {
+  var subject = '【Leapパートナー申し込み】';
+  var body = [
+    'Leap ご担当者様',
+    '',
+    'パートナーに申し込みます。',
+    '',
+    '会社名・屋号：',
+    'お名前：',
+    '連絡先（メール・電話）：',
+    'サイトURL・制作実績：',
+    '',
+    '【補足（任意）】',
+    ''
+  ].join('\n');
+  var href = 'mailto:corporate@leap.site?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  document.querySelectorAll('.js-mail').forEach(function (a) { a.href = href; });
+})();
+</script>
+<script>
+// スマホのメニュー（既存のLPと同じ動き）
+document.addEventListener('DOMContentLoaded', function () {
+  var hamburger = document.getElementById('hamburger');
+  var mobileMenu = document.getElementById('mobileMenu');
+  if (!hamburger || !mobileMenu) return;
+  var close = function () {
+    hamburger.classList.remove('active');
+    mobileMenu.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+  hamburger.addEventListener('click', function () {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+    document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+  });
+  mobileMenu.addEventListener('click', function (e) { if (e.target === mobileMenu) close(); });
+  mobileMenu.querySelectorAll('.mobile-nav-link').forEach(function (link) { link.addEventListener('click', close); });
+});
+</script>
+</body>
+</html>
