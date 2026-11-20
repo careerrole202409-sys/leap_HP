@@ -212,3 +212,7 @@ Leapは、集客までAIに任せられる越境ECツールです。チャット
 - [新規輸出1万者支援プログラム - ジェトロ](https://www.jetro.go.jp/ichiman-export.html)
 - [海外展開ハンズオン支援 - 中小企業基盤整備機構](https://www.smrj.go.jp/sme/overseas/consulting/advice/index.html)
 - [GビズID - デジタル庁](https://gbiz-id.go.jp/top/)
+
+### あわせて読みたい
+
+- [海外展開の補助金・支援策｜JETRO・中小機構・新規輸出1万者支援プログラム・販路開拓を解説（行政書士法人Tree）](https://office-tree.jp/blog/subsidy/overseas-expansion-subsidy/)：補助金・支援策の全体像をさらに詳しく知りたい方へ
