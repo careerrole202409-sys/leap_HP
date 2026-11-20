@@ -124,3 +124,7 @@ Leapは、日本語サイトをそのまま翻訳するのではなく、現地�
 * [アドカル「中小企業のデジタルマーケティング入門！失敗しないためのステップ5つ」](https://www.adcal-inc.com/column/smb-digitalmarketing/)
 * [ワークシフト「海外進出・調査・インバウンド対策：海外進出に必要な費用の予算の立て方」](https://workshift-sol.com/lp/view/business_overseas_cost)
 * [Leap「シンガポールでの国際特許・商標登録とブランド保護戦略」](https://www.leap.site/ja/blog/countries/singapore/singapore-ip-brand-protection/)
+
+### あわせて読みたい
+
+- [営業代行の費用相場｜料金体系3タイプと業務別単価の一覧【2026年版】（START WITH WHY）](https://sw2.jp/news/sales-outsourcing-cost/)：営業代行を依頼する際の費用の目安を知りたい方へ
