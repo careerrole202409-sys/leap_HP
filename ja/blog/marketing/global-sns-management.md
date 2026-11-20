@@ -123,7 +123,11 @@ Leapでは、多言語Webサイトやコンテンツの現地最適化をベー�
 
 ### 参考資料・出典一覧
 
-*[アンダーワークス「グローバル向けSNSガイドライン策定で企業リスクを軽減」](https://www.underworks.co.jp/case/a002/)
-*[株式会社ガイアックス「ソーシャルメディアポリシー・ガイドラインとは？内容や作成方法、企業事例を紹介」](https://gaiax-socialmedialab.jp/post-55713/)
-*[インフォキュービック・ジャパン「海外SNSマーケティング完全ガイド 2026年に向けた具体的な5つの施策・注意点・マーケターの心得」](https://www.icrossborderjapan.com/blog/archives/16849/)
-*[インフォキュービック・ジャパン「海外向けSNS戦略策定｜海外SNS広報戦略・分析支援」](https://www.icrossborderjapan.com/our-solutions/sns-strategy/)
+- [アンダーワークス「グローバル向けSNSガイドライン策定で企業リスクを軽減」](https://www.underworks.co.jp/case/a002/)
+- [株式会社ガイアックス「ソーシャルメディアポリシー・ガイドラインとは？内容や作成方法、企業事例を紹介」](https://gaiax-socialmedialab.jp/post-55713/)
+- [インフォキュービック・ジャパン「海外SNSマーケティング完全ガイド 2026年に向けた具体的な5つの施策・注意点・マーケターの心得」](https://www.icrossborderjapan.com/blog/archives/16849/)
+- [インフォキュービック・ジャパン「海外向けSNS戦略策定｜海外SNS広報戦略・分析支援」](https://www.icrossborderjapan.com/our-solutions/sns-strategy/)
+
+### あわせて読みたい
+
+- [中国で人気のSNS一覧｜弊社の最新の取組事例を紹介（株式会社ベイス）](https://www.base-net.co.jp/blog/china-sns/)：中国市場で利用されている主要SNSを把握したい方へ
