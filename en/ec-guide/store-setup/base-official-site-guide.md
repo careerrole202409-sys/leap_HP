@@ -74,7 +74,19 @@ Once you open a shop, your products are automatically listed in BASE's official 
 
 ## What BASE Shop Owners Run Into Next
 
-Once you've gotten comfortable with the official site and BASE U and gotten your shop up and running, most owners next run into the ongoing, time-consuming work of "building out product pages," "keeping up with SEO," "running ads," and "expanding into overseas markets." As cases like Menya Musashi show — a real example of a shop that was set up quickly and used as the foundation for expanding its sales channels — BASE lowers the barrier to getting a shop off the ground considerably, but how you grow it afterward is entirely up to the owner's own effort. What tends to become a burden here is writing product descriptions, continuously updating SEO-aware content, and providing multilingual support for overseas customers. The idea behind an AI E-Commerce Agent — supporting everything from building and running your store to selling overseas, purely through conversation with AI — exists precisely to lighten this kind of operational burden. As you consider multilingual product descriptions and blog content for a shop built on BASE, or start exploring overseas sales channels, having AI take on this work alongside you is only going to become more important going forward.
+Once you've gotten comfortable with the official site and BASE U and gotten your shop up and running, most owners next run into the ongoing, time-consuming work of "building out product pages," "keeping up with SEO," "running ads," and "expanding into overseas markets." As cases like Menya Musashi show — a real example of a shop that was set up quickly and used as the foundation for expanding its sales channels — BASE lowers the barrier to getting a shop off the ground considerably, but how you grow it afterward is entirely up to the owner's own effort. What tends to become a burden here is writing product descriptions, continuously updating SEO-aware content, and providing multilingual support for overseas customers. Leap, a cross-border ecommerce tool that lets AI handle marketing too, exists precisely to lighten this kind of operational burden. As you consider multilingual product descriptions and blog content for a shop built on BASE, or start exploring overseas sales channels, having AI take on this work alongside you is only going to become more important going forward.
+
+## Selling Overseas from BASE
+
+The information in BASE U and the help center is mostly written with domestic, Japanese-language shop operations in mind. Once you start thinking about selling overseas, it's worth knowing about a feature called "Kantan Kaigai Hanbai" (Easy Overseas Sales).
+
+As of March 18, 2026, this became a standard feature available to every shop on BASE. When BASE's AI detects a visitor from overseas, it automatically shows a dedicated overseas cart, handling country-by-country eligibility checks and shipping-fee calculations automatically — and the purchase completes inside that one cart, without redirecting to another site.
+
+The actual shipping and payment on the back end is handled by BASE's subsidiary, want.jp. When an overseas order comes in, want.jp purchases the item on the buyer's behalf domestically, and the shop simply ships it to want.jp's domestic warehouse the same way it would ship any other domestic order. From there, want.jp handles repackaging, international shipping, customs paperwork, and returns — the parts of cross-border e-commerce that normally add the most overhead.
+
+There's no setup fee and no fixed monthly cost. The only charge is a 5% fee on the payment amount (which includes the shipping cost to the domestic warehouse), and it only applies when something actually sells overseas — on top of whatever BASE plan fee you're already paying.
+
+As of November 2026, we weren't able to confirm from official sources exactly what language the overseas cart displays in, or whether product page translation is handled automatically. Translating your own product descriptions still appears to be on the shop's side for now, which is exactly the kind of work a tool like Leap, a cross-border ecommerce tool that lets AI handle marketing too, is built to help with.
 
 ## FAQ
 
@@ -90,14 +102,13 @@ A. BASE is designed to be intuitive enough to use without specialized knowledge,
 
 A. First, check the official site, help center, or official social media accounts for any reported outage. If it's not an outage, the next step is to look for the relevant topic in the help center's organized sections, or reach out to support through the contact form.
 
+**Q. Where should I look if I want to sell overseas through BASE?**
+
+A. Start by looking into "Kantan Kaigai Hanbai" (Easy Overseas Sales), which became a standard feature on March 18, 2026. The overseas cart display and the shipping/payment work are handled by BASE's subsidiary want.jp, there's no setup or fixed monthly cost, and a 5% fee applies only when something sells overseas. Check BASE U or BASE's official site for the current scope and terms.
+
 ## Summary and Key Takeaways
 
-BASE's official site, login page, help center, BASE U, and official apps are each split up by role. Just knowing where each of these entry points is makes the path from getting ready to open, through day-to-day operations, to handling any issues, dramatically smoother. But there's one thing worth pausing on here: making good use of the official site and manual to "open a shop" and actually "growing that shop over time" are two entirely different challenges. Opening a shop doesn't automatically make sales grow — building out product pages, putting out SEO-aware content, running ads, and eventually expanding your sales channels are the themes that really kick in once your shop is live. Leap aims to support exactly this kind of ongoing improvement, purely through conversation with AI, as an AI E-Commerce Agent. From helping write product descriptions to multilingual support to exploring overseas sales, we hope you'll keep us in mind as one option once you start thinking about growth that goes beyond selling domestically.
-
-If you'd like to learn more about e-commerce operations and cross-border e-commerce, take a look at the articles below as well.
-
-- [Leap Overseas Business Manual (Blog)](https://www.leap.site/en/blog)
-- [Request a Demo or Get in Touch](https://www.leap.site/en/about/#contact)
+BASE's official site, login page, help center, BASE U, and official apps are each split up by role. Just knowing where each of these entry points is makes the path from getting ready to open, through day-to-day operations, to handling any issues, dramatically smoother. But there's one thing worth pausing on here: making good use of the official site and manual to "open a shop" and actually "growing that shop over time" are two entirely different challenges. Opening a shop doesn't automatically make sales grow — building out product pages, putting out SEO-aware content, running ads, and eventually expanding your sales channels are the themes that really kick in once your shop is live. Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -107,3 +118,4 @@ If you'd like to learn more about e-commerce operations and cross-border e-comme
 - [BASE U's Online Store Setup Manual Series](https://baseu.jp/16369)
 - [BASE's Official How-To Guide](https://baseu.jp/19697)
 - [A Manual for Easing Anxiety About Getting Ready to Open (BASE U)](https://baseu.jp/45146)
+- ["Kantan Kaigai Hanbai" Becomes a Standard Feature Starting March 18 - BASE U](https://baseu.jp/information/20260224)

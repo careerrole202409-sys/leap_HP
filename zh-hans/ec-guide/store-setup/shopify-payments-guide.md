@@ -18,7 +18,7 @@ author_image: https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap
 author_bio: 专注海外业务拓展的专家团队
 ---
 
-### 【1分钟速览】全面了解Shopify Payments
+## 【1分钟速览】全面了解Shopify Payments
 
 在经营Shopify独立站时，支付环境的搭建是影响顾客购物体验的核心要素之一。本文将系统解析Shopify官方内置的支付服务"Shopify Payments"，涵盖基本概念、导入优势、审核机制与违禁商品、以及实际设置流程。
 
@@ -26,7 +26,7 @@ Shopify Payments最突出的特点在于：只需订阅Shopify付费套餐，无
 
 此外，使用外部支付服务时须额外缴纳的Shopify交易手续费（根据套餐为0.6%至2.0%）将全部免除，对于追求利润率提升的电商卖家而言极具吸引力。更值得关注的是，通过快速结账功能（Apple Pay、Shop Pay等），可有效降低购物车放弃率（弃单）并提升转化率（CVR）——这一营销层面的核心价值，往往在纯操作说明中被忽视。本文将从"提升购买转化率"的视角出发，为你全面解读。
 
-### Shopify Payments是什么？理解基本运作机制
+## Shopify Payments是什么？理解基本运作机制
 
 Shopify Payments是Shopify平台官方提供的内置支付服务。通常情况下，电商网站若要接入信用卡支付，需要向GMO支付网关（GMO Payment Gateway）或Stripe等第三方支付代理服务商单独申请，通过审核后再完成对接配置。这一审核流程通常需要两周至一个月，容易在店铺开业初期造成销售机会的流失。
 
@@ -41,7 +41,7 @@ Shopify Payments大幅降低了这一门槛。只需在Shopify管理后台填写
 
 截至2025年6月，Shopify Payments已在日本、美国、加拿大、澳大利亚、英国等约40个国家和地区提供服务，尚未覆盖的国家和地区暂无法使用。
 
-### 最大优势不只是"零交易手续费"
+## 最大优势不只是"零交易手续费"
 
 Shopify Payments最常被提及的优势是免除交易手续费。Shopify会对使用外部支付服务的交易额按套餐收取0.5%至2.0%不等的交易手续费，启用Shopify Payments后，这部分费用将全部免除。对于年销售额在数千万至数亿日元规模的店铺而言，这一差额将直接反映在年度利润上。
 
@@ -53,7 +53,7 @@ Shop Pay的设计理念与此相同：顾客一旦完成注册，后续购物时
 
 此外，Shopify Payments已原生支持3D安全验证（EMV 3DS），2025年4月日本正式强制执行的信用卡安全准则无需额外配置即可满足合规要求。在降低安全合规成本的同时，为顾客提供有安全保障的支付体验，对中小企业尤为重要。
 
-### Shopify Payments不支持哪些商品？违禁商品与注意事项
+## Shopify Payments不支持哪些商品？违禁商品与注意事项
 
 Shopify Payments无需初始审核，但服务条款中明确规定了违禁商品类别。经营此类商品的店铺不会在开通时被拒绝，而是在运营过程中可能突然遭遇账号封禁，因此务必提前核查。
 
@@ -71,11 +71,11 @@ Shopify Payments无需初始审核，但服务条款中明确规定了违禁商�
 
 此外，即使商品合规，若未在首笔销售的21天内完成必要信息填写，系统将自动向顾客发起退款。店铺上线初期设置事项繁多，但支付配置的完成应当优先处理。
 
-### Shopify Payments的实际设置流程
+## Shopify Payments的实际设置流程
 
 Shopify Payments的开通操作简便，全程在管理后台完成。以下为标准操作步骤。
 
-#### 开通流程
+### 开通流程
 
 1. 登录Shopify管理后台，点击左侧菜单中的"设置"。
 2. 进入"支付"页面，点击Shopify Payments下方的"启用"按钮。
@@ -85,15 +85,15 @@ Shopify Payments的开通操作简便，全程在管理后台完成。以下为�
 6. 填写商品信息：选择经营商品的品类，并设置账单描述名称（即显示在顾客信用卡账单上的名称）。
 7. 保存设置，完成开通。
 
-#### 利用测试模式验证
+### 利用测试模式验证
 
 设置完成后，建议切换至测试模式，对结账流程进行全面验证。使用Shopify提供的测试信用卡号，模拟从"加入购物车"到"完成支付、确认订单"的完整流程。确认无误后，关闭测试模式，正式开始运营。
 
-#### 开启Apple Pay / Google Pay
+### 开启Apple Pay / Google Pay
 
 启用Shopify Payments后，Apple Pay和Google Pay将自动处于可用状态。但Apple Pay可能需要完成域名验证流程，请在管理后台的"支付"设置中确认相关说明。使用条件为：店铺已启用HTTPS的独立域名。
 
-### 案例介绍：快速结账如何改变购物体验
+## 案例介绍：快速结账如何改变购物体验
 
 国内外众多使用Shopify的卖家，通过引入Apple Pay或Shop Pay，实现了购物体验的显著提升。
 
@@ -103,21 +103,33 @@ Shopify Payments的开通操作简便，全程在管理后台完成。以下为�
 
 上述案例说明，导入Shopify Payments绝不只是"新增一种支付方式"，而是从战略层面将结账流程打造成真正以顾客为中心的体验的主动选择。
 
-### 常见问题
+## 如果要做海外销售，关于Shopify Payments需要知道的事
 
-**Q1. Shopify Payments的信用卡手续费是多少？**
+Shopify Payments把信用卡、Apple Pay等支付方式打包成了一套方案，但仅凭这一项，还不足以让海外顾客看到并使用当地货币完成结算。要实现这一点，还需要配合另一项功能——Shopify Markets，它按国家/地区统一管理语言、货币、价格与关税显示。
 
-Shopify Payments的信用卡处理费率因订阅套餐而异。以2025年年付（年度合约）为参考，Basic套餐约为3.4%+0日元，Shopify套餐约为3.3%+0日元，Advanced套餐约为3.25%+0日元（因卡种和货币类型有所浮动）。更关键的是：使用第三方支付代理服务商时须额外缴纳的Shopify交易手续费（0.5%至2.0%）将全部免除。销售额越大，这一差距对利润的影响越显著。
+Shopify官方帮助文档明确写道："要以多种货币销售，你需要在网店中使用Shopify Payments"。也就是说，仅设置Shopify Markets是不够的——如果没有启用Shopify Payments，顾客实际支付时仍会按店铺的基准货币结算，与Markets中设置的内容无关。如果你正计划开拓海外市场，除了核查违禁商品、了解手续费之外，还需要同时完成Shopify Markets的市场设置和Shopify Payments的启用这两步。
 
-**Q2. Shopify Payments的审核流程是怎样的？账号会被封停吗？**
+还需要说明的是，Shopify Markets能设置的只是货币、语言、价格显示的框架，并不会把商品页面的文字自动翻译成适合当地市场的自然表达——这部分翻译和本地化工作需要另外处理。如果想把这部分也一并解决，连获客都能交给AI的跨境电商工具Leap是可以考虑的选项之一。
 
-初次开通无需审核，填写必要信息后即可当天使用。但随着销售额增长，Shopify可能要求进行补充的身份核验和业务核实。若经营违禁商品或被发现违反服务条款，账号可能在无事先通知的情况下被暂停，销售款项遭到冻结。强烈建议在上线前通过Shopify帮助文档或客服，确认自身商品是否符合服务条款要求。
+## 常见问题（FAQ）
 
-**Q3. 可以同时使用Shopify Payments和其他支付方式吗？**
+**Q. Shopify Payments的信用卡手续费是多少？**
 
-可以。在启用Shopify Payments的基础上，还可通过第三方App接入先买后付（NP Atobarai、GMO Atobarai等）、便利店付款等支付方式。需要注意的是，若将外部支付代理服务商与Shopify Payments"并行"使用（非直接集成情况），外部支付部分仍须缴纳Shopify的交易手续费。支付方式的组合应基于目标顾客的消费习惯和支付偏好，进行有针对性的策略设计。
+A. Shopify Payments的信用卡处理费率因订阅套餐而异。以2025年年付（年度合约）为参考，Basic套餐约为3.4%+0日元，Shopify套餐约为3.3%+0日元，Advanced套餐约为3.25%+0日元（因卡种和货币类型有所浮动）。更关键的是：使用第三方支付代理服务商时须额外缴纳的Shopify交易手续费（0.5%至2.0%）将全部免除。销售额越大，这一差距对利润的影响越显著。
 
-### 总结：支付环境的搭建，是对顾客体验的投资
+**Q. Shopify Payments的审核流程是怎样的？账号会被封停吗？**
+
+A. 初次开通无需审核，填写必要信息后即可当天使用。但随着销售额增长，Shopify可能要求进行补充的身份核验和业务核实。若经营违禁商品或被发现违反服务条款，账号可能在无事先通知的情况下被暂停，销售款项遭到冻结。强烈建议在上线前通过Shopify帮助文档或客服，确认自身商品是否符合服务条款要求。
+
+**Q. 可以同时使用Shopify Payments和其他支付方式吗？**
+
+A. 可以。在启用Shopify Payments的基础上，还可通过第三方App接入先买后付（NP Atobarai、GMO Atobarai等）、便利店付款等支付方式。需要注意的是，若将外部支付代理服务商与Shopify Payments"并行"使用（非直接集成情况），外部支付部分仍须缴纳Shopify的交易手续费。支付方式的组合应基于目标顾客的消费习惯和支付偏好，进行有针对性的策略设计。
+
+**Q. 仅凭Shopify Payments，就能让海外顾客以当地货币看到价格吗？**
+
+A. 不能。要实现当地货币的价格显示与结算，还需要配合按地区设置的Shopify Markets功能。Shopify官方帮助文档指出，要以多种货币销售需要在网店中使用Shopify Payments——只有两者同时启用，才能真正为海外顾客提供多币种支持。
+
+## 总结：支付环境的搭建，是对顾客体验的投资
 
 Shopify Payments集三大优势于一身：无需初始审核、零交易手续费、一站式覆盖主流支付方式，对于Shopify店铺运营者而言，几乎没有理由不去启用。
 
@@ -125,12 +137,9 @@ Shopify Payments集三大优势于一身：无需初始审核、零交易手续�
 
 做好三件事：上线前确认商品合规性、尽早完成支付初始设置、积极启用快速结账功能。把握好这三点，Shopify Payments的实际导入效果将大相径庭。
 
-Leap为包括Shopify在内的电商平台提供从建站支持到跨境出海、多语言运营的全链路服务。如果你希望以面向海外市场的视角来规划电商站点，或有意从零搭建多语言电商网站，欢迎参阅以下资源。
+Leap是一款连获客都能交给AI的跨境电商工具。只需通过对话，即可完成多语言、多币种跨境电商网站的搭建，以及SEO、邮件营销等海外获客工作。
 
-- [EC运营指南](https://www.leap.site/zh-hans/ec-guide)
-- [海外业务博客](https://www.leap.site/zh-hans/blog)
-
-### 参考资料
+## 参考资料
 
 - [Shopify帮助中心 | Shopify Payments](https://help.shopify.com/ja/manual/payments/shopify-payments)
 - [Shopify帮助中心 | Shopify Payments要求（日本）](https://help.shopify.com/ja/manual/payments/shopify-payments/supported-countries/japan)
@@ -143,3 +152,5 @@ Leap为包括Shopify在内的电商平台提供从建站支持到跨境出海、
 - [BINDEC | Shopify Payments的导入效果](https://bindec.jp/media/555953150512/)
 - [Plus Shipping | Shopify Payments的设置方法](https://plus-shipping.com/blogs/shopify-payments)
 - [Flagship | Shop Pay与3D安全验证](https://flagship.cc/blogs/columns/shoppay-3ds)
+- [Shopify帮助中心 | Markets功能概览](https://help.shopify.com/en/manual/markets)
+- [Shopify帮助中心 | 以多种货币销售](https://help.shopify.com/en/manual/payments/shopify-payments/multi-currency)

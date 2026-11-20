@@ -54,6 +54,16 @@ In e-commerce, it's not just product cost that eats into your margin — platfor
 
 Everything covered here is really just a foundation for running an e-commerce business. In practice, you need to keep checking whether your price actually holds up — watching sales data and inventory movement — and adjusting it alongside your product lineup and promotional strategy as you go. Increasingly, businesses are handling this kind of ongoing price and margin validation, along with product description writing and marketing execution, through conversation with AI. Treating pricing as something you refine continuously, rather than something you set once and forget, is the surest way to stay out of a race to the bottom.
 
+## Pricing When You Sell Overseas Too
+
+Everything covered above — cost ratio, margin, and real margin — still applies as the foundation once you start selling internationally, but two extra factors come into play.
+
+The first is how consumption tax and customs duty get handled. A sale from Japan to an overseas buyer qualifies for Japan's export tax exemption, so the price itself is set without Japan's domestic consumption tax factored in (claiming this exemption comes with requirements, such as keeping supporting documentation, so it's worth checking with Japan's National Tax Agency or a tax accountant for the details). On the other side, the destination country will typically charge its own customs duty or VAT. Whether you absorb that cost as the seller (DDP) or pass it on to the buyer (DAP) changes both the price you display and the buyer's experience after checkout. If you go with DDP, you'll need to fold the duty cost into your real-margin calculation.
+
+The second factor is exchange rate movement. If you're pricing in local currency, your margin shifts every time the exchange rate moves — so it's worth building in some price buffer to absorb typical currency swings.
+
+Leap, a cross-border ecommerce tool that lets AI handle marketing too, can automatically display prices in other currencies every day based on the previous day's exchange rate, once you pick a single base currency per product. That takes some of the manual work out of currency conversion after you've set your price.
+
 ## FAQ
 
 **Q. Where should I start when setting a price?**
@@ -68,14 +78,17 @@ A. Not at all — sales and discounts aren't inherently bad. The problem is when
 
 A. Payment processing fees and e-commerce platform selling fees are commonly missed, along with the cost of handling returns and cancellations. Shipping is another easy one to get wrong — it varies by region and package size, so using a flat average can throw off your real margin calculation.
 
+**Q. How should I set prices if I'm selling overseas?**
+
+A. The same cost-ratio and margin formulas apply as they do domestically, but you'll also need to factor in Japan's export tax exemption and whether you or the buyer covers customs duty and VAT (DDP vs. DAP) when calculating your real margin. It's also worth building in a buffer for exchange rate movement.
+
 ## Summary and Key Takeaway
 
-Most e-commerce pricing mistakes come from thinking about price purely as "cost plus margin," while missing psychological pricing effects, price stickiness, and e-commerce-specific costs. Understanding the underlying formulas, using the right pricing method for your product, and building a reason to be chosen through added value rather than discounting — that's the real substance of a pricing strategy that keeps you out of a price war. And above all, the key realization is that pricing isn't a decision you make once — it's something you keep validating as your business grows. Leap aims to support that entire process — from pricing decisions through product listings, SEO, advertising, and customer support — as an AI E-Commerce Agent that lets teams spend their time on what actually grows the business, all through conversation with AI.
+Most e-commerce pricing mistakes come from thinking about price purely as "cost plus margin," while missing psychological pricing effects, price stickiness, and e-commerce-specific costs. Understanding the underlying formulas, using the right pricing method for your product, and building a reason to be chosen through added value rather than discounting — that's the real substance of a pricing strategy that keeps you out of a price war. And above all, the key realization is that pricing isn't a decision you make once — it's something you keep validating as your business grows.
+
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 We publish a wide range of practical guides on e-commerce operations, cross-border expansion, and website building. Browse our other articles for more.
-
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
 
 ## References
 
@@ -86,3 +99,4 @@ We publish a wide range of practical guides on e-commerce operations, cross-bord
 - [Sales Strategy and Price Setting - Price Search](https://pricesearch.jp/resource/sales-strategy/sales-price/)
 - [Approaches to Pricing - Price Search](https://pricesearch.jp/resource/sales-strategy/pricing/)
 - [E-Commerce Pricing Guide - AI Japan Step](https://ai.japanstep.jp/learn/2025/07/1209/)
+- [Tax Answer No.6551: Exemption for Export Transactions - National Tax Agency of Japan](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6551.htm)

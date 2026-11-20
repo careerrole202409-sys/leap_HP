@@ -41,7 +41,13 @@ On online shops that support guest checkout — buying without creating an accou
 
 Login and confirmation-email inquiries are small on their own, but as the volume grows, they can seriously eat into a seller's time. Preparing reply templates in advance for anticipated inquiry patterns, and proactively covering login-related guidance on your shop page or FAQ, can reduce the number of inquiries in the first place. Less time spent on customer support means more time you can put toward improving your products or driving acquisition.
 
-This kind of day-to-day customer support work is less glamorous than building the store itself, but it's essential for building customer trust over time. Leap's AI E-Commerce Agent is built around the idea of supporting a wide range of day-to-day e-commerce operations through conversation with AI, including this kind of efficiency gain in customer support.
+This kind of day-to-day customer support work is less glamorous than building the store itself, but it's essential for building customer trust over time. Leap, a cross-border ecommerce tool that lets AI handle marketing too, is built around the idea of supporting a wide range of day-to-day e-commerce operations through conversation with AI, including this kind of efficiency gain in customer support.
+
+## Preparing for Inquiries from Overseas Buyers
+
+As inbound demand grows, it's worth planning for login and checkout questions arriving in English or another language, not just Japanese. How much of the shop's screens and confirmation emails switch to another language automatically isn't something we could confirm from official sources as of November 2026 — the extent of language support may vary by area (product pages, checkout screens, and so on), so it's worth checking your own shop's settings against STORES's official help center directly.
+
+Once you know what's actually supported, a practical next step is preparing English reply templates for your most common inquiries ahead of time. Simply translating your existing Japanese templates for "I can't log in" or "my confirmation email never arrived" can meaningfully cut down on response time when those inquiries do come in. If you're looking to handle overseas customer support and multilingual store operations together going forward, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is one option worth considering.
 
 ## FAQ
 
@@ -57,14 +63,17 @@ A. Drafting a basic reply in advance for common patterns like "can't log in" or 
 
 A. Proactively covering login steps and confirmation-email guidance on your shop page or FAQ page can help buyers resolve issues themselves before they ever reach out. It's worth identifying your most common inquiry patterns and surfacing that guidance somewhere visible.
 
+**Q. What should I do if an overseas buyer contacts me in English about a login problem?**
+
+A. First check STORES's official help center to see exactly which screens and emails switch to which language for your shop. From there, translating your common-inquiry reply templates into English ahead of time will save you real time when those inquiries actually arrive.
+
 ## Summary and Key Takeaway
 
 Behind "where's the STORES login screen" are two different kinds of problems — a buyer's own confusion, and the support burden it creates for the seller fielding those questions. Preparing reply templates in advance and covering the basics proactively on your FAQ page can meaningfully cut down on the time you spend on support. Customer support doesn't drive sales directly the way acquisition work does, but the quality of support you consistently provide is what builds customer trust over time.
 
 For more on this, see our guide to logging in to the STORES admin as an owner and the daily inventory routine that follows.
 
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 

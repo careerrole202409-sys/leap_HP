@@ -91,19 +91,31 @@ SHIRO, a Japanese natural skincare brand (a subsidiary of pdc), is widely cited 
 
 For businesses operating at SHIRO's scale, the higher base fee of an upper-tier plan becomes secondary to two other factors: the compounding savings from lower transaction fees and the labor cost reduction from centralizing operations in one platform rather than running separate systems per market. This is a useful reminder that evaluating Shopify purely on monthly plan price misses the bigger cost picture.
 
+## What It Costs When You Sell Overseas Too
+
+On top of the monthly fees and hidden costs covered above, selling overseas adds costs tied to localization and running a multilingual store. The two most common are the monthly subscription for translation/localization apps that make your store multilingual, and the annual renewal fee for a country-specific domain (a ccTLD, for example) if you register one per market. Costs vary a lot depending on which apps you actually use, so the practical approach is to narrow down the languages and countries you're targeting first, then compare only the apps you actually need.
+
+Displaying prices in local currency for overseas customers through Shopify Markets doesn't carry an extra monthly fee on its own, but how much you rely on duty calculation or fine-grained per-market customization can determine which plan or app you end up needing. Checking Shopify's official help center for which plan supports the features you want, before you commit, helps avoid costs you didn't plan for.
+
+Leap, a cross-border ecommerce tool that lets AI handle marketing too, bundles building a multilingual, multi-currency cross-border store with localization suggestions and automated multilingual blog posts into a single plan — worth a look if you'd rather not manage several app subscriptions separately.
+
 ## FAQ
 
-### Q: Besides the monthly plan fee, what costs should I expect when first setting up Shopify?
+**Q. Besides the monthly plan fee, what costs should I expect when first setting up Shopify?**
 
-Beyond the monthly base fee (¥3,650/month for Basic on annual billing), the most common upfront costs are a custom domain (¥1,000–¥2,200/year) and, if you choose one, a paid theme (¥20,000–¥50,000 as a one-time purchase). If you hire a Shopify agency to build and customize your store, expect to budget ¥300,000–¥800,000 for a standard build including theme customization. If you keep it lean — free theme, custom domain only — your initial outlay can stay under ¥5,000.
+A. Beyond the monthly base fee (¥3,650/month for Basic on annual billing), the most common upfront costs are a custom domain (¥1,000–¥2,200/year) and, if you choose one, a paid theme (¥20,000–¥50,000 as a one-time purchase). If you hire a Shopify agency to build and customize your store, expect to budget ¥300,000–¥800,000 for a standard build including theme customization. If you keep it lean — free theme, custom domain only — your initial outlay can stay under ¥5,000.
 
-### Q: How much more does it cost if I use a payment provider other than Shopify Payments?
+**Q. How much more does it cost if I use a payment provider other than Shopify Payments?**
 
-Using an external payment provider triggers Shopify's third-party transaction fee on top of the external provider's own processing fee. The rates are 2% on Basic, 1% on Grow, 0.6% on Advanced, and 0.2% on Plus. At ¥5 million in monthly sales on the Basic plan, that's an additional ¥100,000/month in transaction fees alone. The practical recommendation is to use Shopify Payments as your default and layer in external providers only for payment methods Shopify Payments doesn't support — such as convenience store payments or buy-now-pay-later options.
+A. Using an external payment provider triggers Shopify's third-party transaction fee on top of the external provider's own processing fee. The rates are 2% on Basic, 1% on Grow, 0.6% on Advanced, and 0.2% on Plus. At ¥5 million in monthly sales on the Basic plan, that's an additional ¥100,000/month in transaction fees alone. The practical recommendation is to use Shopify Payments as your default and layer in external providers only for payment methods Shopify Payments doesn't support — such as convenience store payments or buy-now-pay-later options.
 
-### Q: How do I know when it's time to upgrade my plan?
+**Q. How do I know when it's time to upgrade my plan?**
 
-For Basic to Grow: the trigger is usually needing more staff accounts to delegate store management, or wanting access to professional reporting to analyze growth. For Grow to Advanced: run the math. Advanced costs roughly four times more per month than Grow, but its processing rate is 0.15% lower. At approximately ¥10 million in monthly sales, the fee savings begin to outweigh the plan cost increase. Make the upgrade decision based on a break-even calculation, not a gut feeling.
+A. For Basic to Grow: the trigger is usually needing more staff accounts to delegate store management, or wanting access to professional reporting to analyze growth. For Grow to Advanced: run the math. Advanced costs roughly four times more per month than Grow, but its processing rate is 0.15% lower. At approximately ¥10 million in monthly sales, the fee savings begin to outweigh the plan cost increase. Make the upgrade decision based on a break-even calculation, not a gut feeling.
+
+**Q. What extra costs come up if I sell overseas on Shopify too?**
+
+A. The main additions are subscription fees for translation/localization apps and the registration cost of a country-specific domain per market. Using Shopify Markets itself doesn't add a monthly fee, but some features, like duty calculation, may require a specific plan or app — worth checking Shopify's official help center before you commit.
 
 ## Conclusion: Understanding Shopify's Cost Structure Is the Prerequisite for Success
 
@@ -113,6 +125,8 @@ The right approach is to map out your sales volume, team size, and required feat
 
 Start with the Basic plan's 3-day free trial, use the cost framework in this article to stress-test each line item against your own situation, and build a monthly cost model before you commit to a full plan.
 
-Leap publishes ongoing practical resources on e-commerce operations, cross-border expansion, multilingual store setup, and localization strategy. Explore the full EC Operations Guide for more.
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
-[Explore the EC Operations Guide](https://www.leap.site/en/ec-guide)
+## References
+
+- [Shopify Help: Overview of Markets Features and Concepts](https://help.shopify.com/en/manual/markets/managing-markets/tax-duties)

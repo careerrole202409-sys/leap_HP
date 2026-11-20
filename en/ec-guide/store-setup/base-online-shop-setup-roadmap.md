@@ -40,6 +40,10 @@ With products registered, it's time to set your shop's design. BASE offers three
 
 Once your design is set, before you actually publish your shop, it's worth checking your product page previews, the flow from adding to cart through checkout, how shipping fees and payment methods display, and whether the layout holds up on a phone. One important caveat here: BASE doesn't offer a dedicated "test purchase" feature — if you buy from your own shop, it's processed as a normal order like any other. BASE's own guidance recommends using bank transfer or convenience store payment if you buy from your own shop, and advises against using credit card, PAY ID deferred payment, carrier billing, Amazon Pay, PayPal, or PayPay for that purpose. And once a payment actually goes through, BASE Easy Payment's processing fee and service usage fee aren't refunded. So rather than treating "place a real test order and walk it all the way through checkout" as a must-do before launch, focus your pre-launch check on previews and the purchase flow's appearance — and if you do place a self-order, follow BASE's official guidance on which payment method to use.
 
+## Selling Overseas from BASE
+
+BASE offers a feature called Easy Overseas Sales (かんたん海外販売) that lets you sell internationally without installing an extra App or paying a monthly fee. It launched on an entry basis on January 14, 2026, and became a standard feature available to every BASE shop on March 18, 2026. You're only charged a 5% service fee on the settlement amount when an item actually sells overseas, on top of BASE Easy Payment's usual processing fee for your plan. Because it reuses the product pages and payment setup you've already built following the steps above, opening your shop for domestic sales first and then switching on overseas sales later lets you expand your market without starting over. That said, depending on the destination country, buyers may be charged customs duty or GST/VAT on top of your price, so make sure your product pages and notices disclose this upfront. If you're planning to run your store with overseas sales in mind, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is worth considering as an option.
+
 ## FAQ
 
 **Q. How long does it take to set up an online shop on BASE?**
@@ -54,16 +58,15 @@ A. There's no pre-screening review when opening a shop, and most payment methods
 
 A. Not necessarily. Registering a handful of flagship products and launching with those, then adding the rest gradually as you run the shop, works fine. Launching earlier and building out your catalog based on customer response is a practical approach too.
 
+**Q. Can I sell overseas after opening a shop on BASE?**
+
+A. Yes. BASE has a standard feature called Easy Overseas Sales that only charges a 5% service fee on the settlement amount when something sells overseas (standard for every shop since March 18, 2026). No extra App installation or monthly fee is required.
+
 ## Summary and Key Takeaway
 
 Opening a shop on BASE isn't difficult if you follow the sequence: account creation, the legal disclosure and payment setup, product registration, and design. That said, because there's no pre-screening review, it's on you to carefully check the details that are easy to overlook — when each payment method actually becomes usable, gaps in the required legal disclosure, and so on. The fact that BASE has no dedicated test-purchase feature is another detail that's easy to miss before launch.
 
-That said, handling the legal disclosure, writing product descriptions, and choosing a design all on your own can feel like a lot for a first-time seller. Leap offers an AI E-Commerce Agent that supports building and running an e-commerce site entirely through conversation with AI. If you're feeling uncertain about getting your shop ready to launch, take a look at what Leap offers.
-
-We publish a wide range of practical guides on running an e-commerce business.
-
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+That said, handling the legal disclosure, writing product descriptions, and choosing a design all on your own can feel like a lot for a first-time seller. Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -76,3 +79,5 @@ We publish a wide range of practical guides on running an e-commerce business.
 - [How Do I Display the 6th and Later Product Images (Up to 20 Max)? - Help | BASE](https://help.thebase.in/hc/ja/articles/115000145061-6%E6%9E%9A%E7%9B%AE%E4%BB%A5%E9%99%8D%E3%81%AE%E5%95%86%E5%93%81%E7%94%BB%E5%83%8F-%E6%9C%80%E5%A4%A7%E7%94%BB%E5%83%8F20%E6%9E%9A-%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%AF%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%81%8B)
 - [Can I Freely Customize the Design With the HTML Editing App or a Paid Theme? - Help | BASE](https://help.thebase.in/hc/ja/articles/206418301--HTML%E7%B7%A8%E9%9B%86App-%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%84%E6%9C%89%E6%96%99%E3%83%86%E3%83%BC%E3%83%9E%E3%82%92%E8%87%AA%E7%94%B1%E3%81%AB%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AF%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%81%8B-)
 - [Can I Do a Test Purchase From My Own Shop? - Help | BASE](https://help.thebase.in/hc/ja/articles/115000158962-%E8%87%AA%E5%88%86%E3%81%AE%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%E3%81%A7%E3%83%86%E3%82%B9%E3%83%88%E8%B3%BC%E5%85%A5%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AF%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%81%8B)
+- [BASE Launches "Easy Overseas Sales," Letting Anyone Sell Internationally With Ease - Commerce Pick](https://www.commercepick.com/?p=80066)
+- [BASE Standardizes Overseas Sales Feature, Enabling Cross-Border EC for All Shops at No Extra Cost - Commerce Pick](https://www.commercepick.com/archives/86316)

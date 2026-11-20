@@ -105,19 +105,27 @@ GoGo Curry, a Japanese curry restaurant chain, was among the earliest adopters o
 
 Bento&co, a Kyoto-based retailer selling Japanese bento boxes and tableware to customers worldwide, built its e-commerce business on Shopify from the ground up. Leveraging years of cross-border e-commerce expertise, the company went on to develop Ship&co, a shipping management app for Shopify sellers. It is a model example of maximizing Shopify's strength as a single platform for both domestic and international operations.
 
+## Selling Overseas from Shopify: What to Know About Multilingual Support
+
+Once you've got your Shopify store set up for Japan, expanding into overseas sales means understanding how translation actually works. In the admin panel, adding a language creates a separate URL for that language, but simply adding it only translates your theme and checkout text. Translating everything else — product names, descriptions, category pages — requires either importing translations or setting up something like Shopify's own free Translate & Adapt app. There are also some easy-to-miss constraints: if a product's SEO meta title and meta description are left at their default values, those fields won't be translated at all, and certain parts of the URL, like the word "products," can't be translated either. Once you've got delivery and payment settled with Japan-market apps, understanding this translation framework as well means fewer surprises when you actually expand overseas. If you want AI to handle not just translation but full localization for your target market, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is worth considering.
+
 ## FAQ
 
-<strong>Q: Can I get Japanese-language support from Shopify? What about urgent issues?</strong>
+**Q. Can I get Japanese-language support from Shopify? What about urgent issues?**
 
-Japanese-language support is available via email and AI chat. The Japanese help center resolves many everyday questions and errors. That said, live human chat in Japanese is not always guaranteed in real time, and technical inquiries may take several days. For urgent issues, English chat support or a certified Shopify Expert (Shopify partner) is a more reliable option. For stores with significant annual revenue that need more intensive support, upgrading to Shopify Plus is worth considering.
+A. Japanese-language support is available via email and AI chat. The Japanese help center resolves many everyday questions and errors. That said, live human chat in Japanese is not always guaranteed in real time, and technical inquiries may take several days. For urgent issues, English chat support or a certified Shopify Expert (Shopify partner) is a more reliable option. For stores with significant annual revenue that need more intensive support, upgrading to Shopify Plus is worth considering.
 
-<strong>Q: Can all typical Japan-market features — scheduled delivery, COD, noshi, etc. — be handled through apps?</strong>
+**Q. Can all typical Japan-market features — scheduled delivery, COD, noshi, etc. — be handled through apps?**
 
-Scheduled delivery, COD, convenience store payment, and qualified invoice generation can all be addressed through Japanese-market apps. Noshi support is more limited — there are fewer dedicated apps for it, and custom development or manual handling may be needed for some cases. We recommend mapping out which features are essential before consulting a Shopify partner. Comparing Shopify with domestic platforms like BASE and ColorMe Shop while evaluating your specific business requirements will help you find the right fit.
+A. Scheduled delivery, COD, convenience store payment, and qualified invoice generation can all be addressed through Japanese-market apps. Noshi support is more limited — there are fewer dedicated apps for it, and custom development or manual handling may be needed for some cases. We recommend mapping out which features are essential before consulting a Shopify partner. Comparing Shopify with domestic platforms like BASE and ColorMe Shop while evaluating your specific business requirements will help you find the right fit.
 
-<strong>Q: We're planning overseas expansion in the future. Can Shopify support cross-border operations on the same platform?</strong>
+**Q. We're planning overseas expansion in the future. Can Shopify support cross-border operations on the same platform?**
 
-Yes — and this is one of the biggest reasons to choose Shopify. Shopify supports multiple languages, currencies, and regions. A Japan-market store can be extended to international markets by adding language-specific subdomains or language switchers. Automatic customs calculation, international shipment tracking, and local-currency pricing are all available through standard features or apps. BASE FOOD has explicitly stated that future international expansion was a key factor in their choice, and the ability to manage domestic and cross-border e-commerce from a single platform is a major long-term strategic advantage.
+A. Yes — and this is one of the biggest reasons to choose Shopify. Shopify supports multiple languages, currencies, and regions. A Japan-market store can be extended to international markets by adding language-specific subdomains or language switchers. Automatic customs calculation, international shipment tracking, and local-currency pricing are all available through standard features or apps. BASE FOOD has explicitly stated that future international expansion was a key factor in their choice, and the ability to manage domestic and cross-border e-commerce from a single platform is a major long-term strategic advantage.
+
+**Q. If I add a language in Shopify, does my product page get translated automatically?**
+
+A. No. Adding a language only translates your theme and checkout text; product names, descriptions, and similar content need either imported translations or an app like Translate & Adapt.
 
 ## Summary: Shopify Can Work for Japan — But Configuration Is Non-Negotiable
 
@@ -129,11 +137,7 @@ For e-commerce operators building a solid domestic store with one eye on oversea
 
 ## From Leap
 
-Leap publishes practical, ongoing insights on overseas business, cross-border e-commerce, and multilingual marketing. If you're interested in leveraging Shopify for cross-border expansion, or in building market-optimized pages for overseas audiences rather than simply translating your Japanese site, we'd love for you to explore our related articles.
-
-Read our blog: [Overseas Business Blog](https://www.leap.site/en/blog/)
-
-We help small and mid-sized businesses building out overseas web marketing create brands that local users choose naturally — without anything feeling out of place.
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -146,3 +150,5 @@ We help small and mid-sized businesses building out overseas web marketing creat
 - [Shopify Invoice Guide: Qualified Invoices & Electronic Records (Japanese)](https://tsun.ec/blogs/articles/shopify-invoice)
 - [30 Shopify Implementation Case Studies — Web Kanji (Japanese)](https://web-kanji.com/posts/shopify-case)
 - [22 Notable Japanese Company Shopify Case Studies (Japanese)](https://shopify.u-dea.jp/shopify-japan-user/)
+- [Translating your store - Shopify Help Center](https://help.shopify.com/en/manual/markets/languages/translate)
+- [Manage languages - Shopify Help Center](https://help.shopify.com/en/manual/markets/languages/manage-languages)
