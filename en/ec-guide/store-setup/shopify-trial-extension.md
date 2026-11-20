@@ -53,7 +53,11 @@ Keep in mind that a development store itself has a password set from the start a
 
 Making smart use of the free trial and development stores is a solid way to keep initial costs down. But the challenge many businesses actually run into is this: while the free trial itself costs nothing to explore, actually carrying things through — product listings, SEO, multilingual support, and eventually expanding into overseas sales — takes real knowledge and time.
 
-Whichever platform you choose — Shopify, BASE, STORES, Color Me Shop — simply publishing your store isn't the goal; what happens after that is the real work. Leap operates as an AI E-Commerce Agent that supports exactly this kind of work purely through conversation with AI, covering product listings, writing product descriptions, SEO-aware content creation, multilingual support, and eventually expanding into overseas sales, all in one continuous flow. It's designed to work alongside existing platforms like Shopify, letting you move your e-commerce operation forward through AI conversation even without specialized expertise.
+Whichever platform you choose — Shopify, BASE, STORES, Color Me Shop — simply publishing your store isn't the goal; what happens after that is the real work. Leap, a cross-border ecommerce tool that lets AI handle marketing too, supports exactly this kind of work purely through conversation with AI, covering product listings, writing product descriptions, SEO-aware content creation, multilingual support, and eventually expanding into overseas sales, all in one continuous flow. It's designed to work alongside existing platforms like Shopify, letting you move your e-commerce operation forward through AI conversation even without specialized expertise.
+
+## Selling Overseas from Shopify, Starting in Your Free Trial
+
+It's worth thinking about overseas sales even while you're still building during the free trial or in a development store, since that makes the post-launch process much smoother. Shopify includes Shopify Markets as a standard feature, which lets you manage pricing and translated content separately for each market you sell into — and you can experiment with its settings during your free trial or in a development store. Keep in mind, though, that using the full range of Markets' features requires an upper-tier plan like Shopify Plus. For multilingual support, Shopify's own free Translate & Adapt app lets you manage translated content, but simply adding a language only translates your theme and checkout — product descriptions and other content need either an imported translation or a separate app. Testing out this kind of overseas-sales setup while you're still in the free period means you won't be scrambling for it after launch. If you want AI to handle not just translation but full localization for each market, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is worth considering.
 
 ## FAQ
 
@@ -69,15 +73,15 @@ A. If you don't select a plan by the time the trial ends, your account is simply
 
 A. You can't personally extend the official trial period itself. That said, if you don't plan to actually sell products yet and just want to build and test your store, registering a Shopify Partner account and creating a development store lets you keep building for free without worrying about a time limit. This is a legitimate method that Shopify development agencies themselves rely on in practice.
 
+**Q. Can I test overseas-sales settings during Shopify's free trial?**
+
+A. Yes. Shopify Markets and the Translate & Adapt app are both available during the trial, so you can check how pricing and translated content display for different markets. Using the full range of Markets' features, though, requires an upper-tier plan like Shopify Plus.
+
 ## Summary and Key Takeaways
 
 Dig into how Shopify's free trial works, and you'll notice your original question — "how much can I try for free?" — has quietly turned into a different one: "how do I get my store published as fast and cheaply as possible?" But the question that actually matters comes after that. Even if you build out your store during the free period and get it published, that only puts you at the starting line of your business. Building a system where products actually sell, getting found through search, building relationships with customers, and expanding into overseas markets if needed — building an online store and growing an e-commerce business are similar-sounding but entirely different undertakings.
 
-The free trial and development stores are just a smart entry point for keeping your initial costs down. What happens after that — product listings, SEO, multilingual support, overseas expansion, and the ongoing improvement all of that requires — is what actually determines whether an e-commerce business succeeds. Leap operates as an AI E-Commerce Agent that supports everything from building and running your online store to eventually selling overseas, purely through conversation with AI, and aims to walk alongside businesses through this kind of continuous growth. Why not use the free trial wisely to lay the groundwork for your store, and then think through your next step by talking it through with AI?
-
-## Learn More
-
-If you'd like to dig deeper into e-commerce operations and platform comparisons, take a look at Leap's Overseas Business Manual and E-Commerce Operations Manual as well.
+The free trial and development stores are just a smart entry point for keeping your initial costs down. What happens after that — product listings, SEO, multilingual support, overseas expansion, and the ongoing improvement all of that requires — is what actually determines whether an e-commerce business succeeds. Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -94,3 +98,5 @@ If you'd like to dig deeper into e-commerce operations and platform comparisons,
 - [Shopify Help Center: "Building a Development Store"](https://help.shopify.com/ja/partners/dashboard/managing-stores/development-stores)
 - [non-standard world Inc.: "From Shopify Partner Registration to Creating a Development Store for Shopify Theme Development"](https://www.non-standardworld.co.jp/26433/)
 - [SB Payment Service: "What Is a Shopify Partner? Benefits, Types, and How to Register"](https://www.sbpayment.jp/support/ec/shopify-partner/)
+- [Shopify Markets (Shopify official)](https://apps.shopify.com/built-in-features/markets)
+- [Manage languages - Shopify Help Center](https://help.shopify.com/en/manual/markets/languages/manage-languages)

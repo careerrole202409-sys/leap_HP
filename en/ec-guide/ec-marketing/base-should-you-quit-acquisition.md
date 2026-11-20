@@ -56,6 +56,14 @@ Third-party analyses point to a consistent profile of people who tend not to be 
 
 Conversely, BASE is reported to work well for people who want to start testing cheaply, who are willing to put in the steady work of improving product photos and copy, and who can drive their own acquisition through social media (or are genuinely willing to learn how). Whether BASE is "worth quitting" has less to do with evaluating BASE itself, and more to do with whether you're someone who can actually put in that steady acquisition work.
 
+## Acquisition When You Sell Overseas Too
+
+Since March 18, 2026, BASE has offered "Easy Overseas Sales" as a standard feature available to every shop. If your shop has credit card payments enabled through BASE's checkout and isn't using the "Age Restriction" app, you can turn it on from your shop settings, and a dedicated cart automatically appears for visitors browsing from overseas. Shipping is still handled by want.jp, a BASE-affiliated fulfillment partner, so the shop itself only needs to manage domestic shipping. The shop pays a 5% fee on the order amount, while the overseas buyer separately pays an agency fee (10%, with a ¥500 floor and ¥3,000 cap) plus payment processing fees.
+
+Turning the feature on by itself doesn't mean overseas customers suddenly find you, though. The same point made throughout this guide — that acquisition is the seller's own job — holds even more true overseas, if anything. Japanese-only product descriptions won't surface in overseas search engines or social platforms, so you'll need at least minimal English product copy and some presence on whichever social platform your target market actually uses.
+
+Leap, a cross-border ecommerce tool that lets AI handle marketing too, offers localization suggestions tailored to your target market and can auto-generate multilingual blog posts — worth a look if overseas acquisition is more than you can take on yourself right now.
+
 ## FAQ
 
 **Q. Is it BASE's fault if a shop isn't selling?**
@@ -70,16 +78,17 @@ A. Ads are a legitimate lever, but increasing spend without accounting for BASE'
 
 A. Not necessarily. The people reported as a poor fit are those who want acquisition handled for them, or who expect automatic sales — and that constraint applies broadly across most self-hosted store-building services, not just BASE. Before switching platforms, it's worth trying the improvements that are within your own control first — product descriptions, social media activity, and so on.
 
+**Q. Can I sell overseas through BASE?**
+
+A. Yes. Since March 18, 2026, every BASE shop has access to the standard "Easy Overseas Sales" feature — just turn it on in your settings. That said, turning it on doesn't mean overseas customers automatically find you; you still need to handle acquisition yourself, the same as domestically.
+
 ## Summary and Key Takeaway
 
 Look closely at what's really behind the "should I quit BASE" sentiment, and what surfaces isn't a flaw in BASE itself — it's the gap between starting without knowing acquisition is on you, and the reality that it is. Fleshing out product descriptions, running social media, optimizing visibility inside the PAY ID app, and spending on ads with your actual margin in mind — these are improvements you can make yourself, before directing frustration at the platform. Before considering whether to quit, it's worth asking honestly whether you've actually been putting in the steady acquisition work — that question, as roundabout as it sounds, is the most reliable path to an actual solution.
 
-That said, keeping up social media, optimizing PAY ID, and adjusting ad spend all at once, continuously, on your own isn't easy. Leap offers an AI E-Commerce Agent that supports running and growing an e-commerce shop entirely through conversation with AI. If you want help getting past the acquisition wall, take a look at what Leap offers.
+That said, keeping up social media, optimizing PAY ID, and adjusting ad spend all at once, continuously, on your own isn't easy.
 
-We publish a wide range of practical guides on running an e-commerce business.
-
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -88,3 +97,5 @@ We publish a wide range of practical guides on running an e-commerce business.
 - [7 Reasons Your BASE Shop Isn't Selling, and How to Fix Them Now](https://tas-buppan-officialsite.co.jp/blog/base-not-sell/)
 - [Getting Found in BASE's PAY ID App: Search Tips and Customer Acquisition - Leap](https://www.leap.site/en/ec-guide/ec-marketing/base-payid-app-shop-search-optimization/)
 - [FAQ: Getting Started - BASE U](https://baseu.jp/guide/1/25477)
+- [BASE to Make "Easy Overseas Sales" a Standard Feature Starting March 18 - BASE U](https://baseu.jp/information/20260224)
+- [What Is "Easy Overseas Sales"? - BASE Help](https://help.thebase.in/hc/ja/articles/52804478331929--%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E6%B5%B7%E5%A4%96%E8%B2%A9%E5%A3%B2-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84)

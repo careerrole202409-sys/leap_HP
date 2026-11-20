@@ -18,15 +18,13 @@ author_image: https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap
 author_bio: A team of experts in overseas business
 ---
 
-## [Personal Experience] Starting a Shopify Store on Your Own — Setup Steps and Lessons Learned
-
-### [Quick Summary] The Reality of Launching a Shopify Store Solo — What Actually Happens Between Day One and Your First Sale
+## [Quick Summary] The Reality of Launching a Shopify Store Solo — What Actually Happens Between Day One and Your First Sale
 
 If you've been wondering whether Shopify is genuinely workable for a solo operator or side-project seller, you're not alone. This article draws on firsthand experience to document the actual launch sequence, what it costs, and the failure points that never appear in official tutorials.
 
 Shopify is the world's leading e-commerce platform, operating in over 175 countries and built with cross-border selling in mind. It's a serious option whether you're selling domestically or planning to reach international customers from the start. That said, the "anyone can get started easily" narrative hides some real friction points — design configuration, legal compliance pages, and payment setup among them. This article gives you the honest picture in about one minute of reading.
 
-### The Timeline from Zero to Launch
+## The Timeline from Zero to Launch
 
 Going from nothing to a live Shopify store takes an average of one and a half to two and a half months. For solo operators fitting the work around other commitments, it often takes longer. Here's what the process actually looks like.
 
@@ -36,7 +34,7 @@ The difficulty starts in the next phase: design. Choosing a theme and working th
 
 After design, the sequence is: product listings, payment setup, shipping setup, and legal compliance pages. All of these need to be in place before you can hit "Publish." Realistically, getting to a minimum viable live store takes about a month; getting to where you're actively running traffic-acquisition campaigns takes another half to full month on top of that.
 
-### Actual Startup and Running Costs
+## Actual Startup and Running Costs
 
 Here's an honest accounting of what it costs to run Shopify as a solo operator.
 
@@ -48,25 +46,25 @@ Apps add up quickly. SEO tools, email marketing platforms, review collection app
 
 Payment processing fees are also a factor. If you use Shopify Payments as your primary payment method, there is no additional transaction fee on top of the card processing rate. If you use external payment services — PayPal, buy-now-pay-later tools, or local payment options — Shopify charges an additional third-party transaction fee: 2.0% on the Basic plan. At meaningful revenue volumes, this difference becomes significant.
 
-### The Failure Points Beginners Actually Hit — and How to Get Past Them
+## The Failure Points Beginners Actually Hit — and How to Get Past Them
 
-#### Falling into the Design Rabbit Hole
+### Falling into the Design Rabbit Hole
 
 The most common early stumbling block isn't technical — it's the pursuit of a perfect design before publishing. Shopify offers over 100 themes, and the customization options within each one are extensive. The combination of creative freedom and perfectionism regularly keeps solo operators in unpublished, revenue-generating limbo for weeks.
 
 The fix is simple in principle: commit to "publish first." There is no objectively correct design, and every day spent tweaking rather than publishing is a day with zero sales. Get to a reasonable baseline, go live, observe real user behavior, and improve from there. The sequence matters more than the starting quality.
 
-#### Delaying the Legal Disclosure Page
+### Delaying the Legal Disclosure Page
 
 Running an e-commerce operation — in Japan or internationally — carries legal obligations around disclosure. In Japan, this is defined by the Act on Specified Commercial Transactions, which requires a dedicated page displaying the seller's business name, responsible party, address, contact details, pricing, and return/refund conditions. Equivalent consumer protection disclosure requirements exist in various forms across most markets.
 
 Launching without this page in place, or with incomplete information, creates legal exposure. In Japan specifically, violations can carry penalties of up to three years imprisonment or a ¥3,000,000 fine for individuals, or up to ¥100,000,000 for corporations. In Shopify, you can create policy pages directly from **Settings → Policies**. Build this before you publish, and verify the content meets the requirements for the markets you're selling into.
 
-#### Not Activating Shopify Payments
+### Not Activating Shopify Payments
 
 Shopify Payments isn't enabled by default — it requires active setup. Operators who miss this and start selling without completing the Payments configuration end up paying the third-party transaction fee on every order processed through an external payment provider. Go to **Settings → Payments** in the admin, complete the Shopify Payments activation, and add the additional payment methods your target customers use — credit cards, Apple Pay, Google Pay, PayPal — before your store goes live.
 
-### What It Actually Takes to Generate Sales — A Case Study in Acquisition
+## What It Actually Takes to Generate Sales — A Case Study in Acquisition
 
 Opening a Shopify store and publishing it does not bring customers. Unlike marketplace platforms, where the platform's own traffic works in your favor, a standalone store requires you to build your own acquisition channels from scratch.
 
@@ -76,7 +74,11 @@ On the acquisition side, the most common approach among solo operators is a comb
 
 Once sales begin, retention becomes the next lever. Repeat buyers are more profitable than new customers, and building repeat purchase behavior — through email follow-up sequences, loyalty programs, and subscriber lists — is what produces sustainable revenue growth over time.
 
-### FAQ
+## Business Registration and Tax Notes for Selling Overseas as a Sole Proprietor
+
+If you're a sole proprietor in Japan selling to overseas customers through Shopify, you don't need to file any separate business registration specifically for international sales. What's easy to miss is consumption tax treatment. Under Japan's National Tax Agency rules, sales exported overseas qualify for a consumption tax exemption — but only if you're a taxable business for consumption tax purposes. If your revenue is below the threshold that makes you tax-exempt, the export exemption doesn't even apply to you in the first place, since you're already outside the consumption tax system — so the first thing to check is which category you fall into. If the export exemption does apply, you're also required to keep documentation proving the export (such as an export permit or a copy of the postal shipping receipt) for seven years. Since consumption tax treatment depends on individual circumstances, it's worth confirming the specifics with a tax accountant or the National Tax Agency before relying on this in your own planning. If you're building toward serious international sales, a tool like Leap — a cross-border ecommerce tool that lets AI handle marketing too — is worth considering as part of your overseas acquisition setup.
+
+## FAQ
 
 **Q. Is Shopify viable for sole proprietors and side-project sellers? Which plan makes sense to start with?**
 
@@ -90,24 +92,23 @@ A. The Basic plan supports international shipping configuration and multilingual
 
 A. A published Shopify store does not receive visitors on its own. The first thing to check is whether the product pages give customers everything they need to buy with confidence: image quality, specificity of product descriptions, pricing, and whether the legal disclosure page and return policy are clearly accessible. Once that's solid, the question is acquisition — regular social media posting to build awareness, followed by SEO investment for sustainable inbound traffic. Rushing into paid advertising before those foundations are in place typically produces poor return. Organic channels take longer but compound over time.
 
-### Conclusion — Shopify Is Accessible, But Not Effortless. That's the Point.
+**Q. As a sole proprietor selling overseas through Shopify, can I automatically rely on the consumption tax export exemption?**
+
+A. Only if you're a taxable business for consumption tax purposes. If your revenue level makes you tax-exempt, the export exemption isn't even relevant to your situation, since you're outside the consumption tax system to begin with. Keep in mind the exemption also requires retaining export documentation for seven years, so it's worth confirming your specific situation with a tax accountant or the National Tax Agency before relying on it.
+
+## Conclusion — Shopify Is Accessible, But Not Effortless. That's the Point.
 
 Building a Shopify store from scratch as a solo operator confronts you with the full reality of e-commerce: more settings than expected, a design phase that takes longer than planned, and the discovery that traffic generation is entirely your responsibility. But working through that process builds genuine operational knowledge — and positions you to grow.
 
 Shopify's strength for international expansion lies in its infrastructure: multi-language, multi-currency, and multi-payment support that's genuinely built in, not bolted on. If international markets are anywhere on your roadmap, building on Shopify now means you're not starting over when you get there. The key point to internalize is that translation alone doesn't produce cross-border sales — what converts international customers is localization: content and experience calibrated to local cultural context and buying behavior.
 
-Leap publishes ongoing resources on overseas expansion, cross-border EC, and multilingual web strategy. Browse the blog and EC guide for practical content across those topics.
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
-### From Leap:
-
-[https://www.leap.site/en/blog](https://www.leap.site/en/blog)
-
-Practical, regularly updated content for businesses pursuing international expansion and cross-border e-commerce — covering EC operations, multilingual strategy, localization, and market-specific guidance.
-
-### References
+## References
 
 - [Shopify Official | How to Create an Online Store](https://www.shopify.com/blog/how-to-set-up-a-shopify-store)
 - [Shopify Official | Pre-launch Checklist](https://www.shopify.com/blog/checklist-for-launching-shopifystore)
 - [Shopify Official | Setting Up Your Legal Policy Pages](https://www.shopify.com/blog/shopify-privacy-policy-generator)
 - [Wise | How to Start with Shopify](https://wise.com/jp/blog/how-to-start-shopify)
 - [Leap | Singapore IP & Brand Protection](https://www.leap.site/en/blog/countries/singapore/singapore-ip-brand-protection/)
+- [Japan National Tax Agency | Export Exemption for Export Transactions](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6551.htm)

@@ -49,6 +49,14 @@ Once you've built up a follower base, push notifications are the next thing wort
 
 Separately, BASE also offers a free "abandoned cart reminder" email that automatically nudges shoppers who added items to their cart but didn't complete checkout. It's worth being clear that this applies to purchases made through your web shop — purchases made via the PAY ID app are excluded from this reminder email. So re-engaging a shopper who abandoned their cart inside PAY ID itself relies on follower push notifications, not this email feature.
 
+## Does PAY ID Help with Overseas Sales?
+
+The search optimization, followers, and push notification tactics covered above are fundamentally aimed at BASE's domestic, Japan-based buyer community. We weren't able to confirm from official sources, as of November 2026, how much of the PAY ID app's interface or search function supports English or other languages. If you're hoping to drive overseas sales, PAY ID optimization isn't the lever to pull — you'll need a separate approach.
+
+The actual channel for selling overseas on BASE is "Kantan Kaigai Hanbai" (Easy Overseas Sales), which became a standard feature on March 18, 2026. It automatically detects overseas visitors and shows a dedicated cart, with BASE's subsidiary want.jp handling shipping and payment on the back end — no setup fee, no monthly cost, just a 5% fee on anything that sells overseas. If you're optimizing for PAY ID while also keeping overseas sales on your roadmap, treat PAY ID search optimization and Kantan Kaigai Hanbai as two separate, parallel tracks rather than one solving the other.
+
+Once you start thinking about translating product descriptions and push notification copy for overseas customers too, that's real ongoing work on top of everything else. A tool like Leap, a cross-border ecommerce tool that lets AI handle marketing too, is built for exactly that kind of situation.
+
 ## FAQ
 
 **Q. Does it cost anything to list a shop on PAY ID?**
@@ -63,20 +71,22 @@ A. Listing your PAY ID shop URL in your social media bios, like Instagram, is ef
 
 A. Sending is free and there's no limit on how many you send, but sending too frequently can lead to followers unfollowing. It's worth reserving notifications for moments that are genuinely valuable to the customer, like new arrivals or the start of a sale.
 
+**Q. If I optimize for PAY ID search, does that also help with overseas sales?**
+
+A. Not directly. PAY ID is fundamentally a domestic acquisition channel, and we couldn't confirm its language support from official sources as of November 2026. For overseas sales specifically, look at "Kantan Kaigai Hanbai" (Easy Overseas Sales), which became a standard BASE feature on March 18, 2026.
+
 ## Summary and Key Takeaway
 
 Acquisition inside the PAY ID app operates on entirely different territory from Google search optimization or social media management. Just tightening up the basics — your shop description, logo, and product display order — changes how easily you get found, and using followers and push notifications gives you an ongoing way to reach customers without spending extra. Whether you take advantage of this in-app acquisition channel — something you only get because you chose BASE as your platform — can be a hidden factor that shapes how well your shop actually performs.
 
-That said, optimizing your shop description, writing push notification copy, and keeping up an ongoing connection with followers isn't easy to fit alongside day-to-day shop operations. Leap offers an AI E-Commerce Agent that supports running and growing an e-commerce shop entirely through conversation with AI. If you don't have the bandwidth for acquisition work right now, take a look at what Leap offers.
+That said, optimizing your shop description, writing push notification copy, and keeping up an ongoing connection with followers isn't easy to fit alongside day-to-day shop operations.
 
-We publish a wide range of practical guides on running an e-commerce business.
-
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
 - [7 Things to Check to Sell Well in the "PAY ID" App - BASE U](https://baseu.jp/35498)
+- ["Kantan Kaigai Hanbai" Becomes a Standard Feature Starting March 18 - BASE U](https://baseu.jp/information/20260224)
 - [I Want to Send a Push Notification to My "PAY ID App" Followers - Help | BASE](https://help.thebase.in/hc/ja/articles/115000152582--Pay-ID-%E3%82%A2%E3%83%97%E3%83%AA-%E3%81%AE%E3%83%95%E3%82%A9%E3%83%AD%E3%83%AF%E3%83%BC%E3%81%AB%E3%83%97%E3%83%83%E3%82%B7%E3%83%A5%E9%80%9A%E7%9F%A5%E3%82%92%E9%80%81%E3%82%8A%E3%81%9F%E3%81%84)
 - [What Is the "PAY ID App"? - Help | BASE](https://help.thebase.in/hc/ja/articles/115000190621--Pay-ID%E3%82%A2%E3%83%97%E3%83%AA-%E3%81%A8%E3%81%AF%E3%81%AA%E3%82%93%E3%81%A7%E3%81%99%E3%81%8B)
 - [BASE Adds AI-Generated Push Notification Copy for the "PAY ID App" - BASE, Inc.](https://prtimes.jp/main/html/rd/p/000000308.000030814.html)

@@ -96,6 +96,16 @@ Here's a summary of what to confirm before you open:
 - I understand the payout request deadline and the fees on transfers
 - I have a plan for how I'll attract customers after opening
 
+## Precautions for Selling Overseas Too
+
+BASE offers "Easy Overseas Sales" as a standard feature available to every shop since March 18, 2026. To use it, your shop needs credit card payments enabled through BASE Easy Payment, and you can't be using the "Age Restriction" app. If either condition isn't met, turning the setting on won't actually enable the feature.
+
+The fee structure is also worth understanding separately from domestic sales. There's no base usage fee, but the shop pays a 5% fee on the order amount (product price plus domestic shipping), on top of the same processing fee and service usage fee that apply to a regular credit card order. The overseas buyer separately pays an agency fee (10% of the product price plus domestic shipping, with a ¥500 floor and ¥3,000 cap) and a payment processing fee, and is responsible for customs duties. Shipping itself is handled by want.jp, BASE's fulfillment partner, so the shop only needs to manage domestic shipping.
+
+One more thing worth knowing: the previous "Overseas Sales Agency App" stopped accepting new installs on January 14, 2026. If you were already using that app, it's worth checking how your shop has transitioned to the standard feature. We also couldn't find explicit confirmation on BASE's help pages of whether the domestic prohibited-products rules carry over unchanged to overseas sales, or whether additional export-related rules apply — if you handle a product category where this matters, it's worth checking directly with BASE before you open.
+
+A tool like Leap, a cross-border ecommerce tool that lets AI handle marketing too, that bundles multilingual support and customer acquisition for overseas sales into one package, is also worth considering at the launch stage.
+
 ## FAQ
 
 **Q. Should I start on the Standard plan or the Growth plan?**
@@ -110,16 +120,17 @@ A. We couldn't find any blanket prohibition on resale or secondhand goods in BAS
 
 A. Revenue past the deadline expires and can no longer be withdrawn. The official help page says that once revenue expires, it can't be restored. There's also a mention that "expired amounts are transferred automatically depending on the shop's status," but since the conditions aren't specified, it's safest to submit requests yourself within the deadline.
 
+**Q. What should I watch out for if I want to sell overseas on BASE too?**
+
+A. If you use "Easy Overseas Sales" (available since March 18, 2026), your shop needs credit card payments enabled through BASE Easy Payment and no "Age Restriction" app in use. Fees include a 5% fee on the order amount for the shop, plus a 10% agency fee for the overseas buyer, so it's worth factoring these into your pricing.
+
 ## Summary and Key Takeaway
 
 Looking back across the five points, what they share is that BASE offers an easy start, while the decisions that follow are left to the seller. Calculating fees, checking whether a product can be sold, deciding on a URL, tracking the deadline for collecting revenue, and attracting customers — all of these can be checked before you press the button to open. Opening an online shop isn't the finish line; the real challenge is staying in a state where it keeps selling. A little extra effort before opening reduces the extra costs and trouble that come later.
 
-That said, working through everything from fee simulations to acquisition planning on your own is a lot. Leap offers an AI E-Commerce Agent that supports building and running an e-commerce site entirely through conversation with AI. If you're feeling uncertain about preparing to open your shop, take a look at what Leap offers.
+That said, working through everything from fee simulations to acquisition planning on your own is a lot.
 
-We publish a wide range of practical guides on running an e-commerce business.
-
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -137,3 +148,5 @@ We publish a wide range of practical guides on running an e-commerce business.
 - [Secondhand Articles Business and Pawnbroking (in Japanese) - National Police Agency](https://www.npa.go.jp/bureau/safetylife/kobutsu/index.html)
 - [FAQ: Getting Started - BASE U](https://baseu.jp/guide/1/25477)
 - [7 Things to Check to Sell Well in the "PAY ID" App - BASE U](https://baseu.jp/35498)
+- [BASE to Make "Easy Overseas Sales" a Standard Feature Starting March 18 - BASE U](https://baseu.jp/information/20260224)
+- [What Is "Easy Overseas Sales"? - BASE Help](https://help.thebase.in/hc/ja/articles/52804478331929--%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E6%B5%B7%E5%A4%96%E8%B2%A9%E5%A3%B2-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84)

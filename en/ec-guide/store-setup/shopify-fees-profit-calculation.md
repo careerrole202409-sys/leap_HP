@@ -104,19 +104,31 @@ Goldwin, which operates THE NORTH FACE in Japan, also runs its EC operations on 
 
 For startups and small-to-mid-sized stores, the most cost-effective and functionally sufficient approach is typically to start on the Basic plan with Shopify Payments as the sole payment method, then move to the Grow plan once monthly sales consistently exceed ¥5 million. Making that transition at the right time has a meaningful impact on long-term margins.
 
+## Payment Fees When You Also Sell Overseas
+
+In addition to the processing and transaction fees covered above, selling cross-border also means factoring in how customs duties and import taxes get handled. Shopify offers a feature called Shopify Markets, which lets you configure tax-inclusive pricing and duty collection separately for each market — a market being a group of countries or regions you sell into. A newly added market inherits your store's default settings, and sub-markets inherit their parent market's settings while still letting you override specific settings individually.
+
+Whether you show duties as already included in the price at checkout, or let the buyer pay them separately on arrival, changes how the final total looks to the customer — and that affects cart abandonment risk either way. Which option is available, and on which plan, is an area Shopify updates fairly often, so it's worth checking Shopify's official help documentation for the current setup before you commit to either approach.
+
+Leap, a cross-border ecommerce tool that lets AI handle marketing too, charges a flat 6% of sales (payment processing included) and supports credit card payments via Visa and Mastercard. If you want to simplify fee calculations into a single rate, that's one point of comparison worth considering.
+
 ## FAQ
 
-### Q1: If I use Shopify Payments, are all payment-related costs zero?
+**Q. If I use Shopify Payments, are all payment-related costs zero?**
 
-No — not zero. Using Shopify Payments eliminates the third-party transaction fee, but the credit card processing fee still applies. On the Basic plan, that's approximately 3.55% for domestic cards like Visa. If you accept foreign currency payments, a currency conversion fee also applies. It's not free — but the total cost is significantly lower than using an external payment provider.
+A. No — not zero. Using Shopify Payments eliminates the third-party transaction fee, but the credit card processing fee still applies. On the Basic plan, that's approximately 3.55% for domestic cards like Visa. If you accept foreign currency payments, a currency conversion fee also applies. It's not free — but the total cost is significantly lower than using an external payment provider.
 
-### Q2: I want to add an external payment service (Stripe, PayPay, etc.). Does that mean extra costs from Shopify?
+**Q. I want to add an external payment service (Stripe, PayPay, etc.). Does that mean extra costs from Shopify?**
 
-Yes — transaction fees apply. Shopify charges a transaction fee whenever you process payments through an external provider, at a rate that depends on your plan: 2.0% on Basic, 1.0% on Grow, 0.6% on Advanced. That means you're paying both the external provider's own processing fee and Shopify's transaction fee. If you plan to accept PayPay, Rakuten Pay, or other popular domestic QR payment methods, factor this double cost into your pricing before you launch.
+A. Yes — transaction fees apply. Shopify charges a transaction fee whenever you process payments through an external provider, at a rate that depends on your plan: 2.0% on Basic, 1.0% on Grow, 0.6% on Advanced. That means you're paying both the external provider's own processing fee and Shopify's transaction fee. If you plan to accept PayPay, Rakuten Pay, or other popular domestic QR payment methods, factor this double cost into your pricing before you launch.
 
-### Q3: How do I know when to upgrade my plan?
+**Q. How do I know when to upgrade my plan?**
 
-Calculate the math: does the reduction in fees from upgrading outweigh the higher monthly cost? With Shopify Payments, the break-even for moving from Basic to Grow is approximately ¥4.3 million in monthly sales. If you use external payment providers heavily, the fee gap is 1.0%, making Grow cheaper as soon as monthly sales reach around ¥650,000. Beyond fees, if you need multiple staff accounts (Basic supports only the owner; Grow supports up to five), that's an independent reason to upgrade.
+A. Calculate the math: does the reduction in fees from upgrading outweigh the higher monthly cost? With Shopify Payments, the break-even for moving from Basic to Grow is approximately ¥4.3 million in monthly sales. If you use external payment providers heavily, the fee gap is 1.0%, making Grow cheaper as soon as monthly sales reach around ¥650,000. Beyond fees, if you need multiple staff accounts (Basic supports only the owner; Grow supports up to five), that's an independent reason to upgrade.
+
+**Q. What else gets charged, beyond payment fees, if I ship internationally?**
+
+A. Customs duties and import taxes apply separately. Shopify Markets lets you configure tax-inclusive pricing and duty collection by market, but the exact mechanics and plan requirements change from time to time, so it's worth checking Shopify's official help center before you launch.
 
 ## Conclusion
 
@@ -124,11 +136,10 @@ Shopify's fee structure has three layers: monthly plan fee, payment processing f
 
 The single most important principle for protecting your margins is to choose your plan based on total cost — fees included — not just the monthly price tag. Use the simulations in this article as a starting point, then model your own optimal setup based on your current monthly sales and order volume.
 
-Once your plan and payment configuration are dialed in, the next step is thinking about international expansion. Shopify is a strong platform for cross-border e-commerce, but success there also requires localized landing pages and multilingual content tailored to each market. Leap specializes in building multilingual sites that go beyond translation — we create content localized for each target market, and we've supported many e-commerce businesses serious about selling internationally. If you're thinking about your next move beyond the domestic store, explore the rest of Leap's content below.
+Once your plan and payment configuration are dialed in, the next step is thinking about international expansion. Shopify is a strong platform for cross-border e-commerce, but success there also requires localized landing pages and multilingual content tailored to each market.
 
-### From Leap
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
-We publish practical resources on global business every week — covering cross-border e-commerce, multilingual strategy, and overseas marketing for Japanese companies expanding internationally.
+## References
 
-- [EC Operations Guide](https://www.leap.site/en/ec-guide)
-- [Global Business Blog](https://www.leap.site/en/blog)
+- [Shopify Help: Overview of Markets Features and Concepts](https://help.shopify.com/en/manual/markets/managing-markets/tax-duties)

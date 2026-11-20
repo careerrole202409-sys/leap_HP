@@ -18,7 +18,7 @@ author_image: https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap
 author_bio: A team of experts in overseas business
 ---
 
-### [Quick Summary] Get the Full Picture on Shopify Payments Before You Set It Up
+## [Quick Summary] Get the Full Picture on Shopify Payments Before You Set It Up
 
 Payment infrastructure is one of the most consequential decisions in building an EC store — it directly shapes the customer experience from checkout through to completion. This article covers Shopify Payments, Shopify's own built-in payment service: what it is, why it matters beyond just eliminating transaction fees, what product categories are prohibited, and how to configure it step by step.
 
@@ -26,7 +26,7 @@ The defining feature of Shopify Payments is that it lets any Shopify paid-plan s
 
 It also eliminates the transaction fees Shopify charges when you use a third-party payment processor (0.6%–2.0% depending on your plan) — a meaningful difference for operators focused on margin. And the ability to offer express checkout through Apple Pay and Shop Pay has a measurable impact on conversion rate (CVR) and cart abandonment — a marketing-level benefit that often gets buried in setup guides. This article covers that angle too.
 
-### What Shopify Payments Is and How It Works
+## What Shopify Payments Is and How It Works
 
 Shopify Payments is Shopify's official, native payment service. Normally, adding credit card payment to an EC store means applying to a third-party payment processor — GMO Payment Gateway, Stripe, or similar — going through their approval process, and then completing the integration. That review typically takes two weeks to a month, creating a real window of missed sales at store launch.
 
@@ -41,7 +41,7 @@ Payouts land in your bank account within 5 to 11 business days — a significant
 
 As of June 2025, Shopify Payments is available in approximately 40 countries including Japan, the United States, Canada, Australia, and the United Kingdom. Stores based outside these countries cannot use the service.
 
-### The Biggest Advantage Isn't Just Zero Transaction Fees
+## The Biggest Advantage Isn't Just Zero Transaction Fees
 
 The zero transaction fee benefit gets the most attention, and it deserves to. Shopify charges a separate transaction fee when you use a third-party payment processor — ranging from 0.5% to 2.0% depending on your plan. Enabling Shopify Payments eliminates that fee entirely. For stores doing tens of millions to hundreds of millions of yen in annual revenue, the annual difference is real money.
 
@@ -53,7 +53,7 @@ Shop Pay works on the same principle. Once a customer registers, their shipping 
 
 Shopify Payments also includes built-in 3D Secure (EMV 3DS) compliance. In Japan, the April 2025 credit card security guideline mandate is met automatically — no separate configuration needed. For small-to-mid-sized businesses that would otherwise need to budget for security compliance work, this is a meaningful operational savings.
 
-### Prohibited Product Categories: What Shopify Payments Won't Cover
+## Prohibited Product Categories: What Shopify Payments Won't Cover
 
 Shopify Payments has no upfront review, but its terms of service include a defined list of prohibited product categories. Stores selling these products aren't rejected at setup — they risk having their accounts suspended mid-operation, often without warning. Pre-checking your product line against the prohibited list is essential.
 
@@ -71,11 +71,11 @@ The most important thing to understand is the timing risk: a store can operate f
 
 One additional note for legitimate operators: if you don't complete the required business information within 21 days of your first sale, Shopify automatically initiates refunds to customers. The post-launch period is busy, but payment setup completion should be treated as a priority from day one.
 
-### How to Set Up Shopify Payments
+## How to Set Up Shopify Payments
 
 Enabling Shopify Payments is straightforward and completed entirely within the admin. Here are the standard steps.
 
-#### Activation Steps
+### Activation Steps
 
 1. Log into your Shopify admin and click "Settings" in the left menu.
 2. Navigate to the "Payments" page and click "Activate" under Shopify Payments.
@@ -85,15 +85,15 @@ Enabling Shopify Payments is straightforward and completed entirely within the a
 6. Product information: Select your product category and set the statement descriptor (the name that appears on customers' card statements).
 7. Save your settings — setup is complete.
 
-#### Using Test Mode
+### Using Test Mode
 
 After completing setup, switch to test mode and run through the checkout flow before going live. Use Shopify's test credit card numbers and walk through the full sequence: add to cart, checkout, payment, order confirmation. When everything behaves as expected, disable test mode and begin live operation.
 
-#### Enabling Apple Pay and Google Pay
+### Enabling Apple Pay and Google Pay
 
 Activating Shopify Payments automatically makes Apple Pay and Google Pay available as payment options. For Apple Pay specifically, a domain verification step may be required — check the "Payments" settings in your admin to confirm. Your store must be running on a custom domain with HTTPS enabled.
 
-### Case Studies: How Express Checkout Transforms the Purchase Experience
+## Case Studies: How Express Checkout Transforms the Purchase Experience
 
 Businesses using Shopify both in Japan and internationally have documented meaningful improvements to purchase experience by enabling Apple Pay and Shop Pay.
 
@@ -103,21 +103,33 @@ In Japan, Anker Japan — the Japanese operations of the global mobile charging 
 
 These cases point to the same conclusion: adding Shopify Payments isn't a payment configuration task — it's a strategic decision to make the checkout experience work for customers rather than against them.
 
-### FAQ
+## What to Know About Shopify Payments If You're Selling Overseas
 
-**Q1. What are Shopify Payments' credit card processing fees?**
+Shopify Payments bundles together payment methods like credit cards and Apple Pay, but that alone isn't enough to show overseas customers prices in their own currency and let them pay in it. For that, you need to pair it with a separate feature called Shopify Markets, which manages language, currency, pricing, and duty display by country or region.
 
-The credit card rate depends on your Shopify plan. On annual billing, the approximate rates as of 2025 are: Basic plan at 3.4% + ¥0, Shopify plan at 3.3% + ¥0, and Advanced plan at 3.25% + ¥0. Rates may vary by card type and currency. The critical point is that the separate Shopify transaction fee (0.5%–2.0%) that applies when using a third-party processor is completely eliminated. The higher your sales volume, the more that difference matters.
+Shopify's own help documentation states it plainly: "To sell in multiple currencies, you need to use Shopify Payments in your online store." In other words, setting up Shopify Markets alone isn't enough — without Shopify Payments active, customers are charged in your store's base currency regardless of what Markets is configured to show. If you're planning to sell overseas, checking prohibited product categories and processing fees isn't the whole picture: you also need both a Shopify Markets setup for your target regions and Shopify Payments turned on.
 
-**Q2. What does the Shopify Payments review process look like? Can accounts be suspended?**
+It's also worth noting that Shopify Markets only handles the currency, language, and pricing framework — it doesn't rewrite your product copy into natural, market-appropriate language on its own. That translation and localization work is a separate task, and it's the kind of thing a tool like Leap, a cross-border ecommerce tool that lets AI handle marketing too, is built to help with.
 
-There is no review required at initial activation — entering the required information is enough to start immediately. That said, as sales volume grows, Shopify may request additional identity and business verification. If prohibited products are found to be in the catalog, or if the terms of service are otherwise violated, the account can be suspended and payouts held without prior notice. It's strongly recommended to check your product catalog against Shopify's terms before launching, either through the support documentation or by asking Shopify support directly.
+## FAQ
 
-**Q3. Can I use other payment methods alongside Shopify Payments?**
+**Q. What are Shopify Payments' credit card processing fees?**
 
-Yes. With Shopify Payments enabled, you can add supplementary payment methods — buy-now-pay-later services (NP Atobarai, GMO Atobarai), convenience store payment, and others — through third-party app integrations. The important caveat: using an external payment processor alongside Shopify Payments (outside of direct Shopify integrations) still triggers Shopify's transaction fee on those transactions. Design your payment method mix based on your target customer's purchasing behavior and payment preferences, not just on what's available.
+A. The credit card rate depends on your Shopify plan. On annual billing, the approximate rates as of 2025 are: Basic plan at 3.4% + ¥0, Shopify plan at 3.3% + ¥0, and Advanced plan at 3.25% + ¥0. Rates may vary by card type and currency. The critical point is that the separate Shopify transaction fee (0.5%–2.0%) that applies when using a third-party processor is completely eliminated. The higher your sales volume, the more that difference matters.
 
-### Conclusion: Payment Infrastructure Is an Investment in Customer Experience
+**Q. What does the Shopify Payments review process look like? Can accounts be suspended?**
+
+A. There is no review required at initial activation — entering the required information is enough to start immediately. That said, as sales volume grows, Shopify may request additional identity and business verification. If prohibited products are found to be in the catalog, or if the terms of service are otherwise violated, the account can be suspended and payouts held without prior notice. It's strongly recommended to check your product catalog against Shopify's terms before launching, either through the support documentation or by asking Shopify support directly.
+
+**Q. Can I use other payment methods alongside Shopify Payments?**
+
+A. Yes. With Shopify Payments enabled, you can add supplementary payment methods — buy-now-pay-later services (NP Atobarai, GMO Atobarai), convenience store payment, and others — through third-party app integrations. The important caveat: using an external payment processor alongside Shopify Payments (outside of direct Shopify integrations) still triggers Shopify's transaction fee on those transactions. Design your payment method mix based on your target customer's purchasing behavior and payment preferences, not just on what's available.
+
+**Q. Is Shopify Payments by itself enough to show overseas customers prices in their local currency?**
+
+A. No. Local-currency pricing and checkout requires pairing it with Shopify Markets, which handles region-by-region settings. Shopify's own help documentation states that selling in multiple currencies requires using Shopify Payments in your online store — the two features only deliver multi-currency support for overseas customers when used together.
+
+## Conclusion: Payment Infrastructure Is an Investment in Customer Experience
 
 Shopify Payments combines three things that are hard to find together: no upfront review, zero transaction fees, and a single integration covering all major payment methods. For Shopify store operators, there's rarely a good reason not to enable it.
 
@@ -125,12 +137,9 @@ The setup is simple, but as this article has outlined, the real value is in what
 
 Three things to get right: confirm your product categories are compliant before launch, complete the payment setup early, and activate express checkout from day one. Those three moves determine how much of Shopify Payments' value you actually capture.
 
-Leap supports businesses building on Shopify — from EC platform setup and cross-border expansion to multilingual site builds and international market entry. If you're designing an EC store with overseas sales in mind, or looking to build a multilingual storefront from scratch, the resources below are a good starting point.
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
-- [EC Operations Guide](https://www.leap.site/en/ec-guide)
-- [Global Business Blog](https://www.leap.site/en/blog)
-
-### References
+## References
 
 - [Shopify Help Center | Shopify Payments](https://help.shopify.com/ja/manual/payments/shopify-payments)
 - [Shopify Help Center | Shopify Payments Requirements (Japan)](https://help.shopify.com/ja/manual/payments/shopify-payments/supported-countries/japan)
@@ -143,3 +152,5 @@ Leap supports businesses building on Shopify — from EC platform setup and cros
 - [BINDEC | The Impact of Shopify Payments](https://bindec.jp/media/555953150512/)
 - [Plus Shipping | How to Configure Shopify Payments](https://plus-shipping.com/blogs/shopify-payments)
 - [Flagship | Shop Pay and 3D Secure](https://flagship.cc/blogs/columns/shoppay-3ds)
+- [Shopify Help Center | Markets Overview](https://help.shopify.com/en/manual/markets)
+- [Shopify Help Center | Selling in Multiple Currencies](https://help.shopify.com/en/manual/payments/shopify-payments/multi-currency)
