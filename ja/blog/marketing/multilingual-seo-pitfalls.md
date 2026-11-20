@@ -114,3 +114,7 @@ hreflangで言語を分けても、オフページ要素を無視すると競争
 *   [日本ネット経済新聞「『資生堂』、ECサイトで8言語対応 在留外国人の利便性向上、海外での認知度さらに拡大へ」](https://netkeizai.com/articles/detail/13186)
 *   [エクスポート・ジャパン「化粧品会社のWebサイト 多言語対応を調べてみた」](https://www.export-japan.co.jp/blog/%E5%8C%96%E7%B2%A7%E5%93%81%E4%BC%9A%E7%A4%BE%E3%81%AEweb%E3%82%B5%E3%82%A4%E3%83%88-%E5%A4%9A%E8%A8%80%E8%AA%9E%E5%AF%BE%E5%BF%9C%E3%82%92%E8%AA%BF%E3%81%B9%E3%81%A6%E3%81%BF%E3%81%9F/)
 *   [AIOSEOブログ「避けたい5つの多言語SEOの間違い（＋プロのセットアップのヒント）」](https://aioseo.com/ja/multilingual-seo-mistakes/)
+
+### あわせて読みたい
+
+- [ホームページリニューアルで失敗しない方法：浜松の中小企業によくある失敗5選（satokotadesign）](https://satokotadesign.com/column/homepage-renewal-avoid-failure/)：サイトリニューアルで失敗を避けたい方へ
