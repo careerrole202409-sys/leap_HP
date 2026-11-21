@@ -106,3 +106,7 @@ Googleのアルゴリズムは、ユーザーの検索意図（サーチイン�
 *   [DHC USA 公式サイト](https://www.dhccare.com)
 *   [JETRO「東南アジアにおける越境EC市場動向調査」](https://www.jetro.go.jp)
 *   [Google「How Google Search Works（Core Updates）」](https://developers.google.com/search/updates/core-updates)
+
+### あわせて読みたい
+
+- [日本企業が狙うべき海外越境ECサイト７つ（株式会社ダズ・インターナショナル）](https://does-inter.com/%E6%97%A5%E6%9C%AC%E4%BC%81%E6%A5%AD%E3%81%8C%E7%8B%99%E3%81%86%E3%81%B9%E3%81%8D%E6%B5%B7%E5%A4%96%E8%B6%8A%E5%A2%83ec%E3%82%B5%E3%82%A4%E3%83%88%EF%BC%97%E3%81%A4/)：出店先の海外ECモールを国別に知りたい方へ
