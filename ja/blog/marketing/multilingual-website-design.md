@@ -152,3 +152,7 @@ YKKやマキタが示すように、グローバルサイト設計において�
 * [W3C「Internationalization（国際化）技術入門」](https://www.w3.org/International/getting-started/Overview)
 * [JETRO「アジア・オセアニア主要国のデジタル市場動向」](https://www.jetro.go.jp/)
 * [Leap公式ブログ「シンガポールでの国際特許・商標登録とブランド保護戦略」](https://www.leap.site/ja/blog/countries/singapore/singapore-ip-brand-protection/)
+
+### あわせて読みたい
+
+- [多言語サイトの制作費用と失敗しない3つの構築型（株式会社cantik）](https://cantik.co.jp/column-web/%E5%A4%9A%E8%A8%80%E8%AA%9E%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E5%88%B6%E4%BD%9C%E8%B2%BB%E7%94%A8%E3%81%A8%E5%A4%B1%E6%95%97%E3%81%97%E3%81%AA%E3%81%843%E3%81%A4%E3%81%AE%E6%A7%8B%E7%AF%89%E5%9E%8B/)：多言語サイトの費用と構築の型を知りたい方へ
