@@ -111,3 +111,9 @@ Googleのアルゴリズムは、ユーザーの検索意図（サーチイン�
 
 - [日本企業が狙うべき海外越境ECサイト７つ（株式会社ダズ・インターナショナル）](https://does-inter.com/%E6%97%A5%E6%9C%AC%E4%BC%81%E6%A5%AD%E3%81%8C%E7%8B%99%E3%81%86%E3%81%B9%E3%81%8D%E6%B5%B7%E5%A4%96%E8%B6%8A%E5%A2%83ec%E3%82%B5%E3%82%A4%E3%83%88%EF%BC%97%E3%81%A4/)：出店先の海外ECモールを国別に知りたい方へ
 - [インバウンド向け多言語Webサイト制作（株式会社オブライト）](https://www.oflight.co.jp/ja/services/inbound-web)：多言語サイトの制作とhreflangなどの技術的SEOを知りたい方へ
+- [中小企業のための越境EC活用術｜成功するためのポイントとは？（ネイビーグループ）](https://navyconsulting.jp/cross_border_ec_utilization/)：中小企業が越境ECを始める際の要点を知りたい方へ
+- [化粧品OEMで海外展開する方法｜日本製コスメの輸出と認証ガイド（OEMの教科書）](https://oem.boogiewoogie.co.jp/cosme-oem-overseas/)：化粧品の輸出と認証の流れを知りたい方へ
+- [海外PR（株式会社8-P）](https://8-p.inc/service/globalpr/)：海外メディアへのPRを検討している方へ
+- [株式会社グローバークス](https://www.globarx.co.jp/)：外国人向けのSNS運用や多言語動画制作を知りたい方へ
+- [株式会社デジタルダイブ](https://digital-dive.com/)：多言語サイト制作や翻訳を含むWeb制作を知りたい方へ
+- [士業の集客方法｜ホームページ・ブログ活用の成功戦略を解説（株式会社シード）](https://www.seedinc.jp/column/marketing/client-acquisition-for-legal-and-accounting-professionals/)：ホームページとブログによる集客の進め方を知りたい方へ
