@@ -3,137 +3,147 @@
 ルールは `rules.md`、Leapの情報は `materials.md` を見ること。
 
 ## 今月（2026年11月）
-- 対象期間：11/11〜11/30（3週）
-- 本数：新規30本（競合9・比較9・知識6・トレンド6）／昔の記事のリライト60本／PDCAのリライト9本
-- 新規の型の配分（来月以降はPDCAで見直す）：競合3・比較3・トレンド2・知識2（1週あたり）
+- 対象期間：11/11〜11/30
+- 本数（1週あたり）：11/11週・11/18週は新規10本・リライト20本、11/25週からは新規20本・リライト40本（rules.md 3-1）
+- 新規の型の配分（1週あたり）：競合6・比較6・トレンド4・知識4（来月以降はPDCAで見直す）
 - リライトの順番：EC運用マニュアル → HP作成マニュアル → 海外ビジネスマニュアル。同じマニュアルの中は、検索での表示が多い記事から
-- PDCAのリライト（P）：11月分は P001〜P010。週3本、効果が大きい順（上から）
+- PDCAのリライト（P）：11月分は P001〜P010（すべて対応済み）
 - 状態：未着手／作業中／確認待ち／公開済み
 
 ## 一覧
 
 | ID | 種別 | マニュアル | 型 | 狙う検索語 | タイトル | コンセプト | URL | 状態 | メモ |
 |---|---|---|---|---|---|---|---|---|---|
-| N001 | 新規 | 越境EC | 競合 | shopify 海外販売 / shopify 海外販売 設定 / shopify 海外販売 手数料 | Shopifyで海外販売する方法｜設定・手数料・税金の注意点 | Shopifyで国内販売中の事業者が、海外販売に必要な設定と費用を一通り把握できる記事。設定手順と手数料は公式ヘルプで確かめて書き、最後に「海外集客まで任せるならLeap」という選択肢を示す |  | 確認待ち |  |
-| N002 | 新規 | 越境EC | 競合 | shopify 多言語対応 / shopify 多言語 | Shopifyの多言語対応｜設定方法と翻訳アプリの選び方 | Shopifyストアを多言語にしたい人が、標準機能と翻訳アプリでできることの違いと設定手順を知れる記事。翻訳とローカライズの違いに触れ、ローカライズまでAIが行うLeapを独自の視点として入れる |  | 確認待ち |  |
-| N003 | 新規 | 越境EC | 競合 | shopify 海外発送 / shopify 越境ec 配送 | Shopifyの海外発送・配送設定｜送料の決め方と注意点 | Shopifyで海外発送を始めたい人が、配送エリア・送料の設定方法と、国際配送で気をつける点を知れる記事。設定は公式ヘルプで確かめ、送料の試算の例を独自の情報として入れる |  | 確認待ち |  |
-| N004 | 新規 | 越境EC | 競合 | shopify ai | ShopifyのAI機能（Sidekick・Shopify Magic）とは｜できることと使い方 | Shopifyを使っている・検討している人が、ShopifyのAI機能で何ができて何ができないかを知れる記事。公式の発表で確かめた機能だけを書き、集客までAIが実行するLeapとの違いを公平に示す | /ja/ec-guide/store-setup/shopify-ai-features-sidekick-magic/ | 確認待ち |  |
-| N005 | 新規 | 越境EC | 競合 | stores 海外発送 / stores 英語対応 / ストアーズ 越境ec | STORESで海外販売はできる？英語対応・海外発送の現状 | STORESで国内販売中の人が、海外販売にどこまで対応できるかを知れる記事。英語対応・海外発送・決済の現状を公式情報で確かめて書き、足りない部分を補う方法としてLeapなどの選択肢を示す | /ja/ec-guide/cross-border/stores-cross-border-shipping-status/ | 確認待ち |  |
-| N006 | 新規 | 越境EC | 競合 | ecforce 料金 / ecforce 越境 | ecforceとは｜料金・機能・越境ECへの対応 | ECツールを比較している中小企業が、ecforceの特徴・料金・越境EC対応を知れる記事。公式サイトで確かめた事実だけを書き、どんな会社に向いているかを公平に示す | /ja/ec-guide/store-setup/ecforce-overview-pricing-cross-border/ | 確認待ち | ecforce公式・PayPal公式の料金ページはbot対策で直接取得不可だったため、二次ソースで裏取り |
-| N007 | 新規 | 越境EC | 競合 | amazon 海外販売 やり方 / amazon 海外販売 手数料 | Amazonで海外販売する方法｜グローバルセリングの始め方と手数料 | Amazonで国内販売中の事業者が、海外のAmazonで売る手順と手数料を知れる記事。モールと自社ECの違いに触れ、自社ブランドで売るならLeapという選択肢を示す |  | 未着手 |  |
-| N008 | 新規 | 越境EC | 競合 | メルカリ 越境ec / メルカリショップ 海外販売 | メルカリShopsの越境EC（海外販売）の仕組みと手数料 | メルカリShopsで出品している事業者が、海外の購入者に売れる仕組みと手数料を知れる記事。公式情報で仕組みを確かめ、自社ECで海外に売る場合との違いを示す |  | 未着手 |  |
-| N009 | 新規 | 越境EC | 競合 | カラーミー 海外販売 / カラーミーショップ 海外販売 | カラーミーショップで海外販売する方法｜多言語・海外発送の対応 | カラーミーショップで国内販売中の人が、海外販売の方法と対応状況を知れる記事。公式情報で確かめ、足りない部分を補う方法を示す |  | 未着手 |  |
-| N010 | 新規 | 越境EC | 比較 | 越境ec プラットフォーム 比較 / 越境ec おすすめ / 越境ec プラットフォーム ランキング | 越境ECプラットフォーム比較｜自社に合う選び方とおすすめ | 越境ECを始めたい中小企業が、主なプラットフォームの違いと選び方を知れる記事。料金・手数料・越境対応・集客機能・BtoB対応の比較表にLeapも並べ、用途別におすすめを示す |  | 確認待ち |  |
-| N011 | 新規 | 越境EC | 比較 | 越境ec サイト構築 / 越境ec 構築 | 越境ECサイトの構築方法を比較｜自社EC・モール・構築代行 | 越境ECを構築したい中小企業が、自社EC・モール出店・構築代行の違いと、費用・手間を比べられる記事。ツールで自社ECを作る選択肢としてLeapを示す |  | 確認待ち |  |
-| N012 | 新規 | 越境EC | 比較 | 越境ec モール / 海外販売 プラットフォーム | 越境ECモール比較｜Amazon・eBay・Shopeeの違いとQoo10の注意点 | 海外のモールに出店したい事業者が、主なモールの対象国・手数料・特徴を比べられる記事。公式情報で確かめ、モールと自社ECの使い分けを示す | /ja/ec-guide/cross-border/cross-border-marketplace-comparison/ | 確認待ち | eBayの通貨換算手数料が2026年12月2日以降に変わる予定。12月のPDCAで数字を見直す |
-| N013 | 新規 | 越境EC | 比較 | 越境ec 決済代行 / 越境ec 決済サービス | 越境ECの決済代行サービス比較｜手数料と対応通貨 | 越境ECの決済を整えたい事業者が、主な決済代行の手数料・対応通貨・対応国を比べられる記事。決済手数料込みで売上の6%のLeapを、比較の選択肢として示す | /ja/ec-guide/cross-border/cross-border-ec-payment-service-comparison/ | 確認待ち | Airwallexの手数料は出典間で食い違い公式で確認できず掲載見送り |
-| N014 | 新規 | 越境EC | 比較 | 越境ec 物流代行 / 越境ec 発送代行 | 越境ECの物流代行・発送代行サービス比較｜選び方と費用 | 海外発送の手間を減らしたい事業者が、物流代行・発送代行の選び方と費用の目安を知れる記事。公式情報で確かめたサービスだけを比べる | /ja/ec-guide/cross-border/cross-border-ec-logistics-agency-comparison/ | 確認待ち |  |
-| N015 | 新規 | 越境EC | 比較 | 越境ec 運営代行 / 越境ec 運用代行 / 越境ec 代行 | 越境ECの運営代行サービス比較｜費用相場と依頼範囲 | 越境ECの運営を外注したい中小企業が、運営代行に頼める範囲と費用相場を知れる記事。素材集の外注との比較を使い、AIに任せる選択肢としてLeapを示す | /ja/ec-guide/cross-border/cross-border-ec-operation-agency-comparison/ | 確認待ち | 各社の料金は非公開のため「要問い合わせ」と記載 |
-| N016 | 新規 | 越境EC | 比較 | 越境ec 中国 / red 越境ec / jd 越境ec | 中国向け越境ECプラットフォーム比較｜天猫国際・京東・RED | 中国に売りたい事業者が、主な中国向けプラットフォームの違いと出店の条件を知れる記事。公式情報で確かめ、各プラットフォームに向く商品・企業を示す |  | 未着手 |  |
-| N017 | 新規 | 越境EC | 比較 | lazada 越境ec / 越境ec 東南アジア | 東南アジアの越境ECモール比較｜Shopee・Lazadaの特徴と出店方法 | 東南アジアに売りたい事業者が、ShopeeとLazadaの対象国・手数料・出店方法を比べられる記事。公式情報で確かめ、自社ECとの使い分けを示す |  | 未着手 |  |
-| N018 | 新規 | 越境EC | 比較 | 越境ec ai | 越境ECに使えるAIツール比較｜サイト作成から集客まで | 越境ECにAIを使いたい事業者が、サイト作成・翻訳・集客などに使えるAIツールを比べられる記事。各ツールの公式情報で確かめ、集客まで実行するLeapを比較表に並べる |  | 未着手 |  |
-| N019 | 新規 | 越境EC | 知識 | 越境ec とは / 越境ec とは わかりやすく / 越境ec メリット デメリット | 越境ECとは？わかりやすく解説｜仕組み・メリット・デメリット | 越境ECを初めて調べる人が、越境ECの意味・仕組み・メリットとデメリットを理解できる記事。冒頭で1文の定義を示し、始めるための次の一歩としてLeapに触れる |  | 確認待ち |  |
-| N020 | 新規 | 越境EC | 知識 | 越境ec 始め方 / 越境ec やり方 / 越境ec 流れ / 越境ec 立ち上げ | 越境ECの始め方｜立ち上げの流れと準備すること | 越境ECを始めたい中小企業が、立ち上げの流れと準備することを順番に知れる記事。手順は番号付きで示し、チャットだけで立ち上げられるLeapの流れを独自の情報として入れる |  | 確認待ち |  |
-| N021 | 新規 | 越境EC | 知識 | 越境ec 費用 / 越境ec 手数料 | 越境ECの費用はいくら？立ち上げ・運営にかかるコスト | 越境ECを検討中の中小企業が、立ち上げと運営に何にいくらかかるかを把握できる記事。素材集の外注との比較と、Leapの料金を使った試算の例を独自の情報として入れる | /ja/ec-guide/cross-border/cross-border-ec-costs/ | 確認待ち |  |
-| N022 | 新規 | 越境EC | 知識 | 越境ec 消費税 / 越境ec 輸出免税 / 越境ec インボイス / 越境ec 消費税還付 | 越境ECの消費税｜輸出免税・インボイス・還付の基本 | 越境ECで海外に売る事業者が、消費税の輸出免税・インボイス・還付の基本を知れる記事。国税庁などの公的な情報で確かめ、判断が必要な部分は専門家への相談を勧める | /ja/ec-guide/cross-border/cross-border-ec-consumption-tax/ | 確認待ち | インボイス経過措置の控除割合は国税庁2026年4月公表の最新PDFで確認した数値を採用 |
-| N023 | 新規 | 越境EC | 知識 | 越境ec 売れるもの / 越境ec 人気商品 / 越境ec 売れ筋 | 越境ECで売れるもの｜人気の商品ジャンルと選び方 | 何を海外に売るか考えている事業者が、越境ECで人気のジャンルと商品の選び方を知れる記事。出典のある調査データだけを使い、国別アクセス解析での市場調査を独自の視点として入れる |  | 未着手 |  |
-| N024 | 新規 | 越境EC | 知識 | 越境ec 補助金 / 越境ec 補助金 2026 | 越境ECで使える補助金（2026年）｜対象と申請のポイント | 越境ECの費用を抑えたい中小企業が、2026年に使える補助金の対象と申請のポイントを知れる記事。公募要領など公式の情報で確かめ、公募期間と日付を必ず書く |  | 未着手 |  |
-| N025 | 新規 | 越境EC | トレンド | shopify editions 2026 / shopify editions fall 26 / shopify 新機能 / shopify aiエージェント / エージェンティックコマース 日本 | Shopify Editions Fall '26（2026秋）の新機能｜AIエージェント販売は越境ECに使える？ | Shopifyを使っている・検討している越境EC志向の中小企業が、Fall '26のAI関連の新機能（AIエージェント内での販売など）を日本から海外に売るときに使えるかを知れる記事。公式ヘルプで確かめたAIチャネル別の対象国の表を独自の情報とし、現地語の情報整備の流れでLeapに触れる | /ja/ec-guide/ec-marketing/shopify-editions-fall-2026-ai-agent/ | 確認待ち | 発表は2026年10月28日。N004（ShopifyのAI機能とは）と一部重なるので、N004を書くときは使い分ける |
-| N026 | 新規 | 越境EC | トレンド | eu 関税 3ユーロ / 日本 郵便 eu 停止 / 日本 郵便 eu 関税 / ioss 日本郵便 / ems ドイツ | EUの3ユーロ関税と日本郵便のEU宛て差出制限｜越境ECで確認したいこと（2026年11月） | EU向けに販売している・検討中の中小企業が、2026年11月に何が変わり、どの国に・どの方法でなら送れるかを知れる記事。関税と手数料の試算、UGXとEMSの運賃比較を独自の情報とし、商品ごとに販売国を設定できるLeapの機能につなげる | /ja/ec-guide/cross-border/eu-parcel-duty-japan-post-2026/ | 確認待ち | 日本郵便の発表は2026年10月30日・11月4日。条件が頻繁に変わるため、公開前に日本郵便のお知らせを再確認する |
-| N027 | 新規 | 越境EC | トレンド | google universal cart 日本 / google ucp とは / ai エージェントコマース 越境ec | Google「Universal Cart」とUCPの最新状況（2026年11月）｜日本未対応の今、越境EC事業者がすべきこと | UCP対応チェックアウトは公式ヘルプ上「米国・カナダ・オーストラリアのみ」で日本は対象外であることを確認した記事。N025（Shopify Editions Fall '26）・N004（ShopifyのAI機能）とは発表元・対象範囲が異なり重複なし | /ja/ec-guide/cross-border/google-universal-cart-ucp-cross-border-status/ | 確認待ち | 日本展開の具体的時期は公式に明記なし（「今後数か月」のみ） |
-| N028 | 新規 | 越境EC | トレンド | shopee 11.11 mega day / shopee セール 越境ec / 東南アジア 越境ec セール | Shopeeの「11.11 Mega Day」で日本セラーのGMVが24倍に｜東南アジア越境ECのセール商戦をどう活かす | 2026年11月19日のShopee Japan公式発表（PR TIMES）の実績データを一次情報として使用。N017（Shopee・Lazada比較）とは「出店方法の比較」と「セール商戦の活かし方」で目的が異なり重複なし | /ja/ec-guide/cross-border/shopee-1111-mega-day-cross-border-ec/ | 確認待ち | 対象5市場のうち公式発表に国名明記がない分は「東南アジア5市場」と表記 |
-| N029 | 新規 | 越境EC | トレンド | （書く週に決める） | （トレンド枠：書く週の最新ニュースから決める） | （書く週に決める） |  | 未着手 | AI関連・越境ECのプレスリリース・競合の発表から（rules.md 12-3） |
-| N030 | 新規 | 越境EC | トレンド | （書く週に決める） | （トレンド枠：書く週の最新ニュースから決める） | （書く週に決める） |  | 未着手 | AI関連・越境ECのプレスリリース・競合の発表から（rules.md 12-3） |
-| P001 | リライト（PDCA） | EC運用 | 既存 | amboras / amboras ai / is amboras legit / amboras reviews | Amborasの実力を第三者レビューで検証！海外の評価から見える強みと注意点 | - | /en/ec-guide/store-setup/amboras-ai-ecommerce-review/ | 確認待ち | 英語版が5位前後で表示がとても多いが、クリックが少ない。英語のタイトル・説明文を「Amborasとは／評判／安全か」に答える形に直し、「is amboras legit」に答える見出しを足す |
-| P002 | リライト（PDCA） | EC運用 | 既存 | amboras / is amboras free / amboras price | Amborasの料金プラン（Pricing）解説！無料版と課金の実態 | - | /en/ec-guide/store-setup/amboras-pricing-guide/ | 確認待ち | 英語版が5位前後。「is amboras free」に冒頭で答える形にし、タイトル・説明文に無料かどうかを入れる |
-| P003 | リライト（PDCA） | 海外ビジネス | 既存 | 海外進出 補助金 / 海外展開 補助金 / 海外進出 助成金 | 【海外展開の味方】知らないと損！中小企業向け補助金・助成金を120%活用する秘訣 | - | /ja/blog/expansion/guide-to-overseas-expansion-subsidies/ | 確認待ち | 10位前後で1ページ目の手前。上位記事と比べて足りない補助金・最新の公募情報を足す。タイトルに「2026年」と検索語「海外進出 補助金」を入れる。越境ECで使える補助金の章もここに足す（N024と重ならないよう、N024は越境EC専用の内容に絞る） |
-| P004 | リライト（PDCA） | HP作成 | 既存 | above the fold design / above the fold guidelines / what does above the fold mean | ファーストビューでCVRを上げる設計｜原則と改善チェックリスト | - | /en/hp-guide/design-ux/first-view-cvr-optimization/ | 確認待ち | 英語版が10位前後で表示が多いが、クリックがとても少ない。「above the fold」の定義を冒頭1文で示し、ガイドライン・SEOとの関係の見出しを足す |
-| P005 | リライト（PDCA） | EC運用 | 既存 | amboras vs shopify / is amboras better than shopify | Amboras vs Shopify徹底比較！AI自動化か拡張性かどっち？ | - | /en/ec-guide/store-setup/amboras-vs-shopify/ | 確認待ち | 英語版が5位前後。比較表を整え、「どちらが良いか」に条件付きで答える結論を冒頭に置く |
-| P006 | リライト（PDCA） | EC運用 | 既存 | sagawa vs yamato / 配送業者 比較 | EC向け配送業者を徹底比較｜ヤマト・佐川・日本郵便の料金・速度・補償を解説 | - | /ja/ec-guide/logistics/delivery-company-comparison/ | 確認待ち | 日本語版は10位前後、英語版は5位前後。料金・サービス名を公式で確かめて最新にし、英語版は「Sagawa vs Yamato」に答える形に直す |
-| P007 | リライト（PDCA） | EC運用 | 既存 | base 商品一覧 / base 商品一覧ページ / base カテゴリー分け | BASEで売れる「商品一覧」の作り方｜カテゴリ分けと並び替え | - | /ja/ec-guide/store-setup/base-product-list-optimization/ | 確認待ち | 8位前後。「BASE 商品一覧」に冒頭で答え、カテゴリ分け・編集の手順の見出しを足す |
-| P008 | リライト（PDCA） | EC運用 | 既存 | shopify登录 / shopify后台登录 | Shopifyのログイン設定｜顧客マイページと管理画面へのアクセス | - | /zh-hans/ec-guide/store-setup/shopify-login-settings/ | 確認待ち | 中国語版が7位前後で表示が多いが、クリックがとても少ない。中国語のタイトル・説明文を「Shopify登录／后台登录」の言葉に合わせて直す |
-| P009 | リライト（PDCA） | EC運用 | 既存 | 海外 ec base / base 海外展開 / base 越境ec | BASEで海外販売（越境EC）！「英語・外貨対応 App」の使い方 | - | /ja/ec-guide/cross-border/base-cross-border-ec-guide/ | 確認待ち | 越境ECの記事で、10〜20位。上位記事と比べて足りない内容（海外発送・決済・関税）を足し、「BASE 海外展開」の見出しを作る |
-| P010 | リライト（PDCA） | EC運用 | 既存 | dhl vs fedex / ems vs fedex / dhl express vs sf express | 越境ECの海外配送業者比較｜DHL・FedEx・EMS・各国現地業者の選び方と梱包のポイント | - | /en/ec-guide/cross-border/overseas-carrier-comparison-dhl-fedex-ems/ | 確認待ち | 英語版が7位前後でクリックがとても少ない。AIの検索とみられる「DHLとSF Expressの比較」の質問が多いので、SF Expressを比較に加え、質問に答える見出し・FAQを足す |
-| R001 | リライト | EC運用 | 既存 | - | Amborasの実力を第三者レビューで検証！海外の評価から見える強みと注意点 | - | /ja/ec-guide/store-setup/amboras-ai-ecommerce-review/ | 確認待ち | ルール1〜5 |
-| R002 | リライト | EC運用 | 既存 | - | EC向け配送業者を徹底比較｜ヤマト・佐川・日本郵便の料金・速度・補償を解説 | - | /ja/ec-guide/logistics/delivery-company-comparison/ | 確認待ち | ルール1〜5 |
-| R003 | リライト | EC運用 | 既存 | - | Amborasの料金プラン（Pricing）解説！無料版と課金の実態 | - | /ja/ec-guide/store-setup/amboras-pricing-guide/ | 確認待ち | ルール1〜5 |
-| R004 | リライト | EC運用 | 既存 | - | Amboras vs Shopify徹底比較！AI自動化か拡張性かどっち？ | - | /ja/ec-guide/store-setup/amboras-vs-shopify/ | 確認待ち | ルール1〜5 |
-| R005 | リライト | EC運用 | 既存 | - | Shopifyのログイン設定｜顧客マイページと管理画面へのアクセス | - | /ja/ec-guide/store-setup/shopify-login-settings/ | 確認待ち | ルール1〜5 |
-| R006 | リライト | EC運用 | 既存 | - | Amborasとは？次世代AIビジネスアシスタントの機能と使い方 | - | /ja/ec-guide/store-setup/amboras-ai-ecommerce/ | 確認待ち | ルール1〜5 |
-| R007 | リライト | EC運用 | 既存 | - | BASEで売れる「商品一覧」の作り方｜カテゴリ分けと並び替え | - | /ja/ec-guide/store-setup/base-product-list-optimization/ | 確認待ち | ルール1〜5 |
-| R008 | リライト | EC運用 | 既存 | - | Shopifyの価格・料金プランを徹底比較！手数料や初期費用も解説 | - | /ja/ec-guide/store-setup/shopify-pricing-plans/ | 確認待ち | ルール1〜5 |
-| R009 | リライト | EC運用 | 既存 | - | BASEで作られた人気ショップ一覧！デザイン事例と売れる共通点 | - | /ja/ec-guide/store-setup/base-popular-shops-design/ | 確認待ち | ルール1〜5 |
-| R010 | リライト | EC運用 | 既存 | - | BASEで海外販売（越境EC）！「英語・外貨対応 App」の使い方 | - | /ja/ec-guide/cross-border/base-cross-border-ec-guide/ | 確認待ち | ルール1〜5 |
-| R011 | リライト | EC運用 | 既存 | - | Shopifyと国内主要ECカート徹底比較！自社に最適な選び方 | - | /ja/ec-guide/store-setup/shopify-vs-domestic-comparison/ | 確認待ち | ルール1〜5 |
-| R012 | リライト | EC運用 | 既存 | - | 越境ECの海外配送業者比較｜DHL・FedEx・EMS・各国現地業者の選び方と梱包のポイント | - | /ja/ec-guide/cross-border/overseas-carrier-comparison-dhl-fedex-ems/ | 確認待ち | ルール1〜5 |
-| R013 | リライト | EC運用 | 既存 | - | BASEの基本操作と使い方マニュアル｜管理画面の見方を徹底解説 | - | /ja/ec-guide/store-setup/base-admin-dashboard-usage-guide/ | 確認待ち | ルール1〜5 |
-| R014 | リライト | EC運用 | 既存 | - | 越境ECで東南アジア・香港に販売する方法｜シンガポール・台湾向け立ち上げ完全ガイド | - | /ja/ec-guide/cross-border/cross-border-asia-hongkong/ | 確認待ち | ルール1〜5 |
-| R015 | リライト | EC運用 | 既存 | - | Shopifyストアの成功事例10選！売れるデザインの共通点とは | - | /ja/ec-guide/store-setup/shopify-success-cases-design/ | 確認待ち | ルール1〜5 |
-| R016 | リライト | EC運用 | 既存 | - | Shopifyに無料プランはある？トライアル期間の活用法と注意点 | - | /ja/ec-guide/store-setup/shopify-free-trial-guide/ | 確認待ち | ルール1〜5 |
-| R017 | リライト | EC運用 | 既存 | - | STORESオーナー向け管理画面ログインと毎日の商品・在庫管理ルーティン | - | /ja/ec-guide/inventory/stores-owner-login-inventory-routine/ | 確認待ち | ルール1〜5 |
-| R018 | リライト | EC運用 | 既存 | - | ShopifyとBASEとSTORESを徹底比較｜失敗しないEC構築プラットフォームの選び方 | - | /ja/ec-guide/store-setup/shopify-vs-base-vs-stores-comparison/ | 確認待ち | ルール1〜5 |
-| R019 | リライト | EC運用 | 既存 | - | Shopifyプラン比較表｜機能の違いとフェーズ別の選び方 | - | /ja/ec-guide/store-setup/shopify-plan-comparison/ | 確認待ち | ルール1〜5 |
-| R020 | リライト | EC運用 | 既存 | - | ECサイトの決済設定完全ガイド｜クレジットカード・後払い・コンビニ払いの導入手順 | - | /ja/ec-guide/store-setup/payment-methods-guide/ | 確認待ち | ルール1〜5 |
-| R021 | リライト | EC運用 | 既存 | - | Amboras AIの集客・広告機能とは？マーケティングと集客を自動化する方法 | - | /ja/ec-guide/ec-marketing/amboras-ai-marketing/ | 確認待ち | ルール1〜5 |
-| R022 | リライト | EC運用 | 既存 | - | 【体験談】Shopifyを個人でやってみた！開設手順と失敗したこと | - | /ja/ec-guide/store-setup/shopify-personal-experience/ | 確認待ち | ルール1〜5 |
-| R023 | リライト | EC運用 | 既存 | - | 【比較表】Shopifyとは？初心者向けにメリット・デメリットを簡単に解説 | - | /ja/ec-guide/store-setup/shopify-introduction/ | 確認待ち | ルール1〜5（タイトルの「図解」表記が内容（表のみ）と合っていなかったため、今回は特例としてタイトルも「比較表」に修正） |
-| R024 | リライト | EC運用 | 既存 | - | ECクレーム対応のメールテンプレート｜誠実な初動対応でリピーターに変えるコツ | - | /ja/ec-guide/customer-support/ec-claim-mail-template/ | 確認待ち | ルール1〜5 |
-| R025 | リライト | EC運用 | 既存 | - | Amboras Business Assistantの活用法｜顧客対応と業務の自動化 | - | /ja/ec-guide/customer-support/amboras-business-assistant/ | 確認待ち | ルール1〜5 |
-| R026 | リライト | EC運用 | 既存 | - | BASE公式サイトの歩き方｜マニュアルやログイン画面の探し方 | - | /ja/ec-guide/store-setup/base-official-site-guide/ | 確認待ち | ルール1〜5 |
-| R027 | リライト | EC運用 | 既存 | - | Shopifyペイメントとは？導入メリット・審査・設定方法を徹底解説 | - | /ja/ec-guide/store-setup/shopify-payments-guide/ | 確認待ち | ルール1〜5 |
-| R028 | リライト | EC運用 | 既存 | - | STORESのログイン画面はどこ？購入者からの問い合わせ対応マニュアル | - | /ja/ec-guide/customer-support/stores-login-screen-customer-support/ | 確認待ち | ルール1〜5 |
-| R029 | リライト | EC運用 | 既存 | - | ECサイトのレビュー管理術｜高評価を集めるレビュー依頼と低評価への対応マニュアル | - | /ja/ec-guide/customer-support/ec-review-management/ | 確認待ち | ルール1〜5 |
-| R030 | リライト | EC運用 | 既存 | - | BASE（PAY ID）アプリでのショップ検索対策と集客のコツ | - | /ja/ec-guide/ec-marketing/base-payid-app-shop-search-optimization/ | 確認待ち | ルール1〜5 |
-| R031 | リライト | EC運用 | 既存 | - | BASEでのネットショップの始め方・作り方｜開業までの全手順 | - | /ja/ec-guide/store-setup/base-online-shop-setup-roadmap/ | 確認待ち | ルール1〜5 |
-| R032 | リライト | EC運用 | 既存 | - | Shopifyの無料期間はいつまで？延長の裏ワザと最新キャンペーン | - | /ja/ec-guide/store-setup/shopify-trial-extension/ | 確認待ち | ルール1〜5 |
-| R033 | リライト | EC運用 | 既存 | - | Shopifyは日本で使いやすい？国内対応状況とローカライズの現状 | - | /ja/ec-guide/store-setup/shopify-japan-localization/ | 確認待ち | ルール1〜5 |
-| R034 | リライト | EC運用 | 既存 | - | EC商品登録を効率化する方法｜一括登録・CSVインポート・説明文テンプレート活用術 | - | /ja/ec-guide/inventory/ec-product-registration-efficiency/ | 確認待ち | ルール1〜5 |
-| R035 | リライト | EC運用 | 既存 | - | 越境ECの関税と送料を徹底解説｜シンガポール・香港・台湾向け料金試算と注意点 | - | /ja/ec-guide/cross-border/cross-border-ec-customs-shipping/ | 確認待ち | ルール1〜5 |
-| R036 | リライト | EC運用 | 既存 | - | EC価格設定の基本と戦略｜適正利益率の計算から値下げ競争を避けるコツまで | - | /ja/ec-guide/inventory/ec-pricing-strategy-guide/ | 確認待ち | ルール1〜5 |
-| R037 | リライト | EC運用 | 既存 | - | BASEはやめた方がいい？集客できない理由と広告戦略の失敗例 | - | /ja/ec-guide/ec-marketing/base-should-you-quit-acquisition/ | 確認待ち | ルール1〜5 |
-| R038 | リライト | EC運用 | 既存 | - | Shopifyの決済手数料と取引手数料まとめ｜利益を残す計算方法 | - | /ja/ec-guide/store-setup/shopify-fees-profit-calculation/ | 確認待ち | ルール1〜5 |
-| R039 | リライト | EC運用 | 既存 | - | BASEショップ開設前に知るべき5つの注意点と失敗回避マニュアル | - | /ja/ec-guide/store-setup/base-shop-opening-precautions/ | 確認待ち | ルール1〜5 |
-| R040 | リライト | EC運用 | 既存 | - | Shopifyの月額料金はいくら？プラン別維持費と隠れコストを解説 | - | /ja/ec-guide/store-setup/shopify-monthly-fees-guide/ | 確認待ち | ルール1〜5 |
-| R041 | リライト | EC運用 | 既存 | - | Shopifyで売れない5つの原因と解決策｜集客から導線改善まで | - | /ja/ec-guide/ec-marketing/shopify-cant-sell-reasons/ | 未着手 | ルール1〜5 |
-| R042 | リライト | EC運用 | 既存 | - | HPを自分で作るためのノーコードツール徹底比較｜Wix・Squarespace・STUDIO・Webflowの特徴と選び方 | - | /ja/ec-guide/store-setup/nocode-hp-tool-comparison/ | 未着手 | ルール1〜5 |
-| R043 | リライト | EC運用 | 既存 | - | ECサイトのSEO対策完全ガイド｜カテゴリーページ・商品ページの上位表示戦略 | - | /ja/ec-guide/ec-marketing/ec-site-seo-guide/ | 未着手 | ルール1〜5 |
-| R044 | リライト | EC運用 | 既存 | - | BASE(ベイス)とは？初心者向けにメリット・デメリットを徹底解説 | - | /ja/ec-guide/store-setup/what-is-base/ | 未着手 | ルール1〜5 |
-| R045 | リライト | EC運用 | 既存 | - | BASEの月額料金は無料？ストア構築にかかる初期費用・ランニングコスト | - | /ja/ec-guide/store-setup/base-monthly-fee-cost-guide/ | 未着手 | ルール1〜5 |
-| R046 | リライト | EC運用 | 既存 | - | AmborasとY Combinator(YC)｜シリコンバレーが注目する理由と、ツールとしての持続可能性を考える | - | /ja/ec-guide/store-setup/amboras-y-combinator-analysis/ | 未着手 | ルール1〜5 |
-| R047 | リライト | EC運用 | 既存 | - | Shopifyで無在庫販売を始める方法｜在庫リスクゼロのビジネスモデル | - | /ja/ec-guide/inventory/shopify-dropshipping-inventory/ | 未着手 | ルール1〜5 |
-| R048 | リライト | EC運用 | 既存 | - | EC在庫切れによる売上ロスを防ぐ方法｜安全在庫の設定と補充アラートの活用 | - | /ja/ec-guide/inventory/ec-stockout-prevention-guide/ | 未着手 | ルール1〜5 |
-| R049 | リライト | EC運用 | 既存 | - | BASEの手数料シミュレーション！送料・梱包費を含む物流コスト計算 | - | /ja/ec-guide/logistics/base-fee-simulation-logistics-cost/ | 未着手 | ルール1〜5 |
-| R050 | リライト | EC運用 | 既存 | - | EC発送業務を自動化する方法｜物流代行（3PL）サービスの活用とコスト試算 | - | /ja/ec-guide/logistics/ec-logistics-3pl-guide/ | 未着手 | ルール1〜5 |
-| R051 | リライト | EC運用 | 既存 | - | BASEの手数料は本当に高い？集客力と広告費としてのコスパを徹底検証 | - | /ja/ec-guide/customer-support/base-fee-cost-performance/ | 未着手 | ルール1〜5 |
-| R052 | リライト | EC運用 | 既存 | - | ECの梱包ベストプラクティス｜破損・返品を減らす梱包材選定と作業フロー | - | /ja/ec-guide/logistics/ecommerce-packaging-best-practices/ | 未着手 | ルール1〜5 |
-| R053 | リライト | EC運用 | 既存 | - | Googleショッピング広告の設定と最適化｜ROASを最大化する入札戦略と商品フィード作成 | - | /ja/ec-guide/ec-marketing/google-shopping-ads-guide/ | 未着手 | ルール1〜5 |
-| R054 | リライト | EC運用 | 既存 | - | Shopifyドロップシッピングのやり方｜アプリ連携で直送する手順 | - | /ja/ec-guide/logistics/shopify-dropshipping-guide/ | 未着手 | ルール1〜5 |
-| R055 | リライト | EC運用 | 既存 | - | 売れる商品説明文の書き方｜SEOと購買率を同時に高める構成テンプレート | - | /ja/ec-guide/store-setup/product-description-writing/ | 未着手 | ルール1〜5 |
-| R056 | リライト | EC運用 | 既存 | - | Amborasのレビュー（Reviews）を海外評価サイトで徹底調査｜G2・Trustpilot・Capterraで分かった実態 | - | /ja/ec-guide/store-setup/amboras-review-sites-comparison/ | 未着手 | ルール1〜5 |
-| R057 | リライト | EC運用 | 既存 | - | Shopifyのデメリット5選と失敗しないための対策・解決策 | - | /ja/ec-guide/store-setup/shopify-disadvantages-solutions/ | 未着手 | ルール1〜5 |
-| R058 | リライト | EC運用 | 既存 | - | Shopify導入で失敗する5つのパターンと後悔しないための対策 | - | /ja/ec-guide/store-setup/shopify-failure-patterns/ | 未着手 | ルール1〜5 |
-| R059 | リライト | EC運用 | 既存 | - | Amborasのビジネスモデル分析｜Y Combinatorが投資したAI×EC領域の市場価値を読み解く | - | /ja/ec-guide/store-setup/amboras-business-model-yc-analysis/ | 未着手 | ルール1〜5 |
-| R060 | リライト | EC運用 | 既存 | - | 送料無料ラインの最適設定方法｜客単価アップとCVR改善を両立する価格設計 | - | /ja/ec-guide/logistics/free-shipping-threshold-guide/ | 未着手 | ルール1〜5 |
-| R061 | リライト | EC運用 | 既存 | - | ECサイトの顧客満足度を計測する方法｜NPS・レビュー・リピート率から改善点を見つける手順 | - | /ja/ec-guide/customer-support/ec-nps-customer-satisfaction-guide/ | 未着手 | ルール1〜5 |
-| R062 | リライト | EC運用 | 既存 | - | BASE・STORES・Shopify比較！越境ECへの対応力で選ぶなら？ | - | /ja/ec-guide/cross-border/base-stores-shopify-cross-border-comparison/ | 未着手 | ルール1〜5 |
-| R063 | リライト | EC運用 | 既存 | - | BASEを拡張するおすすめ「BASE Apps（拡張機能）」厳選10選 | - | /ja/ec-guide/store-setup/base-apps-recommended-extensions/ | 未着手 | ルール1〜5 |
-| R064 | リライト | EC運用 | 既存 | - | BASEに個人で出店する方法！匿名配送や特商法の非公開設定を解説 | - | /ja/ec-guide/store-setup/base-store-setup/ | 未着手 | ルール1〜5 |
-| R065 | リライト | EC運用 | 既存 | - | STORES（ストアーズ）とは？初期費用無料で始めるストア構築ガイド | - | /ja/ec-guide/store-setup/what-is-stores/ | 未着手 | ルール1〜5 |
-| R066 | リライト | EC運用 | 既存 | - | EC返品・交換ポリシーの作り方｜顧客満足を高めながらコストを抑える返品フロー設計 | - | /ja/ec-guide/logistics/ec-return-policy-guide/ | 未着手 | ルール1〜5 |
-| R067 | リライト | EC運用 | 既存 | - | ECカスタマーサポートを効率化する方法｜よくある問い合わせ対応とチャットボット導入ガイド | - | /ja/ec-guide/customer-support/customer-support-chatbot/ | 未着手 | ルール1〜5 |
-| R068 | リライト | EC運用 | 既存 | - | WOVNでECサイトを多言語化する方法｜翻訳精度と海外SEOを両立するノーコード導入手順 | - | /ja/ec-guide/cross-border/wovn-multilingual-ec/ | 未着手 | ルール1〜5 |
-| R069 | リライト | EC運用 | 既存 | - | BASEグロースプランとは？大量の商品在庫をさばくショップ向け解説 | - | /ja/ec-guide/inventory/base-growth-plan-inventory-guide/ | 未着手 | ルール1〜5 |
-| R070 | リライト | EC運用 | 既存 | - | BASEとSTORESどっちが売れる？集客力と広告機能の違いを徹底比較 | - | /ja/ec-guide/ec-marketing/base-vs-stores-customer-acquisition/ | 未着手 | ルール1〜5 |
-| R071 | リライト | EC運用 | 既存 | - | BASE構築時の法人と個人の違いとは？審査や必要書類を解説 | - | /ja/ec-guide/store-setup/base-corporate-vs-individual/ | 未着手 | ルール1〜5 |
-| R072 | リライト | EC運用 | 既存 | - | LINE公式アカウントでECリピーターを増やす方法｜セグメント配信とリッチメッセージ活用術 | - | /ja/ec-guide/ec-marketing/line-official-account-ec-guide/ | 未着手 | ルール1〜5 |
-| R073 | リライト | EC運用 | 既存 | - | BASEは個人事業主じゃないとダメ？開業届なしでの構築リスク | - | /ja/ec-guide/store-setup/base-no-business-registration-risk/ | 未着手 | ルール1〜5 |
-| R074 | リライト | EC運用 | 既存 | - | ECサイト在庫管理システム比較｜Shopify・WMS連携でミスをゼロにする方法 | - | /ja/ec-guide/inventory/shopify-wms-inventory-management/ | 未着手 | ルール1〜5 |
-| R075 | リライト | EC運用 | 既存 | - | Amboras（YC 26）の最新動向｜公開チェンジログで見る進化のスピードと、ロードマップの実態 | - | /ja/ec-guide/store-setup/amboras-yc-26-latest-updates/ | 未着手 | ルール1〜5 |
-| R076 | リライト | EC運用 | 既存 | - | 売れるECストアのデザイン術｜テーマ選定からUI改善まで | - | /ja/ec-guide/store-setup/ec-store-design-guide/ | 未着手 | ルール1〜5 |
-| R077 | リライト | EC運用 | 既存 | - | HubSpotを使ったEC向けメールマーケティング｜カゴ落ち対策とリピーター育成のシナリオ設計 | - | /ja/ec-guide/ec-marketing/hubspot-ec-email-marketing-guide/ | 未着手 | ルール1〜5 |
-| R078 | リライト | EC運用 | 既存 | - | Instagram×ECで売上を伸ばす方法｜ショッピング機能の設定からインフルエンサー活用まで | - | /ja/ec-guide/ec-marketing/instagram-ec-marketing/ | 未着手 | ルール1〜5 |
-| R079 | リライト | EC運用 | 既存 | - | EC会員制度＆ポイントプログラムの設計｜LTVを高めるリテンション戦略と導入事例 | - | /ja/ec-guide/customer-support/ec-membership-loyalty-program-guide/ | 未着手 | ルール1〜5 |
-| R080 | リライト | EC運用 | 既存 | - | 4大カート比較（BASE/STORES/カラーミー/Shopify）｜越境EC対応力 | - | /ja/ec-guide/cross-border/four-carts-cross-border-comparison/ | 未着手 | ルール1〜5 |
+| N001 | 新規 | 越境EC | 競合 | shopify 海外販売 / shopify 海外販売 設定 / shopify 海外販売 手数料 | Shopifyで海外販売する方法｜設定・手数料・税金の注意点 | Shopifyで国内販売中の事業者が、海外販売に必要な設定と費用を一通り把握できる記事。設定手順と手数料は公式ヘルプで確かめて書き、最後に「海外集客まで任せるならLeap」という選択肢を示す |  | 公開済み |  |
+| N002 | 新規 | 越境EC | 競合 | shopify 多言語対応 / shopify 多言語 | Shopifyの多言語対応｜設定方法と翻訳アプリの選び方 | Shopifyストアを多言語にしたい人が、標準機能と翻訳アプリでできることの違いと設定手順を知れる記事。翻訳とローカライズの違いに触れ、ローカライズまでAIが行うLeapを独自の視点として入れる |  | 公開済み |  |
+| N003 | 新規 | 越境EC | 競合 | shopify 海外発送 / shopify 越境ec 配送 | Shopifyの海外発送・配送設定｜送料の決め方と注意点 | Shopifyで海外発送を始めたい人が、配送エリア・送料の設定方法と、国際配送で気をつける点を知れる記事。設定は公式ヘルプで確かめ、送料の試算の例を独自の情報として入れる |  | 公開済み |  |
+| N004 | 新規 | 越境EC | 競合 | shopify ai | ShopifyのAI機能（Sidekick・Shopify Magic）とは｜できることと使い方 | Shopifyを使っている・検討している人が、ShopifyのAI機能で何ができて何ができないかを知れる記事。公式の発表で確かめた機能だけを書き、集客までAIが実行するLeapとの違いを公平に示す | /ja/ec-guide/store-setup/shopify-ai-features-sidekick-magic/ | 公開済み |  |
+| N005 | 新規 | 越境EC | 競合 | stores 海外発送 / stores 英語対応 / ストアーズ 越境ec | STORESで海外販売はできる？英語対応・海外発送の現状 | STORESで国内販売中の人が、海外販売にどこまで対応できるかを知れる記事。英語対応・海外発送・決済の現状を公式情報で確かめて書き、足りない部分を補う方法としてLeapなどの選択肢を示す | /ja/ec-guide/cross-border/stores-cross-border-shipping-status/ | 公開済み |  |
+| N006 | 新規 | 越境EC | 競合 | ecforce 料金 / ecforce 越境 | ecforceとは｜料金・機能・越境ECへの対応 | ECツールを比較している中小企業が、ecforceの特徴・料金・越境EC対応を知れる記事。公式サイトで確かめた事実だけを書き、どんな会社に向いているかを公平に示す | /ja/ec-guide/store-setup/ecforce-overview-pricing-cross-border/ | 公開済み | ecforce公式・PayPal公式の料金ページはbot対策で直接取得不可だったため、二次ソースで裏取り |
+| N007 | 新規 | 越境EC | 競合 | amazon 海外販売 やり方 / amazon 海外販売 手数料 | Amazonで海外販売する方法｜グローバルセリングの始め方と手数料 | Amazonで国内販売中の事業者が、海外のAmazonで売る手順と手数料を知れる記事。モールと自社ECの違いに触れ、自社ブランドで売るならLeapという選択肢を示す | /ja/ec-guide/cross-border/amazon-global-selling-guide/ | 確認待ち | |
+| N008 | 新規 | 越境EC | 競合 | メルカリ 越境ec / メルカリショップ 海外販売 | メルカリShopsの越境EC（海外販売）の仕組みと手数料 | メルカリShopsで出品している事業者が、海外の購入者に売れる仕組みと手数料を知れる記事。公式情報で仕組みを確かめ、自社ECで海外に売る場合との違いを示す | /ja/ec-guide/cross-border/mercari-shops-cross-border-ec-fees/ | 確認待ち | |
+| N009 | 新規 | 越境EC | 競合 | カラーミー 海外販売 / カラーミーショップ 海外販売 | カラーミーショップで海外販売する方法｜多言語・海外発送の対応 | カラーミーショップで国内販売中の人が、海外販売の方法と対応状況を知れる記事。公式情報で確かめ、足りない部分を補う方法を示す | /ja/ec-guide/cross-border/colorme-shop-international-selling/ | 確認待ち | |
+| N010 | 新規 | 越境EC | 比較 | 越境ec プラットフォーム 比較 / 越境ec おすすめ / 越境ec プラットフォーム ランキング | 越境ECプラットフォーム比較｜自社に合う選び方とおすすめ | 越境ECを始めたい中小企業が、主なプラットフォームの違いと選び方を知れる記事。料金・手数料・越境対応・集客機能・BtoB対応の比較表にLeapも並べ、用途別におすすめを示す |  | 公開済み |  |
+| N011 | 新規 | 越境EC | 比較 | 越境ec サイト構築 / 越境ec 構築 | 越境ECサイトの構築方法を比較｜自社EC・モール・構築代行 | 越境ECを構築したい中小企業が、自社EC・モール出店・構築代行の違いと、費用・手間を比べられる記事。ツールで自社ECを作る選択肢としてLeapを示す |  | 公開済み |  |
+| N012 | 新規 | 越境EC | 比較 | 越境ec モール / 海外販売 プラットフォーム | 越境ECモール比較｜Amazon・eBay・Shopeeの違いとQoo10の注意点 | 海外のモールに出店したい事業者が、主なモールの対象国・手数料・特徴を比べられる記事。公式情報で確かめ、モールと自社ECの使い分けを示す | /ja/ec-guide/cross-border/cross-border-marketplace-comparison/ | 公開済み | eBayの通貨換算手数料が2026年12月2日以降に変わる予定。12月のPDCAで数字を見直す |
+| N013 | 新規 | 越境EC | 比較 | 越境ec 決済代行 / 越境ec 決済サービス | 越境ECの決済代行サービス比較｜手数料と対応通貨 | 越境ECの決済を整えたい事業者が、主な決済代行の手数料・対応通貨・対応国を比べられる記事。決済手数料込みで売上の6%のLeapを、比較の選択肢として示す | /ja/ec-guide/cross-border/cross-border-ec-payment-service-comparison/ | 公開済み | Airwallexの手数料は出典間で食い違い公式で確認できず掲載見送り |
+| N014 | 新規 | 越境EC | 比較 | 越境ec 物流代行 / 越境ec 発送代行 | 越境ECの物流代行・発送代行サービス比較｜選び方と費用 | 海外発送の手間を減らしたい事業者が、物流代行・発送代行の選び方と費用の目安を知れる記事。公式情報で確かめたサービスだけを比べる | /ja/ec-guide/cross-border/cross-border-ec-logistics-agency-comparison/ | 公開済み |  |
+| N015 | 新規 | 越境EC | 比較 | 越境ec 運営代行 / 越境ec 運用代行 / 越境ec 代行 | 越境ECの運営代行サービス比較｜費用相場と依頼範囲 | 越境ECの運営を外注したい中小企業が、運営代行に頼める範囲と費用相場を知れる記事。素材集の外注との比較を使い、AIに任せる選択肢としてLeapを示す | /ja/ec-guide/cross-border/cross-border-ec-operation-agency-comparison/ | 公開済み | 各社の料金は非公開のため「要問い合わせ」と記載 |
+| N016 | 新規 | 越境EC | 比較 | 越境ec 中国 / red 越境ec / jd 越境ec | 中国向け越境ECプラットフォーム比較｜天猫国際・京東・REDの違いと出店条件 | 中国に売りたい事業者が、主な中国向けプラットフォームの違いと出店の条件を知れる記事。公式情報で確かめ、各プラットフォームに向く商品・企業を示す | /ja/ec-guide/cross-border/china-cross-border-ec-platform-comparison/ | 確認待ち | 天猫国際・京東の手数料は公式で確かめられず、ジェトロの2021年調査の数字を時点付きで記載 |
+| N017 | 新規 | 越境EC | 比較 | lazada 越境ec / 越境ec 東南アジア | 東南アジアの越境ECモール比較｜Shopee・Lazadaの特徴と出店方法 | 東南アジアに売りたい事業者が、ShopeeとLazadaの対象国・手数料・出店方法を比べられる記事。公式情報で確かめ、自社ECとの使い分けを示す | /ja/ec-guide/cross-border/southeast-asia-marketplace-shopee-lazada/ | 確認待ち | |
+| N018 | 新規 | 越境EC | 比較 | 越境ec ai | 越境ECに使えるAIツール比較｜サイト作成から集客まで | 越境ECにAIを使いたい事業者が、サイト作成・翻訳・集客などに使えるAIツールを比べられる記事。各ツールの公式情報で確かめ、集客まで実行するLeapを比較表に並べる | /ja/ec-guide/cross-border/cross-border-ec-ai-tools-comparison/ | 確認待ち | |
+| N019 | 新規 | 越境EC | 知識 | 越境ec とは / 越境ec とは わかりやすく / 越境ec メリット デメリット | 越境ECとは？わかりやすく解説｜仕組み・メリット・デメリット | 越境ECを初めて調べる人が、越境ECの意味・仕組み・メリットとデメリットを理解できる記事。冒頭で1文の定義を示し、始めるための次の一歩としてLeapに触れる |  | 公開済み |  |
+| N020 | 新規 | 越境EC | 知識 | 越境ec 始め方 / 越境ec やり方 / 越境ec 流れ / 越境ec 立ち上げ | 越境ECの始め方｜立ち上げの流れと準備すること | 越境ECを始めたい中小企業が、立ち上げの流れと準備することを順番に知れる記事。手順は番号付きで示し、チャットだけで立ち上げられるLeapの流れを独自の情報として入れる |  | 公開済み |  |
+| N021 | 新規 | 越境EC | 知識 | 越境ec 費用 / 越境ec 手数料 | 越境ECの費用はいくら？立ち上げ・運営にかかるコスト | 越境ECを検討中の中小企業が、立ち上げと運営に何にいくらかかるかを把握できる記事。素材集の外注との比較と、Leapの料金を使った試算の例を独自の情報として入れる | /ja/ec-guide/cross-border/cross-border-ec-costs/ | 公開済み |  |
+| N022 | 新規 | 越境EC | 知識 | 越境ec 消費税 / 越境ec 輸出免税 / 越境ec インボイス / 越境ec 消費税還付 | 越境ECの消費税｜輸出免税・インボイス・還付の基本 | 越境ECで海外に売る事業者が、消費税の輸出免税・インボイス・還付の基本を知れる記事。国税庁などの公的な情報で確かめ、判断が必要な部分は専門家への相談を勧める | /ja/ec-guide/cross-border/cross-border-ec-consumption-tax/ | 公開済み | インボイス経過措置の控除割合は国税庁2026年4月公表の最新PDFで確認した数値を採用 |
+| N023 | 新規 | 越境EC | 知識 | 越境ec 売れるもの / 越境ec 人気商品 / 越境ec 売れ筋 | 越境ECで売れるもの｜人気の商品ジャンルと選び方【2026年の調査データ】 | 何を海外に売るか考えている事業者が、越境ECで人気のジャンルと商品の選び方を知れる記事。出典のある調査データだけを使い、国別アクセス解析での市場調査を独自の視点として入れる | /ja/ec-guide/cross-border/cross-border-ec-best-selling-products/ | 確認待ち | |
+| N024 | 新規 | 越境EC | 知識 | 越境ec 補助金 / 越境ec 補助金 2026 | 越境ECで使える補助金（2026年）｜対象と申請のポイント | 越境ECの費用を抑えたい中小企業が、2026年に使える補助金の対象と申請のポイントを知れる記事。公募要領など公式の情報で確かめ、公募期間と日付を必ず書く | /ja/ec-guide/cross-border/cross-border-ec-subsidies-2026/ | 確認待ち | 公募の締切（12/1・12/4）を含む。次回公募が出たら日付を更新 |
+| N025 | 新規 | 越境EC | トレンド | shopify editions 2026 / shopify editions fall 26 / shopify 新機能 / shopify aiエージェント / エージェンティックコマース 日本 | Shopify Editions Fall '26（2026秋）の新機能｜AIエージェント販売は越境ECに使える？ | Shopifyを使っている・検討している越境EC志向の中小企業が、Fall '26のAI関連の新機能（AIエージェント内での販売など）を日本から海外に売るときに使えるかを知れる記事。公式ヘルプで確かめたAIチャネル別の対象国の表を独自の情報とし、現地語の情報整備の流れでLeapに触れる | /ja/ec-guide/ec-marketing/shopify-editions-fall-2026-ai-agent/ | 公開済み | 発表は2026年10月28日。N004（ShopifyのAI機能とは）と一部重なるので、N004を書くときは使い分ける |
+| N026 | 新規 | 越境EC | トレンド | eu 関税 3ユーロ / 日本 郵便 eu 停止 / 日本 郵便 eu 関税 / ioss 日本郵便 / ems ドイツ | EUの3ユーロ関税と日本郵便のEU宛て差出制限｜越境ECで確認したいこと（2026年11月） | EU向けに販売している・検討中の中小企業が、2026年11月に何が変わり、どの国に・どの方法でなら送れるかを知れる記事。関税と手数料の試算、UGXとEMSの運賃比較を独自の情報とし、商品ごとに販売国を設定できるLeapの機能につなげる | /ja/ec-guide/cross-border/eu-parcel-duty-japan-post-2026/ | 公開済み | 日本郵便の発表は2026年10月30日・11月4日。条件が頻繁に変わるため、公開前に日本郵便のお知らせを再確認する |
+| N027 | 新規 | 越境EC | トレンド | google universal cart 日本 / google ucp とは / ai エージェントコマース 越境ec | Google「Universal Cart」とUCPの最新状況（2026年11月）｜日本未対応の今、越境EC事業者がすべきこと | UCP対応チェックアウトは公式ヘルプ上「米国・カナダ・オーストラリアのみ」で日本は対象外であることを確認した記事。N025（Shopify Editions Fall '26）・N004（ShopifyのAI機能）とは発表元・対象範囲が異なり重複なし | /ja/ec-guide/cross-border/google-universal-cart-ucp-cross-border-status/ | 公開済み | 日本展開の具体的時期は公式に明記なし（「今後数か月」のみ） |
+| N028 | 新規 | 越境EC | トレンド | shopee 11.11 mega day / shopee セール 越境ec / 東南アジア 越境ec セール | Shopeeの「11.11 Mega Day」で日本セラーのGMVが24倍に｜東南アジア越境ECのセール商戦をどう活かす | 2026年11月19日のShopee Japan公式発表（PR TIMES）の実績データを一次情報として使用。N017（Shopee・Lazada比較）とは「出店方法の比較」と「セール商戦の活かし方」で目的が異なり重複なし | /ja/ec-guide/cross-border/shopee-1111-mega-day-cross-border-ec/ | 公開済み | 対象5市場のうち公式発表に国名明記がない分は「東南アジア5市場」と表記 |
+| N029 | 新規 | 越境EC | トレンド | chatgpt business hub / businesses in chatgpt / chatgpt 商品掲載 | ChatGPTの「Business Hub」とは｜日本の越境EC事業者も登録できる？商品フィードと注意点（2026年11月） | 越境ECの中小企業が、2026年11月10日に始まったChatGPTのBusiness Hubに日本から登録できるか、できること・商品フィードの項目・注意点をOpenAIの公式情報で知れる記事 | /ja/ec-guide/ec-marketing/chatgpt-business-hub-cross-border-ec/ | 確認待ち | トレンド（AI） |
+| N030 | 新規 | 越境EC | トレンド | デジタル公正法 / digital fairness act / EU ダークパターン | EUデジタル公正法（DFA）案とは｜ダークパターン禁止で越境ECサイトに求められること（2026年11月） | EUの消費者に自社ECで売る中小企業が、2026年11月11日に欧州委員会が採択したDFA案の対象と禁止事項を、欧州委員会の公式文書で知れる記事 | /ja/ec-guide/cross-border/eu-digital-fairness-act-cross-border-ec/ | 確認待ち | トレンド（規制）。法案のため、成立・適用日が決まったら更新 |
+| N031 | 新規 | 越境EC | 競合 | 海外販売 ebay / ebay 海外販売 / ebay 出品 日本 | eBayで海外販売する方法｜日本からの出品手順と手数料 | 日本から海外に売りたい事業者が、eBayへの出品手順と手数料を知れる記事。eBay公式の手数料・規約で確かめ、モールと自社ECの使い分けとしてLeapを示す | /ja/ec-guide/cross-border/ebay-selling-from-japan-guide/ | 確認待ち | eBayの通貨換算手数料が2026年12月2日以降に引き上げ予定。新料率が出たらN012とあわせて更新 |
+| N032 | 新規 | 越境EC | 競合 | 楽天 海外販売 / 楽天市場 海外販売 / 楽天市場 越境ec | 楽天市場で海外販売する方法｜海外向けの販売サービスと注意点 | 楽天市場に出店している事業者が、海外のお客様に売る方法と注意点を知れる記事。楽天の公式情報で確かめ、自社の越境ECを持つ選択肢としてLeapを示す | /ja/ec-guide/cross-border/rakuten-ichiba-overseas-sales/ | 確認待ち | 楽天の月額料金が2027年2月1日に改定予定。改定後に更新 |
+| N033 | 新規 | 越境EC | 競合 | etsy 海外販売 / ハンドメイド 海外販売 etsy | Etsyで海外販売する方法｜日本からの出店手順と手数料 | 日本の作り手や小規模ブランドが、Etsyでの出店手順と手数料を知れる記事。Etsy公式の手数料・規約で確かめ、ブランドを育てる自社ECとの使い分けを示す | /ja/ec-guide/cross-border/etsy-international-selling-guide/ | 確認待ち | |
+| N034 | 新規 | 越境EC | 比較 | 台湾 越境ec / momo 越境ec / 台湾 ec モール | 台湾向け越境ECのモール比較｜momo・PChome・Shopeeの特徴と出店方法 | 台湾に売りたい事業者が、主な台湾のECモールの特徴と出店方法を比べられる記事。公式情報で確かめ、自社ECで台湾に売る選択肢としてLeapを並べる | /ja/ec-guide/cross-border/taiwan-ec-marketplace-comparison/ | 確認待ち | |
+| N035 | 新規 | 越境EC | 比較 | 越境ec アメリカ / アメリカ 海外販売 / アメリカ ec 販路 | アメリカ向け越境ECの販路比較｜Amazon・eBay・Etsy・自社ECと関税・配送の注意点 | アメリカに売りたい事業者が、主な販路の違いと、関税・配送の注意点を比べられる記事。公式情報で確かめ、自社ECの選択肢としてLeapを比較表に並べる | /ja/ec-guide/cross-border/us-cross-border-ec-sales-channels/ | 確認待ち | 米国の関税（日本への15%案、公聴会2027年1月25日）が決まったら更新 |
+| N036 | 新規 | 越境EC | 比較 | クーパン 越境ec / 韓国 越境ec / 韓国 ec モール | 韓国向け越境ECのモール比較｜Coupang・Gmarket・11番街の出店方法と手数料 | 韓国に売りたい事業者が、主な韓国のECモールの特徴と出店方法を比べられる記事。公式情報で確かめ、自社ECとの使い分けを示す | /ja/ec-guide/cross-border/korea-marketplace-comparison/ | 確認待ち | |
+| N037 | 新規 | 越境EC | 知識 | 越境ec 化粧品 規制 / 越境ec 化粧品 / 化粧品 海外販売 | 越境ECで化粧品を販売するときの規制｜国別の注意点 | 化粧品を海外に売りたい事業者が、主な販売国の規制と注意点を知れる記事。各国の公的機関の一次情報で確かめ、判断が必要な部分は専門家への相談を勧める | /ja/ec-guide/cross-border/cross-border-ec-cosmetics-regulations/ | 確認待ち | |
+| N038 | 新規 | 越境EC | 知識 | 越境ec 必要書類 / 越境ec 許可 / 越境ec 法律 | 越境ECに必要な書類と許可｜始める前に確認すること | 越境ECを始める中小企業が、必要な書類・許可・法律の基本を知れる記事。税関・経済産業省などの一次情報で確かめ、判断が必要な部分は専門家への相談を勧める | /ja/ec-guide/cross-border/cross-border-ec-documents-permits/ | 確認待ち | |
+| N039 | 新規 | 越境EC | トレンド | future Globalhop / フューチャーショップ 越境EC / ECカート 越境EC | フューチャーショップ「future Globalhop」とは？料金・対象モールとECカート各社の越境EC支援の最新動向（2026年11月） | 国内のEC事業者が、2026年11月2日に始まったfutureshopの越境EC支援サービスの対象モール・料金・注意点を公式情報で知れる記事。BASE・STORES・makeshopの越境支援との比較も入れる | /ja/ec-guide/cross-border/future-globalhop-cart-cross-border-news-2026/ | 確認待ち | トレンド（競合の発表） |
+| N040 | 新規 | 越境EC | トレンド | amazon 手数料改定 2027 / amazon fba 手数料 値上げ 2027 | Amazon.comの2027年手数料改定｜FBA手数料は平均0.19ドル値上げ、日本から売る事業者が確認したいこと | Amazon.comにFBAで出品する日本の事業者が、2027年の手数料改定で何がいつ変わり、何を確認すべきかをAmazonの公式発表で知れる記事 | /ja/ec-guide/cross-border/amazon-us-fba-fee-changes-2027/ | 確認待ち | トレンド（モール） |
+| P001 | リライト（PDCA） | EC運用 | 既存 | amboras / amboras ai / is amboras legit / amboras reviews | Amborasの実力を第三者レビューで検証！海外の評価から見える強みと注意点 | - | /en/ec-guide/store-setup/amboras-ai-ecommerce-review/ | 公開済み | 英語版が5位前後で表示がとても多いが、クリックが少ない。英語のタイトル・説明文を「Amborasとは／評判／安全か」に答える形に直し、「is amboras legit」に答える見出しを足す |
+| P002 | リライト（PDCA） | EC運用 | 既存 | amboras / is amboras free / amboras price | Amborasの料金プラン（Pricing）解説！無料版と課金の実態 | - | /en/ec-guide/store-setup/amboras-pricing-guide/ | 公開済み | 英語版が5位前後。「is amboras free」に冒頭で答える形にし、タイトル・説明文に無料かどうかを入れる |
+| P003 | リライト（PDCA） | 海外ビジネス | 既存 | 海外進出 補助金 / 海外展開 補助金 / 海外進出 助成金 | 【海外展開の味方】知らないと損！中小企業向け補助金・助成金を120%活用する秘訣 | - | /ja/blog/expansion/guide-to-overseas-expansion-subsidies/ | 公開済み | 10位前後で1ページ目の手前。上位記事と比べて足りない補助金・最新の公募情報を足す。タイトルに「2026年」と検索語「海外進出 補助金」を入れる。越境ECで使える補助金の章もここに足す（N024と重ならないよう、N024は越境EC専用の内容に絞る） |
+| P004 | リライト（PDCA） | HP作成 | 既存 | above the fold design / above the fold guidelines / what does above the fold mean | ファーストビューでCVRを上げる設計｜原則と改善チェックリスト | - | /en/hp-guide/design-ux/first-view-cvr-optimization/ | 公開済み | 英語版が10位前後で表示が多いが、クリックがとても少ない。「above the fold」の定義を冒頭1文で示し、ガイドライン・SEOとの関係の見出しを足す |
+| P005 | リライト（PDCA） | EC運用 | 既存 | amboras vs shopify / is amboras better than shopify | Amboras vs Shopify徹底比較！AI自動化か拡張性かどっち？ | - | /en/ec-guide/store-setup/amboras-vs-shopify/ | 公開済み | 英語版が5位前後。比較表を整え、「どちらが良いか」に条件付きで答える結論を冒頭に置く |
+| P006 | リライト（PDCA） | EC運用 | 既存 | sagawa vs yamato / 配送業者 比較 | EC向け配送業者を徹底比較｜ヤマト・佐川・日本郵便の料金・速度・補償を解説 | - | /ja/ec-guide/logistics/delivery-company-comparison/ | 公開済み | 日本語版は10位前後、英語版は5位前後。料金・サービス名を公式で確かめて最新にし、英語版は「Sagawa vs Yamato」に答える形に直す |
+| P007 | リライト（PDCA） | EC運用 | 既存 | base 商品一覧 / base 商品一覧ページ / base カテゴリー分け | BASEで売れる「商品一覧」の作り方｜カテゴリ分けと並び替え | - | /ja/ec-guide/store-setup/base-product-list-optimization/ | 公開済み | 8位前後。「BASE 商品一覧」に冒頭で答え、カテゴリ分け・編集の手順の見出しを足す |
+| P008 | リライト（PDCA） | EC運用 | 既存 | shopify登录 / shopify后台登录 | Shopifyのログイン設定｜顧客マイページと管理画面へのアクセス | - | /zh-hans/ec-guide/store-setup/shopify-login-settings/ | 公開済み | 中国語版が7位前後で表示が多いが、クリックがとても少ない。中国語のタイトル・説明文を「Shopify登录／后台登录」の言葉に合わせて直す |
+| P009 | リライト（PDCA） | EC運用 | 既存 | 海外 ec base / base 海外展開 / base 越境ec | BASEで海外販売（越境EC）！「英語・外貨対応 App」の使い方 | - | /ja/ec-guide/cross-border/base-cross-border-ec-guide/ | 公開済み | 越境ECの記事で、10〜20位。上位記事と比べて足りない内容（海外発送・決済・関税）を足し、「BASE 海外展開」の見出しを作る |
+| P010 | リライト（PDCA） | EC運用 | 既存 | dhl vs fedex / ems vs fedex / dhl express vs sf express | 越境ECの海外配送業者比較｜DHL・FedEx・EMS・各国現地業者の選び方と梱包のポイント | - | /en/ec-guide/cross-border/overseas-carrier-comparison-dhl-fedex-ems/ | 公開済み | 英語版が7位前後でクリックがとても少ない。AIの検索とみられる「DHLとSF Expressの比較」の質問が多いので、SF Expressを比較に加え、質問に答える見出し・FAQを足す |
+| R001 | リライト | EC運用 | 既存 | - | Amborasの実力を第三者レビューで検証！海外の評価から見える強みと注意点 | - | /ja/ec-guide/store-setup/amboras-ai-ecommerce-review/ | 公開済み | ルール1〜5 |
+| R002 | リライト | EC運用 | 既存 | - | EC向け配送業者を徹底比較｜ヤマト・佐川・日本郵便の料金・速度・補償を解説 | - | /ja/ec-guide/logistics/delivery-company-comparison/ | 公開済み | ルール1〜5 |
+| R003 | リライト | EC運用 | 既存 | - | Amborasの料金プラン（Pricing）解説！無料版と課金の実態 | - | /ja/ec-guide/store-setup/amboras-pricing-guide/ | 公開済み | ルール1〜5 |
+| R004 | リライト | EC運用 | 既存 | - | Amboras vs Shopify徹底比較！AI自動化か拡張性かどっち？ | - | /ja/ec-guide/store-setup/amboras-vs-shopify/ | 公開済み | ルール1〜5 |
+| R005 | リライト | EC運用 | 既存 | - | Shopifyのログイン設定｜顧客マイページと管理画面へのアクセス | - | /ja/ec-guide/store-setup/shopify-login-settings/ | 公開済み | ルール1〜5 |
+| R006 | リライト | EC運用 | 既存 | - | Amborasとは？次世代AIビジネスアシスタントの機能と使い方 | - | /ja/ec-guide/store-setup/amboras-ai-ecommerce/ | 公開済み | ルール1〜5 |
+| R007 | リライト | EC運用 | 既存 | - | BASEで売れる「商品一覧」の作り方｜カテゴリ分けと並び替え | - | /ja/ec-guide/store-setup/base-product-list-optimization/ | 公開済み | ルール1〜5 |
+| R008 | リライト | EC運用 | 既存 | - | Shopifyの価格・料金プランを徹底比較！手数料や初期費用も解説 | - | /ja/ec-guide/store-setup/shopify-pricing-plans/ | 公開済み | ルール1〜5 |
+| R009 | リライト | EC運用 | 既存 | - | BASEで作られた人気ショップ一覧！デザイン事例と売れる共通点 | - | /ja/ec-guide/store-setup/base-popular-shops-design/ | 公開済み | ルール1〜5 |
+| R010 | リライト | EC運用 | 既存 | - | BASEで海外販売（越境EC）！「英語・外貨対応 App」の使い方 | - | /ja/ec-guide/cross-border/base-cross-border-ec-guide/ | 公開済み | ルール1〜5 |
+| R011 | リライト | EC運用 | 既存 | - | Shopifyと国内主要ECカート徹底比較！自社に最適な選び方 | - | /ja/ec-guide/store-setup/shopify-vs-domestic-comparison/ | 公開済み | ルール1〜5 |
+| R012 | リライト | EC運用 | 既存 | - | 越境ECの海外配送業者比較｜DHL・FedEx・EMS・各国現地業者の選び方と梱包のポイント | - | /ja/ec-guide/cross-border/overseas-carrier-comparison-dhl-fedex-ems/ | 公開済み | ルール1〜5 |
+| R013 | リライト | EC運用 | 既存 | - | BASEの基本操作と使い方マニュアル｜管理画面の見方を徹底解説 | - | /ja/ec-guide/store-setup/base-admin-dashboard-usage-guide/ | 公開済み | ルール1〜5 |
+| R014 | リライト | EC運用 | 既存 | - | 越境ECで東南アジア・香港に販売する方法｜シンガポール・台湾向け立ち上げ完全ガイド | - | /ja/ec-guide/cross-border/cross-border-asia-hongkong/ | 公開済み | ルール1〜5 |
+| R015 | リライト | EC運用 | 既存 | - | Shopifyストアの成功事例10選！売れるデザインの共通点とは | - | /ja/ec-guide/store-setup/shopify-success-cases-design/ | 公開済み | ルール1〜5 |
+| R016 | リライト | EC運用 | 既存 | - | Shopifyに無料プランはある？トライアル期間の活用法と注意点 | - | /ja/ec-guide/store-setup/shopify-free-trial-guide/ | 公開済み | ルール1〜5 |
+| R017 | リライト | EC運用 | 既存 | - | STORESオーナー向け管理画面ログインと毎日の商品・在庫管理ルーティン | - | /ja/ec-guide/inventory/stores-owner-login-inventory-routine/ | 公開済み | ルール1〜5 |
+| R018 | リライト | EC運用 | 既存 | - | ShopifyとBASEとSTORESを徹底比較｜失敗しないEC構築プラットフォームの選び方 | - | /ja/ec-guide/store-setup/shopify-vs-base-vs-stores-comparison/ | 公開済み | ルール1〜5 |
+| R019 | リライト | EC運用 | 既存 | - | Shopifyプラン比較表｜機能の違いとフェーズ別の選び方 | - | /ja/ec-guide/store-setup/shopify-plan-comparison/ | 公開済み | ルール1〜5 |
+| R020 | リライト | EC運用 | 既存 | - | ECサイトの決済設定完全ガイド｜クレジットカード・後払い・コンビニ払いの導入手順 | - | /ja/ec-guide/store-setup/payment-methods-guide/ | 公開済み | ルール1〜5 |
+| R021 | リライト | EC運用 | 既存 | - | Amboras AIの集客・広告機能とは？マーケティングと集客を自動化する方法 | - | /ja/ec-guide/ec-marketing/amboras-ai-marketing/ | 公開済み | ルール1〜5 |
+| R022 | リライト | EC運用 | 既存 | - | 【体験談】Shopifyを個人でやってみた！開設手順と失敗したこと | - | /ja/ec-guide/store-setup/shopify-personal-experience/ | 公開済み | ルール1〜5 |
+| R023 | リライト | EC運用 | 既存 | - | 【比較表】Shopifyとは？初心者向けにメリット・デメリットを簡単に解説 | - | /ja/ec-guide/store-setup/shopify-introduction/ | 公開済み | ルール1〜5（タイトルの「図解」表記が内容（表のみ）と合っていなかったため、今回は特例としてタイトルも「比較表」に修正） |
+| R024 | リライト | EC運用 | 既存 | - | ECクレーム対応のメールテンプレート｜誠実な初動対応でリピーターに変えるコツ | - | /ja/ec-guide/customer-support/ec-claim-mail-template/ | 公開済み | ルール1〜5 |
+| R025 | リライト | EC運用 | 既存 | - | Amboras Business Assistantの活用法｜顧客対応と業務の自動化 | - | /ja/ec-guide/customer-support/amboras-business-assistant/ | 公開済み | ルール1〜5 |
+| R026 | リライト | EC運用 | 既存 | - | BASE公式サイトの歩き方｜マニュアルやログイン画面の探し方 | - | /ja/ec-guide/store-setup/base-official-site-guide/ | 公開済み | ルール1〜5 |
+| R027 | リライト | EC運用 | 既存 | - | Shopifyペイメントとは？導入メリット・審査・設定方法を徹底解説 | - | /ja/ec-guide/store-setup/shopify-payments-guide/ | 公開済み | ルール1〜5 |
+| R028 | リライト | EC運用 | 既存 | - | STORESのログイン画面はどこ？購入者からの問い合わせ対応マニュアル | - | /ja/ec-guide/customer-support/stores-login-screen-customer-support/ | 公開済み | ルール1〜5 |
+| R029 | リライト | EC運用 | 既存 | - | ECサイトのレビュー管理術｜高評価を集めるレビュー依頼と低評価への対応マニュアル | - | /ja/ec-guide/customer-support/ec-review-management/ | 公開済み | ルール1〜5 |
+| R030 | リライト | EC運用 | 既存 | - | BASE（PAY ID）アプリでのショップ検索対策と集客のコツ | - | /ja/ec-guide/ec-marketing/base-payid-app-shop-search-optimization/ | 公開済み | ルール1〜5 |
+| R031 | リライト | EC運用 | 既存 | - | BASEでのネットショップの始め方・作り方｜開業までの全手順 | - | /ja/ec-guide/store-setup/base-online-shop-setup-roadmap/ | 公開済み | ルール1〜5 |
+| R032 | リライト | EC運用 | 既存 | - | Shopifyの無料期間はいつまで？延長の裏ワザと最新キャンペーン | - | /ja/ec-guide/store-setup/shopify-trial-extension/ | 公開済み | ルール1〜5 |
+| R033 | リライト | EC運用 | 既存 | - | Shopifyは日本で使いやすい？国内対応状況とローカライズの現状 | - | /ja/ec-guide/store-setup/shopify-japan-localization/ | 公開済み | ルール1〜5 |
+| R034 | リライト | EC運用 | 既存 | - | EC商品登録を効率化する方法｜一括登録・CSVインポート・説明文テンプレート活用術 | - | /ja/ec-guide/inventory/ec-product-registration-efficiency/ | 公開済み | ルール1〜5 |
+| R035 | リライト | EC運用 | 既存 | - | 越境ECの関税と送料を徹底解説｜シンガポール・香港・台湾向け料金試算と注意点 | - | /ja/ec-guide/cross-border/cross-border-ec-customs-shipping/ | 公開済み | ルール1〜5 |
+| R036 | リライト | EC運用 | 既存 | - | EC価格設定の基本と戦略｜適正利益率の計算から値下げ競争を避けるコツまで | - | /ja/ec-guide/inventory/ec-pricing-strategy-guide/ | 公開済み | ルール1〜5 |
+| R037 | リライト | EC運用 | 既存 | - | BASEはやめた方がいい？集客できない理由と広告戦略の失敗例 | - | /ja/ec-guide/ec-marketing/base-should-you-quit-acquisition/ | 公開済み | ルール1〜5 |
+| R038 | リライト | EC運用 | 既存 | - | Shopifyの決済手数料と取引手数料まとめ｜利益を残す計算方法 | - | /ja/ec-guide/store-setup/shopify-fees-profit-calculation/ | 公開済み | ルール1〜5 |
+| R039 | リライト | EC運用 | 既存 | - | BASEショップ開設前に知るべき5つの注意点と失敗回避マニュアル | - | /ja/ec-guide/store-setup/base-shop-opening-precautions/ | 公開済み | ルール1〜5 |
+| R040 | リライト | EC運用 | 既存 | - | Shopifyの月額料金はいくら？プラン別維持費と隠れコストを解説 | - | /ja/ec-guide/store-setup/shopify-monthly-fees-guide/ | 公開済み | ルール1〜5 |
+| R041 | リライト | EC運用 | 既存 | - | Shopifyで売れない5つの原因と解決策｜集客から導線改善まで | - | /ja/ec-guide/ec-marketing/shopify-cant-sell-reasons/ | 確認待ち | ルール1〜5 |
+| R042 | リライト | EC運用 | 既存 | - | HPを自分で作るためのノーコードツール徹底比較｜Wix・Squarespace・STUDIO・Webflowの特徴と選び方 | - | /ja/ec-guide/store-setup/nocode-hp-tool-comparison/ | 確認待ち | ルール1〜5 |
+| R043 | リライト | EC運用 | 既存 | - | ECサイトのSEO対策完全ガイド｜カテゴリーページ・商品ページの上位表示戦略 | - | /ja/ec-guide/ec-marketing/ec-site-seo-guide/ | 確認待ち | ルール1〜5 |
+| R044 | リライト | EC運用 | 既存 | - | BASE(ベイス)とは？初心者向けにメリット・デメリットを徹底解説 | - | /ja/ec-guide/store-setup/what-is-base/ | 確認待ち | ルール1〜5 |
+| R045 | リライト | EC運用 | 既存 | - | BASEの月額料金は無料？ストア構築にかかる初期費用・ランニングコスト | - | /ja/ec-guide/store-setup/base-monthly-fee-cost-guide/ | 確認待ち | ルール1〜5 |
+| R046 | リライト | EC運用 | 既存 | - | AmborasとY Combinator(YC)｜シリコンバレーが注目する理由と、ツールとしての持続可能性を考える | - | /ja/ec-guide/store-setup/amboras-y-combinator-analysis/ | 確認待ち | ルール1〜5 |
+| R047 | リライト | EC運用 | 既存 | - | Shopifyで無在庫販売を始める方法｜在庫リスクゼロのビジネスモデル | - | /ja/ec-guide/inventory/shopify-dropshipping-inventory/ | 確認待ち | ルール1〜5 |
+| R048 | リライト | EC運用 | 既存 | - | EC在庫切れによる売上ロスを防ぐ方法｜安全在庫の設定と補充アラートの活用 | - | /ja/ec-guide/inventory/ec-stockout-prevention-guide/ | 確認待ち | ルール1〜5 |
+| R049 | リライト | EC運用 | 既存 | - | BASEの手数料シミュレーション！送料・梱包費を含む物流コスト計算 | - | /ja/ec-guide/logistics/base-fee-simulation-logistics-cost/ | 確認待ち | ルール1〜5 |
+| R050 | リライト | EC運用 | 既存 | - | EC発送業務を自動化する方法｜物流代行（3PL）サービスの活用とコスト試算 | - | /ja/ec-guide/logistics/ec-logistics-3pl-guide/ | 確認待ち | ルール1〜5 |
+| R051 | リライト | EC運用 | 既存 | - | BASEの手数料は本当に高い？集客力と広告費としてのコスパを徹底検証 | - | /ja/ec-guide/customer-support/base-fee-cost-performance/ | 確認待ち | ルール1〜5 |
+| R052 | リライト | EC運用 | 既存 | - | ECの梱包ベストプラクティス｜破損・返品を減らす梱包材選定と作業フロー | - | /ja/ec-guide/logistics/ecommerce-packaging-best-practices/ | 確認待ち | ルール1〜5 |
+| R053 | リライト | EC運用 | 既存 | - | Googleショッピング広告の設定と最適化｜ROASを最大化する入札戦略と商品フィード作成 | - | /ja/ec-guide/ec-marketing/google-shopping-ads-guide/ | 確認待ち | ルール1〜5 |
+| R054 | リライト | EC運用 | 既存 | - | Shopifyドロップシッピングのやり方｜アプリ連携で直送する手順 | - | /ja/ec-guide/logistics/shopify-dropshipping-guide/ | 確認待ち | ルール1〜5 |
+| R055 | リライト | EC運用 | 既存 | - | 売れる商品説明文の書き方｜SEOと購買率を同時に高める構成テンプレート | - | /ja/ec-guide/store-setup/product-description-writing/ | 確認待ち | ルール1〜5 |
+| R056 | リライト | EC運用 | 既存 | - | Amborasのレビュー（Reviews）を海外評価サイトで徹底調査｜G2・Trustpilot・Capterraで分かった実態 | - | /ja/ec-guide/store-setup/amboras-review-sites-comparison/ | 確認待ち | ルール1〜5 |
+| R057 | リライト | EC運用 | 既存 | - | Shopifyのデメリット5選と失敗しないための対策・解決策 | - | /ja/ec-guide/store-setup/shopify-disadvantages-solutions/ | 確認待ち | ルール1〜5 |
+| R058 | リライト | EC運用 | 既存 | - | Shopify導入で失敗する5つのパターンと後悔しないための対策 | - | /ja/ec-guide/store-setup/shopify-failure-patterns/ | 確認待ち | ルール1〜5 |
+| R059 | リライト | EC運用 | 既存 | - | Amborasのビジネスモデル分析｜Y Combinatorが投資したAI×EC領域の市場価値を読み解く | - | /ja/ec-guide/store-setup/amboras-business-model-yc-analysis/ | 確認待ち | ルール1〜5 |
+| R060 | リライト | EC運用 | 既存 | - | 送料無料ラインの最適設定方法｜客単価アップとCVR改善を両立する価格設計 | - | /ja/ec-guide/logistics/free-shipping-threshold-guide/ | 確認待ち | ルール1〜5 |
+| R061 | リライト | EC運用 | 既存 | - | ECサイトの顧客満足度を計測する方法｜NPS・レビュー・リピート率から改善点を見つける手順 | - | /ja/ec-guide/customer-support/ec-nps-customer-satisfaction-guide/ | 確認待ち | ルール1〜5 |
+| R062 | リライト | EC運用 | 既存 | - | BASE・STORES・Shopify比較！越境ECへの対応力で選ぶなら？ | - | /ja/ec-guide/cross-border/base-stores-shopify-cross-border-comparison/ | 確認待ち | ルール1〜5 |
+| R063 | リライト | EC運用 | 既存 | - | BASEを拡張するおすすめ「BASE Apps（拡張機能）」厳選10選 | - | /ja/ec-guide/store-setup/base-apps-recommended-extensions/ | 確認待ち | ルール1〜5 |
+| R064 | リライト | EC運用 | 既存 | - | BASEに個人で出店する方法！匿名配送や特商法の非公開設定を解説 | - | /ja/ec-guide/store-setup/base-store-setup/ | 確認待ち | ルール1〜5 |
+| R065 | リライト | EC運用 | 既存 | - | STORES（ストアーズ）とは？初期費用無料で始めるストア構築ガイド | - | /ja/ec-guide/store-setup/what-is-stores/ | 確認待ち | ルール1〜5 |
+| R066 | リライト | EC運用 | 既存 | - | EC返品・交換ポリシーの作り方｜顧客満足を高めながらコストを抑える返品フロー設計 | - | /ja/ec-guide/logistics/ec-return-policy-guide/ | 確認待ち | ルール1〜5 |
+| R067 | リライト | EC運用 | 既存 | - | ECカスタマーサポートを効率化する方法｜よくある問い合わせ対応とチャットボット導入ガイド | - | /ja/ec-guide/customer-support/customer-support-chatbot/ | 確認待ち | ルール1〜5 |
+| R068 | リライト | EC運用 | 既存 | - | WOVNでECサイトを多言語化する方法｜翻訳精度と海外SEOを両立するノーコード導入手順 | - | /ja/ec-guide/cross-border/wovn-multilingual-ec/ | 確認待ち | ルール1〜5 |
+| R069 | リライト | EC運用 | 既存 | - | BASEグロースプランとは？大量の商品在庫をさばくショップ向け解説 | - | /ja/ec-guide/inventory/base-growth-plan-inventory-guide/ | 確認待ち | ルール1〜5 |
+| R070 | リライト | EC運用 | 既存 | - | BASEとSTORESどっちが売れる？集客力と広告機能の違いを徹底比較 | - | /ja/ec-guide/ec-marketing/base-vs-stores-customer-acquisition/ | 確認待ち | ルール1〜5 |
+| R071 | リライト | EC運用 | 既存 | - | BASE構築時の法人と個人の違いとは？審査や必要書類を解説 | - | /ja/ec-guide/store-setup/base-corporate-vs-individual/ | 確認待ち | ルール1〜5 |
+| R072 | リライト | EC運用 | 既存 | - | LINE公式アカウントでECリピーターを増やす方法｜セグメント配信とリッチメッセージ活用術 | - | /ja/ec-guide/ec-marketing/line-official-account-ec-guide/ | 確認待ち | ルール1〜5 |
+| R073 | リライト | EC運用 | 既存 | - | BASEは個人事業主じゃないとダメ？開業届なしでの構築リスク | - | /ja/ec-guide/store-setup/base-no-business-registration-risk/ | 確認待ち | ルール1〜5 |
+| R074 | リライト | EC運用 | 既存 | - | ECサイト在庫管理システム比較｜Shopify・WMS連携でミスをゼロにする方法 | - | /ja/ec-guide/inventory/shopify-wms-inventory-management/ | 確認待ち | ルール1〜5 |
+| R075 | リライト | EC運用 | 既存 | - | Amboras（YC 26）の最新動向｜公開チェンジログで見る進化のスピードと、ロードマップの実態 | - | /ja/ec-guide/store-setup/amboras-yc-26-latest-updates/ | 確認待ち | ルール1〜5 |
+| R076 | リライト | EC運用 | 既存 | - | 売れるECストアのデザイン術｜テーマ選定からUI改善まで | - | /ja/ec-guide/store-setup/ec-store-design-guide/ | 確認待ち | ルール1〜5 |
+| R077 | リライト | EC運用 | 既存 | - | HubSpotを使ったEC向けメールマーケティング｜カゴ落ち対策とリピーター育成のシナリオ設計 | - | /ja/ec-guide/ec-marketing/hubspot-ec-email-marketing-guide/ | 確認待ち | ルール1〜5 |
+| R078 | リライト | EC運用 | 既存 | - | Instagram×ECで売上を伸ばす方法｜ショッピング機能の設定からインフルエンサー活用まで | - | /ja/ec-guide/ec-marketing/instagram-ec-marketing/ | 確認待ち | ルール1〜5 |
+| R079 | リライト | EC運用 | 既存 | - | EC会員制度＆ポイントプログラムの設計｜LTVを高めるリテンション戦略と導入事例 | - | /ja/ec-guide/customer-support/ec-membership-loyalty-program-guide/ | 確認待ち | ルール1〜5 |
+| R080 | リライト | EC運用 | 既存 | - | 4大カート比較（BASE/STORES/カラーミー/Shopify）｜越境EC対応力 | - | /ja/ec-guide/cross-border/four-carts-cross-border-comparison/ | 確認待ち | ルール1〜5 |
 | R081 | リライト | EC運用 | 既存 | - | Readdyで越境EC決済を最適化する方法｜現地通貨対応と不正決済対策の設定ガイド | - | /ja/ec-guide/cross-border/cross-border-ec-payment-readdy/ | 未着手 | ルール1〜5 |
 | R082 | リライト | EC運用 | 既存 | - | BASEショップとは？初期設定から構築メリットまで完全網羅 | - | /ja/ec-guide/store-setup/base-what-is-store-building/ | 未着手 | ルール1〜5 |
 | R083 | リライト | EC運用 | 既存 | - | ECカスタマーサポートを効率化する方法｜よくある問い合わせ対応とチャットボット導入ガイド | - | /ja/ec-guide/customer-support/ec-customer-support-chatbot-guide/ | 未着手 | ルール1〜5 |

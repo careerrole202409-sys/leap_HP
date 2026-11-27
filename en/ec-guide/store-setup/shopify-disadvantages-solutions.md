@@ -100,19 +100,32 @@ As monthly revenue grows, this gap has an increasingly direct impact on margin, 
 
 The most effective way to eliminate this issue is to make Shopify Payments your primary payment method — it carries zero transaction fees. Japan-specific payment methods (convenience store, buy-now-pay-later, PayPay) are best positioned as supplementary options: understand what percentage of your total sales they represent, and use that to inform your plan decision. Because the transaction fee savings from upgrading plans grow proportionally with revenue, scheduling regular plan reviews as the business scales is a sound operational habit.
 
-### FAQ
+## How to Sell Internationally With Shopify
 
-**Q1. Can Shopify be operated entirely in Japanese?**
+To sell internationally with Shopify, check two more things on top of the domestic issues above: currency conversion fees and how many languages you can translate automatically. Both tend to add cost or work if you only discover them after you start selling overseas (as of November 2026).
 
-The admin interface and primary operations are in Japanese. That said, some apps in the App Store are English-only, so confirming Japanese language support for any app you plan to install is worth doing upfront. Phone support is not available in Japanese as of June 2026 — for questions and issues, the Help Center, chat support, and domestic Shopify Partners are the practical options.
+1. **Currency conversion fees**: When Shopify Payments accepts a payment in a currency different from your payout currency, a currency conversion takes place and a fee applies. According to the Shopify Help Center, the rate depends on your store's country: 1.5% in the United States, and 2% in France and all other Shopify Payments regions. Currency conversion fees and credit card fees aren't returned when you issue a refund.
+2. **Automatic translation limits**: With Shopify's own Translate & Adapt app, stores in the 14 eligible countries (including the United States, the United Kingdom, Germany, and France) can automatically translate up to 8 languages in addition to the default language, while stores in all other countries can translate up to 2. Japan isn't on the eligible list (stores that see "Translate now" in the app can use up to 8 languages regardless of location). Legal policies such as returns and privacy can't be translated automatically and need to be translated manually.
 
-**Q2. What should I expect to spend on Shopify apps each month?**
+If you plan to sell in three or more languages, or expect many payments in local currencies, add currency conversion fees and translation app costs to the total cost model described under Disadvantage 3. If you want to go beyond translation and localize for each target market through chat, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option.
 
-It varies significantly based on the number and type of apps installed. Adding several apps — SEO, reviews, email marketing, multilingual support, subscriptions — can easily reach tens of thousands of yen per month. The discipline of listing out the features you need, pricing each app, summing the total, and checking whether a higher Shopify plan covers some of those needs natively is the core of app cost management.
+## FAQ
 
-**Q3. Can convenience store payment and buy-now-pay-later be added to Shopify?**
+**Q. Can Shopify be operated entirely in Japanese?**
 
-Yes — by contracting with an external payment processor. KOMOJU, SB Payment Service, and GMO Epsilon are the most commonly used options. The important caveat is that using an external processor triggers Shopify's transaction fees. The standard approach is to make Shopify Payments the primary method, with Japan-specific payment options layered in as supplements — this keeps the cost and usability balance in the right place.
+A. The admin interface and primary operations are in Japanese. That said, some apps in the App Store are English-only, so confirming Japanese language support for any app you plan to install is worth doing upfront. Phone support is not available in Japanese as of June 2026 — for questions and issues, the Help Center, chat support, and domestic Shopify Partners are the practical options.
+
+**Q. What should I expect to spend on Shopify apps each month?**
+
+A. It varies significantly based on the number and type of apps installed. Adding several apps — SEO, reviews, email marketing, multilingual support, subscriptions — can easily reach tens of thousands of yen per month. The discipline of listing out the features you need, pricing each app, summing the total, and checking whether a higher Shopify plan covers some of those needs natively is the core of app cost management.
+
+**Q. Can convenience store payment and buy-now-pay-later be added to Shopify?**
+
+A. Yes — by contracting with an external payment processor. KOMOJU, SB Payment Service, and GMO Epsilon are the most commonly used options. The important caveat is that using an external processor triggers Shopify's transaction fees. The standard approach is to make Shopify Payments the primary method, with Japan-specific payment options layered in as supplements — this keeps the cost and usability balance in the right place.
+
+**Q. Are there extra fees when I sell in foreign currencies on Shopify?**
+
+A. Yes. When Shopify Payments accepts a payment in a currency different from your payout currency, a currency conversion fee applies. The Shopify Help Center lists 1.5% for stores in the United States and 2% for stores in France and all other Shopify Payments regions (as of November 2026). Because the fee isn't returned on refunds, build it into your overseas profit calculations.
 
 ### Conclusion: Understanding Shopify's Disadvantages With Their Solutions Is the Only Honest Take
 
@@ -120,12 +133,7 @@ The five disadvantages covered here — the language barrier, the technical ceil
 
 The right frame isn't "disadvantages mean don't use it" — it's "understand the disadvantages, then build a launch plan calibrated to your business size, technical resources, and growth trajectory." Shopify remains one of the most versatile platforms available for operators building from domestic Japanese EC toward cross-border expansion.
 
-Leap publishes ongoing resources on cross-border EC site builds using Shopify, multilingual marketing, and international expansion strategy. If you're weighing Shopify against other platforms, or building out a cross-border EC strategy, the links below are a good next step.
-
-### Recommended from Leap
-
-- [EC Operations Guide](https://www.leap.site/en/ec-guide)
-- [Global Business Blog](https://www.leap.site/en/blog)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ### References
 
@@ -144,3 +152,5 @@ Leap publishes ongoing resources on cross-border EC site builds using Shopify, m
 - [TSUN | Pros and Cons of Convenience Store Payment on Shopify](https://tsun.ec/blogs/articles/shopify-convenience-store-payment-pros-cons)
 - [Shopify Official Blog | How to Choose Payment Methods](https://www.shopify.com/jp/blog/payments-list)
 - [SB Payment Service | What Is Shopify Payments?](https://www.sbpayment.jp/support/ec/shopify-payment2/)
+- [Fees and costs for selling in local currencies - Shopify Help Center](https://help.shopify.com/en/manual/markets/pricing/fees)
+- [Translating content automatically using the Translate & Adapt app - Shopify Help Center](https://help.shopify.com/en/manual/international/languages/translate-adapt-app/automatic-translation)

@@ -57,6 +57,14 @@ But that choice comes with costs that are easy to overlook. Running ads well tak
 
 For small and mid-sized businesses eyeing overseas expansion or cross-border e-commerce down the road, a staged approach can work well: validate demand and nail down your operations on a fee-based platform like BASE domestically first, then move to a more fully built-out multilingual e-commerce site once your model is proven. Especially in overseas markets, a page built from scratch around local consumers tends to perform better than a straight translation of a Japanese-language site — and when you reach that stage, working with a partner focused on multilingual web marketing tends to get you there faster than figuring it out on your own.
 
+## How to Sell Internationally on BASE
+
+To sell internationally on BASE, you can use "Kantan Kaigai Hanbai" (Easy Overseas Sales), which became a standard feature for every shop on March 18, 2026. According to BASE's press release, when an overseas customer visits your shop, AI detects their country and automatically shows a dedicated overseas cart. Within that single cart, it checks whether each product can be sold to that country, calculates international shipping automatically, and offers payment methods for overseas customers. All you do is ship the item to the domestic warehouse of want.jp, a BASE subsidiary, the same way you'd ship a domestic order. want.jp handles international shipping labels and customs documents, multilingual delivery inquiries, and returns and refunds.
+
+Viewed through this article's lens of fees as cost performance, the feature costs 5% of the payment amount (including shipping to the domestic warehouse), charged only when an item sells overseas, with no setup fee or fixed cost. Your BASE plan fees apply separately (as of November 2026). Compared with putting multilingual support, payments, shipping, and customer inquiries for overseas buyers in place yourself, you only pay when you make a sale, which makes it well suited to testing overseas demand on a small scale.
+
+That said, the amount you receive is based on your domestic price (shipping included). Once you want to tailor pricing, pages, and marketing to specific countries, running your own cross-border online store alongside BASE is another option. With Leap, a cross-border ecommerce tool that lets AI handle marketing too, you can take overseas marketing further through localization suggestions tailored to your target countries and multilingual blogs and email newsletters.
+
 ## FAQ
 
 **Q. Should I go with BASE's Standard Plan or the Growth Plan?**
@@ -71,16 +79,20 @@ A. Comparing raw fee percentages alone, platforms like Shopify can come out ahea
 
 A. BASE's strength is simple, domestic-focused operations, so if you're planning serious cross-border e-commerce or multilingual support, you'll need localization tailored to the local language, payment methods, and business customs. A straight translation of a Japanese-language site often doesn't land well with local consumers, and pages built from scratch around the local market tend to perform better. One solid approach is to validate demand domestically on BASE first, then consider moving to a platform built for multilingual support once you can see real demand.
 
+**Q. What are the fees for selling overseas on BASE?**
+
+A. With Easy Overseas Sales, a feature fee of 5% of the payment amount (including shipping to the domestic warehouse) is charged only when an item sells overseas, and your regular BASE plan fees apply on top of that (as of November 2026). There is no setup fee or fixed cost. On the Standard plan, applying the same rate as a credit card payment, the total comes to roughly 11.6% of the payment amount plus ¥40.
+
 ## Summary and Key Takeaways
 
 Whether BASE's fees feel "high" isn't just about the number on the page. Looking only at the surface-level processing and service fees might make them seem steep, but built into that number are harder-to-see benefits: reduced upfront risk, marketing support, and ongoing feature development. The real question worth asking isn't whether the fee is high or low — it's whether this fee structure fits where your business is right now.
 
-During the early, unstable phase of a launch, BASE's Standard Plan — with zero fixed costs — is a reasonable choice. Once sales pick up, it's worth considering a switch to the Growth Plan or a move to another platform. And further down the road, once overseas markets come into view, a new stage awaits: localization genuinely rooted in the local market. At Leap, we support Japanese small and mid-sized businesses at each of these growth milestones, building multilingual sites from scratch and handling web marketing aimed at overseas audiences. Rather than getting caught up in the fee percentage itself, figuring out what investment your business actually needs right now is what leads to the next step forward.
+During the early, unstable phase of a launch, BASE's Standard Plan — with zero fixed costs — is a reasonable choice. Once sales pick up, it's worth considering a switch to the Growth Plan or a move to another platform. And further down the road, once overseas markets come into view, a new stage awaits: localization genuinely rooted in the local market. Rather than getting caught up in the fee percentage itself, figuring out what investment your business actually needs right now is what leads to the next step forward.
+
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
-- [How Much Are BASE's Fees? Is It Expensive? A Simulation Breakdown](https://net-digi.com/base-fee/)
-- [BASE Fee Simulation and Plan Comparison](https://stockcrew.jp/blog/base-fee-simulation/)
 - [Running an Online Store on BASE — Are the Fees and Sales Commissions High? - Square](https://squareup.com/jp/ja/townsquare/how-to-use-base)
 - [What Costs and Fees Come with BASE? How the Fees Are Calculated, with Comparisons to Other Platforms](https://baseu.jp/6685)
 - [What Is BASE's Growth Plan? Benefits and When to Switch](https://baseu.jp/45339)
@@ -92,3 +104,4 @@ During the early, unstable phase of a launch, BASE's Standard Plan — with zero
 - [BASE's Fees Explained: Tips for Keeping Costs Down](https://chatboost-ec.dmm.com/blogs/column/base-commission-fee-utm_source-seo-utm_medium-others-utm_campaign)
 - [Building an E-Commerce Site on BASE and Understanding the Fees](https://rubygroupe.jp/blogs/column/development039)
 - [A Case Study of Opening an Online Store Using BASE](https://j-net21.smrj.go.jp/special/ittoolcase/18031301.html)
+- [BASE to Make "Kantan Kaigai Hanbai" (Easy Overseas Sales) a Standard Feature from March 18 - BASE, Inc. (PR TIMES)](https://prtimes.jp/main/html/rd/p/000000288.000030814.html)

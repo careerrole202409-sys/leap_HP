@@ -111,19 +111,35 @@ Menya Musashi, a well-known ramen chain, saw in-store traffic collapse during th
 
 Yamanote, a craft shop in Yamaga City, Kumamoto Prefecture, used BASE to sell washi paper crafts with over 600 years of history, expanding from a local shop into a nationwide sales channel. The simple, refined page design harmonizes with the products' aesthetic, and the shop has successfully built a base of repeat customers through social media integration. It's a valuable reference case for how a regional traditional craft business accessed the national market through BASE.
 
-## Frequently Asked Questions About BASE
+## How to Sell Internationally with BASE
 
-### Q. Can individuals or sole proprietors open a store on BASE?
+To sell internationally with BASE, you need to install two BASE Apps, the English & Foreign Currency App (英語・外貨対応 App) and the Detailed Shipping Settings App (送料詳細設定 App), and enable payment methods that support overseas buyers (as of November 2026; both apps are free).
+
+1. **English & Foreign Currency App**: Buyers whose browser language is English see shop pages and order confirmation emails in English, and prices can be displayed in 34 currencies. However, text that shop owners enter themselves, such as product descriptions, is not shown in English, so you need to prepare English product names and descriptions yourself.
+2. **Detailed Shipping Settings App**: You can set a flat overseas shipping rate, rates by country or region, and delivery areas. Subscription products are not available for overseas sales.
+3. **Payments**: Enable the BASE Simple Payments (BASEかんたん決済) methods that support overseas buyers: PayPal, Amazon Pay, bank transfer, and credit card. Note, however, that BASE states credit cards issued outside Japan cannot be used.
+
+When prices are displayed in a foreign currency, the exchange rate is fixed when the order status changes to "shipped." In short, BASE lets you accept orders from overseas with free apps, but you need to handle translating product information, supporting languages other than English, and overseas marketing on your own.
+
+If you want to build a multilingual site and run overseas marketing in one place, separate from your domestic shop, another option is a tool like Leap, a cross-border ecommerce tool that lets AI handle marketing too.
+
+## FAQ
+
+**Q. Can individuals or sole proprietors open a store on BASE?**
 
 A. Yes. BASE is available to a wide range of users, from sole proprietors to corporations, and can be used without business registration or a trade name. However, when selling products, the disclosure obligations under Japan's Specified Commercial Transactions Act apply. BASE provides a mechanism to keep address and other identifying information non-public, so there are options for those concerned about exposing their home address online.
 
-### Q. Is it difficult to migrate from BASE to another platform?
+**Q. Is it difficult to migrate from BASE to another platform?**
 
 A. Product data and customer information export functionality is available to a degree, but because design and feature configurations differ between platforms, a migration requires real effort and time. Planning from the start with a "launch on BASE, migrate to Shopify as revenue grows" approach minimizes disruption at migration time. If cross-border e-commerce expansion is in the picture, we recommend beginning to think about a migration plan early.
 
-### Q. Can BASE be used for cross-border e-commerce?
+**Q. Can BASE be used for cross-border e-commerce?**
 
 A. Not fully. BASE is fundamentally designed as a domestic platform, and features for multilingual page creation, multi-currency payments, and detailed overseas shipping configuration are limited. If selling to overseas markets is in your plans, consider either migrating to Shopify or building a separate multilingual e-commerce site in parallel with your BASE shop.
+
+**Q. Which payment methods can overseas buyers use on BASE?**
+
+A. The BASE Simple Payments methods that support overseas buyers are PayPal, Amazon Pay, bank transfer, and credit card. However, the English & Foreign Currency App page states that credit cards issued outside Japan cannot be used, so in practice it makes sense to guide overseas buyers to options such as PayPal (as of November 2026).
 
 ## Conclusion: BASE Is Ideal for Starting Out — Have a Strategy for Scaling
 
@@ -133,15 +149,7 @@ On the other hand, rising fee costs as monthly revenue scales up, customization 
 
 If cross-border e-commerce and multilingual expansion are in your sights, we strongly recommend beginning preparations for overseas site development in parallel with launching your domestic store.
 
-## A Note from Leap
-
-Leap helps small and mid-sized businesses aiming for overseas expansion and cross-border e-commerce build multilingual websites and EC sites localized in the local language. For those who have established a foundation on a domestic platform like BASE and are considering the next step of entering overseas markets, we deliver practical information and concrete solutions.
-
-Leap publishes up-to-date information for global business on an ongoing basis. Explore our other articles as well.
-
-- [EC Operations Manual — All Articles](https://www.leap.site/en/ec-guide)
-- [Overseas Business Blog](https://www.leap.site/en/blog)
-- [Leap Services & Demo Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -149,8 +157,7 @@ Leap publishes up-to-date information for global business on an ongoing basis. E
 - [BASE U — BASE Fees and Charges Explained (in Japanese)](https://baseu.jp/6685)
 - [BASE U — Case Studies (in Japanese)](https://baseu.jp/19092)
 - [EC Kanji — 12 BASE Success Stories (in Japanese)](https://ec-kanji.com/posts/base-case)
-- [ec-mikata — BASE Overview (in Japanese)](https://ec-mikata.com/knowhow/34947/)
-- [Tokyo Freelance Media — BASE Overview (in Japanese)](https://media.tokyo-freelance.jp/base-about/)
-- [LISKUL — BASE Overview (in Japanese)](https://liskul.com/base-40015)
 - [KOMOJU — Shopify vs. BASE vs. STORES Comparison (in Japanese)](https://ja.komoju.com/blog/shopify/shopify-comparison/)
 - [Shopify Guide — Shopify vs. BASE Comparison (in Japanese)](https://shopify-guide.net/shopify-vs-base/)
+- [English & Foreign Currency App (英語・外貨対応) - BASE Apps (in Japanese)](https://apps.thebase.com/detail/33)
+- [Detailed Shipping Settings App (送料詳細設定) - BASE Apps (in Japanese)](https://apps.thebase.com/detail/10)

@@ -51,6 +51,16 @@ There's also an App for switching to a custom domain, and one that displays appr
 
 Installing a BASE App is straightforward: find the one you want under the "Apps" menu in your admin dashboard and click "Install." Once installed, a dedicated settings screen for that App appears in your dashboard, where you configure the specifics — shipping amounts, coupon discount rates, which products require age verification, and so on. What you need to configure and prepare varies by App — for something like Detailed Shipping Settings, where you're setting conditions by region and amount, it helps to have your own shipping rate sheet on hand beforehand. Most Apps can be disabled or uninstalled from your dashboard, though some come with conditions attached, and Apps tied to external service integrations aren't always a simple toggle-off — worth checking each App's own documentation. Also note that paid Apps auto-renew unless you disable them.
 
+## How to Sell Internationally With BASE Apps
+
+As of November 2026, there are two main ways to sell overseas on BASE: use the built-in "Easy Overseas Sales" (かんたん海外販売) feature, or ship overseas yourself by combining the English/Currency Support App with the Detailed Shipping Settings App. The Apps you need and the caveats differ depending on which route you choose.
+
+Easy Overseas Sales automatically shows a dedicated overseas shopping cart to visitors from abroad, and the proxy company want.jp handles the international shipping. There are two conditions for using it: credit card payment must be enabled in BASE Easy Payment, and your shop must not be using the Age Verification App. Because the order is placed by want.jp in Japan, you don't need to set up any international shipping methods. If you have already configured international shipping fees in the Detailed Shipping Settings App, BASE recommends switching to domestic shipping methods only to avoid confusing buyers.
+
+If you ship overseas yourself, installing the free English/Currency Support App switches the wording on your shop pages and purchase confirmation emails to English and adds price display in the currencies of 34 countries. You also need to set up international shipping methods (a flat overseas rate, or rates by country or area) in the Detailed Shipping Settings App and enable a BASE Easy Payment method that supports overseas buyers. Keep in mind that credit cards issued outside Japan can't be used, and subscription products don't support overseas sales.
+
+With either route, text you enter yourself, such as product names and descriptions, is not translated into English automatically. You'll need to prepare copy for overseas buyers on your own, for example by adding English descriptions alongside the Japanese. If you want to handle everything from multilingual product pages to overseas marketing in one place, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is one option to consider.
+
 ## FAQ
 
 **Q. Is there a limit to how many BASE Apps I can install?**
@@ -65,16 +75,15 @@ A. It varies by App. Some charge a flat monthly rate; others are free for core f
 
 A. Priority depends on what you're selling, but generally it makes sense to start with foundational Apps like Detailed Shipping Settings and Block List, then add sales-boosting Apps like Coupons and Reviews once things are running smoothly. If you sell a product that legally requires age verification, like alcohol, install the Age Verification App first.
 
+**Q. Can I use BASE's Easy Overseas Sales if I have the Age Verification App installed?**
+
+A. No. BASE's official Help Center lists two conditions for Easy Overseas Sales: credit card payment must be enabled in BASE Easy Payment, and the shop must not be using the Age Verification App. If these conditions aren't met, the feature won't work even if you turn it on (as of November 2026).
+
 ## Summary and Key Takeaway
 
 BASE Apps let you add functionality as your store's needs evolve. Installing foundational Apps like shipping settings and a block list right after launch, then adding sales-boosting Apps like coupons and reviews once things gain traction, lets you grow your store step by step without overextending. What matters isn't installing everything at once — it's identifying what your store actually needs right now.
 
-Picking and combining extensions like BASE Apps one by one can feel like a lot of work when you're just getting started. Leap offers an AI E-Commerce Agent that supports building and running an e-commerce site entirely through conversation with AI, handling everything from choosing the right features to implementing them. If you don't have the time to build this out yourself, take a look at what Leap offers.
-
-We publish a wide range of practical guides on running an e-commerce business.
-
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -90,3 +99,4 @@ We publish a wide range of practical guides on running an e-commerce business.
 - [8 BASE Shop Management Apps: Install Priority, Shipping, Delivery Dates, Block Lists - STOCKCREW](https://stockcrew.co.jp/insights/base-apps-shop-management)
 - [16 Recommended Free BASE Apps by Category - MarkeZine](https://markezine.jp/commercezine/article/detail/11613)
 - [What Are BASE Apps? A Roundup of Useful Features From Day One - BASE U](https://baseu.jp/6039)
+- [About Easy Overseas Sales (「かんたん海外販売」について教えてください) - Help | BASE](https://help.thebase.in/hc/ja/articles/52804478331929)

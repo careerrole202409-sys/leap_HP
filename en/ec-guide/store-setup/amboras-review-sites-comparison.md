@@ -66,6 +66,24 @@ Relying purely on review-site data for a newer AI-native e-commerce service come
 
 With no quantitative review-site data yet available, evaluating Amboras realistically means leaning on direct testing rather than third-party scores. Based on what Amboras itself describes — AI-driven storefront creation through conversation, continuous automated A/B testing — the model seems best suited to early-stage brands without in-house dev resources who want to move fast and test small, or to existing sellers who want to layer AI-driven A/B testing on top of a store they already run. Enterprises that prioritize a deep operational track record and mature support infrastructure, on the other hand, may find it worth comparing Amboras against an established platform like Shopify, which has both review volume and years of operating history behind it.
 
+## How to Sell Internationally with Amboras
+
+To sell internationally with Amboras, you need the Pro plan or higher, which includes multi-currency and automatic tax. Amboras's official pricing page shows "Multi-currency and automatic tax" as included in the Pro, Advanced, and Plus plans, but not in the Basic plan (as of November 2026).
+
+### What the Pricing Page Does and Doesn't Tell You
+
+As of November 2026, the pricing page only shows whether each plan includes multi-currency and automatic tax. Its feature list doesn't include items on multilingual storefronts or international shipping. With no review-site ratings available yet either, the official pricing page and third-party reviews alone aren't enough to judge the language support and shipping settings that international selling requires.
+
+### Checkpoints When Testing for International Selling
+
+The most reliable way to see whether Amboras works for international selling is to check the following three points with your own products during the free trial or PoC stage recommended in this article.
+
+1. Prices display in the currency of your target country, and checkout can be completed
+2. Product pages and checkout can be displayed in the target market's language
+3. Shipping and tax for the destination country are calculated correctly at checkout
+
+If you want localization for each target market and overseas marketing handled together with a multilingual, multi-currency store, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is also worth comparing.
+
 ## FAQ
 
 **Q. Why isn't Amboras listed on G2 or Trustpilot?**
@@ -80,16 +98,15 @@ A. Not necessarily. A lack of reviews doesn't directly indicate poor quality —
 
 A. G2 and Capterra reviews skew toward merchants running stores on Shopify, while Trustpilot reviews skew toward consumers who shopped at a Shopify-powered store. Because the reviewer base differs, the same platform can carry very different ratings depending on the site — it's worth keeping in mind who's actually behind the score whenever you check one.
 
+**Q. Does Amboras support selling in multiple currencies?**
+
+A. Only on the Pro plan and higher. Amboras's official pricing page shows "Multi-currency and automatic tax" as included in the Pro, Advanced, and Plus plans, but not in the Basic plan (as of November 2026). The pricing page doesn't list which currencies are supported, so we recommend confirming before you sign up that prices can be displayed and paid in your target country's currency.
+
 ## Summary and Key Takeaway
 
 Searching for "Amboras reviews" doesn't turn up the tidy scorecard you might expect — instead, it turns up the fact that review-site data simply hasn't accumulated yet. That's actually a useful finding in its own right when evaluating any young AI-native e-commerce service. Review-site scores are a convenient data point, but their meaning shifts a lot depending on who's posting and how many reviews back them up — a star rating alone isn't enough to act on. As Shopify's example shows, the same platform can score very differently across G2 and Trustpilot. When evaluating a new service, treat review-site numbers as a starting point, trace vendor-published performance figures back to their source, and ultimately validate with your own trial or proof-of-concept data — it's the most reliable path, even if it takes more effort upfront.
 
-Leap supports the full picture — from building multilingual e-commerce sites to web marketing for overseas markets — as a one-stop service. If you're evaluating e-commerce platforms for your next market, take a look at what Leap offers.
-
-We publish a wide range of practical guides on international business and e-commerce operations.
-
-[Leap International Business Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -101,3 +118,4 @@ We publish a wide range of practical guides on international business and e-comm
 - [Shopify is rated "Bad" with 1.3/5 - Trustpilot](https://www.trustpilot.com/review/www.shopify.com)
 - [Shoplazza Pricing - G2](https://www.g2.com/products/shoplazza/pricing)
 - [Your Next Store: 8 Best Amboras Alternatives in 2026](https://yournextstore.com/blog/amboras-alternatives)
+- [Amboras Pricing - Amboras](https://www.amboras.com/pricing)

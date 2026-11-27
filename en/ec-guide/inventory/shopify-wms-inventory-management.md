@@ -19,11 +19,7 @@ author_image: https://placehold.co/100x100/e2e8f0/94a3b8?text=Leap
 author_bio: A team of experts in overseas business
 ---
 
-## EC Inventory Management Systems Compared | How to Eliminate Errors with Shopify + WMS Integration
-
----
-
-### [Quick Summary] What Changes When You Integrate an Inventory Management System?
+## [Quick Summary] What Changes When You Integrate an Inventory Management System?
 
 "The order came in, but we're out of stock." "Our inventory counts were out of sync across marketplaces and we ended up overselling." If you've worked in e-commerce long enough, you've likely encountered at least one of these situations.
 
@@ -41,15 +37,15 @@ If you're an EC manager or business owner hitting the limits of manual managemen
 
 ---
 
-### What Shopify Can and Can't Do Out of the Box
+## What Shopify Can and Can't Do Out of the Box
 
-#### Shopify's Built-In Inventory Features
+### Shopify's Built-In Inventory Features
 
 Shopify does include meaningful inventory management capabilities on its own. The Products page in your admin dashboard lets you track inventory counts at the variant level (by color, size, and other attributes), and enabling "Track quantity" triggers automatic deductions when orders are placed. Bulk CSV import and export makes it possible to update large numbers of product inventories at once.
 
 The Inventory page also offers filtering by fulfillment status and stock level, and you can control on a per-product basis whether to continue selling or block purchases when an item goes out of stock.
 
-#### Three Scenarios Where Standard Features Hit Their Limits
+### Three Scenarios Where Standard Features Hit Their Limits
 
 As operations grow, there are three situations where Shopify's native tools reliably fall short.
 
@@ -64,9 +60,9 @@ Running Shopify alongside Amazon, Rakuten, Yahoo! Shopping, or other marketplace
 
 ---
 
-### OMS vs. WMS: Understanding the Difference and Choosing the Right Fit
+## OMS vs. WMS: Understanding the Difference and Choosing the Right Fit
 
-#### What Each System Does
+### What Each System Does
 
 Inventory management systems fall broadly into two categories.
 
@@ -74,7 +70,7 @@ Inventory management systems fall broadly into two categories.
 
 <strong>WMS (Warehouse Management System)</strong> focuses on the physical operations inside a warehouse: receiving and inspection, location management, order picking, outbound inspection. Its core purpose is knowing exactly where each item is and how many are on hand, and using that precision to maximize fulfillment accuracy.
 
-#### How to Decide Which One You Need
+### How to Decide Which One You Need
 
 As a general rule, if you're selling across <strong>50 or more SKUs on two or more marketplaces or channels</strong>, an OMS becomes a realistic necessity. If you operate your own warehouse and are fulfilling more than 1,000 orders per month, a WMS is worth serious consideration.
 
@@ -82,31 +78,31 @@ Combining both creates a fully automated loop: order intake → inventory alloca
 
 ---
 
-### Major System Comparison: Features, Pricing, and Shopify Integration
+## Major System Comparison: Features, Pricing, and Shopify Integration
 
-#### Next Engine (Hamee Corporation)
+### Next Engine (Hamee Corporation)
 
 One of the best-known OMS platforms in the Japanese EC industry. It integrates with 50+ marketplaces and shopping carts — including Amazon, Rakuten, Yahoo! Shopping, and Shopify — and automates order management, inventory management, product registration, and warehouse communication in one platform. Shopify integration runs via real-time API sync, with order ingestion and inventory updates handled automatically.
 
 Pricing starts at ¥2,200/month (tax included) as a base fee, with per-order variable charges typically in the range of a few yen to a dozen or so yen per order. The cost structure becomes more favorable at higher volumes, making it a common choice for EC businesses with monthly sales above ¥10 million.
 
-#### Logikura
+### Logikura
 
 A SaaS-based system with particular strength in WMS functionality, supporting barcode-scan picking and outbound inspection. Shopify integration is API-based with near-real-time inventory sync. Pricing varies by scale, but entry-level plans are available for smaller operations. Well-suited for EC businesses that operate their own warehouse.
 
-#### Hapilogi (Hapilogi Co., Ltd.)
+### Hapilogi (Hapilogi Co., Ltd.)
 
 Hapilogi uniquely bundles fulfillment outsourcing (3PL) with its system offering. For businesses that don't have their own warehouse and want to outsource physical logistics, the ability to get both warehouse operations and WMS software from a single provider is a significant convenience. Shopify integration is available via app, with order data automatically transmitted to the warehouse.
 
-#### mylogi (Mylogi Inc.)
+### mylogi (Mylogi Inc.)
 
 A relatively new cloud-based WMS with zero setup fees and monthly pricing starting in the tens of thousands of yen — a notably accessible entry point. Integrates with Shopify as well as BASE and ColorMe Shop, and is increasingly chosen by small-to-mid-sized EC businesses as their first WMS implementation.
 
 ---
 
-### What Full Automation Looks Like with OMS + WMS Integration
+## What Full Automation Looks Like with OMS + WMS Integration
 
-#### Connecting Order Intake → Fulfillment Instructions → Inventory Updates Without Human Intervention
+### Connecting Order Intake → Fulfillment Instructions → Inventory Updates Without Human Intervention
 
 When system integration is designed correctly, the following flow runs entirely without manual involvement:
 
@@ -126,9 +122,9 @@ Automating this cycle eliminates work that previously consumed several hours of 
 
 ---
 
-### Designing Systems That Prevent Mispicks and Overselling
+## Designing Systems That Prevent Mispicks and Overselling
 
-#### Where Mispicks Actually Happen
+### Where Mispicks Actually Happen
 
 The root cause of most mispicks is concentrated in moments where humans make visual judgment calls: handwritten pick slips, inventory updates pasted from CSVs, manual visual picking without barcode scanning. As long as these analog steps remain in the process, errors will occur.
 
@@ -143,7 +139,7 @@ Introduce barcode scanning at shipment to verify the correct item and quantity b
 <strong>(3) Real-time cancellation and returns processing</strong>
 When an order is cancelled or a return arrives, the OMS and WMS are notified immediately and inventory counts are restored. Delays in this sync lead to unfulfillable orders sitting in the queue and accumulating inventory discrepancies over time.
 
-#### How to Think About ROI
+### How to Think About ROI
 
 Inventory management system costs typically fall in the range of ¥30,000–¥300,000/month depending on scale. Compare that against the cost of manual management:
 
@@ -155,35 +151,51 @@ If you're experiencing 10 mispicks per month, that's ¥50,000–¥100,000 in inc
 
 ---
 
-### Case Studies: Companies That Transformed Their Operations Through Inventory System Integration
+## Case Studies: Companies That Transformed Their Operations Through Inventory System Integration
 
-#### Iris Ohyama's EC Inventory Optimization
+### Iris Ohyama's EC Inventory Optimization
 
 Iris Ohyama, which manages tens of thousands of SKUs across household goods and electronics categories on Amazon, Rakuten, and its own EC site, built out OMS and WMS integration for centralized inventory management. The result: real-time inventory sync across all channels and automated fulfillment — enabling high-volume order processing with a lean team while managing both overstock and stockout risk simultaneously. It's widely cited in the industry as a reference model for multi-channel inventory automation.
 
-#### Visionary Holdings (Megane Super and Others) Inventory Management DX
+### Visionary Holdings (Megane Super and Others) Inventory Management DX
 
 Visionary Holdings, which operates eyewear chains including Megane Super, tackled the challenge of integrating inventory across physical stores and online channels. As part of an omnichannel strategy, the company implemented a system for real-time centralized inventory management across store and EC inventory — enabling scenarios like "out of stock in-store but can order online" and "buy online, pick up in store." It's recognized as a case study in resolving the complexity of cross-channel SKU management through automation.
 
 ---
 
-### FAQ
+## Inventory Management When Selling Overseas
 
-<strong>Q1. Should I choose Next Engine or Logikura?</strong>
+When you also sell overseas, inventory management comes down to two things: tracking where your stock is and how much is at each site, and storing the customs information each product needs in your product master.
 
-The key difference is role: OMS vs. WMS. If you're selling across multiple marketplaces and channels and want to prioritize order management automation, Next Engine (OMS) is the right fit. If you operate your own warehouse and want to improve picking and inspection accuracy within that facility, Logikura (WMS) is the better choice. If you have both challenges, combining Next Engine with a WMS is a common and effective approach.
+In Shopify, warehouses, retail stores, and fulfillment services can be added as "locations," and inventory can be tracked separately at each location. The number of locations you can add depends on your Shopify plan. If you keep stock at an overseas warehouse or a third-party logistics provider, adding it as a location lets you track that stock separately from your domestic warehouse. Order routing rules can then assign online orders to locations automatically, based on inventory availability and proximity to the customer.
 
-<strong>Q2. How large can an operation get before Shopify's native inventory tools are no longer sufficient?</strong>
+The second piece is customs information. Shopify lets you add a country or region of origin and an HS code (the code used to classify goods in international trade) to each product, and you can add or update them in bulk with the bulk editor or a CSV file. These values are used to estimate the duties and import taxes shown to international customers at checkout. Shopify notes that missing or incorrect codes can lead to border delays, seized shipments, or denied imports.
 
-A rough threshold: if you have 50 or fewer SKUs, sell only on Shopify, and process a few hundred orders per month, the native tools may be adequate. Once you exceed those benchmarks, inventory update lag and data entry error risk increase significantly. If you're already selling on two or more marketplaces, start evaluating external systems sooner rather than later.
-
-<strong>Q3. How long does it take to implement an inventory management system?</strong>
-
-For SaaS-based OMS or WMS platforms, many can be configured and integrated in as little as two to four weeks. However, if you need to connect with existing internal systems (ERP, core business systems) or require significant customization, implementation can take two to three months or more. Before selecting a system, define your requirements clearly and ask vendors for a realistic timeline estimate.
+If you've integrated an OMS or WMS, decide up front which system is the source of truth for country of origin and HS codes, and which systems they sync to. That way, overseas orders can flow through the same process as domestic ones. If you want to manage your international store in one place, including which countries each product is sold in and multi-currency pricing, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option.
 
 ---
 
-### Conclusion: Inventory System Implementation Is Offensive Investment, Not Defensive
+## FAQ
+
+**Q. Should I choose Next Engine or Logikura?**
+
+A. The key difference is role: OMS vs. WMS. If you're selling across multiple marketplaces and channels and want to prioritize order management automation, Next Engine (OMS) is the right fit. If you operate your own warehouse and want to improve picking and inspection accuracy within that facility, Logikura (WMS) is the better choice. If you have both challenges, combining Next Engine with a WMS is a common and effective approach.
+
+**Q. How large can an operation get before Shopify's native inventory tools are no longer sufficient?**
+
+A. A rough threshold: if you have 50 or fewer SKUs, sell only on Shopify, and process a few hundred orders per month, the native tools may be adequate. Once you exceed those benchmarks, inventory update lag and data entry error risk increase significantly. If you're already selling on two or more marketplaces, start evaluating external systems sooner rather than later.
+
+**Q. How long does it take to implement an inventory management system?**
+
+A. For SaaS-based OMS or WMS platforms, many can be configured and integrated in as little as two to four weeks. However, if you need to connect with existing internal systems (ERP, core business systems) or require significant customization, implementation can take two to three months or more. Before selecting a system, define your requirements clearly and ask vendors for a realistic timeline estimate.
+
+**Q. When selling overseas, should I manage overseas inventory separately from domestic inventory?**
+
+A. If you keep stock at an overseas warehouse or a third-party logistics provider, managing it separately by site is the standard approach. In Shopify, you can add warehouses as locations and track inventory at each one. If you ship overseas directly from your domestic warehouse, you can use the same stock as for domestic orders, but adding each product's country of origin and HS code lets Shopify use them to estimate the duties and import taxes shown to international customers.
+
+---
+
+## Conclusion: Inventory System Implementation Is Offensive Investment, Not Defensive
 
 Automating inventory management isn't just about reducing errors — it's about freeing up the time and resources that human-managed processes were consuming, and redirecting them toward new product development, marketing, and channel expansion. That's not a defensive move. That's a growth strategy.
 
@@ -195,12 +207,18 @@ Once your domestic EC inventory operations are optimized, the next stage comes i
 
 ---
 
-<strong>From Leap</strong>
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
-Leap provides a multilingual web marketing SaaS platform for small and medium-sized businesses pursuing overseas expansion and cross-border e-commerce. Rather than translation, we build locally optimized pages for each target market — a localization-first approach to supporting your international sales.
+---
 
-We publish a wide range of practical content on EC operations and global expansion — explore our other resources below.
+## References
 
-- [Global Business Blog](https://www.leap.site/en/blog/)
-- [EC Operations Guide](https://www.leap.site/en/ec-guide/)
-- [Leap Services & Demo Inquiry](https://www.leap.site/en/about/#contact)
+- [What Is an Inventory Management System? - Shopify (Japanese)](https://www.shopify.com/jp/blog/inventory-management-system)
+- [Comparing Inventory Management Systems for Ecommerce - StockCrew (Japanese)](https://stockcrew.co.jp/insights/24-0016)
+- [Inventory Management System Comparison - ASPIC (Japanese)](https://www.aspicjapan.org/asu/article/31244)
+- [Integrating Shopify with OMS/WMS - bindec (Japanese)](https://bindec.jp/media/555953145751/)
+- [What Is a WMS? - Nippon Express (Japanese)](https://www.nittsu.co.jp/v-site/85.html)
+- [Shopify Inventory Features and Next Engine Integration - Next Engine (Japanese)](https://next-engine.net/ec-blog/shopify-stock-management/)
+- [Key Points for Choosing a WMS - Nippon Express (Japanese)](https://www.nipponexpress.com/dcx/jp/blog/questions-help-you-choose-wms/index.html)
+- [Managing locations - Shopify Help Center](https://help.shopify.com/en/manual/fulfillment/setup/locations-management)
+- [Adding HS codes to products - Shopify Help Center](https://help.shopify.com/en/manual/international/shipping/hs-codes)

@@ -54,6 +54,17 @@ If you started selling on BASE as a sole proprietor and your business later grow
 
 When you switch, your legal disclosure also needs to be rewritten from the individual version to the corporate version, and the premise for what can be kept private changes along with it. If incorporating is somewhere on your roadmap, it's worth deciding ahead of time when you'll make the switch, and preparing a checklist so nothing in the disclosure gets missed during the transition.
 
+## Individual vs. Corporate When You Also Sell Internationally
+
+If you sell overseas through BASE's "Kantan Kaigai Hanbai" (Easy Overseas Sales) feature, eligibility does not depend on whether you're registered as an individual or a corporation. Easy Overseas Sales has been offered as a standard feature to all BASE shops since March 18, 2026 (with a phased rollout for shops using certain features), and BASE's official help page lists two requirements (as of November 2026):
+
+1. Credit card payments are enabled in BASE Easy Payment
+2. The shop is not using the "Age Restriction App"
+
+What both individuals and corporations need to understand is how the transaction is structured. Orders placed through Easy Overseas Sales list want.jp Inc., a domestic purchasing agent, as the orderer, not the overseas buyer. According to the official help page, these orders are therefore treated the same as domestic orders, and the shop's purchasing costs are not eligible for a consumption tax refund. You simply ship to want.jp's warehouse in Japan, and want.jp handles customs documents, international shipping, and returns, so your shop doesn't need to go through export procedures.
+
+In other words, when you start selling overseas on BASE, there's no need to rush into incorporating for that reason alone; the domestic factors covered earlier (tax advantages and requests from business partners) are enough to guide the decision. If you later expand to selling directly to overseas buyers from your own website, however, the transaction structure changes, so you'll need to recheck taxes and procedures. For selling directly overseas from your own multilingual store, tools like Leap, a cross-border ecommerce tool that lets AI handle marketing too, let you go from building a multilingual, multi-currency site to running overseas marketing through chat.
+
 ## FAQ
 
 **Q. Can I register as an individual and switch to corporate later?**
@@ -68,16 +79,15 @@ A. No — you don't need to submit documents proving your corporation exists to 
 
 A. There's no major functional difference in the build process itself. That said, having corporate status can make things go more smoothly when a business partner requires a corporate contract or invoice. On the other hand, individuals get a flexibility corporations don't — the ability to keep their address and phone number private. Which to choose should come down to your actual business structure and future plans, not which one has "better" features.
 
+**Q. Can a shop registered as an individual use BASE's Easy Overseas Sales?**
+
+A. Yes. Easy Overseas Sales has been a standard feature for all BASE shops since March 18, 2026, and the official help page lists two requirements: credit card payments must be enabled in BASE Easy Payment, and the shop must not be using the "Age Restriction App" (as of November 2026).
+
 ## Summary and Key Takeaway
 
 On BASE, the difference between individual and corporate isn't just which registration category you pick — it ripples into how you fill out the legal disclosure, how much you're able to keep private, whether you need the extra corporate application step, and even how long certain payment methods take to activate. If you're about to start building, it's worth deciding which category to register under with an eye not just on your current business structure, but on whether you might incorporate down the road — that reduces the hassle if you do end up switching later.
 
-Confirming the requirements for a corporate application and getting the legal disclosure right are the kind of detail work that's easy to trip over. Leap offers an AI E-Commerce Agent that supports building and running an e-commerce site entirely through conversation with AI. If you want to streamline your pre-build prep work, take a look at what Leap offers.
-
-We publish a wide range of practical guides on running an e-commerce business.
-
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -86,3 +96,5 @@ We publish a wide range of practical guides on running an e-commerce business.
 - [Can I Apply With an Account Under the Corporation's Name? - Help | BASE](https://help.thebase.in/hc/ja/articles/360000089081-%E6%B3%95%E4%BA%BA%E5%90%8D%E7%BE%A9%E3%81%AE%E5%8F%A3%E5%BA%A7%E3%81%A7%E7%94%B3%E8%AB%8B%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AF%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%81%8B)
 - [Explaining BASE's Business Information Settings (Legal Disclosure) - BASE U](https://baseu.jp/8245)
 - [Is There a Setup Manual for the Legal Disclosure (Individual)? - Help | BASE](https://help.thebase.in/hc/ja/articles/360000005601)
+- [About "Kantan Kaigai Hanbai" (Easy Overseas Sales) - Help | BASE](https://help.thebase.in/hc/ja/articles/52804478331929)
+- [BASE Makes "Kantan Kaigai Hanbai" a Standard Feature From March 18 - PR TIMES](https://prtimes.jp/main/html/rd/p/000000288.000030814.html)

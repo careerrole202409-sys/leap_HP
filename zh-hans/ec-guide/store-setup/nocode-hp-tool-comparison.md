@@ -136,19 +136,45 @@ Webflow是四款工具中技术门槛最高的"专业级无代码工具"。它�
 
 ---
 
+## 面向海外销售时如何选择无代码工具
+
+如果计划面向海外销售，或发布面向海外用户的网站，由于各工具实现多语言的方式差异很大，首先要确认能否用标准功能完成多语言化。四款工具的多语言化方式如下（截至2026年11月，根据各公司官方信息确认）：
+
+| 工具 | 多语言化方式 |
+|------|-------------|
+| Wix | 通过"Wix Multilingual"实现多语言化，支持机器翻译成130多种语言（机器翻译需消耗字数额度） |
+| Squarespace | 通过与翻译服务"Weglot"联动实现多语言化（适用于Squarespace 7.1） |
+| STUDIO | 官方帮助中心表示没有内置的多语言功能，并介绍了为每种语言分别创建页面等方法 |
+| Webflow | 通过多语言功能"Localize"，支持机器翻译、按语言划分的子目录（如.com/es/），以及自动生成包含hreflang的站点地图 |
+
+选择工具时，建议确认以下3点：
+
+1. **能否向搜索引擎说明各语言版本之间的关系**：Google介绍了使用hreflang（用于标明同一内容的各语言版本页面）来说明语言版本关系的方法。
+2. **能否自行修改机器翻译**：直接使用机器翻译可能残留不自然的表达，因此要确认能否按语言分别修改文字和图片。
+3. **多语言化的费用**：翻译额度或联动服务的使用费可能需要另外支付，因此要事先确认与语言数量相应的费用。
+
+根据海外业务的范围，适合的工具也有所不同：如果网站以日本国内为主，可选STUDIO；如果要认真打造多语言网站，可选Webflow或Wix。如果除了建站之外，还希望把本地化和多语言博客带来的海外获客一并交给工具完成，连获客都能交给AI的跨境电商工具Leap也是一个选择。
+
+
+---
+
 ## 常见问题（FAQ）
 
-<strong>Q1. 用无代码工具搭建的网站在SEO上会处于劣势吗？</strong>
+**Q. 用无代码工具搭建的网站在SEO上会处于劣势吗？**
 
-过去确实存在"无代码工具SEO较弱"的认知，但如今各工具的SEO功能已大幅增强。Meta标签与OGP配置、网站地图自动生成、移动端适配等基础SEO措施，已成为各工具的标配功能。如需进行高阶技术SEO的精细化控制，Webflow提供了最灵活的支持。只要内容质量和页面加载速度达到一定水准，由工具本身引发的SEO劣势已十分有限。
+A. 过去确实存在"无代码工具SEO较弱"的认知，但如今各工具的SEO功能已大幅增强。Meta标签与OGP配置、网站地图自动生成、移动端适配等基础SEO措施，已成为各工具的标配功能。如需进行高阶技术SEO的精细化控制，Webflow提供了最灵活的支持。只要内容质量和页面加载速度达到一定水准，由工具本身引发的SEO劣势已十分有限。
 
-<strong>Q2. 使用无代码工具自建网站与委托制作公司，哪种方式更划算？</strong>
+**Q. 使用无代码工具自建网站与委托制作公司，哪种方式更划算？**
 
-综合初期费用与运营成本来看，使用无代码工具自主运营通常更具成本优势。委托制作公司搭建官网，费用少则50万、多则200万日元以上，且每次更新均需额外付费。无代码工具起价仅需数千日元/月，且可自主更新，持续成本大幅降低。不过，对于技术要求较高的网站，或者品牌视觉表现力是核心竞争要素的情况，委托专业制作公司从整体效果来看可能更为合适。建议结合目标与资源做出综合判断。
+A. 综合初期费用与运营成本来看，使用无代码工具自主运营通常更具成本优势。委托制作公司搭建官网，费用少则50万、多则200万日元以上，且每次更新均需额外付费。无代码工具起价仅需数千日元/月，且可自主更新，持续成本大幅降低。不过，对于技术要求较高的网站，或者品牌视觉表现力是核心竞争要素的情况，委托专业制作公司从整体效果来看可能更为合适。建议结合目标与资源做出综合判断。
 
-<strong>Q3. 中途可以更换工具吗？</strong>
+**Q. 中途可以更换工具吗？**
 
-技术上可行，但需要进行内容迁移作业，会产生相应的时间和成本投入。尤其是从WordPress迁移至无代码工具，或在无代码工具之间切换时，文本内容和图片几乎都需要重新录入。在初始阶段谨慎选型，将有助于降低长期总成本。强烈建议在选型时充分考虑未来的扩展需求（追加电商功能、多语言支持、CMS运用等），以确保工具具备足够的成长空间。
+A. 技术上可行，但需要进行内容迁移作业，会产生相应的时间和成本投入。尤其是从WordPress迁移至无代码工具，或在无代码工具之间切换时，文本内容和图片几乎都需要重新录入。在初始阶段谨慎选型，将有助于降低长期总成本。强烈建议在选型时充分考虑未来的扩展需求（追加电商功能、多语言支持、CMS运用等），以确保工具具备足够的成长空间。
+
+**Q. 可以用无代码工具制作多语言网站吗？**
+
+A. 可以，但方法因工具而异。Wix提供Wix Multilingual，Webflow提供Localize等多语言功能，Squarespace则通过与Weglot联动实现多语言化。STUDIO的官方帮助中心表示没有内置的多语言功能，因此需要采取为每种语言分别创建页面等方法（截至2026年11月）。
 
 ---
 
@@ -158,16 +184,18 @@ Webflow是四款工具中技术门槛最高的"专业级无代码工具"。它�
 
 如果不只是构建国内电商网站，还规划着跨境电商和多语言拓展，那么从选型阶段起就将海外扩展性纳入考量至关重要。官网品质决定客户对品牌的第一印象，并与企业在国内外市场赢得信任的能力直接挂钩。
 
-Leap致力于帮助企业超越单纯的内容翻译，构建真正针对当地文化、消费者行为和搜索趋势进行优化的网站。如果您不只是想"先把网站做出来"，而是希望"制定一套在海外同样行得通的网络战略"，欢迎参阅以下Leap的相关资源。
+Leap是一款连获客都能交给AI的跨境电商工具。只需通过对话，即可完成多语言、多币种跨境电商网站的搭建，以及SEO、邮件营销等海外获客工作。
 
-Leap EC运营手册：[https://www.leap.site/zh-hans/ec-guide](https://www.leap.site/zh-hans/ec-guide)
-Leap 海外业务博客：[https://www.leap.site/zh-hans/blog](https://www.leap.site/zh-hans/blog)
 
 ---
 
 ## 参考资料
 
-- <https://techgym.jp/column/no-kode/>
-- <https://note.com/anyakudesign/n/ndc9554ed4918>
-- <https://atsoho.com/blog/nocode-web-design-tools-comparison-studio-webflow-wix>
-- <https://nocode.plumsa.co.jp/?p=1339>
+- [无代码工具推荐比较：按用途精选9款（Tech Gym，日语）](https://techgym.jp/column/no-kode/)
+- [无代码网页制作工具：STUDIO vs Webflow vs Wix（@SOHO，日语）](https://atsoho.com/blog/nocode-web-design-tools-comparison-studio-webflow-wix)
+- [无代码开发最新趋势：WordPress、Wix、STUDIO、Webflow深度对比（No-Code Lab，日语）](https://nocode.plumsa.co.jp/?p=1339)
+- [Wix Multilingual: Auto-Translating Your Site - Wix Help Center](https://support.wix.com/en/article/wix-multilingual-auto-translating-your-site)
+- [How to Make Your Squarespace Site Multilingual - Weglot](https://www.weglot.com/guides/squarespace-multilingual-site)
+- [Can I Create a Multilingual Site with Studio? - Studio Help](https://help.studio.design/en/articles/9317101-can-i-create-a-multilingual-site-with-studio)
+- [Website translation and localization tools - Webflow](https://webflow.com/localization)
+- [网页的本地化版本 - Google 搜索中心](https://developers.google.com/search/docs/specialty/international/localized-versions?hl=zh-cn)

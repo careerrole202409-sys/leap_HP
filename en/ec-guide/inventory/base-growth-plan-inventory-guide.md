@@ -47,6 +47,23 @@ Growth plan pricing was revised on January 16, 2024, and the current monthly cos
 
 For an inventory-heavy business, inventory turnover — how quickly purchased stock sells through and converts back to cash — is a core measure of business health. Carrying a high fee rate means less cash stays in hand even at the same revenue level, which shrinks what's available for the next purchasing cycle. Lowering your fee rate by switching to Growth, on the other hand, means more cash available for the next round of purchasing at the same revenue level, which can speed up your inventory turnover cycle. For shops with a growing stock count and SKU count, it's worth treating a fee-plan review not as a minor accounting detail, but as part of your inventory strategy.
 
+## Growth Plan Fees and Inventory When You Also Sell Internationally
+
+If you also sell to overseas customers on BASE, your plan's fees still apply to those orders, so the logic for choosing between the Growth plan and the Standard plan stays the same as for domestic sales. BASE's official help page for its built-in "Kantan Kaigai Hanbai" (Easy Overseas Sales) feature, available since March 18, 2026, explains that overseas orders are charged the same BASE Easy Payment fee and service fee as credit card payments on your current plan. On top of that, a feature fee of 5% of the order total (product price plus domestic shipping) applies (as of November 2026).
+
+Based on BASE's published rates, here is what a single overseas order with a ¥10,000 order total would cost (monthly plan fees not included):
+
+| Plan | Plan fees | Easy Overseas Sales fee | Total |
+|---|---|---|---|
+| Standard plan | ¥700 (3.6% + ¥40, plus 3% service fee) | ¥500 | ¥1,200 |
+| Growth plan | ¥290 (2.9%) | ¥500 | ¥790 |
+
+Just as with domestic sales, the more overseas revenue you build up, the more the fee gap between plans turns directly into money you can put back into purchasing.
+
+How you hold inventory doesn't change much either. With Easy Overseas Sales, want.jp Inc., a domestic purchasing agent, places the order, and your shop simply ships the item to a warehouse in Japan; want.jp handles repackaging and international delivery. You don't need to keep separate stock overseas, and you keep managing inventory yourself as before.
+
+One caveat: shops can't choose which products are offered overseas. Items that can't be sold abroad are automatically excluded by AI screening. Before increasing purchases for overseas demand, it's worth confirming that overseas buyers can actually purchase the item. If you'd rather set sales countries and country-specific prices per product and manage inventory and overseas marketing together on your own multilingual site, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option.
+
 ## FAQ
 
 **Q. Should a shop carrying a lot of inventory always switch to the Growth plan?**
@@ -61,19 +78,20 @@ A. How to allocate that money is up to each business, but if you're facing chall
 
 A. We wouldn't recommend it. The Growth plan's monthly cost went up substantially in the January 16, 2024 revision (from roughly ¥4,980-¥5,980/month before, to ¥16,580-¥19,980/month now), and calculating your break-even point against the old pricing could lead to a decision that doesn't match reality. Always re-run the numbers using the current fee structure.
 
+**Q. Do Growth plan fees apply to BASE Easy Overseas Sales orders too?**
+
+A. Yes. Easy Overseas Sales orders are charged the same BASE Easy Payment fee and service fee as credit card payments on your plan, so on the Growth plan the payment fee is 2.9%. Separately, a 5% Easy Overseas Sales fee is charged on the order total (product price plus domestic shipping) (as of November 2026).
+
 ## Summary and Key Takeaway
 
 Viewing the Growth plan not simply as "the plan with lower fees" but through the lens of "whether the fee savings can actually be redirected into the next purchase order" sharpens the decision. As your product inventory grows and your monthly sales approach the ¥500,000 benchmark, that's a good moment to reconsider your fee plan and your inventory expansion plans together. The fee rate — a number that seems like a minor detail — can actually be a factor that shapes the speed of your purchasing cycle, which is easy for an inventory-heavy e-commerce business to overlook.
 
-That said, juggling inventory management alongside fee calculations tends to get pushed aside amid day-to-day operations. Leap offers an AI E-Commerce Agent that supports running an e-commerce site entirely through conversation with AI. If you want to pursue inventory strategy and cost optimization together, take a look at what Leap offers.
-
-We publish a wide range of practical guides on running an e-commerce business.
-
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
 - [BASE Pricing and Fees - BASE](https://thebase.com/price/)
 - [Notice on Growth Plan Pricing Revision and New Features - BASE U](https://baseu.jp/information/20231107)
 - [Costs and Fees on BASE: How to Calculate and How It Compares - BASE U](https://baseu.jp/6685)
+- [About "Kantan Kaigai Hanbai" (Easy Overseas Sales) - Help | BASE](https://help.thebase.in/hc/ja/articles/52804478331929)
+- [BASE Makes "Kantan Kaigai Hanbai" a Standard Feature From March 18 - PR TIMES](https://prtimes.jp/main/html/rd/p/000000288.000030814.html)

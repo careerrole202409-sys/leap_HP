@@ -23,7 +23,7 @@ Most people who search variations of "do I need to be a registered sole propriet
 
 ## Why You Can Start on BASE Without Filing First
 
-Under Japan's income tax law, the business-start notice is generally supposed to be filed with the tax office within a month of starting a business — but there's no penalty for filing late or not filing it at all. And BASE itself doesn't make filing that notice, or registering as a sole proprietor, a condition of opening a shop. In other words, the premise that "you can't use BASE unless you're already a registered sole proprietor" is a misconception — if you're starting small as a hobby or side activity, there's nothing wrong with building your store first, before filing anything.
+According to Japan's National Tax Agency (as of November 2026), the business-start notice is supposed to be filed with the tax office by the tax return deadline for the year in which you started the business — but there's no penalty for filing late or not filing it at all. And BASE itself doesn't make filing that notice, or registering as a sole proprietor, a condition of opening a shop. In other words, the premise that "you can't use BASE unless you're already a registered sole proprietor" is a misconception — if you're starting small as a hobby or side activity, there's nothing wrong with building your store first, before filing anything.
 
 That doesn't mean the notice is never needed, though. The real question isn't "can I use BASE" — it's a separate one: how will your sales activity actually be treated for tax purposes?
 
@@ -55,6 +55,20 @@ Once a small-scale sales activity gains traction and starts generating a consist
 
 Filing the business-start notice and getting approved for blue-form tax filing can unlock tax benefits, including a special deduction of up to ¥650,000. Costs related to protecting your privacy — virtual office fees, anonymous shipping fees — may also be deductible as business expenses. Once you're turning a profit, it's worth consulting a tax accountant or your local tax office early, including on whether to file the business-start notice.
 
+## Selling Overseas: Business-Start Notice and Taxes
+
+Selling to customers outside Japan doesn't change how the business-start notice or income tax works. According to Japan's National Tax Agency, residents other than non-permanent residents are taxed on all of their income, regardless of whether it arises in Japan or abroad. So your overseas sales are added to your domestic sales, and the combined figure is what you use to decide whether your income counts as business or miscellaneous income and whether you need to file a tax return. Selling abroad neither removes the need for the notice nor suddenly creates one.
+
+Where overseas sales do make a difference is consumption tax. If you are a taxable business, sales of goods exported from Japan are exempt from consumption tax (the export exemption), but you need to keep documents proving the export for seven years. On the other hand, a sole proprietor whose taxable sales in the base period (two years earlier) were ¥10 million or less is, in principle, exempt from paying consumption tax at all. The exception: if you are registered as a qualified invoice issuer, you are not exempt even if your sales were ¥10 million or less.
+
+If you're starting small without having filed the notice, checking things in this order keeps it simple:
+
+1. Check whether you need to file a tax return, based on your annual income including overseas sales
+2. Check whether you are a taxable or tax-exempt business for consumption tax
+3. Once you become a taxable business, start keeping documents that prove each export
+
+For how the export exemption works, see "[Japan's Consumption Tax for Cross-Border Ecommerce: Export Exemption, Invoices, and Refunds](/en/ec-guide/cross-border/cross-border-ec-consumption-tax/)". For the BASE settings for selling abroad, see "[Selling Internationally on BASE | How to Use the English & Foreign Currency App](/en/ec-guide/cross-border/base-cross-border-ec-guide/)". If you want to build your own international store and run multilingual marketing too, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option.
+
 ## FAQ
 
 **Q. Can I even create a BASE account without having filed a business-start notice?**
@@ -69,16 +83,15 @@ A. The issue isn't really whether you filed the notice — it's whether you need
 
 A. No. Even if a virtual office substitutes for your address and phone number, your legal name must still be disclosed as-is under the Specified Commercial Transactions Act — there's no way around that. Think of it as a way to realistically reduce risk, not eliminate privacy exposure entirely.
 
+**Q. Can I sell to overseas customers without having filed a business-start notice?**
+
+A. Yes. Whether you've filed the notice has nothing to do with whether your customers are in Japan or abroad. However, residents other than non-permanent residents are taxed on all income earned in Japan and overseas, so your overseas sales are combined with domestic sales when deciding whether you need to file a tax return. If you become a taxable business for consumption tax, you need to keep documents proving each export for seven years to claim the export exemption.
+
 ## Summary and Key Takeaway
 
 The answer to "do I need to be a registered sole proprietor for BASE" comes down to this: you can open a shop without having filed the business-start notice. But whether you need to file it is a separate tax question, unrelated to whether you can use BASE. Alongside that, the risk of your home address being exposed through the legal disclosure is something everyone has to deal with, regardless of filing status — and it's one you can realistically reduce through the privacy setting and a virtual office. Resolve the anxiety around starting small first, then seriously consider the business notice and tax filing once you're actually turning a profit — that order lets you take the first step without overextending.
 
-That said, both the tax judgment calls and the privacy settings involve details that aren't always obvious. Leap offers an AI E-Commerce Agent that supports building and running an e-commerce site entirely through conversation with AI. If you want to take that first small step with more confidence, take a look at what Leap offers.
-
-We publish a wide range of practical guides on running an e-commerce business.
-
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -87,3 +100,7 @@ We publish a wide range of practical guides on running an e-commerce business.
 - [How to Avoid Disclosing Your Home Address When Starting on BASE: Using a Virtual Office - Resonance Virtual Office](https://virtualoffice-resonance.jp/column/base_address/)
 - [Is There a Setup Manual for the Legal Disclosure (Individual)? - Help | BASE](https://help.thebase.in/hc/ja/articles/360000005601)
 - [Can I Keep My Address Private From Buyers? - Help | BASE](https://help.thebase.in/hc/ja/articles/4413887418393)
+- [A1-5 Procedures for Notification of Opening or Closing a Sole Proprietorship - National Tax Agency (Japanese)](https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/shinkoku/annai/04.htm)
+- [No.2010 Individuals Liable for Income Tax - National Tax Agency (Japanese)](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2010.htm)
+- [No.6551 Exemption for Export Transactions - National Tax Agency (Japanese)](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6551.htm)
+- [No.6501 Exemption from Consumption Tax Liability - National Tax Agency (Japanese)](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6501.htm)

@@ -24,7 +24,7 @@ author_bio: 海外业务专家团队
 
 ## Amboras作为SaaS的收入模式
 
-查阅Amboras官方定价页面可以看到，其采用Basic、Grow、Advanced、Enterprise四档订阅制定价体系（本文撰写时以日元显示价格，具体金额可能因汇率及时间而有所变动）。从Basic升级到Grow，"AI使用量提升至5倍"、"可运营店铺数从1家增至5家"；从Grow升级到Advanced，则进一步"AI使用量提升至20倍"，并配备专属客户成功经理（CSM）及自定义AI微调能力。这种定价设计并非单纯的功能限制式分级，而是围绕"能使用多少AI算力"与"能运营多少家店铺"这两个维度逐级提价，是AI原生SaaS的典型定价特征——毕竟AI算力成本本身就直接构成了产品的营业成本。
+查阅Amboras官方定价页面可以看到，其采用Basic、Grow、Advanced、Enterprise四档订阅制定价体系（本文撰写时以日元显示价格，具体金额可能因汇率及时间而有所变动）。从Basic升级到Grow，"AI使用量提升至5倍"、"可运营店铺数从1家增至5家"；从Grow升级到Advanced，则进一步"AI使用量提升至20倍"，并配备专属客户成功经理（CSM）及自定义AI微调能力。这种定价设计并非单纯的功能限制式分级，而是围绕"能使用多少AI算力"与"能运营多少家店铺"这两个维度逐级提价，是AI原生SaaS的典型定价特征——毕竟AI算力成本本身就直接构成了产品的营业成本。另外，截至2026年11月，其定价页面已调整为Basic、Pro、Advanced、Plus四档，价格以日元显示，并以美元结算。
 
 这套收入模式背后的逻辑，在YC官方Launch页面收录的联合创始人Imad Mokadem的表述中有所体现。他提到："Amboras is making margins possible that weren't possible pre AI"（Amboras实现了AI出现之前无法达到的利润率）。以往，建站、商品页制作、A/B测试、广告素材制作，都需要支付设计师、转化率优化（CRO）专家、开发人员的人工成本。而当AI能够替代这些工作时，电商经营者一方的成本结构本身发生了变化——这种变化正是Amboras这款产品得以收费的价值来源所在。
 
@@ -46,6 +46,17 @@ author_bio: 海外业务专家团队
 
 综合以上内容来看，YC的投资动向所指向的，是电商行业正在从"为网站增加AI功能"这一阶段，迈向"由AI主导整个电商运营"这一阶段。Amboras所代表的"AI取代店铺运营者"模式，与Wildcard所代表的"AI代理取代人类购物者"模式，表面上方向不同，但本质上都在改写"电商是围绕人类经营者服务人类购物者而搭建"这一固有假设。可以合理推测，未来电商行业的AI化进程会在多个层级同时推进，每个层级都会出现专门的创业公司相互竞争。对电商经营者而言，比起纠结"要不要引入某一款工具"，更实用的思路是逐层梳理自身业务中哪些环节有可能被AI替代或强化，而不是把"是否拥抱AI"当作一个单一的整体性决策。
 
+## 向海外销售时Amboras的收入模式
+
+如果向海外销售，需要把握Amboras收入模式的两点：它依靠月费盈利，不收取与销售额挂钩的交易手续费，因此即使海外销售额增长，支付给Amboras的费用也不太会增加；但销售目的国的税务和法律合规，仍需由商家自己负责（截至2026年11月）。
+
+1. **月费以美元结算**：Amboras定价页面以日元显示价格，但说明结账时以美元扣款。对日本商家而言，折合日元的负担会随汇率变化。
+2. **不额外收取交易手续费**：Amboras的FAQ说明，支付处理费按实际成本收取（美国信用卡一般为2.9%+30美分，欧盟更低），Amboras不会另外加收交易手续费。
+3. **海外销售功能**：同一FAQ说明，系统会根据买家所在地以当地货币显示价格；翻译由AI生成，可逐条修改；关税和税费可选择在结账时预先收取（DDP）或交由物流商处理（DAP）。
+4. **税务与法律合规由商家负责**：Amboras服务条款规定，商家本身是销售方和记录商户（merchant of record），负责税款的判定、收取、申报和缴纳，并须遵守销售目的国的消费者保护、数据保护等法律。
+
+这一模式的前提是：AI替代的是建店和运营工作，而不是各国税务与法律方面的判断。若比较收费方式，连获客都能交给AI的跨境电商工具Leap在月费之外，按跨境电商销售额的6%（含信用卡支付手续费）收费，属于与销售额挂钩的模式（截至2026年11月）。
+
 ## 常见问题（FAQ）
 
 **Q. 为什么说Amboras这类AI原生SaaS，能够实现比传统电商平台更高的利润率？**
@@ -60,16 +71,15 @@ A. 两者都属于更广义的"AI×电商"赛道，但Amboras专注于建站与�
 
 A. 与其纠结是否要引入某一款具体工具，更实用的做法是逐层梳理自身店铺运营中哪些环节有可能被自动化——建站与运营、面向AI代理的基础设施、支付与信任基础设施等。带着"多个层级正在同时发生变化"这一认知，再去评估具体工具，判断会更清晰。
 
+**Q. 用Amboras向海外销售时，Amboras会代为申报税款吗？**
+
+A. 不会。Amboras服务条款规定，商家本身是记录商户（merchant of record），负责税款的判定、收取、申报和缴纳（截至2026年11月）。Amboras支持在结账时预收关税和税费（DDP），但在销售目的国的申报和缴纳，需要商家自行或与税务专业人士一起完成。
+
 ## 总结与思考
 
 查证"amboras y combinator"后发现的，并不只是一家公司的商业模式，而是整个AI×电商赛道正在经历的一场更大范围的结构性变化。Amboras的定价体系表面上看只是常见的分级订阅制SaaS方案，但其背后"AI从根本上改变了以人力为核心的成本结构"这一理念，与YC官方所提出的"AI成为企业操作系统"这一投资主题，是完全一脉相承的。而Wildcard这类处于不同层级的玩家的存在，也说明这场变化并非某一家公司的成功故事，而是整个行业结构本身正在被重新组织。在评估任何一款新工具时，与其只看它的功能列表，不如多想一步：它究竟代表了这场更大结构性变化中的哪一部分。
 
-Leap提供从多语言电商网站搭建到海外网络营销的一站式支持。如果您想进一步了解AI×电商领域的趋势，以及如何将其应用到自身业务中，欢迎随时咨询。
-
-我们持续发布海外业务相关的实用信息。
-
-[前往Leap海外业务指南博客](https://www.leap.site/zh-hans/blog)  
-[预约演示或咨询](https://www.leap.site/zh-hans/about/#contact)
+Leap是一款连获客都能交给AI的跨境电商工具。只需通过对话，即可完成多语言、多币种跨境电商网站的搭建，以及SEO、邮件营销等海外获客工作。
 
 ## 参考资料
 
@@ -80,3 +90,6 @@ Leap提供从多语言电商网站搭建到海外网络营销的一站式支持�
 - [Y Combinator is going all-in on AI agents, making up nearly 50% of latest batch - PitchBook](https://pitchbook.com/news/articles/y-combinator-is-going-all-in-on-ai-agents-making-up-nearly-50-of-latest-batch)
 - [8 Best Amboras Alternatives in 2026 - Your Next Store](https://yournextstore.com/blog/amboras-alternatives)
 - [AI (Artificial Intelligence) Startups funded by Y Combinator - Y Combinator](https://www.ycombinator.com/companies/industry/ai)
+- [FAQ - Amboras](https://www.amboras.com/faq)
+- [Terms of Service - Amboras](https://www.amboras.com/terms)
+- [价格 - Leap](https://www.leap.site/zh-hans/pricing/)

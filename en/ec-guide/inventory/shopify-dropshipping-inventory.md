@@ -88,27 +88,40 @@ No-inventory selling is a legitimate business model in most jurisdictions. That 
 Since delivery times in no-inventory models are typically longer than standard retail, it's critical to clearly state estimated dispatch times and your return/exchange policy on your product pages and in your store's legal disclosures. If the product information provided by your supplier (country of origin, materials, sizing) is inaccurate, it not only erodes customer trust but may also create regulatory liability — always verify supplier data before listing.
 
 
+## How to Sell Internationally with Shopify Dropshipping
+
+To sell internationally with a Shopify dropshipping store, decide which countries and regions you will sell to, then confirm up front whether your suppliers can ship there and how import duties will be handled. In dropshipping, the supplier ships the product rather than you, so there are more things to check than when selling domestically.
+
+1. **Set up the countries and regions you sell to**: In Shopify, you can create markets that target specific countries or regions. For each market, you can set up pricing in local currencies, localization and translation, and international domains.
+2. **Check your suppliers' destinations and delivery times**: Confirm that your suppliers or print-on-demand services can ship to the countries you want to sell to and how many days delivery takes, then state this clearly on your product pages.
+3. **Decide how to handle duties**: Shopify has a feature that calculates and collects duties and import taxes at checkout. According to Shopify's Help Center, requirements include applying Harmonized System (HS) codes (the product classification numbers used in international trade) to your products and, if you use shipping labels, using a carrier that supports DDP (Delivered Duty Paid) labels. A transaction fee applies to orders that have duties and import taxes calculated at checkout (as of November 2026). Because the supplier handles shipping in dropshipping, you also need to check whether your supplier's shipping methods meet these requirements.
+4. **Check return rules in the countries you sell to**: In the EU, for example, consumers have a 14-day cooling-off period from delivery for goods bought online. Return postage is paid by the buyer, except when the seller offers to pay or fails to inform the buyer of those costs before purchase. Build your return policy, including where returns should be sent, around the rules of the countries you sell to.
+
+If you want to set sales countries for each product and sell to overseas customers on a multilingual, multi-currency site, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option.
+
 ## FAQ
 
-### How do I start dropshipping on Shopify?
+**Q. How do I start dropshipping on Shopify?**
 
-Set up a Shopify store, then install a dropshipping-compatible app — DSers, Syncee, or Printful — from the Shopify App Store. Once installed, browse products, set up your product pages and pricing, and the app automatically routes orders to your supplier for fulfillment. If you're planning to sell across borders, configure Shopify's multilingual and multi-currency settings from the start.
+A. Set up a Shopify store, then install a dropshipping-compatible app — DSers, Syncee, or Printful — from the Shopify App Store. Once installed, browse products, set up your product pages and pricing, and the app automatically routes orders to your supplier for fulfillment. If you're planning to sell across borders, configure Shopify's multilingual and multi-currency settings from the start.
 
-### Is no-inventory selling truly "zero inventory risk"?
+**Q. Is no-inventory selling truly "zero inventory risk"?**
 
-The inventory purchase risk is eliminated — you never buy stock you can't sell. However, other risks remain: margin compression from price competition and customer dissatisfaction from delayed shipping. Working with multiple suppliers and using inventory sync apps reduces these risks significantly, but running a successful no-inventory store still requires active management.
+A. The inventory purchase risk is eliminated — you never buy stock you can't sell. However, other risks remain: margin compression from price competition and customer dissatisfaction from delayed shipping. Working with multiple suppliers and using inventory sync apps reduces these risks significantly, but running a successful no-inventory store still requires active management.
 
-### Should I choose dropshipping or print-on-demand for original products?
+**Q. Should I choose dropshipping or print-on-demand for original products?**
 
-Dropshipping is better for sourcing and reselling existing products. If you want to build your own brand and avoid price competition, print-on-demand through a service like Printful is the stronger choice. You retain full copyright over your designs, you only pay per order, and you're building a brand rather than just moving generic products.
+A. Dropshipping is better for sourcing and reselling existing products. If you want to build your own brand and avoid price competition, print-on-demand through a service like Printful is the stronger choice. You retain full copyright over your designs, you only pay per order, and you're building a brand rather than just moving generic products.
 
+**Q. When I sell to overseas customers through dropshipping, who pays the import duties?**
+
+A. If you don't collect duties at checkout, the customer may be charged when the package is delivered. Shopify's Help Center explains that collecting duties and import taxes at checkout helps customers avoid unexpected charges on delivery. Stating how duties are handled on your product pages and shipping policy helps avoid surprises.
 
 ## Summary
 
-Shopify's no-inventory model lets you launch an e-commerce business with minimal upfront investment. By understanding the differences between dropshipping and print-on-demand, preventing phantom inventory issues with sync apps, and making accurate disclosures to customers, you can build a trustworthy store that scales sustainably. For sellers looking to go international, Shopify's native multilingual and multi-currency capabilities make this model especially powerful. Leap helps businesses expand into overseas markets by building localized, multilingual e-commerce sites from the ground up. If you're looking to take your no-inventory store global, explore what Leap can do for you.
+Shopify's no-inventory model lets you launch an e-commerce business with minimal upfront investment. By understanding the differences between dropshipping and print-on-demand, preventing phantom inventory issues with sync apps, and making accurate disclosures to customers, you can build a trustworthy store that scales sustainably. For sellers looking to go international, Shopify's native multilingual and multi-currency capabilities make this model especially powerful.
 
-We regularly publish practical guides on Shopify and e-commerce operations. Browse our other articles to learn more.
-
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -119,3 +132,7 @@ We regularly publish practical guides on Shopify and e-commerce operations. Brow
 - [Shopify Japan "How to Start Dropshipping and Find Dropshipping Service Providers (DSPs)"](https://www.shopify.com/jp/blog/how-to-start-dropshipping)
 - [Shopify Japan "How to Dropship on Shopify [2025 Edition]"](https://www.shopify.com/jp/blog/dropshipping-guide)
 - [Printful Official "Print-on-Demand & Dropshipping for Shopify"](https://www.printful.com/jp/integrations/shopify)
+- [International sales tools - Shopify Help Center](https://help.shopify.com/en/manual/international)
+- [Duties and import taxes - Shopify Help Center](https://help.shopify.com/en/manual/international/duties-and-import-taxes)
+- [Collecting international duties and import taxes at checkout - Shopify Help Center](https://help.shopify.com/en/manual/markets/duties-and-import-taxes/charging-duties)
+- [Returns and the right of withdrawal - Your Europe](https://europa.eu/youreurope/citizens/consumers/shopping/returns/index_en.htm)

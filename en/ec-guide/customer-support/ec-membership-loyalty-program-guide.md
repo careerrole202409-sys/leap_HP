@@ -66,6 +66,16 @@ To implement a loyalty program on Shopify, the standard approach is installing a
 
 A membership or points program comes with a real cost — the discounts and points you're awarding. That makes it essential to regularly check whether LTV (average order value × purchase frequency × average customer lifespan × gross margin) is still outpacing your customer acquisition cost (CAC). A commonly cited healthy target is an LTV-to-CAC ratio of at least 3:1. If you're falling short of that ratio, it's worth reviewing whether your return rate is too generous, or whether the cost of your perks is actually matched by the revenue lift they're driving. Running that ratio through a simulation before designing or revising tier structures and point return rates is what keeps a program cost-effective over time.
 
+## Membership and Loyalty Programs When You Also Sell Internationally
+
+When you extend a membership program to overseas customers, add three considerations to your domestic design: the base currency for points, the cost of benefits for overseas customers, and how member data is handled. The thinking behind tiers and progress displays carries over as is, but leaving these three on domestic terms tends to throw off your cost calculations and legal compliance.
+
+1. **Choose a base currency for points**: When you sell in several currencies, the value of a single point shifts with exchange rates. Anchoring both earning and redemption to one currency and converting the others keeps your cost calculations stable.
+2. **Review benefits like free shipping country by country**: Free shipping that works well domestically can be expensive overseas, where shipping costs vary widely by country and weight, so extending it on the same terms inflates your costs. Limit it to certain countries or offer a different benefit to overseas members, and check LTV > CAC country by country to stay safe.
+3. **Check each target country's rules for member data**: According to the European Commission, the EU's General Data Protection Regulation (GDPR) applies even to companies outside the EU when they offer goods or services to individuals in the EU. Design the information you collect at sign-up, and how you obtain consent for email communications, to fit the personal data rules of each target country.
+
+With Leap, a cross-border ecommerce tool that lets AI handle marketing too, you can manage customer information in one place with its CRM (CSV import supported), and when you choose one base currency per product, prices in other currencies are displayed automatically every day using the previous day's exchange rate.
+
 ## FAQ
 
 **Q. Should I start with a tiered membership program or a points program?**
@@ -80,14 +90,17 @@ A. There's no universal answer, but domestic examples tend to award one point pe
 
 A. It can look fairer on the surface, but a blanket program that gives everyone the same benefits tends to balloon in cost while weakening return on spend. Defining your best customers by cumulative spend or purchase frequency, and deliberately favoring them, tends to deliver stronger retention with a limited budget.
 
+**Q. What should I watch out for when offering a points program to overseas customers?**
+
+A. Rather than extending your domestic design as is, review three things: the base currency for points, the cost of benefits for overseas customers, and how member data is handled. Fix one base currency so point values don't swing with exchange rates, and check the economics of benefits like free shipping for each country. If you sell to individuals in the EU, the GDPR applies even to companies outside the EU, so also check how you obtain consent for sign-ups and email marketing.
+
 ## Summary and Key Takeaway
 
-Tiered membership, points programs, and subscription-based recurring purchases each fit a different customer base and product type. What NikePlus, Starbucks Rewards, BEAMS, SHIPS, and United Arrows all have in common is that none of them are built around the discount itself — they're built around the experience that comes with climbing a tier, and a progress indicator like "only $X more until Gold" is what makes that distance visible. And rather than a blanket giveaway to every customer, deliberately rewarding the best customers — as defined by cumulative spend or purchase frequency — is what turns a limited budget into strong retention. Whichever model you choose, keeping a regular eye on whether LTV is still outpacing customer acquisition cost (CAC) is non-negotiable. Leap aims to support that entire process — from membership and points program design through product listings, SEO, advertising, and customer support — as an AI E-Commerce Agent that lets teams spend their time on what actually grows the business, all through conversation with AI.
+Tiered membership, points programs, and subscription-based recurring purchases each fit a different customer base and product type. What NikePlus, Starbucks Rewards, BEAMS, SHIPS, and United Arrows all have in common is that none of them are built around the discount itself — they're built around the experience that comes with climbing a tier, and a progress indicator like "only $X more until Gold" is what makes that distance visible. And rather than a blanket giveaway to every customer, deliberately rewarding the best customers — as defined by cumulative spend or purchase frequency — is what turns a limited budget into strong retention. Whichever model you choose, keeping a regular eye on whether LTV is still outpacing customer acquisition cost (CAC) is non-negotiable.
+
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 We publish a wide range of practical guides on e-commerce operations, cross-border expansion, and website building. Browse our other articles for more.
-
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
 
 ## References
 
@@ -99,3 +112,4 @@ We publish a wide range of practical guides on e-commerce operations, cross-bord
 - [Marketing Knowledge for Web Managers - Web-Tan Forum](https://webtan.impress.co.jp/e/2018/06/19/23692)
 - [Repeat-Customer Tactics That Favor Your Best Customers - Tsuhan Soken](https://tsuhan-soken.com/ec-column/repeater/prefer-good-customers/)
 - [Loyalty Program Trends - Revico](https://www.revico.net/2025/01/14/column/trend/loyalty_program/)
+- [Data protection explained - European Commission](https://commission.europa.eu/law/law-topic/data-protection/data-protection-explained_en)

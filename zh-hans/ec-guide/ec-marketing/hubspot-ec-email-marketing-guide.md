@@ -54,6 +54,20 @@ author_bio: 电商业务专家团队
 
 HubSpot尤其与高客单价商品电商、订阅制电商、B2B批发电商，以及D2C品牌相性良好。而对于日用品这类低客单价、高交易量的电商，电商专用的营销工具或许更为合适。事实上，Anker Japan、Hamee等品牌也位列HubSpot的客户名单之中，这说明其应用范围早已超越B2B企业，延伸至以品牌力为核心的电商与D2C企业。未来，通过与AI持续对话来推进这类场景设计与效果验证的做法，预计也会进一步普及。
 
+## 面向海外销售时的HubSpot邮件营销
+
+如果也要向海外客户发送邮件，需要在国内的场景基础上补充两点："用当地语言发送邮件"和"遵守收件国家的邮件规则"。购物车放弃跟进和欢迎邮件系列的流程本身可以沿用，但邮件文案和发送条件需要按国家重新检查。
+
+### 将邮件多语言化
+
+HubSpot的营销邮件支持以一封邮件为基础，创建其他语言的版本。根据HubSpot官方知识库，使用Breeze（基于DeepL的翻译）生成翻译版本的功能需要Marketing Hub Professional或Enterprise，自动翻译适用于普通邮件和自动化邮件（截至2026年11月）。机器翻译之后，建议由人工检查商品名称、运费、退货条件等一旦译错就容易引发咨询或纠纷的部分。
+
+### 确认收件国家的规则
+
+面向美国，有CAN-SPAM法。根据FTC（美国联邦贸易委员会）的指南，要求不得使用虚假的发件人信息、标题须与内容一致、明确标示邮件属于广告、写明有效的实际邮寄地址、清楚说明退订方式，并在收到退订请求后10个工作日内处理等。面向欧盟，有《通用数据保护条例》（GDPR）。根据欧盟委员会的说明，即使是欧盟以外的企业，只要向欧盟境内的个人提供商品或服务，也适用GDPR。邮件营销的同意获取方式和记录保存方式，需要按销售国家逐一确认。
+
+连获客都能交给AI的跨境电商工具Leap，也可以通过CRM统一管理客户信息，只需在对话中下达指令即可发送多语言邮件。
+
 ## 常见问题（FAQ）
 
 **Q. 将HubSpot与电商平台连接很困难吗？**
@@ -68,14 +82,17 @@ A. 一般以1小时后、24小时后、48小时后共三封为参考标准。发
 
 A. HubSpot尤其与高客单价商品、订阅制、D2C品牌相性良好，而对于日用品这类低客单价、高交易量的电商，电商专用的营销工具可能更为合适。建议结合自身商品特性与客单价，判断是否适合引入。
 
+**Q. 用HubSpot向海外客户发送邮件时需要注意什么？**
+
+A. 需要注意两点：用当地语言发送邮件，以及遵守收件国家的邮件规则。HubSpot可以创建邮件的其他语言版本，使用Marketing Hub Professional或Enterprise时还能通过Breeze生成翻译版本（截至2026年11月）。发往美国的邮件适用CAN-SPAM法（明确标示广告、写明地址、10个工作日内处理退订等），发往欧盟的邮件适用GDPR，因此请按国家确认同意的获取方式和退订机制。
+
 ## 总结与思考
 
-既然电商网站的购物车放弃率平均高达70%左右，通过跟进邮件防止顾客流失就是一项无法回避的举措。借助HubSpot，不仅能实现"1小时后→24小时后→48小时后"这一三步购物车放弃跟进场景，还能将欢迎邮件系列、沉睡客户唤醒等复购客户培育的整套流程自动化。由此可以体会到，"发送邮件"本身并非目的，通过A/B测试持续打磨场景、培育与顾客之间的关系，才是真正的核心所在。Leap希望通过与AI的对话，将这类邮件营销场景设计，延伸至商品上架、SEO、广告投放、客户服务的全流程，作为一款AI电商助手（AI E-Commerce Agent），让电商负责人能把更多时间投入到真正驱动业务增长的工作中。
+既然电商网站的购物车放弃率平均高达70%左右，通过跟进邮件防止顾客流失就是一项无法回避的举措。借助HubSpot，不仅能实现"1小时后→24小时后→48小时后"这一三步购物车放弃跟进场景，还能将欢迎邮件系列、沉睡客户唤醒等复购客户培育的整套流程自动化。由此可以体会到，"发送邮件"本身并非目的，通过A/B测试持续打磨场景、培育与顾客之间的关系，才是真正的核心所在。如果也要向海外客户发送邮件，就必须把文案的多语言化和收件国家规则的确认，一并纳入同一套场景之中。
+
+Leap是一款连获客都能交给AI的跨境电商工具。只需通过对话，即可完成多语言、多币种跨境电商网站的搭建，以及SEO、邮件营销等海外获客工作。
 
 我们持续分享电商运营、跨境电商与网站搭建方面的实用指南，欢迎浏览更多文章。
-
-[Leap海外商业博客](https://www.leap.site/zh-hans/blog)  
-[预约演示或咨询](https://www.leap.site/zh-hans/about/#contact)
 
 ## 参考资料
 
@@ -86,5 +103,7 @@ A. HubSpot尤其与高客单价商品、订阅制、D2C品牌相性良好，而�
 - [什么是HubSpot Marketing Hub - Spice Factory](https://spice-factory.co.jp/web-marketing/what-is-hubspot-marketing-hub/)
 - [关于购物车放弃跟进邮件 - Growth Pilot](https://growthpilot.jp/254/)
 - [营销自动化场景设计基础 - Molts](https://moltsinc.co.jp/media/knowledge/6661/)
-- [HubSpot支持相关信息 - ActiveCore](https://marketing.activecore.jp/support/?p=421)
 - [HubSpot客户案例一览 - HubSpot官方](https://www.hubspot.jp/case-studies)
+- [Create marketing emails in multiple languages - HubSpot Knowledge Base](https://knowledge.hubspot.com/marketing-email/create-marketing-emails-in-multiple-languages)
+- [CAN-SPAM Act: A Compliance Guide for Business - Federal Trade Commission](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)
+- [Data protection explained - European Commission](https://commission.europa.eu/law/law-topic/data-protection/data-protection-explained_en)

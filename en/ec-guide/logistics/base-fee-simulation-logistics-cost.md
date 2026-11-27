@@ -55,7 +55,17 @@ Past a certain monthly sales threshold, paying the fixed fee and switching to Gr
 
 While the fee rate itself is hard to control outside of switching plans, logistics costs leave real room for improvement. Simply reviewing whether your packaging is oversized for the product can cut costs, and since carriers vary in their strengths by package size and delivery region, it's worth periodically comparing shipping methods. Rather than applying anonymous shipping uniformly to every product, it's also worth deciding product by product — skipping it for categories where issues are unlikely, for example — to balance cost against peace of mind.
 
-Running this kind of fee, shipping, and packaging simulation by hand every time is a real burden. Launching a store isn't the finish line — stacking up this kind of detailed cost management after launch is what actually protects your bottom line. Leap's AI E-Commerce Agent is built around the idea of supporting a wide range of day-to-day e-commerce operations through conversation with AI, including this kind of fee and cost management perspective as part of ongoing store operations.
+Running this kind of fee, shipping, and packaging simulation by hand every time is a real burden. Launching a store isn't the finish line — stacking up this kind of detailed cost management after launch is what actually protects your bottom line. Leap, a cross-border ecommerce tool that lets AI handle marketing too, is built around the idea of supporting a wide range of day-to-day e-commerce operations through conversation with AI.
+
+## BASE Fees and Logistics Costs When Selling Overseas
+
+If you want to sell to overseas customers on BASE, the built-in "Kantan Kaigai Hanbai" (Easy Overseas Sales) feature lets you calculate your logistics costs in almost the same way as domestic shipping. According to BASE's press release, the feature has been available to every shop as a standard feature since March 18, 2026. When an overseas customer buys through a dedicated overseas cart, want.jp, a BASE subsidiary, purchases the item on their behalf at your domestic selling price (shipping included), and you simply ship the item to want.jp's warehouse in Japan, just like a domestic order. want.jp handles repacking and arranging international delivery, preparing international shipping labels and customs documents, and processing returns and refunds.
+
+There is no setup fee or fixed cost. A feature fee of 5% of the payment amount (including shipping to the domestic warehouse) is charged only when an item sells overseas, and your regular BASE plan fees apply on top of that (as of November 2026).
+
+Using the same order as earlier in this article — a ¥3,000 product with ¥500 shipping — the Standard plan fee (about 6.6% + ¥40) comes to about ¥271 and the feature fee (5%) to ¥175, for a total of about ¥446 deducted, leaving you with about ¥3,054. (This is a reference figure that applies the same rate as a credit card payment.) The only difference from a domestic sale is the ¥175 feature fee; you don't pay international shipping or international packaging materials yourself. In other words, you can estimate your overseas logistics cost as "shipping to the domestic warehouse + a 5% feature fee."
+
+On the other hand, the amount you receive is based on your domestic price (shipping included), so if you want to set different prices by country, running your own cross-border online store is another option. With Leap, a cross-border ecommerce tool that lets AI handle marketing too, you can choose which countries each product is sold in, set prices by country, and display prices in multiple currencies.
 
 ## FAQ
 
@@ -71,16 +81,20 @@ A. As this simulation shows, it's worth seriously considering once your Standard
 
 A. Anonymous shipping protects both buyer and seller privacy, but costs an extra ¥50 per item, based on information confirmed at the time of writing. For low-priced products shipped in high volume, that cost adds up, so it's realistic to decide product by product based on the nature of the item and the likelihood of disputes.
 
+**Q. Who pays international shipping when I sell overseas on BASE?**
+
+A. With Easy Overseas Sales, you only pay shipping to the domestic warehouse — international shipping is not your cost. International shipping is calculated automatically in the dedicated cart and handled as part of the overseas customer's checkout. You receive the amount want.jp pays at your domestic price (shipping included), and the 5% feature fee plus your plan fees are charged on that payment amount (as of November 2026).
+
 ## Summary and Key Takeaway
 
 Focus only on "what percentage is BASE's fee," and you'll miss the fee charged on shipping, plus packaging and delivery costs. What actually matters is the real take-home profit per order — fees, shipping, packaging, and delivery costs all included. Choosing a plan isn't just about comparing fee rates either; it has to be weighed against the fixed costs at your store's actual monthly sales volume. Growing sales and accurately knowing your take-home profit look similar but are actually two separate things. Keeping an eye on both is the foundation for running an e-commerce business stably over the long term.
 
 For more on this, see our guide on BASE's monthly fees and when to consider switching to the Growth plan.
 
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
 - [BASE Pricing Plans - BASE official](https://thebase.com/price)
 - [Easy Shipping (Yamato Transport integration) App - BASE official](https://thebase.com/apps)
+- [BASE to Make "Kantan Kaigai Hanbai" (Easy Overseas Sales) a Standard Feature from March 18 - BASE, Inc. (PR TIMES)](https://prtimes.jp/main/html/rd/p/000000288.000030814.html)

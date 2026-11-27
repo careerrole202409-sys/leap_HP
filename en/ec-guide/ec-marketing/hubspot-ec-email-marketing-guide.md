@@ -54,6 +54,20 @@ HubSpot's A/B testing features let you send variations of subject lines and send
 
 HubSpot tends to be a particularly good fit for high-ticket e-commerce products, subscription-based e-commerce, B2B wholesale, and D2C brands. For low-ticket, high-transaction-volume categories like everyday consumer goods, a dedicated e-commerce marketing tool may be a better fit. In fact, brands like Anker Japan and Hamee appear among HubSpot's listed customers — a sign that adoption extends well beyond B2B companies into brand-driven e-commerce and D2C businesses. It's likely we'll see more teams handling this kind of scenario design and performance review through ongoing conversation with AI going forward.
 
+## HubSpot Email Marketing When You Also Sell Internationally
+
+If you also email customers overseas, add two things to your domestic scenarios: sending emails in the customer's language, and following the email rules of each destination country. The cart abandonment and welcome flows themselves carry over as they are, but the copy and sending conditions need a country-by-country review.
+
+### Sending Emails in Multiple Languages
+
+HubSpot marketing emails can have versions in other languages created from a single email. According to HubSpot's Knowledge Base, generating translated versions with Breeze (translation powered by DeepL) requires Marketing Hub Professional or Enterprise, and automatic translation is available for regular and automated emails (as of November 2026). After machine translation, have a person check the parts where a mistranslation could lead to support tickets or disputes, such as product names, shipping costs, and return conditions.
+
+### Checking the Rules in Each Destination Country
+
+For the United States, the CAN-SPAM Act applies. The FTC (Federal Trade Commission) guide requires, among other things, that you don't use false header information, that subject lines match the content, that messages are clearly identified as ads, that they include a valid physical postal address, and that they explain how to opt out and honor opt-out requests within 10 business days. For the EU, there is the General Data Protection Regulation (GDPR). According to the European Commission, the GDPR also applies to companies outside the EU when they offer goods or services to individuals in the EU. It's important to confirm, for each target country, how you obtain consent for email and how you keep records of it.
+
+Leap, a cross-border ecommerce tool that lets AI handle marketing too, also lets you manage customer information in one place with its CRM and send multilingual newsletters just by giving instructions in chat.
+
 ## FAQ
 
 **Q. Is connecting HubSpot to an e-commerce platform difficult?**
@@ -68,14 +82,17 @@ A. A common baseline is three: at 1 hour, 24 hours, and 48 hours. Sending too ma
 
 A. HubSpot tends to fit best with high-ticket products, subscription models, and D2C brands. For low-ticket, high-transaction-volume categories like everyday consumer goods, a dedicated e-commerce marketing tool may serve you better. It's worth weighing your product mix and average order value before deciding.
 
+**Q. What should I watch out for when emailing overseas customers from HubSpot?**
+
+A. There are two things to watch: sending emails in the customer's language, and following each destination country's email rules. HubSpot lets you create versions of an email in other languages, and with Marketing Hub Professional or Enterprise you can generate translations with Breeze (as of November 2026). Emails to the U.S. fall under the CAN-SPAM Act (clear ad disclosure, a physical address, opt-outs honored within 10 business days, and more), and emails to the EU fall under the GDPR, so check how you obtain consent and handle unsubscribes for each country.
+
 ## Summary and Key Takeaway
 
-With e-commerce cart abandonment rates running around 70%, follow-up email to reduce that drop-off isn't optional — it's essential. HubSpot lets you automate not just the "1 hour → 24 hours → 48 hours" cart abandonment sequence, but a full repeat-purchase flow that includes welcome series and win-back campaigns for dormant customers. What that process reveals is that sending emails isn't the goal in itself — the real value comes from continuously refining the scenario through A/B testing and nurturing the customer relationship over time. Leap aims to support that entire process — from email marketing scenario design through product listings, SEO, advertising, and customer support — as an AI E-Commerce Agent that lets teams spend their time on what actually grows the business, all through conversation with AI.
+With e-commerce cart abandonment rates running around 70%, follow-up email to reduce that drop-off isn't optional — it's essential. HubSpot lets you automate not just the "1 hour → 24 hours → 48 hours" cart abandonment sequence, but a full repeat-purchase flow that includes welcome series and win-back campaigns for dormant customers. What that process reveals is that sending emails isn't the goal in itself — the real value comes from continuously refining the scenario through A/B testing and nurturing the customer relationship over time. If you also email customers overseas, it's essential to build translated copy and a check of each destination country's rules into the same scenarios.
+
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 We publish a wide range of practical guides on e-commerce operations, cross-border expansion, and website building. Browse our other articles for more.
-
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
 
 ## References
 
@@ -86,5 +103,7 @@ We publish a wide range of practical guides on e-commerce operations, cross-bord
 - [What Is HubSpot Marketing Hub - Spice Factory](https://spice-factory.co.jp/web-marketing/what-is-hubspot-marketing-hub/)
 - [About Cart Abandonment Follow-Up Email - Growth Pilot](https://growthpilot.jp/254/)
 - [Marketing Automation Scenario Basics - Molts](https://moltsinc.co.jp/media/knowledge/6661/)
-- [HubSpot Support Resources - ActiveCore](https://marketing.activecore.jp/support/?p=421)
 - [HubSpot Case Studies - HubSpot Official](https://www.hubspot.jp/case-studies)
+- [Create marketing emails in multiple languages - HubSpot Knowledge Base](https://knowledge.hubspot.com/marketing-email/create-marketing-emails-in-multiple-languages)
+- [CAN-SPAM Act: A Compliance Guide for Business - Federal Trade Commission](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)
+- [Data protection explained - European Commission](https://commission.europa.eu/law/law-topic/data-protection/data-protection-explained_en)

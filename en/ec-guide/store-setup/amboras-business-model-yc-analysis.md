@@ -24,7 +24,7 @@ What actually matters in understanding why Y Combinator put money behind Amboras
 
 ## Amboras's SaaS Revenue Model
 
-Checking Amboras's official pricing page shows a four-tier subscription structure: Basic, Grow, Advanced, and Enterprise (pricing shown in Japanese yen as of this writing; displayed amounts may vary by currency and over time). Moving from Basic to Grow brings "5x AI usage" and store count scaling from 1 to 5; moving from Grow to Advanced brings a further "20x AI usage," a dedicated customer success manager, and custom AI fine-tuning. Rather than simple feature-gating, pricing scales along two axes: how much AI usage you get, and how many stores you can run. That's a pricing structure characteristic of AI-native SaaS, where compute cost is directly tied to cost of goods sold.
+Checking Amboras's official pricing page shows a four-tier subscription structure: Basic, Grow, Advanced, and Enterprise (pricing shown in Japanese yen as of this writing; displayed amounts may vary by currency and over time). Moving from Basic to Grow brings "5x AI usage" and store count scaling from 1 to 5; moving from Grow to Advanced brings a further "20x AI usage," a dedicated customer success manager, and custom AI fine-tuning. Rather than simple feature-gating, pricing scales along two axes: how much AI usage you get, and how many stores you can run. That's a pricing structure characteristic of AI-native SaaS, where compute cost is directly tied to cost of goods sold. Note that as of November 2026, the pricing page lists four revised tiers — Basic, Pro, Advanced, and Plus — with prices shown in Japanese yen and billed in US dollars.
 
 The thinking behind this model shows up in a quote from co-founder Imad Mokadem on YC's official Launch page: "Amboras is making margins possible that weren't possible pre AI." Historically, building storefronts, writing product pages, running A/B tests, and producing ad creative all required paying designers, CRO (conversion rate optimization) specialists, and developers. As AI takes over that work, the cost structure underlying an e-commerce operation shifts — and that shift is the source of value Amboras is positioning itself to charge for.
 
@@ -46,6 +46,17 @@ Looking at the AI x e-commerce space more broadly, another YC-backed company, Wi
 
 Taken together, what YC's investment patterns point to is a shift from "adding AI features to an e-commerce site" toward "AI running the e-commerce operation itself." Amboras's model — AI replacing store operators — and Wildcard's model — AI agents replacing human shoppers — look like they're pointing in different directions, but both are rewriting the same underlying assumption: that e-commerce is built around a human operator serving a human shopper. Going forward, it looks plausible that AI adoption will keep advancing across multiple layers of e-commerce simultaneously, with specialized startups competing within each one. For merchants, the useful lens isn't "should we adopt this one tool" — it's thinking through which parts of your own operation could be automated or augmented, layer by layer, rather than treating AI adoption as a single monolithic decision.
 
+## Amboras's Revenue Model When You Sell Internationally
+
+If you sell internationally, two points matter about Amboras's revenue model: it earns through monthly subscription fees rather than transaction fees tied to your sales, so what you pay Amboras barely grows as overseas sales grow — but handling taxes and laws in the countries you sell to remains your own responsibility (as of November 2026).
+
+1. **Subscriptions are billed in US dollars**: Amboras's pricing page shows prices in Japanese yen but states they are billed in US dollars at checkout. For Japanese merchants, the cost in yen shifts with exchange rates.
+2. **No transaction fee on top**: Amboras's FAQ says processing fees are pass-through (typically 2.9% + 30¢ for US cards, lower in the EU) and that Amboras does not add a separate transaction fee.
+3. **International selling features**: The same FAQ says buyers see prices in their local currency based on their location, translations are AI-generated and editable per string, and duties and taxes can be pre-collected at checkout (DDP) or left to the carrier (DAP).
+4. **Taxes and legal compliance are on the merchant**: Amboras's Terms of Service state that the merchant is the seller and merchant of record, responsible for determining, collecting, reporting, and remitting taxes, and for complying with consumer-protection, data-protection, and other laws in every country where it sells.
+
+The premise of this model is that AI replaces the work of building and running a store — not the country-by-country tax and legal decisions. For a pricing comparison, Leap, a cross-border ecommerce tool that lets AI handle marketing too, charges a monthly fee plus 6% of cross-border sales (credit card processing included), so its cost scales with sales (as of November 2026).
+
 ## FAQ
 
 **Q. Why is an AI-native SaaS like Amboras said to achieve higher margins than a traditional e-commerce platform?**
@@ -60,16 +71,15 @@ A. Both sit within the broader "AI x e-commerce" space, but Amboras automates st
 
 A. Rather than asking whether to adopt one specific tool, it's more useful to map which parts of your own store operations could realistically be automated, layer by layer — store construction and operations, AI-agent-facing infrastructure, payments and trust infrastructure, and so on. Keeping in mind that change is happening across several of these layers at once makes it easier to evaluate any individual tool on its merits.
 
+**Q. If I sell internationally with Amboras, will Amboras file taxes for me?**
+
+A. No. Amboras's Terms of Service make the merchant the merchant of record, responsible for determining, collecting, reporting, and remitting taxes (as of November 2026). Amboras lets you pre-collect duties and taxes at checkout (DDP), but filing and paying in the destination countries is something you handle yourself or with a tax professional.
+
 ## Summary and Key Takeaway
 
 Researching "Amboras Y Combinator" turns up something bigger than one company's business model — it turns up a broader shift underway across the entire AI x e-commerce space. Amboras's pricing structure looks, on the surface, like a fairly standard tiered SaaS plan, but underneath it sits the idea that AI fundamentally changes labor-driven cost structures — and that idea lines up directly with YC's own stated investment theme of "AI becoming the operating system of the company." The existence of a different-layer player like Wildcard suggests this shift isn't a single company's success story, but a restructuring of the industry itself. When evaluating any new tool, it's worth looking past its feature list to ask which piece of that larger structural shift it actually represents.
 
-Leap supports the full picture — from building multilingual e-commerce sites to web marketing for overseas markets — as a one-stop service. If you'd like help thinking through AI x e-commerce trends and how they apply to your own business, feel free to reach out.
-
-We publish a wide range of practical guides on international business and e-commerce operations.
-
-[Leap International Business Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -80,3 +90,6 @@ We publish a wide range of practical guides on international business and e-comm
 - [Y Combinator is going all-in on AI agents, making up nearly 50% of latest batch - PitchBook](https://pitchbook.com/news/articles/y-combinator-is-going-all-in-on-ai-agents-making-up-nearly-50-of-latest-batch)
 - [8 Best Amboras Alternatives in 2026 - Your Next Store](https://yournextstore.com/blog/amboras-alternatives)
 - [AI (Artificial Intelligence) Startups funded by Y Combinator - Y Combinator](https://www.ycombinator.com/companies/industry/ai)
+- [FAQ - Amboras](https://www.amboras.com/faq)
+- [Terms of Service - Amboras](https://www.amboras.com/terms)
+- [Pricing - Leap](https://www.leap.site/en/pricing/)

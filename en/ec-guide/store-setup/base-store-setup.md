@@ -60,25 +60,43 @@ Sales through BASE, even from a side business, can potentially be taxed as busin
 
 One thing worth paying particular attention to: fees for anonymous shipping and virtual office services can potentially be recorded as business-related expenses. Since spending to protect your privacy can, in some cases, end up reducing your tax burden, it's worth organizing these from the bookkeeping stage as "costs incidental to your sales activity." If you're unsure about tax filing, it's a good idea to consult a tax accountant or your local tax office early on, including whether you need to file a business commencement notification as a sole proprietor — that way, once your business gets off the ground, you won't be caught scrambling.
 
-## Frequently Asked Questions (FAQ)
+## Shipping, Personal Information, and Taxes When You Also Sell Overseas
 
-**Q1. Can I hide my name completely on BASE?**
+Even an individual's BASE shop can sell to overseas buyers with domestic shipping only, using the built-in "Easy Overseas Sales" (かんたん海外販売) feature (as of November 2026). There are two conditions: credit card payment must be enabled in BASE Easy Payment, and the shop must not be using the Age Verification App.
 
-A1. No. The Specified Commercial Transactions Act requires a business to disclose its name so that buyers know who they're actually contracting with — and this rule applies to every individual running an online store, not just those on BASE. You can hide your address and phone number, but it's important to factor in, when deciding whether to open a shop, that your name will always be disclosed.
+You ship not to the overseas buyer but to a warehouse in Japan run by the proxy company, want.jp Inc. That's because Easy Overseas Sales orders are placed by want.jp, not by the overseas buyer. The name field on each order contains an identification string that differs from order to order, so write it on the shipping label exactly as it appears on the order details screen. Because the package goes to a domestic address, you can also use Easy Shipping (Yamato Transport / Japan Post). Orders are canceled automatically if you miss the shipping deadline, so check the deadline on the order details screen.
 
-**Q2. If I use anonymous shipping, can I keep my identity completely hidden from buyers?**
+If an overseas buyer cancels or returns an order, want.jp handles it. BASE's Help Center also explains that if an overseas buyer contacts you directly, you should direct them to want.jp's inquiry desk.
 
-A2. You can anonymize the shipping label itself, but if a return or exchange comes up, you may need to share your actual return address. Depending on a package's size or weight, you may also need to share information directly with the shipping carrier. It's best to think of anonymous shipping as a way to keep your information private during the normal purchase process — not as an absolute guarantee of anonymity.
+On the tax side, an Easy Overseas Sales order is a sale to want.jp in Japan, so it's treated the same as a domestic order, and the shop's purchasing costs and similar expenses are not eligible for a consumption tax refund. As for fees, a usage fee of 5% of the order total (item price plus domestic shipping) is deducted from your sales together with the usual payment and service fees. Tracking this fee separately makes it easier to total up your sales and expenses for your tax return.
 
-**Q3. If I start selling on BASE as a side business, do I have to file a business commencement notification?**
+When you reach the point of wanting your own brand site for overseas customers and want to push into overseas marketing, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is one option.
 
-A3. Not necessarily right away. But if you plan to sell continuously and repeatedly, and expect your income to exceed a certain threshold, you may become subject to filing a business commencement notification and a tax return. If you're unsure, it's a good idea to consult your local tax office or a tax accountant early on and confirm the right approach for the scale of your side business.
+## FAQ
+
+**Q. Can I hide my name completely on BASE?**
+
+A. No. The Specified Commercial Transactions Act requires a business to disclose its name so that buyers know who they're actually contracting with — and this rule applies to every individual running an online store, not just those on BASE. You can hide your address and phone number, but it's important to factor in, when deciding whether to open a shop, that your name will always be disclosed.
+
+**Q. If I use anonymous shipping, can I keep my identity completely hidden from buyers?**
+
+A. You can anonymize the shipping label itself, but if a return or exchange comes up, you may need to share your actual return address. Depending on a package's size or weight, you may also need to share information directly with the shipping carrier. It's best to think of anonymous shipping as a way to keep your information private during the normal purchase process — not as an absolute guarantee of anonymity.
+
+**Q. If I start selling on BASE as a side business, do I have to file a business commencement notification?**
+
+A. Not necessarily right away. But if you plan to sell continuously and repeatedly, and expect your income to exceed a certain threshold, you may become subject to filing a business commencement notification and a tax return. If you're unsure, it's a good idea to consult your local tax office or a tax accountant early on and confirm the right approach for the scale of your side business.
+
+**Q. Can an individual's BASE shop sell overseas?**
+
+A. Yes. Since March 18, 2026, the built-in Easy Overseas Sales feature has been available to every BASE shop. As long as credit card payment is enabled in BASE Easy Payment and you aren't using the Age Verification App, you simply ship to want.jp's warehouse in Japan, and want.jp handles the international shipping.
 
 ## Summary and Key Takeaways
 
 What becomes clear from looking at how individual sellers operate on BASE is a practical kind of compromise: you can never erase your privacy exposure completely, but you can meaningfully reduce your risk through smart use of the platform's design. The combination of hiding your address and phone number from the legal disclosure, plus anonymous shipping, is a realistic middle ground built to satisfy both the legal requirement to protect consumers and an individual seller's desire to start selling with peace of mind. Disclosing your name is unavoidable, but if you carefully reduce risk everywhere else, taking that small first step into a side hustle or handmade sales business becomes something you can do without unnecessary strain.
 
-Once you've gotten comfortable selling as an individual and your business starts to gain momentum, a new goal tends to come into view: reaching more customers, or even selling to fans overseas. At Leap, rather than simply translating a Japanese-language site, we build pages from the ground up that are tailored to local culture and search habits — helping businesses do web marketing that genuinely reaches overseas markets. From selling as an individual at home to taking that next step abroad, we'll keep sharing information suited to each stage of your business, so we hope you'll check out our other articles as well.
+Once you've gotten comfortable selling as an individual and your business starts to gain momentum, a new goal tends to come into view: reaching more customers, or even selling to fans overseas.
+
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -90,3 +108,7 @@ Once you've gotten comfortable selling as an individual and your business starts
 - [How Personal Addresses Are Handled in Online Stores](https://stockcrew.co.jp/journal/net-shop-individual-address)
 - [How Address Disclosure and Privacy Work on BASE](https://stockcrew.co.jp/journal/base-address)
 - [How to Hide Your Address and Phone Number Under the Specified Commercial Transactions Act on BASE - Handmade Note](https://craftwriter-blog.com/base-specified-commercial-transaction-law/)
+- [About Easy Overseas Sales (「かんたん海外販売」について教えてください) - Help | BASE](https://help.thebase.in/hc/ja/articles/52804478331929)
+- [How to Check and Ship Easy Overseas Sales Orders - Help | BASE](https://help.thebase.in/hc/ja/articles/52804505173657)
+- [What Should I Do If an Overseas Buyer Contacts Me Directly? - Help | BASE](https://help.thebase.in/hc/ja/articles/53137239496217)
+- [Easy Overseas Sales Becomes a Standard Feature on March 18 - BASE U](https://baseu.jp/information/20260224)

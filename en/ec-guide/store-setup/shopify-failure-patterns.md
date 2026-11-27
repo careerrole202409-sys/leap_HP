@@ -92,19 +92,32 @@ Separate what the no-code theme editor can achieve from what requires Liquid dev
 
 Define what success means for this store — specific numbers, not general ambitions. Set targets for months 3 and 6. Build the review and iteration process before the store opens so it's already running when data starts arriving.
 
+## Shopify Failure Patterns When Selling Internationally
+
+When you also sell internationally, two more failures become common on top of the five patterns above: launching without deciding how to handle duties and import taxes, and launching without translating your legal policies (as of November 2026).
+
+1. **Launching without deciding how to handle duties and import taxes**: The Shopify Help Center explains that when you ship internationally, your customers might be charged duties and import taxes when their shipment arrives. Shopify can calculate and collect duties and import taxes at checkout, and collecting an estimate up front helps customers avoid unexpected charges on delivery. To use it, your products need HS codes (the international numbers used to classify traded goods), and if you use shipping labels, you need a carrier that supports DDP (Delivered Duty Paid) labels. Orders with duties calculated at checkout carry a fee: 0.85% for stores using Shopify Payments and 1.5% for stores using other payment providers (Shopify notes the fee has been temporarily reduced to 0.5% since February 2, 2025).
+2. **Launching without translating your legal policies**: Shopify's own Translate & Adapt app can't translate legal policies such as returns and privacy automatically. They need to be translated manually, and the Help Center recommends consulting a professional translator.
+
+Decide whether you'll collect duties up front or let customers pay on delivery, and state it on product pages and in your shipping policy — that's the basic way to prevent post-launch disputes. If you want to localize for each market's language and business customs through chat, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option.
+
 ## FAQ
 
-**Q: Shopify's monthly fee seems affordable — what does it actually cost to run a real store?**
+**Q. Shopify's monthly fee seems affordable — what does it actually cost to run a real store?**
 
-The Basic plan starts at $29/month on annual billing ($39/month monthly). But realistic operational costs add significantly: a premium theme ($200–$420 one-time), app subscriptions (easily $100–$300/month for a configured stack), payment processing fees (2.9% + $0.30 per transaction on Basic with Shopify Payments; higher for third-party processors), and development costs if you bring in outside help ($2,000–$15,000+ USD for a custom build). First-year total cost for a properly configured store often reaches several thousand to tens of thousands of dollars. Calculate total cost of ownership — not plan price — before committing.
+A. The Basic plan starts at $29/month on annual billing ($39/month monthly). But realistic operational costs add significantly: a premium theme ($200–$420 one-time), app subscriptions (easily $100–$300/month for a configured stack), payment processing fees (2.9% + $0.30 per transaction on Basic with Shopify Payments; higher for third-party processors), and development costs if you bring in outside help ($2,000–$15,000+ USD for a custom build). First-year total cost for a properly configured store often reaches several thousand to tens of thousands of dollars. Calculate total cost of ownership — not plan price — before committing.
 
-**Q: Shopify has built-in SEO tools. Will the store just show up in search once it's live?**
+**Q. Shopify has built-in SEO tools. Will the store just show up in search once it's live?**
 
-Shopify provides the infrastructure: meta title and description fields, URL customization, blog functionality, sitemap generation, and structured data. But these are inputs to SEO, not outcomes. A new store has essentially no search authority when it launches. Building organic rankings takes months of consistent content production and link acquisition. Paid advertising and social channels need to carry traffic in the interim. The stores that fail on traffic are the ones that expected organic search to do the work immediately — it doesn't.
+A. Shopify provides the infrastructure: meta title and description fields, URL customization, blog functionality, sitemap generation, and structured data. But these are inputs to SEO, not outcomes. A new store has essentially no search authority when it launches. Building organic rankings takes months of consistent content production and link acquisition. Paid advertising and social channels need to carry traffic in the interim. The stores that fail on traffic are the ones that expected organic search to do the work immediately — it doesn't.
 
-**Q: We're migrating from WooCommerce or BigCommerce. What are the most common migration failure points?**
+**Q. We're migrating from WooCommerce or BigCommerce. What are the most common migration failure points?**
 
-The most common issue is underestimating scope. Product data migrates reasonably well with the right tools, but customer data, order history, and especially third-party app configurations don't transfer automatically. Features that your current platform handles natively may require separate apps on Shopify, each needing individual configuration. Custom theme work doesn't transfer — your current design will need to be rebuilt or adapted in Liquid. The fix is to list every feature your current store uses before starting migration, verify the Shopify equivalent for each, and build a realistic timeline. "Quick migration" projects consistently take longer than expected.
+A. The most common issue is underestimating scope. Product data migrates reasonably well with the right tools, but customer data, order history, and especially third-party app configurations don't transfer automatically. Features that your current platform handles natively may require separate apps on Shopify, each needing individual configuration. Custom theme work doesn't transfer — your current design will need to be rebuilt or adapted in Liquid. The fix is to list every feature your current store uses before starting migration, verify the Shopify equivalent for each, and build a realistic timeline. "Quick migration" projects consistently take longer than expected.
+
+**Q. Who pays duties when I sell internationally on Shopify?**
+
+A. Either you collect them up front at checkout, or the customer pays when the shipment arrives. Shopify can calculate and collect duties and import taxes at checkout; it requires settings such as HS codes on your products, and orders with duties calculated at checkout carry a fee (as of November 2026). Decide which approach you'll take and state it clearly on product pages and in your shipping policy to avoid problems on delivery.
 
 ## Conclusion
 
@@ -112,15 +125,9 @@ Shopify is a genuinely capable platform. But its extensibility and flexibility c
 
 Every failure pattern in this article is avoidable with preparation. Use the pre-launch checklist to audit all five axes before opening your store.
 
-For merchants building cross-border or multilingual Shopify stores, one additional layer applies: the content, SEO, and marketing strategies that work in one market rarely transfer directly to another. Localizing for a new market requires more than translation. Leap specializes in building multilingual e-commerce sites and running overseas web marketing for businesses expanding globally. If you're working on the international dimension of your Shopify strategy, the resources below are a good place to continue.
+For merchants building cross-border or multilingual Shopify stores, one additional layer applies: the content, SEO, and marketing strategies that work in one market rarely transfer directly to another. Localizing for a new market requires more than translation.
 
-**Leap's Resources**
-
-Leap publishes practical resources on cross-border e-commerce and multilingual Shopify store operations — covering platform selection, overseas market localization strategy, and e-commerce operations.
-
-[Overseas Business Blog](https://www.leap.site/en/blog/)
-
-[EC Operations Guide](https://www.leap.site/en/ec-guide/)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -131,4 +138,6 @@ Leap publishes practical resources on cross-border e-commerce and multilingual S
 - [Shopify Help Center: Shopify Markets — international selling](https://help.shopify.com/en/manual/markets)
 - [Shopify Blog: Payment gateways explained](https://www.shopify.com/blog/payment-gateways)
 - [Shopify Blog: E-commerce conversion rate optimization](https://www.shopify.com/blog/conversion-rate-optimization)
-- [Leap: Overseas Business Expansion Blog](https://www.leap.site/en/blog)
+- [Duties and import taxes - Shopify Help Center](https://help.shopify.com/en/manual/cross-border/duties)
+- [Collecting international duties and import taxes at checkout - Shopify Help Center](https://help.shopify.com/en/manual/markets/duties-and-import-taxes/charging-duties)
+- [Translating content automatically using the Translate & Adapt app - Shopify Help Center](https://help.shopify.com/en/manual/international/languages/translate-adapt-app/automatic-translation)

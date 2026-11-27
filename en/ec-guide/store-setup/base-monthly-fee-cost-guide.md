@@ -48,6 +48,26 @@ Running a rough check on that benchmark: comparing the Standard plan's fees (6.6
 
 One more thing worth knowing: Growth plan pricing was revised on January 16, 2024, and the current rates (¥16,580-¥19,980/month) are substantially higher than what they were before the change (roughly ¥4,980-¥5,980/month). If you come across older information quoting the pre-2024 prices, make sure you're working from the current figures instead.
 
+## What It Costs to Sell Internationally on BASE
+
+The main extra cost of selling overseas on BASE is the usage fee for its built-in feature "Kantan Kaigai Hanbai" (Easy Overseas Sales): 5% of the order total. The basic usage fee is free, so turning on overseas sales does not add a monthly fee (as of November 2026).
+
+Fees for Easy Overseas Sales are split between the shop and the buyer:
+
+- **Shop side**: a usage fee of 5% of the order total (product price plus domestic shipping), plus the same processing fee and service usage fee that apply to credit card payments on your current plan
+- **Buyer side**: a proxy service fee (10% of the product price plus domestic shipping, with a minimum of ¥500 and a maximum of ¥3,000), a payment fee of 2–3% of the total depending on the payment method, and international shipping. Import duties are also paid by the buyer
+
+Here is what the shop-side fees come to on a single order with a ¥5,000 product and ¥800 domestic shipping (¥5,800 order total). This is our own estimate based on BASE's published rates and ignores rounding.
+
+| Plan | Breakdown | Total shop-side fees |
+|---|---|---|
+| Standard | 5% usage fee (¥290) + 3.6% + ¥40 processing fee (about ¥249) + 3% service fee (¥174) | About ¥713 |
+| Growth | 5% usage fee (¥290) + 2.9% processing fee (about ¥168) | About ¥458 |
+
+International shipping is handled by the proxy operator want.jp Inc., so the shop only has to ship within Japan. On the other hand, Easy Overseas Sales orders are treated the same as domestic orders, so costs such as purchasing are not eligible for a consumption tax refund.
+
+If you would rather sell directly to overseas customers on your own multilingual, multi-currency site instead of through a proxy purchasing service, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option. Leap's cross-border ecommerce fee is 6% of sales, including credit card processing fees (as of November 2026).
+
 ## FAQ
 
 **Q. How long does the Standard plan stay free?**
@@ -62,16 +82,17 @@ A. BASE's own guidance points to "monthly sales exceeding roughly ¥500,000" as 
 
 A. If you build your shop entirely with the free official theme and free Apps, the build phase costs nothing. That said, using certain payment methods like PayPay, Amazon Pay, or PayPal, or installing a paid App, each comes with its own separate cost.
 
+**Q. How much more will I pay in fees if I sell overseas on BASE?**
+
+A. With Easy Overseas Sales, the shop pays an additional usage fee of 5% of the order total (product price plus domestic shipping). Processing and service usage fees are charged separately at the same rates as domestic credit card payments, and the buyer also pays a proxy service fee (10% of the product price plus domestic shipping, minimum ¥500, maximum ¥3,000) and other charges (as of November 2026).
+
 ## Summary and Key Takeaway
 
 It's true that BASE's Standard plan has no monthly fee — but that doesn't mean costs never apply, it means costs only apply once something sells. You can build your store with essentially no financial risk, but it's worth knowing that optional costs exist for things like a custom domain or certain Apps, should you choose to use them. And once sales pick up, don't miss the moment to consider switching to the Growth plan, using BASE's own ¥500,000 monthly-sales benchmark as a reference point for optimizing your fee burden.
 
-That said, working out a build-phase budget and tracking the right plan as sales grow takes more thought than it looks like. Leap offers an AI E-Commerce Agent that supports building and running an e-commerce site entirely through conversation with AI. If you want to keep costs down while getting your store built, take a look at what Leap offers.
+That said, working out a build-phase budget and tracking the right plan as sales grow takes more thought than it looks like.
 
-We publish a wide range of practical guides on running an e-commerce business.
-
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -79,3 +100,5 @@ We publish a wide range of practical guides on running an e-commerce business.
 - [Notice on Growth Plan Pricing Revision and New Features - BASE U](https://baseu.jp/information/20231107)
 - [Costs and Fees on BASE: How to Calculate and How It Compares - BASE U](https://baseu.jp/6685)
 - [A Roundup of BASE's Costs and Fees - Handmade Note](https://craftwriter-blog.com/base-fee/)
+- [About Easy Overseas Sales (Japanese) - BASE Help](https://help.thebase.in/hc/ja/articles/52804478331929--%E3%81%8B%E3%82%93%E3%81%9F%E3%82%93%E6%B5%B7%E5%A4%96%E8%B2%A9%E5%A3%B2-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84)
+- [Pricing - Leap](https://www.leap.site/en/pricing/)

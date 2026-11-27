@@ -54,6 +54,18 @@ Send too often, and you risk getting blocked; send too rarely, and you lose visi
 
 LINE and email each play to different strengths. LINE's high open rate and immediacy make it well suited to time-sensitive moments — cart abandonment follow-up, coupon distribution, post-purchase notifications. Email, on the other hand, is better suited to detailed product information or showcasing multiple products at once. Rather than treating them as competing channels, the key to designing your overall LINE-and-e-commerce strategy is matching each channel to the right customer touchpoint. It's likely more teams will handle this kind of messaging design and performance review through ongoing conversation with AI going forward.
 
+## How to Use a LINE Official Account to Sell Internationally
+
+If you want to use a LINE Official Account for overseas sales, Taiwan and Thailand, where LINE is widely used, are the main candidates. According to LY Corporation, as of the end of June 2026, LINE had 100 million monthly active users in Japan (about 81% of the population), 22 million in Taiwan (about 95%), and 54 million in Thailand (about 82%). LY Corporation has local subsidiaries in Taiwan and Thailand and offers LINE Official Account in each country.
+
+When running an account for customers in Taiwan or Thailand, it helps to check the following points first:
+
+1. **Which country or region your account belongs to**: An LY Corporation notice (July 2026) states that when connecting company accounts to Business Manager, the organization's "company or business location (country/region)" must match the location of each account. Because every account has a country or region, it's wise to confirm account setup and pricing terms with the local LINE Official Account team before you start running it in earnest.
+2. **Prepare messages in the local language**: The approaches covered in this article, growing friends through notification messages, segmented messaging, and rich menus, carry over to overseas markets, but your messages and rich menu text need to be written in Traditional Chinese for Taiwan and Thai for Thailand.
+3. **Rethink your channel where LINE isn't the norm**: LY Corporation's company information names Asian markets such as Taiwan and Thailand as LINE's main regions of use. If you sell to other countries or regions, first check which messaging apps are common there, and choose your communication channels, including email newsletters, accordingly.
+
+If you also want to stay connected with customers in countries where LINE isn't used, you can combine your LINE efforts with a tool like Leap, a cross-border ecommerce tool that lets AI handle marketing too, which lets you run multilingual email newsletters and customer management through chat.
+
 ## FAQ
 
 **Q. Where should I start if I want to grow my LINE friend base?**
@@ -68,14 +80,15 @@ A. The first step is installing the LINE Tag on your site so you can capture beh
 
 A. You don't need to pick one over the other. Use LINE for time-sensitive messaging like cart abandonment follow-up or limited-time coupons, and use email when you need to share detailed product information or showcase multiple products at once — matching the channel to the purpose works best.
 
+**Q. Can a LINE Official Account be used for overseas customers?**
+
+A. For customers in Taiwan and Thailand, where LINE is widely used, it's a strong option. According to LY Corporation, as of the end of June 2026, about 95% of the population in Taiwan and about 82% in Thailand use LINE. In other countries and regions, it's more practical to check which communication channels are common locally and use LINE alongside email newsletters and other channels.
+
 ## Summary and Key Takeaway
 
-A LINE Official Account lets you design an entire repeat-purchase flow — from growing your friend base through notification messages and digital membership cards, to segmented messaging via the LINE Tag, to driving purchases with rich messages and coupons — all within a single channel. As the nairo, Mizuno, and Lens Direct examples show, results don't come from simply sending messages — they come from delivering information at a moment and in a context that feels natural to the customer. And by being deliberate about how LINE and email complement each other, you can fill in what LINE alone can't deliver and lift the performance of your overall channel mix. Leap aims to support that entire process — from messaging strategy design through product listings, SEO, advertising, and customer support — as an AI E-Commerce Agent that lets teams spend their time on what actually grows the business, all through conversation with AI.
+A LINE Official Account lets you design an entire repeat-purchase flow — from growing your friend base through notification messages and digital membership cards, to segmented messaging via the LINE Tag, to driving purchases with rich messages and coupons — all within a single channel. As the nairo, Mizuno, and Lens Direct examples show, results don't come from simply sending messages — they come from delivering information at a moment and in a context that feels natural to the customer. And by being deliberate about how LINE and email complement each other, you can fill in what LINE alone can't deliver and lift the performance of your overall channel mix.
 
-We publish a wide range of practical guides on e-commerce operations, cross-border expansion, and website building. Browse our other articles for more.
-
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -87,3 +100,6 @@ We publish a wide range of practical guides on e-commerce operations, cross-bord
 - [LINE Official Account E-Commerce Course - LY Campus](https://lymcampus.jp/line-official-account/courses/ec/lessons/oa-5-4-3)
 - [What Is HubSpot Marketing Hub - Spice Factory](https://spice-factory.co.jp/web-marketing/what-is-hubspot-marketing-hub/)
 - [Marketing Automation Scenario Basics - Molts](https://moltsinc.co.jp/media/knowledge/6661/)
+- [LY Corporation Conducts Disaster Preparedness Survey in Japan, Taiwan, and Thailand - LY Corporation](https://www.lycorp.co.jp/ja/news/release/020775/)
+- [Overseas Business Operations - LY Corporation](https://www.lycorp.co.jp/ja/company/global/)
+- [Business Manager Now Supports Connecting Overseas Companies - LY Corporation for Business](https://www.lycbiz.com/jp/news/business-manager/20260721/)

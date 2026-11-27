@@ -124,42 +124,46 @@ For apparel and high-ticket products: Motion, District, Impulse. For beauty and 
 
 When evaluating premium themes, the same criteria apply as for free themes: load speed and mobile rendering must be checked on the actual demo store before purchase.
 
+## Designing Your Store for International Customers
+
+When you also sell overseas, your store design needs two additions: a clear way for shoppers to switch country and language, and a layout that won't break when translation changes the length of your text. Check these alongside the three theme criteria of mobile optimization, brand tone, and load speed.
+
+The first is a country/region and language selector. According to Shopify, most themes include built-in country and language selectors, typically in the header or footer, and you can turn them on in the header or footer section of the theme editor. Without selectors, customers who land on the wrong country or language have no way to switch.
+
+The second is text length. According to W3C (the web standards body), text translated from English into European languages tends to get longer, and the IBM data it cites shows strings of up to 10 characters expanding by an average of 200–300%. Short labels in tight spaces, such as buttons, tabs, and labels next to form fields, are the most likely to break, so W3C advises avoiding small fixed-width containers and letting text wrap. Scripts such as Thai, Arabic, and Chinese also need more height per line, so leave room in your line spacing. When choosing a theme, try longer product names and button labels in English on the demo store to make sure the layout holds up.
+
+If you want a site for overseas customers that goes beyond translation, with localization suggestions and fixes for each target country, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option.
+
 ## FAQ
 
-**Q: Can I design a good e-commerce store without a design background?**
+**Q. Can I design a good e-commerce store without a design background?**
 
-Yes. E-commerce design operates on learnable rules, not innate creative ability. Focus on the four functions — Trust, Visual, Format, and Navigation — when selecting your theme, and place the right content in the right positions on each page. Shopify provides the theme foundation; your job is to focus on content and user flow. Platform tools handle the rest.
+A. Yes. E-commerce design operates on learnable rules, not innate creative ability. Focus on the four functions — Trust, Visual, Format, and Navigation — when selecting your theme, and place the right content in the right positions on each page. Shopify provides the theme foundation; your job is to focus on content and user flow. Platform tools handle the rest.
 
-**Q: Free theme or premium theme — which should I choose?**
+**Q. Free theme or premium theme — which should I choose?**
 
-For an early-stage launch or small-scale operation, Shopify's free themes are often sufficient. When your catalog grows, when you need built-in marketing features, or when you want more precise brand expression than free themes allow, evaluate premium themes. Most run $200–$420 USD (one-time purchase), and the app subscriptions they replace often offset the cost over time. Evaluate on total cost of ownership, not sticker price alone.
+A. For an early-stage launch or small-scale operation, Shopify's free themes are often sufficient. When your catalog grows, when you need built-in marketing features, or when you want more precise brand expression than free themes allow, evaluate premium themes. Most run $200–$420 USD (one-time purchase), and the app subscriptions they replace often offset the cost over time. Evaluate on total cost of ownership, not sticker price alone.
 
-**Q: How do I check mobile optimization before choosing a theme?**
+**Q. How do I check mobile optimization before choosing a theme?**
 
-Visit the theme's demo store URL on an actual smartphone and test it manually: check for image display issues, button size and tap target, text legibility, and form usability. Also run the demo store URL through PageSpeed Insights for a numerical mobile performance score. A score below 60 suggests load speed issues that will affect bounce rate. All official Shopify free themes are mobile-responsive by default, but theme editor configuration can affect final performance — always verify on the actual demo.
+A. Visit the theme's demo store URL on an actual smartphone and test it manually: check for image display issues, button size and tap target, text legibility, and form usability. Also run the demo store URL through PageSpeed Insights for a numerical mobile performance score. A score below 60 suggests load speed issues that will affect bounce rate. All official Shopify free themes are mobile-responsive by default, but theme editor configuration can affect final performance — always verify on the actual demo.
+
+**Q. Does an international store need a different design from my domestic store?**
+
+A. In many cases, you can serve international customers with the same theme you use domestically. On Shopify, most themes include built-in country and language selectors in the header or footer, which you can turn on in the theme editor. Beyond that, check the live display to make sure buttons and headings don't break when translated text runs longer.
 
 ## Conclusion
 
 E-commerce design is an engineering problem, not a creative one. Choose a theme that fits your industry, filter it against the three criteria of mobile optimization, brand tone, and load speed, and design navigation, CTAs, and product images as a conversion path — and any team can build a store that drives real revenue. Starting with a free theme and graduating to a premium theme as the business scales is a sound, low-risk approach.
 
-That said, getting the design right is only one piece of international expansion. Selling to customers in new markets requires more than a well-designed storefront — it requires content localized to local culture, buying behavior, and search habits. A direct translation of an existing site rarely performs well. Leap specializes in building multilingual e-commerce sites and running overseas web marketing for businesses expanding globally. If you're planning your next move into international markets, the resources below are a good place to start.
+That said, getting the design right is only one piece of international expansion. Selling to customers in new markets requires more than a well-designed storefront — it requires content localized to local culture, buying behavior, and search habits. A direct translation of an existing site rarely performs well.
 
-Leap regularly publishes practical resources on overseas expansion and cross-border e-commerce.
-
-Browse our other guides below.
-
-<div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem;">
-  <a href="https://www.leap.site/en/ec-guide" style="display: inline-block; padding: 0.6rem 1.2rem; border: 2px solid #C10033; color: #C10033; background: #ffffff; font-weight: 600; border-radius: 4px; text-decoration: none;">All EC Operations Guides</a>
-  <a href="https://www.leap.site/en/hp-guide" style="display: inline-block; padding: 0.6rem 1.2rem; border: 2px solid #C10033; color: #C10033; background: #ffffff; font-weight: 600; border-radius: 4px; text-decoration: none;">All Website Building Guides</a>
-  <a href="https://www.leap.site/en/blog" style="display: inline-block; padding: 0.6rem 1.2rem; border: 2px solid #C10033; color: #C10033; background: #ffffff; font-weight: 600; border-radius: 4px; text-decoration: none;">Overseas Business Blog</a>
-</div>
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
-- [Shopify: Best Practices for Homepage Design](https://www.shopify.com/blog/ecommerce-homepage-design)
 - [Shopify: UX Design for E-Commerce](https://www.shopify.com/blog/ecommerce-ux)
 - [Shopify: E-Commerce Design Fundamentals](https://www.shopify.com/blog/ecommerce-design)
-- [Shopify: Best E-Commerce Website Examples](https://www.shopify.com/blog/best-ecommerce-websites)
-- [Shopify: How to Create a Winning Online Store Design](https://www.shopify.com/blog/online-store-design)
 - [Shopify: Free Themes](https://themes.shopify.com/themes?price%5B%5D=free)
-- [Leap: Overseas Business Expansion Blog](https://www.leap.site/en/blog)
+- [Setting up localization for markets - Shopify Help Center](https://help.shopify.com/en/manual/markets/getting-started/localization)
+- [Text size in translation - W3C](https://www.w3.org/International/articles/article-text-size)
