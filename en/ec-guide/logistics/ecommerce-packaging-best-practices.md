@@ -140,19 +140,33 @@ Inserts are another effective tool. Including a usage guide card for the purchas
 
 ---
 
-### FAQ
+## Packaging for International Shipping
 
-<strong>Q. I'm using cushioning but still getting damage complaints. What could be causing it?</strong>
+When you also sell overseas, assume your parcels will travel farther and be handled more often than domestic ones, and raise your standards on three points: box strength, sealing, and box size.
+
+1. Box strength: Japan Post's guidance for international mail is to use a sturdy box (such as corrugated cardboard) and, for heavy items, a thick box such as a double-wall carton. It also asks senders to avoid reusing boxes from fresh food such as meat and vegetables or from home appliances, so if you reuse boxes for domestic orders, switch to new boxes at least for international shipments.
+2. Sealing: Tape the box in an H pattern; adding tape along the edges and across the center makes it even stronger. Gaps inside the box make damage more likely, so fill them with cushioning. Put clothing and books in clear plastic bags to protect them from water and dirt, and place the shipping label so it doesn't cover the opening.
+3. Box size: International express couriers may charge based on "dimensional weight," calculated from the size of the box. DHL calculates dimensional weight as length × width × height (cm) ÷ 5,000 and uses whichever is greater, actual or dimensional weight. For example, a 40 × 30 × 30 cm box has a dimensional weight of 7.2 kg, so even if the contents weigh 2 kg, the charge is based on the dimensional weight. Because empty space translates directly into shipping cost, choosing a snug box that fits the product pays off even more than it does domestically.
+
+With Leap, a cross-border ecommerce tool that lets AI handle marketing too, you can choose which countries each product is sold in, and products aren't displayed in other countries, so you can limit hard-to-ship items to the countries where they make sense.
+
+## FAQ
+
+**Q. I'm using cushioning but still getting damage complaints. What could be causing it?**
 
 A. Three causes account for most cases. First, the box has empty space even though cushioning is present — the product is shifting and hitting the walls. Fill density matters more than cushioning type. Second, the box strength is insufficient — if you're using single-wall corrugated for heavy or precision items, switch to double-wall. Third, the tape application is inadequate for the weight — the box may be opening in transit. Review these three points first.
 
-<strong>Q. I want to reduce packaging material costs. Where should I start?</strong>
+**Q. I want to reduce packaging material costs. Where should I start?**
 
 A. Start by auditing your box sizes. Oversized boxes drive up both shipping costs (higher size tier) and material costs (more cushioning required). Analyze your shipment patterns and consolidate to boxes that match your most common product sizes — this alone typically reduces both material spend and shipping fees. As a second step, switching from plastic-based cushioning to paper alternatives (kraft paper, paper void fill) reduces cost while supporting a sustainability message.
 
-<strong>Q. We're outsourcing fulfillment to a 3PL. How do we maintain packaging quality?</strong>
+**Q. We're outsourcing fulfillment to a 3PL. How do we maintain packaging quality?**
 
 A. Prepare a packaging specification document before you hand off operations. Define the box size, cushioning type and placement, tape method, and insert contents in writing, share it with the fulfillment provider, and get their agreement. In the initial phase after launch, request sample packages to review before going live at full volume. Building a regular quality check process into the spec document helps maintain standards over time.
+
+**Q. How should I tape boxes for international shipping?**
+
+A. For international shipments, the basic method is to seal the box in an H pattern. Japan Post advises that adding tape along the edges and across the center of the box makes it even stronger. Put heavy items in a thick box such as a double-wall carton, and place the shipping label so it doesn't cover the opening.
 
 ---
 
@@ -164,14 +178,19 @@ To recap: matching materials to product characteristics is the foundation. Using
 
 Alongside logistics and packaging optimization, it's worth building a system that encourages customers who've received their order to make their next purchase. Many EC businesses that have locked in domestic packaging and logistics quality are now looking at cross-border and international expansion as the next stage. International shipping requires additional packaging considerations — higher durability standards, customs compliance — but with the right design, high customer satisfaction is equally achievable in overseas markets.
 
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
+
 ---
 
-<strong>From Leap</strong>
+## References
 
-Leap provides a SaaS platform that helps small and medium-sized Japanese businesses build locally optimized, multilingual websites and EC stores for overseas expansion — powered by AI agents. We publish ongoing practical resources for EC managers and business owners looking to build on domestic operations and take their first steps into international markets.
-
-Explore more resources on EC operations and overseas expansion:
-
-- [EC Operations Guide](https://www.leap.site/en/ec-guide)
-- [Global Business Blog](https://www.leap.site/en/blog)
-- [Leap Services & Demo Inquiry](https://www.leap.site/en/about/#contact)
+- [How to Pack for EC Operations: Improving Efficiency and Customer Satisfaction (ECnoMikata)](https://ecnomikata.com/ecnews/eclogistics/34261/)
+- [EC Logistics Article (ECnoMikata)](https://ecnomikata.com/ecnews/eclogistics/32069/)
+- [How to Pack and Ship to Improve Customer Satisfaction in EC (UL-Logi)](https://ul-logi.jp/blog/logistics/what-is-the-packing-method/)
+- [Key Points of EC Packaging (Scroll360)](https://www.scroll360.jp/note/20210319-4224/)
+- [Three Packaging Techniques to Prevent Product Damage (Logistart)](https://logistart.jp/ecサイト成功の鍵！商品破損を防ぐ3つの梱包テク/)
+- [EC Packaging Operations: Choosing Materials and Improving Efficiency (HIGH LOGI)](https://hi-logi.com/blog/ec-packaging/)
+- [Types of EC Packaging Materials and How to Choose Them (Daishowa Warehouse)](https://daigo-wh.co.jp/ec-logistics/blog/e-commerce-packing-materials/)
+- [Cosmetics Packaging (Shikishima Steel)](https://siki.ntp-k.co.jp/industry/cosmetic/)
+- [Know Before You Send: Safe Packing Tips - Japan Post](https://www.post.japanpost.jp/service/send/oversea/use/howto/students/know/anzen.html)
+- [What Is Dimensional Weight? The Basics Explained - DHL](https://www.dhl.com/discover/ja-jp/logistics-advice/import-export-advice/what-is-dimensional-weight)

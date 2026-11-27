@@ -45,6 +45,22 @@ One of STORES's defining features is that it's not just a standalone online stor
 
 A 2022 survey of shops using STORES Register found that apparel and fashion was the top industry at 24.4% of adopters, with retail overall making up roughly 60% of users. The same survey found that among shops using both STORES Register and the online store together, 76.4% actually use the inventory-linking feature between their physical and online channels. For a business running both a physical shop and an online store, that kind of unified inventory tracking — rather than managing two separate stock counts by hand — is a clear point of difference from online-only store builders.
 
+## How to Sell Internationally With STORES
+
+The official way to sell internationally with STORES is its "Overseas Sales Integration" (海外販売連携), launched on July 7, 2026. According to a press release from STORES, Inc., the feature connects STORES Online Store with WorldShopping BIZ, a cross-border proxy purchasing service run by ZIGZAG Inc., so that shoppers in 228 countries and regions can buy your products.
+
+ZIGZAG places the order on behalf of the overseas shopper. All the shop has to do is ship the ordered item to a designated warehouse in Japan, and the transaction is complete. ZIGZAG handles international shipping, packing, customs clearance, overseas payments, fraud prevention, collecting and paying overseas consumption taxes, and customer inquiries in Japanese, English, Chinese (Traditional and Simplified), and Korean.
+
+Costs at the time of the July 2026 announcement:
+
+1. WorldShopping BIZ's setup fee (normally ¥33,000 incl. tax) and monthly fee (normally ¥5,500 incl. tax) are waived under the partnership between STORES and ZIGZAG
+2. The overseas shopper pays a proxy purchasing fee of 10% of the item price plus domestic shipping
+3. The usual STORES Online Store fees still apply
+
+To get started, you apply for WorldShopping BIZ, receive a token, and save it on the "Overseas Sales Integration" settings page in the STORES dashboard. Some products can't be handled, so check before applying. For more detail, see "[Can You Sell Overseas on STORES? English Support and Shipping, Explained](/en/ec-guide/cross-border/stores-cross-border-shipping-status/)."
+
+The main advantage is that you can take overseas orders with almost no change to your domestic operations. Getting overseas shoppers to find your shop in the first place, however, is something you need to plan separately. If you want to run overseas SEO content and email newsletters as well, one option is to pair it with Leap, a cross-border ecommerce tool that lets AI handle marketing too.
+
 ## FAQ
 
 **Q. Can I start on STORES for free?**
@@ -59,17 +75,21 @@ A. Yes. Even without a physical store, you can make full use of the free design 
 
 A. Since the processing fee rates differ, which one comes out ahead depends on your expected monthly sales and order volume. A practical approach is starting with the Free plan to test things out, then considering a switch to Standard once sales pick up.
 
+**Q. Can a shop built on STORES take orders from overseas customers?**
+
+A. Yes — once you set up the Overseas Sales Integration, you can take orders from 228 countries and regions. WorldShopping BIZ buys on the overseas shopper's behalf, and your shop only needs to ship the item to a designated warehouse in Japan. WorldShopping BIZ's setup and monthly fees are waived, and the overseas shopper pays a 10% fee on the item price plus domestic shipping (as of the July 2026 announcement).
+
 ## Summary and Key Takeaway
 
 "What is STORES" isn't fully answered by calling it just an "online store builder." Understanding both sides — how easy it is to start with no setup or monthly cost, and how it's designed to connect online and offline through POS integration — reveals the kind of business it actually fits well. Building the online store itself is only a means toward growing the business; the real question to face, once the design and features are in place, is how you'll actually grow sales from there.
 
 For more on this, see our analysis of the acquisition strategies behind shops actually running on STORES.
 
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
 - [STORES Online Store Features - STORES official](https://stores.fun/ec)
 - [STORES Pricing Plans - STORES official](https://stores.fun/pricing)
 - ["STORES Register" Sees 15x Growth in Adopting Stores in One Year; 76.4% Use Inventory-Linking Between Physical and Online Channels - EC no Mikata](https://ecnomikata.com/ecnews/35406/)
+- [STORES Online Store Launches "Overseas Sales Integration," Enabling Sales to 228 Countries and Regions With No Setup or Monthly Fee - PR TIMES (STORES, Inc.)](https://prtimes.jp/main/html/rd/p/000000277.000031375.html)

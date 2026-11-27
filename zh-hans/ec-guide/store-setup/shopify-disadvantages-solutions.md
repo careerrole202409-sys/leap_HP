@@ -100,19 +100,32 @@ Shopify合作伙伴飞跃株式会社拥有350个以上Shopify网站建设实绩
 
 解决这一问题最有效的方法，是以Shopify Payments（内置支付功能）作为主力支付方式——使用Shopify Payments不会产生交易手续费。日本特有的支付方式（便利店付款、先买后付、PayPay）应定位为补充选项，明确其在总销售额中的占比，并以此作为套餐选择的参考依据。此外，由于月销售额越高、升级套餐所节省的交易手续费越可观，建议随业务增长阶段定期审视并调整套餐档位。
 
-### 常见问题
+## 如何用Shopify向海外销售
 
-**Q1. Shopify可以完全用日语运营吗？**
+用Shopify向海外销售时，除了上文针对日本国内的应对措施外，还需要提前确认两点："货币兑换手续费"和"可自动翻译的语言数量"。这两点如果等到开始海外销售后才发现，往往会增加成本或工作量（截至2026年11月）。
 
-管理后台和主要操作均已支持日语。但App Store中仍有部分仅支持英语的App，建议在安装前确认目标App是否提供日语支持。截至2026年6月，Shopify尚未提供日语电话客服，遇到疑问时建议通过帮助中心、在线客服，或向国内Shopify合作伙伴咨询。
+1. **货币兑换手续费**：通过Shopify Payments收取与结算（Payout）币种不同的货币付款时，会发生货币兑换并产生手续费。根据Shopify帮助中心的说明，费率取决于店铺所在国家：美国为1.5%，法国及其他所有支持Shopify Payments的地区为2%。即使退款，货币兑换手续费和信用卡手续费也不会退还。
+2. **可自动翻译的语言数量**：使用Shopify官方翻译应用"Translate & Adapt"时，位于美国、英国、德国、法国等14个适用国家的店铺，除默认语言外最多可自动翻译8种语言；其他国家的店铺最多只能自动翻译2种语言。日本不在适用国家名单内（应用中显示"Translate now"的店铺，无论所在国家均可使用最多8种语言）。此外，退货、隐私等法律政策无法自动翻译，需要手动翻译。
 
-**Q2. Shopify的App月费大概是多少？**
+如果计划以3种以上语言销售，或预计会有较多当地货币付款，建议在"缺点3"介绍的总成本测算中，一并计入货币兑换手续费和翻译应用费用。如果不只是翻译，还希望通过对话完成面向目标市场的本地化，连获客都能交给AI的跨境电商工具Leap也是一个选择。
 
-因安装的App数量和种类不同，差异较大。若同时安装SEO优化、评价、邮件营销、多语言支持、订阅购买等多个App，月费合计达到数万日元的情况并不罕见。建议养成习惯：在安装前列出所需功能清单、逐一核算各App月费，并确认是否可以通过升级Shopify套餐来原生满足部分需求，这是控制App成本的基本功。
+## 常见问题（FAQ）
 
-**Q3. 可以在Shopify上添加便利店付款和先买后付功能吗？**
+**Q. Shopify可以完全用日语运营吗？**
 
-可以，通过与外部支付代理服务商签约即可实现。KOMOJU、SB Payment Service、GMO Epsilon等是常见的选择。需要注意的是，使用外部支付会触发Shopify的交易手续费。标准做法是以Shopify Payments为主力支付方式，将日本特有的支付方式作为补充叠加接入——这样既能控制成本，又能兼顾用户体验的便利性。
+A. 管理后台和主要操作均已支持日语。但App Store中仍有部分仅支持英语的App，建议在安装前确认目标App是否提供日语支持。截至2026年6月，Shopify尚未提供日语电话客服，遇到疑问时建议通过帮助中心、在线客服，或向国内Shopify合作伙伴咨询。
+
+**Q. Shopify的App月费大概是多少？**
+
+A. 因安装的App数量和种类不同，差异较大。若同时安装SEO优化、评价、邮件营销、多语言支持、订阅购买等多个App，月费合计达到数万日元的情况并不罕见。建议养成习惯：在安装前列出所需功能清单、逐一核算各App月费，并确认是否可以通过升级Shopify套餐来原生满足部分需求，这是控制App成本的基本功。
+
+**Q. 可以在Shopify上添加便利店付款和先买后付功能吗？**
+
+A. 可以，通过与外部支付代理服务商签约即可实现。KOMOJU、SB Payment Service、GMO Epsilon等是常见的选择。需要注意的是，使用外部支付会触发Shopify的交易手续费。标准做法是以Shopify Payments为主力支付方式，将日本特有的支付方式作为补充叠加接入——这样既能控制成本，又能兼顾用户体验的便利性。
+
+**Q. 在Shopify上用外币销售，会产生额外手续费吗？**
+
+A. 会。通过Shopify Payments收取与结算币种不同的货币付款时，会产生货币兑换手续费。Shopify帮助中心列出的费率为：美国店铺1.5%，法国及其他所有支持Shopify Payments地区的店铺2%（截至2026年11月）。由于退款时该手续费不予退还，建议将其纳入海外销售的利润测算。
 
 ### 总结：正确理解Shopify缺点的方式，是将"应对策略"一并纳入
 
@@ -120,12 +133,7 @@ Shopify合作伙伴飞跃株式会社拥有350个以上Shopify网站建设实绩
 
 正确的思考框架不是"有缺点就不该用"，而是"在充分理解缺点的基础上，结合自身的业务规模、技术资源和增长战略，制定切实可行的导入计划"。无论是面向日本国内市场，还是规划跨境出海，Shopify目前仍是通用性最强的电商平台之一，这一点毋庸置疑。
 
-Leap持续输出基于Shopify的跨境EC建站支持、多语言营销及海外拓展战略等实用资讯。如需了解与其他平台的比较分析或跨境EC整体策略，欢迎参阅以下文章。
-
-### Leap推荐阅读
-
-- [EC运营指南](https://www.leap.site/zh-hans/ec-guide)
-- [海外业务博客](https://www.leap.site/zh-hans/blog)
+Leap是一款连获客都能交给AI的跨境电商工具。只需通过对话，即可完成多语言、多币种跨境电商网站的搭建，以及SEO、邮件营销等海外获客工作。
 
 ### 参考资料
 
@@ -144,3 +152,5 @@ Leap持续输出基于Shopify的跨境EC建站支持、多语言营销及海外�
 - [TSUN | Shopify接入便利店付款的优缺点](https://tsun.ec/blogs/articles/shopify-convenience-store-payment-pros-cons)
 - [Shopify官方博客 | 如何选择支付方式](https://www.shopify.com/jp/blog/payments-list)
 - [SB Payment Service | 什么是Shopify Payments？](https://www.sbpayment.jp/support/ec/shopify-payment2/)
+- [Fees and costs for selling in local currencies - Shopify帮助中心](https://help.shopify.com/zh-CN/manual/markets/pricing/fees)
+- [Translating content automatically using the Translate & Adapt app - Shopify帮助中心](https://help.shopify.com/zh-CN/manual/international/languages/translate-adapt-app/automatic-translation)

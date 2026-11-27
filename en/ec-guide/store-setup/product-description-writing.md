@@ -21,13 +21,11 @@ author_bio: A team of experts in overseas business expansion
 
 "Product descriptions are an SEO task." "Product descriptions are a conversion task." These are often treated as separate goals — but both can be achieved with a single well-structured approach. The three keys are: (1) write using a three-part structure — hook copy, body copy, closing copy; (2) organize your information with the 6W2H method before you start writing; and (3) place your target keywords naturally in the title and opening. This guide walks through ready-to-use templates and, for teams producing descriptions at scale, practical tips on designing AI prompts that keep brand tone consistent across your entire catalog.
 
-
 ## Why Product Descriptions Directly Affect E-Commerce Revenue
 
 Product descriptions serve three functions at once: providing information that helps customers find you through search (SEO); persuading visitors to complete a purchase (conversion); and disclosing enough detail to prevent post-purchase complaints (customer satisfaction). In a physical store, shoppers can pick up an item, feel the texture, and ask a staff member questions. On an e-commerce site, the only information available to the buyer is photos and text — which means the quality of your product description has a direct impact on both your conversion rate and your search ranking.
 
 Product descriptions have also become increasingly important for SEO as Google's algorithm continues to weight content originality and usefulness to users. Pages that describe product features and use cases in specific, concrete detail consistently outperform pages built on short, template-style text — in both search rankings and purchase decisions. With mobile now the dominant shopping device, structuring copy so it reads cleanly on a small screen has become equally essential.
-
 
 ## The Core Three-Part Structure: Hook → Body → Closing
 
@@ -42,7 +40,6 @@ Body copy is the heart of your product description — aim for around 400–650 
 ### Closing Copy: Give the Reader a Final Nudge
 
 Closing copy provides the last push toward purchase. Phrases like "limited-time offer" or "online exclusive," alongside practical information buyers want right before checkout — shipping timelines, return policy — smooth the path to a decision. This is also where it's worth resisting unsubstantiated claims ("perfect," "best in the industry," "guaranteed results"). Fact-based copy not only builds trust — it prevents the complaints that vague promises tend to generate.
-
 
 ## Organizing Information with the 6W2H Method
 
@@ -85,13 +82,11 @@ How Much: Better value as a bundle than single-unit
 
 Building a short phrase for each element first — then combining them — produces copy that covers everything and reads cleanly.
 
-
 ## How to Place SEO Keywords Effectively
 
 To capture SEO value from your product descriptions, keyword placement matters as much as keyword selection. Start with your product page title: combine the generic search term buyers type with your product's differentiating characteristic. Then work your primary keyword into the first 100 characters of the body text naturally — both search engines and readers use the opening to understand what a page covers. Presenting details like materials, dimensions, and use cases as bullet points also captures keyword variety while keeping the page easy to scan.
 
 That said, stuffing keywords into the copy makes it unnatural and drives readers away — which hurts both conversion and search ranking. The guiding principle is always to choose words that belong in the copy because they answer the buyer's actual questions, not because they're search terms you want to rank for.
-
 
 ## When to Lead with Benefits vs. When to Lead with Specs
 
@@ -101,13 +96,11 @@ Spec-led copy foregrounds objective data: materials, dimensions, technical capab
 
 In practice, most products call for a blend of both. "Light and easy to carry anywhere (benefit) — 190g, 6.6cm diameter (spec)" pairs emotional appeal with concrete data, and the combination is more persuasive than either approach alone. The key is understanding which type of motivation your product primarily triggers, then weighting the two approaches accordingly.
 
-
 ## Designing AI Prompts for Consistent, Scalable Product Descriptions
 
 When you're producing descriptions across a large catalog, AI can dramatically reduce time per item — but prompt quality determines output quality, and vague prompts produce inconsistent copy. Building a reusable prompt template for your brand upfront lets you maintain consistent tone across hundreds of descriptions by swapping in only the product-specific information.
 
 Your prompt template should specify: (1) brand voice and style guidelines (formal vs. casual tone, emoji policy); (2) the 6W2H product information for the specific item; (3) target character counts (hook: 30–50, body: 400–650); (4) expressions to avoid (unsubstantiated superlatives, prohibited terms); and (5) the target customer profile. With this framework established, producing a new description means filling in product data — the AI handles the structure. Always build a human review step into the process to catch any factual inaccuracies or inflated claims before publication.
-
 
 ## Pre-Publication Checklist
 
@@ -121,31 +114,43 @@ Before publishing any product description, run through this list to make sure no
 
 Product descriptions that honestly disclose limitations tend to earn more buyer trust — and result in fewer returns and complaints. Presenting only the upsides isn't just misleading; it erodes the long-term credibility a store needs to grow.
 
+## Writing Product Descriptions When Selling Internationally
+
+When you sell internationally, product descriptions should be written in full in the target market's language, not partially translated from Japanese, and each language should be published as a separate page. Google explains that it determines a page's language from its visible content and does not use code-level language information such as lang attributes, or the URL (Google Search Central, as of November 2026).
+
+### One Language per Page, Including the Main Copy
+
+Google Search Central recommends using different URLs for each language version of a page. It also advises using a single language for each page's content and navigation, and avoiding side-by-side translations. Pages where only the boilerplate text is translated while most of the content stays in one language are described as a poor experience for users. Applied to product descriptions, this means writing the hook, body, and closing copy entirely in the target language and using hreflang to tell Google which pages correspond across languages.
+
+### Rework the 6W2H for Buyers in Each Market
+
+Two of the 6W2H items, "Whom" and "How Much," change when the country changes. Show prices in the local currency, and alongside centimeters and kilograms, check which units buyers in that market use and add them, which helps prevent sizing mismatches after purchase. For keywords, choose the words local buyers actually search for rather than direct translations of Japanese terms.
+
+If you want to handle product pages and localization for each language in one place, tools such as Leap, a cross-border ecommerce tool that lets AI handle marketing too, can suggest and apply localization changes for each target market.
 
 ## FAQ
 
-### What's the ideal length for a product description
+**Q. What's the ideal length for a product description**
 
-Aim for 400–650 characters for the body copy — a range that balances information density and readability. That said, the right length depends on the product. For apparel, where sizing and material details are critical, longer copy is often better at preventing post-purchase mismatches. Rather than hitting a fixed character count mechanically, prioritize covering all relevant 6W2H elements without gaps or padding.
+A. Aim for 400–650 characters for the body copy — a range that balances information density and readability. That said, the right length depends on the product. For apparel, where sizing and material details are critical, longer copy is often better at preventing post-purchase mismatches. Rather than hitting a fixed character count mechanically, prioritize covering all relevant 6W2H elements without gaps or padding.
 
-### How often should I include SEO keywords in a product description
+**Q. How often should I include SEO keywords in a product description**
 
-There's no fixed number, but aim to include your primary keyword naturally at least once in the title and in the first 100 characters of the body text. Repeating the same keyword awkwardly makes the copy harder to read and can negatively affect your search ranking. Use synonyms and related terms to maintain natural flow while covering your keyword territory.
+A. There's no fixed number, but aim to include your primary keyword naturally at least once in the title and in the first 100 characters of the body text. Repeating the same keyword awkwardly makes the copy harder to read and can negatively affect your search ranking. Use synonyms and related terms to maintain natural flow while covering your keyword territory.
 
-### How do I keep quality consistent when using AI to write product descriptions at scale
+**Q. How do I keep quality consistent when using AI to write product descriptions at scale**
 
-Build one prompt template that captures your brand voice, writing style, expressions to avoid, and target audience. For each product, swap in the 6W2H product-specific information. Pair that with a mandatory human review step before publication to catch factual errors and any exaggerated claims that slip through. That combination — consistent prompt, consistent review — delivers scalable output without sacrificing quality.
+A. Build one prompt template that captures your brand voice, writing style, expressions to avoid, and target audience. For each product, swap in the 6W2H product-specific information. Pair that with a mandatory human review step before publication to catch factual errors and any exaggerated claims that slip through. That combination — consistent prompt, consistent review — delivers scalable output without sacrificing quality.
 
+**Q. Can I publish machine-translated product descriptions as they are for overseas buyers?**
+
+A. It is safer to have a person review them before publishing. Google's spam policies list generating many pages with generative AI or similar tools without adding value for users, and scraping content and generating many pages through techniques such as translation, as examples of scaled content abuse. Before publishing a translated description, check that product details such as size and materials are correct and that the wording reads naturally to local buyers.
 
 ## Summary
 
-Product descriptions don't need to be written twice — once for SEO and once for conversion. Combining the three-part hook/body/closing structure with the 6W2H information framework produces copy that search engines surface and buyers trust. This is especially important for cross-border and multilingual e-commerce, where the information buyers need and the nuances of expression vary by market — and where a straight translation often fails to carry the original copy's persuasive weight. Leap supports multilingual site and e-commerce builds that include locally adapted product pages written for each target market, not translated from a single source. If you're looking to maintain product description quality across languages while launching or scaling cross-border e-commerce, Leap's services are worth exploring.
+Product descriptions don't need to be written twice — once for SEO and once for conversion. Combining the three-part hook/body/closing structure with the 6W2H information framework produces copy that search engines surface and buyers trust. This is especially important for cross-border and multilingual e-commerce, where the information buyers need and the nuances of expression vary by market — and where a straight translation often fails to carry the original copy's persuasive weight.
 
-We publish a wide range of practical guides on overseas business and e-commerce. Browse our other articles for more.
-
-[Leap Overseas Business Blog](https://www.leap.site/en/blog)
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
-
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -155,3 +160,5 @@ We publish a wide range of practical guides on overseas business and e-commerce.
 - [EC Force "How to Create Product Copy"](https://ec-force.com/blog/d2c_no387)
 - [ecbeing "AI-Assisted Content Production"](https://www.ecbeing.net/ai/contents/detail/61)
 - [Omokaji WEB "AI Tools for EC Sites"](https://omokaji-web.co.jp/tool/ai_ecommerce/)
+- [Managing Multi-Regional and Multilingual Sites - Google Search Central](https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites)
+- [Spam Policies for Google Web Search - Google Search Central](https://developers.google.com/search/docs/essentials/spam-policies)

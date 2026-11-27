@@ -58,6 +58,25 @@ ABC analysis is a method for sorting products into three tiers — A, B, and C �
 
 Fast Retailing's UNIQLO is known for its "Ariake Project," a supply chain initiative that unifies store and e-commerce inventory data in real time. It's a good example of shifting from "defensive" inventory management — patching stockouts after they happen — to "offensive" design that prevents shortages in the first place through demand forecasting and better data infrastructure. Even a small or mid-sized e-commerce operator can move toward that same mindset by putting pieces like safety stock calculations and reorder alerts in place one at a time. And as tools mature, it's increasingly possible to carry that inventory design work through to product listings, advertising, and customer support in one continuous flow, working through conversation with AI.
 
+## Preventing Stockouts When You Also Sell Internationally
+
+When you also sell internationally, the basic approach to preventing stockouts is to plan safety stock and reorder points separately for each place you hold inventory. If you ship directly from your home country, domestic and international orders can share the same stock. If you hold inventory in an overseas warehouse, however, replenishment takes extra days for international shipping and customs clearance, so you need more safety stock for the same sales pace.
+
+Using this article's basic formula (safety stock = days needed to restock × units sold per day), the difference looks like this (the days and sales figures are hypothetical, for illustration only):
+
+| Inventory location | Days to restock | Units sold per day | Safety stock guideline |
+|---|---|---|---|
+| Domestic warehouse | 10 days to procure | 5 | 50 units |
+| Overseas warehouse | 10 days to procure + 30 days for international shipping and customs = 40 days | 5 | 200 units |
+
+When managing inventory for international sales, keeping these three points in mind makes stockouts easier to prevent:
+
+1. **Manage inventory by location**: In Shopify, you can register each physical place where you sell products, fulfill orders, or stock inventory as a "location" and track inventory separately at each one. You can also set order routing rules that automatically assign online orders based on inventory availability and proximity to the customer.
+2. **Set reorder points per location**: Set reorder points (expected sales during the lead time + safety stock) separately for domestic and overseas warehouses, and include international shipping and customs days for the overseas warehouse.
+3. **Don't show products in countries you can't serve**: If you keep showing a product in a country where you can't supply stock, the only option when an order comes in is to cancel it, which damages customer trust just like a stockout.
+
+If you want to set sales countries for each product and hide products in other countries, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option. In Leap, you can add and edit products and manage inventory through chat and forms.
+
 ## FAQ
 
 **Q. How often should I review my safety stock levels?**
@@ -72,14 +91,17 @@ A. If your product count is small and your monthly revenue is still modest, spre
 
 A. Discounting can be useful for clearing excess inventory, but it doesn't address stockouts themselves. Frequent discounting also risks lowering the price customers treat as your baseline. For stockout situations specifically, prioritizing tactics that preserve the customer relationship — like clear restock dates and notification features — is the better move.
 
+**Q. When I also sell internationally, should I split inventory between domestic and overseas stock?**
+
+A. If you ship directly from your home country, sharing one pool of stock across domestic and international orders makes stockouts easier to prevent. If you hold inventory in an overseas warehouse, manage inventory and safety stock separately for each location, and include the international shipping and customs days needed to restock in your reorder points.
+
 ## Summary and Key Takeaway
 
-A stockout is a triple hit: it costs you the immediate sale, risks losing the customer's shopping habit to a competitor, and — if you sell across multiple channels — can even damage your seller reputation through cancellations. Building out a safety stock formula and reorder-alert system, designing for the moments when a stockout does happen with clear restock dates and notifications, and applying ABC analysis to prioritize your management effort — each of these pieces moves you from reacting to stockouts toward preventing them by design. Leap aims to support that entire process — from inventory design through product listings, SEO, advertising, and customer support — as an AI E-Commerce Agent that lets teams spend their time on what actually grows the business, all through conversation with AI.
+A stockout is a triple hit: it costs you the immediate sale, risks losing the customer's shopping habit to a competitor, and — if you sell across multiple channels — can even damage your seller reputation through cancellations. Building out a safety stock formula and reorder-alert system, designing for the moments when a stockout does happen with clear restock dates and notifications, and applying ABC analysis to prioritize your management effort — each of these pieces moves you from reacting to stockouts toward preventing them by design.
 
 We publish a wide range of practical guides on e-commerce operations, cross-border expansion, and website building. Browse our other articles for more.
 
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -90,3 +112,4 @@ We publish a wide range of practical guides on e-commerce operations, cross-bord
 - [Knowledge on E-Commerce Inventory Management - Kutikomi](https://kutikomi.com/retailknowledge/ec_inventory_management/)
 - [Handling Stockout Complaints - Web Seisaku](https://webseisaku.site/blog/stock-claim-ec/)
 - [Apparel E-Commerce Inventory Management - ebisumart](https://ebisumart.com/blog/apparel-inventory/)
+- [Locations - Shopify Help Center](https://help.shopify.com/en/manual/locations)

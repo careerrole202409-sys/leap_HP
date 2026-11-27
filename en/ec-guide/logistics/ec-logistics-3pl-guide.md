@@ -144,19 +144,33 @@ STOCKCREW (operated by KEYCREW Co., Ltd.) is a 3PL provider with API integration
 
 E-Logi is one of Japan's most established EC-specialized 3PL providers, with an extensive track record across apparel, general merchandise, and food products. Their particular strengths are in value-added services: distribution processing, gift wrapping, and bundle assembly. E-Logi has handled fulfillment for major EC brands, and is frequently cited as a top-tier option for operators with complex packaging requirements or high-volume needs.
 
-### FAQ
+## Using a 3PL When You Also Sell Overseas
+
+Whether you can hand international shipping to your domestic 3PL comes down to one thing: whether the provider supports international delivery. If overseas orders can ship from the same warehouse as domestic ones, you can manage both from a single pool of inventory without splitting stock. When choosing a provider, it's worth checking these three points.
+
+1. Available shipping services: Japan Post's EMS reaches more than 120 countries and regions, with a standard limit of 30 kg per item, a maximum length of 1.5 m, and length plus girth of up to 3 m (limits vary by country). For small items up to 2 kg there is the Small Packet service, plus International Air Packet, which adds tracking (as of November 2026). Which international postal and express courier services a provider supports determines what sizes you can ship and what it will cost.
+2. Customs declarations and labels: When you mail goods abroad, a customs declaration is required. Japan Post has senders create labels through its International Mail My Page Service, so confirm whether the provider handles this work or whether you'll do it in-house.
+3. Destination restrictions: Depending on the destination country or region, there may be limits on weight or contents. Check with your provider that your products can actually be sent to your main target markets.
+
+While overseas orders are still few, a sensible sequence is to ship by international mail from your domestic 3PL and revisit your shipping setup once volume grows. With Leap, a cross-border ecommerce tool that lets AI handle marketing too, you can choose which countries each product is sold in, and check order status or handle shipping and cancellations by chatting with the AI.
+
+## FAQ
 
 **Q. What's the minimum monthly order volume to work with a 3PL provider?**
 
-Requirements vary by provider. Services like OpenLogi (a Japan-based 3PL platform) operate with no minimum order volume and no setup fee — suitable for small-scale starting points. Other providers are structured for 200+ monthly orders and above. A practical rule of thumb: when in-house packing exceeds 10 hours per week (typically around 50+ monthly orders), it's worth getting quotes from two or three providers. Actual cost-effectiveness depends heavily on product size, storage volume, and order mix, so bring your specific numbers when requesting a simulation.
+A. Requirements vary by provider. Services like OpenLogi (a Japan-based 3PL platform) operate with no minimum order volume and no setup fee — suitable for small-scale starting points. Other providers are structured for 200+ monthly orders and above. A practical rule of thumb: when in-house packing exceeds 10 hours per week (typically around 50+ monthly orders), it's worth getting quotes from two or three providers. Actual cost-effectiveness depends heavily on product size, storage volume, and order mix, so bring your specific numbers when requesting a simulation.
 
 **Q. How long does it take to get up and running after signing a contract?**
 
-From contract signing through inventory transfer, system integration setup (API connections or CSV import configuration), and initial test shipments, the ramp-up period is typically two to four weeks. Switching providers in the lead-up to a peak season carries risk — inventory movement timing and initial configuration issues can compound. The recommended approach is to transition during a normal-demand period, and to start with a subset of SKUs or channels to validate the setup before going fully live.
+A. From contract signing through inventory transfer, system integration setup (API connections or CSV import configuration), and initial test shipments, the ramp-up period is typically two to four weeks. Switching providers in the lead-up to a peak season carries risk — inventory movement timing and initial configuration issues can compound. The recommended approach is to transition during a normal-demand period, and to start with a subset of SKUs or channels to validate the setup before going fully live.
 
 **Q. We sell on multiple EC platforms. Can everything be managed from one place?**
 
-Most 3PL providers support API integrations with Japan's major marketplaces — Rakuten Ichiba, Amazon Japan, Yahoo! Shopping, BASE, and Shopify. Centralizing order data means all orders route through the same warehouse regardless of which platform they came from, eliminating split inventory management and duplicate data entry. However, coverage varies by provider — confirm that every channel you sell through is supported before committing. The initial cart-to-WMS integration setup will require some technical coordination, so plan to use the provider's technical support during onboarding.
+A. Most 3PL providers support API integrations with Japan's major marketplaces — Rakuten Ichiba, Amazon Japan, Yahoo! Shopping, BASE, and Shopify. Centralizing order data means all orders route through the same warehouse regardless of which platform they came from, eliminating split inventory management and duplicate data entry. However, coverage varies by provider — confirm that every channel you sell through is supported before committing. The initial cart-to-WMS integration setup will require some technical coordination, so plan to use the provider's technical support during onboarding.
+
+**Q. Can a 3PL also handle international shipping for me?**
+
+A. Yes, if the provider supports international shipping, it can ship overseas orders from the same warehouse as your domestic ones. However, providers differ in which services they support (international mail such as EMS, or express couriers), whether they create the labels needed for customs declarations on your behalf, and whether any of your products can't be sent to certain countries. It's best to share your main destination countries and products when requesting a quote and confirm these points up front.
 
 ### Conclusion: Fulfillment Automation Is Something You Can Start Now
 
@@ -166,9 +180,7 @@ In an environment of rising logistics costs driven by Japan's 2024 Logistics Ref
 
 The practical first step is requesting quotes from two or three providers and running your own break-even simulation. Getting started tends to feel easier than it looks from the outside.
 
-Leap publishes ongoing practical content for EC operators and businesses pursuing cross-border expansion — covering logistics, operations, and overseas marketing. If you're exploring multilingual EC site builds or serious entry into international markets, explore the articles below.
-
-For cross-border EC and overseas selling resources: https://www.leap.site/en/blog/
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ### References
 
@@ -182,3 +194,6 @@ For cross-border EC and overseas selling resources: https://www.leap.site/en/blo
 - [Japan METI: E-Commerce Market Survey (FY2024)](https://www.meti.go.jp/policy/it_policy/ec/)
 - [Japan MLIT: Comprehensive Logistics Policy Outline](https://www.mlit.go.jp/seisakutokatsu/freight/)
 - [Japan MLIT: 3PL Business Comprehensive Support](https://www.mlit.go.jp/seisakutokatsu/freight/butsuryu03340.html)
+- [EMS - Japan Post](https://www.post.japanpost.jp/service/send/oversea/list/delivery/ems/)
+- [International Mail Services: Overview and Comparison - Japan Post](https://www.post.japanpost.jp/service/send/oversea/list/)
+- [How to Send International Parcels - Japan Post](https://www.post.japanpost.jp/service/send/oversea/use/flow/parcel.html)

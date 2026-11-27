@@ -24,7 +24,7 @@ Most people comparing BASE, STORES, Color Me Shop, and Shopify want to know, wit
 
 ## Basic Specs of the Four Major Platforms
 
-BASE's Standard plan has no setup fee or monthly fee, charging roughly 6.6% of sales plus ¥40 per order in combined processing and service fees — a performance-based model. STORES offers a Free plan (¥0/month) and a Standard plan (from ¥3,300/month). Color Me Shop runs on fixed monthly plans starting with its Regular plan (from ¥4,950/month), and its official site states "0 yen sales commission." Shopify is a globally dominant e-commerce platform, with a cost structure built around a monthly plan fee, payment processing fees, and various app usage fees.
+BASE's Standard plan has no setup fee or monthly fee, charging roughly 6.6% of sales plus ¥40 per order in combined processing and service fees — a performance-based model. STORES offers a Free plan (¥0/month) and a Standard plan (from ¥3,300/month). Color Me Shop runs on fixed monthly plans starting with its Regular plan (from ¥5,940/month including tax, as of November 2026), and its official site states "0 yen sales commission." Shopify is a globally dominant e-commerce platform, with a cost structure built around a monthly plan fee, payment processing fees, and various app usage fees.
 
 ## How Each Platform Handles Overseas Shipping, Multiple Languages, and Multi-Currency Payment
 
@@ -38,7 +38,7 @@ STORES handles cross-border sales through an integration with "WorldShopping BIZ
 
 ### Color Me Shop: "ZenLink" Automatically Enabled Across All Shops
 
-Color Me Shop made its cross-border service "ZenLink" a standard feature starting July 22, 2025. According to its official announcement, the feature is automatically enabled for essentially all shops, charges sellers no fee at all, and has overseas shipping costs and the service fee borne by the overseas buyer instead. It supports 19 languages and more than 150 payment methods. Sellers need no special multilingual setup or overseas-sales preparation — ZenGroup handles overseas orders as a proxy purchase just like a domestic order, so sellers simply ship to their usual domestic logistics center.
+Color Me Shop made its cross-border service "ZenLink" a standard feature starting July 22, 2025. According to its official announcement, the feature is automatically enabled for essentially all shops, charges sellers no fee at all, and has overseas shipping costs and the service fee borne by the overseas buyer instead. It supports 19 languages and more than 150 payment methods. Sellers need no special multilingual setup or overseas-sales preparation — ZenGroup handles overseas orders as a proxy purchase just like a domestic order, so sellers simply ship to their usual domestic logistics center. For the options and costs of selling overseas on Color Me Shop, see our guide on [how to sell internationally on Color Me Shop](/en/ec-guide/cross-border/colorme-shop-international-selling/).
 
 ### Shopify: Cross-Border Built In as a Standard Platform Feature
 
@@ -56,7 +56,22 @@ On payment-method coverage, Color Me Shop's ZenLink states support for more than
 
 What BASE, STORES, and Color Me Shop share is an approach of "outsourcing overseas shipping and multilingual handling to a specialized external service," rather than making the platform's own e-commerce functionality multilingual and multi-currency. With any of these three, a shop that's been running domestically can start accepting overseas orders with almost no additional setup work. Shopify takes more effort to configure Markets yourself, but in exchange offers the freedom to build out pricing display and product pages down to the detail for local customers. Which approach fits depends on whether you want to "try cross-border e-commerce on a small scale first" or "seriously build out overseas markets" — matching the platform to that phase of your overseas expansion is what leads to a choice you won't regret.
 
-Comparing the overseas-sales features of these four platforms is an important first step, but actually running cross-border e-commerce brings up practical work that platform features alone don't solve — multilingual product descriptions, responding to inquiries from overseas customers, and more. Leap's AI E-Commerce Agent is built with an eye toward supporting everything from domestic sales through cross-border e-commerce and overseas expansion, with the idea that AI can support this kind of overseas-specific practical work too, through conversation.
+Comparing the overseas-sales features of these four platforms is an important first step, but actually running cross-border e-commerce brings up practical work that platform features alone don't solve — multilingual product descriptions, responding to inquiries from overseas customers, and more. Leap, a cross-border ecommerce tool that lets AI handle marketing too, is built with an eye toward supporting everything from domestic sales through cross-border e-commerce and overseas expansion, with the idea that AI can support this kind of overseas-specific practical work too, through conversation.
+
+## Selling Internationally with the Four Platforms: Getting Found in Overseas Search
+
+Whichever of the four platforms you choose, its overseas-sales feature handles the part where visitors from abroad can buy; getting people overseas to find your shop in the first place is a separate task. To be found in overseas search results, the basic approach is to prepare your pages according to Google's published guidelines for multilingual sites.
+
+Google Search Central mainly recommends the following (as of November 2026):
+
+1. Use a separate URL for each language version (subdirectories, subdomains, country-code domains, and so on). Switching the displayed language only through cookies or browser settings is not recommended
+2. Use hreflang or sitemaps to tell Google how the language versions of each page relate to one another
+3. Don't automatically redirect visitors to a different language version based on their guessed language or location
+4. Keep the content and navigation of each page in a single language, and avoid translating only the boilerplate text
+
+Measured against these guidelines, a setup like Shopify Markets, which lets you give each language its own URL such as a subfolder, makes it easier to prepare for overseas search. Relying on browser auto-translation, or showing a purchase screen only when someone visits from abroad, helps reduce friction at checkout, but it is a different thing from being found when people search in their own language.
+
+Another option is to keep your domestic shop as it is and run a separate overseas site that attracts visitors with articles in the local language. With Leap, a cross-border ecommerce tool that lets AI handle marketing too, AI can write multilingual blog articles after asking you about your target readers and other details in chat.
 
 ## FAQ
 
@@ -72,14 +87,17 @@ A. Not necessarily one way or the other. BASE, STORES, and Color Me Shop let you
 
 A. Coverage varies by platform. STORES's WorldShopping BIZ covers 228 countries and regions, and Color Me Shop's ZenLink supports 19 languages and more than 150 payment methods. For BASE's "Easy Overseas Sales" and Shopify Markets, it's worth checking each platform's help center for the latest coverage details.
 
+**Q. If I use the overseas-sales features of these four platforms, will my shop show up in overseas search results?**
+
+A. Turning on an overseas-sales feature does not by itself make your shop more likely to appear in overseas search. These features are mechanisms that let visitors from abroad complete a purchase. Google recommends giving each language its own URL, using hreflang to indicate language versions, and not redirecting automatically by language or location, so consider separately whether to prepare local-language pages for search.
+
 ## Summary and Key Takeaway
 
 The fact that BASE, STORES, and Color Me Shop have each rushed, between 2025 and 2026, to build out cross-border features as standard functionality at no added cost shows that the barrier to overseas expansion is steadily dropping for shops that started small domestically. At the same time, Shopify's option of building things out directly on the platform itself still holds real value for businesses aiming at serious overseas market development. The question worth asking isn't "does this platform support cross-border e-commerce" — it's "how deeply do we actually want to build out overseas markets." Comparing the four through that lens is what leads to a platform choice you won't regret.
 
-For more on this, see our comparison of BASE, STORES, and Shopify on cross-border readiness specifically, and our detailed guide to migrating from BASE to Shopify.
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+For more on this, see our comparison of BASE, STORES, and Shopify on cross-border readiness specifically, and our detailed guide to migrating from BASE to Shopify.
 
 ## References
 
@@ -88,3 +106,4 @@ For more on this, see our comparison of BASE, STORES, and Shopify on cross-borde
 - [Cross-Border Service "ZenLink" Now Standard on Color Me Shop by GMO Pepabo - Color Me Shop Official Announcement](https://shop-pro.jp/news/20250722-zenlink/)
 - [Color Me Shop Pricing Plans - Color Me Shop official](https://shop-pro.jp/plans/)
 - [Shopify Markets - Shopify official](https://www.shopify.com/jp/markets)
+- [Managing Multi-Regional and Multilingual Sites - Google Search Central](https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites)

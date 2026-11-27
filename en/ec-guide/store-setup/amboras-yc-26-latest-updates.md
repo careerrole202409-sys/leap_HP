@@ -48,6 +48,21 @@ Since there's no official public roadmap, everything in this section is the edit
 
 Recent updates lean noticeably toward payment and logistics integrations outside North America and Europe — India (Razorpay), Mexico (Skydropx). If that pattern continues, expanding regional coverage and payment methods looks like a likely ongoing priority. The migration tooling for Shopify, BigCommerce, and WooCommerce also points toward a product strategy focused on capturing merchants switching from existing platforms. And the sustained investment in AI-driven creative tools — logo generation, image enhancement, mockup generation — suggests continued emphasis on reducing manual work in store design. To repeat: these are patterns drawn from public data, not commitments Amboras has made.
 
+## How to Sell Internationally with Amboras
+
+To sell internationally with Amboras, you use the multi-region features documented in its public changelog and configure currency, payments, and shipping for each country or region you sell in. The main international-selling updates in the changelog (entries from May to June 2026) are:
+
+- May 18: Automatic currency conversion, so prices convert to the visitor's region on the fly
+- May 23: Multi-region management, with payment providers mirrored automatically onto every new region so it's ready to take orders
+- May 24: Adding regions, with country and currency editing locked once a store has multiple regions
+- May 26: Integration with Skydropx for shipping within Mexico
+- May 31: Free-shipping thresholds that can be set separately for each country you sell in
+- June 1: Integration with Razorpay, a payment provider for shoppers in India
+
+On the other hand, within the scope of our research, we found no changelog entries covering multilingual support (translation) or the handling of duties and taxes. Region-specific integrations also center on India and Mexico, and there are no entries for features aimed at shipping from Japan. If you're considering Amboras for selling from Japan to overseas consumers, we recommend confirming individually, through the official site or by contacting the company, whether it supports translated product pages, duties, and shipping from Japan. When we checked in November 2026, the most recent entry in the public changelog was dated June 1.
+
+If you want to handle everything from building a multilingual, multi-currency site to overseas marketing in one chat, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option.
+
 ## FAQ
 
 **Q. How frequently does Amboras ship updates?**
@@ -62,16 +77,15 @@ A. There's an internal mechanism where users can submit feature requests through
 
 A. Fast feature velocity is appealing, but it can also mean the underlying specifics — pricing, trial policy — are still in flux, as shown by the pricing and trial changes made within days of each other in May covered in this article. It's worth checking the current terms of service each time you're about to commit, rather than assuming last month's terms still apply.
 
+**Q. Does Amboras support selling in multiple countries and currencies?**
+
+A. The public changelog shows features such as multi-region management, automatic conversion to the visitor's regional currency, and per-country free-shipping thresholds. However, within the scope of our research we found no entries on multilingual support (translation) or duties, so if you plan to sell from Japan to overseas customers, check on the official site whether the features you need are supported.
+
 ## Summary and Key Takeaway
 
 Researching "Amboras YC 26" doesn't turn up a flashy forecast of what's coming — it turns up something more mundane: a changelog updated almost daily. That mundane fact turns out to be more telling than a forecast would be. Expanding payment coverage by region, tooling to migrate merchants off other platforms, continued investment in AI-driven creative tools — taken together, these show fairly clearly what Amboras is prioritizing right now. What isn't available is a specific, public roadmap of what's coming next, and it can't be responsibly predicted. When evaluating how promising a young service's trajectory looks, the answer isn't a flashy forecast article — it's how carefully you read the primary sources the company itself has actually published, like a changelog or terms of service.
 
-Leap supports the full picture — from building multilingual e-commerce sites to web marketing for overseas markets — as a one-stop service. If you need help tracking developments in a new e-commerce tool, feel free to reach out.
-
-We publish a wide range of practical guides on international business and e-commerce operations.
-
-[Leap International Business Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 

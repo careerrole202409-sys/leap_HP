@@ -41,6 +41,21 @@ That said, no matter which platform you choose, BASE's own guidance states plain
 
 When thinking through your own strategy, the real question is which fits where you already have strength and what kind of acquisition style you want to build: do you already have a strong Instagram following you want to build sales on top of? Do you want to be discovered fresh inside BASE's buyer community? Do you want to grow organic search traffic steadily through blog content?
 
+## How to Sell Internationally With BASE and STORES
+
+Both BASE and STORES offer a proxy-purchase model that lets you sell to overseas buyers just by shipping to a warehouse in Japan. Here are the differences that can be confirmed from official information as of November 2026:
+
+| Item | BASE "Kantan Kaigai Hanbai" (Easy Overseas Sales) | STORES "Overseas Sales Integration" |
+|---|---|---|
+| Launch | Made a standard feature for all shops on March 18, 2026 | Launched July 7, 2026 |
+| How it works | Subsidiary want.jp buys on the customer's behalf and handles international shipping | Integrates with ZIGZAG's WorldShopping BIZ, which handles international shipping and customs |
+| Cost to the shop | 5% of the order total (product price plus domestic shipping); plan fees apply separately | The integration is free; STORES usage fees apply separately |
+| Cost to the buyer | Agency fee (10% of product price plus domestic shipping, min. ¥500, max. ¥3,000) plus a payment fee | 10% purchasing agency fee on product price plus domestic shipping |
+
+On the acquisition side, the key point is that "being able to sell overseas" and "being found by overseas shoppers" are two different things. BASE's official help page states that Easy Overseas Sales does not support purchases made through the Pay ID app, which is the core of BASE's acquisition model. The STORES press release for its overseas integration likewise focuses on shipping, payment, and multilingual customer support, and does not mention any overseas marketing features.
+
+So whichever platform you choose, bringing in overseas buyers means preparing your own foreign-language product descriptions, social media posts, and articles that help people find you through search. The idea from earlier in this article, choosing based on the acquisition style that fits your strengths, applies just as much to overseas sales. If you want to handle overseas articles and email newsletters in one place, you can also pair your shop with Leap, a cross-border ecommerce tool that lets AI handle marketing too.
+
 ## FAQ
 
 **Q. Which sells better, BASE or STORES?**
@@ -55,16 +70,15 @@ A. Yes. Unlike marketplace-style platforms like Amazon or Rakuten, neither BASE 
 
 A. Whichever platform you choose, you can still promote your shop on social media, and building out a thorough shop description or repeat-customer tactics matters regardless. That said, the specific features covered here — the PAY ID app and Instagram Sales Integration — are each tied to their own platform, so you can't use both features as described directly together.
 
+**Q. How do the fees for international sales differ between BASE and STORES?**
+
+A. With BASE's Easy Overseas Sales, the shop pays 5% of the order total, while with STORES' Overseas Sales Integration, the integration is free for the shop and the overseas buyer pays 10% of the product price plus domestic shipping (as of November 2026). On BASE, plan fees are charged separately, and overseas buyers also pay an agency fee and a payment fee.
+
 ## Summary and Key Takeaway
 
 The honest answer to "BASE or STORES, which sells better" is closer to "it depends on how well you make use of the acquisition mechanism each platform gives you." BASE offers an entry point into its PAY ID buyer community; STORES offers an entry point into external traffic through Instagram integration and blog content. The question isn't which is objectively better — it's which matches the strength you already have (an existing social following, or a knack for content) and the acquisition channel you actually want to grow. That's what leads to a platform choice you won't regret.
 
-That said, even after picking a platform, designing and running ongoing acquisition efforts isn't easy. Leap offers an AI E-Commerce Agent that supports running and growing an e-commerce shop entirely through conversation with AI. If you want to put real effort into acquisition, take a look at what Leap offers.
-
-We publish a wide range of practical guides on running an e-commerce business.
-
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -74,3 +88,6 @@ We publish a wide range of practical guides on running an e-commerce business.
 - [What Is SEO for an Online Shop? A Complete Guide to SEO on STORES - STORES Magazine](https://officialmag.stores.jp/entry/ec-seo)
 - [What Is the News Feature? - Help | STORES](https://faq.stores.jp/hc/ja/articles/28170238187673--%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9-%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9%E6%A9%9F%E8%83%BD%E3%81%A8%E3%81%AF%E3%81%AA%E3%82%93%E3%81%A7%E3%81%99%E3%81%8B)
 - [FAQ: Getting Started - BASE U](https://baseu.jp/guide/1/25477)
+- [About "Kantan Kaigai Hanbai" (Easy Overseas Sales) - Help | BASE](https://help.thebase.in/hc/ja/articles/52804478331929)
+- [BASE Makes "Kantan Kaigai Hanbai" a Standard Feature From March 18 - PR TIMES](https://prtimes.jp/main/html/rd/p/000000288.000030814.html)
+- [STORES Online Shop Launches "Overseas Sales Integration" for 228 Countries and Regions With No Setup or Monthly Fees - PR TIMES](https://prtimes.jp/main/html/rd/p/000000277.000031375.html)

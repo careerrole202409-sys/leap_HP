@@ -76,6 +76,18 @@ Hiring a professional research firm delivers precision but comes at a real cost,
 
 Measuring customer satisfaction only matters once it's built into an actual improvement cycle — collecting the number isn't the point on its own. The basic loop is: "measure" NPS and the four KPIs, "analyze" what's driving a low score, form a "hypothesis" about the root cause, run a concrete "action," and then "re-measure" after a set period to check whether it worked. A few real companies illustrate this loop in practice. Uniqlo continuously rolls out initiatives like expanded online sizing and birthday coupon programs. snaq.me, a personalized snack subscription service, uses a taste-preference diagnostic to tailor what it delivers to each customer. BASE FOOD combines active social media engagement with a community app called "commune" that has grown to roughly 10,000 members, maintaining an ongoing touchpoint with customers. Site load speed is another lever directly tied to satisfaction — reports show a one-second speed improvement can lift sales by 10%, while each additional second of delay can reduce page views by 11%, conversion by 7%, and satisfaction by 16%, and a load time over three seconds can push abandonment above 40%. Feeding behavioral data like this into the "analyze" stage alongside NPS and survey results sharpens the precision of whatever action you take next.
 
+## Measuring Customer Satisfaction When You Also Sell Internationally
+
+When you sell overseas, segment satisfaction data by country and language, and judge each country against its own past scores. The same 0–10 question is answered very differently from one country to the next. An article from the Qualtrics XM Institute (published June 2021) on its 18-country study reports that even when respondents rated companies they like, the NPS was 64 in India but minus 47 in Japan. The same article recommends setting an individual NPS goal for each country and not comparing scores directly across countries.
+
+Three practices make overseas survey results easier to act on:
+
+1. Write the question and the free-text field in a language your buyers can read, and make sure someone on your side can read the answers in that language.
+2. Tag each response with attributes such as the destination country and shipping method. Knowing which country is scoring low makes it much easier to pinpoint the cause.
+3. Include cross-border-specific pain points in your analysis. Shopify's Help Center, for example, explains that even when duties are calculated and collected at checkout, inaccurate product information such as HS codes can result in additional duties being charged to the customer on delivery. Unexpected charges at the door and long delivery times can drive dissatisfaction that you would rarely see in domestic sales.
+
+Feed the country-level results into the same "measure → analyze → hypothesize → act → re-measure" cycle you run domestically. With Leap, a cross-border ecommerce tool that lets AI handle marketing too, you can manage customer data in one place with its CRM and send multilingual newsletters just by giving instructions in chat, which also works for inviting customers in each country to a survey.
+
 ## FAQ
 
 **Q. What NPS score should I be aiming for?**
@@ -90,14 +102,15 @@ A. A small sample means more statistical noise, but free-text responses in parti
 
 A. Neither one is sufficient on its own. NPS functions as a leading indicator of customer loyalty and future revenue growth, while the four KPIs function as lagging indicators of your current operational state. Tracking both together gives you a much more accurate read on where to improve.
 
+**Q. Can I compare NPS from overseas customers with NPS from Japanese customers on the same scale?**
+
+A. It is best not to compare them directly. Scoring habits on the 0–10 scale differ by country: in the Qualtrics XM Institute's 18-country study, the NPS for companies respondents like was 64 in India but minus 47 in Japan. Set separate goals for each country and track improvement against that country's own past scores.
+
 ## Summary and Key Takeaway
 
-Customer satisfaction isn't something to judge on gut feel — it becomes visible and data-driven once you combine NPS, a leading indicator of customer loyalty, with the lagging indicators of purchase rate, repeat rate, complaint rate, and return rate. As multiple studies showing NPS's correlation with revenue growth make clear, treating this metric as an afterthought risks leaving long-term growth opportunities on the table. Measuring regularly using both transactional and relational surveys, and continuing to run the "measure → analyze → hypothesize → act → re-measure" cycle, is the only reliable way to steadily improve customer experience over time. Leap aims to support that entire process — from customer satisfaction measurement and analysis through product listings, SEO, advertising, and customer support — as an AI E-Commerce Agent that lets teams spend their time on what actually grows the business, all through conversation with AI.
+Customer satisfaction isn't something to judge on gut feel — it becomes visible and data-driven once you combine NPS, a leading indicator of customer loyalty, with the lagging indicators of purchase rate, repeat rate, complaint rate, and return rate. As multiple studies showing NPS's correlation with revenue growth make clear, treating this metric as an afterthought risks leaving long-term growth opportunities on the table. Measuring regularly using both transactional and relational surveys, and continuing to run the "measure → analyze → hypothesize → act → re-measure" cycle, is the only reliable way to steadily improve customer experience over time. When you also sell internationally, adding a country-by-country view, with separate goals and trends for each market, lets you extend the same cycle to overseas customers.
 
-We publish a wide range of practical guides on e-commerce operations, cross-border expansion, and website building. Browse our other articles for more.
-
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -109,3 +122,5 @@ We publish a wide range of practical guides on e-commerce operations, cross-bord
 - [NPS Fundamentals - Markitone](https://markitone.co.jp/column/nps/)
 - [The Relationship Between Customer Satisfaction and NPS - NTT Nexia](https://www.ntt-nexia.co.jp/column/0048.html)
 - [Designing Membership Tiers and Point Cards - Uchideno Kozuchi](https://www.uchideno-kozuchi.com/lab018/)
+- [Is NPS a Good Global CX Metric? - Qualtrics XM Institute](https://www.qualtrics.com/articles/customer-experience/nps-good-global-cx-metric/)
+- [Charging duties and import taxes - Shopify Help Center](https://help.shopify.com/en/manual/international/duties-and-import-taxes/charging-duties)

@@ -136,19 +136,45 @@ Based on the four tools' characteristics, here's a recommended tool by use case:
 
 ---
 
-## Frequently Asked Questions (FAQ)
+## How to Choose a No-Code Tool When Selling Internationally
 
-<strong>Q1. Are sites built with no-code tools at a disadvantage for SEO?</strong>
+If you plan to sell internationally or publish a website for overseas visitors, the first thing to check is whether a tool supports multilingual sites with its standard features, because each tool handles translation very differently. Here is how the four tools approach multilingual sites (based on each company's official information as of November 2026):
 
-There used to be a legitimate concern that no-code tools were weak on SEO. Today, every major tool has significantly strengthened its SEO feature set. Fundamentals like meta tag and OGP configuration, automatic sitemap generation, and mobile responsiveness are now standard across the board. For advanced technical SEO control, Webflow offers the most flexibility. As long as content quality and page load speed meet an acceptable threshold, SEO disadvantages attributable to the tool itself are minimal.
+| Tool | How to make the site multilingual |
+|------|-------------|
+| Wix | Wix Multilingual. Machine translation into more than 130 languages (machine translation uses word credits) |
+| Squarespace | Integration with the translation service Weglot (available on Squarespace 7.1) |
+| STUDIO | The official help center says there is no built-in multilingual feature and suggests workarounds such as creating separate pages for each language |
+| Webflow | The Localize feature supports machine translation, language-specific subdirectories (e.g., .com/es/), and auto-generated sitemaps that include hreflang tags |
 
-<strong>Q2. Which is more cost-efficient — a no-code tool or hiring a web agency?</strong>
+When choosing a tool, check these three points:
 
-When you add up initial and ongoing costs, in-house management with a no-code tool is typically far less expensive. Agency-built websites can run anywhere from ¥500,000 to ¥2,000,000 or more, with additional fees every time an update is needed. No-code tools start from a few thousand yen per month, and since you can handle updates yourself, ongoing costs stay low. That said, for sites that require a high level of technical sophistication, or where brand expression is a core business differentiator, a professional agency can deliver better long-term value. It comes down to your goals and resources.
+1. **Can you tell search engines how your language versions relate?** Google recommends using hreflang (an annotation that identifies each language version of the same page) to indicate the relationship between language versions.
+2. **Can you edit machine translations yourself?** Raw machine translation can leave awkward phrasing, so confirm that you can adjust text and images for each language.
+3. **What does multilingual support cost?** Translation credits or fees for an integrated service may be charged separately, so check the cost for the number of languages you need in advance.
 
-<strong>Q3. Can I switch tools later if I need to?</strong>
+The right tool depends on how far you plan to go internationally: STUDIO if your site is mainly for Japan, and Webflow or Wix if you want to build a full-fledged multilingual site. If you want to hand off not only site creation but also localization and overseas marketing through multilingual blogs, Leap, a cross-border ecommerce tool that lets AI handle marketing too, is another option.
 
-Technically yes, but a migration involves real work and cost, since you'll need to re-enter content manually. This is especially true when moving from WordPress to a no-code tool, or switching between no-code platforms — text content and images almost always need to be re-entered. Choosing carefully at the start saves significant effort and cost in the long run. We strongly recommend factoring in future scalability — e-commerce feature additions, multilingual support, CMS integration — when making your initial selection.
+
+---
+
+## FAQ
+
+**Q. Are sites built with no-code tools at a disadvantage for SEO?**
+
+A. There used to be a legitimate concern that no-code tools were weak on SEO. Today, every major tool has significantly strengthened its SEO feature set. Fundamentals like meta tag and OGP configuration, automatic sitemap generation, and mobile responsiveness are now standard across the board. For advanced technical SEO control, Webflow offers the most flexibility. As long as content quality and page load speed meet an acceptable threshold, SEO disadvantages attributable to the tool itself are minimal.
+
+**Q. Which is more cost-efficient — a no-code tool or hiring a web agency?**
+
+A. When you add up initial and ongoing costs, in-house management with a no-code tool is typically far less expensive. Agency-built websites can run anywhere from ¥500,000 to ¥2,000,000 or more, with additional fees every time an update is needed. No-code tools start from a few thousand yen per month, and since you can handle updates yourself, ongoing costs stay low. That said, for sites that require a high level of technical sophistication, or where brand expression is a core business differentiator, a professional agency can deliver better long-term value. It comes down to your goals and resources.
+
+**Q. Can I switch tools later if I need to?**
+
+A. Technically yes, but a migration involves real work and cost, since you'll need to re-enter content manually. This is especially true when moving from WordPress to a no-code tool, or switching between no-code platforms — text content and images almost always need to be re-entered. Choosing carefully at the start saves significant effort and cost in the long run. We strongly recommend factoring in future scalability — e-commerce feature additions, multilingual support, CMS integration — when making your initial selection.
+
+**Q. Can I build a multilingual website with a no-code tool?**
+
+A. Yes, but the method depends on the tool. Wix offers Wix Multilingual and Webflow offers Localize as multilingual features, while Squarespace becomes multilingual through its Weglot integration. STUDIO's official help center says it has no built-in multilingual feature, so you need a workaround such as creating separate pages for each language (as of November 2026).
 
 ---
 
@@ -158,16 +184,18 @@ No-code website builders remove the barrier that said "I can't build a website b
 
 If you're building not just a domestic e-commerce site but planning for cross-border or multilingual expansion, overseas scalability should be a factor in your tool selection from the start. The quality of your website shapes every customer's first impression, and it's directly tied to building trust in both domestic and international markets.
 
-At Leap, we help businesses build websites that go beyond simply translating Japanese content — optimizing for local culture, consumer behavior, and search trends in each target market. If you're thinking not just about "building a website" but about "building a web strategy that works internationally," explore the Leap resources below.
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
-Leap EC Operations Manual: [https://www.leap.site/en/ec-guide](https://www.leap.site/en/ec-guide)
-Leap Overseas Business Blog: [https://www.leap.site/en/blog](https://www.leap.site/en/blog)
 
 ---
 
 ## References
 
-- https://techgym.jp/column/no-kode/
-- https://note.com/anyakudesign/n/ndc9554ed4918
-- https://atsoho.com/blog/nocode-web-design-tools-comparison-studio-webflow-wix
-- https://nocode.plumsa.co.jp/?p=1339
+- [No-Code Tool Comparison: 9 Tools by Purpose (Tech Gym, in Japanese)](https://techgym.jp/column/no-kode/)
+- [No-Code Web Design Tools: STUDIO vs. Webflow vs. Wix (@SOHO, in Japanese)](https://atsoho.com/blog/nocode-web-design-tools-comparison-studio-webflow-wix)
+- [Latest No-Code Trends: WordPress, Wix, STUDIO, and Webflow Compared (No-Code Lab, in Japanese)](https://nocode.plumsa.co.jp/?p=1339)
+- [Wix Multilingual: Auto-Translating Your Site - Wix Help Center](https://support.wix.com/en/article/wix-multilingual-auto-translating-your-site)
+- [How to Make Your Squarespace Site Multilingual - Weglot](https://www.weglot.com/guides/squarespace-multilingual-site)
+- [Can I Create a Multilingual Site with Studio? - Studio Help](https://help.studio.design/en/articles/9317101-can-i-create-a-multilingual-site-with-studio)
+- [Website translation and localization tools - Webflow](https://webflow.com/localization)
+- [Localized Versions of your Pages - Google Search Central](https://developers.google.com/search/docs/specialty/international/localized-versions?hl=en)

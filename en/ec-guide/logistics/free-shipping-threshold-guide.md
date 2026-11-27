@@ -52,6 +52,23 @@ A free shipping threshold doesn't need to stay fixed year-round. You might tempo
 
 As we've covered, a free shipping threshold sits at the intersection of break-even math, display design, and seasonal or segment-based adjustment. It's not something you set once and forget — it needs ongoing review as your AOV, margin, seasonality, and competitive landscape shift. Increasingly, teams are handling this kind of break-even calculation, A/B test analysis, and even product description writing through conversation with AI. Treating your free shipping threshold as something you keep refining with data — rather than a one-time decision — is the shortest path to improving conversion rate and order value at the same time.
 
+## Free Shipping Thresholds When You Sell Internationally
+
+When you sell internationally, don't reuse your domestic free shipping threshold across the board. Check shipping costs for each destination region and set region-specific thresholds using the same break-even formula — shipping cost divided by gross margin — because international shipping costs vary widely by destination.
+
+Using Japan Post's EMS (Express Mail Service) rate table (as of November 2026), here is what it looks like for a product with a 30% gross margin shipped in a parcel of up to 1 kg:
+
+| Destination (EMS zone) | Rate up to 1 kg | Extra sales needed to absorb shipping (30% margin) |
+|---|---|---|
+| Zone 1 (China, South Korea, Taiwan) | JPY 2,200 | About JPY 7,333 |
+| Zone 3 (Oceania, Canada, Mexico, Middle East, Europe) | JPY 4,400 | About JPY 14,667 |
+
+For the same product, shipping to Europe requires twice the additional sales of shipping to China, South Korea, or Taiwan (Zone 3 rates include a special surcharge). That's why it's realistic to either set thresholds by region or exclude high-cost regions from free shipping.
+
+Duties are the other thing to watch. The Shopify Help Center explains that when you ship internationally, customers might be charged duties and import taxes when their shipment arrives. Even if you advertise "free shipping," state in your shipping policy that duties may be charged separately. If you display prices in local currencies, exchange rate swings will shift your threshold in yen terms, so review it regularly.
+
+Leap, a cross-border ecommerce tool that lets AI handle marketing too, supports country-specific pricing and multiple currencies. You can set which countries each product is sold in, and products aren't shown in other countries — useful if you want to keep certain products away from high-shipping-cost regions.
+
 ## FAQ
 
 **Q. Where should I start when setting a free shipping threshold?**
@@ -66,14 +83,17 @@ A. It's simpler, yes, but it also means absorbing every shipping cost yourself, 
 
 A. Don't look at conversion rate alone — track average order value and gross profit alongside it. A conversion rate increase that comes at the expense of order value or margin defeats the purpose, so weigh multiple metrics together before calling a test a win.
 
+**Q. Can I use the same free shipping threshold for international orders as for domestic ones?**
+
+A. It's not recommended. International shipping costs vary widely by destination: with Japan Post's EMS, a parcel of up to 1 kg costs JPY 2,200 to China, South Korea, or Taiwan and JPY 4,400 to Zone 3 destinations such as Europe (as of November 2026). Calculate the additional sales needed with "shipping cost ÷ gross margin" for each region, and set thresholds by region.
+
 ## Summary and Key Takeaway
 
-A free shipping threshold isn't something to set on gut feeling — it's a strategic pricing decision that shapes both conversion rate and order value. Combine the "1.2 to 1.5x AOV" rule of thumb with the shipping-cost-over-margin break-even formula to land on a number, lift conversion with a "you're almost there" display, and adjust dynamically by season and customer segment. Working through that process reveals something beyond "free shipping just sells more": your free shipping threshold is a business metric that deserves the same ongoing validation as any other. Leap aims to support that entire process — from pricing decisions through product listings, SEO, advertising, and customer support — as an AI E-Commerce Agent that lets teams spend their time on what actually grows the business, all through conversation with AI.
+A free shipping threshold isn't something to set on gut feeling — it's a strategic pricing decision that shapes both conversion rate and order value. Combine the "1.2 to 1.5x AOV" rule of thumb with the shipping-cost-over-margin break-even formula to land on a number, lift conversion with a "you're almost there" display, and adjust dynamically by season and customer segment. Working through that process reveals something beyond "free shipping just sells more": your free shipping threshold is a business metric that deserves the same ongoing validation as any other.
+
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 We publish a wide range of practical guides on e-commerce operations, cross-border expansion, and website building. Browse our other articles for more.
-
-[Leap E-Commerce Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
 
 ## References
 
@@ -85,3 +105,5 @@ We publish a wide range of practical guides on e-commerce operations, cross-bord
 - [E-Commerce Shipping Design - Web-Kanji](https://web-kanji.com/posts/ecsite-postage)
 - [Thinking About Free Shipping Thresholds - Netshop Tantosha Forum](https://netshop.impress.co.jp/node/7258)
 - [About E-Commerce Shipping Costs - Urerunet](https://urerunet.shop/ec/postage)
+- [EMS rate table (all countries and regions) - Japan Post](https://www.post.japanpost.jp/send/oversea/charge/list-ems/all.html)
+- [Duties and import taxes - Shopify Help Center](https://help.shopify.com/en/manual/cross-border/duties)

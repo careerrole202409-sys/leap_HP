@@ -52,6 +52,20 @@ Putting the comparison together, here's a practical way to decide:
 
 Neither approach is objectively "better" — the right choice comes down to what phase your business is actually in, and whether you want to outsource overseas sales or build it as part of your own store experience.
 
+## Customer Service, Returns, and Consumption Tax When You Sell Internationally
+
+BASE, STORES, and Shopify differ sharply in who deals with overseas buyers. With the proxy-purchase model used by BASE and STORES, the proxy company handles overseas buyers; when you sell directly through Shopify's built-in features, your shop handles them itself (as of November 2026).
+
+| Item | BASE (Easy Overseas Sales) | STORES (Overseas Sales Integration) | Shopify (direct sales) |
+|---|---|---|---|
+| Who supports overseas buyers | want.jp handles cancellations, returns, and order inquiries | WorldShopping BIZ (ZIGZAG) handles inquiries in Japanese, English, Chinese (Traditional and Simplified), and Korean, 365 days a year | Your shop |
+| Main costs paid by the buyer (besides the item price) | Domestic and international shipping, a service fee (10% of item price plus domestic shipping, minimum ¥500, maximum ¥3,000), and a payment fee (2–3% of the total) | A purchasing service fee (10% of item price plus domestic shipping), among others | Shipping, plus duties and import taxes (which can be collected at checkout if you set it up) |
+| Where your shop ships to | want.jp's warehouse in Japan | A designated warehouse in Japan | The overseas buyer |
+
+Consumption tax is treated differently too. BASE's Help Center states that Easy Overseas Sales orders are domestic transactions in which the Japanese proxy company is the purchaser, so the shop's purchasing costs and similar expenses are not eligible for a consumption tax refund. By contrast, when your shop ships goods overseas itself, the sale counts as an export. According to Japan's National Tax Agency, it qualifies for the consumption tax export exemption as long as you keep documents proving the export (for parcel post or EMS items worth ¥200,000 or less, for example, Japan Post's acceptance certificate and a copy of the shipping slip).
+
+If you want to keep overseas buyer communication in-house but spend less time on it, a tool like Leap, a cross-border ecommerce tool that lets AI handle marketing too, lets you hand off drafting replies to inquiries to its AI chat.
+
 ## FAQ
 
 **Q. Can BASE or STORES handle cross-border e-commerce well enough?**
@@ -66,16 +80,15 @@ A. As far as we could tell from Shopify's own help documentation, there's no exp
 
 A. Migrating platforms is possible, but it takes real work and planning — product data, your shop's structure, and in some cases carrying over your shop URL (and the SEO value tied to it). If you're already planning a serious cross-border push down the line, it can be more efficient to choose your platform early with that migration effort in mind.
 
+**Q. If I sell overseas through BASE or STORES, who handles inquiries and returns from overseas buyers?**
+
+A. In principle, the proxy company does. With BASE's Easy Overseas Sales, want.jp handles cancellations, returns, and order inquiries; with STORES' Overseas Sales Integration, WorldShopping BIZ handles multilingual inquiries (as of November 2026). If the proxy company contacts your shop, follow its instructions.
+
 ## Summary and Key Takeaway
 
 Comparing BASE, STORES, and Shopify on cross-border capability alone reveals a clear design difference: BASE and STORES lower the barrier to entry by partnering with outsourced services, while Shopify builds multi-language, multi-currency, and duty calculation directly into the platform. Neither approach is the single right answer — matching your choice to where your own overseas expansion actually stands, whether that's "I want to try cross-border sales on a small scale first" or "I want to build out a serious overseas market presence," is what leads to a platform choice you won't regret.
 
-That said, choosing a platform with cross-border capability in mind, and building out multi-language and multi-currency support, isn't something most businesses can easily do entirely on their own. Leap offers an AI E-Commerce Agent that supports building, running, and expanding an e-commerce business overseas, entirely through conversation with AI. If you're planning a store build with cross-border expansion in mind, take a look at what Leap offers.
-
-We publish a wide range of practical guides on international business and e-commerce operations.
-
-[Leap International Business Guide Blog](https://www.leap.site/en/blog)  
-[Request a Demo or Consultation](https://www.leap.site/en/about/#contact)
+Leap is a cross-border ecommerce tool that lets AI handle marketing too. Just chat with it to build a multilingual, multi-currency online store and run overseas marketing such as SEO and email newsletters.
 
 ## References
 
@@ -86,3 +99,7 @@ We publish a wide range of practical guides on international business and e-comm
 - [Shopify Markets - Shopify](https://www.shopify.com/jp/markets)
 - [Charging Duties and Import Taxes - Shopify Help Center](https://help.shopify.com/en/manual/international/duties-and-import-taxes/charging-duties)
 - [Shopify Pricing Plans - Shopify](https://www.shopify.com/jp/pricing)
+- [About Easy Overseas Sales (「かんたん海外販売」について教えてください) - Help | BASE](https://help.thebase.in/hc/ja/articles/52804478331929)
+- [What Should I Do If an Overseas Buyer Contacts Me Directly? - Help | BASE](https://help.thebase.in/hc/ja/articles/53137239496217)
+- [STORES NetShop Launches "Overseas Sales Integration" for Selling to 228 Countries and Regions With No Initial or Monthly Fees - PR TIMES](https://prtimes.jp/main/html/rd/p/000000277.000031375.html)
+- [No.6551 Consumption Tax Exemption for Export Transactions - National Tax Agency](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6551.htm)
