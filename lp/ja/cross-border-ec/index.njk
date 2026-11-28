@@ -279,10 +279,9 @@ openai_pixel_id: 9CxzcYKfjP4xqTj5c6q4JE
 .cb-tag.is-optional { background: #E2E8F0; color: #64748B; }
 .cb-field input { width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 16px; font-family: inherit; }
 .cb-field input:focus { outline: none; border-color: #C10033; box-shadow: 0 0 0 3px rgba(193,0,51,0.12); }
-.cb-agree { display: flex; align-items: flex-start; gap: 8px; font-size: 0.8rem; color: #475569; margin: 0.4rem 0 1rem; line-height: 1.5; }
-.cb-agree input { margin-top: 3px; accent-color: #C10033; }
-.cb-agree a { color: #C10033; text-decoration: underline; }
-.cb-form-card .cb-btn { display: block; width: 100%; padding: 14px; font-size: 1rem; }
+.cb-form-note { font-size: 0.75rem; color: #64748b; text-align: center; line-height: 1.6; margin: 0.7rem 0 0; }
+.cb-form-note a { color: #C10033; text-decoration: underline; }
+.cb-form-card .cb-btn { display: block; width: 100%; padding: 14px; font-size: 1rem; margin-top: 1.25rem; }
 .cb-done { display: none; text-align: center; padding: 1.5rem 0.5rem; }
 .cb-done p { color: #475569; font-size: 0.9rem; margin: 0 0 0.9rem; }
 .cb-done a { color: #C10033; font-size: 0.85rem; text-decoration: underline; }
@@ -560,26 +559,15 @@ section[id] { scroll-margin-top: 100px; }
           </div>
         </div>
         <div class="cb-field">
-          <label for="cb-company">会社名<span class="cb-tag">必須</span></label>
-          <input id="cb-company" name="company" type="text" autocomplete="organization" required>
-        </div>
-        <div class="cb-field">
-          <label for="cb-name">お名前<span class="cb-tag">必須</span></label>
-          <input id="cb-name" name="name" type="text" autocomplete="name" required>
-        </div>
-        <div class="cb-field">
           <label for="cb-email">メールアドレス<span class="cb-tag">必須</span></label>
           <input id="cb-email" name="email" type="email" autocomplete="email" required>
         </div>
         <div class="cb-field">
-          <label for="cb-phone">電話番号<span class="cb-tag is-optional">任意</span></label>
-          <input id="cb-phone" name="phone" type="tel" autocomplete="tel">
+          <label for="cb-phone">電話番号<span class="cb-tag">必須</span></label>
+          <input id="cb-phone" name="phone" type="tel" autocomplete="tel" required>
         </div>
-        <label class="cb-agree">
-          <input type="checkbox" name="agree" required>
-          <span><a href="/ja/privacypolicy/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する</span>
-        </label>
         <button type="submit" class="cb-btn cta-shine">資料をダウンロード</button>
+        <p class="cb-form-note">送信すると、<a href="/ja/privacypolicy/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意したものとみなされます。</p>
       </form>
       <div class="cb-done">
         <p class="cb-form-title">ありがとうございます</p>
@@ -931,7 +919,7 @@ section[id] { scroll-margin-top: 100px; }
     window.open(GUIDE_FORM.pdf, '_blank', 'noopener');
 
     var data = new FormData();
-    ['company', 'name', 'email', 'phone'].forEach(function (key) {
+    ['email', 'phone'].forEach(function (key) {
       data.append(GUIDE_FORM.entries[key], form.elements[key].value.trim());
     });
     data.append(GUIDE_FORM.entries.source, location.origin + location.pathname);   // 流入元：このLPのURL

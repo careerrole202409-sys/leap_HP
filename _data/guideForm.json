@@ -1,5 +1,6 @@
 {
   "pdf": "/assets/pdf/leap-service-guide.pdf",
+  "pdfCrossBorder": "/assets/pdf/cross-border-ec-guide.pdf",
   "action": "https://docs.google.com/forms/d/e/1FAIpQLSd9F1Ri30ukE6WdcOZqfTBOTw-sWqtNq79NXBMPV55zYloOIw/formResponse",
   "entries": {
     "company": "entry.1572083987",

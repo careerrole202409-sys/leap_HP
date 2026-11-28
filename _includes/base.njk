@@ -75,9 +75,8 @@
             mini: 'Get the Deck',
             title: 'Download the Leap Overview',
             lead: 'Get instant access after you submit. The deck is currently available in Japanese only.',
-            company: 'Company', name: 'Name', email: 'Email', phone: 'Phone',
-            required: 'Required', optional: 'Optional',
-            privacy: 'I agree to the <a href="/en/privacypolicy/" target="_blank" rel="noopener">Privacy Policy</a>',
+            email: 'Email', required: 'Required',
+            privacy: 'By submitting, you agree to our <a href="/en/privacypolicy/" target="_blank" rel="noopener">Privacy Policy</a>.',
             submit: 'Submit and View the Deck',
             thanks: 'Thank you!', thanksText: 'The deck has opened in a new tab.', open: 'Not opened? Click here',
             close: 'Close'
@@ -90,9 +89,8 @@
             mini: '下载资料',
             title: '下载Leap产品资料',
             lead: '提交后即可查看资料。资料目前仅提供日文版。',
-            company: '公司名称', name: '姓名', email: '电子邮箱', phone: '电话',
-            required: '必填', optional: '选填',
-            privacy: '我已阅读并同意<a href="/zh-hans/privacypolicy/" target="_blank" rel="noopener">隐私政策</a>',
+            email: '电子邮箱', required: '必填',
+            privacy: '提交即表示您同意我们的<a href="/zh-hans/privacypolicy/" target="_blank" rel="noopener">隐私政策</a>。',
             submit: '提交并查看资料',
             thanks: '感谢您的提交', thanksText: '资料已在新标签页中打开。', open: '未能打开？请点击这里',
             close: '关闭'
@@ -105,9 +103,8 @@
             mini: '資料ダウンロード',
             title: 'Leapの紹介資料',
             lead: 'ご入力後、すぐにご覧いただけます。',
-            company: '会社名', name: 'お名前', email: 'メールアドレス', phone: '電話番号',
-            required: '必須', optional: '任意',
-            privacy: '<a href="/ja/privacypolicy/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する',
+            email: 'メールアドレス', required: '必須',
+            privacy: '送信すると、<a href="/ja/privacypolicy/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意したものとみなされます。',
             submit: '送信して資料を見る',
             thanks: 'ありがとうございます', thanksText: '資料を新しいタブで開きました。', open: '資料が開かない場合はこちら',
             close: '閉じる'
@@ -241,10 +238,9 @@
         .guide-head img { width: 112px; flex-shrink: 0; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
         .guide-title { font-size: 1.05rem; font-weight: 700; color: #1E293B; line-height: 1.45; margin: 0 0 4px; }
         .guide-lead { font-size: 0.8rem; color: #475569; line-height: 1.6; margin: 0; }
-        .guide-field { margin-bottom: 12px; }
+        .guide-field { margin-bottom: 16px; }
         .guide-field label { display: flex; align-items: center; gap: 6px; font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 5px; }
         .guide-tag { font-size: 0.68rem; font-weight: 700; padding: 1px 6px; border-radius: 4px; background: #C10033; color: white; }
-        .guide-tag.is-optional { background: #E2E8F0; color: #64748B; }
         .guide-field input {
             width: 100%;
             box-sizing: border-box;
@@ -255,9 +251,8 @@
             font-family: inherit;
         }
         .guide-field input:focus { outline: none; border-color: #C10033; box-shadow: 0 0 0 3px rgba(193,0,51,0.12); }
-        .guide-agree { display: flex; align-items: flex-start; gap: 8px; font-size: 0.8rem; color: #475569; margin: 4px 0 16px; line-height: 1.5; }
-        .guide-agree input { margin-top: 3px; accent-color: #C10033; }
-        .guide-agree a { color: #C10033; text-decoration: underline; }
+        .guide-note { font-size: 0.75rem; color: #64748B; text-align: center; line-height: 1.6; margin: 10px 0 0; }
+        .guide-note a { color: #C10033; text-decoration: underline; }
         .guide-submit {
             display: block;
             width: 100%;
@@ -332,26 +327,11 @@
                     </div>
                 </div>
                 <div class="guide-field">
-                    <label for="guide-company">{{ g.company }}<span class="guide-tag">{{ g.required }}</span></label>
-                    <input id="guide-company" name="company" type="text" autocomplete="organization" required>
-                </div>
-                <div class="guide-field">
-                    <label for="guide-name">{{ g.name }}<span class="guide-tag">{{ g.required }}</span></label>
-                    <input id="guide-name" name="name" type="text" autocomplete="name" required>
-                </div>
-                <div class="guide-field">
                     <label for="guide-email">{{ g.email }}<span class="guide-tag">{{ g.required }}</span></label>
                     <input id="guide-email" name="email" type="email" autocomplete="email" required>
                 </div>
-                <div class="guide-field">
-                    <label for="guide-phone">{{ g.phone }}<span class="guide-tag is-optional">{{ g.optional }}</span></label>
-                    <input id="guide-phone" name="phone" type="tel" autocomplete="tel">
-                </div>
-                <label class="guide-agree">
-                    <input type="checkbox" name="agree" required>
-                    <span>{{ g.privacy | safe }}</span>
-                </label>
                 <button type="submit" class="guide-submit" id="guide-submit">{{ g.submit }}</button>
+                <p class="guide-note">{{ g.privacy | safe }}</p>
             </form>
 
             <div class="guide-done">
@@ -377,7 +357,7 @@
             return;
         }
         document.getElementById('guide-modal').classList.add('is-open');
-        document.getElementById('guide-company').focus();
+        document.getElementById('guide-email').focus();
     }
 
     function closeGuide() {
@@ -397,9 +377,7 @@
         window.open(GUIDE_PDF, '_blank', 'noopener');
 
         var data = new FormData();
-        ['company', 'name', 'email', 'phone'].forEach(function(key) {
-            data.append(GUIDE_FORM.entries[key], form.elements[key].value.trim());
-        });
+        data.append(GUIDE_FORM.entries.email, form.elements.email.value.trim());
         data.append(GUIDE_FORM.entries.source, location.origin + location.pathname);   // 流入元：送信したページのURL
 
         // Googleフォームは応答を返さないので、裏側で送るだけにする
