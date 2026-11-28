@@ -206,3 +206,7 @@ Leapは、集客までAIに任せられる越境ECツールです。チャット
 - [輸出入に関する基本的な制度 - ジェトロ](https://www.jetro.go.jp/world/trade.html)
 - [世界各国の関税率（WorldTariff） - ジェトロ](https://www.jetro.go.jp/theme/export/tariff/)
 - [外国出願に要する費用の半額を補助します - 特許庁](https://www.jpo.go.jp/support/chusho/shien_gaikokusyutugan.html)
+
+### あわせて読みたい
+
+- [eBay輸出の始め方｜アカウント作成から初出品までの手順と最初にかかるお金（Trade Force）](https://blog.trade-force.net/articles/ebay-start-guide)：eBayで輸出を始める手順と初期費用を知りたい方へ
