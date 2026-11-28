@@ -118,3 +118,4 @@ Googleのアルゴリズムは、ユーザーの検索意図（サーチイン�
 - [株式会社デジタルダイブ](https://digital-dive.com/)：多言語サイト制作や翻訳を含むWeb制作を知りたい方へ
 - [士業の集客方法｜ホームページ・ブログ活用の成功戦略を解説（株式会社シード）](https://www.seedinc.jp/column/marketing/client-acquisition-for-legal-and-accounting-professionals/)：ホームページとブログによる集客の進め方を知りたい方へ
 - [Shopifyの多言語化と翻訳アプリの選び方【2026】（Pepin）](https://pepin.studio/ja/journal/shopify-multilingual-guide)：Shopifyで多言語化を進める際の翻訳アプリの選び方を知りたい方へ
+- [越境EC消費税2026｜輸出免税と還付申告を税理士が解説（税理士法人 辻総合会計）](https://m-assets.com/lp/online/blog/ec-export-tax-refund)：越境ECの輸出免税と還付申告の実務を知りたい方へ
