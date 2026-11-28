@@ -118,3 +118,4 @@ hreflangで言語を分けても、オフページ要素を無視すると競争
 ### あわせて読みたい
 
 - [ホームページリニューアルで失敗しない方法：浜松の中小企業によくある失敗5選（satokotadesign）](https://satokotadesign.com/column/homepage-renewal-avoid-failure/)：サイトリニューアルで失敗を避けたい方へ
+- [【WordPress多言語化】プラグインなしで多言語サイト（英語サイトなど）の作り方（株式会社BringFlower）](https://www.bring-flower.com/blog/english-website-with-wordpress/)：WordPressで多言語サイトを作る方法を知りたい方へ

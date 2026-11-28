@@ -172,4 +172,4 @@ A3: EPA/FTAを利用して特恵関税の適用を受けるには、まず輸出
 
 - [Leap 海外ビジネスマニュアル（ブログ）へ](https://www.leap.site/ja/blog)
 - [デモ・お問い合わせはこちら](https://www.leap.site/ja/about/#contact)
-
+- [パッキングリストとは？輸出用の書き方・記入例と無料Excelテンプレート（梱包辞典）](https://konpo-jiten.com/export-packing-list-how-to/)：パッキングリストの具体的な作成方法を知りたい方へ
